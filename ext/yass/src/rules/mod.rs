@@ -1,7 +1,7 @@
 pub mod rule;
-pub mod mediarule;
-pub mod stylerule;
+pub mod media_rule;
+pub mod style_rule;
 
 pub use rule::YRule;
-pub use mediarule::YMediaRule;
-pub use stylerule::YStyleRule;
+pub use media_rule::YMediaRule;
+pub use style_rule::YStyleRule;

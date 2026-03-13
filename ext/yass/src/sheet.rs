@@ -13,16 +13,8 @@ pub struct YSheet {
 
 impl DataTypeFunctions for YSheet {
     fn mark(&self, marker: &gc::Marker) {
-        println!("Marking rules");
-        // let ruby = Ruby::get().unwrap();
-
         if let Some(rules) = self.cached_rules.borrow().as_ref() {
             marker.mark_slice(rules.as_slice());
-
-            // for rule in rules {
-            //     let obj = ruby.get_inner(*rule);
-            //     obj.mark(marker);
-            // }
         }
     }
 }

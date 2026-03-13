@@ -1,6 +1,8 @@
 mod rules;
 mod sheet;
-mod selector;
+mod selectors;
+mod utils;
+mod declarations;
 
 use magnus::{Error, Ruby, function, method, prelude::*};
 use style::context::QuirksMode;
@@ -10,8 +12,9 @@ use style::servo_arc::Arc;
 use style::stylesheets::{AllowImportRules, Origin, Stylesheet, UrlExtraData};
 use url::Url;
 
+use crate::declarations::{YAlignItems, YAlignmentBaseline};
 use crate::rules::YRule;
-use crate::selector::{YAnPlusB, YSelector, YSelectorChild, YSpecificNamespaceConstraint};
+use crate::selectors::{YAnPlusB, YRelativeSelector, YSelector, YSelectorChild, YSpecificNamespaceConstraint};
 use crate::sheet::YSheet;
 
 fn parse(css: String) -> YSheet {
@@ -50,11 +53,16 @@ fn init(ruby: &Ruby) -> Result<(), Error> {
     let rule_class = yass_module.define_class("Rule", ruby.class_object())?;
     let style_rule_class = yass_module.define_class("StyleRule", rule_class)?;
     style_rule_class.define_method("selectors", method!(YRule::selectors, 0))?;
+    style_rule_class.define_method("declarations", method!(YRule::declarations, 0))?;
 
     let _media_rule_class = yass_module.define_class("MediaRule", rule_class)?;
 
     let selector_class = yass_module.define_class("Selector", ruby.class_object())?;
     selector_class.define_method("children", method!(YSelector::children, 0))?;
+
+    let relative_selector_class = yass_module.define_class("RelativeSelector", ruby.class_object())?;
+    relative_selector_class.define_method("selector", method!(YRelativeSelector::selector, 0))?;
+    relative_selector_class.define_method("match_hint", method!(YRelativeSelector::match_hint, 0))?;
 
     let selector_child_class = yass_module.define_class("SelectorChild", ruby.class_object())?;
 
@@ -144,6 +152,52 @@ fn init(ruby: &Ruby) -> Result<(), Error> {
     let an_plus_b_class = selector_class.define_class("AnPlusB", ruby.class_object())?;
     an_plus_b_class.define_method("a", method!(YAnPlusB::a, 0))?;
     an_plus_b_class.define_method("b", method!(YAnPlusB::b, 0))?;
+
+    let nth_of_class = selector_class.define_class("NthOf", selector_child_class)?;
+    nth_of_class.define_method("kind", method!(YSelectorChild::kind, 0))?;
+    nth_of_class.define_method("nth", method!(YSelectorChild::nth, 0))?;
+    nth_of_class.define_method("selectors", method!(YSelectorChild::selectors, 0))?;
+
+    let non_ts_pseudo_class = selector_class.define_class("NonTSPseudoElement", selector_child_class)?;
+    non_ts_pseudo_class.define_method("kind", method!(YSelectorChild::kind, 0))?;
+    non_ts_pseudo_class.define_method("type", method!(YSelectorChild::ty, 0))?;
+    non_ts_pseudo_class.define_method("value", method!(YSelectorChild::value, 0))?;
+
+    let slotted_class = selector_class.define_class("Slotted", selector_child_class)?;
+    slotted_class.define_method("kind", method!(YSelectorChild::kind, 0))?;
+    slotted_class.define_method("selector", method!(YSelectorChild::selector, 0))?;
+
+    let where_class = selector_class.define_class("Where", selector_child_class)?;
+    where_class.define_method("kind", method!(YSelectorChild::kind, 0))?;
+    where_class.define_method("selectors", method!(YSelectorChild::selectors, 0))?;
+
+    let is_class = selector_class.define_class("Is", selector_child_class)?;
+    is_class.define_method("kind", method!(YSelectorChild::kind, 0))?;
+    is_class.define_method("selectors", method!(YSelectorChild::selectors, 0))?;
+
+    let part_class = selector_class.define_class("Part", selector_child_class)?;
+    part_class.define_method("kind", method!(YSelectorChild::kind, 0))?;
+    part_class.define_method("items", method!(YSelectorChild::items, 0))?;
+
+    let has_class = selector_class.define_class("Has", selector_child_class)?;
+    has_class.define_method("kind", method!(YSelectorChild::kind, 0))?;
+    has_class.define_method("relative_selectors", method!(YSelectorChild::relative_selectors, 0))?;
+
+    let invalid_class = selector_class.define_class("Invalid", selector_child_class)?;
+    invalid_class.define_method("kind", method!(YSelectorChild::kind, 0))?;
+
+    let pseudo_element_class = selector_class.define_class("PseudoElement", selector_child_class)?;
+    pseudo_element_class.define_method("kind", method!(YSelectorChild::kind, 0))?;
+
+    let relative_selector_anchor_class = selector_class.define_class("RelativeSelectorAnchor", selector_child_class)?;
+    relative_selector_anchor_class.define_method("kind", method!(YSelectorChild::kind, 0))?;
+
+    let declarations_module = yass_module.define_module("Declarations")?;
+    let align_items_class = declarations_module.define_class("AlignItems", ruby.class_object())?;
+    align_items_class.define_method("value", method!(YAlignItems::value, 0))?;
+
+    let alignment_baseline_class = declarations_module.define_class("AlignmentBaseline", ruby.class_object())?;
+    alignment_baseline_class.define_method("value", method!(YAlignmentBaseline::value, 0))?;
 
     Ok(())
 }
