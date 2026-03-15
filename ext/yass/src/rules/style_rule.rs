@@ -71,6 +71,8 @@ impl YStyleRule {
                 let ydeclaration = YDeclaration::from(declaration, ruby)?;
                 new_declarations.push(Opaque::from(ydeclaration));
             }
+
+            *self.cached_declarations.borrow_mut() = Some(new_declarations);
         }
 
         let cached_declarations = self.cached_declarations.borrow();
