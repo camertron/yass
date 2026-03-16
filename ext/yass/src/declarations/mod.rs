@@ -1,4 +1,5 @@
 pub mod align_content;
+pub mod align_flags;
 pub mod align_items;
 pub mod align_self;
 pub mod alignment_baseline;
@@ -205,6 +206,7 @@ pub mod text_rendering;
 pub mod text_shadow;
 pub mod text_transform;
 pub mod text_wrap_mode;
+pub mod time;
 pub mod top;
 pub mod transform_origin;
 pub mod transform_style;

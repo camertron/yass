@@ -3,6 +3,7 @@ mod sheet;
 mod selectors;
 mod utils;
 mod declarations;
+mod ruby_obj_list;
 
 use magnus::{Error, Ruby, function, method, prelude::*};
 use style::context::QuirksMode;

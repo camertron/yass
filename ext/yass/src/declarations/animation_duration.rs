@@ -1,12 +1,75 @@
-use style::properties::longhands::animation_duration::SpecifiedValue;
+use std::cell::RefCell;
 
-#[magnus::wrap(class = "Yass::Declarations::AnimationDuration")]
+use magnus::{DataTypeFunctions, Error, RArray, Ruby, TypedData, Value, gc, typed_data, value::{Id, InnerValue, Opaque, ReprValue}};
+use style::{properties::longhands::animation_duration::SpecifiedValue, values::{generics::animation::AnimationDuration, specified::Time}};
+
+use crate::{declarations::time::YTime, ruby_obj_list::RubyObjList};
+
+#[derive(TypedData)]
+#[magnus(class = "Yass::Declarations::AnimationDuration", mark)]
 pub struct YAnimationDuration {
-  specified_value: SpecifiedValue
+  cached_values: RubyObjList<YAnimationDurationValue, AnimationDuration<Time>>
 }
 
 impl YAnimationDuration {
   pub fn new(specified_value: SpecifiedValue) -> Self {
-    Self { specified_value }
+    Self {
+      cached_values: RubyObjList::new(specified_value.0.to_vec(), |value| {
+        YAnimationDurationValue::new(value.clone())
+      })
+    }
   }
+
+  pub fn values(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Result<RArray, Error> {
+    rb_self.cached_values.to_a(ruby)
+  }
+}
+
+impl DataTypeFunctions for YAnimationDuration {
+    fn mark(&self, marker: &gc::Marker) {
+      self.cached_values.mark(marker);
+    }
+}
+
+#[derive(TypedData)]
+#[magnus(class = "Yass::Declarations::AnimationDurationValue", mark)]
+pub struct YAnimationDurationValue {
+  animation_duration: AnimationDuration<Time>,
+  cached_time: RefCell<Option<Opaque<typed_data::Obj<YTime>>>>
+}
+
+impl YAnimationDurationValue {
+  pub fn new(animation_duration: AnimationDuration<Time>) -> Self {
+    Self { animation_duration, cached_time: RefCell::new(None) }
+  }
+
+  pub fn kind(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Id {
+    match rb_self.animation_duration {
+      AnimationDuration::Auto => ruby.intern("auto"),
+      AnimationDuration::Time(_) => ruby.intern("time")
+    }
+  }
+
+  pub fn time(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Option<Value> {
+    match rb_self.animation_duration {
+      AnimationDuration::Time(time) => {
+        if rb_self.cached_time.borrow().is_none() {
+          *rb_self.cached_time.borrow_mut() = Some(Opaque::from(ruby.obj_wrap(YTime::new(time))));
+        }
+
+        Some(ruby.get_inner(rb_self.cached_time.borrow().unwrap()).as_value())
+      }
+
+      AnimationDuration::Auto => None
+    }
+  }
+}
+
+impl DataTypeFunctions for YAnimationDurationValue {
+    fn mark(&self, marker: &gc::Marker) {
+        if let Some(time) = self.cached_time.borrow().as_ref() {
+          let ruby = Ruby::get().unwrap();
+          marker.mark(time.get_inner_with(&ruby));
+        }
+    }
 }

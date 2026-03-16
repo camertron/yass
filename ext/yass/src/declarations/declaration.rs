@@ -2,237 +2,7 @@ use magnus::{Error, Module, RModule, Ruby, Value, method, value::ReprValue};
 use style::properties::PropertyDeclaration;
 
 use crate::declarations::{
-  YAlignContent,
-  YAlignItems,
-  YAlignSelf,
-  YAlignmentBaseline,
-  YAnimationComposition,
-  YAnimationDelay,
-  YAnimationDirection,
-  YAnimationDuration,
-  YAnimationFillMode,
-  YAnimationIterationCount,
-  YAnimationName,
-  YAnimationPlayState,
-  YAnimationTimeline,
-  YAnimationTimingFunction,
-  YAspectRatio,
-  YBackdropFilter,
-  YBackfaceVisibility,
-  YBackgroundAttachment,
-  YBackgroundClip,
-  YBackgroundColor,
-  YBackgroundImage,
-  YBackgroundOrigin,
-  YBackgroundPositionX,
-  YBackgroundPositionY,
-  YBackgroundRepeat,
-  YBackgroundSize,
-  YBaselineShift,
-  YBaselineSource,
-  YBlockSize,
-  YBorderBlockEndColor,
-  YBorderBlockEndStyle,
-  YBorderBlockEndWidth,
-  YBorderBlockStartColor,
-  YBorderBlockStartStyle,
-  YBorderBlockStartWidth,
-  YBorderBottomColor,
-  YBorderBottomStyle,
-  YBorderBottomWidth,
-  YBorderCollapse,
-  YBorderImageRepeat,
-  YBorderImageSource,
-  YBorderInlineEndColor,
-  YBorderInlineEndStyle,
-  YBorderInlineEndWidth,
-  YBorderInlineStartColor,
-  YBorderInlineStartStyle,
-  YBorderInlineStartWidth,
-  YBorderLeftColor,
-  YBorderLeftStyle,
-  YBorderLeftWidth,
-  YBorderRightColor,
-  YBorderRightStyle,
-  YBorderRightWidth,
-  YBorderTopColor,
-  YBorderTopStyle,
-  YBorderTopWidth,
-  YBottom,
-  YBoxShadow,
-  YBoxSizing,
-  YCSSWideKeyword,
-  YCaptionSide,
-  YCaretColor,
-  YClear,
-  YClipPath,
-  YColor,
-  YColorScheme,
-  YColumnCount,
-  YColumnGap,
-  YColumnSpan,
-  YColumnWidth,
-  YContain,
-  YContainerName,
-  YContainerType,
-  YContent,
-  YCounterIncrement,
-  YCounterReset,
-  YCursor,
-  YCustom,
-  YDirection,
-  YDisplay,
-  YEmptyCells,
-  YFilter,
-  YFlexDirection,
-  YFlexGrow,
-  YFlexShrink,
-  YFlexWrap,
-  YFloat,
-  YFontFamily,
-  YFontLanguageOverride,
-  YFontOpticalSizing,
-  YFontSize,
-  YFontStretch,
-  YFontStyle,
-  YFontSynthesisWeight,
-  YFontVariantCaps,
-  YFontVariationSettings,
-  YFontWeight,
-  YGridAutoColumns,
-  YGridAutoFlow,
-  YGridAutoRows,
-  YGridColumnEnd,
-  YGridColumnStart,
-  YGridRowEnd,
-  YGridRowStart,
-  YGridTemplateAreas,
-  YGridTemplateColumns,
-  YGridTemplateRows,
-  YHeight,
-  YImageRendering,
-  YInlineSize,
-  YInsetBlockEnd,
-  YInsetBlockStart,
-  YInsetInlineEnd,
-  YInsetInlineStart,
-  YIsolation,
-  YJustifyContent,
-  YJustifyItems,
-  YJustifySelf,
-  YLeft,
-  YLetterSpacing,
-  YLineBreak,
-  YLineHeight,
-  YListStyleImage,
-  YListStylePosition,
-  YListStyleType,
-  YMarginBlockEnd,
-  YMarginBlockStart,
-  YMarginBottom,
-  YMarginInlineEnd,
-  YMarginInlineStart,
-  YMarginLeft,
-  YMarginRight,
-  YMarginTop,
-  YMaskImage,
-  YMaxBlockSize,
-  YMaxHeight,
-  YMaxInlineSize,
-  YMaxWidth,
-  YMinBlockSize,
-  YMinHeight,
-  YMinInlineSize,
-  YMinWidth,
-  YMixBlendMode,
-  YObjectFit,
-  YOffsetPath,
-  YOpacity,
-  YOrder,
-  YOutlineColor,
-  YOutlineOffset,
-  YOutlineStyle,
-  YOutlineWidth,
-  YOverflowBlock,
-  YOverflowClipMargin,
-  YOverflowInline,
-  YOverflowWrap,
-  YOverflowX,
-  YOverflowY,
-  YPaddingBlockEnd,
-  YPaddingBlockStart,
-  YPaddingBottom,
-  YPaddingInlineEnd,
-  YPaddingInlineStart,
-  YPaddingLeft,
-  YPaddingRight,
-  YPaddingTop,
-  YPerspective,
-  YPointerEvents,
-  YPosition,
-  YPositionArea,
-  YPositionTryFallbacks,
-  YQuotes,
-  YRight,
-  YRowGap,
-  YServoOverflowClipBox,
-  YServoTopLayer,
-  YTableLayout,
-  YTextAlign,
-  YTextAlignLast,
-  YTextDecorationColor,
-  YTextDecorationLine,
-  YTextDecorationStyle,
-  YTextIndent,
-  YTextJustify,
-  YTextRendering,
-  YTextShadow,
-  YTextTransform,
-  YTextWrapMode,
-  YTop,
-  YTransform,
-  YTransformStyle,
-  YTransitionBehavior,
-  YTransitionDelay,
-  YTransitionDuration,
-  YTransitionProperty,
-  YTransitionTimingFunction,
-  YUnicodeBidi,
-  YViewTransitionClass,
-  YViewTransitionName,
-  YVisibility,
-  YWebkitTextSecurity,
-  YWhiteSpaceCollapse,
-  YWidth,
-  YWillChange,
-  YWithVariables,
-  YWordBreak,
-  YWordSpacing,
-  YWritingMode,
-  YXLang,
-  YZIndex,
-  YZoom,
-  border_bottom_left_radius::YBorderBottomLeftRadius,
-  border_bottom_right_radius::YBorderBottomRightRadius,
-  border_end_end_radius::YBorderEndEndRadius,
-  border_end_start_radius::YBorderEndStartRadius,
-  border_image_outset::YBorderImageOutset,
-  border_image_slice::YBorderImageSlice,
-  border_image_width::YBorderImageWidth,
-  border_spacing::YBorderSpacing,
-  border_start_end_radius::YBorderStartEndRadius,
-  border_start_start_radius::YBorderStartStartRadius,
-  border_top_left_radius::YBorderTopLeftRadius,
-  border_top_right_radius::YBorderTopRightRadius,
-  clip::YClip,
-  flex_basis::YFlexBasis,
-  object_position::YObjectPosition,
-  perspective_origin::YPerspectiveOrigin,
-  rotate::YRotate,
-  scale::YScale,
-  text_overflow::YTextOverflow,
-  transform_origin::YTransformOrigin,
-  translate::YTranslate
+  YAlignContent, YAlignItems, YAlignSelf, YAlignmentBaseline, YAnimationComposition, YAnimationDelay, YAnimationDirection, YAnimationDuration, YAnimationDurationValue, YAnimationFillMode, YAnimationIterationCount, YAnimationName, YAnimationPlayState, YAnimationTimeline, YAnimationTimingFunction, YAspectRatio, YBackdropFilter, YBackfaceVisibility, YBackgroundAttachment, YBackgroundClip, YBackgroundColor, YBackgroundImage, YBackgroundOrigin, YBackgroundPositionX, YBackgroundPositionY, YBackgroundRepeat, YBackgroundSize, YBaselineShift, YBaselineSource, YBlockSize, YBorderBlockEndColor, YBorderBlockEndStyle, YBorderBlockEndWidth, YBorderBlockStartColor, YBorderBlockStartStyle, YBorderBlockStartWidth, YBorderBottomColor, YBorderBottomStyle, YBorderBottomWidth, YBorderCollapse, YBorderImageRepeat, YBorderImageSource, YBorderInlineEndColor, YBorderInlineEndStyle, YBorderInlineEndWidth, YBorderInlineStartColor, YBorderInlineStartStyle, YBorderInlineStartWidth, YBorderLeftColor, YBorderLeftStyle, YBorderLeftWidth, YBorderRightColor, YBorderRightStyle, YBorderRightWidth, YBorderTopColor, YBorderTopStyle, YBorderTopWidth, YBottom, YBoxShadow, YBoxSizing, YCSSWideKeyword, YCaptionSide, YCaretColor, YClear, YClipPath, YColor, YColorScheme, YColumnCount, YColumnGap, YColumnSpan, YColumnWidth, YContain, YContainerName, YContainerType, YContent, YCounterIncrement, YCounterReset, YCursor, YCustom, YDirection, YDisplay, YEmptyCells, YFilter, YFlexDirection, YFlexGrow, YFlexShrink, YFlexWrap, YFloat, YFontFamily, YFontLanguageOverride, YFontOpticalSizing, YFontSize, YFontStretch, YFontStyle, YFontSynthesisWeight, YFontVariantCaps, YFontVariationSettings, YFontWeight, YGridAutoColumns, YGridAutoFlow, YGridAutoRows, YGridColumnEnd, YGridColumnStart, YGridRowEnd, YGridRowStart, YGridTemplateAreas, YGridTemplateColumns, YGridTemplateRows, YHeight, YImageRendering, YInlineSize, YInsetBlockEnd, YInsetBlockStart, YInsetInlineEnd, YInsetInlineStart, YIsolation, YJustifyContent, YJustifyItems, YJustifySelf, YLeft, YLetterSpacing, YLineBreak, YLineHeight, YListStyleImage, YListStylePosition, YListStyleType, YMarginBlockEnd, YMarginBlockStart, YMarginBottom, YMarginInlineEnd, YMarginInlineStart, YMarginLeft, YMarginRight, YMarginTop, YMaskImage, YMaxBlockSize, YMaxHeight, YMaxInlineSize, YMaxWidth, YMinBlockSize, YMinHeight, YMinInlineSize, YMinWidth, YMixBlendMode, YObjectFit, YOffsetPath, YOpacity, YOrder, YOutlineColor, YOutlineOffset, YOutlineStyle, YOutlineWidth, YOverflowBlock, YOverflowClipMargin, YOverflowInline, YOverflowWrap, YOverflowX, YOverflowY, YPaddingBlockEnd, YPaddingBlockStart, YPaddingBottom, YPaddingInlineEnd, YPaddingInlineStart, YPaddingLeft, YPaddingRight, YPaddingTop, YPerspective, YPointerEvents, YPosition, YPositionArea, YPositionTryFallbacks, YQuotes, YRight, YRowGap, YServoOverflowClipBox, YServoTopLayer, YTableLayout, YTextAlign, YTextAlignLast, YTextDecorationColor, YTextDecorationLine, YTextDecorationStyle, YTextIndent, YTextJustify, YTextRendering, YTextShadow, YTextTransform, YTextWrapMode, YTop, YTransform, YTransformStyle, YTransitionBehavior, YTransitionDelay, YTransitionDuration, YTransitionProperty, YTransitionTimingFunction, YUnicodeBidi, YViewTransitionClass, YViewTransitionName, YVisibility, YWebkitTextSecurity, YWhiteSpaceCollapse, YWidth, YWillChange, YWithVariables, YWordBreak, YWordSpacing, YWritingMode, YXLang, YZIndex, YZoom, border_bottom_left_radius::YBorderBottomLeftRadius, border_bottom_right_radius::YBorderBottomRightRadius, border_end_end_radius::YBorderEndEndRadius, border_end_start_radius::YBorderEndStartRadius, border_image_outset::YBorderImageOutset, border_image_slice::YBorderImageSlice, border_image_width::YBorderImageWidth, border_spacing::YBorderSpacing, border_start_end_radius::YBorderStartEndRadius, border_start_start_radius::YBorderStartStartRadius, border_top_left_radius::YBorderTopLeftRadius, border_top_right_radius::YBorderTopRightRadius, clip::YClip, flex_basis::YFlexBasis, object_position::YObjectPosition, perspective_origin::YPerspectiveOrigin, rotate::YRotate, scale::YScale, text_overflow::YTextOverflow, time::YTime, transform_origin::YTransformOrigin, translate::YTranslate
 };
 
 pub struct YDeclaration {
@@ -1067,6 +837,7 @@ impl YDeclaration {
     let zoom_class = declarations_module.define_class("Zoom", ruby.class_object())?;
 
     let align_content_class = declarations_module.define_class("AlignContent", ruby.class_object())?;
+    align_content_class.define_method("value", method!(YAlignContent::value, 0))?;
 
     let justify_content_class = declarations_module.define_class("JustifyContent", ruby.class_object())?;
 
@@ -1075,6 +846,7 @@ impl YDeclaration {
     let flex_shrink_class = declarations_module.define_class("FlexShrink", ruby.class_object())?;
 
     let align_self_class = declarations_module.define_class("AlignSelf", ruby.class_object())?;
+    align_self_class.define_method("value", method!(YAlignSelf::value, 0))?;
 
     let justify_self_class = declarations_module.define_class("JustifySelf", ruby.class_object())?;
 
@@ -1103,12 +875,16 @@ impl YDeclaration {
     let border_top_style_class = declarations_module.define_class("BorderTopStyle", ruby.class_object())?;
 
     let animation_composition_class = declarations_module.define_class("AnimationComposition", ruby.class_object())?;
+    animation_composition_class.define_method("values", method!(YAnimationComposition::values, 0))?;
 
     let animation_delay_class = declarations_module.define_class("AnimationDelay", ruby.class_object())?;
+    animation_delay_class.define_method("values", method!(YAnimationDelay::values, 0))?;
 
     let animation_direction_class = declarations_module.define_class("AnimationDirection", ruby.class_object())?;
+    animation_direction_class.define_method("values", method!(YAnimationDirection::values, 0))?;
 
     let animation_duration_class = declarations_module.define_class("AnimationDuration", ruby.class_object())?;
+    animation_duration_class.define_method("values", method!(YAnimationDuration::values, 0))?;
 
     let animation_fill_mode_class = declarations_module.define_class("AnimationFillMode", ruby.class_object())?;
 
@@ -1361,6 +1137,15 @@ impl YDeclaration {
     let with_variables_class = declarations_module.define_class("WithVariables", ruby.class_object())?;
 
     let custom_class = declarations_module.define_class("Custom", ruby.class_object())?;
+
+    // helper classes
+    let time_class = declarations_module.define_class("Time", ruby.class_object())?;
+    time_class.define_method("seconds", method!(YTime::seconds, 0))?;
+    time_class.define_method("unit", method!(YTime::unit, 0))?;
+
+    let animation_duration_value_class = declarations_module.define_class("AnimationDurationValue", ruby.class_object())?;
+    animation_duration_value_class.define_method("kind", method!(YAnimationDurationValue::kind, 0))?;
+    animation_duration_value_class.define_method("time", method!(YAnimationDurationValue::time, 0))?;
 
     Ok(())
   }
