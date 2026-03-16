@@ -9,7 +9,10 @@ pub enum YRule {
     StyleRule(YStyleRule),
 
     #[magnus(class = "Yass::MediaRule")]
-    MediaRule(YMediaRule)
+    MediaRule(YMediaRule),
+
+    #[magnus(class = "Yass::UnimplementedRule")]
+    UnimplementedRule(YUnimplementedRule)
 }
 
 impl DataTypeFunctions for YRule {
@@ -36,3 +39,5 @@ impl YRule {
         }
     }
 }
+
+pub struct YUnimplementedRule { }

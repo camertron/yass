@@ -1,20 +1,20 @@
 use std::cell::RefCell;
-use magnus::{DataTypeFunctions, Error, RArray, Ruby, TypedData, gc, typed_data, value::Opaque};
-use style::stylesheets::{CssRule, Stylesheet};
+use magnus::{DataTypeFunctions, Error, RArray, Ruby, TypedData, gc, typed_data};
+use style::{shared_lock::SharedRwLock, stylesheets::{CssRule, Stylesheet}};
 
-use crate::rules::{YRule, YMediaRule, YStyleRule};
+use crate::{ruby_obj_list::RubyObjList, rules::{YMediaRule, YRule, YStyleRule, rule::YUnimplementedRule}};
 
 #[derive(TypedData)]
 #[magnus(class = "Yass::Stylesheet", mark)]
 pub struct YSheet {
     pub stylesheet: Stylesheet,
-    pub cached_rules: RefCell<Option<Vec<Opaque<typed_data::Obj<YRule>>>>>
+    pub cached_rules: RefCell<Option<RubyObjList<YRule, CssRule, Box<dyn Fn(&CssRule) -> YRule + Send>>>>
 }
 
 impl DataTypeFunctions for YSheet {
     fn mark(&self, marker: &gc::Marker) {
-        if let Some(rules) = self.cached_rules.borrow().as_ref() {
-            marker.mark_slice(rules.as_slice());
+        if let Some(cached_rules) = self.cached_rules.borrow().as_ref() {
+            cached_rules.mark(marker);
         }
     }
 }
@@ -24,46 +24,45 @@ impl YSheet {
         YSheet { stylesheet, cached_rules: RefCell::new(None) }
     }
 
-    pub fn rules(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Result<RArray, Error> {
-        let guard = rb_self.stylesheet.shared_lock.read();
-        let contents = rb_self.stylesheet.contents.read_with(&guard);
-        let rules = contents.rules.read_with(&guard);
-
-        if rb_self.cached_rules.borrow().is_none() {
-            let mut new_rules: Vec<Opaque<typed_data::Obj<YRule>>> = Vec::with_capacity(rules.0.len());
-
-            for rule in &rules.0 {
-                match rule {
-                    CssRule::Style(locked_rule) => {
-                        let yrule = YRule::StyleRule(
-                            YStyleRule::new(
-                                locked_rule.clone(),
-                                rb_self.stylesheet.shared_lock.clone()
-                            )
-                        );
-
-                        new_rules.push(ruby.obj_wrap(yrule).into());
-                    }
-
-                    CssRule::Media(media_rule) => {
-                        let yrule = YRule::MediaRule(YMediaRule { rule: media_rule.clone() });
-                        new_rules.push(ruby.obj_wrap(yrule).into());
-                    }
-
-                    _ => ()
-                }
+    fn make_rule(rule: &CssRule, lock: &SharedRwLock) -> YRule {
+        match rule {
+            CssRule::Style(locked_rule) => {
+                YRule::StyleRule(
+                    YStyleRule::new(
+                        locked_rule.clone(),
+                        lock.clone()
+                    )
+                )
             }
 
-            *rb_self.cached_rules.borrow_mut() = Some(new_rules);
+            CssRule::Media(media_rule) => {
+                YRule::MediaRule(YMediaRule { rule: media_rule.clone() })
+            }
+
+            _ => {
+                YRule::UnimplementedRule(YUnimplementedRule {})
+            }
+        }
+    }
+
+    pub fn rules(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Result<RArray, Error> {
+        if rb_self.cached_rules.borrow().is_none() {
+            let guard = rb_self.stylesheet.shared_lock.read();
+            let contents = rb_self.stylesheet.contents.read_with(&guard);
+            let rules = contents.rules.read_with(&guard);
+            let shared_lock = rb_self.stylesheet.shared_lock.clone();
+            let transform: Box<dyn Fn(&CssRule) -> YRule + Send> = Box::new(move |rule| {
+                Self::make_rule(rule, &shared_lock)
+            });
+
+            let obj_list = RubyObjList::new(
+                rules.0.to_vec(),
+                transform
+            );
+
+            *rb_self.cached_rules.borrow_mut() = Some(obj_list);
         }
 
-        let cached_rules = rb_self.cached_rules.borrow();
-        let result = ruby.ary_new_capa(cached_rules.as_ref().unwrap().len());
-
-        for rs in cached_rules.as_ref().unwrap() {
-            result.push(ruby.get_inner(*rs))?;
-        }
-
-        Ok(result)
+        rb_self.cached_rules.borrow().as_ref().unwrap().to_a(ruby)
     }
 }

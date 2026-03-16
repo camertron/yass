@@ -4,7 +4,8 @@ use magnus::{DataTypeFunctions, Error, RArray, Ruby, TypedData, gc, typed_data, 
 use selectors::{attr::{AttrSelectorOperator, ParsedCaseSensitivity}, parser::{Component, Selector}};
 use style::selector_parser::SelectorImpl;
 
-use crate::selectors::{YAttributeInNoNamespace,
+use crate::selectors::{
+    YAttributeInNoNamespace,
     YAttributeInNoNamespaceExists,
     YAttributeOther,
     YClass,
