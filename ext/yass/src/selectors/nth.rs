@@ -54,8 +54,7 @@ impl YNth {
 impl DataTypeFunctions for YNth {
     fn mark(&self, marker: &gc::Marker) {
         if let Some(an_plus_b) = self.cached_an_plus_b.borrow().as_ref() {
-            let ruby = Ruby::get().unwrap();
-            marker.mark(an_plus_b.get_inner_with(&ruby));
+            marker.mark(*an_plus_b);
         }
     }
 }

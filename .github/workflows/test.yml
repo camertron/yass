@@ -1,4 +1,4 @@
-name: Ruby
+name: Test
 
 on:
   push:
@@ -10,11 +10,14 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Ruby ${{ matrix.ruby }}
+    name: Ruby ${{ matrix.ruby-version }}
     strategy:
       matrix:
-        ruby:
-          - '3.4.3'
+        ruby-version:
+          - '3.2'
+          - '3.3'
+          - '3.4'
+          - '4.0'
 
     steps:
       - uses: actions/checkout@v4
@@ -23,9 +26,11 @@ jobs:
       - name: Set up Ruby & Rust
         uses: oxidize-rb/actions/setup-ruby-and-rust@v1
         with:
-          ruby-version: ${{ matrix.ruby }}
+          ruby-version: ${{ matrix.ruby-version }}
           bundler-cache: true
           cargo-cache: true
           rubygems: '3.6.7'
-      - name: Run the default task
-        run: bundle exec rake
+      - name: Compile
+        run: bundle exec rake compile
+      - name: Test
+        run: bundle exec rake spec

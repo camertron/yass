@@ -11,7 +11,7 @@ use crate::selectors::{YNth, YSelectorList};
 pub struct YNthOf {
     nth_of_selector_data: NthOfSelectorData<SelectorImpl>,
     cached_nth: RefCell<Option<Opaque<typed_data::Obj<YNth>>>>,
-    cached_selectors: RefCell<Option<YSelectorList>>
+    cached_selectors: YSelectorList
 }
 
 impl YNthOf {
@@ -19,7 +19,7 @@ impl YNthOf {
         YNthOf {
             nth_of_selector_data,
             cached_nth: RefCell::new(None),
-            cached_selectors: RefCell::new(None)
+            cached_selectors: YSelectorList::empty()
         }
     }
 
@@ -34,28 +34,20 @@ impl YNthOf {
     }
 
     pub fn selectors(&self, ruby: &Ruby) -> Result<RArray, Error> {
-        if self.cached_selectors.borrow().is_none() {
-            *self.cached_selectors.borrow_mut() = Some(
-                YSelectorList::new(
-                    self.nth_of_selector_data.selectors(),
-                    ruby
-                )
-            );
+        if self.cached_selectors.is_empty() {
+            self.cached_selectors.add_all(self.nth_of_selector_data.selectors().to_vec(), ruby);
         }
 
-        self.cached_selectors.borrow().as_ref().unwrap().to_a(ruby)
+        self.cached_selectors.to_a(ruby)
     }
 }
 
 impl DataTypeFunctions for YNthOf {
     fn mark(&self, marker: &gc::Marker) {
         if let Some(nth) = self.cached_nth.borrow().as_ref() {
-            let ruby = Ruby::get().unwrap();
-            marker.mark(nth.get_inner_with(&ruby));
+            marker.mark(*nth);
         }
 
-        if let Some(selectors) = self.cached_selectors.borrow().as_ref() {
-            selectors.mark(marker);
-        }
+        self.cached_selectors.mark(marker);
     }
 }

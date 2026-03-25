@@ -11,8 +11,8 @@ pub struct YIs {
 }
 
 impl YIs {
-    pub fn new(selectors: SelectorList<SelectorImpl>, ruby: &Ruby) -> Self {
-        Self { selectors: YSelectorList::new(selectors.slice(), ruby) }
+    pub fn new(selectors: SelectorList<SelectorImpl>) -> Self {
+        Self { selectors: YSelectorList::new(selectors.slice()) }
     }
 
     pub fn selectors(&self, ruby: &Ruby) -> Result<RArray, Error> {

@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    yass (0.1.0)
-      rb_sys (~> 0.9.91)
+    yass-css (0.1.0)
+      rb_sys (~> 0.9.124)
 
 GEM
   remote: https://rubygems.org/
@@ -52,7 +52,7 @@ GEM
     tsort (0.2.0)
 
 PLATFORMS
-  arm64-darwin-23
+  arm64-darwin
   ruby
 
 DEPENDENCIES
@@ -60,7 +60,7 @@ DEPENDENCIES
   rake (~> 13.0)
   rake-compiler
   rspec (~> 3.0)
-  yass!
+  yass-css!
 
 BUNDLED WITH
    2.7.2

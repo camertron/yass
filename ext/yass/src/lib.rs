@@ -1,9 +1,10 @@
-mod rules;
-mod sheet;
-mod selectors;
-mod utils;
+mod cached_value;
 mod declarations;
-mod ruby_obj_list;
+mod rules;
+mod selectors;
+mod sheet;
+mod utils;
+mod value_list;
 
 use magnus::{Error, Ruby, function, method, prelude::*};
 use style::context::QuirksMode;
@@ -13,7 +14,6 @@ use style::servo_arc::Arc;
 use style::stylesheets::{AllowImportRules, Origin, Stylesheet, UrlExtraData};
 use url::Url;
 
-use crate::declarations::{YAlignItems, YAlignmentBaseline, YDeclaration};
 use crate::rules::YRule;
 use crate::selectors::{YAnPlusB, YRelativeSelector, YSelector, YSelectorChild, YSpecificNamespaceConstraint};
 use crate::sheet::YSheet;
@@ -193,7 +193,7 @@ fn init(ruby: &Ruby) -> Result<(), Error> {
     let relative_selector_anchor_class = selector_class.define_class("RelativeSelectorAnchor", selector_child_class)?;
     relative_selector_anchor_class.define_method("kind", method!(YSelectorChild::kind, 0))?;
 
-    YDeclaration::init(ruby, &yass_module)?;
+    declarations::init(ruby, &yass_module)?;
 
     Ok(())
 }
