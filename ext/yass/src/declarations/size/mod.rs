@@ -35,7 +35,7 @@ pub fn make_size(size: Size<NonNegative<LengthPercentage>>, ruby: &Ruby) -> Valu
     }
 }
 
-fn length_percentage_to_value(length_percentage: LengthPercentage, ruby: &Ruby) -> Value {
+pub fn length_percentage_to_value(length_percentage: LengthPercentage, ruby: &Ruby) -> Value {
     match length_percentage {
         LengthPercentage::Length(no_calc_length) => {
             YLength::make(no_calc_length, ruby)

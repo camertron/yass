@@ -2,14 +2,14 @@ use std::cell::RefCell;
 
 use magnus::{Error, RArray, Ruby, Value, gc, value::Opaque};
 
-pub struct ValueList<T, C = (), F = fn(&T, &Option<C>, &Ruby) -> Value> {
+pub struct CachedValueList<T, C = (), F = fn(&T, &Option<C>, &Ruby) -> Value> {
     values: Vec<T>,
     context: Option<C>,
     transform: F,
     cached_values: RefCell<Option<Vec<Opaque<Value>>>>
 }
 
-impl<T, C, F> ValueList<T, C, F> where F: Fn(&T, &Option<C>, &Ruby) -> Value {
+impl<T, C, F> CachedValueList<T, C, F> where F: Fn(&T, &Option<C>, &Ruby) -> Value {
     pub fn new(values: Vec<T>, cb: F) -> Self {
         Self { values, context: None, transform: cb, cached_values: RefCell::new(None) }
     }

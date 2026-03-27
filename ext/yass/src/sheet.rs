@@ -1,13 +1,13 @@
 use magnus::{DataTypeFunctions, Error, IntoValue, RArray, Ruby, TypedData, gc, typed_data};
 use style::{shared_lock::SharedRwLock, stylesheets::{CssRule, Stylesheet}};
 
-use crate::{rules::{YMediaRule, YRule, YStyleRule, rule::YUnimplementedRule}, value_list::ValueList};
+use crate::{rules::{YMediaRule, YRule, YStyleRule, rule::YUnimplementedRule}, cached_value_list::CachedValueList};
 
 #[derive(TypedData)]
 #[magnus(class = "Yass::Stylesheet", mark)]
 pub struct YSheet {
     pub stylesheet: Stylesheet,
-    pub cached_rules: ValueList<CssRule, SharedRwLock>
+    pub cached_rules: CachedValueList<CssRule, SharedRwLock>
 }
 
 impl DataTypeFunctions for YSheet {
@@ -20,7 +20,7 @@ impl YSheet {
     pub fn new(stylesheet: Stylesheet) -> Self {
         YSheet {
             stylesheet: stylesheet.clone(),
-            cached_rules: ValueList::empty(Some(stylesheet.shared_lock), |rule, shared_lock, ruby| {
+            cached_rules: CachedValueList::empty(Some(stylesheet.shared_lock), |rule, shared_lock, ruby| {
                 Self::make_rule(rule, &shared_lock.as_ref().unwrap()).into_value_with(ruby)
             })
         }

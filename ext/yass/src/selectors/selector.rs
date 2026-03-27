@@ -34,13 +34,13 @@ use crate::{selectors::{
     YSelectorChild,
     YSlotted,
     YWhere
-}, value_list::ValueList};
+}, cached_value_list::CachedValueList};
 
 #[derive(TypedData)]
 #[magnus(class = "Yass::Selector", mark)]
 pub struct YSelector {
     selector: Selector<SelectorImpl>,
-    cached_children: ValueList<Component<SelectorImpl>>
+    cached_children: CachedValueList<Component<SelectorImpl>>
 }
 
 impl DataTypeFunctions for YSelector {
@@ -53,7 +53,7 @@ impl YSelector {
     pub fn new(selector: Selector<SelectorImpl>) -> Self {
         Self {
             selector,
-            cached_children: ValueList::new(vec![], |component, _ctx, ruby| {
+            cached_children: CachedValueList::new(vec![], |component, _ctx, ruby| {
                 YSelector::wrap_child(component, ruby).into_value_with(ruby)
             })
         }

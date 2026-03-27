@@ -2,16 +2,16 @@ use magnus::{Error, IntoValue, RArray, Ruby, gc};
 use selectors::parser::Selector;
 use style::selector_parser::SelectorImpl;
 
-use crate::{selectors::YSelector, value_list::ValueList};
+use crate::{selectors::YSelector, cached_value_list::CachedValueList};
 
 pub struct YSelectorList {
-    pub selectors: ValueList<Selector<SelectorImpl>>
+    pub selectors: CachedValueList<Selector<SelectorImpl>>
 }
 
 impl YSelectorList {
     pub fn new(selector_list: &[Selector<SelectorImpl>]) -> Self {
         Self {
-            selectors: ValueList::new(selector_list.to_vec(), |selector, _ctx, ruby| {
+            selectors: CachedValueList::new(selector_list.to_vec(), |selector, _ctx, ruby| {
                 YSelector::new(selector.clone()).into_value_with(ruby)
             })
         }
@@ -19,7 +19,7 @@ impl YSelectorList {
 
     pub fn empty() -> Self {
         Self {
-            selectors: ValueList::new(vec![], |selector, _ctx, ruby| {
+            selectors: CachedValueList::new(vec![], |selector, _ctx, ruby| {
                 YSelector::new(selector.clone()).into_value_with(ruby)
             })
         }

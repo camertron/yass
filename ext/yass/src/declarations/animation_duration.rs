@@ -1,20 +1,20 @@
 use std::cell::RefCell;
 
-use magnus::{DataTypeFunctions, Error, IntoValue, RArray, Ruby, TypedData, Value, gc, typed_data, value::{Id, InnerValue, Opaque, ReprValue}};
+use magnus::{DataTypeFunctions, Error, IntoValue, RArray, Ruby, TypedData, Value, gc, typed_data, value::{Id, Opaque, ReprValue}};
 use style::{properties::longhands::animation_duration::SpecifiedValue, values::{generics::animation::AnimationDuration, specified::Time}};
 
-use crate::{declarations::time::YTime, value_list::ValueList};
+use crate::{declarations::time::YTime, cached_value_list::CachedValueList};
 
 #[derive(TypedData)]
 #[magnus(class = "Yass::Declarations::AnimationDuration", mark)]
 pub struct YAnimationDuration {
-    cached_values: ValueList<AnimationDuration<Time>>
+    cached_values: CachedValueList<AnimationDuration<Time>>
 }
 
 impl YAnimationDuration {
     pub fn new(specified_value: SpecifiedValue) -> Self {
         Self {
-            cached_values: ValueList::new(specified_value.0.to_vec(), |value, _ctx, ruby| {
+            cached_values: CachedValueList::new(specified_value.0.to_vec(), |value, _ctx, ruby| {
                 YAnimationDurationValue::new(value.clone()).into_value_with(ruby)
             })
         }

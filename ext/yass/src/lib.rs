@@ -4,7 +4,7 @@ mod rules;
 mod selectors;
 mod sheet;
 mod utils;
-mod value_list;
+mod cached_value_list;
 
 use magnus::{Error, Ruby, function, method, prelude::*};
 use style::context::QuirksMode;

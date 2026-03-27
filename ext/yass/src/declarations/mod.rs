@@ -4,6 +4,7 @@ pub mod align_items;
 pub mod align_self;
 pub mod alignment_baseline;
 pub mod angle;
+pub mod animation;
 pub mod animation_composition;
 pub mod animation_delay;
 pub mod animation_direction;

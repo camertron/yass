@@ -1,7 +1,7 @@
 use magnus::{Error, Module, RModule, Ruby, method};
 
 use crate::declarations::{
-    YAlignContent, YAlignItems, YAlignSelf, YAlignmentBaseline, YAnimationComposition, YAnimationDelay, YAnimationDirection, YAnimationDuration, YAnimationDurationValue, YAnimationFillMode, YAnimationIterationCount, YAnimationName, YAnimationPlayState, YWidth, angle::YAngle, calc, channel_keyword::YChannelKeyword, length::{YAbsoluteLength, YCharacterWidthLength, YContainerRelativeLength, YFontRelativeLength, YViewportPercentageLength}, number::YNumber, percentage::YPercentage, resolution::YResolution, size, time::YTime
+    YAlignContent, YAlignItems, YAlignSelf, YAlignmentBaseline, YAnimationComposition, YAnimationDelay, YAnimationDirection, YAnimationDuration, YAnimationDurationValue, YAnimationFillMode, YAnimationIterationCount, YAnimationName, YAnimationPlayState, YAnimationRangeEnd, YAnimationRangeStart, YAnimationTimeline, YWidth, angle::YAngle, animation, calc, channel_keyword::YChannelKeyword, length::{YAbsoluteLength, YCharacterWidthLength, YContainerRelativeLength, YFontRelativeLength, YViewportPercentageLength}, number::YNumber, percentage::YPercentage, resolution::YResolution, size, time::YTime
 };
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
@@ -200,7 +200,14 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let animation_play_state_class = declarations_module.define_class("AnimationPlayState", ruby.class_object())?;
     animation_play_state_class.define_method("values", method!(YAnimationPlayState::values, 0))?;
 
+    let animation_range_end_class = declarations_module.define_class("AnimationRangeEnd", ruby.class_object())?;
+    animation_range_end_class.define_method("values", method!(YAnimationRangeEnd::values, 0))?;
+
+    let animation_range_start_class = declarations_module.define_class("AnimationRangeStart", ruby.class_object())?;
+    animation_range_start_class.define_method("values", method!(YAnimationRangeStart::values, 0))?;
+
     let animation_timeline_class = declarations_module.define_class("AnimationTimeline", ruby.class_object())?;
+    animation_timeline_class.define_method("values", method!(YAnimationTimeline::values, 0))?;
 
     let animation_timing_function_class = declarations_module.define_class("AnimationTimingFunction", ruby.class_object())?;
 
@@ -487,6 +494,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let number_class = declarations_module.define_class("Number", ruby.class_object())?;
     number_class.define_method("value", method!(YNumber::value, 0))?;
 
+    animation::init(ruby, yass_module, &declarations_module)?;
     calc::init(ruby, yass_module, &declarations_module)?;
     size::init(ruby, yass_module, &declarations_module)?;
 

@@ -1,19 +1,19 @@
 use magnus::{DataTypeFunctions, Error, RArray, Ruby, TypedData, gc, typed_data, value::Id};
 use style::{OwnedSlice, values::{generics::calc::MinMaxOp, specified::calc::CalcNode}};
 
-use crate::{declarations::calc::YCalc, value_list::ValueList};
+use crate::{declarations::calc::YCalc, cached_value_list::CachedValueList};
 
 #[derive(TypedData)]
 #[magnus(class = "Yass::Declarations::Calc::MinMax", mark)]
 pub struct YMinMax {
     op: MinMaxOp,
-    children: ValueList<CalcNode>
+    children: CachedValueList<CalcNode>
 }
 
 impl YMinMax {
     pub fn new(children: &OwnedSlice<CalcNode>, op: MinMaxOp) -> Self {
         Self {
-            children: ValueList::new(children.to_vec(), |calc_node, _ctx, ruby| {
+            children: CachedValueList::new(children.to_vec(), |calc_node, _ctx, ruby| {
                 YCalc::make_node(calc_node, ruby)
             }),
 
