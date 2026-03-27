@@ -4,7 +4,7 @@ use style::values::{generics::{Optional, animation::AnimationRangeValue}, specif
 use crate::{cached_value::CachedValue, declarations::size::length_percentage_to_value};
 
 #[derive(TypedData)]
-#[magnus(class = "Yass::Declarations::AnimationRangeValue")]
+#[magnus(class = "Yass::Declarations::AnimationRangeValue", mark)]
 pub struct YRangeValue {
     length_percentage: CachedValue<Optional<LengthPercentage>>,
     name: TimelineRangeName

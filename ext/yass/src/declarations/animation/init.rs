@@ -1,8 +1,8 @@
 use magnus::{Error, Module, RModule, Ruby, method};
 
-use crate::declarations::animation::{inset::YInset, range_value::YRangeValue, scroll_axis::YScrollAxis, scroll_function::YScrollFunction, scroller::YScroller, timeline_name::YTimelineName, view_function::YViewFunction};
+use crate::declarations::animation::{inset::YInset, range_value::YRangeValue, scroll_axis::YScrollAxis, scroll_function::YScrollFunction, scroller::YScroller, timeline_name::YTimelineName, timing_function, view_function::YViewFunction};
 
-pub fn init(ruby: &Ruby, _yass_module: &RModule, declarations_module: &RModule) -> Result<(), Error> {
+pub fn init(ruby: &Ruby, yass_module: &RModule, declarations_module: &RModule) -> Result<(), Error> {
     let animation_module = declarations_module.define_module("Animation")?;
 
     let _auto_class = animation_module.define_class("Auto", ruby.class_object())?;
@@ -33,6 +33,8 @@ pub fn init(ruby: &Ruby, _yass_module: &RModule, declarations_module: &RModule) 
     let view_function_class = animation_module.define_class("ViewFunction", ruby.class_object())?;
     view_function_class.define_method("scroll_axis", method!(YViewFunction::scroll_axis, 0))?;
     view_function_class.define_method("inset", method!(YViewFunction::inset, 0))?;
+
+    timing_function::init(ruby, yass_module, declarations_module, &animation_module);
 
     Ok(())
 }

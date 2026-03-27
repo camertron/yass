@@ -1,7 +1,7 @@
 use magnus::{Error, Module, RModule, Ruby, method};
 
 use crate::declarations::{
-    YAlignContent, YAlignItems, YAlignSelf, YAlignmentBaseline, YAnimationComposition, YAnimationDelay, YAnimationDirection, YAnimationDuration, YAnimationDurationValue, YAnimationFillMode, YAnimationIterationCount, YAnimationName, YAnimationPlayState, YAnimationRangeEnd, YAnimationRangeStart, YAnimationTimeline, YWidth, angle::YAngle, animation, calc, channel_keyword::YChannelKeyword, length::{YAbsoluteLength, YCharacterWidthLength, YContainerRelativeLength, YFontRelativeLength, YViewportPercentageLength}, number::YNumber, percentage::YPercentage, resolution::YResolution, size, time::YTime
+    YAlignContent, YAlignItems, YAlignSelf, YAlignmentBaseline, YAnimationComposition, YAnimationDelay, YAnimationDirection, YAnimationDuration, YAnimationDurationValue, YAnimationFillMode, YAnimationIterationCount, YAnimationName, YAnimationPlayState, YAnimationRangeEnd, YAnimationRangeStart, YAnimationTimeline, YAnimationTimingFunction, YWidth, angle::YAngle, animation, calc, channel_keyword::YChannelKeyword, length::{YAbsoluteLength, YCharacterWidthLength, YContainerRelativeLength, YFontRelativeLength, YViewportPercentageLength}, number::YNumber, percentage::YPercentage, resolution::YResolution, size, time::YTime
 };
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
@@ -210,6 +210,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     animation_timeline_class.define_method("values", method!(YAnimationTimeline::values, 0))?;
 
     let animation_timing_function_class = declarations_module.define_class("AnimationTimingFunction", ruby.class_object())?;
+    animation_timing_function_class.define_method("values", method!(YAnimationTimingFunction::values, 0))?;
 
     let backdrop_filter_class = declarations_module.define_class("BackdropFilter", ruby.class_object())?;
 

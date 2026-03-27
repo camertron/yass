@@ -7,6 +7,7 @@ pub mod scroll_axis;
 pub mod scroll_function;
 pub mod scroller;
 pub mod timeline_name;
+pub mod timing_function;
 pub mod view_function;
 
 pub use init::*;
