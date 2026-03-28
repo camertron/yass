@@ -34,7 +34,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule, declarations_module: &RModule) -
     view_function_class.define_method("scroll_axis", method!(YViewFunction::scroll_axis, 0))?;
     view_function_class.define_method("inset", method!(YViewFunction::inset, 0))?;
 
-    timing_function::init(ruby, yass_module, declarations_module, &animation_module);
+    timing_function::init::init(ruby, yass_module, declarations_module, &animation_module);
 
     Ok(())
 }

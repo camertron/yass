@@ -9,5 +9,3 @@ pub mod scroller;
 pub mod timeline_name;
 pub mod timing_function;
 pub mod view_function;
-
-pub use init::*;

@@ -1,7 +1,7 @@
 use magnus::{Error, Module, RModule, Ruby, method};
 
 use crate::declarations::{
-    YAlignContent, YAlignItems, YAlignSelf, YAlignmentBaseline, YAnimationComposition, YAnimationDelay, YAnimationDirection, YAnimationDuration, YAnimationDurationValue, YAnimationFillMode, YAnimationIterationCount, YAnimationName, YAnimationPlayState, YAnimationRangeEnd, YAnimationRangeStart, YAnimationTimeline, YAnimationTimingFunction, YAspectRatio, YWidth, angle::YAngle, animation, calc, channel_keyword::YChannelKeyword, length::{YAbsoluteLength, YCharacterWidthLength, YContainerRelativeLength, YFontRelativeLength, YViewportPercentageLength}, number::YNumber, percentage::YPercentage, resolution::YResolution, size, time::YTime
+    YAlignContent, YAlignItems, YAlignSelf, YAlignmentBaseline, YAnimationComposition, YAnimationDelay, YAnimationDirection, YAnimationDuration, YAnimationDurationValue, YAnimationFillMode, YAnimationIterationCount, YAnimationName, YAnimationPlayState, YAnimationRangeEnd, YAnimationRangeStart, YAnimationTimeline, YAnimationTimingFunction, YAspectRatio, YBackdropFilter, YWidth, angle::YAngle, animation, calc, channel_keyword::YChannelKeyword, filter, length::{YAbsoluteLength, YCharacterWidthLength, YContainerRelativeLength, YFontRelativeLength, YViewportPercentageLength}, number::YNumber, percentage::YPercentage, resolution::YResolution, size, time::YTime
 };
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
@@ -217,6 +217,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     animation_timing_function_class.define_method("values", method!(YAnimationTimingFunction::values, 0))?;
 
     let backdrop_filter_class = declarations_module.define_class("BackdropFilter", ruby.class_object())?;
+    backdrop_filter_class.define_method("values", method!(YBackdropFilter::values, 0))?;
 
     let background_attachment_class = declarations_module.define_class("BackgroundAttachment", ruby.class_object())?;
 
@@ -260,8 +261,6 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let counter_reset_class = declarations_module.define_class("CounterReset", ruby.class_object())?;
 
     let cursor_class = declarations_module.define_class("Cursor", ruby.class_object())?;
-
-    let filter_class = declarations_module.define_class("Filter", ruby.class_object())?;
 
     let font_family_class = declarations_module.define_class("FontFamily", ruby.class_object())?;
 
@@ -499,9 +498,10 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let number_class = declarations_module.define_class("Number", ruby.class_object())?;
     number_class.define_method("value", method!(YNumber::value, 0))?;
 
-    animation::init(ruby, yass_module, &declarations_module)?;
-    calc::init(ruby, yass_module, &declarations_module)?;
-    size::init(ruby, yass_module, &declarations_module)?;
+    animation::init::init(ruby, yass_module, &declarations_module)?;
+    calc::init::init(ruby, yass_module, &declarations_module)?;
+    filter::init::init(ruby, yass_module, &declarations_module)?;
+    size::init::init(ruby, yass_module, &declarations_module)?;
 
     Ok(())
 }

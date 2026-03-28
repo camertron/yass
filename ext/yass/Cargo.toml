@@ -15,6 +15,7 @@ stylo = { version = "0.13.0" }
 stylo_traits = { version = "0.13.0" }
 selectors = { version = "0.36.1" }
 url = { version = "2.5" }
+stylo_static_prefs = "0.13.0"
 
 [profile.release]
 lto = true         # Enable Link-Time Optimization

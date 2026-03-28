@@ -6,8 +6,6 @@ use crate::{cached_value::CachedValue, declarations::{calc::YCalc, length::YLeng
 pub mod anchor_size_function;
 pub mod init;
 
-pub use init::*;
-
 pub fn make_size(size: Size<NonNegative<LengthPercentage>>, ruby: &Ruby) -> Value {
     match size {
         Size::LengthPercentage(percentage) => {

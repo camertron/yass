@@ -43,6 +43,12 @@ fn parse(css: String) -> YSheet {
 
 #[magnus::init]
 fn init(ruby: &Ruby) -> Result<(), Error> {
+    <bool as stylo_static_prefs::Preference>::set("layout.unimplemented", true);
+    <bool as stylo_static_prefs::Preference>::set(
+        "layout.css.backdrop-filter.enabled",
+        true,
+    );
+
     let yass_module = ruby.define_module("Yass")?;
 
     let parser_module = yass_module.define_module("Parser")?;
@@ -193,7 +199,7 @@ fn init(ruby: &Ruby) -> Result<(), Error> {
     let relative_selector_anchor_class = selector_class.define_class("RelativeSelectorAnchor", selector_child_class)?;
     relative_selector_anchor_class.define_method("kind", method!(YSelectorChild::kind, 0))?;
 
-    declarations::init(ruby, &yass_module)?;
+    declarations::init::init(ruby, &yass_module)?;
 
     Ok(())
 }

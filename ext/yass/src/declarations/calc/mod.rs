@@ -20,8 +20,6 @@ pub mod round;
 pub mod sign;
 pub mod sum;
 
-pub use init::*;
-
 #[derive(TypedData)]
 #[magnus(class = "Yass::Declarations::Calc", mark)]
 pub struct YCalc {
