@@ -1,7 +1,7 @@
 use magnus::{Error, Module, RModule, Ruby, method};
 
 use crate::declarations::{
-    YAlignContent, YAlignItems, YAlignSelf, YAlignmentBaseline, YAnimationComposition, YAnimationDelay, YAnimationDirection, YAnimationDuration, YAnimationDurationValue, YAnimationFillMode, YAnimationIterationCount, YAnimationName, YAnimationPlayState, YAnimationRangeEnd, YAnimationRangeStart, YAnimationTimeline, YAnimationTimingFunction, YAspectRatio, YBackdropFilter, YBackfaceVisibility, YBackgroundAttachment, YWidth, angle::YAngle, animation, calc, channel_keyword::YChannelKeyword, filter, length::{YAbsoluteLength, YCharacterWidthLength, YContainerRelativeLength, YFontRelativeLength, YViewportPercentageLength}, number::YNumber, percentage::YPercentage, resolution::YResolution, size, time::YTime
+    YAlignContent, YAlignItems, YAlignSelf, YAlignmentBaseline, YAnimationComposition, YAnimationDelay, YAnimationDirection, YAnimationDuration, YAnimationDurationValue, YAnimationFillMode, YAnimationIterationCount, YAnimationName, YAnimationPlayState, YAnimationRangeEnd, YAnimationRangeStart, YAnimationTimeline, YAnimationTimingFunction, YAspectRatio, YBackdropFilter, YBackfaceVisibility, YBackgroundAttachment, YBackgroundClip, YWidth, angle::YAngle, animation, calc, channel_keyword::YChannelKeyword, filter, length::{YAbsoluteLength, YCharacterWidthLength, YContainerRelativeLength, YFontRelativeLength, YViewportPercentageLength}, number::YNumber, percentage::YPercentage, resolution::YResolution, size, time::YTime
 };
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
@@ -224,6 +224,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     background_attachment_class.define_method("values", method!(YBackgroundAttachment::values, 0))?;
 
     let background_clip_class = declarations_module.define_class("BackgroundClip", ruby.class_object())?;
+    background_clip_class.define_method("values", method!(YBackgroundClip::values, 0))?;
 
     let background_image_class = declarations_module.define_class("BackgroundImage", ruby.class_object())?;
 
