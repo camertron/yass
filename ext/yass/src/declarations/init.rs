@@ -1,7 +1,7 @@
 use magnus::{Error, Module, RModule, Ruby, method};
 
 use crate::declarations::{
-    YAlignContent, YAlignItems, YAlignSelf, YAlignmentBaseline, YAnimationComposition, YAnimationDelay, YAnimationDirection, YAnimationDuration, YAnimationDurationValue, YAnimationFillMode, YAnimationIterationCount, YAnimationName, YAnimationPlayState, YAnimationRangeEnd, YAnimationRangeStart, YAnimationTimeline, YAnimationTimingFunction, YAspectRatio, YBackdropFilter, YWidth, angle::YAngle, animation, calc, channel_keyword::YChannelKeyword, filter, length::{YAbsoluteLength, YCharacterWidthLength, YContainerRelativeLength, YFontRelativeLength, YViewportPercentageLength}, number::YNumber, percentage::YPercentage, resolution::YResolution, size, time::YTime
+    YAlignContent, YAlignItems, YAlignSelf, YAlignmentBaseline, YAnimationComposition, YAnimationDelay, YAnimationDirection, YAnimationDuration, YAnimationDurationValue, YAnimationFillMode, YAnimationIterationCount, YAnimationName, YAnimationPlayState, YAnimationRangeEnd, YAnimationRangeStart, YAnimationTimeline, YAnimationTimingFunction, YAspectRatio, YBackdropFilter, YBackfaceVisibility, YWidth, angle::YAngle, animation, calc, channel_keyword::YChannelKeyword, filter, length::{YAbsoluteLength, YCharacterWidthLength, YContainerRelativeLength, YFontRelativeLength, YViewportPercentageLength}, number::YNumber, percentage::YPercentage, resolution::YResolution, size, time::YTime
 };
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
@@ -25,6 +25,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     aspect_ratio_class.define_method("denominator", method!(YAspectRatio::denominator, 0))?;
 
     let backface_visibility_class = declarations_module.define_class("BackfaceVisibility", ruby.class_object())?;
+    backface_visibility_class.define_method("value", method!(YBackfaceVisibility::value, 0))?;
 
     let baseline_source_class = declarations_module.define_class("BaselineSource", ruby.class_object())?;
 
