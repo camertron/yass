@@ -1,7 +1,7 @@
 use magnus::{Error, Module, RModule, Ruby, method};
 
 use crate::declarations::{
-    YAlignContent, YAlignItems, YAlignSelf, YAlignmentBaseline, YAnimationComposition, YAnimationDelay, YAnimationDirection, YAnimationDuration, YAnimationDurationValue, YAnimationFillMode, YAnimationIterationCount, YAnimationName, YAnimationPlayState, YAnimationRangeEnd, YAnimationRangeStart, YAnimationTimeline, YAnimationTimingFunction, YWidth, angle::YAngle, animation, calc, channel_keyword::YChannelKeyword, length::{YAbsoluteLength, YCharacterWidthLength, YContainerRelativeLength, YFontRelativeLength, YViewportPercentageLength}, number::YNumber, percentage::YPercentage, resolution::YResolution, size, time::YTime
+    YAlignContent, YAlignItems, YAlignSelf, YAlignmentBaseline, YAnimationComposition, YAnimationDelay, YAnimationDirection, YAnimationDuration, YAnimationDurationValue, YAnimationFillMode, YAnimationIterationCount, YAnimationName, YAnimationPlayState, YAnimationRangeEnd, YAnimationRangeStart, YAnimationTimeline, YAnimationTimingFunction, YAspectRatio, YWidth, angle::YAngle, animation, calc, channel_keyword::YChannelKeyword, length::{YAbsoluteLength, YCharacterWidthLength, YContainerRelativeLength, YFontRelativeLength, YViewportPercentageLength}, number::YNumber, percentage::YPercentage, resolution::YResolution, size, time::YTime
 };
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
@@ -19,6 +19,10 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     angle_class.define_method("unit", method!(YAngle::unit, 0))?;
 
     let aspect_ratio_class = declarations_module.define_class("AspectRatio", ruby.class_object())?;
+    aspect_ratio_class.define_method("auto?", method!(YAspectRatio::is_auto, 0))?;
+    aspect_ratio_class.define_method("ratio?", method!(YAspectRatio::has_ratio, 0))?;
+    aspect_ratio_class.define_method("numerator", method!(YAspectRatio::numerator, 0))?;
+    aspect_ratio_class.define_method("denominator", method!(YAspectRatio::denominator, 0))?;
 
     let backface_visibility_class = declarations_module.define_class("BackfaceVisibility", ruby.class_object())?;
 

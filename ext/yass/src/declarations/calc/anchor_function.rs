@@ -88,8 +88,8 @@ impl YAnchorSideKeyword {
             AnchorSideKeyword::Bottom => ruby.intern("bottom"),
             AnchorSideKeyword::Start => ruby.intern("start"),
             AnchorSideKeyword::End => ruby.intern("end"),
-            AnchorSideKeyword::SelfStart => ruby.intern("selfstart"),
-            AnchorSideKeyword::SelfEnd => ruby.intern("selfend"),
+            AnchorSideKeyword::SelfStart => ruby.intern("self_start"),
+            AnchorSideKeyword::SelfEnd => ruby.intern("self_end"),
             AnchorSideKeyword::Center => ruby.intern("center"),
         }
     }
