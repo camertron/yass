@@ -1,12 +1,30 @@
+use magnus::{DataTypeFunctions, IntoValue, Ruby, TypedData, Value, gc, typed_data};
 use style::values::specified::Color;
 
-#[magnus::wrap(class = "Yass::Declarations::BorderInlineStartColor")]
+use crate::{cached_value::CachedValue, declarations::color::color::make_color};
+
+#[derive(TypedData)]
+#[magnus(class = "Yass::Declarations::BorderInlineStartColor", mark)]
 pub struct YBorderInlineStartColor {
-  color: Color
+    color: CachedValue<Color>
 }
 
 impl YBorderInlineStartColor {
-  pub fn new(color: Color) -> Self {
-    Self { color }
-  }
+    pub fn new(color: Color) -> Self {
+        Self {
+            color: CachedValue::new(color, |color, ruby| {
+                make_color(color, ruby)
+            })
+        }
+    }
+
+    pub fn color(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Value {
+        rb_self.color.get(ruby)
+    }
+}
+
+impl DataTypeFunctions for YBorderInlineStartColor {
+    fn mark(&self, marker: &gc::Marker) {
+        self.color.mark(marker);
+    }
 }

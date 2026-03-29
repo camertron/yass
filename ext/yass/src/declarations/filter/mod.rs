@@ -1,4 +1,4 @@
-use magnus::{DataTypeFunctions, Error, IntoValue, RArray, RModule, Ruby, TypedData, Value, gc, typed_data};
+use magnus::{DataTypeFunctions, Error, IntoValue, RArray, Ruby, TypedData, Value, gc, typed_data};
 use style::{
     properties::longhands::filter::SpecifiedValue,
     values::specified::{Length, effects::{Filter as SpecifiedFilter, FilterFactor}},
@@ -6,8 +6,7 @@ use style::{
 use style_traits::ToCss;
 
 use crate::{
-    cached_value_list::CachedValueList,
-    declarations::{blur::YFilterBlur, brightness::YFilterBrightness, calc::YCalc, contrast::YFilterContrast, drop_shadow::YFilterDropShadow, filter::opacity::YFilterOpacity, grayscale::YFilterGrayscale, hue_rotate::YFilterHueRotate, invert::YFilterInvert, length::YLength, number::YNumber, percentage::YPercentage, saturate::YFilterSaturate, sepia::YFilterSepia},
+    cached_value_list::CachedValueList, declarations::{calc::YCalc, filter::{blur::YFilterBlur, brightness::YFilterBrightness, contrast::YFilterContrast, drop_shadow::YFilterDropShadow, grayscale::YFilterGrayscale, hue_rotate::YFilterHueRotate, invert::YFilterInvert, opacity::YFilterOpacity, saturate::YFilterSaturate, sepia::YFilterSepia}, length::YLength, number::YNumber, percentage::YPercentage},
 };
 
 pub mod blur;

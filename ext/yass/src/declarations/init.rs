@@ -1,8 +1,6 @@
 use magnus::{Error, Module, RModule, Ruby, method};
 
-use crate::declarations::{
-    YAlignContent, YAlignItems, YAlignSelf, YAlignmentBaseline, YAnimationComposition, YAnimationDelay, YAnimationDirection, YAnimationDuration, YAnimationDurationValue, YAnimationFillMode, YAnimationIterationCount, YAnimationName, YAnimationPlayState, YAnimationRangeEnd, YAnimationRangeStart, YAnimationTimeline, YAnimationTimingFunction, YAspectRatio, YBackdropFilter, YBackfaceVisibility, YBackgroundAttachment, YBackgroundClip, YWidth, angle::YAngle, animation, calc, channel_keyword::YChannelKeyword, filter, length::{YAbsoluteLength, YCharacterWidthLength, YContainerRelativeLength, YFontRelativeLength, YViewportPercentageLength}, number::YNumber, percentage::YPercentage, resolution::YResolution, size, time::YTime
-};
+use crate::declarations::{align_content::YAlignContent, align_items::YAlignItems, align_self::YAlignSelf, alignment_baseline::YAlignmentBaseline, angle::YAngle, animation, animation_composition::YAnimationComposition, animation_delay::YAnimationDelay, animation_direction::YAnimationDirection, animation_duration::{YAnimationDuration, YAnimationDurationValue}, animation_fill_mode::YAnimationFillMode, animation_iteration_count::YAnimationIterationCount, animation_name::YAnimationName, animation_play_state::YAnimationPlayState, animation_range_end::YAnimationRangeEnd, animation_range_start::YAnimationRangeStart, animation_timeline::YAnimationTimeline, animation_timing_function::YAnimationTimingFunction, aspect_ratio::YAspectRatio, backdrop_filter::YBackdropFilter, backface_visibility::YBackfaceVisibility, background_attachment::YBackgroundAttachment, background_clip::YBackgroundClip, background_color::YBackgroundColor, border_block_end_color::YBorderBlockEndColor, border_block_start_color::YBorderBlockStartColor, border_bottom_color::YBorderBottomColor, border_inline_end_color::YBorderInlineEndColor, border_inline_start_color::YBorderInlineStartColor, border_left_color::YBorderLeftColor, border_right_color::YBorderRightColor, border_top_color::YBorderTopColor, calc, caret_color, channel_keyword::YChannelKeyword, color::{self, YColor}, filter, length::{YAbsoluteLength, YCharacterWidthLength, YContainerRelativeLength, YFontRelativeLength, YViewportPercentageLength}, number::YNumber, outline_color::YOutlineColor, percentage::YPercentage, resolution::YResolution, size, text_decoration_color::YTextDecorationColor, time::YTime, width::YWidth};
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let declarations_module = yass_module.define_module("Declarations")?;
@@ -243,6 +241,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let box_shadow_class = declarations_module.define_class("BoxShadow", ruby.class_object())?;
 
     let caret_color_class = declarations_module.define_class("CaretColor", ruby.class_object())?;
+    caret_color::init(ruby, &caret_color_class)?;
 
     let channel_keyword_class = declarations_module.define_class("ChannelKeyword", ruby.class_object())?;
     channel_keyword_class.define_method("value", method!(YChannelKeyword::value, 0))?;
@@ -250,6 +249,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let clip_path_class = declarations_module.define_class("ClipPath", ruby.class_object())?;
 
     let color_class = declarations_module.define_class("Color", ruby.class_object())?;
+    color_class.define_method("color", method!(YColor::color, 0))?;
 
     let color_scheme_class = declarations_module.define_class("ColorScheme", ruby.class_object())?;
 
@@ -459,26 +459,37 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let outline_width_class = declarations_module.define_class("OutlineWidth", ruby.class_object())?;
 
     let background_color_class = declarations_module.define_class("BackgroundColor", ruby.class_object())?;
+    background_color_class.define_method("color", method!(YBackgroundColor::color, 0))?;
 
     let border_block_end_color_class = declarations_module.define_class("BorderBlockEndColor", ruby.class_object())?;
+    border_block_end_color_class.define_method("color", method!(YBorderBlockEndColor::color, 0))?;
 
     let border_block_start_color_class = declarations_module.define_class("BorderBlockStartColor", ruby.class_object())?;
+    border_block_start_color_class.define_method("color", method!(YBorderBlockStartColor::color, 0))?;
 
     let border_bottom_color_class = declarations_module.define_class("BorderBottomColor", ruby.class_object())?;
+    border_bottom_color_class.define_method("color", method!(YBorderBottomColor::color, 0))?;
 
     let border_inline_end_color_class = declarations_module.define_class("BorderInlineEndColor", ruby.class_object())?;
+    border_inline_end_color_class.define_method("color", method!(YBorderInlineEndColor::color, 0))?;
 
     let border_inline_start_color_class = declarations_module.define_class("BorderInlineStartColor", ruby.class_object())?;
+    border_inline_start_color_class.define_method("color", method!(YBorderInlineStartColor::color, 0))?;
 
     let border_left_color_class = declarations_module.define_class("BorderLeftColor", ruby.class_object())?;
+    border_left_color_class.define_method("color", method!(YBorderLeftColor::color, 0))?;
 
     let border_right_color_class = declarations_module.define_class("BorderRightColor", ruby.class_object())?;
+    border_right_color_class.define_method("color", method!(YBorderRightColor::color, 0))?;
 
     let border_top_color_class = declarations_module.define_class("BorderTopColor", ruby.class_object())?;
+    border_top_color_class.define_method("color", method!(YBorderTopColor::color, 0))?;
 
     let outline_color_class = declarations_module.define_class("OutlineColor", ruby.class_object())?;
+    outline_color_class.define_method("color", method!(YOutlineColor::color, 0))?;
 
     let text_decoration_color_class = declarations_module.define_class("TextDecorationColor", ruby.class_object())?;
+    text_decoration_color_class.define_method("color", method!(YTextDecorationColor::color, 0))?;
 
     let csswide_keyword_class = declarations_module.define_class("CSSWideKeyword", ruby.class_object())?;
 
@@ -503,6 +514,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
 
     animation::init::init(ruby, yass_module, &declarations_module)?;
     calc::init::init(ruby, yass_module, &declarations_module)?;
+    color::init::init(ruby, &color_class)?;
     filter::init::init(ruby, yass_module, &declarations_module)?;
     size::init::init(ruby, yass_module, &declarations_module)?;
 

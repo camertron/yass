@@ -1,6 +1,6 @@
 use magnus::{Error, Module, RModule, Ruby, method};
 
-use crate::declarations::{blur::YFilterBlur, brightness::YFilterBrightness, contrast::YFilterContrast, drop_shadow::YFilterDropShadow, filter::{YFilter, opacity::YFilterOpacity}, grayscale::YFilterGrayscale, hue_rotate::YFilterHueRotate, invert::YFilterInvert, saturate::YFilterSaturate, sepia::YFilterSepia};
+use crate::declarations::filter::{YFilter, blur::YFilterBlur, brightness::YFilterBrightness, contrast::YFilterContrast, drop_shadow::YFilterDropShadow, grayscale::YFilterGrayscale, hue_rotate::YFilterHueRotate, invert::YFilterInvert, opacity::YFilterOpacity, saturate::YFilterSaturate, sepia::YFilterSepia};
 
 pub fn init(ruby: &Ruby, _yass_module: &RModule, declarations_module: &RModule) -> Result<(), Error> {
     let filter_class = declarations_module.define_class("Filter", ruby.class_object())?;

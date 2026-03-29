@@ -1,10 +1,10 @@
 use magnus::{DataTypeFunctions, IntoValue, Ruby, TypedData, Value, gc, typed_data};
 use style::values::{
     generics::NonNegative,
-    specified::{Color, ColorPropertyValue, Length, effects::SimpleShadow},
+    specified::{Color, Length, effects::SimpleShadow},
 };
 
-use crate::{cached_value::CachedValue, declarations::YColor};
+use crate::{cached_value::CachedValue, declarations::color::color::make_color};
 
 use super::length_to_value;
 
@@ -21,7 +21,7 @@ impl YFilterDropShadow {
     pub fn new(shadow: SimpleShadow) -> Self {
         Self {
             color: CachedValue::new(shadow.color, |color, ruby| match color {
-                Some(color) => YColor::new(ColorPropertyValue(color.clone())).into_value_with(ruby),
+                Some(color) => make_color(&color, ruby),
                 None => ruby.qnil().into_value_with(ruby),
             }),
 
