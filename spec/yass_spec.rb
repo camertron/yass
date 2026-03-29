@@ -60,4 +60,33 @@ RSpec.describe(Yass) do
     expect(declaration).to be_a(Yass::Declarations::BackgroundClip)
     expect(declaration.values).to eq([:"padding-box", :"content-box"])
   end
+
+  it "exposes background image declarations" do
+    sheet = Yass::Parser.parse(<<~CSS)
+      .hero {
+        background-image: none, linear-gradient(red, blue);
+      }
+    CSS
+
+    declaration = sheet.rules.first.declarations.first
+
+    expect(declaration).to be_a(Yass::Declarations::BackgroundImage)
+    values = declaration.values
+
+    expect(values.size).to eq(2)
+    expect(values[0]).to be_a(Yass::Declarations::Image::None)
+
+    gradient = values[1]
+    expect(gradient).to be_a(Yass::Declarations::Image::LinearGradient)
+    expect(gradient.repeating?).to eq(false)
+
+    direction = gradient.direction
+    expect(direction).to be_a(Yass::Declarations::Image::VerticalLineDirection)
+    expect(direction.direction).to eq(:bottom)
+
+    items = gradient.items
+    expect(items.size).to eq(2)
+    expect(items[0]).to be_a(Yass::Declarations::Image::Gradient::SimpleColorStopLength)
+    expect(items[0].color).to be_a(Yass::Declarations::Color::Absolute)
+  end
 end

@@ -128,6 +128,7 @@ pub mod grid_template_areas;
 pub mod grid_template_columns;
 pub mod grid_template_rows;
 pub mod height;
+pub mod images;
 pub mod image_rendering;
 pub mod init;
 pub mod inline_size;

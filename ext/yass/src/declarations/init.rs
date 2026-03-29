@@ -1,6 +1,6 @@
 use magnus::{Error, Module, RModule, Ruby, method};
 
-use crate::declarations::{align_content::YAlignContent, align_items::YAlignItems, align_self::YAlignSelf, alignment_baseline::YAlignmentBaseline, angle::YAngle, animation, animation_composition::YAnimationComposition, animation_delay::YAnimationDelay, animation_direction::YAnimationDirection, animation_duration::{YAnimationDuration, YAnimationDurationValue}, animation_fill_mode::YAnimationFillMode, animation_iteration_count::YAnimationIterationCount, animation_name::YAnimationName, animation_play_state::YAnimationPlayState, animation_range_end::YAnimationRangeEnd, animation_range_start::YAnimationRangeStart, animation_timeline::YAnimationTimeline, animation_timing_function::YAnimationTimingFunction, aspect_ratio::YAspectRatio, backdrop_filter::YBackdropFilter, backface_visibility::YBackfaceVisibility, background_attachment::YBackgroundAttachment, background_clip::YBackgroundClip, background_color::YBackgroundColor, border_block_end_color::YBorderBlockEndColor, border_block_start_color::YBorderBlockStartColor, border_bottom_color::YBorderBottomColor, border_inline_end_color::YBorderInlineEndColor, border_inline_start_color::YBorderInlineStartColor, border_left_color::YBorderLeftColor, border_right_color::YBorderRightColor, border_top_color::YBorderTopColor, calc, caret_color, channel_keyword::YChannelKeyword, color::{self, YColor}, filter, length::{YAbsoluteLength, YCharacterWidthLength, YContainerRelativeLength, YFontRelativeLength, YViewportPercentageLength}, number::YNumber, outline_color::YOutlineColor, percentage::YPercentage, resolution::YResolution, size, text_decoration_color::YTextDecorationColor, time::YTime, width::YWidth};
+use crate::declarations::{align_content::YAlignContent, align_items::YAlignItems, align_self::YAlignSelf, alignment_baseline::YAlignmentBaseline, angle::YAngle, animation, animation_composition::YAnimationComposition, animation_delay::YAnimationDelay, animation_direction::YAnimationDirection, animation_duration::{YAnimationDuration, YAnimationDurationValue}, animation_fill_mode::YAnimationFillMode, animation_iteration_count::YAnimationIterationCount, animation_name::YAnimationName, animation_play_state::YAnimationPlayState, animation_range_end::YAnimationRangeEnd, animation_range_start::YAnimationRangeStart, animation_timeline::YAnimationTimeline, animation_timing_function::YAnimationTimingFunction, aspect_ratio::YAspectRatio, backdrop_filter::YBackdropFilter, backface_visibility::YBackfaceVisibility, background_attachment::YBackgroundAttachment, background_clip::YBackgroundClip, background_color::YBackgroundColor, background_image::YBackgroundImage, border_block_end_color::YBorderBlockEndColor, border_block_start_color::YBorderBlockStartColor, border_bottom_color::YBorderBottomColor, border_image_source::YBorderImageSource, border_inline_end_color::YBorderInlineEndColor, border_inline_start_color::YBorderInlineStartColor, border_left_color::YBorderLeftColor, border_right_color::YBorderRightColor, border_top_color::YBorderTopColor, calc, caret_color, channel_keyword::YChannelKeyword, color::{self, YColor}, filter, images, length::{YAbsoluteLength, YCharacterWidthLength, YContainerRelativeLength, YFontRelativeLength, YViewportPercentageLength}, list_style_image::YListStyleImage, mask_image::YMaskImage, number::YNumber, outline_color::YOutlineColor, percentage::YPercentage, resolution::YResolution, size, text_decoration_color::YTextDecorationColor, time::YTime, width::YWidth};
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let declarations_module = yass_module.define_module("Declarations")?;
@@ -225,6 +225,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     background_clip_class.define_method("values", method!(YBackgroundClip::values, 0))?;
 
     let background_image_class = declarations_module.define_class("BackgroundImage", ruby.class_object())?;
+    background_image_class.define_method("values", method!(YBackgroundImage::values, 0))?;
 
     let background_origin_class = declarations_module.define_class("BackgroundOrigin", ruby.class_object())?;
 
@@ -280,6 +281,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let list_style_type_class = declarations_module.define_class("ListStyleType", ruby.class_object())?;
 
     let mask_image_class = declarations_module.define_class("MaskImage", ruby.class_object())?;
+    mask_image_class.define_method("values", method!(YMaskImage::values, 0))?;
 
     let offset_path_class = declarations_module.define_class("OffsetPath", ruby.class_object())?;
 
@@ -327,8 +329,10 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let grid_template_rows_class = declarations_module.define_class("GridTemplateRows", ruby.class_object())?;
 
     let border_image_source_class = declarations_module.define_class("BorderImageSource", ruby.class_object())?;
+    border_image_source_class.define_method("image", method!(YBorderImageSource::image, 0))?;
 
     let list_style_image_class = declarations_module.define_class("ListStyleImage", ruby.class_object())?;
+    list_style_image_class.define_method("image", method!(YListStyleImage::image, 0))?;
 
     let grid_auto_columns_class = declarations_module.define_class("GridAutoColumns", ruby.class_object())?;
 
@@ -516,6 +520,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     calc::init::init(ruby, yass_module, &declarations_module)?;
     color::init::init(ruby, &color_class)?;
     filter::init::init(ruby, yass_module, &declarations_module)?;
+    images::init::init(ruby, &declarations_module)?;
     size::init::init(ruby, yass_module, &declarations_module)?;
 
     Ok(())

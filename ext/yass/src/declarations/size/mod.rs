@@ -9,7 +9,7 @@ pub mod init;
 pub fn make_size(size: Size<NonNegative<LengthPercentage>>, ruby: &Ruby) -> Value {
     match size {
         Size::LengthPercentage(percentage) => {
-            YLengthPercentage::new(percentage).into_value_with(ruby)
+            YLengthPercentage::new(percentage.0).into_value_with(ruby)
         },
 
         Size::Auto => YAuto::new().into_value_with(ruby),
@@ -52,14 +52,14 @@ pub fn length_percentage_to_value(length_percentage: LengthPercentage, ruby: &Ru
 #[derive(TypedData)]
 #[magnus(class = "Yass::Declarations::Size::LengthPercentage", mark)]
 pub struct YLengthPercentage {
-    length_percentage: CachedValue<NonNegative<LengthPercentage>>
+    length_percentage: CachedValue<LengthPercentage>
 }
 
 impl YLengthPercentage {
-    pub fn new(length_percentage: NonNegative<LengthPercentage>) -> Self {
+    pub fn new(length_percentage: LengthPercentage) -> Self {
         Self {
             length_percentage: CachedValue::new(length_percentage, |lp, ruby| {
-                length_percentage_to_value(lp.0.clone(), ruby)
+                length_percentage_to_value(lp.clone(), ruby)
             })
         }
     }
