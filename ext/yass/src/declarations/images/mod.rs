@@ -22,7 +22,6 @@ pub mod ellipse;
 pub mod ending_shape;
 pub mod gradient_angle_or_percentage_item;
 pub mod gradient_length_percentage_item;
-pub mod horizontal_position_component;
 pub mod init;
 pub mod image_set;
 pub mod image_set_item;
@@ -33,7 +32,6 @@ pub mod none;
 pub mod position;
 pub mod radial_gradient;
 pub mod url;
-pub mod vertical_position_component;
 
 pub fn image_to_value(image: &SpecifiedImage, ruby: &Ruby) -> Value {
     match image {

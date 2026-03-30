@@ -1,7 +1,7 @@
 use magnus::{DataTypeFunctions, Ruby, Value, gc::Marker, typed_data};
 use style::values::specified::position::{HorizontalPositionKeyword, Position, PositionComponent, VerticalPositionKeyword};
 
-use crate::{cached_value::CachedValue, declarations::images::{horizontal_position_component::make_horizontal_position_component, vertical_position_component::make_vertical_position_component}};
+use crate::{cached_value::CachedValue, declarations::{horizontal_position_component::make_horizontal_position_component, vertical_position_component::make_vertical_position_component}};
 
 #[derive(magnus::TypedData)]
 #[magnus(class = "Yass::Declarations::Image::Position", mark)]
