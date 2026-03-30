@@ -43,6 +43,7 @@ pub mod border_bottom_left_radius;
 pub mod border_bottom_right_radius;
 pub mod border_bottom_style;
 pub mod border_bottom_width;
+pub mod border_style;
 pub mod border_collapse;
 pub mod border_end_end_radius;
 pub mod border_end_start_radius;
