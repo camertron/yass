@@ -129,12 +129,37 @@ RSpec.describe(Yass) do
     values = declaration.values
     expect(values.size).to eq(3)
 
-    expect(values[0]).to be_a(Yass::Declarations::BackgroundSizeCover)
-    expect(values[1]).to be_a(Yass::Declarations::BackgroundSizeContain)
+    expect(values[0]).to be_a(Yass::Declarations::BackgroundSize::Cover)
+    expect(values[1]).to be_a(Yass::Declarations::BackgroundSize::Contain)
 
     explicit_size = values[2]
-    expect(explicit_size).to be_a(Yass::Declarations::BackgroundSizeExplicitSize)
+    expect(explicit_size).to be_a(Yass::Declarations::BackgroundSize::ExplicitSize)
     expect(explicit_size.width).to be_a(Yass::Declarations::Percentage)
-    expect(explicit_size.height).to be_a(Yass::Declarations::BackgroundSizeAuto)
+    expect(explicit_size.height).to be_a(Yass::Declarations::BackgroundSize::Auto)
+  end
+
+  it "exposes baseline shift declarations" do
+    sheet = Yass::Parser.parse(<<~CSS)
+      .a {
+        baseline-shift: super;
+      }
+
+      .b {
+        baseline-shift: 25%;
+      }
+    CSS
+
+    keyword_declaration = sheet.rules[0].declarations.first
+
+    expect(keyword_declaration).to be_a(Yass::Declarations::BaselineShift::Keyword)
+    expect(keyword_declaration.value).to eq(:super)
+
+    length_declaration = sheet.rules[1].declarations.first
+
+    expect(length_declaration).to be_a(Yass::Declarations::BaselineShift::Length)
+
+    length = length_declaration.value
+    expect(length).to be_a(Yass::Declarations::Percentage)
+    expect(length.value).to eq(0.25)
   end
 end
