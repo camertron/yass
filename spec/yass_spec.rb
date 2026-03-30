@@ -89,4 +89,29 @@ RSpec.describe(Yass) do
     expect(items[0]).to be_a(Yass::Declarations::Image::Gradient::SimpleColorStopLength)
     expect(items[0].color).to be_a(Yass::Declarations::Color::Absolute)
   end
+
+  it "exposes background repeat declarations" do
+    sheet = Yass::Parser.parse(<<~CSS)
+      .hero {
+        background-repeat: repeat-x, space round, no-repeat;
+      }
+    CSS
+
+    declaration = sheet.rules.first.declarations.first
+
+    expect(declaration).to be_a(Yass::Declarations::BackgroundRepeat)
+
+    values = declaration.values
+    expect(values.size).to eq(3)
+
+    expect(values[0]).to be_a(Yass::Declarations::BackgroundRepeatValue)
+    expect(values[0].horizontal).to eq(:repeat)
+    expect(values[0].vertical).to eq(:no_repeat)
+
+    expect(values[1].horizontal).to eq(:space)
+    expect(values[1].vertical).to eq(:round)
+
+    expect(values[2].horizontal).to eq(:no_repeat)
+    expect(values[2].vertical).to eq(:no_repeat)
+  end
 end
