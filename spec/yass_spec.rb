@@ -114,4 +114,27 @@ RSpec.describe(Yass) do
     expect(values[2].horizontal).to eq(:no_repeat)
     expect(values[2].vertical).to eq(:no_repeat)
   end
+
+  it "exposes background size declarations" do
+    sheet = Yass::Parser.parse(<<~CSS)
+      .hero {
+        background-size: cover, contain, 25% auto;
+      }
+    CSS
+
+    declaration = sheet.rules.first.declarations.first
+
+    expect(declaration).to be_a(Yass::Declarations::BackgroundSize)
+
+    values = declaration.values
+    expect(values.size).to eq(3)
+
+    expect(values[0]).to be_a(Yass::Declarations::BackgroundSizeCover)
+    expect(values[1]).to be_a(Yass::Declarations::BackgroundSizeContain)
+
+    explicit_size = values[2]
+    expect(explicit_size).to be_a(Yass::Declarations::BackgroundSizeExplicitSize)
+    expect(explicit_size.width).to be_a(Yass::Declarations::Percentage)
+    expect(explicit_size.height).to be_a(Yass::Declarations::BackgroundSizeAuto)
+  end
 end
