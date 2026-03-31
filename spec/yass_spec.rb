@@ -230,6 +230,25 @@ RSpec.describe(Yass) do
     end
   end
 
+  describe "box sizing declarations" do
+    def box_sizing_declaration(value)
+      sheet = Yass::Parser.parse(".x { box-sizing: #{value}; }")
+      sheet.rules.first.declarations.first
+    end
+
+    it "exposes box sizing values as declaration wrappers" do
+      {
+        "content-box" => :content_box,
+        "border-box" => :border_box,
+      }.each do |css_value, expected_value|
+        declaration = box_sizing_declaration(css_value)
+
+        expect(declaration).to be_a(Yass::Declarations::BoxSizing)
+        expect(declaration.value).to eq(expected_value)
+      end
+    end
+  end
+
   describe "border image outset declarations" do
     def border_image_outset_declaration(value)
       sheet = Yass::Parser.parse(".x { border-image-outset: #{value}; }")
