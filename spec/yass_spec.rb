@@ -256,6 +256,32 @@ RSpec.describe(Yass) do
     end
   end
 
+  describe "border image slice declarations" do
+    def border_image_slice_declaration(value)
+      sheet = Yass::Parser.parse(".x { border-image-slice: #{value}; }")
+      sheet.rules.first.declarations.first
+    end
+
+    it "exposes border image slice sides and fill flag" do
+      declaration = border_image_slice_declaration("10 20% 30 40% fill")
+
+      expect(declaration).to be_a(Yass::Declarations::BorderImageSlice)
+      expect(declaration.fill?).to eq(true)
+
+      expect(declaration.top).to be_a(Yass::Declarations::Number)
+      expect(declaration.top.value).to eq(10.0)
+
+      expect(declaration.right).to be_a(Yass::Declarations::Percentage)
+      expect(declaration.right.value).to be_within(0.00001).of(0.2)
+
+      expect(declaration.bottom).to be_a(Yass::Declarations::Number)
+      expect(declaration.bottom.value).to eq(30.0)
+
+      expect(declaration.left).to be_a(Yass::Declarations::Percentage)
+      expect(declaration.left.value).to be_within(0.00001).of(0.4)
+    end
+  end
+
   describe "border width declarations" do
     def border_width_declaration(property, value)
       sheet = Yass::Parser.parse(".x { #{property}: #{value}; }")
