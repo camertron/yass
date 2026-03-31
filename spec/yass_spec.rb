@@ -209,6 +209,33 @@ RSpec.describe(Yass) do
     end
   end
 
+  describe "border image outset declarations" do
+    def border_image_outset_declaration(value)
+      sheet = Yass::Parser.parse(".x { border-image-outset: #{value}; }")
+      sheet.rules.first.declarations.first
+    end
+
+    it "exposes border image outset sides as numbers or lengths" do
+      declaration = border_image_outset_declaration("1 2px 3 4px")
+
+      expect(declaration).to be_a(Yass::Declarations::BorderImageOutset)
+
+      expect(declaration.top).to be_a(Yass::Declarations::Number)
+      expect(declaration.top.value).to eq(1.0)
+
+      expect(declaration.right).to be_a(Yass::Declarations::Length::Absolute)
+      expect(declaration.right.value).to eq(2.0)
+      expect(declaration.right.unit).to eq(:px)
+
+      expect(declaration.bottom).to be_a(Yass::Declarations::Number)
+      expect(declaration.bottom.value).to eq(3.0)
+
+      expect(declaration.left).to be_a(Yass::Declarations::Length::Absolute)
+      expect(declaration.left.value).to eq(4.0)
+      expect(declaration.left.unit).to eq(:px)
+    end
+  end
+
   describe "border width declarations" do
     def border_width_declaration(property, value)
       sheet = Yass::Parser.parse(".x { #{property}: #{value}; }")
