@@ -134,6 +134,7 @@ pub mod images;
 pub mod image_rendering;
 pub mod init;
 pub mod inline_size;
+pub mod inset;
 pub mod inset_block_end;
 pub mod inset_block_start;
 pub mod inset_inline_end;
