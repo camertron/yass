@@ -1,4 +1,4 @@
-use magnus::{DataTypeFunctions, IntoValue, Ruby, TypedData, Value, gc, typed_data};
+use magnus::{DataTypeFunctions, Ruby, TypedData, Value, gc, typed_data};
 use style::values::specified::Color;
 
 use crate::{cached_value::CachedValue, declarations::color::color::make_color};
