@@ -1,7 +1,7 @@
 use magnus::{DataTypeFunctions, IntoValue, Ruby, TypedData, Value, gc, typed_data};
 use style::values::{generics::{NonNegative, length::Size}, specified::LengthPercentage};
 
-use crate::{cached_value::CachedValue, declarations::{calc::YCalc, length::YLength, percentage::YPercentage, size::anchor_size_function::YAnchorSizeFunction}};
+use crate::{cached_value::CachedValue, declarations::{calc::YCalc, length::no_calc_length_to_value, percentage::YPercentage, size::anchor_size_function::YAnchorSizeFunction}};
 
 pub mod anchor_size_function;
 pub mod init;
@@ -36,7 +36,7 @@ pub fn make_size(size: Size<NonNegative<LengthPercentage>>, ruby: &Ruby) -> Valu
 pub fn length_percentage_to_value(length_percentage: LengthPercentage, ruby: &Ruby) -> Value {
     match length_percentage {
         LengthPercentage::Length(no_calc_length) => {
-            YLength::make(no_calc_length, ruby)
+            no_calc_length_to_value(&no_calc_length, ruby)
         },
 
         LengthPercentage::Percentage(percentage) => {

@@ -1,12 +1,12 @@
 use magnus::{DataTypeFunctions, Error, IntoValue, RArray, Ruby, TypedData, Value, gc, typed_data};
 use style::{
     properties::longhands::filter::SpecifiedValue,
-    values::specified::{Length, effects::{Filter as SpecifiedFilter, FilterFactor}},
+    values::specified::effects::{Filter as SpecifiedFilter, FilterFactor},
 };
 use style_traits::ToCss;
 
 use crate::{
-    cached_value_list::CachedValueList, declarations::{calc::YCalc, filter::{blur::YFilterBlur, brightness::YFilterBrightness, contrast::YFilterContrast, drop_shadow::YFilterDropShadow, grayscale::YFilterGrayscale, hue_rotate::YFilterHueRotate, invert::YFilterInvert, opacity::YFilterOpacity, saturate::YFilterSaturate, sepia::YFilterSepia}, length::YLength, number::YNumber, percentage::YPercentage},
+    cached_value_list::CachedValueList, declarations::{filter::{blur::YFilterBlur, brightness::YFilterBrightness, contrast::YFilterContrast, drop_shadow::YFilterDropShadow, grayscale::YFilterGrayscale, hue_rotate::YFilterHueRotate, invert::YFilterInvert, opacity::YFilterOpacity, saturate::YFilterSaturate, sepia::YFilterSepia}, number::YNumber, percentage::YPercentage},
 };
 
 pub mod blur;
@@ -20,13 +20,6 @@ pub mod invert;
 pub mod opacity;
 pub mod saturate;
 pub mod sepia;
-
-pub fn length_to_value(length: Length, ruby: &Ruby) -> Value {
-    match length {
-        Length::NoCalc(no_calc_length) => YLength::make(no_calc_length, ruby),
-        Length::Calc(calc_length_percentage) => YCalc::new(calc_length_percentage).into_value_with(ruby),
-    }
-}
 
 fn filter_factor_css_to_value(css: &str, ruby: &Ruby) -> Value {
     if let Some(percentage) = css.strip_suffix('%').and_then(|raw| raw.parse::<f32>().ok()) {

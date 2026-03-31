@@ -4,9 +4,10 @@ use style::values::{
     specified::{Color, Length, effects::SimpleShadow},
 };
 
-use crate::{cached_value::CachedValue, declarations::color::color::make_color};
-
-use super::length_to_value;
+use crate::{
+    cached_value::CachedValue,
+    declarations::{color::color::make_color, length::length_to_value},
+};
 
 #[derive(TypedData)]
 #[magnus(class = "Yass::Declarations::Filter::DropShadow", mark)]
@@ -26,15 +27,15 @@ impl YFilterDropShadow {
             }),
 
             horizontal: CachedValue::new(shadow.horizontal, |horizontal, ruby| {
-                length_to_value(horizontal.clone(), ruby)
+                length_to_value(horizontal, ruby)
             }),
 
             vertical: CachedValue::new(shadow.vertical, |vertical, ruby| {
-                length_to_value(vertical.clone(), ruby)
+                length_to_value(vertical, ruby)
             }),
 
             blur: CachedValue::new(shadow.blur, |blur, ruby| match blur {
-                Some(length) => length_to_value(length.0.clone(), ruby),
+                Some(length) => length_to_value(&length.0, ruby),
                 None => ruby.qnil().into_value_with(ruby),
             }),
         }

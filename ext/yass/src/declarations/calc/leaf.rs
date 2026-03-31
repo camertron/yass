@@ -1,12 +1,12 @@
 use magnus::{IntoValue, Ruby, Value};
 use style::values::specified::calc::Leaf;
 
-use crate::declarations::{angle::YAngle, channel_keyword::YChannelKeyword, length::YLength, number::YNumber, percentage::YPercentage, resolution::YResolution, time::YTime};
+use crate::declarations::{angle::YAngle, channel_keyword::YChannelKeyword, length::no_calc_length_to_value, number::YNumber, percentage::YPercentage, resolution::YResolution, time::YTime};
 
 pub fn make_leaf(leaf: Leaf, ruby: &Ruby) -> Value {
     match leaf {
         Leaf::Length(no_calc_length) => {
-            YLength::make(no_calc_length, ruby)
+            no_calc_length_to_value(&no_calc_length, ruby)
         },
 
         Leaf::Angle(angle) => {

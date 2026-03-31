@@ -1,7 +1,7 @@
 use magnus::{DataTypeFunctions, IntoValue, Ruby, TypedData, Value, gc::Marker, typed_data};
 use style::values::{generics::{NonNegative, border::BorderSpacing}, specified::Length};
 
-use crate::{cached_value::CachedValue, declarations::{calc::YCalc, length::YLength}};
+use crate::{cached_value::CachedValue, declarations::{calc::YCalc, length::no_calc_length_to_value}};
 
 #[derive(TypedData)]
 #[magnus(class = "Yass::Declarations::BorderSpacing", mark)]
@@ -44,7 +44,7 @@ impl DataTypeFunctions for YBorderSpacing {
 
 fn non_negative_length_to_value(length: &NonNegative<Length>, ruby: &Ruby) -> Value {
     match &length.0 {
-        Length::NoCalc(no_calc_length) => YLength::make(no_calc_length.clone(), ruby),
+        Length::NoCalc(no_calc_length) => no_calc_length_to_value(no_calc_length, ruby),
         Length::Calc(calc_length_percentage) => YCalc::new(calc_length_percentage.clone()).into_value_with(ruby),
     }
 }

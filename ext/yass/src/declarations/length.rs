@@ -1,27 +1,36 @@
 use magnus::{IntoValue, Ruby, Value, typed_data, value::Id};
-use style::values::specified::{AbsoluteLength, CharacterWidth, FontRelativeLength, NoCalcLength, ViewportPercentageLength, length::ContainerRelativeLength};
+use style::values::specified::{AbsoluteLength, CharacterWidth, FontRelativeLength, Length, NoCalcLength, ViewportPercentageLength, length::ContainerRelativeLength};
+
+use crate::declarations::calc::YCalc;
 
 pub struct YLength { }
 
-impl YLength {
-    pub fn make(length: NoCalcLength, ruby: &Ruby) -> Value {
-        match length {
-            NoCalcLength::Absolute(absolute_length) => {
-                YAbsoluteLength::new(absolute_length).into_value_with(ruby)
-            },
-            NoCalcLength::FontRelative(font_relative_length) => {
-                YFontRelativeLength::new(font_relative_length).into_value_with(ruby)
-            },
-            NoCalcLength::ViewportPercentage(viewport_percentage_length) => {
-                YViewportPercentageLength::new(viewport_percentage_length).into_value_with(ruby)
-            },
-            NoCalcLength::ContainerRelative(container_relative_length) => {
-                YContainerRelativeLength::new(container_relative_length).into_value_with(ruby)
-            },
-            NoCalcLength::ServoCharacterWidth(character_width) => {
-                YCharacterWidthLength::new(character_width).into_value_with(ruby)
-            },
+pub fn length_to_value(length: &Length, ruby: &Ruby) -> Value {
+    match length {
+        Length::NoCalc(no_calc_length) => no_calc_length_to_value(no_calc_length, ruby),
+        Length::Calc(calc_length_percentage) => {
+            YCalc::new(calc_length_percentage.clone()).into_value_with(ruby)
         }
+    }
+}
+
+pub fn no_calc_length_to_value(length: &NoCalcLength, ruby: &Ruby) -> Value {
+    match length {
+        NoCalcLength::Absolute(absolute_length) => {
+            YAbsoluteLength::new(*absolute_length).into_value_with(ruby)
+        },
+        NoCalcLength::FontRelative(font_relative_length) => {
+            YFontRelativeLength::new(*font_relative_length).into_value_with(ruby)
+        },
+        NoCalcLength::ViewportPercentage(viewport_percentage_length) => {
+            YViewportPercentageLength::new(*viewport_percentage_length).into_value_with(ruby)
+        },
+        NoCalcLength::ContainerRelative(container_relative_length) => {
+            YContainerRelativeLength::new(*container_relative_length).into_value_with(ruby)
+        },
+        NoCalcLength::ServoCharacterWidth(character_width) => {
+            YCharacterWidthLength::new(*character_width).into_value_with(ruby)
+        },
     }
 }
 

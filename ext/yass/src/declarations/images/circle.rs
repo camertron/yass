@@ -1,7 +1,7 @@
 use magnus::{DataTypeFunctions, IntoValue, Ruby, TypedData, Value, gc::Marker, typed_data, value::Id};
 use style::values::{generics::{NonNegative, image::{Circle, ShapeExtent}}, specified::{Length, NonNegativeLength}};
 
-use crate::{cached_value::CachedValue, declarations::{calc::YCalc, length::YLength}};
+use crate::{cached_value::CachedValue, declarations::{calc::YCalc, length::no_calc_length_to_value}};
 
 pub fn make_circle(circle: &Circle<NonNegativeLength>, ruby: &Ruby) -> Value {
     match circle {
@@ -27,7 +27,7 @@ impl YRadiusCircle {
             length: CachedValue::new(length, |length, ruby| {
                 match &length.0 {
                     Length::NoCalc(no_calc_length) => {
-                        YLength::make(no_calc_length.clone(), ruby)
+                        no_calc_length_to_value(no_calc_length, ruby)
                     },
 
                     Length::Calc(calc_length_percentage) => {
