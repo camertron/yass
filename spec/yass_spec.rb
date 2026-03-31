@@ -162,4 +162,31 @@ RSpec.describe(Yass) do
     expect(length).to be_a(Yass::Declarations::Percentage)
     expect(length.value).to eq(0.25)
   end
+
+  describe "border style declarations" do
+    def border_style_declaration(property, value)
+      sheet = Yass::Parser.parse(".x { #{property}: #{value}; }")
+      sheet.rules.first.declarations.first
+    end
+
+    it "exposes side and logical border styles as declaration wrappers" do
+      expectations = [
+        ["border-top-style", :dotted, Yass::Declarations::BorderTopStyle],
+        ["border-right-style", :dashed, Yass::Declarations::BorderRightStyle],
+        ["border-bottom-style", :double, Yass::Declarations::BorderBottomStyle],
+        ["border-left-style", :solid, Yass::Declarations::BorderLeftStyle],
+        ["border-inline-start-style", :groove, Yass::Declarations::BorderInlineStartStyle],
+        ["border-inline-end-style", :ridge, Yass::Declarations::BorderInlineEndStyle],
+        ["border-block-start-style", :inset, Yass::Declarations::BorderBlockStartStyle],
+        ["border-block-end-style", :outset, Yass::Declarations::BorderBlockEndStyle],
+      ]
+
+      expectations.each do |property, value, klass|
+        declaration = border_style_declaration(property, value)
+
+        expect(declaration).to be_a(klass)
+        expect(declaration.value).to eq(value)
+      end
+    end
+  end
 end
