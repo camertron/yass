@@ -1,7 +1,7 @@
 use magnus::{IntoValue, Ruby, Value};
-use style::values::specified::Color;
+use style::values::{generics::color::ColorOrAuto, specified::Color};
 
-use crate::declarations::color::{absolute::YAbsolute, color_function::YColorFunction, color_mix::YColorMix, current_color::YCurrentColor, light_dark::YLightDark, system_color::YSystemColor};
+use crate::declarations::color::{absolute::YAbsolute, auto::YAutoColor, color_function::YColorFunction, color_mix::YColorMix, current_color::YCurrentColor, light_dark::YLightDark, system_color::YSystemColor};
 
 pub fn make_color(color: &Color, ruby: &Ruby) -> Value {
     match &color {
@@ -26,5 +26,12 @@ pub fn make_color(color: &Color, ruby: &Ruby) -> Value {
         Color::System(system_color) => {
             YSystemColor::new(*system_color).into_value_with(ruby)
         },
+    }
+}
+
+pub fn make_color_or_auto(color_or_auto: &ColorOrAuto<Color>, ruby: &Ruby) -> Value {
+    match color_or_auto {
+        ColorOrAuto::Color(c) => make_color(c, ruby),
+        ColorOrAuto::Auto => YAutoColor::new().into_value_with(ruby),
     }
 }

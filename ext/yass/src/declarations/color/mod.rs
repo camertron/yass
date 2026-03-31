@@ -8,6 +8,7 @@ use crate::{cached_value::CachedValue, declarations::color::color::make_color};
 
 pub mod absolute_color;
 pub mod absolute;
+pub mod auto;
 pub mod color_components;
 pub mod color_function_component;
 pub mod color_function;
