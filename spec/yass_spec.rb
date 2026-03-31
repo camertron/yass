@@ -282,6 +282,33 @@ RSpec.describe(Yass) do
     end
   end
 
+  describe "border image width declarations" do
+    def border_image_width_declaration(value)
+      sheet = Yass::Parser.parse(".x { border-image-width: #{value}; }")
+      sheet.rules.first.declarations.first
+    end
+
+    it "exposes border image width sides as numbers, lengths, or auto" do
+      declaration = border_image_width_declaration("1 2px 3% auto")
+
+      expect(declaration).to be_a(Yass::Declarations::BorderImageWidth)
+
+      expect(declaration.top).to be_a(Yass::Declarations::Number)
+      expect(declaration.top.value).to eq(1.0)
+
+      expect(declaration.right).to be_a(Yass::Declarations::Size::LengthPercentage)
+      expect(declaration.right.value).to be_a(Yass::Declarations::Length::Absolute)
+      expect(declaration.right.value.value).to eq(2.0)
+      expect(declaration.right.value.unit).to eq(:px)
+
+      expect(declaration.bottom).to be_a(Yass::Declarations::Size::LengthPercentage)
+      expect(declaration.bottom.value).to be_a(Yass::Declarations::Percentage)
+      expect(declaration.bottom.value.value).to be_within(0.00001).of(0.03)
+
+      expect(declaration.left).to be_a(Yass::Declarations::BorderImageWidth::Auto)
+    end
+  end
+
   describe "border width declarations" do
     def border_width_declaration(property, value)
       sheet = Yass::Parser.parse(".x { #{property}: #{value}; }")
