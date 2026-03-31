@@ -209,6 +209,27 @@ RSpec.describe(Yass) do
     end
   end
 
+  describe "border spacing declarations" do
+    def border_spacing_declaration(value)
+      sheet = Yass::Parser.parse(".x { border-spacing: #{value}; }")
+      sheet.rules.first.declarations.first
+    end
+
+    it "exposes horizontal and vertical border spacing lengths" do
+      declaration = border_spacing_declaration("4px 6px")
+
+      expect(declaration).to be_a(Yass::Declarations::BorderSpacing)
+
+      expect(declaration.horizontal).to be_a(Yass::Declarations::Length::Absolute)
+      expect(declaration.horizontal.value).to eq(4.0)
+      expect(declaration.horizontal.unit).to eq(:px)
+
+      expect(declaration.vertical).to be_a(Yass::Declarations::Length::Absolute)
+      expect(declaration.vertical.value).to eq(6.0)
+      expect(declaration.vertical.unit).to eq(:px)
+    end
+  end
+
   describe "border image outset declarations" do
     def border_image_outset_declaration(value)
       sheet = Yass::Parser.parse(".x { border-image-outset: #{value}; }")
