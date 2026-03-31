@@ -249,6 +249,29 @@ RSpec.describe(Yass) do
     end
   end
 
+  describe "clear declarations" do
+    def clear_declaration(value)
+      sheet = Yass::Parser.parse(".x { clear: #{value}; }")
+      sheet.rules.first.declarations.first
+    end
+
+    it "exposes clear values as declaration wrappers" do
+      {
+        "none" => :none,
+        "left" => :left,
+        "right" => :right,
+        "both" => :both,
+        "inline-start" => :inline_start,
+        "inline-end" => :inline_end,
+      }.each do |css_value, expected_value|
+        declaration = clear_declaration(css_value)
+
+        expect(declaration).to be_a(Yass::Declarations::Clear)
+        expect(declaration.value).to eq(expected_value)
+      end
+    end
+  end
+
   describe "border image outset declarations" do
     def border_image_outset_declaration(value)
       sheet = Yass::Parser.parse(".x { border-image-outset: #{value}; }")
