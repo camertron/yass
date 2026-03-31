@@ -1,6 +1,6 @@
 use magnus::{Error, Module, RModule, Ruby, method};
 
-use crate::declarations::{align_content::YAlignContent, align_items::YAlignItems, align_self::YAlignSelf, alignment_baseline::YAlignmentBaseline, angle::YAngle, animation, animation_composition::YAnimationComposition, animation_delay::YAnimationDelay, animation_direction::YAnimationDirection, animation_duration::{YAnimationDuration, YAnimationDurationValue}, animation_fill_mode::YAnimationFillMode, animation_iteration_count::YAnimationIterationCount, animation_name::YAnimationName, animation_play_state::YAnimationPlayState, animation_range_end::YAnimationRangeEnd, animation_range_start::YAnimationRangeStart, animation_timeline::YAnimationTimeline, animation_timing_function::YAnimationTimingFunction, aspect_ratio::YAspectRatio, backdrop_filter::YBackdropFilter, backface_visibility::YBackfaceVisibility, background_attachment::YBackgroundAttachment, background_clip::YBackgroundClip, background_color::YBackgroundColor, background_image::YBackgroundImage, background_origin::YBackgroundOrigin, background_position_x::YBackgroundPositionX, background_position_y::YBackgroundPositionY, background_repeat::{YBackgroundRepeat, YBackgroundRepeatValue}, background_size::{YBackgroundSize, YBackgroundSizeExplicitSize}, baseline_shift::{YBaselineShiftKeyword, YBaselineShiftLength}, baseline_source::YBaselineSource, block_size::YBlockSize, border_block_end_color::YBorderBlockEndColor, border_block_end_style::YBorderBlockEndStyle, border_block_end_width::YBorderBlockEndWidth, border_block_start_color::YBorderBlockStartColor, border_block_start_style::YBorderBlockStartStyle, border_block_start_width::YBorderBlockStartWidth, border_bottom_color::YBorderBottomColor, border_image_source::YBorderImageSource, border_inline_end_color::YBorderInlineEndColor, border_inline_start_color::YBorderInlineStartColor, border_left_color::YBorderLeftColor, border_right_color::YBorderRightColor, border_top_color::YBorderTopColor, calc, caret_color, channel_keyword::YChannelKeyword, color::{self, YColor}, filter, images, length::{YAbsoluteLength, YCharacterWidthLength, YContainerRelativeLength, YFontRelativeLength, YViewportPercentageLength}, list_style_image::YListStyleImage, mask_image::YMaskImage, number::YNumber, outline_color::YOutlineColor, percentage::YPercentage, resolution::YResolution, size, text_decoration_color::YTextDecorationColor, time::YTime, width::YWidth};
+use crate::declarations::{align_content::YAlignContent, align_items::YAlignItems, align_self::YAlignSelf, alignment_baseline::YAlignmentBaseline, angle::YAngle, animation, animation_composition::YAnimationComposition, animation_delay::YAnimationDelay, animation_direction::YAnimationDirection, animation_duration::{YAnimationDuration, YAnimationDurationValue}, animation_fill_mode::YAnimationFillMode, animation_iteration_count::YAnimationIterationCount, animation_name::YAnimationName, animation_play_state::YAnimationPlayState, animation_range_end::YAnimationRangeEnd, animation_range_start::YAnimationRangeStart, animation_timeline::YAnimationTimeline, animation_timing_function::YAnimationTimingFunction, aspect_ratio::YAspectRatio, backdrop_filter::YBackdropFilter, backface_visibility::YBackfaceVisibility, background_attachment::YBackgroundAttachment, background_clip::YBackgroundClip, background_color::YBackgroundColor, background_image::YBackgroundImage, background_origin::YBackgroundOrigin, background_position_x::YBackgroundPositionX, background_position_y::YBackgroundPositionY, background_repeat::{YBackgroundRepeat, YBackgroundRepeatValue}, background_size::{YBackgroundSize, YBackgroundSizeExplicitSize}, baseline_shift::{YBaselineShiftKeyword, YBaselineShiftLength}, baseline_source::YBaselineSource, block_size::YBlockSize, border_block_end_color::YBorderBlockEndColor, border_block_end_style::YBorderBlockEndStyle, border_block_end_width::YBorderBlockEndWidth, border_block_start_color::YBorderBlockStartColor, border_block_start_style::YBorderBlockStartStyle, border_block_start_width::YBorderBlockStartWidth, border_bottom_color::YBorderBottomColor, border_bottom_left_radius::YBorderBottomLeftRadius, border_bottom_right_radius::YBorderBottomRightRadius, border_end_end_radius::YBorderEndEndRadius, border_end_start_radius::YBorderEndStartRadius, border_image_source::YBorderImageSource, border_inline_end_color::YBorderInlineEndColor, border_inline_start_color::YBorderInlineStartColor, border_left_color::YBorderLeftColor, border_right_color::YBorderRightColor, border_start_end_radius::YBorderStartEndRadius, border_start_start_radius::YBorderStartStartRadius, border_top_color::YBorderTopColor, border_top_left_radius::YBorderTopLeftRadius, border_top_right_radius::YBorderTopRightRadius, calc, caret_color, channel_keyword::YChannelKeyword, color::{self, YColor}, filter, images, length::{YAbsoluteLength, YCharacterWidthLength, YContainerRelativeLength, YFontRelativeLength, YViewportPercentageLength}, list_style_image::YListStyleImage, mask_image::YMaskImage, number::YNumber, outline_color::YOutlineColor, percentage::YPercentage, resolution::YResolution, size, text_decoration_color::YTextDecorationColor, time::YTime, width::YWidth};
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let declarations_module = yass_module.define_module("Declarations")?;
@@ -171,6 +171,38 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     border_block_start_style_class.define_method("value", method!(YBorderBlockStartStyle::value, 0))?;
 
     let border_bottom_style_class = declarations_module.define_class("BorderBottomStyle", ruby.class_object())?;
+
+    let border_bottom_left_radius_class = declarations_module.define_class("BorderBottomLeftRadius", ruby.class_object())?;
+    border_bottom_left_radius_class.define_method("width", method!(YBorderBottomLeftRadius::width, 0))?;
+    border_bottom_left_radius_class.define_method("height", method!(YBorderBottomLeftRadius::height, 0))?;
+
+    let border_bottom_right_radius_class = declarations_module.define_class("BorderBottomRightRadius", ruby.class_object())?;
+    border_bottom_right_radius_class.define_method("width", method!(YBorderBottomRightRadius::width, 0))?;
+    border_bottom_right_radius_class.define_method("height", method!(YBorderBottomRightRadius::height, 0))?;
+
+    let border_end_end_radius_class = declarations_module.define_class("BorderEndEndRadius", ruby.class_object())?;
+    border_end_end_radius_class.define_method("width", method!(YBorderEndEndRadius::width, 0))?;
+    border_end_end_radius_class.define_method("height", method!(YBorderEndEndRadius::height, 0))?;
+
+    let border_end_start_radius_class = declarations_module.define_class("BorderEndStartRadius", ruby.class_object())?;
+    border_end_start_radius_class.define_method("width", method!(YBorderEndStartRadius::width, 0))?;
+    border_end_start_radius_class.define_method("height", method!(YBorderEndStartRadius::height, 0))?;
+
+    let border_start_end_radius_class = declarations_module.define_class("BorderStartEndRadius", ruby.class_object())?;
+    border_start_end_radius_class.define_method("width", method!(YBorderStartEndRadius::width, 0))?;
+    border_start_end_radius_class.define_method("height", method!(YBorderStartEndRadius::height, 0))?;
+
+    let border_start_start_radius_class = declarations_module.define_class("BorderStartStartRadius", ruby.class_object())?;
+    border_start_start_radius_class.define_method("width", method!(YBorderStartStartRadius::width, 0))?;
+    border_start_start_radius_class.define_method("height", method!(YBorderStartStartRadius::height, 0))?;
+
+    let border_top_left_radius_class = declarations_module.define_class("BorderTopLeftRadius", ruby.class_object())?;
+    border_top_left_radius_class.define_method("width", method!(YBorderTopLeftRadius::width, 0))?;
+    border_top_left_radius_class.define_method("height", method!(YBorderTopLeftRadius::height, 0))?;
+
+    let border_top_right_radius_class = declarations_module.define_class("BorderTopRightRadius", ruby.class_object())?;
+    border_top_right_radius_class.define_method("width", method!(YBorderTopRightRadius::width, 0))?;
+    border_top_right_radius_class.define_method("height", method!(YBorderTopRightRadius::height, 0))?;
 
     let border_inline_end_style_class = declarations_module.define_class("BorderInlineEndStyle", ruby.class_object())?;
 
