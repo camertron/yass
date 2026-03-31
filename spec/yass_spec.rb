@@ -236,6 +236,26 @@ RSpec.describe(Yass) do
     end
   end
 
+  describe "border image repeat declarations" do
+    def border_image_repeat_declaration(value)
+      sheet = Yass::Parser.parse(".x { border-image-repeat: #{value}; }")
+      sheet.rules.first.declarations.first
+    end
+
+    it "exposes horizontal and vertical border image repeat keywords" do
+      declaration = border_image_repeat_declaration("repeat round")
+
+      expect(declaration).to be_a(Yass::Declarations::BorderImageRepeat)
+      expect(declaration.horizontal).to eq(:repeat)
+      expect(declaration.vertical).to eq(:round)
+
+      stretch = border_image_repeat_declaration("stretch")
+
+      expect(stretch.horizontal).to eq(:stretch)
+      expect(stretch.vertical).to eq(:stretch)
+    end
+  end
+
   describe "border width declarations" do
     def border_width_declaration(property, value)
       sheet = Yass::Parser.parse(".x { #{property}: #{value}; }")
