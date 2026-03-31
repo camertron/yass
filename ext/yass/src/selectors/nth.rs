@@ -1,6 +1,6 @@
 use std::cell::RefCell;
 
-use magnus::{DataTypeFunctions, Ruby, TypedData, Value, gc, typed_data, value::{Id, InnerValue, Opaque, ReprValue}};
+use magnus::{DataTypeFunctions, Ruby, TypedData, Value, gc, typed_data, value::{Id, Opaque, ReprValue}};
 use selectors::parser::{NthSelectorData, NthType};
 
 use crate::selectors::YAnPlusB;

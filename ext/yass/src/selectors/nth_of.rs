@@ -1,6 +1,6 @@
 use std::cell::RefCell;
 
-use magnus::{DataTypeFunctions, Error, RArray, Ruby, TypedData, Value, gc, typed_data, value::{InnerValue, Opaque, ReprValue}};
+use magnus::{DataTypeFunctions, Error, RArray, Ruby, TypedData, Value, gc, typed_data, value::{Opaque, ReprValue}};
 use selectors::parser::NthOfSelectorData;
 use style::selector_parser::SelectorImpl;
 

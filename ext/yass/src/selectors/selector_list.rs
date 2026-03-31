@@ -25,20 +25,12 @@ impl YSelectorList {
         }
     }
 
-    pub fn add(&self, selector: Selector<SelectorImpl>, ruby: &Ruby) {
-        self.selectors.add(selector, ruby);
-    }
-
     pub fn add_all(&self, selectors: Vec<Selector<SelectorImpl>>, ruby: &Ruby) {
         self.selectors.add_all(selectors, ruby);
     }
 
     pub fn to_a(&self, ruby: &Ruby) -> Result<RArray, Error> {
         self.selectors.to_a(ruby)
-    }
-
-    pub fn len(&self) -> usize {
-        self.selectors.len()
     }
 
     pub fn is_empty(&self) -> bool {
