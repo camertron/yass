@@ -190,6 +190,25 @@ RSpec.describe(Yass) do
     end
   end
 
+  describe "border collapse declarations" do
+    def border_collapse_declaration(value)
+      sheet = Yass::Parser.parse(".x { border-collapse: #{value}; }")
+      sheet.rules.first.declarations.first
+    end
+
+    it "exposes border collapse values as declaration wrappers" do
+      {
+        "separate" => :separate,
+        "collapse" => :collapse,
+      }.each do |css_value, expected_value|
+        declaration = border_collapse_declaration(css_value)
+
+        expect(declaration).to be_a(Yass::Declarations::BorderCollapse)
+        expect(declaration.value).to eq(expected_value)
+      end
+    end
+  end
+
   describe "border width declarations" do
     def border_width_declaration(property, value)
       sheet = Yass::Parser.parse(".x { #{property}: #{value}; }")
