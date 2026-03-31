@@ -11,7 +11,7 @@ pub fn init(ruby: &Ruby, _yass_module: &RModule, _declarations_module: &RModule,
     cubic_bezier_class.define_method("x2", method!(YCubicBezier::x2, 0))?;
     cubic_bezier_class.define_method("y2", method!(YCubicBezier::y2, 0))?;
 
-    let keyword_class = timing_function_module.define_class("CubicBezier", ruby.class_object())?;
+    let keyword_class = timing_function_module.define_class("Keyword", ruby.class_object())?;
     keyword_class.define_method("value", method!(YKeyword::value, 0))?;
 
     let piecewise_linear_function_class = timing_function_module.define_class("PiecewiseLinearFunction", ruby.class_object())?;

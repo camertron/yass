@@ -79,6 +79,8 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
 
     let empty_cells_class = declarations_module.define_class("EmptyCells", ruby.class_object())?;
 
+    let flex_basis_class = declarations_module.define_class("FlexBasis", ruby.class_object())?;
+
     let flex_direction_class = declarations_module.define_class("FlexDirection", ruby.class_object())?;
 
     let flex_wrap_class = declarations_module.define_class("FlexWrap", ruby.class_object())?;
@@ -115,6 +117,8 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
 
     let object_fit_class = declarations_module.define_class("ObjectFit", ruby.class_object())?;
 
+    let object_position_class = declarations_module.define_class("ObjectPosition", ruby.class_object())?;
+
     let opacity_class = declarations_module.define_class("Opacity", ruby.class_object())?;
 
     let order_class = declarations_module.define_class("Order", ruby.class_object())?;
@@ -142,6 +146,8 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let text_decoration_line_class = declarations_module.define_class("TextDecorationLine", ruby.class_object())?;
 
     let text_decoration_style_class = declarations_module.define_class("TextDecorationStyle", ruby.class_object())?;
+
+    let text_overflow_class = declarations_module.define_class("TextOverflow", ruby.class_object())?;
 
     let text_justify_class = declarations_module.define_class("TextJustify", ruby.class_object())?;
 
@@ -340,6 +346,8 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
 
     let clip_path_class = declarations_module.define_class("ClipPath", ruby.class_object())?;
 
+    let clip_class = declarations_module.define_class("Clip", ruby.class_object())?;
+
     let color_class = declarations_module.define_class("Color", ruby.class_object())?;
     color_class.define_method("color", method!(YColor::color, 0))?;
 
@@ -405,6 +413,8 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
 
     let transition_timing_function_class = declarations_module.define_class("TransitionTimingFunction", ruby.class_object())?;
 
+    let translate_class = declarations_module.define_class("Translate", ruby.class_object())?;
+
     let view_transition_class_class = declarations_module.define_class("ViewTransitionClass", ruby.class_object())?;
 
     let view_transition_name_class = declarations_module.define_class("ViewTransitionName", ruby.class_object())?;
@@ -432,6 +442,8 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let column_gap_class = declarations_module.define_class("ColumnGap", ruby.class_object())?;
 
     let row_gap_class = declarations_module.define_class("RowGap", ruby.class_object())?;
+
+    let scale_class = declarations_module.define_class("Scale", ruby.class_object())?;
 
     let grid_column_end_class = declarations_module.define_class("GridColumnEnd", ruby.class_object())?;
 
@@ -484,7 +496,11 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
 
     let right_class = declarations_module.define_class("Right", ruby.class_object())?;
 
+    let rotate_class = declarations_module.define_class("Rotate", ruby.class_object())?;
+
     let top_class = declarations_module.define_class("Top", ruby.class_object())?;
+
+    let transform_origin_class = declarations_module.define_class("TransformOrigin", ruby.class_object())?;
 
     let margin_block_end_class = declarations_module.define_class("MarginBlockEnd", ruby.class_object())?;
 
@@ -517,6 +533,8 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let padding_right_class = declarations_module.define_class("PaddingRight", ruby.class_object())?;
 
     let padding_top_class = declarations_module.define_class("PaddingTop", ruby.class_object())?;
+
+    let perspective_origin_class = declarations_module.define_class("PerspectiveOrigin", ruby.class_object())?;
 
     let block_size_class = declarations_module.define_class("BlockSize", ruby.class_object())?;
     block_size_class.define_method("size", method!(YBlockSize::size, 0))?;
