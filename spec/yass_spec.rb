@@ -189,4 +189,27 @@ RSpec.describe(Yass) do
       end
     end
   end
+
+  describe "border width declarations" do
+    def border_width_declaration(property, value)
+      sheet = Yass::Parser.parse(".x { #{property}: #{value}; }")
+      sheet.rules.first.declarations.first
+    end
+
+    it "exposes side border widths as declaration wrappers" do
+      expectations = [
+        ["border-top-width", "thin", Yass::Declarations::BorderTopWidth, :thin],
+        ["border-right-width", "2px", Yass::Declarations::BorderRightWidth, "2px"],
+        ["border-bottom-width", "medium", Yass::Declarations::BorderBottomWidth, :medium],
+        ["border-left-width", "4px", Yass::Declarations::BorderLeftWidth, "4px"],
+      ]
+
+      expectations.each do |property, css_value, klass, expected_value|
+        declaration = border_width_declaration(property, css_value)
+
+        expect(declaration).to be_a(klass)
+        expect(declaration.value).to eq(expected_value)
+      end
+    end
+  end
 end
