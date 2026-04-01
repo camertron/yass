@@ -272,6 +272,67 @@ RSpec.describe(Yass) do
     end
   end
 
+  describe "clip-path declarations" do
+    def clip_path_declaration(value)
+      sheet = Yass::Parser.parse(".x { clip-path: #{value}; }")
+      sheet.rules.first.declarations.first
+    end
+
+    it "exposes variant wrappers for none, shape, and geometry box" do
+      none_declaration = clip_path_declaration("none")
+      expect(none_declaration).to be_a(Yass::Declarations::ClipPath)
+      expect(none_declaration.value).to be_a(Yass::Declarations::ClipPath::None)
+
+      shape_declaration = clip_path_declaration("circle(40%) border-box")
+      expect(shape_declaration).to be_a(Yass::Declarations::ClipPath)
+
+      shape = shape_declaration.value
+      expect(shape).to be_a(Yass::Declarations::ClipPath::Shape)
+      expect(shape.shape).to be_a(Yass::Declarations::ClipPath::Circle)
+      expect(shape.shape.position).to be_a(Yass::Declarations::ClipPath::PositionAuto)
+
+      radius = shape.shape.radius
+      expect(radius).to be_a(Yass::Declarations::ClipPath::ShapeRadiusLength)
+      expect(radius.value).to be_a(Yass::Declarations::Percentage)
+      expect(radius.value.value).to be_within(0.000001).of(0.4)
+
+      expect(shape.reference_box).to be_a(Yass::Declarations::ClipPath::BorderBox)
+
+      box_declaration = clip_path_declaration("content-box")
+      box = box_declaration.value
+
+      expect(box).to be_a(Yass::Declarations::ClipPath::Box)
+      expect(box.reference_box).to be_a(Yass::Declarations::ClipPath::ContentBox)
+    end
+
+    it "exposes typed round radii and shape commands" do
+      rounded_declaration = clip_path_declaration("inset(1px round 2px)")
+      rounded_shape = rounded_declaration.value.shape
+
+      expect(rounded_shape).to be_a(Yass::Declarations::ClipPath::Rect)
+
+      inset_rect = rounded_shape.value
+      expect(inset_rect).to be_a(Yass::Declarations::ClipPath::InsetRect)
+      expect(inset_rect.round).to be_a(Yass::Declarations::ClipPath::BorderRadius)
+      expect(inset_rect.round.top_left).to be_a(Yass::Declarations::ClipPath::BorderCornerRadius)
+
+      path_declaration = clip_path_declaration('path("M 0 0 L 10 10")')
+      path_or_shape = path_declaration.value.shape
+
+      expect(path_or_shape).to be_a(Yass::Declarations::ClipPath::PathOrShape)
+      path_function = path_or_shape.value
+      expect(path_function).to be_a(Yass::Declarations::ClipPath::PathFunction)
+
+      commands = path_function.commands
+      expect(commands.size).to eq(2)
+      expect(commands[0]).to be_a(Yass::Declarations::ClipPath::PathCommand)
+      expect(commands[0].value).to be_a(Yass::Declarations::ClipPath::PathCommandMove)
+      expect(commands[0].value.point).to be_a(Yass::Declarations::ClipPath::PathCommandEndPointToPosition)
+      expect(commands[0].value.point.x).to eq(0.0)
+      expect(commands[0].value.point.y).to eq(0.0)
+    end
+  end
+
   describe "border image outset declarations" do
     def border_image_outset_declaration(value)
       sheet = Yass::Parser.parse(".x { border-image-outset: #{value}; }")
