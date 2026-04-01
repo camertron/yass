@@ -333,6 +333,43 @@ RSpec.describe(Yass) do
     end
   end
 
+  describe "clip declarations" do
+    def clip_declaration(value)
+      sheet = Yass::Parser.parse(".x { clip: #{value}; }")
+      sheet.rules.first.declarations.first
+    end
+
+    it "exposes auto and rect clip wrappers" do
+      auto_declaration = clip_declaration("auto")
+
+      expect(auto_declaration).to be_a(Yass::Declarations::Clip)
+      expect(auto_declaration.value).to be_a(Yass::Declarations::Clip::Auto)
+
+      rect_declaration = clip_declaration("rect(1px, auto, 3px, 4px)")
+      rect = rect_declaration.value
+
+      expect(rect_declaration).to be_a(Yass::Declarations::Clip)
+      expect(rect).to be_a(Yass::Declarations::Clip::Rect)
+
+      expect(rect.top).to be_a(Yass::Declarations::Clip::Length)
+      expect(rect.top.value).to be_a(Yass::Declarations::Length::Absolute)
+      expect(rect.top.value.value).to eq(1.0)
+      expect(rect.top.value.unit).to eq(:px)
+
+      expect(rect.right).to be_a(Yass::Declarations::Clip::LengthAuto)
+
+      expect(rect.bottom).to be_a(Yass::Declarations::Clip::Length)
+      expect(rect.bottom.value).to be_a(Yass::Declarations::Length::Absolute)
+      expect(rect.bottom.value.value).to eq(3.0)
+      expect(rect.bottom.value.unit).to eq(:px)
+
+      expect(rect.left).to be_a(Yass::Declarations::Clip::Length)
+      expect(rect.left.value).to be_a(Yass::Declarations::Length::Absolute)
+      expect(rect.left.value.value).to eq(4.0)
+      expect(rect.left.value.unit).to eq(:px)
+    end
+  end
+
   describe "border image outset declarations" do
     def border_image_outset_declaration(value)
       sheet = Yass::Parser.parse(".x { border-image-outset: #{value}; }")
