@@ -48,6 +48,7 @@ fn init(ruby: &Ruby) -> Result<(), Error> {
         "layout.css.backdrop-filter.enabled",
         true,
     );
+    <bool as stylo_static_prefs::Preference>::set("layout.columns.enabled", true);
 
     let yass_module = ruby.define_module("Yass")?;
 

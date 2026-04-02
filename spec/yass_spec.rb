@@ -304,28 +304,45 @@ RSpec.describe(Yass) do
   end
 
   describe "column span declarations" do
-    def declarations_for(css)
-      Yass::Parser.parse(".x { #{css} }").rules.first.declarations
+    def column_span_declaration(value)
+      sheet = Yass::Parser.parse(".x { column-span: #{value}; }")
+      sheet.rules.first.declarations.first
     end
 
-    it "currently does not emit a declaration for column-span: all" do
-      declarations = declarations_for("column-span: all;")
+    it "exposes all and none variants" do
+      all_declaration = column_span_declaration("all")
 
-      expect(declarations).to eq([])
+      expect(all_declaration).to be_a(Yass::Declarations::ColumnSpan)
+      expect(all_declaration.value).to eq(:all)
+
+      none_declaration = column_span_declaration("none")
+
+      expect(none_declaration).to be_a(Yass::Declarations::ColumnSpan)
+      expect(none_declaration.value).to eq(:none)
+    end
+  end
+
+  describe "column width declarations" do
+    def column_width_declaration(value)
+      sheet = Yass::Parser.parse(".x { column-width: #{value}; }")
+      sheet.rules.first.declarations.first
     end
 
-    it "currently does not emit a declaration for column-span: none" do
-      declarations = declarations_for("column-span: none;")
+    it "exposes auto and length variants" do
+      auto_declaration = column_width_declaration("auto")
 
-      expect(declarations).to eq([])
-    end
+      expect(auto_declaration).to be_a(Yass::Declarations::ColumnWidth)
+      expect(auto_declaration.value).to be_a(Yass::Declarations::ColumnWidth::Auto)
 
-    it "still emits neighboring supported declarations" do
-      declarations = declarations_for("column-gap: 1px; column-span: all; border-collapse: collapse;")
+      length_declaration = column_width_declaration("200px")
 
-      expect(declarations.size).to eq(2)
-      expect(declarations[0]).to be_a(Yass::Declarations::ColumnGap)
-      expect(declarations[1]).to be_a(Yass::Declarations::BorderCollapse)
+      expect(length_declaration).to be_a(Yass::Declarations::ColumnWidth)
+
+      length = length_declaration.value
+      expect(length).to be_a(Yass::Declarations::ColumnWidth::Length)
+      expect(length.value).to be_a(Yass::Declarations::Length::Absolute)
+      expect(length.value.value).to eq(200.0)
+      expect(length.value.unit).to eq(:px)
     end
   end
 
