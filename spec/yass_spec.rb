@@ -638,4 +638,41 @@ RSpec.describe(Yass) do
       end
     end
   end
+
+  describe "container type declarations" do
+    def container_type_declaration(value)
+      sheet = Yass::Parser.parse(".x { container-type: #{value}; }")
+      sheet.rules.first.declarations.first
+    end
+
+    it "exposes the normal value" do
+      declaration = container_type_declaration("normal")
+
+      expect(declaration).to be_a(Yass::Declarations::ContainerType)
+      expect(declaration.values).to eq([:normal])
+      expect(declaration.normal?).to eq(true)
+      expect(declaration.inline_size?).to eq(false)
+      expect(declaration.size?).to eq(false)
+    end
+
+    it "exposes the inline-size value" do
+      declaration = container_type_declaration("inline-size")
+
+      expect(declaration).to be_a(Yass::Declarations::ContainerType)
+      expect(declaration.values).to eq([:inline_size])
+      expect(declaration.normal?).to eq(false)
+      expect(declaration.inline_size?).to eq(true)
+      expect(declaration.size?).to eq(false)
+    end
+
+    it "exposes the size value" do
+      declaration = container_type_declaration("size")
+
+      expect(declaration).to be_a(Yass::Declarations::ContainerType)
+      expect(declaration.values).to eq([:size])
+      expect(declaration.normal?).to eq(false)
+      expect(declaration.inline_size?).to eq(true)
+      expect(declaration.size?).to eq(true)
+    end
+  end
 end
