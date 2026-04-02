@@ -26,6 +26,7 @@ pub fn make_color(color: &Color, ruby: &Ruby) -> Value {
         Color::System(system_color) => {
             YSystemColor::new(*system_color).into_value_with(ruby)
         },
+        Color::InheritFromBodyQuirk => todo!(),
     }
 }
 

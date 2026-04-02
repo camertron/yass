@@ -708,6 +708,7 @@ impl YDeclaration {
             PropertyDeclaration::Custom(custom_declaration) => {
                 Ok(ruby.obj_wrap(YCustom::new(custom_declaration.clone())).as_value())
             },
+            PropertyDeclaration::BackgroundBlendMode(specified_value) => todo!(),
         }
     }
 }

@@ -303,6 +303,32 @@ RSpec.describe(Yass) do
     end
   end
 
+  describe "column span declarations" do
+    def declarations_for(css)
+      Yass::Parser.parse(".x { #{css} }").rules.first.declarations
+    end
+
+    it "currently does not emit a declaration for column-span: all" do
+      declarations = declarations_for("column-span: all;")
+
+      expect(declarations).to eq([])
+    end
+
+    it "currently does not emit a declaration for column-span: none" do
+      declarations = declarations_for("column-span: none;")
+
+      expect(declarations).to eq([])
+    end
+
+    it "still emits neighboring supported declarations" do
+      declarations = declarations_for("column-gap: 1px; column-span: all; border-collapse: collapse;")
+
+      expect(declarations.size).to eq(2)
+      expect(declarations[0]).to be_a(Yass::Declarations::ColumnGap)
+      expect(declarations[1]).to be_a(Yass::Declarations::BorderCollapse)
+    end
+  end
+
   describe "color scheme declarations" do
     def color_scheme_declaration(value)
       sheet = Yass::Parser.parse(".x { color-scheme: #{value}; }")

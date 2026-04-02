@@ -11,11 +11,11 @@ crate-type = ["cdylib"]
 
 [dependencies]
 magnus = { version = "0.8.2" }
-stylo = { version = "0.13.0" }
-stylo_traits = { version = "0.13.0" }
+stylo = { version = "0.15.0" }
+stylo_traits = { version = "0.15.0" }
 selectors = { version = "0.36.1" }
 url = { version = "2.5" }
-stylo_static_prefs = "0.13.0"
+stylo_static_prefs = "0.15.0"
 
 [profile.release]
 lto = true         # Enable Link-Time Optimization
