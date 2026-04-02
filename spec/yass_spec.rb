@@ -272,6 +272,27 @@ RSpec.describe(Yass) do
     end
   end
 
+  describe "color scheme declarations" do
+    def color_scheme_declaration(value)
+      sheet = Yass::Parser.parse(".x { color-scheme: #{value}; }")
+      sheet.rules.first.declarations.first
+    end
+
+    it "exposes normal as a symbol" do
+      declaration = color_scheme_declaration("normal")
+
+      expect(declaration).to be_a(Yass::Declarations::ColorScheme)
+      expect(declaration.values).to eq(["normal"])
+    end
+
+    it "exposes keyword and custom identifier values in canonical order" do
+      declaration = color_scheme_declaration("only light dark sepia")
+
+      expect(declaration).to be_a(Yass::Declarations::ColorScheme)
+      expect(declaration.values).to eq(["light", "dark", "sepia", "only"])
+    end
+  end
+
   describe "clip-path declarations" do
     def clip_path_declaration(value)
       sheet = Yass::Parser.parse(".x { clip-path: #{value}; }")
