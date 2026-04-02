@@ -272,6 +272,34 @@ RSpec.describe(Yass) do
     end
   end
 
+  describe "contain declarations" do
+    def contain_declaration(value)
+      sheet = Yass::Parser.parse(".x { contain: #{value}; }")
+      sheet.rules.first.declarations.first
+    end
+
+    it "exposes contain values and predicates" do
+      declaration = contain_declaration("layout style")
+
+      expect(declaration).to be_a(Yass::Declarations::Contain)
+      expect(declaration.values).to eq([:layout, :style])
+      expect(declaration.layout?).to eq(true)
+      expect(declaration.style?).to eq(true)
+      expect(declaration.paint?).to eq(false)
+      expect(declaration.content?).to eq(false)
+      expect(declaration.strict?).to eq(false)
+    end
+
+    it "exposes strict as a canonical contain value" do
+      declaration = contain_declaration("strict")
+
+      expect(declaration.values).to eq([:strict])
+      expect(declaration.strict?).to eq(true)
+      expect(declaration.content?).to eq(true)
+      expect(declaration.size?).to eq(true)
+    end
+  end
+
   describe "column gap declarations" do
     def column_gap_declaration(value)
       sheet = Yass::Parser.parse(".x { column-gap: #{value}; }")
