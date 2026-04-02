@@ -300,6 +300,29 @@ RSpec.describe(Yass) do
     end
   end
 
+  describe "container name declarations" do
+    def container_name_declaration(value)
+      sheet = Yass::Parser.parse(".x { container-name: #{value}; }")
+      sheet.rules.first.declarations.first
+    end
+
+    it "exposes named container values" do
+      declaration = container_name_declaration("foo bar")
+
+      expect(declaration).to be_a(Yass::Declarations::ContainerName)
+      expect(declaration.values).to eq(["foo", "bar"])
+      expect(declaration.none?).to eq(false)
+    end
+
+    it "exposes the none value" do
+      declaration = container_name_declaration("none")
+
+      expect(declaration).to be_a(Yass::Declarations::ContainerName)
+      expect(declaration.values).to eq(["none"])
+      expect(declaration.none?).to eq(true)
+    end
+  end
+
   describe "column gap declarations" do
     def column_gap_declaration(value)
       sheet = Yass::Parser.parse(".x { column-gap: #{value}; }")
