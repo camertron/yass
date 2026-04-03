@@ -10,5 +10,56 @@ rescue LoadError
   require_relative "yass/yass"
 end
 
+require "yass/node"
+require "yass/stylesheet"
+require "yass/selectors"
+require "yass/declarations"
+
 module Yass
+  class UnimplementedRule
+    def selectors
+      []
+    end
+
+    def declarations
+      []
+    end
+  end
+
+  class MediaRule
+    def selectors
+      []
+    end
+
+    def declarations
+      []
+    end
+  end
+
+  def self.serialize(obj)
+    case obj
+    when Integer, String, Symbol
+      obj
+    when Float
+      if obj == Float::INFINITY
+        "inf"
+      elsif obj == -Float::INFINITY
+        "-inf"
+      elsif obj == Float::NAN
+        # JSON::NaN
+        "NaN"
+      else
+        obj
+      end
+    when Array
+      obj.map { |elem| serialize(elem) }
+    else
+      if obj.class.const_defined?(:RUBY_METHODS)
+        obj.class::RUBY_METHODS.each_with_object({}) do |method_name, memo|
+          plain_method_name = method_name.to_s.chomp("?")
+          memo[plain_method_name.to_sym] = serialize(obj.send(method_name))
+        end
+      end
+    end
+  end
 end
