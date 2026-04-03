@@ -1,6 +1,7 @@
 use magnus::{Ruby, Value, value::{Id, ReprValue}};
 use selectors::parser::Combinator;
 
+#[magnus::wrap(class = "Yass::Selector::Combinator")]
 pub struct YCombinator {  // lol
     pub combinator: Combinator
 }

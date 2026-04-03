@@ -66,6 +66,8 @@ fn init(ruby: &Ruby) -> Result<(), Error> {
 
     let _media_rule_class = yass_module.define_class("MediaRule", rule_class)?;
 
+    let _unimplemented_rule_class = yass_module.define_class("UnimplementedRule", rule_class)?;
+
     let selector_class = yass_module.define_class("Selector", ruby.class_object())?;
     selector_class.define_method("children", method!(YSelector::children, 0))?;
 
@@ -85,7 +87,7 @@ fn init(ruby: &Ruby) -> Result<(), Error> {
     local_name_class.define_method("kind", method!(YSelectorChild::kind, 0))?;
     local_name_class.define_method("value", method!(YSelectorChild::value, 0))?;
 
-    let id_class = selector_class.define_class("ID", selector_child_class)?;
+    let id_class = selector_class.define_class("Id", selector_child_class)?;
     id_class.define_method("kind", method!(YSelectorChild::kind, 0))?;
     id_class.define_method("value", method!(YSelectorChild::value, 0))?;
 
@@ -167,7 +169,7 @@ fn init(ruby: &Ruby) -> Result<(), Error> {
     nth_of_class.define_method("nth", method!(YSelectorChild::nth, 0))?;
     nth_of_class.define_method("selectors", method!(YSelectorChild::selectors, 0))?;
 
-    let non_ts_pseudo_class = selector_class.define_class("NonTSPseudoElement", selector_child_class)?;
+    let non_ts_pseudo_class = selector_class.define_class("NonTsPseudoClass", selector_child_class)?;
     non_ts_pseudo_class.define_method("kind", method!(YSelectorChild::kind, 0))?;
     non_ts_pseudo_class.define_method("type", method!(YSelectorChild::ty, 0))?;
     non_ts_pseudo_class.define_method("value", method!(YSelectorChild::value, 0))?;
@@ -191,6 +193,10 @@ fn init(ruby: &Ruby) -> Result<(), Error> {
     let has_class = selector_class.define_class("Has", selector_child_class)?;
     has_class.define_method("kind", method!(YSelectorChild::kind, 0))?;
     has_class.define_method("relative_selectors", method!(YSelectorChild::relative_selectors, 0))?;
+
+    let host_class = selector_class.define_class("Host", selector_child_class)?;
+    host_class.define_method("kind", method!(YSelectorChild::kind, 0))?;
+    host_class.define_method("selector", method!(YSelectorChild::selector, 0))?;
 
     let invalid_class = selector_class.define_class("Invalid", selector_child_class)?;
     invalid_class.define_method("kind", method!(YSelectorChild::kind, 0))?;

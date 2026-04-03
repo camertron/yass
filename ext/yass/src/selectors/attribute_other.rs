@@ -4,6 +4,7 @@ use style::selector_parser::SelectorImpl;
 
 use crate::{selectors::YSpecificNamespaceConstraint, utils::singleton_instance};
 
+#[magnus::wrap(class = "Yass::Selector::AttributeOther")]
 pub struct YAttributeOther {
     attr_selector_with_optional_namespace: Box<AttrSelectorWithOptionalNamespace<SelectorImpl>>
 }

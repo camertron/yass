@@ -18,7 +18,7 @@ pub enum YRule {
 impl DataTypeFunctions for YRule {
     fn mark(&self, marker: &gc::Marker) {
         match self {
-            YRule::StyleRule(style_rule) => style_rule.mark( marker),
+            YRule::StyleRule(style_rule) => style_rule.mark(marker),
             _ => ()
         }
     }

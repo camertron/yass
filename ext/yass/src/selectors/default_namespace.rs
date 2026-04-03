@@ -1,5 +1,6 @@
 use magnus::{RString, Ruby};
 
+#[magnus::wrap(class = "Yass::Selector::DefaultNamespace")]
 pub struct YDefaultNamespace {
     url: String
 }

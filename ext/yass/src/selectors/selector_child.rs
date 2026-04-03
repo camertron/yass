@@ -38,7 +38,7 @@ pub enum YSelectorChild {
     #[magnus(class = "Yass::Selector::LocalName")]
     LocalName(YLocalName),
 
-    #[magnus(class = "Yass::Selector::ID")]
+    #[magnus(class = "Yass::Selector::Id")]
     ID(YID),
 
     #[magnus(class = "Yass::Selector::Klass")]
@@ -92,7 +92,7 @@ pub enum YSelectorChild {
     #[magnus(class = "Yass::Selector::NthOf")]
     NthOf(YNthOf),
 
-    #[magnus(class = "Yass::Selector::NonTSPseudoClass")]
+    #[magnus(class = "Yass::Selector::NonTsPseudoClass")]
     NonTSPseudoClass(YNonTSPseudoClass),
 
     #[magnus(class = "Yass::Selector::Slotted")]

@@ -1,6 +1,7 @@
 use magnus::{Ruby, Value, value::{Id, ReprValue}};
 use style::selector_parser::NonTSPseudoClass;
 
+#[magnus::wrap(class = "Yass::Selector::NonTsPseudoClass")]
 pub struct YNonTSPseudoClass {
     non_ts_pseudo_class: NonTSPseudoClass
 }

@@ -3,6 +3,7 @@ use selectors::attr::{AttrSelectorOperator, ParsedCaseSensitivity};
 
 use crate::selectors::YSelector;
 
+#[magnus::wrap(class = "Yass::Selector::AttributeInNoNamespace")]
 pub struct YAttributeInNoNamespace {
     local_name: String,
     operator: AttrSelectorOperator,

@@ -7,7 +7,7 @@ pub fn init(ruby: &Ruby, _yass_module: &RModule, declarations_module: &RModule) 
     calc_class.define_method("clamping_mode", method!(YCalc::clamping_mode, 0))?;
     calc_class.define_method("root", method!(YCalc::root, 0))?;
 
-    let abs_class = calc_class.define_class("Negate", ruby.class_object())?;
+    let abs_class = calc_class.define_class("Abs", ruby.class_object())?;
     abs_class.define_method("children", method!(YAbs::children, 0))?;
 
     let anchor_function_class = calc_class.define_class("AnchorFunction", ruby.class_object())?;

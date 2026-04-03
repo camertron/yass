@@ -1,5 +1,6 @@
 use magnus::{RString, Ruby};
 
+#[magnus::wrap(class = "Yass::Selector::AttributeInNoNamespaceExists")]
 pub struct YAttributeInNoNamespaceExists {
     local_name: String
 }

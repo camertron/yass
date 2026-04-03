@@ -2,6 +2,7 @@ use magnus::{RString, Ruby};
 use selectors::parser::LocalName;
 use style::selector_parser::SelectorImpl;
 
+#[magnus::wrap(class = "Yass::Selector::LocalName")]
 pub struct YLocalName {
     local_name: LocalName<SelectorImpl>
 }

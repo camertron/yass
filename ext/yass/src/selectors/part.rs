@@ -1,5 +1,6 @@
 use magnus::{Error, RArray, Ruby};
 
+#[magnus::wrap(class = "Yass::Selector::Part")]
 pub struct YPart {
     items: Vec<String>
 }

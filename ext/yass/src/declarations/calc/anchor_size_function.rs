@@ -4,7 +4,7 @@ use style::values::{generics::{Optional, length::{AnchorSizeKeyword, GenericAnch
 use crate::{cached_value::CachedValue, declarations::calc::YCalc};
 
 #[derive(TypedData)]
-#[magnus(class = "Yass::Declarations::Calc::AnchorSize", mark)]
+#[magnus(class = "Yass::Declarations::Calc::AnchorSizeFunction", mark)]
 pub struct YAnchorSizeFunction {
     target_element: CachedValue<String>,
     size: CachedValue<AnchorSizeKeyword>,

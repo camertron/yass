@@ -1,5 +1,6 @@
 use magnus::{RString, Ruby};
 
+#[magnus::wrap(class = "Yass::Selector::Klass")]
 pub struct YClass {
     pub class: String
 }
