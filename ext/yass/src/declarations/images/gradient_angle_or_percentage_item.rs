@@ -1,4 +1,4 @@
-use magnus::{DataTypeFunctions, IntoValue, Ruby, Value, gc::Marker, typed_data, value::Id};
+use magnus::{DataTypeFunctions, IntoValue, Ruby, TypedData, Value, gc::Marker, typed_data};
 use style::values::{generics::image::GradientItem, specified::{AngleOrPercentage, Color}};
 
 use crate::{cached_value::CachedValue, declarations::{color::color::make_color, images::angle_or_percentage::YAngleOrPercentage}};
@@ -17,7 +17,7 @@ pub fn make_gradient_angle_or_percentage_item(item: GradientItem<Color, AngleOrP
     }
 }
 
-#[derive(magnus::TypedData)]
+#[derive(TypedData)]
 #[magnus(class = "Yass::Declarations::Image::Gradient::SimpleColorStopAngle", mark)]
 pub struct YSimpleColorStopAngle {
     color: CachedValue<Color>,
@@ -30,10 +30,6 @@ impl YSimpleColorStopAngle {
                 make_color(color, ruby)
             }),
         }
-    }
-
-    pub fn kind(ruby: &Ruby, _rb_self: typed_data::Obj<Self>) -> Id {
-        ruby.intern("simple_color_stop")
     }
 
     pub fn color(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Value {
@@ -71,10 +67,6 @@ impl YComplexColorStopAngle {
         }
     }
 
-    pub fn kind(ruby: &Ruby, _rb_self: typed_data::Obj<Self>) -> Id {
-        ruby.intern("complex_color_stop")
-    }
-
     pub fn color(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Value {
         rb_self.color.get(ruby)
     }
@@ -99,10 +91,6 @@ pub struct YInterpolationHintAngle {
 impl YInterpolationHintAngle {
     pub fn new(position: AngleOrPercentage) -> Self {
         Self { position }
-    }
-
-    pub fn kind(ruby: &Ruby, _rb_self: typed_data::Obj<Self>) -> Id {
-        ruby.intern("interpolation_hint")
     }
 
     pub fn color(ruby: &Ruby, _rb_self: typed_data::Obj<Self>) -> Value {

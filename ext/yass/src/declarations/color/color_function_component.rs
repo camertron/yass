@@ -42,10 +42,6 @@ impl YColorFunctionComponent {
         }
     }
 
-    pub fn kind(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Id {
-        rb_self.component.kind(ruby)
-    }
-
     pub fn value(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Value {
         rb_self.value.get(ruby)
     }

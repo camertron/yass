@@ -40,7 +40,7 @@ impl YColorFunction {
         }
     }
 
-    pub fn kind(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Id {
+    pub fn system(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Id {
         match rb_self.color_function {
             ColorFunction::Rgb(..) => ruby.intern("rgb"),
             ColorFunction::Hsl(..) => ruby.intern("hsl"),

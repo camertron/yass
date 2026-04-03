@@ -49,10 +49,6 @@ impl YConicGradient {
         }
     }
 
-    pub fn kind(ruby: &Ruby, _rb_self: typed_data::Obj<Self>) -> Id {
-        ruby.intern("conic")
-    }
-
     pub fn repeating(_ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> bool {
         rb_self.repeating
     }

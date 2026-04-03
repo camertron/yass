@@ -98,17 +98,14 @@ pub fn init(ruby: &Ruby, declarations_module: &RModule) -> Result<(), Error> {
     let gradient_module = image_module.define_module("Gradient")?;
 
     let simple_color_stop_angle_class = gradient_module.define_class("SimpleColorStopAngle", ruby.class_object())?;
-    simple_color_stop_angle_class.define_method("kind", method!(YSimpleColorStopAngle::kind, 0))?;
     simple_color_stop_angle_class.define_method("color", method!(YSimpleColorStopAngle::color, 0))?;
     simple_color_stop_angle_class.define_method("position", method!(YSimpleColorStopAngle::position, 0))?;
 
     let complex_color_stop_angle_class = gradient_module.define_class("ComplexColorStopAngle", ruby.class_object())?;
-    complex_color_stop_angle_class.define_method("kind", method!(YComplexColorStopAngle::kind, 0))?;
     complex_color_stop_angle_class.define_method("color", method!(YComplexColorStopAngle::color, 0))?;
     complex_color_stop_angle_class.define_method("position", method!(YComplexColorStopAngle::position, 0))?;
 
     let interpolation_hint_angle_class = gradient_module.define_class("InterpolationHintAngle", ruby.class_object())?;
-    interpolation_hint_angle_class.define_method("kind", method!(YInterpolationHintAngle::kind, 0))?;
     interpolation_hint_angle_class.define_method("color", method!(YInterpolationHintAngle::color, 0))?;
     interpolation_hint_angle_class.define_method("position", method!(YInterpolationHintAngle::position, 0))?;
 
@@ -138,7 +135,6 @@ pub fn init(ruby: &Ruby, declarations_module: &RModule) -> Result<(), Error> {
     radial_gradient_class.define_method("items", method!(YImageRadialGradient::items, 0))?;
 
     let conic_gradient_class = image_module.define_class("ConicGradient", ruby.class_object())?;
-    conic_gradient_class.define_method("kind", method!(YConicGradient::kind, 0))?;
     conic_gradient_class.define_method("repeating?", method!(YConicGradient::repeating, 0))?;
     conic_gradient_class.define_method("angle", method!(YConicGradient::angle, 0))?;
     conic_gradient_class.define_method("position", method!(YConicGradient::position, 0))?;

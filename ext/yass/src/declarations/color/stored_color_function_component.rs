@@ -10,13 +10,6 @@ pub enum StoredColorFunctionComponent {
 }
 
 impl StoredColorFunctionComponent {
-    pub fn kind(&self, ruby: &Ruby) -> Id {
-        match self {
-            Self::NumberOrPercentage(component) => color_component_kind_to_id(component, ruby),
-            Self::NumberOrAngle(component) => color_component_kind_to_id(component, ruby),
-        }
-    }
-
     pub fn value(&self) -> Option<StoredColorComponentValue> {
         match self {
             Self::NumberOrPercentage(component) => match component {

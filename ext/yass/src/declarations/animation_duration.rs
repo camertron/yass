@@ -43,13 +43,6 @@ impl YAnimationDurationValue {
         Self { animation_duration, cached_time: RefCell::new(None) }
     }
 
-    pub fn kind(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Id {
-        match rb_self.animation_duration {
-            AnimationDuration::Auto => ruby.intern("auto"),
-            AnimationDuration::Time(_) => ruby.intern("time")
-        }
-    }
-
     pub fn time(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Option<Value> {
         match rb_self.animation_duration {
             AnimationDuration::Time(time) => {

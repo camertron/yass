@@ -7,6 +7,8 @@ pub fn init(ruby: &Ruby, color_class: &RClass) -> Result<(), Error> {
     absolute_class.define_method("color", method!(YAbsolute::color, 0))?;
     absolute_class.define_method("authored", method!(YAbsolute::authored, 0))?;
 
+    let _auto_class = color_class.define_class("Auto", ruby.class_object())?;
+
     let absolute_color_class = color_class.define_class("AbsoluteColor", ruby.class_object())?;
     absolute_color_class.define_method("components", method!(YAbsoluteColor::components, 0))?;
     absolute_color_class.define_method("alpha", method!(YAbsoluteColor::alpha, 0))?;
@@ -20,7 +22,6 @@ pub fn init(ruby: &Ruby, color_class: &RClass) -> Result<(), Error> {
     color_components_class.define_method("c2", method!(YColorComponents::c2, 0))?;
 
     let color_function_class = color_class.define_class("ColorFunction", ruby.class_object())?;
-    color_function_class.define_method("kind", method!(YColorFunction::kind, 0))?;
     color_function_class.define_method("has_origin_color?", method!(YColorFunction::has_origin_color, 0))?;
     color_function_class.define_method("origin_color", method!(YColorFunction::origin_color, 0))?;
     color_function_class.define_method("components", method!(YColorFunction::components, 0))?;
@@ -28,7 +29,6 @@ pub fn init(ruby: &Ruby, color_class: &RClass) -> Result<(), Error> {
     color_function_class.define_method("color_space", method!(YColorFunction::color_space, 0))?;
 
     let color_function_component_class = color_class.define_class("ColorFunctionComponent", ruby.class_object())?;
-    color_function_component_class.define_method("kind", method!(YColorFunctionComponent::kind, 0))?;
     color_function_component_class.define_method("value", method!(YColorFunctionComponent::value, 0))?;
     color_function_component_class.define_method("channel_keyword", method!(YColorFunctionComponent::channel_keyword, 0))?;
     color_function_component_class.define_method("calc", method!(YColorFunctionComponent::calc, 0))?;
