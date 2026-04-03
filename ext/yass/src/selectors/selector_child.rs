@@ -1,4 +1,4 @@
-use magnus::{Error, Ruby, Value, typed_data, value::ReprValue};
+use magnus::{DataTypeFunctions, Error, Ruby, TypedData, Value, gc, typed_data, value::ReprValue};
 
 use crate::selectors::{
     YAttributeInNoNamespace,
@@ -33,7 +33,8 @@ use crate::selectors::{
     YWhere
 };
 
-#[magnus::wrap(class = "Yass::SelectorChild")]
+#[derive(TypedData)]
+#[magnus(class = "Yass::SelectorChild", mark)]
 pub enum YSelectorChild {
     #[magnus(class = "Yass::Selector::LocalName")]
     LocalName(YLocalName),
@@ -417,6 +418,43 @@ impl YSelectorChild {
             _ => Err(
                 Error::new(ruby.exception_no_method_error(), "unreachable")
             )
+        }
+    }
+}
+
+impl DataTypeFunctions for YSelectorChild {
+    fn mark(&self, marker: &gc::Marker) {
+        match self {
+            YSelectorChild::Combinator(ycombinator) => ycombinator.mark(marker),
+            YSelectorChild::LocalName(local_name) => local_name.mark(marker),
+            YSelectorChild::ID(id) => id.mark(marker),
+            YSelectorChild::Class(klass) => klass.mark(marker),
+            YSelectorChild::AttributeInNoNamespaceExists(ainne) => ainne.mark(marker),
+            YSelectorChild::AttributeInNoNamespace(ainn) => ainn.mark(marker),
+            YSelectorChild::AttributeOther(other) => other.mark(marker),
+            YSelectorChild::ExplicitUniversalType(ty) => (),
+            YSelectorChild::ExplicitAnyNamespace(ns) => (),
+            YSelectorChild::ExplicitNoNamespace(ns) => (),
+            YSelectorChild::DefaultNamespace(ns) => ns.mark(marker),
+            YSelectorChild::Namespace(js) => (),
+            YSelectorChild::Negation(neg) => neg.mark(marker),
+            YSelectorChild::Root(root) => (),
+            YSelectorChild::Empty(empty) => (),
+            YSelectorChild::Scope(scope) => (),
+            YSelectorChild::ImplicitScope(scope) => (),
+            YSelectorChild::ParentSelector(sel) => (),
+            YSelectorChild::Nth(nth) => nth.mark(marker),
+            YSelectorChild::NthOf(nth_of) => nth_of.mark(marker),
+            YSelectorChild::NonTSPseudoClass(klass) => klass.mark(marker),
+            YSelectorChild::Slotted(slotted) => slotted.mark(marker),
+            YSelectorChild::Where(wh) => wh.mark(marker),
+            YSelectorChild::Is(is) => is.mark(marker),
+            YSelectorChild::Part(part) => part.mark(marker),
+            YSelectorChild::Host(host) => host.mark(marker),
+            YSelectorChild::Has(has) => has.mark(marker),
+            YSelectorChild::Invalid(invalid) => (),
+            YSelectorChild::PseudoElement(pseudo) => (),
+            YSelectorChild::RelativeSelectorAnchor(anchor) => ()
         }
     }
 }
