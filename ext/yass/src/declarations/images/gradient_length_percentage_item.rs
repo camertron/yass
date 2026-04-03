@@ -1,4 +1,4 @@
-use magnus::{DataTypeFunctions, IntoValue, Ruby, Value, gc::Marker, typed_data};
+use magnus::{DataTypeFunctions, IntoValue, Ruby, TypedData, Value, gc::Marker, typed_data};
 use style::values::{generics::image::GradientItem, specified::{Color, LengthPercentage}};
 
 use crate::{cached_value::CachedValue, declarations::{color::color::make_color, size::YLengthPercentage}};
@@ -79,7 +79,8 @@ impl DataTypeFunctions for YComplexColorStopLength {
     }
 }
 
-#[magnus::wrap(class = "Yass::Declarations::Image::Gradient::InterpolationHintLength")]
+#[derive(TypedData)]
+#[magnus(class = "Yass::Declarations::Image::Gradient::InterpolationHintLength", mark)]
 pub struct YInterpolationHintLength {
     position: CachedValue<LengthPercentage>,
 }
@@ -95,5 +96,11 @@ impl YInterpolationHintLength {
 
     pub fn position(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Value {
         rb_self.position.get(ruby)
+    }
+}
+
+impl DataTypeFunctions for YInterpolationHintLength {
+    fn mark(&self, marker: &magnus::gc::Marker) {
+        self.position.mark(marker);
     }
 }

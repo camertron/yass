@@ -1,9 +1,10 @@
-use magnus::{IntoValue, Ruby, Value, typed_data};
+use magnus::{DataTypeFunctions, IntoValue, Ruby, TypedData, Value, gc, typed_data};
 use style::values::specified::AngleOrPercentage;
 
 use crate::{cached_value::CachedValue, declarations::{angle::YAngle, percentage::YPercentage}};
 
-#[magnus::wrap(class = "Yass::Declarations::Image::AngleOrPercentage")]
+#[derive(TypedData)]
+#[magnus(class = "Yass::Declarations::Image::AngleOrPercentage", mark)]
 pub struct YAngleOrPercentage {
     value: CachedValue<AngleOrPercentage>,
 }
@@ -24,5 +25,11 @@ impl YAngleOrPercentage {
 
     pub fn value(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Value {
         rb_self.value.get(ruby)
+    }
+}
+
+impl DataTypeFunctions for YAngleOrPercentage {
+    fn mark(&self, marker: &gc::Marker) {
+        self.value.mark(marker);
     }
 }

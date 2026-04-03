@@ -4,7 +4,7 @@ use style::{properties::longhands::animation_range_end::SpecifiedValue, values::
 use crate::{declarations::animation::range_value::YRangeValue, cached_value_list::CachedValueList};
 
 #[derive(TypedData)]
-#[magnus(class = "Yass::Declarations::AnimationRangeEnd")]
+#[magnus(class = "Yass::Declarations::AnimationRangeEnd", mark)]
 pub struct YAnimationRangeEnd {
     values: CachedValueList<AnimationRangeEnd<LengthPercentage>>
 }

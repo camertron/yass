@@ -4,7 +4,7 @@ use style::{properties::longhands::animation_range_start::SpecifiedValue, values
 use crate::{declarations::animation::range_value::YRangeValue, cached_value_list::CachedValueList};
 
 #[derive(TypedData)]
-#[magnus(class = "Yass::Declarations::AnimationRangeStart")]
+#[magnus(class = "Yass::Declarations::AnimationRangeStart", mark)]
 pub struct YAnimationRangeStart {
     values: CachedValueList<AnimationRangeStart>
 }

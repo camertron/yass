@@ -1,4 +1,4 @@
-use magnus::{IntoValue, Ruby, Value, typed_data, value::Id};
+use magnus::{DataTypeFunctions, IntoValue, Ruby, TypedData, Value, gc, typed_data, value::Id};
 use style::values::specified::{LengthPercentage, position::{PositionComponent, VerticalPositionKeyword}};
 
 use crate::{cached_value::CachedValue, declarations::{images::vertical_keyword_to_id, size::YLengthPercentage}};
@@ -28,7 +28,8 @@ impl YCenterVerticalPositionComponent {
     }
 }
 
-#[magnus::wrap(class = "Yass::Declarations::Image::LengthVerticalPositionComponent")]
+#[derive(TypedData)]
+#[magnus(class = "Yass::Declarations::Image::LengthVerticalPositionComponent", mark)]
 pub struct YLengthVerticalPositionComponent {
     length: CachedValue<LengthPercentage>,
 }
@@ -47,7 +48,14 @@ impl YLengthVerticalPositionComponent {
     }
 }
 
-#[magnus::wrap(class = "Yass::Declarations::Image::SideVerticalPositionComponent")]
+impl DataTypeFunctions for YLengthVerticalPositionComponent {
+    fn mark(&self, marker: &gc::Marker) {
+        self.length.mark(marker);
+    }
+}
+
+#[derive(TypedData)]
+#[magnus(class = "Yass::Declarations::Image::SideVerticalPositionComponent", mark)]
 pub struct YSideVerticalPositionComponent {
     keyword: VerticalPositionKeyword,
     offset: CachedValue<Option<LengthPercentage>>,
@@ -75,5 +83,11 @@ impl YSideVerticalPositionComponent {
 
     pub fn offset(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Value {
         rb_self.offset.get(ruby)
+    }
+}
+
+impl DataTypeFunctions for YSideVerticalPositionComponent {
+    fn mark(&self, marker: &gc::Marker) {
+        self.offset.mark(marker);
     }
 }

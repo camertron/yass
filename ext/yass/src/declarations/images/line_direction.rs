@@ -1,4 +1,4 @@
-use magnus::{IntoValue, Ruby, Value, typed_data, value::Id};
+use magnus::{DataTypeFunctions, IntoValue, Ruby, TypedData, Value, gc, typed_data, value::Id};
 use style::values::specified::{Angle, image::LineDirection, position::{HorizontalPositionKeyword, VerticalPositionKeyword}};
 
 use crate::{cached_value::CachedValue, declarations::{angle::YAngle, images::{horizontal_keyword_to_id, vertical_keyword_to_id}}};
@@ -23,7 +23,8 @@ pub fn make_line_direction(direction: LineDirection, ruby: &Ruby) -> Value {
     }
 }
 
-#[magnus::wrap(class = "Yass::Declarations::Image::AngleLineDirection")]
+#[derive(TypedData)]
+#[magnus(class = "Yass::Declarations::Image::AngleLineDirection", mark)]
 pub struct YAngleLineDirection {
     angle: CachedValue<Angle>,
 }
@@ -39,6 +40,12 @@ impl YAngleLineDirection {
 
     pub fn angle(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Value {
         rb_self.angle.get(ruby)
+    }
+}
+
+impl DataTypeFunctions for YAngleLineDirection {
+    fn mark(&self, marker: &gc::Marker) {
+        self.angle.mark(marker);
     }
 }
 
