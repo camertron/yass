@@ -410,6 +410,43 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     container_name_class.define_method("none?", method!(YContainerName::is_none, 0))?;
 
     let content_class = declarations_module.define_class("Content", ruby.class_object())?;
+    content_class.define_method("value", method!(YContent::value, 0))?;
+    let _content_normal_class = content_class.define_class("Normal", ruby.class_object())?;
+    let _content_none_class = content_class.define_class("None", ruby.class_object())?;
+
+    let content_items_class = content_class.define_class("Items", ruby.class_object())?;
+    content_items_class.define_method("items", method!(YContentItems::items, 0))?;
+    content_items_class.define_method("alt_start", method!(YContentItems::alt_start, 0))?;
+
+    let content_item_module = content_class.define_module("Item")?;
+
+    let content_item_string_class = content_item_module.define_class("String", ruby.class_object())?;
+    content_item_string_class.define_method("value", method!(YContentItemString::value, 0))?;
+
+    let content_item_counter_class = content_item_module.define_class("Counter", ruby.class_object())?;
+    content_item_counter_class.define_method("name", method!(YContentItemCounter::name, 0))?;
+    content_item_counter_class.define_method("style", method!(YContentItemCounter::style, 0))?;
+
+    let content_item_counters_class = content_item_module.define_class("Counters", ruby.class_object())?;
+    content_item_counters_class.define_method("name", method!(YContentItemCounters::name, 0))?;
+    content_item_counters_class.define_method("separator", method!(YContentItemCounters::separator, 0))?;
+    content_item_counters_class.define_method("style", method!(YContentItemCounters::style, 0))?;
+
+    let content_item_attr_class = content_item_module.define_class("Attr", ruby.class_object())?;
+    content_item_attr_class.define_method("namespace_prefix", method!(YContentItemAttr::namespace_prefix, 0))?;
+    content_item_attr_class.define_method("namespace_url", method!(YContentItemAttr::namespace_url, 0))?;
+    content_item_attr_class.define_method("attribute", method!(YContentItemAttr::attribute, 0))?;
+    content_item_attr_class.define_method("fallback", method!(YContentItemAttr::fallback, 0))?;
+
+    let content_item_image_class = content_item_module.define_class("Image", ruby.class_object())?;
+    content_item_image_class.define_method("image", method!(YContentItemImage::image, 0))?;
+
+    let content_counter_style_module = content_class.define_module("CounterStyle")?;
+    let content_counter_style_symbols_class = content_counter_style_module.define_class("Symbols", ruby.class_object())?;
+    content_counter_style_symbols_class.define_method("kind", method!(YContentCounterStyleSymbols::kind, 0))?;
+    content_counter_style_symbols_class.define_method("symbols", method!(YContentCounterStyleSymbols::symbols, 0))?;
+
+    let _ = (content_items_class, content_item_module, content_item_string_class, content_item_counter_class, content_item_counters_class, content_item_attr_class, content_item_image_class, content_counter_style_module, content_counter_style_symbols_class);
 
     let counter_increment_class = declarations_module.define_class("CounterIncrement", ruby.class_object())?;
 
