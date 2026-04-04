@@ -274,6 +274,25 @@ RSpec.describe(Yass) do
     end
   end
 
+  describe "direction declarations" do
+    def direction_declaration(value)
+      sheet = Yass::Parser.parse(".x { direction: #{value}; }")
+      sheet.rules.first.declarations.first
+    end
+
+    it "exposes direction values as declaration wrappers" do
+      {
+        "ltr" => :ltr,
+        "rtl" => :rtl,
+      }.each do |css_value, expected_value|
+        declaration = direction_declaration(css_value)
+
+        expect(declaration).to be_a(Yass::Declarations::Direction)
+        expect(declaration.value).to eq(expected_value)
+      end
+    end
+  end
+
   describe "cursor declarations" do
     def cursor_declaration(value)
       sheet = Yass::Parser.parse(".x { cursor: #{value}; }")
