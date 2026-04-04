@@ -274,6 +274,29 @@ RSpec.describe(Yass) do
     end
   end
 
+  describe "cursor declarations" do
+    def cursor_declaration(value)
+      sheet = Yass::Parser.parse(".x { cursor: #{value}; }")
+      sheet.rules.first.declarations.first
+    end
+
+    it "exposes cursor keyword and image values" do
+      declaration = cursor_declaration('url("cursor.png") 12 24, pointer')
+
+      expect(declaration).to be_a(Yass::Declarations::Cursor)
+      expect(declaration.keyword).to eq(:pointer)
+
+      images = declaration.images
+      expect(images.size).to eq(1)
+      expect(images.first).to be_a(Yass::Declarations::Cursor::Image)
+      expect(images.first.hotspot?).to eq(true)
+      expect(images.first.hotspot_x).to be_a(Yass::Declarations::Number)
+      expect(images.first.hotspot_x.value).to eq(12.0)
+      expect(images.first.hotspot_y.value).to eq(24.0)
+      expect(images.first.image).to be_a(Yass::Declarations::Image::Url)
+    end
+  end
+
   describe "contain declarations" do
     def contain_declaration(value)
       sheet = Yass::Parser.parse(".x { contain: #{value}; }")
