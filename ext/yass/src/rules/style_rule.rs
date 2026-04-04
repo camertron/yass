@@ -44,7 +44,7 @@ impl YStyleRule {
             let style_rule = self.rule.read_with(&guard);
 
             for selector in style_rule.selectors.slice() {
-                self.cached_selectors.add(selector.clone(), ruby);
+                self.cached_selectors.add(selector.clone(), ruby)?;
             }
         }
 
@@ -58,7 +58,7 @@ impl YStyleRule {
             let block = style_rule.block.read_with(&guard);
 
             for declaration in block.declarations() {
-                self.cached_declarations.add(declaration.clone(), ruby);
+                self.cached_declarations.add(declaration.clone(), ruby)?;
             }
         }
 

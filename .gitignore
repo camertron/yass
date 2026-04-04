@@ -12,8 +12,7 @@
 *.a
 mkmf.log
 target/
+vendor/
 
 # rspec failure tracking
 .rspec_status
-
-spec/wpt/fixtures/

@@ -1,4 +1,4 @@
-use magnus::{DataTypeFunctions, Error, IntoValue, RArray, Ruby, TypedData, Value, gc, typed_data};
+use magnus::{DataTypeFunctions, Error, IntoValue, RArray, Ruby, TypedData, Value, gc};
 use selectors::parser::{NthOfSelectorData, NthSelectorData, Selector};
 use style::selector_parser::SelectorImpl;
 

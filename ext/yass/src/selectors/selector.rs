@@ -188,11 +188,11 @@ impl YSelector {
 
             loop {
                 for raw_component in iter.by_ref() {
-                    rb_self.cached_children.add(raw_component.clone(), ruby);
+                    rb_self.cached_children.add(raw_component.clone(), ruby)?;
                 }
 
                 if let Some(combinator) = iter.next_sequence() {
-                    rb_self.cached_children.add(Component::Combinator(combinator), ruby);
+                    rb_self.cached_children.add(Component::Combinator(combinator), ruby)?;
                 } else {
                     break;
                 }

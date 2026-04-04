@@ -1,4 +1,4 @@
-use magnus::{DataTypeFunctions, IntoValue, Ruby, TypedData, Value, gc, typed_data, value::{Id, ReprValue}};
+use magnus::{DataTypeFunctions, IntoValue, Ruby, TypedData, Value, gc, value::{Id, ReprValue}};
 use selectors::parser::{NthSelectorData, NthType};
 
 use crate::{cached_value::CachedValue, selectors::YAnPlusB};

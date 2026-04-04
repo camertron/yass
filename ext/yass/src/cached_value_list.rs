@@ -40,14 +40,6 @@ impl<T, C, F> CachedValueList<T, C, F> where F: Fn(&T, &Option<C>, &Ruby) -> Val
         Ok(())
     }
 
-    pub fn add_all(&self, values: Vec<T>, ruby: &Ruby) -> Result<(), Error> {
-        for value in values {
-            self.add(value, ruby)?;
-        }
-
-        Ok(())
-    }
-
     pub fn to_a(&self, ruby: &Ruby) -> Result<RArray, Error> {
         if self.cached_values.borrow().is_none() {
             let cached_values = ruby.ary_new_capa(self.values.len());
