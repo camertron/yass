@@ -700,4 +700,32 @@ RSpec.describe(Yass) do
       expect(declaration.size?).to eq(true)
     end
   end
+
+  describe "custom declarations" do
+    def custom_declaration(value)
+      sheet = Yass::Parser.parse(".x { --theme: #{value}; }")
+      sheet.rules.first.declarations.first
+    end
+
+    it "exposes custom property names and unparsed values" do
+      declaration = custom_declaration("red")
+
+      expect(declaration).to be_a(Yass::Declarations::Custom)
+      expect(declaration.name).to eq("theme")
+
+      value = declaration.value
+      expect(value).to be_a(Yass::Declarations::Custom::Unparsed)
+      expect(value.value).to eq("red")
+    end
+
+    it "exposes custom CSS-wide keyword values" do
+      declaration = custom_declaration("initial")
+
+      expect(declaration).to be_a(Yass::Declarations::Custom)
+
+      value = declaration.value
+      expect(value).to be_a(Yass::Declarations::Custom::CSSWideKeyword)
+      expect(value.value).to eq(:initial)
+    end
+  end
 end
