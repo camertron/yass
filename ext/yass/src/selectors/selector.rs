@@ -161,7 +161,7 @@ impl YSelector {
             },
 
             Component::Has(relative_selectors) => {
-                YSelectorChild::Has(YHas::new(relative_selectors.clone(), ruby))
+                YSelectorChild::Has(YHas::new(relative_selectors.clone()))
             },
 
             Component::Invalid(_) => {
@@ -183,7 +183,7 @@ impl YSelector {
     }
 
     pub fn children(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Result<RArray, Error> {
-        if rb_self.cached_children.len() == 0 {
+        if rb_self.cached_children.is_empty() {
             let mut iter = rb_self.selector.iter();
 
             loop {

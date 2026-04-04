@@ -54,7 +54,7 @@ impl YSheet {
             let rules = contents.rules.read_with(&guard);
 
             for rule in &rules.0 {
-                rb_self.cached_rules.add(rule.clone(), ruby);
+                rb_self.cached_rules.add(rule.clone(), ruby)?;
             }
         }
 

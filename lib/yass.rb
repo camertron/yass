@@ -45,8 +45,7 @@ module Yass
         "inf"
       elsif obj == -Float::INFINITY
         "-inf"
-      elsif obj == Float::NAN
-        # JSON::NaN
+      elsif obj.nan?
         "NaN"
       else
         obj

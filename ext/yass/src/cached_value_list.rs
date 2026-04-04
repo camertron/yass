@@ -6,7 +6,7 @@ pub struct CachedValueList<T, C = (), F = fn(&T, &Option<C>, &Ruby) -> Value> {
     values: Vec<T>,
     context: Option<C>,
     transform: F,
-    cached_values: RefCell<Option<Vec<Opaque<Value>>>>
+    cached_values: RefCell<Option<Opaque<RArray>>>
 }
 
 impl<T, C, F> CachedValueList<T, C, F> where F: Fn(&T, &Option<C>, &Ruby) -> Value {
@@ -23,60 +23,49 @@ impl<T, C, F> CachedValueList<T, C, F> where F: Fn(&T, &Option<C>, &Ruby) -> Val
         }
     }
 
-    pub fn len(&self) -> usize {
-        match self.cached_values.borrow().as_ref() {
-            Some(values) => values.len(),
-            None => 0
-        }
-    }
-
     pub fn is_empty(&self) -> bool {
-        self.len() == 0
+        self.cached_values.borrow().is_none()
     }
 
-    pub fn add(&self, value: T, ruby: &Ruby) {
+    pub fn add(&self, value: T, ruby: &Ruby) -> Result<(), Error> {
         if self.cached_values.borrow().is_none() {
-            let cached_values: Vec<Opaque<Value>> = Vec::with_capacity(1);
-            *self.cached_values.borrow_mut() = Some(cached_values);
+            let cached_values = ruby.ary_new_capa(1);
+            *self.cached_values.borrow_mut() = Some(Opaque::from(cached_values));
         }
 
-        let mut cached_values = self.cached_values.borrow_mut();
         let new_value = (self.transform)(&value, &self.context, ruby);
+        let cached_values = ruby.get_inner(*self.cached_values.borrow().as_ref().unwrap());
+        cached_values.push(new_value)?;
 
-        cached_values.as_mut().unwrap().push(Opaque::from(new_value));
+        Ok(())
     }
 
-    pub fn add_all(&self, values: Vec<T>, ruby: &Ruby) {
+    pub fn add_all(&self, values: Vec<T>, ruby: &Ruby) -> Result<(), Error> {
         for value in values {
-            self.add(value, ruby);
+            self.add(value, ruby)?;
         }
+
+        Ok(())
     }
 
     pub fn to_a(&self, ruby: &Ruby) -> Result<RArray, Error> {
         if self.cached_values.borrow().is_none() {
-            let mut cached_values: Vec<Opaque<Value>> = Vec::with_capacity(self.values.len());
+            let cached_values = ruby.ary_new_capa(self.values.len());
 
             for value in &self.values {
                 let new_value = (self.transform)(value, &self.context, ruby);
-                cached_values.push(Opaque::from(new_value));
+                cached_values.push(new_value)?;
             }
 
-            *self.cached_values.borrow_mut() = Some(cached_values);
+            *self.cached_values.borrow_mut() = Some(Opaque::from(cached_values));
         }
 
-        let cached_values = self.cached_values.borrow();
-        let result = ruby.ary_new_capa(cached_values.as_ref().unwrap().len());
-
-        for value in cached_values.as_ref().unwrap() {
-            result.push(ruby.get_inner(*value))?;
-        }
-
-        Ok(result)
+        Ok(ruby.get_inner(*self.cached_values.borrow().as_ref().unwrap()).dup())
     }
 
     pub fn mark(&self, marker: &gc::Marker) {
         if let Some(cached_values) = self.cached_values.borrow().as_ref() {
-            marker.mark_slice(cached_values);
+            marker.mark(*cached_values);
         }
     }
 }
