@@ -1,0 +1,12 @@
+
+  @keyframes --anim {
+    from {
+      scale: 0.7 calc(0.2 * sibling-index());
+    }
+    to {
+      scale: 0.3 2;
+    }
+  }
+  #target {
+    animation: --anim 1000s step-end;
+  }

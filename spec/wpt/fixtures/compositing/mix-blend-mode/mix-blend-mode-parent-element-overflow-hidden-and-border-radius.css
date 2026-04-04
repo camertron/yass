@@ -1,0 +1,17 @@
+
+            .parent {
+                background: red;
+                width: 140px;
+                height: 140px;
+                position: relative;
+                z-index: 1;
+                overflow: hidden;
+                border-radius: 1em 5em;
+            }
+            .blended {
+                background: yellow;
+                width: 200px;
+                height: 200px;
+                mix-blend-mode: difference;
+            }
+        

@@ -1,0 +1,22 @@
+
+  :root {
+    background-color: gray;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+  table, table * {
+    border: none;
+  }
+
+  * {
+    color-scheme: initial;
+  }
+
+  #table, #col, #tr, #th, #td, #tbody {
+    border: 5px solid currentColor;
+    color: CanvasText;
+    color-scheme: dark;
+  }
+

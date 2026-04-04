@@ -1,0 +1,9 @@
+
+  .grid {
+    white-space: pre;
+  }
+  .item {
+    height: 100%;
+    width: 30px;
+    background: salmon;
+  }

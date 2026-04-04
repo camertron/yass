@@ -1,0 +1,4 @@
+
+    body { transition: background-color 1s; color: white; background-color: black; }
+    .light { color: black; background-color: white; }
+  

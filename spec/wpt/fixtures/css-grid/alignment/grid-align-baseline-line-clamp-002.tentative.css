@@ -1,0 +1,32 @@
+
+.target {
+  display: grid;
+  grid-auto-flow: column;
+  inline-size: 100px;
+  position: relative;
+  line-height: 0;
+  padding: 10px;
+  writing-mode: vertical-rl;
+}
+.target > div {
+  background: hotpink;
+  font-size: 30px;
+}
+.line-clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  border: solid 10px;
+  font-size: 40px !important;
+  overflow: hidden;
+}
+.line-clamp div {
+  background: orange;
+}
+span {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  outline: solid cyan 3px;
+  outline-offset: -3px;
+}

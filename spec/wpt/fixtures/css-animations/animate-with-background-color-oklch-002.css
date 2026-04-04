@@ -1,0 +1,27 @@
+
+  @keyframes bg-color-oklch {
+    to {
+      background-color: oklch(45% 0.2 264); /*  blue */
+    }
+  }
+  @keyframes bg-mix-color-oklch {
+    to {
+      background-color: color-mix(in oklch, oklch(45% 0.2 264), oklch(45% 0.2 264));
+    }
+  }
+
+  #target {
+    background: #ff0000;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    height: 100px;
+    width: 100px;
+  }
+  .bg-color-oklch {
+    animation-name: bg-color-oklch;
+  }
+  .bg-mix-color-oklch {
+    animation-name: bg-mix-color-oklch;
+  }

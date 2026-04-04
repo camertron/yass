@@ -1,0 +1,33 @@
+
+  :root {
+    line-height: 50px;
+  }
+
+  p {
+    line-height: normal;
+  }
+
+  .container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+  }
+
+  .contents {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .div1 {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+  }
+
+  .div2 {
+    line-height: 10px;
+    block-size: 100px;
+    background-color: red;
+    inline-size: calc(1rlh - 1rlh);
+  }

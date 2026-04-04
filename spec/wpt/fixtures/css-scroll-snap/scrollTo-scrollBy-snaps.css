@@ -1,0 +1,42 @@
+
+html {
+  margin: 0px;
+  overflow: scroll;
+  scroll-snap-type: both mandatory;
+}
+div {
+  position: absolute;
+}
+.scroller {
+  overflow: scroll;
+  scroll-snap-type: both mandatory;
+}
+#inner-scroller {
+  top: 3000px;
+  width: 800px;
+  height: 800px;
+}
+.space {
+  left: 0px;
+  top: 0px;
+  width: 4000px;
+  height: 4000px;
+}
+.target {
+  width: 600px;
+  height: 600px;
+  scroll-snap-align: start;
+}
+
+.left {
+  left: 0px;
+}
+.right {
+  left: 1000px;
+}
+.top {
+  top: 0px;
+}
+.bottom {
+  top: 1000px;
+}

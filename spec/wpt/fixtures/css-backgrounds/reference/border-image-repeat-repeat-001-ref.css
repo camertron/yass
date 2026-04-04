@@ -1,0 +1,19 @@
+
+  div
+    {
+      background-color: green;
+    }
+
+  div.vertical
+    {
+      height: 75px;
+      margin-left: 75px;
+      width: 50px;
+    }
+
+  div.horizontal
+    {
+      height: 50px;
+      width: 200px;
+    }
+  

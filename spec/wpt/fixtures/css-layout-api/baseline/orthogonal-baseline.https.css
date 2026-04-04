@@ -1,0 +1,13 @@
+
+.test {
+  background: green;
+  padding: 0 10px;
+  width: 80px;
+}
+
+@supports (display: layout(test)) {
+  .test {
+    display: layout(test);
+    background: green;
+  }
+}

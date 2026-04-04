@@ -1,0 +1,10 @@
+
+div {
+    font-size: 2em;
+    width: 10em;
+    white-space: pre;
+    text-align: start;
+    unicode-bidi: plaintext;
+    border: solid; padding: 0 0.5ch;
+}
+

@@ -1,0 +1,4 @@
+
+.ancestor :not(:nth-last-child(even of .c)) {
+  color: green;
+}

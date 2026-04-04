@@ -1,0 +1,9 @@
+
+.greenbox {
+  position: absolute;
+  background: green;
+  width: 100px;
+  height: 100px;
+  top: 100px;
+  left: 60px;
+}

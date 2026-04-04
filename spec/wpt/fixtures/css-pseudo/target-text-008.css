@@ -1,0 +1,8 @@
+
+  a::target-text {
+    background: red;
+  }
+  a:visited::target-text {
+    color: lime;
+    background: green;
+  }

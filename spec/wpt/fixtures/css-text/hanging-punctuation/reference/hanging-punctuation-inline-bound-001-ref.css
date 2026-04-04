@@ -1,0 +1,25 @@
+
+  div
+    {
+      font-family: monospace;
+      font-size: 60px;
+      line-height: 1.5em; /* computes to 90px */
+    }
+
+  span
+    {
+      background-color: lime;
+      border-bottom: black solid 3px;
+      border-top: black solid 3px;
+    }
+
+  span#first
+    {
+      border-left: black solid 3px;
+    }
+
+  span#third
+    {
+      border-right: black solid 3px;
+    }
+  

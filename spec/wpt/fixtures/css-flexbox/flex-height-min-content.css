@@ -1,0 +1,12 @@
+
+#flex {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
+
+#item {
+  min-height: 30px;
+  height: min-content;
+  background: green;
+}

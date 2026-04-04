@@ -1,0 +1,22 @@
+
+  .container {
+    display:flex;
+    width: 200px;
+  }
+  .left {
+    width:200px;
+    background:yellow;
+  }
+  main table {
+    border-spacing: 0;
+    background: red;
+  }
+  .spacer {
+    display:inline-block;
+    width: 10px;
+    height: 10px;
+    background: green;
+  }
+  main td {
+    padding: 0;
+  }

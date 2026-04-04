@@ -1,0 +1,20 @@
+
+@page {
+  margin: 0;
+  size: 200px 300px;
+}
+@page rotated {
+  page-orientation: rotate-right;
+}
+body {
+  margin: 0;
+}
+.filler {
+  box-sizing: border-box;
+  width: 200px;
+  height: 300px;
+  border: 10px solid black;
+}
+.specialborder {
+  border-top-color: cyan;
+}

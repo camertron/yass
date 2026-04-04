@@ -1,0 +1,10 @@
+
+  #test::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    resize: both;
+    background: green;
+  }

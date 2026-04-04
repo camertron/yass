@@ -1,0 +1,7 @@
+
+img::-moz-selection {
+  background: green;
+}
+img::selection {
+  background: green;
+}

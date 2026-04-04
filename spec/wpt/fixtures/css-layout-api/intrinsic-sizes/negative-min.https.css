@@ -1,0 +1,15 @@
+
+
+.test {
+  background: red;
+  border: solid 2px;
+  height: 100px;
+  width: min-content;
+}
+
+@supports (display: layout(min-content-size-negative)) {
+  .test {
+    display: layout(min-content-size-negative);
+    background: green;
+  }
+}

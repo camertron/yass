@@ -1,0 +1,10 @@
+
+  @counter-style a {
+    system: numeric;
+    suffix: ":";
+  }
+  @counter-style b {
+    system: numeric;
+    symbols: A;
+    suffix: ":";
+  }

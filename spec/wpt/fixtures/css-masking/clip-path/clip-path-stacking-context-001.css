@@ -1,0 +1,11 @@
+
+.target {
+  width: 200px;
+  height: 100px;
+  position: relative;
+}
+.target > div {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}

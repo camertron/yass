@@ -1,0 +1,23 @@
+
+      body {
+      	zoom: 121%;
+      }
+      .test-table {
+        display: table;
+        width: 600px;
+        border-collapse: collapse;
+        border-spacing: 0;
+        background-color: green;
+      }
+      .test-row {
+        display: table-row;
+        padding: 0px;
+      }
+      .test-cell {
+        display: table-cell;
+        padding: 0px;
+        height: 50px;
+        border: 0;
+      }
+
+  

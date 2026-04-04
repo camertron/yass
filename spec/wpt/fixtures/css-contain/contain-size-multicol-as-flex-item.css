@@ -1,0 +1,13 @@
+
+  #flex {
+    display: flex;
+  }
+
+  #multicol {
+    columns: 3;
+    min-width: 0;
+    column-gap: 50px;
+    contain:size;
+    height:100px;
+    background:green;
+  }

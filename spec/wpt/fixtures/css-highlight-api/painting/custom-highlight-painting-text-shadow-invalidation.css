@@ -1,0 +1,11 @@
+
+    ::root {
+      --shadow-offset-x: 15px;
+      --shadow_offset-y: 20px;
+    }
+    ::highlight(example-highlight) {
+      background-color: yellow;
+      color: blue;
+      text-shadow: var(--shadow-offset-x, 5px) var(--shadow-offset-y, 10px) rgba(0, 255, 0, 0.5);
+    }
+  

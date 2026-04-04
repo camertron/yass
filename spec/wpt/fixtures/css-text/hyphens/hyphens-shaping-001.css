@@ -1,0 +1,15 @@
+
+  @font-face {
+    font-family: 'csstest_noto';
+    src: url('/fonts/noto/NotoNaskhArabic-regular.woff2') format('woff2');
+  }
+  div {
+    font-family: 'csstest_noto';
+    font-size: 3em;
+    line-height: 1; /* Not strictly needed, but it gets quite tall otherwise, so this helps fit the screen. */
+    width: 0;
+    hyphens: manual;
+    margin: 1em auto;
+  }
+  .ref { color: orange; }
+  span { color: transparent; }

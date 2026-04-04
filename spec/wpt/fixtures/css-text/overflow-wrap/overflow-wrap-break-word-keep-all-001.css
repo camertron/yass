@@ -1,0 +1,10 @@
+
+div {
+  overflow-wrap: break-word;
+  word-break: keep-all;
+  font-size: 10px;
+  width: 7ch;
+  line-height: 20px;
+  background: lightgray;
+  margin-bottom: 1em;
+}

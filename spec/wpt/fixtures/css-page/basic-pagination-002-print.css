@@ -1,0 +1,18 @@
+
+  @page {
+    size: 293px;
+    margin: 5px;
+  }
+  :root {
+    print-color-adjust: exact;
+  }
+  body {
+    break-before: page;
+    break-after: page;
+    margin: 0;
+    background: yellow;
+  }
+  div {
+    break-before: page;
+    break-after: page;
+  }

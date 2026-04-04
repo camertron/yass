@@ -1,0 +1,86 @@
+
+.flexbox {
+  position: relative;
+  display: flex;
+  background-color: grey;
+  max-width: 600px;
+  align-content: flex-start;
+}
+.title {
+  margin-top: 1em;
+}
+.ltr {
+  direction: ltr;
+}
+.rtl {
+  direction: rtl;
+}
+.horizontal-tb {
+  writing-mode: horizontal-tb;
+}
+.vertical-rl {
+  writing-mode: vertical-rl;
+}
+.vertical-lr {
+  writing-mode: vertical-lr;
+}
+.row {
+  flex-flow: row;
+}
+.row-reverse {
+  flex-flow: row-reverse;
+}
+.column {
+  flex-flow: column;
+}
+.column-reverse {
+  flex-flow: column-reverse;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+.flexbox> :nth-child(1) {
+  background-color: #0f0;
+}
+.flexbox> :nth-child(2) {
+  background-color: #0d0;
+}
+.flexbox> :nth-child(3) {
+  background-color: #0b0;
+}
+.flexbox> :nth-child(4) {
+  background-color: #090;
+}
+.flexbox> :nth-child(5) {
+  background-color: #070;
+}
+.flexbox> :nth-child(6) {
+  background-color: #050;
+}
+.flexbox> :nth-child(7) {
+  background-color: #030;
+}
+.flexbox> :nth-child(8) {
+  background-color: #00f;
+}
+.flexbox> :nth-child(9) {
+  background-color: #00d;
+}
+.flexbox> :nth-child(10) {
+  background-color: #00b;
+}
+.flexbox> :nth-child(11) {
+  background-color: #009;
+}
+.flexbox> :nth-child(12) {
+  background-color: #007;
+}
+.flexbox> :nth-child(13) {
+  background-color: #005;
+}
+.flexbox> :nth-child(14) {
+  background-color: #003;
+}

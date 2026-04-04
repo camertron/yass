@@ -1,0 +1,7 @@
+
+.positioned {
+  background-color: green;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}

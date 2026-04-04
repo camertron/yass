@@ -1,0 +1,19 @@
+
+body {
+  margin: 0;
+  overflow: clip;
+}
+.test:nth-of-type(even) {
+  color: white;
+}
+.test {
+  position: absolute;
+  width: 0;
+  transform-origin: 0 0;
+  border-right: 25px solid transparent;
+  border-top: calc(25px * var(--scale)) solid currentcolor;
+  transform: scale3d(1, var(--scale), 1);
+}
+.change > .test {
+  transform: scale3d(var(--scale), 1, 1);
+}

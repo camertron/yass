@@ -1,0 +1,4 @@
+
+    .test { background-color: red; width: 12em; height: 6em; margin-top: 0; }
+    .ref { background-color: rgb(10.751% 75.558% 66.398%); width: 12em; height: 6em; margin-bottom: 0; } /* lab(70% -45 0) converted to sRGB */
+    .test { background-color: lab(70% -45 0); }

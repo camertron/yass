@@ -1,0 +1,7 @@
+
+*:first-line {
+  text-decoration: line-through;
+}
+* {
+  text-decoration: underline;
+}

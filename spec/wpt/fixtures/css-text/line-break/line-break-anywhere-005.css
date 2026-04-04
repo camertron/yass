@@ -1,0 +1,18 @@
+
+div {
+  font: 25px/1 Ahem;
+  width: 4ch;
+  line-height: 1;
+}
+.red {
+  position: absolute;
+  white-space: pre;
+  color: red;
+  background: green;
+  z-index: -1;
+}
+.test {
+  white-space: break-spaces;
+  line-break: anywhere;
+  color: green;
+}

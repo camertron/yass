@@ -1,0 +1,11 @@
+
+.highlight_reftest {
+  color: green;
+  margin: 10px;
+}
+::highlight(color-inherit) {
+  color: inherit;
+}
+#wrapper::highlight(color-inherit) {
+  color: blue;
+}

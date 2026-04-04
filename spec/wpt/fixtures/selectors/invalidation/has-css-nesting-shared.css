@@ -1,0 +1,30 @@
+
+div, main { color: grey }
+#outer1:has(.test) {
+  & #subject1_1 {
+    color: red;
+  }
+  & + #subject1_2 {
+    color: orangered;
+  }
+}
+
+#outer2:has(.test) {
+  & .ancestor {
+    & #subject2_1 {
+      color: green;
+    }
+    & + #subject2_2 {
+      color: lightgreen;
+    }
+  }
+}
+
+#outer3:is(:has(.test) .outer) {
+  & #subject3_1 {
+    color: blue;
+  }
+  & + #subject3_2 {
+    color: skyblue;
+  }
+}

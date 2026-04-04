@@ -1,0 +1,14 @@
+
+  .text {
+    background-color: blue;
+    color: transparent;
+    font: 50px/1 monospace;
+    background-clip: text;
+    height: 200px;
+  }
+  .prev {
+    height: 100px;
+  }
+  p {
+    color: transparent;
+  }

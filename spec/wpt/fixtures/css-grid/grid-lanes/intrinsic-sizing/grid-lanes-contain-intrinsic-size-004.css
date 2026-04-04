@@ -1,0 +1,8 @@
+
+#target {
+  display: grid-lanes;
+  background: lightblue;
+  contain-intrinsic-size: 111px 222px;
+  contain: size;
+  width: min-content;
+}

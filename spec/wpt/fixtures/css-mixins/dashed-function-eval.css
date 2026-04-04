@@ -1,0 +1,991 @@
+
+    @function --f() {
+      result: 12px;
+    }
+    #target {
+      --actual: --f();
+      --expected: 12px;
+    }
+  
+
+    @function --f() returns <length> {
+      result: 12px;
+    }
+    #target {
+      --actual: --f();
+      --expected: 12px;
+    }
+  
+
+    @function --f() returns <length> {
+      result: calc(12px + 1px);
+    }
+    #target {
+      --actual: --f();
+      --expected: 13px;
+    }
+  
+
+    @function --f() returns <length> {
+      result: 12s;
+    }
+    #target {
+      --actual: --f();
+      /* --expected: <guaranteed-invalid> */
+    }
+  
+
+    @function --f() {
+    }
+    #target {
+      --actual: --f();
+      /* --expected: <guaranteed-invalid> */
+    }
+  
+
+    @function --f() {
+      result:;
+    }
+    #target {
+      --actual: --f();
+      --expected:;
+    }
+  
+
+    @function --f() returns <length> {
+      result: 12px;
+      result: 24px; /* Overwrites previous */
+    }
+    #target {
+      --actual: --f();
+      --expected: 24px;
+    }
+  
+
+    @function --f() {
+      result: --g();
+    }
+    @function --g() {
+      result: 12px;
+    }
+    #target {
+      --actual: --f();
+      --expected: 12px;
+    }
+  
+
+    @function --f(--x) {
+      result: 12px;
+    }
+    #target {
+      --actual: --f(100px);
+      --expected: 12px;
+    }
+  
+
+    @function --f(--x) {
+      result: var(--x);
+    }
+    #target {
+      --actual: --f(100px);
+      --expected: 100px;
+    }
+  
+
+    @function --f(--x, --y, --z) {
+      result: var(--x) var(--y) var(--z);
+    }
+    #target {
+      --actual: --f(100px, auto, red);
+      --expected: 100px auto red;
+    }
+  
+
+    @function --f(--x <length>) {
+      result: var(--x);
+    }
+    #target {
+      --actual: --f(100px);
+      --expected: 100px;
+    }
+  
+
+    @function --f(--x <length>) {
+      result: var(--x);
+    }
+    #target {
+      --actual: --f(calc(100px + 1px));
+      --expected: 101px;
+    }
+  
+
+    @function --f(--x type(*)) {
+      result: var(--x);
+    }
+    #target {
+      --actual: --f(calc(100px + 1px));
+      --expected: calc(100px + 1px);
+    }
+  
+
+    @function --f(--x <length>, --y <angle>, --z <time>) {
+      result: var(--x) var(--y) var(--z);
+    }
+    #target {
+      --actual: --f(calc(100px + 1px), 1turn, 1000ms);
+      --expected: 101px 360deg 1s;
+    }
+  
+
+    @function --f(--x type(<length> | auto)) {
+      result: var(--x);
+    }
+    #target {
+      --actual: --f(auto);
+      --expected: auto;
+    }
+  
+
+    @function --f(--x type(<length> | auto)) {
+      result: var(--x);
+    }
+    #target {
+      --actual: --f(10px);
+      --expected: 10px;
+    }
+  
+
+    @function --f(--x) {
+      result: --g(var(--x));
+    }
+    @function --g(--y) {
+      result: var(--y);
+    }
+    #target {
+      --actual: --f(12px);
+      --expected: 12px;
+    }
+  
+
+    @function --f(--x) {
+      --one: FAIL;
+      result: var(--x);
+    }
+    #target {
+      --one: 1px;
+      --actual: --f(calc(100px + var(--one)));
+      --expected: calc(100px + 1px);
+    }
+  
+
+    @function --f(--x <length>) {
+      --one: FAIL;
+      result: var(--x);
+    }
+    #target {
+      --one: 1px;
+      --actual: --f(calc(100px + var(--one)));
+      --expected: 101px;
+    }
+  
+
+    @function --f(--x) {
+      result: var(--x, PASS);
+    }
+    #target {
+      --actual: --f(var(--unknown));
+      --expected: PASS;
+    }
+  
+
+    @function --f(--x <length>) {
+      result: var(--x, PASS);
+    }
+    #target {
+      --actual: --f(var(--unknown));
+      --expected: PASS;
+    }
+  
+
+    @function --f(--x <length>) {
+      result: var(--x, PASS);
+    }
+    #target {
+      --actual: --f(red);
+      --expected: PASS;
+    }
+  
+
+    @function --f(--x: PASS) {
+      result: var(--x);
+    }
+    #target {
+      --actual: --f();
+      --expected: PASS;
+    }
+  
+
+    @function --f(--x, --y: 2px, --z: 3px) {
+      result: var(--x) var(--y) var(--z);
+    }
+    #target {
+      --actual: --f(1px, 5px);
+      --expected: 1px 5px 3px;
+    }
+  
+
+    @function --f(--x, --y <length>: 2px, --z <length>: 3px) {
+      result: var(--x) var(--y) var(--z);
+    }
+    #target {
+      --actual: --f(1px, 5px);
+      --expected: 1px 5px 3px;
+    }
+  
+
+    @function --f(--x, --y: var(--x)) {
+      result: var(--x) var(--y);
+    }
+    #target {
+      --x: FAIL;
+      --y: FAIL;
+      --actual: --f(5px);
+      --expected: 5px 5px;
+    }
+  
+
+    @function --f(--x, --y: var(--x)) {
+      --x: 17px;
+      result: var(--x) var(--y);
+    }
+    #target {
+      --x: FAIL;
+      --y: FAIL;
+      --actual: --f(5px);
+      --expected: 17px 5px;
+    }
+  
+
+    @function --f(--x: 5px, --y: var(--x)) {
+      result: var(--x) var(--y);
+    }
+    #target {
+      --x: FAIL;
+      --y: FAIL;
+      --actual: --f();
+      --expected: 5px 5px;
+    }
+  
+
+    @function --f(--x: 5px, --y <length>: calc(var(--x) + 1px)) {
+      result: var(--x) var(--y);
+    }
+    #target {
+      --x: FAIL;
+      --y: FAIL;
+      --actual: --f();
+      --expected: 5px 6px;
+    }
+  
+
+    @function --f(--x: 1, --y, --z: 3) {
+      result: var(--x) var(--y) var(--z);
+    }
+    #target {
+      --actual: --f(var(--unknown), 2, var(--unknown));
+      --expected: 1 2 3;
+    }
+  
+
+    @function --f(--x <number>: 1, --y <number>, --z <number>: 3) {
+      result: var(--x) var(--y) var(--z);
+    }
+    #target {
+      --actual: --f(var(--unknown), 2, var(--unknown));
+      --expected: 1 2 3;
+    }
+  
+
+    @function --f(--x <number>: 1, --y <number>, --z <number>: 3) {
+      result: var(--x) var(--y) var(--z);
+    }
+    #target {
+      --actual: --f(red, 2, 360deg);
+      --expected: 1 2 3;
+    }
+  
+
+    @function --f() {
+      --x: 10px;
+      result: 1px;
+    }
+    #target {
+      --actual: --f();
+      --expected: 1px;
+    }
+  
+
+    @function --f() {
+      --x: 10px;
+      result: 1px;
+    }
+    #target {
+      --x: 20px;
+      --actual: --f() var(--x);
+      --expected: 1px 20px;
+    }
+  
+
+    @function --f() {
+      --x: 10px;
+      result: var(--x);
+    }
+    #target {
+      --actual: --f();
+      --expected: 10px;
+    }
+  
+
+    @function --f() {
+      --x: 10px;
+      --y: 17px;
+      result: var(--x) var(--y);
+    }
+    #target {
+      --actual: --f();
+      --expected: 10px 17px;
+    }
+  
+
+    @function --f() {
+      --x: 10px;
+      --y: var(--x);
+      result: var(--y);
+    }
+    #target {
+      --actual: --f();
+      --expected: 10px;
+    }
+  
+
+    @function --f() {
+      result: var(--y);
+      --x: 10px;
+      --y: var(--x);
+    }
+    #target {
+      --actual: --f();
+      --expected: 10px;
+    }
+  
+
+    @function --f() {
+      --x: 10px;
+      --y: var(--x);
+      result: var(--y);
+
+      --x: 20px; /* Surprise! */
+    }
+    #target {
+      --actual: --f();
+      --expected: 20px;
+    }
+  
+
+    @function --f() {
+      result: var(--x);
+    }
+    #target {
+      --x: 10px;
+      --actual: --f();
+      --expected: 10px;
+    }
+  
+
+    @function --f() {
+      --x: PASS;
+      result: --g();
+    }
+    @function --g() {
+      result: var(--x);
+    }
+    #target {
+      --x: FAIL;
+      --actual: --f();
+      --expected: PASS;
+    }
+  
+
+    @function --f(--x) {
+      result: --g();
+    }
+    @function --g() {
+      result: var(--x);
+    }
+    #target {
+      --x: FAIL;
+      --actual: --f(PASS);
+      --expected: PASS;
+    }
+  
+
+    @function --f(--x) {
+      result: --g(PASS);
+    }
+    @function --g(--x) {
+      result: var(--x);
+    }
+    #target {
+      --x: FAIL;
+      --actual: --f(FAIL);
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      --x: FAIL;
+      result: --g(PASS);
+    }
+    @function --g(--x) {
+      result: var(--x);
+    }
+    #target {
+      --x: FAIL;
+      --actual: --f();
+      --expected: PASS;
+    }
+  
+
+    @function --f(--x) {
+      result: --g();
+    }
+    @function --g() {
+      --x: PASS;
+      result: var(--x);
+    }
+    #target {
+      --x: FAIL;
+      --actual: --f(FAIL);
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      --x: FAIL;
+      result: --g();
+    }
+    @function --g() {
+      --x: PASS;
+      result: var(--x);
+    }
+    #target {
+      --x: FAIL;
+      --actual: --f();
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      --y: 1;
+      --x: var(--y);
+      result: --g();
+    }
+    @function --g() {
+      --y: 0;
+      result: var(--x);
+    }
+    #target {
+      --y: 0;
+      --x: FAIL;
+      --actual: --f();
+      --expected: 1;
+    }
+  
+
+    @function --f(--l <length>: 10.00px) {
+      result: --g();
+    }
+    @function --g() {
+      result: var(--l);
+    }
+    #target {
+      --actual: --f();
+      --expected: 10px;
+    }
+  
+
+    @function --one() {
+      --x: 1;
+      result: --f();
+    }
+    @function --two() {
+      --x: 2;
+      result: --f();
+    }
+    @function --three() {
+      --x: 3;
+      result: --f();
+    }
+    @function --f() {
+      result: var(--x);
+    }
+    #target {
+      --x: 0;
+      --actual: --one() --two() --three() --f();
+      --expected: 1 2 3 0;
+    }
+  
+
+    @function --a() {
+      --x: 1;
+      result: --b();
+    }
+    @function --b() {
+      result: --c();
+    }
+    @function --c() {
+      result: var(--x);
+    }
+    #target {
+      --x: 0;
+      --actual: --a();
+      --expected: 1;
+    }
+  
+
+    @function --a() {
+      --x: var(--unknown);
+      result: --b();
+    }
+    @function --b() {
+      result: var(--x, PASS);
+    }
+    #target {
+      --x: FAIL;
+      --actual: --a();
+      --expected: PASS;
+    }
+  
+
+    @function --a() {
+      --x: --b();
+      --y: var(--px);
+      result: var(--x);
+    }
+
+    @function --b() {
+      result: var(--y, FAIL);
+    }
+    #target {
+      --px: 10px;
+      --actual: --a();
+      --expected: 10px;
+    }
+  
+
+    @function --a() {
+      --x: var(--px);
+      --y: --b();
+      result: var(--y);
+    }
+
+    @function --b() {
+      result: var(--x, FAIL);
+    }
+    #target {
+      --px: 10px;
+      --actual: --a();
+      --expected: 10px;
+    }
+  
+
+    @function --f(--x) {
+      result: var(--x);
+    }
+    #target {
+      --x: FAIL;
+      --actual: --f(PASS);
+      --expected: PASS;
+    }
+  
+
+    @function --f(--x) {
+      --x: PASS;
+      result: var(--x);
+    }
+    #target {
+      --x: FAIL1;
+      --actual: --f(FAIL2);
+      --expected: PASS;
+    }
+  
+
+    @function --f(--x) {
+      result: var(--x, PASS);
+    }
+    #target {
+      --x: FAIL;
+      --actual: --f(var(--unknown));
+      --expected: PASS;
+    }
+  
+
+    @function --f(--x <length>) {
+      result: var(--x, PASS);
+    }
+    #target {
+      --x: FAIL;
+      --actual: --f(var(--unknown));
+      --expected: PASS;
+    }
+  
+
+    @function --f(--x <length>) {
+      result: var(--x, PASS);
+    }
+    #target {
+      --x: FAIL;
+      --actual: --f(red);
+      --expected: PASS;
+    }
+  
+
+    @function --f(--x) {
+      result: 10px;
+    }
+    #target {
+      --actual: --f();
+      /* --expected: <guaranteed-invalid> */
+    }
+  
+
+    @function --f(--x, --y, --z) {
+      result: 10px;
+    }
+    #target {
+      --actual: --f(1, 2);
+      /* --expected: <guaranteed-invalid> */
+    }
+  
+
+    @function --f(--x) {
+      result: var(--x);
+    }
+    #target {
+      --actual: --f({1px,2px});
+      --expected: 1px,2px;
+    }
+  
+
+    @function --f(--x, --y) {
+      result: var(--x) | var(--y);
+    }
+    #target {
+      --actual: --f({1px, 2px}, 3px);
+      --expected: 1px, 2px | 3px;
+    }
+  
+
+    @function --f(--x, --y) {
+      result: var(--x) | var(--y);
+    }
+    #target {
+      --actual: --f(1px, {2px, 3px});
+      --expected: 1px | 2px, 3px;
+    }
+  
+
+    @function --f(--x) {
+      result: var(--x);
+    }
+    #target {
+      --actual: --f({,});
+      --expected: ,;
+    }
+  
+
+    @function --f(--x) {
+      result: var(--x);
+    }
+    #target {
+      --actual: --f({{}});
+      --expected: {};
+    }
+  
+
+    @function --f(--x) {
+      result: var(--x);
+    }
+    #target {
+      --actual: --f({foo{}});
+      --expected: foo{};
+    }
+  
+
+    @function --f(--x: FAIL1) {
+      --x: FAIL2;
+      --x: initial;
+      result: var(--x);
+    }
+    #target {
+      --actual: --f(PASS);
+      --expected: PASS;
+    }
+  
+
+    @function --f(--x: PASS) {
+      --x: FAIL;
+      --x: initial;
+      result: var(--x);
+    }
+    #target {
+      --actual: --f();
+      --expected: PASS;
+    }
+  
+
+    @function --f(--x) {
+      --x: FAIL;
+      --x: initial;
+      result: var(--x, PASS);
+    }
+    #target {
+      --actual: --f(var(--unknown));
+      --expected: PASS;
+    }
+  
+
+    @function --f(--x: initial) {
+      result: var(--x, PASS);
+    }
+    #target {
+      --actual: --f();
+      --expected: PASS;
+    }
+  
+
+    @function --f(--x: PASS) {
+      --x: var(--unknown, initial);
+      result: var(--x);
+    }
+    #target {
+      --actual: --f();
+      --expected: PASS;
+    }
+  
+
+    @function --f(--x: FAIL1) {
+      --x: FAIL2;
+      --x: inherit;
+      result: var(--x);
+    }
+    #target {
+      --x: PASS;
+      --actual: --f(FAIL3);
+      --expected: PASS;
+    }
+  
+
+    @function --f(--x: FAIL1) {
+      --x: FAIL2;
+      --x: inherit;
+      result: var(--x);
+    }
+    @function --g(--x) {
+      --x: PASS;
+      result: --f(FAIL3);
+    }
+    #target {
+      --actual: --g(FAIL4);
+      --expected: PASS;
+    }
+  
+
+    @function --f(--x) {
+      --x: FAIL2;
+      --x: inherit;
+      result: var(--x, PASS);
+    }
+    @function --g() {
+      --x: var(--unknown);
+      result: --f(FAIL1);
+    }
+    #target {
+      --actual: --g();
+      --expected: PASS;
+    }
+  
+
+    @function --f(--x: inherit) {
+      result: var(--x);
+    }
+    #target {
+      --x: PASS1;
+      --actual: --f() --f(PASS2);
+      --expected: PASS1 PASS2;
+    }
+  
+
+    @function --f(--x: inherit) {
+      result: var(--x);
+    }
+    @function --g() {
+      --x: PASS1;
+      result: --f() --f(PASS2);
+    }
+    #target {
+      --x: FAIL;
+      --actual: --g();
+      --expected: PASS1 PASS2;
+    }
+  
+
+    @function --f() {
+      --x: unset;
+      result: var(--x, PASS);
+    }
+    #target {
+      --actual: --f();
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      --x: revert;
+      result: var(--x, PASS);
+    }
+    #target {
+      --actual: --f();
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      --x: revert-layer;
+      result: var(--x, PASS);
+    }
+    #target {
+      --actual: --f();
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      --x: revert-rule;
+      result: var(--x, PASS);
+    }
+    #target {
+      --actual: --f();
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      result: initial;
+    }
+    #target {
+      --tmp: --f();
+      --actual: var(--tmp, PASS);
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      result: inherit;
+    }
+    #parent {
+      --tmp: PASS;
+    }
+    #target {
+      --tmp: --f();
+      --actual: var(--tmp, FAIL);
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      result: unset;
+    }
+    #parent {
+      --tmp: PASS;
+    }
+    #target {
+      --tmp: --f();
+      --actual: var(--tmp, FAIL);
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      result: revert;
+    }
+    #parent {
+      --tmp: PASS;
+    }
+    #target {
+      --tmp: --f();
+      --actual: var(--tmp, FAIL);
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      result: revert-layer;
+    }
+    @layer one {
+      #target {
+        --tmp: PASS;
+      }
+    }
+    @layer two {
+      #target {
+        --tmp: --f();
+        --actual: var(--tmp, FAIL);
+        --expected: PASS;
+      }
+    }
+  
+
+    @function --f() {
+      result: revert-rule;
+    }
+    #target {
+      --tmp: PASS;
+    }
+    #target {
+      --tmp: --f();
+      --actual: var(--tmp, FAIL);
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      result: initial;
+    }
+    @function --g(--x: PASS) {
+      --x: FAIL1;
+      --x: --f();
+      result: var(--x, FAIL2);
+    }
+    #target {
+      --actual: --g();
+      --expected: PASS;
+    }
+  
+
+    @function --f() returns <length> {
+      result: revert-layer;
+    }
+    @layer one {
+      #target {
+        --tmp: FAIL;
+      }
+    }
+    @layer two {
+      #target {
+        --tmp: --f();
+        --actual: var(--tmp, PASS);
+        --expected: PASS;
+      }
+    }
+  

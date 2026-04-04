@@ -1,0 +1,8 @@
+
+body {
+  writing-mode: vertical-lr;
+}
+#target {
+  width: 100px;
+  height: 200px;
+}

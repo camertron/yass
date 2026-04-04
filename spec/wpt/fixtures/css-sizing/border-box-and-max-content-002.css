@@ -1,0 +1,13 @@
+
+    .wrapper {
+        border: 1px solid red;
+        width: max-content;
+    }
+    .item {
+        max-width: max-content;
+        height: 500px;
+        aspect-ratio: 1;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        background-color: blue;
+    }

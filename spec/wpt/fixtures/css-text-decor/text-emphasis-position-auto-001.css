@@ -1,0 +1,12 @@
+
+p {
+	border: solid silver;
+	text-emphasis: dot;
+	text-emphasis-position: auto;
+	margin: 0.5em;
+}
+
+div {
+	float: left;
+	margin: 0.5em;
+}

@@ -1,0 +1,19 @@
+
+.container {
+  width: 100px;
+  height: 100px;
+  clip-path: inset(20% 20%);
+}
+
+#animinitial {
+  background-color: green;
+}
+
+#animfinal {
+  background-color: green;
+}
+
+@keyframes clippath {
+  0%   { clip-path: circle(50% at 50% 50%); }
+  100% { clip-path: circle(20% at 20% 20%); }
+}

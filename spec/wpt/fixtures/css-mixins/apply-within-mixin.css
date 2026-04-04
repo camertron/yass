@@ -1,0 +1,19 @@
+
+      @mixin --m1() {
+        @result {
+          &.a {
+            @apply --m2;
+          }
+        }
+      }
+      .c {
+        @apply --m1;
+      }
+      @mixin --m2() {
+        @result {
+          &.b {
+            color: green;
+          }
+        }
+      }
+    

@@ -1,0 +1,9 @@
+
+div::scroll-button(inline-start) {
+  content: "";
+  background-color: green;
+}
+
+div::scroll-button(inline-start):focus {
+  background-color: red;
+}

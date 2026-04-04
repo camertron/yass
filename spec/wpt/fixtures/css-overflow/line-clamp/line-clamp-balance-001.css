@@ -1,0 +1,7 @@
+
+.clamp {
+  line-clamp: 2;
+  font-family: monospace;
+  width: 8.1ch; /* the extra .1 is just in case the … character isn't perfectly monospaced. */
+  text-wrap: balance;
+}

@@ -1,0 +1,10 @@
+
+img {
+  border-top: 50px solid blue;
+  border-left: 10px solid orange;
+}
+
+.flexbox {
+  display: flex;
+  margin-bottom: 20px;
+}

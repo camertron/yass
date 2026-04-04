@@ -1,0 +1,13 @@
+
+  #host1::part(--p) {
+    z-index: sibling-index();
+    /* Add 1 since widows does not accept 0 */
+    widows: calc(1 + sibling-count());
+  }
+
+
+        :host {
+          z-index: sibling-index();
+          widows: sibling-count();
+        }
+      

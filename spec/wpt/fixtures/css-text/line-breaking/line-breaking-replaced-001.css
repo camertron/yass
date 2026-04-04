@@ -1,0 +1,8 @@
+
+.red {
+	position: absolute;
+	z-index: -1;
+}
+.test {
+	width: 0;
+}

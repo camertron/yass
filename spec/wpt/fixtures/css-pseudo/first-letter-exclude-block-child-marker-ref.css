@@ -1,0 +1,7 @@
+
+body { margin-left: 5em; font-size: 12px; }
+li, o { list-style-position: inside }
+li:first-child > * { list-style-type: lower-alpha; list-style-type: 'marker ' }
+li:last-child > ::marker { content: 'marker ' }
+span, o { display:list-item; }
+first-letter { color: green }

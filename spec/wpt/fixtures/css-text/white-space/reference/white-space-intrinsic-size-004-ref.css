@@ -1,0 +1,9 @@
+
+div {
+  color: transparent;
+  font-family: monospace;
+  font-size: 50px;
+  width: 3ch;
+  height: 2em;
+  background: green;
+}

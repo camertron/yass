@@ -1,0 +1,9 @@
+
+.clamp {
+  line-clamp: auto;
+  height: 4.5lh;
+  font: 16px / 32px serif;
+  white-space: pre;
+  background-color: yellow;
+  padding: 0 4px;
+}

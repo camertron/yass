@@ -1,0 +1,81 @@
+
+      @scope {
+        .a { z-index:1; }
+      }
+    
+
+        @scope {
+          :scope { z-index:1; }
+        }
+      
+
+      @scope {
+        .a { z-index:1; }
+      }
+    
+
+      @scope {
+        .a { z-index:1; }
+      }
+    
+
+      @scope ($invalid) {
+        #a { z-index:1; }
+      }
+    
+
+      @scope {
+        #div { z-index:1; }
+      }
+    
+
+      @scope {
+        > div { z-index:1; }
+      }
+    
+
+      @scope {
+        /* Behaves like :scope */
+        & { z-index:1; }
+      }
+    
+
+      @scope to (.b) {
+        .a { z-index:1; }
+      }
+    
+
+@scope {
+  * { z-index: 1;}
+}
+
+
+      @scope {
+        * { z-index:2; }
+      }
+    
+
+@scope {
+  * { z-index: 3;}
+}
+
+
+        @scope (#outer) {
+          @scope {
+            @scope (#inner) {
+              :scope {
+                z-index: 1;
+              }
+            }
+          }
+        }
+      
+
+      @scope (#outer) {
+        @scope {
+          :scope {
+            z-index: 1;
+          }
+        }
+      }
+    

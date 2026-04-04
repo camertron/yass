@@ -1,0 +1,17 @@
+
+  #target::before {
+    transition-property: background-color, color;
+    transition-duration: 100s;
+    transition-timing-function: steps(2, start);
+    color: green;
+    background-color: white;
+    content: "";
+  }
+  @starting-style {
+    #target::before {
+      background-color: black;
+    }
+  }
+  #target.red::before {
+    background-color: red;
+  }

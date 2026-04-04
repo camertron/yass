@@ -1,0 +1,12 @@
+
+    body { margin: 20px; }
+    #target {
+      width: 200px;
+      height: 100px;
+      border: 20px solid #acf;
+      outline: 10px solid #4ca;
+      padding: 20px;
+      font: 18pt monospace;
+      contain: layout;
+    }
+  

@@ -1,0 +1,11 @@
+
+div {
+  color: orange;
+  --a: green;
+  color: var(--a);
+}
+p {
+  --b: İnitial;
+  --c: ınitial;
+  color: var(--b,var(--c,red));
+}

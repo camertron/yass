@@ -1,0 +1,14 @@
+
+
+svg {
+    width: 400px;
+    height: 400px;
+}
+
+rect {
+    width: 100px;
+    height: 100px;
+    transform-origin: top left;
+    scale: 2;
+}
+

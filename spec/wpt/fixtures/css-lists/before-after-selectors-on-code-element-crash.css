@@ -1,0 +1,7 @@
+
+    code:before {
+      content: counter(dummy,circle);
+    }
+    code:after {
+      content: counter(dummy,square);
+    }

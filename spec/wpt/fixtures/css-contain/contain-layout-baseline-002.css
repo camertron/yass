@@ -1,0 +1,20 @@
+
+#flex {
+  display: inline-flex;
+  align-items: baseline;
+  background: red;
+}
+
+canvas {
+  background: green;
+  width: 50px;
+  height: 100px;
+}
+
+#item {
+  contain: layout;
+  color: transparent;
+  background: green;
+  width: 50px;
+  height: 100px;
+}

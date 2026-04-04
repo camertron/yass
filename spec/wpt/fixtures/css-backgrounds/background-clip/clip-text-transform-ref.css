@@ -1,0 +1,9 @@
+
+body {
+  font-size: 40px;
+}
+.t {
+  background: blue;
+  background-clip: text;
+  color: rgba(255,0,0,0.5);
+}

@@ -1,0 +1,10 @@
+
+    .outer {
+      color: red;
+    }
+
+    .inner {
+      all: initial;
+      color: green;
+    }
+  

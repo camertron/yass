@@ -1,0 +1,51 @@
+
+div {
+	background: blue;
+	padding: 0;
+	margin: 1em 0;
+	border: 1px solid black;
+	width: 20em;
+	height: 8em;
+
+	display: flex;
+	flex-flow: column-reverse wrap-reverse;
+}
+span {
+	background: white;
+	margin: 1em;
+	width: 8em;
+	height: 1.5em;
+	display: inline-block;
+}
+.one {
+	background: pink;
+	order: -1;
+}
+div:hover .one {
+	transition: order 4s;
+	order: 4;
+}
+.two {
+	background: yellow;
+	order: 3;
+}
+.three {
+	background: black;
+	color: white;
+	order: 2;
+}
+.four {
+	background: fuchsia;
+	color: white;
+	order: 1;
+}
+p~div {
+	padding: 1em 0 0;
+	margin-right: 1em;
+	height: 7em;
+	float: left;
+	display: block;
+}
+p~div span {
+	float: left;
+}

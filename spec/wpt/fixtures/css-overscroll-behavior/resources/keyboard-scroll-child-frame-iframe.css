@@ -1,0 +1,14 @@
+
+:root {
+  overscroll-behavior-y: none;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.content {
+  height: 400vh;
+  background: red;
+}

@@ -1,0 +1,50 @@
+
+.parent {
+  top: 0;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background: red;
+  transform-style: preserve-3d;
+}
+.named {
+  view-transition-name: target;
+}
+
+.child {
+  background: green;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform: translateZ(-500px);
+}
+
+body {
+  perspective: 1000px;
+  height: 500px;
+}
+
+::view-transition-group(root) {
+  animation-duration: 500s;
+  opacity: 0;
+}
+::view-transition-image-pair(root) {
+  display: none;
+}
+::view-transition-group(target) {
+  animation-duration: 0s;
+}
+::view-transition-new(target) {
+  animation: unset;
+  opacity: 1;
+}
+::view-transition-old(target) {
+  animation: unset;
+  opacity: 0;
+}
+
+::view-transition {
+  background: pink;
+}

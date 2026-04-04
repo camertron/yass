@@ -1,0 +1,25 @@
+
+  body {
+    margin: 0px;
+  }
+  .grid {
+    display: grid;
+    grid-template: repeat(3, 100px) / repeat(3, 100px);
+    gap: 20px;
+    row-rule: 6px solid red;
+    column-rule: 6px solid blue;
+    rule-inset: 0px;
+
+    column-rule-visibility-items: around;
+    row-rule-visibility-items: around;
+
+    column-rule-break: intersection;
+    row-rule-break: intersection;
+  }
+
+  .item {
+    width: 100%;
+    height: 100%;
+    background: lightgray;
+    opacity: 0.8;
+  }

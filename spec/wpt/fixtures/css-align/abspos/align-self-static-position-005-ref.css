@@ -1,0 +1,12 @@
+
+.container {
+  position: relative;
+  border: 1px solid;
+}
+
+.abs {
+  position: absolute;
+  background: purple;
+  opacity: 0.5;
+  bottom: 0px;
+}

@@ -1,0 +1,24 @@
+
+.grid {
+   position: relative;
+   background: grey;
+   float: left;
+   margin: 5px;
+   text-orientation: sideways;
+   width: 350px;
+   font-family: Ahem;
+   line-height: 1;
+   grid-auto-flow: row;
+}
+.grid > :nth-child(1) { font-size:20px; }
+.grid > :nth-child(2) { font-size:30px; }
+.grid > :nth-child(3) { font-size:50px; }
+.grid > :nth-child(4) { font-size:60px; }
+.item {
+   border-width: 2px 5px 3px 4px;
+   border-style: solid;
+   padding: 6px 3px 7px 8px;
+   margin: 10px 6px 4px 12px;
+}
+.extraTopPadding { padding-top: 50px; }
+.extraBottomPadding { padding-bottom: 50px; }

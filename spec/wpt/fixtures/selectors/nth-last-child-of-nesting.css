@@ -1,0 +1,4 @@
+
+:nth-last-child(2n - 2 of :nth-last-child(n of .target)) {
+    background-color: lime;
+}

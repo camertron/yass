@@ -1,0 +1,19 @@
+
+div {
+	background: black;
+	margin: 1em 0;
+	width: 30em;
+	height: 6em;
+
+	display: flex;
+	align-items: stretch;
+}
+span {
+	width: 8em;
+	display: inline-block;
+
+	flex: none;
+}
+span:nth-child(1) {
+	margin-top: 6em;
+}

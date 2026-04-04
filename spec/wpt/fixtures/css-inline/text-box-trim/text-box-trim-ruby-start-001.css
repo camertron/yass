@@ -1,0 +1,15 @@
+
+.spacer {
+  height: 40px;
+  background: lightgray;
+}
+.target {
+  font: 40px/1 Ahem;
+  text-box-trim: trim-start;
+  text-box-edge: text;
+}
+rt {
+  /* The Ruby annotation positioning is UA-dependent. In order to ref-test the
+     trimming of parts above the ascent, hide the Ruby annotation. */
+  color: transparent;
+}

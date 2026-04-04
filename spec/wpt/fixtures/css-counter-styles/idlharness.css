@@ -1,0 +1,6 @@
+
+  @counter-style triangle {
+    system: cyclic;
+    symbols: ‣;
+    suffix: " ";
+  }

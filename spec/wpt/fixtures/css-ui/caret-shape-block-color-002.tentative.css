@@ -1,0 +1,13 @@
+
+  div {
+    font-size: 5em;
+  }
+
+  #target {
+    caret-shape: block;
+    caret-animation: manual;
+  }
+
+  #target:focus {
+    outline: none;
+  }

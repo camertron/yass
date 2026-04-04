@@ -1,0 +1,22 @@
+
+        .container {
+	position: relative;
+	height: 6em;
+	width: 20em;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	background: red;
+	margin: 1em;
+	border: 1px solid black;
+        }
+	span {
+	height: 2em;
+	display: inline-block;
+	flex: none;
+	background: green;
+	color: white;
+	margin: 1em;
+	width: 8em;
+	}
+    

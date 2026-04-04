@@ -1,0 +1,35 @@
+
+#reference-overlapped-red {
+  position: absolute;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+}
+
+#outer-flexbox {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#middle-flexbox {
+  display: flex;
+  height: 50%;
+  /* This needs to be stretched for repro */
+  align-items: stretch;
+  min-height: 0px;
+}
+
+#inner-flexbox {
+  display: flex;
+  align-items: flex-start;
+  min-width: 0px;
+}
+
+img {
+  max-height: 100%;
+  min-width: 0px;
+}

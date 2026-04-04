@@ -1,0 +1,36 @@
+
+div {
+  position: absolute;
+  margin: 0;
+}
+
+#scroller {
+  height: 500px;
+  width: 500px;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+}
+
+#y-target {
+  width: 300px;
+  height: 300px;
+  top: 100px;
+  left: 0;
+  background-color: green;
+  /* align only on y-axis */
+  scroll-snap-align: start none;
+}
+
+#x-target {
+  width: 300px;
+  height: 300px;
+  top: 0;
+  left: 100px;
+  background-color: red;
+  scroll-snap-align: none start;
+}
+
+.area {
+  width: 2000px;
+  height: 2000px;
+}

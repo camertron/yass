@@ -1,0 +1,10 @@
+
+.div-parent {
+  outline: 1px solid orange;
+  font: 20px/3 Ahem;
+  text-box-trim: trim-both;
+  text-box-edge: text;
+}
+span {
+  border-block: solid red;
+}

@@ -1,0 +1,10 @@
+
+          div
+          {
+              background-clip: content-box;
+              background-color: red;
+              height: auto;
+              padding: 50px;
+              width: auto;
+          }
+        

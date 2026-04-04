@@ -1,0 +1,17 @@
+
+  @page {
+    size: 400px;
+    margin: 0;
+  }
+  :root {
+    print-color-adjust: exact;
+  }
+  body {
+    margin: 0;
+  }
+  .pass::before {
+    content: "PASS";
+  }
+  .pa_ss::before {
+    content: "PA" "SS";
+  }

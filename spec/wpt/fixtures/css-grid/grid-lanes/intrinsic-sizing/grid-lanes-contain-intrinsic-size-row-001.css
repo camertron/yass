@@ -1,0 +1,17 @@
+
+#grid {
+  border: 3px solid black;
+  display: grid-lanes;
+  grid-template-rows: 55px 66px;
+  contain-intrinsic-size: 70px 80px;
+  contain: size;
+  width: max-content;
+  background: lightblue;
+  grid-gap: 5px;
+}
+.item {
+  background: lightgreen;
+  opacity: 0.5;
+  height: 50px;
+  width: 50px;
+}

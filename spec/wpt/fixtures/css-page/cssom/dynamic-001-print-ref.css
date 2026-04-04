@@ -1,0 +1,11 @@
+
+  @page {
+    size: 700px 150px;
+    margin: 0;
+  }
+  :root {
+    print-color-adjust: exact;
+  }
+  body {
+    margin: 0;
+  }

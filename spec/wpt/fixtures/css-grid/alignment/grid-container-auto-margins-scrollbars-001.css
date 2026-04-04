@@ -1,0 +1,14 @@
+
+body {
+   display: grid;
+   grid-template-columns: auto;
+   grid-template-rows: 1fr auto;
+   height: 100vh;
+}
+.item1 {
+   margin: 0px auto;
+}
+.item2 {
+   background-color: cyan;
+   height: 50px;
+}

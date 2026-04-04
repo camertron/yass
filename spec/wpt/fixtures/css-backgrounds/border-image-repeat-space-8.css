@@ -1,0 +1,6 @@
+
+  div {
+    border: 27px solid;
+    border-image: url("support/border.png") 27 space;
+    border-image-width: 27px;
+  }

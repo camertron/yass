@@ -1,0 +1,11 @@
+
+
+@keyframes a {
+  from, to { color: blue }
+}
+
+p {
+  color: olive;
+  animation: a 1s infinite;
+}
+

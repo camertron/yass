@@ -1,0 +1,13 @@
+
+    #target {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+
+    ::view-transition-group(*),
+    ::view-transition-image-pair(*),
+    ::view-transition-old(*),
+    ::view-transition-new(*) {
+      animation-play-state: paused;
+    }

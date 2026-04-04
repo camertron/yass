@@ -1,0 +1,7 @@
+
+
+.animated-div {
+  margin-left: 100px;
+  transition: margin-left 100s linear 100s;
+}
+

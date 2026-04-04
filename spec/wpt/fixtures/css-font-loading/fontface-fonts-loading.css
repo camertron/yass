@@ -1,0 +1,9 @@
+
+@font-face {
+  font-family: "AhemTest";
+  src: url("/fonts/Ahem.ttf") format("truetype");
+}
+.initial {
+  font-family: "AhemTest", sans-serif;
+  font-size: 20px;
+}

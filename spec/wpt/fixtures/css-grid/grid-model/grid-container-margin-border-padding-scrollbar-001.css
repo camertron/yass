@@ -1,0 +1,22 @@
+
+.margin {
+    margin: 10px;
+}
+
+.border {
+    border: 5px solid black;
+}
+
+.padding {
+    padding: 20px;
+}
+
+.scroll {
+    overflow: scroll;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    background: lime;
+}

@@ -1,0 +1,9 @@
+
+  #flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #flex > div {
+    background: green;
+    inline-size: 50%;
+  }

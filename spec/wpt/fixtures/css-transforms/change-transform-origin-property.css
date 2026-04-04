@@ -1,0 +1,14 @@
+
+#target {
+  will-change: transform;
+  transform: rotate(90deg);
+  transform-origin: 100px 100px;
+  width: 100px;
+  height: 100px;
+  background: green;
+}
+#container {
+  width: 100px;
+  height: 100px;
+  background: red;
+}

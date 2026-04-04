@@ -1,0 +1,10 @@
+
+  #container {
+    container-type: size;
+    width: 400px;
+    height: 200px;
+  }
+
+  @container (min-width: 400px) {
+    span { color: red; }
+  }

@@ -1,0 +1,17 @@
+
+div {
+  background: blue;
+  padding: 1em;
+  margin: 1em;
+}
+
+:has(> span) {
+  background: green;
+}
+
+span {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: pink;
+}

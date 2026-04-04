@@ -1,0 +1,23 @@
+
+:root {
+  color:black; background-color:white; font:10px/1 monospace;
+}
+::marker {
+  content: counter(foo) ". ";
+}
+ol::before, li::before {
+  content: counters(foo,".");
+}
+div, span {
+  counter-increment: foo 0;
+}
+.pure-set {
+  counter-increment: foo 0;
+  counter-set: foo 5;
+}
+ol[reversed] {
+  counter-reset: reversed(foo);
+}
+li {
+  counter-increment: foo -1 list-item 0;
+}

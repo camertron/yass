@@ -1,0 +1,16 @@
+
+        #main{
+            border-bottom: 1px solid cyan;
+            display: flex;
+        }
+        #text, #norm{
+            text-decoration: green underline;
+            text-decoration-skip-ink: none;
+            text-underline-offset: 0px;
+            font: 20px/1 Ahem;
+            color: transparent;
+            position: relative;
+            top: 21px;
+            margin-right: 10px;
+        }
+    

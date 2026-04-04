@@ -1,0 +1,22 @@
+
+div, textarea {
+  font-size: 2em;
+  margin: 1em;
+  font-family: monospace;
+  resize: none;
+  overflow: hidden;
+  height: 2em;
+  width: 20ch;
+  padding: 0px;
+}
+#test {
+  border: solid blue;
+  word-space-transform: space;
+}
+#ref {
+  border: solid orange;
+}
+textarea {
+  border: solid pink;
+}
+

@@ -1,0 +1,7 @@
+
+#target {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  background-image: linear-gradient(to right, blue 0% 50%, green 50%);
+}

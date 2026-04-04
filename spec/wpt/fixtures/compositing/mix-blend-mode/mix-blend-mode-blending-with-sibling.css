@@ -1,0 +1,19 @@
+
+            div {
+                width: 100px;
+                height: 100px;
+            }
+            .container {
+                position: fixed;
+                z-index: 0;
+                background: #FFF;
+            }
+            .blender {
+                background: #FF0;
+                mix-blend-mode: difference;
+            }
+            .sibling {
+                margin-top: -100px;
+                background: #F00;
+            }
+        

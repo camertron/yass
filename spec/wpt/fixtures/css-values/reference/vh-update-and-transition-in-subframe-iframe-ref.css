@@ -1,0 +1,31 @@
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		p {
+			clear: both;
+			margin: 10px 0;
+		}
+		#testBoxWithVhOnly {
+			background: #F00;
+			width: 60px;
+			float: left;
+		}
+		#testBoxNotGrownHorizontallyByJS {
+			background: #F0F;
+			height: 60px;
+			float: left;
+		}
+		#testBoxWithTransition {
+			background: #FF0;
+			width: 40px;
+			height: 40px;
+			float: left;
+		}
+		#referenceBoxGrownHorizontallyByJS {
+			background: #0F0;
+			height: 40px;
+			float: left;
+		}
+	

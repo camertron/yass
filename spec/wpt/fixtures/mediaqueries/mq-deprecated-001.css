@@ -1,0 +1,19 @@
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+@media
+    tty,
+    tv,
+    projection,
+    handheld,
+    braille,
+    embossed,
+    aural,
+    speech
+{
+    div { background-color: red; }
+}

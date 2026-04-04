@@ -1,0 +1,14 @@
+
+  .a {
+    color: yellow;
+    background-color: blue;
+  }
+  .b {
+    color: lime;
+    background-color: blue;
+  }
+  .selection {
+    color: green;
+    background-color: black;
+    text-decoration: /* currentColor */ underline;
+  }

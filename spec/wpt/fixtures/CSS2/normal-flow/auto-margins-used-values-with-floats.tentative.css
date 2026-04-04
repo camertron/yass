@@ -1,0 +1,19 @@
+
+.container {
+  display: flow-root;
+  width: 100px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.box {
+  display: flow-root;
+  width: 40px;
+  height: 10px;
+  background: lime;
+}
+.float {
+  float: right;
+  width: 20px;
+  height: 40px;
+  background: cyan;
+}

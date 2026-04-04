@@ -1,0 +1,13 @@
+
+#target {
+  width: 100px;
+  height: 100px;
+}
+#inner {
+  width: 10px;
+  height: 10px;
+  background: blue;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}

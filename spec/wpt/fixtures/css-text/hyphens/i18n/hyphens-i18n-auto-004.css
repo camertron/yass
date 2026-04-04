@@ -1,0 +1,10 @@
+
+div {
+  font-size: 3em;
+  color: orange;
+}
+.test {
+  width: 8ch;
+  hyphens: auto;
+  color: blue;
+}

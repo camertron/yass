@@ -1,0 +1,17 @@
+
+
+.container {
+  width: 200px;
+  position: relative;
+  outline: solid;
+  justify-items: center;
+  text-align: -webkit-right;
+}
+
+.item {
+  background: lightblue;
+  width: 100px;
+  height: 100px;
+  outline: solid;
+}
+

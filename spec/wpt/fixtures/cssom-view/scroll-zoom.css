@@ -1,0 +1,15 @@
+
+      .container {
+        height: 100px;
+        width: 100px;
+        overflow: scroll;
+      }
+      .content {
+        height: 250px;
+        width: 250px;
+        background-image: linear-gradient(red, yellow);
+      }
+      #x4_zoom_container {
+        zoom: 4;
+      }
+    

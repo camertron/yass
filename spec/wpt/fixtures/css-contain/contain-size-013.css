@@ -1,0 +1,6 @@
+
+img {
+  background: green;
+  padding: 50px;
+  contain: size;
+}

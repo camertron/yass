@@ -1,0 +1,8 @@
+
+  @keyframes anim {
+    from { color: pink }
+    to { color: purple }
+  }
+  div {
+    animation: notfound 1s;
+  }

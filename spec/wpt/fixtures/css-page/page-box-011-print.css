@@ -1,0 +1,14 @@
+
+  @page {
+    display: none;
+    margin: 0;
+    border: 10px solid;
+    padding: 10px;
+    background: yellow;
+  }
+  :root {
+    print-color-adjust: exact;
+  }
+  body {
+    margin: 0;
+  }

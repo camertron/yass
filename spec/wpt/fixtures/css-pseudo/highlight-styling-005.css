@@ -1,0 +1,8 @@
+
+    :root {
+      --bg: red;
+    }
+    main::selection {
+      background-color: var(--bg, red);
+    }
+  

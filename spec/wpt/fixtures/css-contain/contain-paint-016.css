@@ -1,0 +1,8 @@
+
+div {
+  display: table-header-group;
+  contain: paint;
+}
+span {
+  position: absolute;
+}

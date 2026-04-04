@@ -1,0 +1,13 @@
+
+  #flex {
+    display: flex;
+    align-items: baseline;
+    width: 50px;
+    height: 200px;
+    line-height: 0;
+    position: relative;
+  }
+  #flex > div {
+    width: 25px;
+    background: green;
+  }

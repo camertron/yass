@@ -1,0 +1,6 @@
+
+  @container scroll-state(        snapped:inline) { }
+  @container scroll-STate(snapped:    ) { }
+  @container scroll-STate(snapped) { }
+  @container  scroll-state(  ( snapped: INLINE) OR ( SNAPPED: BlOCK  ) ) { }
+  @container scroll-state (snapped: inline) { }

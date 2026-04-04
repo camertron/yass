@@ -1,0 +1,15 @@
+
+  #target {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    contain: paint;
+    view-transition-name: target;
+  }
+  #other {
+    width: 100px;
+    height: 100px;
+    background: green;
+    contain: paint;
+    view-transition-name: other;
+  }

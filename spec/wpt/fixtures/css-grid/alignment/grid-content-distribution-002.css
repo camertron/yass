@@ -1,0 +1,25 @@
+
+.block {
+  position: absolute;
+  z-index: -1;
+  background: green;
+  width: 200px;
+  height: 200px;
+}
+.block > div {
+  position: absolute;
+  background: red;
+  width: 20px;
+  height: 20px;
+}
+.grid {
+  z-index: 1;
+  display: grid;
+  width: 200px;
+  height: 200px;
+  grid-template-columns: 20px 20px;
+  grid-template-rows: 20px 20px;
+  align-content: space-between;
+  justify-content: space-between;
+}
+.grid > div { background: green; }

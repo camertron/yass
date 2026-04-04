@@ -1,0 +1,19 @@
+
+.container {
+  width: 150px;
+  border: solid 2px;
+}
+
+.left {
+  float: left;
+  background: green;
+  width: 100px;
+  height: 100px;
+}
+
+.right {
+  float: right;
+  background: green;
+  width: 100px;
+  height: 100px;
+}

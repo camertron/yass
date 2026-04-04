@@ -1,0 +1,12 @@
+
+  #wrapper {
+    writing-mode: sideways-rl;
+    width: stretch;
+  }
+  #target {
+    direction: rtl;
+    font-size: 3em;
+  }
+  #target::highlight(caret) {
+    background: lime;
+  }

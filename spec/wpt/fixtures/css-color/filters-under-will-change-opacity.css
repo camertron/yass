@@ -1,0 +1,12 @@
+
+div {
+  position: absolute;
+  will-change: opacity;
+}
+.filter {
+  width: 100px;
+  height: 150px;
+  position: absolute;
+  background: yellow;
+  filter: invert(100%);
+}

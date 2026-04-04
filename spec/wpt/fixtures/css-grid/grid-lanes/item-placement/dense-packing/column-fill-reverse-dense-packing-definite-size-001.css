@@ -1,0 +1,16 @@
+
+    .grid-lanes {
+      display: grid-lanes;
+      grid-template-columns: repeat(4, 100px);
+      grid-auto-flow: dense;
+      grid-lanes-pack: dense;
+      grid-lanes-direction: column fill-reverse;
+      gap: 10px;
+      margin-top: 100px;
+      border: solid 2px blue;
+      width: min-content;
+      font-family: Ahem;
+      font-size: 10px;
+      height: 500px;
+    }
+  

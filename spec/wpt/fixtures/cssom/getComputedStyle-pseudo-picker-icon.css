@@ -1,0 +1,13 @@
+
+select,
+select::picker(select) {
+  appearance: base-select;
+}
+
+#test-select {
+  width: 321px;
+}
+
+#test-select::picker-icon {
+  width: 13px;
+}

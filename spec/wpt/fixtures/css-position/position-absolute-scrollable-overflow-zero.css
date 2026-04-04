@@ -1,0 +1,29 @@
+
+.container {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  background: red;
+}
+
+.abspos {
+  position: absolute;
+  inset: 0;
+  height: 0;
+  margin: 0;
+}
+
+.abspos-child {
+  position: absolute;
+  width: 100px;
+  left: 100px;
+  transform: translateX(-100px);
+  top: 1px;
+}
+
+.good {
+  width: 100px;
+  height: 100px;
+  background: green;
+}

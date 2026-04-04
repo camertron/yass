@@ -1,0 +1,14 @@
+
+      img {
+        display: block;
+      }
+      .container {
+        height: 100px;
+        width: 100px;
+      }
+
+      #x4_zoom_container {
+        zoom: 4;
+      }
+
+    

@@ -1,0 +1,16 @@
+
+body {
+  background: white;
+  color: black;
+}
+div {
+  position: relative;
+}
+h1 {
+  position: absolute;
+  text-indent: 40px; /* shifts the text and underline together */
+}
+u {
+  text-decoration-color: black;
+  text-decoration-inset: 20px -20px;
+}

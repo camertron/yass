@@ -1,0 +1,70 @@
+
+      @mixin --m1() {
+        @result {
+          @contents;
+        }
+      }
+      #e1 {
+        color: red;
+        @apply --m1 { color: green; }
+      }
+    
+
+      @mixin --m2() {
+        @result {
+          @contents
+        }
+      }
+      #e2 {
+        color: red;
+        @apply --m2 { color: green; }
+      }
+    
+
+      @mixin --m3() {
+        @result {
+          &.a {
+            @contents { color: blue; }
+          }
+        }
+      }
+      .b {
+        color: red;
+        @apply --m3 { color: green; }
+      }
+    
+
+      @mixin --m4() {
+        @result {
+          &.c {
+            @contents { color: green; }
+          }
+        }
+      }
+      .d {
+        color: red;
+        @apply --m4;
+      }
+    
+
+      @mixin --m6() {
+        @result {
+          @contents { }
+          color: green;
+        }
+      }
+      #e6 {
+        @apply --m6;
+      }
+    
+
+        @mixin --m7() {
+          @result {
+            @contents;
+            color: green;
+          }
+        }
+        #e7 {
+          @apply --m7 {};
+        }
+    

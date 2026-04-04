@@ -1,0 +1,52 @@
+
+  main {
+    border: 1px solid black;
+
+    position: relative;
+    width: 500px;
+    height: 200px;
+  }
+
+  .box, .box-before::before, .box-after::after {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    content: "";
+  }
+
+  .box-anchor, .box-before-anchor::before, .box-after-anchor::after { anchor-name: --box; }
+  .box-red, .box-before-red::before, .box-after-red::after { background-color: red; }
+  .box-green, .box-before-green::before, .box-after-green::after { background-color: green; }
+
+  .target {
+    position: absolute;
+    position-anchor: --box;
+    top: calc(anchor(bottom) + 10px);
+    left: anchor(left);
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+  }
+
+
+    #anchor1 { inset: 0 }
+    #anchor23::before { top: 0; left: 60px; }
+    #anchor23::after { top: 0; left: 120px; }
+  
+
+    #anchor1 { inset: 0 }
+    #anchor23::before { top: 0; left: 60px; }
+    #anchor23::after { top: 0; left: 120px; }
+  
+
+    #anchor12::before { inset: 0; }
+    #anchor12::after { top: 0; left: 60px; }
+  
+
+    #anchor1::before { inset: 0 }
+    #anchor2 { top: 0; left: 60px; }
+  
+
+    #anchor1 { inset: 0 }
+    #anchor2::after { top: 0; left: 60px; }
+  

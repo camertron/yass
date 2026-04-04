@@ -1,0 +1,12 @@
+
+  #reference-overlapped-red {
+    position: absolute;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+  }
+  .item {
+    aspect-ratio: 2/1;
+    writing-mode: vertical-lr;
+  }

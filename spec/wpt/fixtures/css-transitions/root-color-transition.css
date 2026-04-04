@@ -1,0 +1,9 @@
+
+    html {
+      color: red;
+      transition: color 1s linear;
+    }
+    html.green {
+      color: green;
+    }
+  

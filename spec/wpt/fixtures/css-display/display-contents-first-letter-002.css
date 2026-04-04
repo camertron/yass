@@ -1,0 +1,4 @@
+
+  div { color: red }
+  div::first-letter { background: transparent /* To trigger first-letter pseudo element */ }
+  span { color: green; display: contents; background-color: red }

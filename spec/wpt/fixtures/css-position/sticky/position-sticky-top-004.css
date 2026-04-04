@@ -1,0 +1,14 @@
+
+#scroll {
+  width: 100px;
+  height: 200px;
+  overflow: auto;
+  background: red;
+}
+.sticky {
+  position: sticky;
+  width: 100px;
+  height: 100px;
+  top: 100%;
+  background: green;
+}

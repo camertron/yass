@@ -1,0 +1,18 @@
+
+.clamp {
+  border: 1px solid black;
+  font-family: monospace;
+  width: 29ch;
+  text-wrap: nowrap;
+  margin-bottom: 1em;
+}
+.right {
+    text-align: right;
+}
+.justified {
+    text-align-last: justify;
+}
+.green {
+    color: green;
+    font-weight: bold;
+}

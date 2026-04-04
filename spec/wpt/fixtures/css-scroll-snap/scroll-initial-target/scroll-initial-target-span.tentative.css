@@ -1,0 +1,23 @@
+
+      * {
+        margin: 0px;
+      }
+      .space {
+        width: 150%;
+        height: 150%;
+      }
+      .box {
+        height: 50px;
+        width: 50px;
+        border: solid 1px black;
+        background-color: turquoise;
+      }
+      .target {
+        scroll-initial-target: nearest;
+      }
+      .scroller {
+        overflow: scroll;
+        height: 100px;
+        width: 100px;
+      }
+    

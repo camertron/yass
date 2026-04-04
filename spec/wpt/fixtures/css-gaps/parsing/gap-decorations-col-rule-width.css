@@ -1,0 +1,12 @@
+
+  #target1 {
+    column-rule-width: thin;
+  }
+
+  #target2 {
+    column-rule-width: 5px, 10px, 15px;
+  }
+
+  #target3 {
+    column-rule-width: repeat(auto, 5px);
+  }

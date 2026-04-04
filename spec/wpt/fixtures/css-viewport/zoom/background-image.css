@@ -1,0 +1,7 @@
+
+div {
+  width: 20px;
+  height: 20px;
+  zoom: 0.5;
+  background-image: url("/images/pattern.png"); /* 20x20 */
+}

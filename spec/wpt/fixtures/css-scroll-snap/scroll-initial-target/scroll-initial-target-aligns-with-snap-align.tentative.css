@@ -1,0 +1,23 @@
+
+      #space {
+        width: 1000px;
+        height: 1000px;
+        border: solid 1px red;
+      }
+      #scroller {
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+        border: solid 1px blue;
+        position: absolute;
+      }
+      #target {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        scroll-initial-target: nearest;
+        position: absolute;
+        top: 400px;
+        left: 400px;
+      }
+    

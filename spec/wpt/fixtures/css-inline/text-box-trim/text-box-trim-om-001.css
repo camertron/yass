@@ -1,0 +1,16 @@
+
+@font-face {
+  font-family: test-font;
+  src: url(support/cap-x-height.ttf);
+}
+.spacer {
+  background: lightgray;
+  block-size: 100px;
+}
+#target {
+  font-family: test-font;
+  font-size: 100px;
+  line-height: 2;
+  text-box-trim: both;
+  text-box-edge: ex alphabetic;
+}

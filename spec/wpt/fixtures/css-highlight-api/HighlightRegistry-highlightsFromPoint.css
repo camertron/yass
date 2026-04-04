@@ -1,0 +1,10 @@
+
+::highlight(example-highlight) {
+    background-color: rgba(0, 255, 255, 0.5);
+}
+::highlight(example-highlight-2) {
+    background-color: rgba(255, 255, 0, 0.5);
+}
+body {
+    font-family: monospace;
+}

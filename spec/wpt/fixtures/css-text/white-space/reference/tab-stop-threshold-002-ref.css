@@ -1,0 +1,6 @@
+
+div {
+  white-space: pre;
+  font-family: monospace;
+  tab-size: 8; /* the initial value, but since we're measuring against it, we might as well be sure */
+}

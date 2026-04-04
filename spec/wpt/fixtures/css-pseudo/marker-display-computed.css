@@ -1,0 +1,13 @@
+
+.inside {
+  list-style-position: inside;
+}
+.color::marker {
+  color: blue;
+}
+.string {
+  list-style-type: "string";
+}
+.content::marker {
+  content: "content";
+}

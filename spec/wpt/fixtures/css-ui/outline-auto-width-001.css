@@ -1,0 +1,14 @@
+
+div {
+    outline-style: auto;
+    outline-width: 1em;
+    width: 100px;
+    height: 100px;
+    margin: 2em;
+}
+div + div {
+    outline-width: 0;
+}
+hr ~ div {
+    outline-style: solid;
+}

@@ -1,0 +1,29 @@
+
+.ifc {
+  position: relative;
+  width: max-content;
+  font: 20px/1 Ahem;
+  margin-bottom: 2em;
+}
+
+.relpos {
+  position: relative;
+  background: yellow;
+  color: yellow;
+}
+
+.target {
+  position: absolute;
+  background: green;
+  width: 5em;
+  height: 1em;
+  top: 1em;
+}
+
+.fix-start {
+  inset-inline-start: 0;
+}
+
+.fix-end {
+  inset-inline-end: 0;
+}

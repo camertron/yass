@@ -1,0 +1,21 @@
+
+
+.outer {
+  height: 200px;
+  width: 800px;
+  column-fill: balance;
+  column-count: 3;
+  column-rule: 4px solid blue;
+  column-gap: 16px;
+  background: rgba(0, 0, 255, 0.3);
+}
+
+.inner {
+  column-count: 2;
+  column-fill: balance;
+  column-rule: 2px solid fuchsia;
+  column-gap: 16px;
+  background: rgba(255, 0, 255, 0.3);
+  font: 16px/1.25 sans-serif;
+}
+

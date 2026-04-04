@@ -1,0 +1,10 @@
+
+.outside { list-style-position: outside }
+.inside { list-style-position: inside }
+.type-roman { list-style-type: lower-roman }
+.type-string { list-style-type: "ii. " }
+.content-counter::marker { content: counter(list-item, lower-roman) ". " }
+.content-string::marker { content: "iv. " }
+li {
+  text-transform: uppercase;
+}

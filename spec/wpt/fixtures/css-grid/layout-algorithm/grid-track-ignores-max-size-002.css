@@ -1,0 +1,13 @@
+
+.grid {
+  display: grid;
+  inline-size: 100px;
+  block-size: auto;
+  max-block-size: 10px;
+}
+
+.item {
+  background: green;
+  min-height: 0;
+  line-height: 0;
+}

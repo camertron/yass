@@ -1,0 +1,29 @@
+
+    body {
+        margin: 0px;
+    }
+    .section {
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .grid {
+        display: grid;
+        grid-template: repeat(3, 50px) / repeat(4, 50px);
+        gap: 10px;
+        width: 170px;
+        height: 230px;
+    }
+    .item {
+        background: lightgray;
+    }
+    .col-rule {
+        position: absolute;
+        height: 10px;
+        width: 170px;
+    }
+    .row-rule {
+        position: absolute;
+        width: 10px;
+        height: 230px;
+        top: 0px;
+    }

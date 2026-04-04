@@ -1,0 +1,20 @@
+
+.scroller {
+  height: 150px;
+  width: 300px;
+  overflow: auto;
+  position: relative;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+}
+.padding {
+  padding: 0 200px;
+}
+.child {
+  scroll-snap-align: center;
+  display: inline-block;
+  width: 201px;
+  height: 100%;
+  margin: 0 200px;
+  background-color: blue;
+}

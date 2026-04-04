@@ -1,0 +1,25 @@
+
+  #cover, #clip, #blur {
+    width: 100px;
+    height: 100px;
+  }
+
+  #cover, #clip {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  #cover {
+    background: green;
+  }
+
+  #clip {
+    overflow: hidden;
+    background: red;
+  }
+
+  #blur {
+    background: blue;
+    filter: blur(20px);
+  }

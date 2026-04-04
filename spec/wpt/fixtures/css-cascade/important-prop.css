@@ -1,0 +1,21 @@
+
+  @keyframes override {
+    from, to {
+      background: #f00; color: green;
+      border-color: green; border-color: red !important;
+    }
+  }
+
+  .square {
+    color:#00f;
+    animation: override 1s infinite;
+    width: 80px;
+    height: 80px;
+    border: 10px solid red;
+    text-align: center;
+  }
+  div {
+    background-color:green !important;
+    color: red;
+  }
+  

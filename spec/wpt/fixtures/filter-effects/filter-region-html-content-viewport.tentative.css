@@ -1,0 +1,17 @@
+
+  #target {
+    width: 105px;
+    height: 105px;
+    background-color: red;
+    position: relative;
+    border: 10px solid orange;
+    filter: url(#f);
+  }
+  #target > div {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+ }

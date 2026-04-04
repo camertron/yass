@@ -1,0 +1,21 @@
+
+  .line {
+    display: flex;
+  }
+
+  .container {
+    writing-mode: horizontal-tb;
+    direction: ltr;
+
+    block-size: 200px;
+    inline-size: 200px;
+    margin: 10px;
+    background: deepskyblue;
+  }
+
+  .content {
+    inline-size: 100%;
+    block-size: 200%;
+    background: lightsalmon;
+  }
+  

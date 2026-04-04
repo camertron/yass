@@ -1,0 +1,10 @@
+
+#container::before {
+  content: "This test ";
+  color: green;
+}
+#container::after {
+  content: "PASSES.";
+  background: green;
+  color: white;
+}

@@ -1,0 +1,18 @@
+
+  html
+    {
+      writing-mode: vertical-rl;
+    }
+
+  body
+    {
+      writing-mode: vertical-lr;
+    }
+
+  div
+    {
+      background-color: orange;
+      height: 100px;
+      width: 100px;
+    }
+  

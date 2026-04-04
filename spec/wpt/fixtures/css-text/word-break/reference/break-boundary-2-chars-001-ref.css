@@ -1,0 +1,10 @@
+
+  div
+    {
+      display: inline-block;
+      font-size: 32px;
+      margin-right: 5ch;
+      white-space: pre;
+      width: 0;
+    }
+  

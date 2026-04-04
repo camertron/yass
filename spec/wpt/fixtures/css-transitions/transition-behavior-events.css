@@ -1,0 +1,5 @@
+
+#width1, #width2 {
+  width: auto;
+  transition: width 3s -1s linear;
+}

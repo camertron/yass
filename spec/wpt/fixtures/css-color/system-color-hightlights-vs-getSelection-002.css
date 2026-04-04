@@ -1,0 +1,36 @@
+
+  div
+    {
+      font-size: 40px;
+      line-height: 1;
+    }
+
+  /*
+     https://www.w3.org/TR/css-pseudo-4/#highlight-bounds
+     For text, the corresponding overlay must cover at least
+     the entire em box and may extend further above/below the
+     em box to the line box edges.
+  */
+
+  span.system-color-highlight
+    {
+      background-color: Highlight;
+      color: HighlightText;
+    }
+
+  /*
+
+  Highlight
+      Background of item(s) selected in a control.
+  https://www.w3.org/TR/css-color-4/#valdef-system-color-highlight
+
+  HighlightText
+      Text of item(s) selected in a control.
+  https://www.w3.org/TR/css-color-4/#valdef-system-color-highlighttext
+
+  CSS4 Color Module
+  5.2 System Colors
+  https://www.w3.org/TR/css-color-4/#css-system-colors
+
+  */
+  

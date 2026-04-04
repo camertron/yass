@@ -1,0 +1,6 @@
+
+#editor {
+  text-indent: 100px hanging;
+  caret-animation: manual; /* Prevent blinking */
+  padding: 10px;
+}

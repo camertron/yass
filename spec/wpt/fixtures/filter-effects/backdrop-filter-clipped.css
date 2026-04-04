@@ -1,0 +1,20 @@
+
+div {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 10px;
+    top: 50px;
+}
+.colorbox {
+    background: #ff7fff;
+}
+.clipper {
+    overflow: hidden;
+    border-radius: 0.001px;
+}
+.filterbox {
+    top:0;
+    left:0;
+    backdrop-filter: invert(1);
+}

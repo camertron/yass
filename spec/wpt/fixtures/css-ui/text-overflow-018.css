@@ -1,0 +1,16 @@
+
+div{
+  font-size: 25px;
+  font-family: monospace;
+  width: 2.1ch;
+  white-space: pre;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: solid blue;
+  padding-right: 0.9ch;
+}
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: solid orange;
+}

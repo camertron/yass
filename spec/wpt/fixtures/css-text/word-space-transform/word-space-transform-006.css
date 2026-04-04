@@ -1,0 +1,7 @@
+
+div {
+  font-size: 2em;
+}
+wbr, span {
+  word-space-transform: space;
+}

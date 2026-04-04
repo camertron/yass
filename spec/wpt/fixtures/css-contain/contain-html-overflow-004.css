@@ -1,0 +1,13 @@
+
+html, body, p, div {
+    margin: 0;
+    width: 200px;
+    height: 200px;
+}
+div { background: red; }
+body {
+    overflow: hidden;
+}
+html {
+    contain: style;
+}

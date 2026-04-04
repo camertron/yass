@@ -1,0 +1,5 @@
+
+canvas {
+  will-change: transform;
+  transform: translate(150px);
+}

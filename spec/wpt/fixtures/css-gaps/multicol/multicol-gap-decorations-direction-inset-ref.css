@@ -1,0 +1,36 @@
+
+    body {
+        margin: 0px;
+    }
+    .section {
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .multicol {
+        column-count: 3;
+        column-width: 100px;
+        column-height: 100px;
+        column-gap: 20px;
+        row-gap: 20px;
+        column-wrap: wrap;
+        width: 340px;
+        height: 220px;
+    }
+    .item {
+        background: lightgray;
+        width: 100px;
+        height: 100px;
+    }
+    .item:first-child {
+        background: salmon;
+    }
+    .col-seg {
+        position: absolute;
+        width: 6px;
+        background: blue;
+    }
+    .row-seg {
+        position: absolute;
+        height: 6px;
+        background: red;
+    }

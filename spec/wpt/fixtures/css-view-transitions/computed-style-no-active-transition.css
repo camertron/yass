@@ -1,0 +1,7 @@
+
+    :root.stylized::view-transition-group(foo) {
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
+      border-radius: 3px;
+    };
+  

@@ -1,0 +1,12 @@
+
+.target {
+  width: 100px;
+  height: 150px;
+  background: green;
+  position: fixed;
+  top: 200px;
+  left: 200px;
+  transform: rotate(90deg);
+  view-transition-name: target;
+  clip-path: inset(1px 1px 1px 1px);
+}

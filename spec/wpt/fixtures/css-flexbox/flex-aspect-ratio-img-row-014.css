@@ -1,0 +1,18 @@
+
+#reference-overlapped-red {
+    position: absolute;
+    background-color: red;
+    width: 90px;
+    height: 225px;
+    z-index: -1;
+}
+#constrained-flex {
+    display: flex;
+    width: 300px;
+    border: 1px solid black;
+}
+img {
+    min-width: 0;
+    min-height: 0;
+    width: 30%;
+}

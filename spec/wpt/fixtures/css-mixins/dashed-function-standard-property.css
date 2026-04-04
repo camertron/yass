@@ -1,0 +1,19 @@
+
+  @function --ten-px() {
+    result: 10px;
+  }
+
+  @function --ten-px-typed() returns <length> {
+    result: 10px;
+  }
+
+  @function --green() {
+    result: green;
+  }
+
+  #target {
+    width: --ten-px();
+    height: --ten-px-typed();
+    color: --green();
+    padding: --ten-px();
+  }

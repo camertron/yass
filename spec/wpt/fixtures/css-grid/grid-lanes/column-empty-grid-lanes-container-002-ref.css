@@ -1,0 +1,6 @@
+
+.empty-container {
+  display: grid;
+  padding: 20px;
+  background: gray;
+};

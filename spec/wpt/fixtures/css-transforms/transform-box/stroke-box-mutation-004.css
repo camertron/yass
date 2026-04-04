@@ -1,0 +1,11 @@
+
+#target {
+  transform-box: stroke-box;
+  transform-origin: 20px 0px;
+  transform: rotate(90deg);
+}
+#target > rect {
+  fill: green;
+  stroke: black;
+  stroke-width: 20;
+}

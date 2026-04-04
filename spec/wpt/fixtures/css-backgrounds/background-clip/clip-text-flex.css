@@ -1,0 +1,13 @@
+
+.clip {
+  font-size: 80px;
+  color: transparent;
+  background-color: green;
+  background-clip: text;
+}
+.flex {
+    display: flex;
+}
+.inline-flex {
+    display: inline-flex;
+}

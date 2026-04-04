@@ -1,0 +1,15 @@
+
+  #container {
+    text-overflow: clip;
+  }
+  #test {
+    font-size: 10px;
+    overflow: hidden;
+    text-overflow: inherit;
+    white-space: nowrap;
+    width: 120px;
+  }
+  span {
+    font-family: Ahem;
+    font-size: 30px;
+  }

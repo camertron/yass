@@ -1,0 +1,85 @@
+
+  :where(:visited, :link), :where(div) {
+    background-color: white;
+  }
+
+
+    @scope (main) {
+      :link { background-color: green; }
+    }
+  
+
+    @scope (main) {
+      :visited { background-color: green; }
+    }
+  
+
+    @scope (main) {
+      :not(:link) { background-color: green; }
+    }
+  
+
+    @scope (main) {
+      :not(:visited) { background-color: green; }
+    }
+  
+
+    @scope (main :link) {
+      div { background-color: green; }
+    }
+  
+
+    @scope (main :visited) {
+      div { background-color: green; }
+    }
+  
+
+    @scope (main :not(:visited)) {
+      div { background-color: green; }
+    }
+  
+
+    @scope (main :not(:link)) {
+      div { background-color: green; }
+    }
+  
+
+    @scope (main :link) {
+      :scope { background-color: green; }
+    }
+  
+
+    @scope (main :visited) {
+      :scope { background-color: green; }
+    }
+  
+
+    @scope (main :not(:visited)) {
+      :scope { background-color: green; }
+    }
+  
+
+    @scope (main :not(:link)) {
+      :scope { background-color: green; }
+    }
+  
+
+    @scope (main) to (:link) {
+      * { background-color: green; }
+    }
+  
+
+    @scope (main) to (:visited) {
+      * { background-color: green; }
+    }
+  
+
+    @scope (main) to (:not(:link)) {
+      * { background-color: green; }
+    }
+  
+
+    @scope (main) to (:not(:visited)) {
+      * { background-color: green; }
+    }
+  

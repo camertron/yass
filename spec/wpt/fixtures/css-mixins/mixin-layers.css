@@ -1,0 +1,71 @@
+
+    @layer one, two;
+  
+
+    @layer one {
+      @mixin --m1() {
+        @result {
+          color: green;
+        }
+      }
+    }
+
+    #e1 {
+      @apply --m1();
+    }
+  
+
+    @layer {
+      @mixin --m2() {
+        @result {
+          color: green;
+        }
+      }
+    }
+
+    #e2 {
+      @apply --m2();
+    }
+  
+
+    @layer two {
+      @mixin --m3() {
+        @result {
+          color: green;
+        }
+      }
+    }
+
+    @layer one {
+      @mixin --m3() {
+        @result {
+          color: red;
+        }
+      }
+    }
+
+    #e3 {
+      @apply --m3();
+    }
+  
+
+    @layer one {
+      @mixin --m4() {
+        @result {
+          color: red;
+        }
+      }
+    }
+
+    @layer two {
+      @mixin --m4() {
+        @result {
+          color: green;
+        }
+      }
+    }
+
+    #e4 {
+      @apply --m4();
+    }
+  

@@ -1,0 +1,6 @@
+
+  :is(body, html)::after {
+    display: list-item;
+    content: " ";
+  }
+  :root { list-style-image:url('.'); }

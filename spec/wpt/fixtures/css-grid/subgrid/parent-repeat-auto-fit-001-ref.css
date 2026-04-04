@@ -1,0 +1,57 @@
+
+html,body {
+  color:black; background-color:white; font:10px/1 monospace; padding:0; margin:0;
+}
+
+.grid {
+  display: inline-grid;
+  width: 50px;
+  border: 1px solid;
+}
+
+.subgrid {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 3 / span 4;
+  grid-auto-rows: 8px;
+  background: grey;
+}
+
+.fit-0a  { grid-template-columns: [y] 0px [z] 1px [z] 1px [z] 1px [z] 1px [z]; }
+.fit-0b  { grid-template-columns: [x y] 0px [z] 1px [z] 1px [z] 1px [z]; }
+.fit-0c  { grid-template-columns: [x] 1px [x y] 0px [y] 10px [y] 10px [y] 10px [z] 1px [z] 1px [z]; }
+.fit-0d  { grid-template-columns: [x] 2px [x] 2px [x y] 10px [y] 10px [y] 10px [y] 10px [z] 1px [z]; }
+.fit-0e  { grid-template-columns: [x] 2px [x] 2px [x] 2px [x y] 10px [y] 10px [y] 10px [y] 0px [z]; }
+.fit-0f  { grid-template-columns: [x] 2px [x] 2px [x] 2px [x] 2px [x y] 10px [y] 10px [y] 0px [y] 0px; }
+.fit-0g  { grid-template-columns: [x] 2px [x] 2px [x] 2px [x] 2px [x y] 10px [y] 10px [y] 0px [y] 0px [z] 1px [z]; }
+.fit-0h  { grid-template-columns: [x] 2px [x] 2px [x] 2px [x] 2px [x] 2px [x] 2px [x y] 0px [y] 0px [y] 0px [z] 1px [z]; }
+.fit-0i  { grid-template-columns: [x] 2px [x] 2px [x] 2px [x] 2px [x] 2px [x] 2px [x y] 0px [y] 0px [y] 0px [z]; }
+.fit-0j  { grid-template-columns: [x] 2px [x] 2px [x] 2px [x] 2px [x] 2px [x] 2px [x y] 0px [y] 0px [y] 0px; }
+.fit-0k  { grid-template-columns: [y] 0px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px; }
+.fit-0l  { grid-template-columns: [x y] 0px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px [z] 10px; }
+.fit-0m  { grid-template-columns: [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [x] 10px [y] 0px; }
+
+.fit-1a  { grid-template-columns: [y] 0px [y] 0px [y] 10px [y] 10px [z] 1px [z] 1px [z] 1px [z]; }
+.fit-1b  { grid-template-columns: [x y] 0px [y] 0px [y] 10px [y] 10px [z] 1px [z] 1px [z]; }
+.fit-1c  { grid-template-columns: [x] 2px [x y] 0px [y] 10px [y] 10px [y] 10px [z] 1px [z]; }
+.fit-1d  { grid-template-columns: [x] 2px [x] 2px [x y] 10px [y] 10px [y] 10px [y] 10px [z]; }
+.fit-1e  { grid-template-columns: [x] 2px [x] 2px [x] 2px [x y] 10px [y] 10px [y] 10px [y] 0px; }
+
+.fit-2a  { grid-template-columns: [y] 0px [y] 0px [y] 10px [y] 10px [z] 1px [z] 1px [z]; }
+.fit-2b  { grid-template-columns: [x y] 0px [y] 0px [y] 10px [y] 10px [z] 1px [z]; }
+.fit-2c  { grid-template-columns: [x] 2px [x y] 0px [y] 10px [y] 10px [y] 10px [z]; }
+.fit-2d  { grid-template-columns: [x] 2px [x] 2px [x y] 10px [y] 10px [y] 10px [y] 10px; }
+
+.fit-3a  { grid-template-columns: [y] 0px [y] 0px [y] 10px [y] 10px [z] 1px [z]; }
+.fit-3b  { grid-template-columns: [x y] 0px [y] 0px [y] 10px [y] 10px [y] 10px [z]; }
+.fit-3c  { grid-template-columns: [x] 2px [x y] 0px [y] 10px [y] 10px [y] 10px; }
+
+.fit-4a  { grid-template-columns: [y] 0px [y] 0px [y] 10px [y] 10px [y] 10px [z]; }
+.fit-4b  { grid-template-columns: [x y] 0px [y] 0px [y] 10px [y] 10px [y] 10px; }
+
+.fit-5   { grid-template-columns: [y] 0px [y] 0px [y] 10px [y] 10px [y] 10px; }
+
+.subgrid > :nth-child(2n)   {  background: black; }
+.subgrid > :nth-child(2n+1) {  background: pink; }
+
+  

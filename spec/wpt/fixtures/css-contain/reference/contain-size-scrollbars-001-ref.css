@@ -1,0 +1,6 @@
+
+div {
+  display: inline-block;
+  border: solid thick;
+  overflow: scroll;
+}

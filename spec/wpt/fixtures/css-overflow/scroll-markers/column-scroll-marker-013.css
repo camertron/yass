@@ -1,0 +1,25 @@
+
+  #container {
+    overflow: hidden;
+    columns: 1;
+    column-fill: auto;
+    gap: 0;
+    width: 100px;
+    height: 100px;
+    scroll-marker-group: before;
+  }
+  #container::scroll-marker-group {
+    position: relative;
+    left: -200px;
+    display: flex;
+    height: 100px;
+  }
+  #container::column::scroll-marker {
+    width: 100px;
+    height: 100px;
+    flex: none;
+    content: "";
+  }
+  #container::column::scroll-marker:target-current {
+    background: green;
+  }

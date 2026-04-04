@@ -1,0 +1,9 @@
+
+    .grid {
+       grid: 100px / 100px;
+       width: 100px;
+       height: 100px;
+       box-sizing: border-box;
+       padding: 0 50px 50px 0;
+       overflow: auto;
+    }

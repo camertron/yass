@@ -1,0 +1,18 @@
+
+  grid {
+    display: inline-grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    border: 10px;
+    border-style: solid;
+  }
+  item1 {
+    background-color: grey;
+    height: 125px;
+    width: 300px;
+  }
+  item2 {
+    background-color: grey;
+    height: 250px;
+    width: 250px;
+  }

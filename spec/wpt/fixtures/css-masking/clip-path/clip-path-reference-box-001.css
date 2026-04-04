@@ -1,0 +1,8 @@
+
+.clipped {
+  width: 100px;
+  height: 200px;
+  background-color: green;
+  clip-path: polygon(0% 0%,100% 0%,100% 50%,0% 50%);
+  box-shadow: 100px 0px red;
+}

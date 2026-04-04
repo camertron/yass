@@ -1,0 +1,10 @@
+
+  #target::highlight(foo) {
+    background-color: green;
+    color: lime;
+  }
+
+  #target::highlight(bar) {
+    background-color: cyan;
+    color: fuchsia;
+  }

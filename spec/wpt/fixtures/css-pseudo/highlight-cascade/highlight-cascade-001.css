@@ -1,0 +1,13 @@
+
+    main {
+        font-size: 7em;
+        margin: 0.5em;
+    }
+    main::selection {
+        background-color: green;
+        color: white;
+    }
+    main > span::selection {
+        background-color: unset;
+        color: unset;
+    }

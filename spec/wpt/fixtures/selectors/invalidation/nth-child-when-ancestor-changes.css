@@ -1,0 +1,4 @@
+
+  .ancestor :nth-child(even of .c) {
+    color: green;
+  }

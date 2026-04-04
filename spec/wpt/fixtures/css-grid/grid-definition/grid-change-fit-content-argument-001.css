@@ -1,0 +1,12 @@
+
+.grid {
+  width: fit-content;
+  position: relative;
+  justify-content: start;
+  align-content: start;
+  font: 25px/1 Ahem;
+}
+
+.verticalLR {
+  writing-mode: vertical-lr;
+}

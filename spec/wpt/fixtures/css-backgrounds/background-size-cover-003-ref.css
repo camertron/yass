@@ -1,0 +1,15 @@
+
+body { margin: 0 }
+.first {
+  width: 100px;
+  height: 50px;
+  background: lime;
+}
+.space {
+  height: 50px;
+}
+.second {
+  width: 100px;
+  height: 100px;
+  background: lime;
+}

@@ -1,0 +1,5 @@
+
+div, main { color: grey }
+#subject:has(> :is(.parent > .child)) { color: green }
+#subject:has(> :is(.parent .descendant)) { color: blue }
+#subject:has(:is(.deep-parent > .deep-child)) { color: red }

@@ -1,0 +1,21 @@
+
+
+#container {
+  position: relative;
+}
+#intermediate {
+  overflow: hidden;
+  width:200px;
+  height:200px;
+  background:red;
+}
+#block {
+  height:200px;
+  background:green;
+}
+#target {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  background:green;
+}

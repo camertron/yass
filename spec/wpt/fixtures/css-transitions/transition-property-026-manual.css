@@ -1,0 +1,17 @@
+
+  div {
+    float: left;
+  }
+  #ref {
+    height: 100px;
+    margin-right: 1px;
+    transition-duration: 4s;
+    transition-property: margin-right;
+    transition-timing-function: linear;
+    width: 1px;
+  }
+  #test {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+  }

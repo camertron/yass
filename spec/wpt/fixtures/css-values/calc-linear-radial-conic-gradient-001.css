@@ -1,0 +1,7 @@
+
+  div#target
+    {
+      background-image: linear-gradient(yellow, red);
+      height: 100px;
+    }
+  

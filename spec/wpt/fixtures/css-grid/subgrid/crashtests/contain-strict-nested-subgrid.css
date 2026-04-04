@@ -1,0 +1,7 @@
+
+* {
+  grid-template-rows: subgrid;
+  display: grid;
+  overflow: scroll;
+  contain: strict;
+}

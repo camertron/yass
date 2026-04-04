@@ -1,0 +1,10 @@
+
+  @keyframes anim {
+    from { background-color: blue; }
+    to { background-color: red; }
+  }
+
+  @keyframes anim2 {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }

@@ -1,0 +1,20 @@
+
+        @scope (.a:focus) {
+          :scope { z-index: 1; }
+        }
+    
+
+        @scope (.a:focus) {
+          :scope .b { z-index: 1; }
+        }
+    
+
+        @scope (.a) to (:scope:focus) {
+          :scope { z-index: 1; }
+        }
+    
+
+        @scope (.a) to (.b:focus) {
+          .b { z-index: 1; }
+        }
+    

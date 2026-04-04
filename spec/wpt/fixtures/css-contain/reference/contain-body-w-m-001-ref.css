@@ -1,0 +1,14 @@
+
+html::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: orange;
+    display: block;
+}
+body { margin: 0; }
+p {
+    margin: 0;
+    width: 200px;
+    height: 200px;
+}

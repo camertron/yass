@@ -1,0 +1,7 @@
+
+  @counter-style a {
+    system: cyclic;
+    symbols: "";
+    prefix: "";
+    suffix: "";
+  }

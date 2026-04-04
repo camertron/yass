@@ -1,0 +1,3 @@
+
+  @media unsupported { /* tests need to work even if condition is false */ }
+  @supports (unsupported: value) { }

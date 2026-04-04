@@ -1,0 +1,20 @@
+
+table {
+  border-spacing: 0px;
+}
+td {
+  padding: 0px;
+}
+.outerTable {
+  height: 100px;
+  width: 100px;
+  position: relative;
+}
+.innerTable {
+  position: absolute;
+  top: 0px;
+  width: 100px;
+  height: 100%;
+  color: green;
+  background: green;
+}

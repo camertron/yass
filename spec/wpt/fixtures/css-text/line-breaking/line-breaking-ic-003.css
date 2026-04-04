@@ -1,0 +1,23 @@
+
+div {
+    color: green;
+    background: green;
+    line-height: 1em;
+    width: 1em;
+    white-space: normal;
+    font-size: 20px;
+}
+span {
+    white-space: pre;
+}
+.container {
+    position: relative;
+}
+.fail {
+    color: red;
+    background: red;
+    position: absolute;
+    left: 0;
+    top: 1em;
+    z-index: -1;
+}

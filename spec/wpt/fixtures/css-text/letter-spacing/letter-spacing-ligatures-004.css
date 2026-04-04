@@ -1,0 +1,15 @@
+
+div {
+    font-size: 2em;
+    width: 12ch;
+    font-kerning: none;
+}
+.test {
+    letter-spacing: 20px;
+}
+span {
+    padding-left: 20px;
+}
+.ref {
+    color: blue;
+}

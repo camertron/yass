@@ -1,0 +1,12 @@
+
+body {
+  margin: 0;
+}
+
+#container {
+  font-family: Ahem;
+}
+
+#inner {
+  display: inline-block;
+}

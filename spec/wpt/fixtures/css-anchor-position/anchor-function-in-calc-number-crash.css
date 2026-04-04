@@ -1,0 +1,14 @@
+
+.anchor {
+  anchor-name: --a;
+  width: 100px;
+  height: 100px;
+  background: magenta;
+}
+.positioned {
+  position: absolute;
+  position-anchor: --a;
+  width: 10px;
+  height: 10px;
+  background: purple;
+}

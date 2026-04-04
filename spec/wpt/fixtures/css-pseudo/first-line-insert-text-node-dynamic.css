@@ -1,0 +1,3 @@
+
+p { width: 100px; }
+p::first-line { text-decoration: underline; color: #CB000F; }

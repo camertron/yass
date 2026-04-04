@@ -1,0 +1,9 @@
+
+div {
+  font-size: 2em;
+  white-space: pre;
+}
+#test {
+  word-space-transform: space;
+  width: 0;
+}

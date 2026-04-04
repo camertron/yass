@@ -1,0 +1,16 @@
+
+  @page {
+   @top-center {
+   content: string(title);
+   }
+  }
+
+ h1 {
+   string-set: title content(before);
+ }
+
+ h1::before {
+ content: 'before-';
+ }
+
+

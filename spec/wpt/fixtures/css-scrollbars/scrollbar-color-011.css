@@ -1,0 +1,9 @@
+
+  :root {
+    scrollbar-color: currentColor currentColor;
+    color: blue;
+  }
+
+  body {
+    overflow: scroll;
+  }

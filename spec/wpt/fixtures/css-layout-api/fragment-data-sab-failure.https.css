@@ -1,0 +1,16 @@
+
+.test {
+  background: red;
+  width: 100px;
+}
+
+.child {
+  height: 100px;
+}
+
+@supports (display: layout(fallback-sab)) {
+  .test {
+    display: layout(fallback-sab);
+    background: green;
+  }
+}

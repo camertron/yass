@@ -1,0 +1,9 @@
+
+
+#outer { color: rgb(1, 1, 1); }
+#inner {
+    --my-color: rgb(2, 2, 2);
+    --my-color: url(not-a-color);
+    color: var(--my-color);
+}
+

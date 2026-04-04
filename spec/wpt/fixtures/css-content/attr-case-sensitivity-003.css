@@ -1,0 +1,3 @@
+
+    #casematch:before { content: attr(definitionURL); }
+    #lowercase:before { content: attr(definitionurl); }

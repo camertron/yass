@@ -1,0 +1,22 @@
+
+.container {
+  width: 200px;
+  will-change: transform;
+}
+
+.fixed-child {
+  position: fixed;
+  top: 0;
+  background-color: green;
+  width: 200px;
+  height: 200px;
+}
+
+.absolute-child {
+  position: absolute;
+  top: 0;
+  left: 210px;
+  background-color: red;
+  width: 200px;
+  height: 200px;
+}

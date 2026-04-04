@@ -1,0 +1,15 @@
+
+.box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 8px;
+  left: 8px;
+  box-sizing: border-box;
+}
+.filter {
+  backdrop-filter: blur(10px);
+}
+.border {
+  border: 1px solid blue;
+}

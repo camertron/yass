@@ -1,0 +1,19 @@
+
+    .test {
+      display: flex;
+      float:left;
+      height: 3em;
+    }
+
+    .test > span {
+      height: 1em;
+    }
+
+    #column {
+      flex-direction: column;
+    }
+
+    #column-reverse {
+      flex-direction: column-reverse;
+    }
+  

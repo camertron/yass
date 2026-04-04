@@ -1,0 +1,12 @@
+
+  div#test {
+      text-align: right;
+
+      font: 20px/1 Ahem;
+      background: linear-gradient(green, green) 1ch 0 / cover no-repeat;
+
+      width: 5ch;
+      white-space: pre;
+
+      color: blue;
+  }

@@ -1,0 +1,19 @@
+
+.test {
+  white-space: pre;
+  font: 50px/1 Ahem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 2.5em; /* We will be fitting 2em worth of characters in a 2.5em space, to see where the extra .5em goes. It should be after, not between the characters.*/
+  color: green;
+}
+.red {
+  position: absolute;
+  z-index: -1;
+  width: 100px;
+  height: 100px;
+  background: red;
+  /* This red box wich will show through the gap between the letter and the ellipsis if there's one
+     but not extend past the two characters if the ellipsis is adjacent to the character as it should be.
+   */
+}

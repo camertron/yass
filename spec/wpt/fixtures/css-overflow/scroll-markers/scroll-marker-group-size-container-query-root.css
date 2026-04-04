@@ -1,0 +1,9 @@
+
+  :root {
+    container-type: inline-size;
+    width: 400px;
+    scroll-marker-group: before;
+    @container (width = 400px) {
+      &::scroll-marker-group { --test: pass; }
+    }
+  }

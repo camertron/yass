@@ -1,0 +1,12 @@
+
+#grid {
+  display: grid;
+  width: 100px;
+  height: 100px;
+  grid-template: 100% / 100%;
+  background: green;
+}
+#item {
+  height: min-content;
+  background: red;
+}

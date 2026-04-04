@@ -1,0 +1,6 @@
+
+  div::part(x) {
+    & {
+      color: red;
+    }
+  }

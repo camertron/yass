@@ -1,0 +1,14 @@
+
+@font-face {
+  font-family: custom-font;
+  src: local(Ahem), url(/fonts/Ahem.ttf);
+}
+
+.target {
+  margin: 20px;
+  font-size: 10px;
+  font-family: custom-font, sans-serif;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: black;
+}

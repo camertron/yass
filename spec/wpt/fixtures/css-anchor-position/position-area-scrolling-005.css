@@ -1,0 +1,15 @@
+
+  #anchored {
+    position: absolute;
+    box-sizing: border-box;
+    border: solid;
+    position-anchor: --anchor;
+    position-try-fallbacks: flip-block, flip-inline, flip-block flip-inline;
+    position-visibility: always;
+    width: 50%;
+    height: 50%;
+    background: cyan;
+  }
+  #container.thicker > .pos {
+    border-width: thick;
+  }

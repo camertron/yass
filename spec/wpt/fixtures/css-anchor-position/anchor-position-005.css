@@ -1,0 +1,14 @@
+
+  .anchored {
+    position: absolute;
+    inset-inline-start: anchor(self-start);
+    inset-block-start: anchor(self-end);
+    width: 100px;
+    height: 50px;
+    background: green;
+  }
+  .ib {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+  }

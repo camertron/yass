@@ -1,0 +1,7 @@
+
+@keyframes test {
+  to { --x: to; }
+}
+#target {
+  --x: underlying;
+}

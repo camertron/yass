@@ -1,0 +1,8 @@
+
+  :root {
+    font-size: 50px;
+    caret-color: orange;
+  }
+[contenteditable] {
+    outline: none;
+  }

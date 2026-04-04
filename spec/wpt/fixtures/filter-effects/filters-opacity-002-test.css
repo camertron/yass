@@ -1,0 +1,15 @@
+
+
+        .box1{
+            width:200px;
+            height: 200px;
+            background: green;
+        }
+       .box2{
+            width: 200px;
+            height: 200px;
+            background: red;
+            filter: opacity(0);
+        }
+
+    

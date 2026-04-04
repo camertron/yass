@@ -1,0 +1,17 @@
+
+    .flexContainer {
+      display: flex;
+      margin-bottom: 2px;
+      background: lightgray;
+    }
+    .fakeBefore {
+      background: yellow;
+      /* This 'order' value should place us after the other elements, visually,
+         even though we're ::before. */
+      order: 1;
+    }
+    .fakeAfter {
+      background: lightblue;
+      order: -1;
+    }
+  

@@ -1,0 +1,16 @@
+
+.columns {
+  columns: 2;
+  column-fill: auto;
+  width: 100px;
+  height: 10px;
+}
+#container::before, #container::after {
+  float: left;
+  content: "";
+  width: 10px;
+  height: 20px;
+}
+nav {
+  float: left;
+}

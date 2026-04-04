@@ -1,0 +1,11 @@
+
+            div { font-size: 36px; }
+            span#verify {font-family: "CSSTest Verify";}
+            div#test1 {
+                font-family: CSSTest Verify;
+            }
+            div#test2 {
+                font-family: CSSTest Verify;
+                font-style: italic;
+            }
+        

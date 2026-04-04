@@ -1,0 +1,11 @@
+
+
+div {
+  height: 200px; width: 200px; overflow: hidden;
+  text-shadow: 210px 210px 2px gray;
+  font-size: 50px;
+}
+
+/* work around potential font overflow */
+span { margin-left: 5px }
+

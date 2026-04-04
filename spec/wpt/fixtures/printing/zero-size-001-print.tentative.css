@@ -1,0 +1,5 @@
+
+html { box-sizing: border-box; height: 100%; border: 2px solid black; }
+@page {
+  size: 0;
+}

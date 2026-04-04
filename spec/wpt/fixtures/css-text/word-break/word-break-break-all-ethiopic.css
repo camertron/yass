@@ -1,0 +1,11 @@
+
+div {
+    width: 0;
+    color: blue;
+    word-break: break-all;
+}
+.ref {
+    color: orange;
+    width: auto;
+    white-space: pre;
+}

@@ -1,0 +1,7 @@
+
+@keyframes cv {
+  from { content-visibility: auto }
+  to { content-visibility: hidden }
+}
+
+#container { animation: cv 1s; }

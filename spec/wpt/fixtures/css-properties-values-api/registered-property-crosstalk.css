@@ -1,0 +1,20 @@
+
+
+  @property --x {
+    syntax: "<number>";
+    inherits: true;
+    initial-value: 0;
+  }
+
+  #a {
+    --y: 0;
+  }
+
+  #b {
+    --z: 0;
+  }
+
+  #c {
+    --x: 42;
+  }
+

@@ -1,0 +1,36 @@
+
+      div.flexbox {
+        width: 200px;
+        height: 20px; /* Short, to force us to wrap */
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2px;
+        background: lightgray;
+        writing-mode: vertical-lr;
+      }
+      div.a {
+        width: 10px;
+        height: 20px;
+        flex: none;
+        background: lightgreen;
+      }
+      div.b {
+        width: auto;
+        height: 20px; /* height comes from contents */
+        flex: none;
+        background: pink;
+      }
+      div.c {
+        width: 40px;
+        height: 20px;
+        flex: none;
+        background: orange;
+      }
+
+      /* Inside of 'b': */
+      div.fixedSizeChild {
+        width: 30px;
+        height: 10px;
+        background: purple;
+      }
+    

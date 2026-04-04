@@ -1,0 +1,13 @@
+
+  #scroller {
+    overflow: hidden;
+    container-type: size;
+  }
+  #scroller::scroll-button(right) {
+    content: ">";
+  }
+  @container (width) {
+    #scroller::scroll-button(right) {
+      display: block;
+    }
+  }

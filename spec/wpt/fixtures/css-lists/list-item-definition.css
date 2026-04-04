@@ -1,0 +1,8 @@
+
+  .before::before, .after::after {
+    display: list-item;
+    content: "Before";
+  }
+  .after::after {
+    content: "After";
+  }

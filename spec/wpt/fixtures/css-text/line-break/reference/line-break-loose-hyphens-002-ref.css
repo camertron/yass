@@ -1,0 +1,7 @@
+
+div {
+  font-family: monospace;
+  width: 2ch;
+  white-space: pre;
+  border: solid cyan;
+}

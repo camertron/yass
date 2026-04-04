@@ -1,0 +1,13 @@
+
+div {
+  font-family: monospace;
+  font-size: 20px;
+  line-height: 1;
+  white-space: pre;
+  width: 10ch;
+  background: blue;
+  color: blue;
+}
+span {
+  background: yellow;
+}

@@ -1,0 +1,12 @@
+
+  div
+    {
+      color: transparent;
+      font-size: 300%;
+    }
+
+  div::selection
+    {
+      foo: bar;
+    }
+  

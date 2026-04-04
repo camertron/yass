@@ -1,0 +1,13 @@
+
+    main {
+      width: 300px;
+      overflow: auto;
+      padding: 10px 0;
+    }
+    pre {
+      font: 10px/1 Ahem;
+      margin: 0;
+      width: 100%;
+      padding-right: 70px;
+    }
+  

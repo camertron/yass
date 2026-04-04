@@ -1,0 +1,14 @@
+
+  #textarea {
+    font: 20px/1;
+    width: 100px;
+    height: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    margin: 10px;
+    resize: none;
+    outline: none;
+    border: none;
+    caret-color: transparent;
+  }

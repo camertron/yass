@@ -1,0 +1,14 @@
+
+body {
+  color: green;
+}
+p {
+  color: red;
+}
+p {
+  color: orange;
+  --a: red;
+  --b: crimson;
+  --a: --> var(--b); /* valid at parse */
+  color: var(--a);   /* but IACVT at substitution */
+}

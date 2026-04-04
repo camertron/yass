@@ -1,0 +1,17 @@
+
+  body {
+    margin: 0;
+  }
+
+  @keyframes slide {
+    from { transform: translateX(100px); }
+    to { transform: translateX(200px); }
+  }
+
+  #target {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    animation: slide 10000s 5000s steps(1, jump-start) backwards;
+  }

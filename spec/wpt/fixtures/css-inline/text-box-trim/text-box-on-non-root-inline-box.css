@@ -1,0 +1,10 @@
+
+@import "support/TestMetricsFont.css";
+
+div {
+  font-family: MetricsTestFont;
+  font-size: 12px;
+}
+.aqua {
+  background-color: aqua;
+}

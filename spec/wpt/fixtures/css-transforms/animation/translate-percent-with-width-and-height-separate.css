@@ -1,0 +1,23 @@
+
+
+div {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    animation-duration: 10s;
+    animation-name: size, translate;
+}
+
+@keyframes size {
+    0.000000001%, to {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@keyframes translate {
+    0.000000001%, to {
+        translate: 50% 50%;
+    }
+}
+

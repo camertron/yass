@@ -1,0 +1,53 @@
+
+    @scope (#inner) {
+      @keyframes --my-anim {
+        from { background-color: rgb(0, 0, 255); }
+        to { background-color: rgb(0, 0, 255); }
+      }
+    }
+    @scope (#outer) {
+      @keyframes --my-anim {
+        from { background-color: rgb(0, 128, 0); }
+        to { background-color: rgb(0, 128, 0); }
+      }
+    }
+    #animating {
+      animation: --my-anim 1000s linear;
+    }
+  
+
+    @scope (#nomatch) {
+      @keyframes --my-anim {
+        from { background-color: rgb(0, 128, 0); }
+        to { background-color: rgb(0, 128, 0); }
+      }
+    }
+    #animating {
+      animation: --my-anim 1000s linear;
+    }
+  
+
+    @scope (#inner) {
+      @property --my-prop {
+        syntax: "<length>";
+        initial-value: 1px;
+        inherits: false;
+      }
+    }
+    @scope (#outer) {
+      @property --my-prop {
+        syntax: "<length>";
+        initial-value: 2px;
+        inherits: false;
+      }
+    }
+  
+
+    @scope (#nomatch) {
+      @property --my-prop {
+        syntax: "<length>";
+        initial-value: 2px;
+        inherits: false;
+      }
+    }
+  

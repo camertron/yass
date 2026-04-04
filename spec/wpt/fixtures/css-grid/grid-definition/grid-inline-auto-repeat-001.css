@@ -1,0 +1,9 @@
+
+.grid {
+    display: inline-grid;
+    grid: 20px / 20px;
+    min-width: 20px;
+    min-height: 20px;
+    justify-content: start;
+    align-content: start;
+}

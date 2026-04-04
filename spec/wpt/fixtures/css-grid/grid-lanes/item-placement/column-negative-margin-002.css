@@ -1,0 +1,6 @@
+
+.grid-lanes {
+    display: grid-lanes;
+    flow-tolerance: 0;
+    grid-template-columns: repeat(3, 50px);
+}

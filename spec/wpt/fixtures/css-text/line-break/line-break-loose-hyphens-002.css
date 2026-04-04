@@ -1,0 +1,8 @@
+
+div {
+  font-family: monospace;
+  width: 2ch;
+  line-break: loose;
+  word-break: break-all;
+  border: solid cyan;
+}

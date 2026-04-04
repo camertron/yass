@@ -1,0 +1,13 @@
+
+  #rect {
+    /* The size of the padding-box is 100x100. */
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    border: 10px solid red;
+    box-sizing: border-box;
+    background-color: green;
+    clip-path: shape(from 0px 0px,
+                     hline by 80px, vline by 80%, hline by -80%, close)
+               padding-box;
+  }

@@ -1,0 +1,68 @@
+
+    :host {
+      display: block;
+    }
+    div {
+      padding: 5px;
+    }
+  
+
+    :host {
+      display: block;
+    }
+    div {
+      padding: 5px;
+    }
+  
+
+    @scope {
+      :scope {
+        background: red;
+      }
+    }
+  
+
+    @scope {
+      :scope::part(a), :scope::part(b) {
+        background: blue;
+      }
+    }
+  
+
+    @scope {
+      :scope::part(a), :scope::part(b) {
+        background: red;
+      }
+    }
+  
+
+      @scope {
+        :scope::part(a), :scope::part(b) {
+          background: blue;
+        }
+      }
+    
+
+    @scope {
+      :scope::part(a) {
+        background: blue;
+      }
+      :scope::part(b) {
+        background: red;
+      }
+    }
+  
+
+        @scope {
+          :scope::part(a) {
+            background: blue;
+          }
+        }
+      
+
+        @scope {
+          :scope {
+            background: red;
+          }
+        }
+      

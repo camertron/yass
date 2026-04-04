@@ -1,0 +1,7 @@
+
+  #filter {
+    width: 100px;
+    height: 100px;
+    backdrop-filter: invert(1);
+    will-change: opacity;
+  }

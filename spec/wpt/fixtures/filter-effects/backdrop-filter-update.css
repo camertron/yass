@@ -1,0 +1,14 @@
+
+div {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 10px;
+    top: 50px;
+}
+#colorbox {
+    background: #ff7fff;
+}
+#filterbox {
+    backdrop-filter: invert(0);
+}

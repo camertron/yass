@@ -1,0 +1,9 @@
+
+div {
+  display: inline-block;
+  height: 5px;
+  background: blue;
+  width: 50px;
+  color: transparent;
+  font-size: 100px;
+}

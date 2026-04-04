@@ -1,0 +1,6 @@
+
+p {
+  --orange: orange;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to right, var(--orange), blue) 1 1;
+}

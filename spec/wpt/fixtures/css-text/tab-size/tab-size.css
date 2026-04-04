@@ -1,0 +1,17 @@
+
+body {
+  font-family: Ahem;
+  font-size: 13px;
+}
+.px-tab-size {
+  tab-size: 60px;
+}
+.em-tab-size {
+  tab-size: 7em;
+}
+.int-tab-size {
+  tab-size: 9;
+}
+.fractional-tab-size {
+  tab-size: 2.5;
+}

@@ -1,0 +1,8 @@
+
+  :root {
+    print-color-adjust: exact;
+  }
+  @page {
+    background-image: url("/images/green.png");
+    margin: 0px;
+  }

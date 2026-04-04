@@ -1,0 +1,13 @@
+
+    .flexbox {
+      border: 1px solid black;
+      width: 400px;
+      height: 200px;
+    }
+    .item1 {
+      background: lightblue;
+    }
+    .item2 {
+      background: lime;
+    }
+  

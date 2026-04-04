@@ -1,0 +1,13 @@
+
+
+p {
+  color: blue;
+}
+
+p::after {
+    content: "(::after)";
+}
+
+p::before {
+    content: "(::before)";
+}

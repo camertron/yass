@@ -1,0 +1,8 @@
+
+body { height: 4000px }
+#spacer { height: 100px }
+img {
+  width: 500px;
+  height: 500px;
+  background: green;
+}

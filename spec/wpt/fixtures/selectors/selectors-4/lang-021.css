@@ -1,0 +1,4 @@
+
+div.test { color: red; }
+span:lang("en-gb-oed") { color: magenta; }
+span span:lang("*-gb") { color: green; }

@@ -1,0 +1,14 @@
+
+
+        /* test cascade importance */
+        :root { --color-1: green !important; }
+        :root { --color-1: red; }
+        div.color1 { background-color: var(--color-1); }
+
+        /* test cascade order */
+        :root { --color-2: green; }
+        div.color2 { background-color: red; }
+        div.color2 { background-color: var(--color-2); }
+
+        div { width: 100px; height: 50px; }
+    

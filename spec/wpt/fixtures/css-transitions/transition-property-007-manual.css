@@ -1,0 +1,9 @@
+
+  #test {
+    border: 10px solid red;
+    height: 90px;
+    transition-duration: 2s;
+    transition-property: border-bottom-color;
+    transition-timing-function: linear;
+    width: 90px;
+  }

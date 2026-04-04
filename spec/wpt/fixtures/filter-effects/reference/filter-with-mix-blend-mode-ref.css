@@ -1,0 +1,15 @@
+
+    html {
+        background: green;
+    }
+    div {
+        width: 200px;
+        height: 200px;
+    }
+    .outer {
+        mix-blend-mode: screen;
+    }
+    .inner {
+        background: red;
+        filter: grayscale();
+    }

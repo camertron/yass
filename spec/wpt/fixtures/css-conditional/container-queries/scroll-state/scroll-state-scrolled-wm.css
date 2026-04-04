@@ -1,0 +1,26 @@
+
+  .scrolled {
+    container-type: scroll-state;
+    width: 100px;
+    height: 100px;
+    overflow: scroll;
+  }
+  .filler {
+    height: 600px;
+    width: 600px;
+  }
+  .target {
+    @container scroll-state(scrolled: block-start) { --block-start: yes }
+    @container scroll-state(scrolled: block-end) { --block-end: yes }
+    @container scroll-state(scrolled: inline-start) { --inline-start: yes }
+    @container scroll-state(scrolled: inline-end) { --inline-end: yes }
+    @container scroll-state(scrolled: top) { --top: yes }
+    @container scroll-state(scrolled: left) { --left: yes }
+    @container scroll-state(scrolled: bottom) { --bottom: yes }
+    @container scroll-state(scrolled: right) { --right: yes }
+  }
+  .ltr { direction: ltr; }
+  .rtl { direction: rtl; }
+  .htb { writing-mode: horizontal-tb; }
+  .vlr { writing-mode: vertical-lr; }
+  .vrl { writing-mode: vertical-rl; }

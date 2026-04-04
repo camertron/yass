@@ -1,0 +1,11 @@
+
+.clip {
+  font-size: 80px;
+  width: 4em;
+  color: transparent;
+  background-color: green;
+  background-clip: text;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

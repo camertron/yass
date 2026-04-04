@@ -1,0 +1,9 @@
+
+.test {
+  font-family: Ahem;
+  font-size: 40px;
+  text-autospace: normal;
+}
+.first-line::first-line {
+  font-size: 200%;
+}

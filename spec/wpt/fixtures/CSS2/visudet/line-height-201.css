@@ -1,0 +1,38 @@
+
+@font-face {
+  font-family: 'high-a-only';
+  font-style: normal;
+  font-weight: 400;
+  src:  url(/fonts/Revalia.woff) format('woff');
+  unicode-range: U+0020, U+0061;
+}
+@font-face {
+  font-family: 'deep-b-only';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/AD.woff) format('woff');
+  unicode-range: U+0062;
+}
+
+#red { /* red to be uncovered if the test divs aren't tall enough */
+  position: absolute;
+  background: red;
+  width: 100px;
+  height: 100px;
+}
+
+div:not(#red) {
+  position: absolute;
+  width: 50px;
+  line-height: 100px;
+  font-family: high-a-only, deep-b-only;
+  background: url("support/1x1-green.png") 0 0 / 50px 100px no-repeat, red; /* gets red if the div is too large */
+  color: transparent;
+}
+#test {
+  font-size: 20px; /* With a font-size smaller than the line-height */
+}
+#test2 {
+  margin-left: 50px;
+  font-size: 150px; /* With a font-size larger than the line-height */
+}

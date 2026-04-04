@@ -1,0 +1,11 @@
+
+span {
+  position: absolute;
+  color: transparent;
+}
+div {
+  border: solid orange;
+  margin: 5px;
+  width: 6ch;
+  hyphens: auto;
+}

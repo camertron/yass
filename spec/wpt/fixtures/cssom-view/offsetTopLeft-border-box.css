@@ -1,0 +1,16 @@
+
+
+.container {
+  position: relative;
+  font: 20px/1 Ahem;
+  width: 150px;
+  height: 100px;
+  padding: 2px 10px;
+  border-width: 3px 6px;
+  border-style: solid;
+  box-sizing: border-box;
+}
+
+.target { background: grey; }
+.hl { writing-mode:horizontal-tb; }
+.vlr { writing-mode:vertical-lr; }

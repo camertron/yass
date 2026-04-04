@@ -1,0 +1,14 @@
+
+body {
+  columns: 2;
+  --iframe-width: 256px;
+  --iframe-height: 128px;
+}
+iframe {
+  border: none;
+  width: var(--iframe-width);
+  height: var(--iframe-height);
+}
+.zoom {
+  zoom: 1.5;
+}

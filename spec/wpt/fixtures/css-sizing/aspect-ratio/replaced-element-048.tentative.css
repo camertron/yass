@@ -1,0 +1,16 @@
+
+.red {
+  position: absolute;
+  z-index: -1;
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+canvas {
+  display: block;
+  width: max-content;
+  height: 500px;
+  max-height: max-content;
+  aspect-ratio: 1;
+  background: green;
+}

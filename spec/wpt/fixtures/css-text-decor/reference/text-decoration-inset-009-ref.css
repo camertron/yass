@@ -1,0 +1,18 @@
+
+body {
+  background: white;
+  color: black;
+}
+div {
+  position: relative;
+}
+h1 {
+  position: absolute;
+}
+u {
+  text-decoration-color: black;
+}
+u.green {
+  text-decoration-color: green;
+  text-underline-offset: 10px;
+}

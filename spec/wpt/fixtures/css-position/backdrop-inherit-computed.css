@@ -1,0 +1,11 @@
+
+  dialog {
+    --foo: bar;
+    --bg: green;
+    left: 100px;
+    color-scheme: dark;
+  }
+  dialog::backdrop {
+    background-color: var(--bg);
+    left: inherit;
+  }

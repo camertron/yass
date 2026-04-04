@@ -1,0 +1,11 @@
+
+:root {
+    --image-path: url("images/test.png");
+}
+#relative-image-url {
+    background-image: url(images/test.png);
+}
+
+#relative-image-variable-url {
+    background-image: var(--image-path);
+}

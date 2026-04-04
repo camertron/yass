@@ -1,0 +1,30 @@
+
+        my-host {
+            display: block;
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+        div {
+            display: block;
+            background: red;
+            line-height: 0px;
+            width: 100%;
+            height: 50px;
+        }
+        [slot=foo]::before,
+        [slot=foo]::after {
+            display: block;
+            content: "";
+            width: 100%;
+            height: 25px;
+        }
+        [slot=foo]::before,
+        [slot=foo]::after {
+            background: green;
+        }
+        [slot=bar]::before,
+        [slot=bar]::after {
+            background: yellow;
+        }
+    

@@ -1,0 +1,7 @@
+
+* {
+  flex-flow: wrap-reverse;
+  display: inline-flex;
+  visibility: collapse;
+  border-style: inset;
+}

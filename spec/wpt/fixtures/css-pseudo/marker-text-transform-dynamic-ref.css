@@ -1,0 +1,13 @@
+
+.inside {
+  list-style-position: inside;
+}
+.latin {
+  list-style-type: upper-latin;
+}
+.string {
+  list-style-type: "B. ";
+}
+.content::marker {
+  content: "C. ";
+}

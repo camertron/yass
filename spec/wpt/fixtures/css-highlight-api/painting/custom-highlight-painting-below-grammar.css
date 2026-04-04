@@ -1,0 +1,9 @@
+
+  ::highlight(example-highlight) {
+    background-color: yellow;
+    color: blue;
+  }
+  ::grammar-error {
+    background-color: lime;
+    color: green;
+  }

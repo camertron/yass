@@ -1,0 +1,8 @@
+
+article {
+  width: 300px;
+  column-count: 2;
+}
+main {
+  column-count: 2;
+}

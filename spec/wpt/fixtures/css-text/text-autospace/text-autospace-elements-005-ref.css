@@ -1,0 +1,9 @@
+
+div {
+  text-autospace: no-autospace;
+  font-size: 22px;
+  font-family: sans-serif;
+}
+b {
+  margin-right: 0.125ic;
+}

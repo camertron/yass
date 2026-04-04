@@ -1,0 +1,13 @@
+
+  article {
+    border: 1px solid black;
+  }
+  .block {
+    width: 100px;
+    background-color: yellow;
+  }
+  .spanner {
+    column-span: all;
+    background-color: lime;
+  }
+  

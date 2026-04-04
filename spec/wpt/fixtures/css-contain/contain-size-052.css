@@ -1,0 +1,20 @@
+
+  div#table
+    {
+      border-spacing: 2px;
+      display: table;
+    }
+
+  div#table-row
+    {
+      display: table-row;
+    }
+
+  div.table-cell
+    {
+      contain: size;
+      display: table-cell;
+      font-size: 50px;
+      padding: 1px;
+    }
+  

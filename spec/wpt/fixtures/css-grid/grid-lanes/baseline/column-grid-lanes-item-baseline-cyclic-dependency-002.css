@@ -1,0 +1,46 @@
+
+    .grid-lanes {
+      display: inline grid-lanes;
+      background-color: grey;
+      position: relative;
+      border: solid;
+      text-orientation: sideways;
+      font: 15px/1 Ahem;
+      justify-items: baseline;
+    }
+
+    .flex-columns     { grid-template-columns: 1fr; }
+    .max-flex-columns { grid-template-columns: minmax(0px, 1fr); }
+
+    .width25   { width: 25px; }
+    .width50   { width: 50px; }
+    .width200  { width: 200px; }
+    .width200Percent  { width: 200%; }
+    .height50 { height: 50px; }
+    .height100 { height: 100px; }
+    .height150 {height: 150px; }
+    .height200 {height: 200px; }
+
+    .firstRowFirstItem {
+      background-color: blue;
+      grid-column: 1;
+    }
+
+    .secondRowFirstItem {
+      background-color: purple;
+      grid-column: 1;
+    }
+
+    .spanning2 {
+      background-color: maroon;
+      grid-column: 2;
+    }
+
+    .verticalLR {
+      writing-mode: vertical-lr;
+    }
+
+    .verticalRL {
+      writing-mode: vertical-rl;
+    }
+  

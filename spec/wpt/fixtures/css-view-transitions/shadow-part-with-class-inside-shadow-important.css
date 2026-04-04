@@ -1,0 +1,32 @@
+
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+::part(party) {
+  view-transition-name: party;
+  view-transition-class: red;
+}
+
+:root { view-transition-name: none; }
+html::view-transition-group(*) { animation-play-state: paused; }
+html::view-transition-old(*) { animation: unset; opacity: 0 }
+html::view-transition-new(*) { animation: unset; opacity: 0 }
+html::view-transition-group(party) {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: green;
+}
+html::view-transition-group(party.red) {
+  background: red;
+}
+
+
+      div {
+        width: 100px;
+        height: 100px;
+      }
+    

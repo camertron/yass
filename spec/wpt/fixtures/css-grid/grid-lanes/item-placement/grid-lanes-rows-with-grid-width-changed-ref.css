@@ -1,0 +1,12 @@
+
+grid {
+    display: grid;
+    width: 1%;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    font-family: Ahem;
+    font-size: 40px;
+}
+item {
+    background-color: grey;
+}

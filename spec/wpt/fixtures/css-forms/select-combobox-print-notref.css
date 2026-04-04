@@ -1,0 +1,9 @@
+
+select {
+  width: 100px;
+  color: transparent;
+  /* Makes mismatches less likely by not using rounded corners etc */
+  appearance: none;
+  border: none;
+  background: none;
+}

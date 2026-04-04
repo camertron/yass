@@ -1,0 +1,23 @@
+
+			div {
+				background-color: red;
+				height: 20px;
+				width: 100px;
+			}
+			@media not print {
+				.test1 { background: green; }
+			}
+			@media not (monochrome) {
+				.test2 { background: green; }
+			}
+			@media (not (monochrome)) {
+				.test3 { background: green; }
+			}
+			@media not (not (color)) {
+				.test4 { background: green; }
+			}
+			.test5 { background: green; }
+			@media not ((unknown) or (monochrome)) {
+				.test5 { background: red; }
+			}
+	

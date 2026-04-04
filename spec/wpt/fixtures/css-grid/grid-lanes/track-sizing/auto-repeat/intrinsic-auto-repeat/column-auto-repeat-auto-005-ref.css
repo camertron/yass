@@ -1,0 +1,12 @@
+
+.grid {
+    display: grid;
+    background: gray;
+    width: 300px;
+    height: 300px;
+}
+
+.grid > div {
+    width: 100px;
+    height: 100px;
+}

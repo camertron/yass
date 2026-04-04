@@ -1,0 +1,7 @@
+
+body { color: red; }
+[ data-test-1] { color: green; }
+[data-test-2 ] { color: green; }
+[data-test-3 = x] { color: green; }
+[ |data-test-4] { color: green; }
+[ | data-test-4] { color: red; }

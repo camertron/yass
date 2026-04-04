@@ -1,0 +1,21 @@
+
+    @property --number {
+        syntax: "<number>";
+        inherits: false;
+        initial-value: 3;
+    }
+    @property --length {
+        syntax: "<length>";
+        inherits: false;
+        initial-value: 10px;
+    }
+    @property --string {
+        syntax: "<string>";
+        inherits: false;
+        initial-value: "none";
+    }
+    @property --string-list {
+        syntax: "<string>+";
+        inherits: false;
+        initial-value: "none";
+    }

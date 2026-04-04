@@ -1,0 +1,33 @@
+
+  #target {
+    background-color: green;
+    color: lime;
+  }
+  #target::selection {
+    color: currentcolor;
+    background-color: currentcolor;
+  }
+  #target::target-text {
+    color: currentcolor;
+    background-color: currentcolor;
+  }
+  #target::search-text {
+    color: currentcolor;
+    background-color: currentcolor;
+  }
+  #target::search-text:current {
+    color: red;
+    background-color: red;
+  }
+  #target::spelling-error {
+    color: currentcolor;
+    background-color: currentcolor;
+  }
+  #target::grammar-error {
+    color: currentcolor;
+    background-color: currentcolor;
+  }
+  #target::highlight(foo) {
+    color: currentcolor;
+    background-color: currentcolor;
+  }

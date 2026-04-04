@@ -1,0 +1,15 @@
+
+x-table {
+  display: table;
+  width: 300px;
+  height: 300px;
+  writing-mode: vertical-lr;
+  outline: 2px dashed blue;
+}
+x-caption {
+  display: table-caption;
+  height: 200px;
+  width: 200px;
+  writing-mode: horizontal-tb;
+  outline: 1px solid black;
+}

@@ -1,0 +1,10 @@
+
+body {
+  color: green;
+}
+p {
+  color: crimson;
+  --a: orange;
+  --b: red;
+  color: var(--a)var(--b);
+}

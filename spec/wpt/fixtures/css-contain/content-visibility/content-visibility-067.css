@@ -1,0 +1,22 @@
+
+.spacer {
+  width: 150px;
+  height: 3000px;
+  background: lightblue;
+}
+#container {
+  width: 150px;
+  height: 150px;
+  background: red;
+}
+#target {
+  position: relative;
+  top: 75px;
+
+  width: 50px;
+  height: 50px;
+  background: red;
+}
+.hidden {
+  content-visibility: hidden;
+}

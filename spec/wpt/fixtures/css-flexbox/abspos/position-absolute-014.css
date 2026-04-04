@@ -1,0 +1,33 @@
+
+.container {
+  display: flex;
+  background: lightgray;
+  width: 250px;
+  height: 48px;
+
+  /* Add some margin so that overflowing things don't stomp on each other: */
+  margin: 50px 10px;
+  float: left;
+  position: relative;
+}
+
+.contentBox {
+  position: absolute;
+  /* Margin-box is 100px tall (2px of border + 98px of content): */
+  border: 1px solid teal;
+  height: 98px;
+
+  width: 98px;
+  left: 20px;
+}
+.marginBox {
+  position: absolute;
+  /* Margin-box is 100px tall
+    (60px of margin-top + 2px of border + 38px of content): */
+  margin-top: 60px;
+  border: 1px solid orange;
+  height: 38px;
+
+  width: 100px;
+  left: 120px;
+}

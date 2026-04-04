@@ -1,0 +1,6 @@
+
+  #problem::before {
+    position: relative;
+    content-visibility: auto;
+    content: "content";
+  }

@@ -1,0 +1,25 @@
+
+  main table {
+    display: inline-table;
+    border: 15px solid green;
+    background: gray;
+    width: 0px;
+    height: 0px;
+    vertical-align:baseline;
+    border-spacing: 0;
+  }
+  main td {
+    background: #BFB;
+    padding: 4px;
+  }
+  main td > div {
+    display: inline-block;
+    background: rgba(56,162,56,0.3);
+  }
+  .container {
+    position: relative;
+    outline: black dotted 1px;
+    height: 100px;
+    width: 400px;
+    font: 50px/1 Ahem; /* baseline is 40px */
+  }

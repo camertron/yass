@@ -1,0 +1,6 @@
+
+@media all {
+  * { color: red; }
+
+  #foobar { color: blue }
+}

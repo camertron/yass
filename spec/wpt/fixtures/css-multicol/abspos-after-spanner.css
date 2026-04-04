@@ -1,0 +1,13 @@
+
+  .multicol {
+    columns: 2;
+    column-fill: auto;
+    column-gap: 0px;
+    margin-top: -10px;
+  }
+  .abs {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+  }

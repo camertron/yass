@@ -1,0 +1,10 @@
+
+@font-face {
+  font-family: test;
+  font-style: oblique 10deg;
+  src: url(resources/Inter.var.subset.ttf);
+}
+.test {
+  font: 32px/1.5 test;
+  font-variation-settings: 'slnt' -10;
+}

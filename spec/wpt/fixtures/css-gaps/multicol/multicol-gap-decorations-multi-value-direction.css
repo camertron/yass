@@ -1,0 +1,26 @@
+
+    body {
+        margin: 0px;
+    }
+    .multicol {
+        column-count: 4;
+        column-width: 50px;
+        column-height: 50px;
+        column-gap: 10px;
+        row-gap: 10px;
+        column-wrap: wrap;
+        width: 230px;
+        height: 170px;
+        column-rule-color: red, green, blue;
+        column-rule-style: solid;
+        column-rule-width: 10px;
+        row-rule-color: orange, purple;
+        row-rule-style: solid;
+        row-rule-width: 10px;
+        margin-bottom: 20px;
+    }
+    .item {
+        background: lightgray;
+        width: 50px;
+        height: 50px;
+    }

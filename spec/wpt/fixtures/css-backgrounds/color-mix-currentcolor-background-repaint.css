@@ -1,0 +1,11 @@
+
+    #target {
+        color: red;
+        background-color: color-mix(in hsl, transparent 0%, currentColor 100%);
+        width: 100px;
+        height: 100px;
+    }
+
+    #target.green {
+        color: green;
+    }

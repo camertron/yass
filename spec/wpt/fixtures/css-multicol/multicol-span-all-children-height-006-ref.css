@@ -1,0 +1,22 @@
+
+  article {
+    column-count: 2;
+    width: 400px;
+    background-color: lightgreen;
+  }
+  div.container {
+    background-color: pink;
+    border: 20px solid purple;
+  }
+  div.block {
+    /* This block spreads evenly into two columns, each has 100px height. */
+    width: 100px;
+    height: 200px;
+    background-color: yellow;
+  }
+  div.column-span {
+    width: 400px;
+    height: 50px;
+    background-color: lightblue;
+  }
+  

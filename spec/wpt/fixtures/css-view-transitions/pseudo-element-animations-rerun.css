@@ -1,0 +1,11 @@
+
+:root::view-transition,
+:root::view-transition-group(root),
+:root::view-transition-image-pair(root),
+:root::view-transition-old(root),
+:root::view-transition-new(root) {
+    animation: view-transition-animation 1ms;
+}
+@keyframes view-transition-animation {
+    to { opacity: 0 }
+}

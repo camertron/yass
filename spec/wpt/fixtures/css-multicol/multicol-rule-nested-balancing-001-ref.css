@@ -1,0 +1,26 @@
+
+  .outer {
+    column-count: 2;
+    column-rule: 6px solid black;
+    column-fill: auto;
+    width: 400px;
+    height: 250px;
+  }
+  .inner {
+    column-count: 2;
+    column-rule: 3px solid gray;
+    column-fill: auto;
+    height: 200px;
+  }
+  .outer-block {
+    background-color: lightgreen;
+    height: 200px;
+  }
+  .inner-block {
+    background-color: lightblue;
+    height: 150px;
+  }
+  .space {
+    height: 50px;
+  }
+  

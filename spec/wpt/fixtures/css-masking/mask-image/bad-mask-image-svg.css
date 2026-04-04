@@ -1,0 +1,5 @@
+
+  svg > rect {
+    /* Multiple invalid mask layers: all invalid, SVG element should be fully masked. */
+    mask-image: url("invalid://nonexistent"), url("invalid://nonexistent");
+  }

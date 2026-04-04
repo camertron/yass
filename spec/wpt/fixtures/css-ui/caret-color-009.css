@@ -1,0 +1,13 @@
+
+#d1 {
+	color: lime;
+	caret-color: auto;
+}
+#d2 {
+	color: cyan;
+	caret-color: currentcolor;
+}
+#d3 {
+	color: magenta;
+	caret-color: initial;
+}

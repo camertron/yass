@@ -1,0 +1,10 @@
+
+#target {
+  transition-duration: 100000s;
+  print-color-adjust: exact;
+}
+@media not print {
+  #target {
+    color: red;
+  }
+}

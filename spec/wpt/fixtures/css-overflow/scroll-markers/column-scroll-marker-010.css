@@ -1,0 +1,35 @@
+
+  #scrollable {
+    overflow: hidden;
+    height: 100px;
+    border: 15px solid;
+    line-height: 20px;
+    scroll-marker-group: before;
+    background: yellow;
+  }
+  #multicol {
+    columns: 3;
+    column-fill: auto;
+    gap: 0;
+    orphans: 1;
+    widows: 1;
+    width: 420px;
+    height: 100px;
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+  #scrollable::scroll-marker-group {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background: cyan;
+  }
+  #multicol::column::scroll-marker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: hotpink;
+    content: "*";
+  }

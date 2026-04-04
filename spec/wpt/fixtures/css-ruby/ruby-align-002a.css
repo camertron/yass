@@ -1,0 +1,5 @@
+
+  ruby { line-height: 0; }
+  rt { font-size: 100%; }
+  rb { font-size: 0; }
+  rb > div { width: 160px; }

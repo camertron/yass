@@ -1,0 +1,7 @@
+
+  #rect {
+    width: 400px;
+    height: 200px;
+    background-color: green;
+    clip-path: rect(50px 200px 150px 50px round 20px / 20px);
+  }

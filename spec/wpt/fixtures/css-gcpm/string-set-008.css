@@ -1,0 +1,17 @@
+
+  @page {
+   @top-center {
+   content: string(center);
+   }
+   @top-left {
+   content: string(left);
+   }
+   @top-right {content:
+   string(right);
+   }
+  }
+
+ h1 {
+   string-set: left content(), right content(), center content(first-letter);
+ }
+

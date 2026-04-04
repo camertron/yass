@@ -1,0 +1,8 @@
+
+div {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 10px;
+  width: 6ch;
+  padding-left: 3ch;
+}

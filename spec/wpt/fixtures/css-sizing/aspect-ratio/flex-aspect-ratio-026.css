@@ -1,0 +1,17 @@
+
+  .flexContainer {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    height: 1px;
+  }
+  .item {
+    background: green;
+    padding-left: 15px;
+    padding-top: 10px;
+    box-sizing: border-box;
+  }
+  .item > div {
+    height: 190px; /* Set the content size suggestion for flex item. */
+  }
+  

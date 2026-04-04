@@ -1,0 +1,18 @@
+
+    body {
+        margin: 0;
+    }
+    svg {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        width: 140px;
+        height: 140px;
+        overflow: visible;
+    }
+    .shadow {
+        fill: red;
+    }
+    .box {
+        fill: blue;
+    }

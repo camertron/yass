@@ -1,0 +1,14 @@
+
+.grid {
+  display: inline-grid;
+  background: grey;
+  grid-template-rows: 50px 50px;
+  font: 20px/1 Ahem;
+  height: 200px;
+}
+
+.item {
+  grid-row: span 2;
+  background: green;
+  writing-mode: vertical-lr;
+}

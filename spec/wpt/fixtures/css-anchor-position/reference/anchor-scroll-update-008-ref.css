@@ -1,0 +1,23 @@
+
+.abspos-cb {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 1px solid;
+}
+
+.flex {
+  display: flex;
+}
+
+.positioned {
+  width: 15px;
+  height: 15px;
+  background: purple;
+}
+
+.anchor {
+  width: 15px;
+  height: 15px;
+  background: magenta;
+}

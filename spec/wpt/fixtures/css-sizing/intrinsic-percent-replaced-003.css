@@ -1,0 +1,4 @@
+
+#container { height: 200px; }
+#float { float: left; height: 50%; background: green; }
+canvas { height: 100%; }

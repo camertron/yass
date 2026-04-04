@@ -1,0 +1,11 @@
+
+  #target1 {
+    display:block;
+    display:new-block;
+    color:green;
+  }
+  #target2 {
+    display:block;
+    display:hover {};
+    color:green;
+  }

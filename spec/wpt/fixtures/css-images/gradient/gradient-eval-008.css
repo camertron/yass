@@ -1,0 +1,13 @@
+
+   :root {
+       --start: lch(60% 60 170);
+       --end: lch(60% 60 190);
+       --t: 0.5;
+       --big: 131070000px;
+   }
+   .test {
+       width: 100px;
+       height: 100px;
+       background: linear-gradient(in lch longer hue, var(--start) calc(var(--big) * (0 - var(--t))), var(--end) calc(var(--big) * (1 - var(--t))));
+   }
+ 

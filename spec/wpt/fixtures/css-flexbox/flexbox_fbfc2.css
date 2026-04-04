@@ -1,0 +1,16 @@
+
+* {margin: 0;}
+#float {
+	background: lightblue;
+	width: 200px;
+	float: left;
+}
+#flex {
+	background: #ffcc00;
+	margin-left: -200px;
+	width: 400px;
+	display: flex;
+}
+div div {
+	margin: 2em;
+}

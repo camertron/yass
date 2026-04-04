@@ -1,0 +1,11 @@
+
+   div
+   {
+    background-clip: padding-box;
+    background-color: red;
+    border: transparent solid 50px;
+    height: auto;
+    padding: 0px;
+    width: auto;
+   }
+  

@@ -1,0 +1,6 @@
+
+p {
+  width: min-content;
+  border: 2px solid green;
+  font: 24px monospace;
+}

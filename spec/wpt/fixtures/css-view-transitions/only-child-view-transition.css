@@ -1,0 +1,7 @@
+
+::view-transition {
+  background-color: red;
+}
+::view-transition:only-child {
+  background-color: blue;
+}

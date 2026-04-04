@@ -1,0 +1,10 @@
+
+  #target {
+    font-size: 3em;
+    caret-color: lime;
+    caret-shape: block;
+    caret-animation: manual;
+  }
+  #target:focus {
+    outline: none;
+  }

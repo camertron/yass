@@ -1,0 +1,10 @@
+
+html,body {
+    font:15px/1 monospace;
+}
+.grid {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 50px);
+    grid-auto-flow: dense;
+}

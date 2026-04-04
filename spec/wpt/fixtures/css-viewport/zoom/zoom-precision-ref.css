@@ -1,0 +1,13 @@
+
+  .s {
+    display: inline-block;
+    background: green;
+    width: 161.5px;
+    height: 85px;
+  }
+
+  .t {
+    font-size: 0;
+    width: 484.5px;
+    background: red;
+  }

@@ -1,0 +1,16 @@
+
+            .parent {
+                background: yellow;
+                width: 140px;
+                height: 140px;
+                position: relative;
+                z-index: 1;
+                overflow:scroll;
+            }
+            .blended {
+                background: red;
+                width: 200px;
+                height: 200px;
+                mix-blend-mode: difference;
+            }
+        

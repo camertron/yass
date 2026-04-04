@@ -1,0 +1,47 @@
+
+:root, body {
+  margin: 0;
+}
+#container {
+  position: relative;
+  width: 600px;
+  height: 400px;
+}
+#a1 {
+  anchor-name: --a1;
+  background: orange;
+  margin-left: 100px;
+  margin-top: 100px;
+  width: 100px;
+  height: 100px;
+}
+.htb-rtl #a1 { margin-right: 400px; }
+.vlr-rtl #a1 { margin-bottom: 200px; }
+.vrl-ltr #a1 { margin-right: 400px; }
+.vrl-rtl #a1 { margin-right: 400px; margin-bottom: 200px; }
+#a2 {
+  anchor-name: --a2;
+  background: purple;
+  margin-left: 500px;
+  margin-top: 100px;
+  width: 100px;
+  height: 100px;
+}
+.vlr-ltr #a2 { margin-left: 300px; margin-top: 300px; }
+.vlr-rtl #a2 { margin-left: 300px; margin-top: 300px; }
+.vrl-ltr #a2 { margin-right: -600px; margin-top: 300px; }
+.vrl-rtl #a2 { margin-right: -600px; margin-top: 300px; }
+#target {
+  background: green;
+  position: absolute;
+  left: anchor(--a1 right);
+  top: anchor(--a1 bottom);
+  right: anchor(--a2 left);
+  bottom: anchor(--a2 top);
+}
+.htb-ltr { writing-mode: horizontal-tb; direction: ltr; }
+.htb-rtl { writing-mode: horizontal-tb; direction: rtl; }
+.vlr-ltr { writing-mode: vertical-lr; direction: ltr; }
+.vlr-rtl { writing-mode: vertical-lr; direction: rtl; }
+.vrl-ltr { writing-mode: vertical-rl; direction: ltr; }
+.vrl-rtl { writing-mode: vertical-rl; direction: rtl; }

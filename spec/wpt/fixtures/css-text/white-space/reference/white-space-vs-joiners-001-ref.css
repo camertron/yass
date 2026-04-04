@@ -1,0 +1,6 @@
+
+p {
+  width: fit-content;
+  border: 2px solid green;
+  font: 24px monospace;
+}

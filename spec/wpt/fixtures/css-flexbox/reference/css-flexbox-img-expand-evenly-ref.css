@@ -1,0 +1,16 @@
+
+
+       /* ADD STYLE BLOCK HERE (PREFERRABLE TO INLINE STYLES) */
+      div.flexbox {
+        height: 50px;
+        width: 300px;
+        border: 2px dotted black;
+      }
+      img {
+        width: 98px;
+        height: 48px;
+        background: purple;
+        border: 1px solid white;
+      }
+
+    

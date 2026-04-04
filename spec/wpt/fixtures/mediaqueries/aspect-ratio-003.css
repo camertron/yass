@@ -1,0 +1,11 @@
+
+  div {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+  }
+  @media screen and (max-aspect-ratio: 1280/720) {
+    div {
+      background-color: green;
+    }
+  }

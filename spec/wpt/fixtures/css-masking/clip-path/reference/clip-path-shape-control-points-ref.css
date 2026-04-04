@@ -1,0 +1,12 @@
+
+    body {
+      margin: 0;
+    }
+    #shape {
+      margin: 20px;
+      width: 200px;
+      height: 200px;
+      background-color: green;
+      clip-path: url("#clip");
+    }
+  

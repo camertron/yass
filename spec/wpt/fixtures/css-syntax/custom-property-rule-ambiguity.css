@@ -1,0 +1,23 @@
+
+  .a { }
+  --x:hover { } /* Ambiguous "rule" */
+  .b { }
+
+
+  .a { }
+  --x:hover { ] } /* Ambiguous "rule" */
+  .b { }
+
+
+  div {
+    .a { }
+    --x:hover { }
+    .b { }
+  }
+
+
+  div {
+    .a { }
+    --x:hover { ] }
+    .b { }
+  }

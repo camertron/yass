@@ -1,0 +1,8 @@
+
+#target {
+  color: white;
+  background: red;
+}
+#target::selection {
+  background: green;
+}

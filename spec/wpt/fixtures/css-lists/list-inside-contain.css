@@ -1,0 +1,4 @@
+
+    ul { contain: size layout; }
+    li { list-style: inside; columns: 1; background-image: url(#svgvar00008); }
+  

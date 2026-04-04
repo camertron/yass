@@ -1,0 +1,8 @@
+
+    div.fixedWidthWrapper {
+      width: 200px;
+      /* Small enough that 3 characters can _easily_ fit in our width */
+      font-size: 12px;
+      background: lime;
+    }
+  

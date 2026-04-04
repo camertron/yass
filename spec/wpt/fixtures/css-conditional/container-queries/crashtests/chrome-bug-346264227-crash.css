@@ -1,0 +1,6 @@
+
+  @container (width = 0px) {
+    #inner {
+      display: none;
+    }
+  }

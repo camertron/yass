@@ -1,0 +1,29 @@
+
+
+.container {
+  margin-bottom: 8px;
+  position: relative;
+  width: 300px;
+  height: 220px;
+  background: gray;
+}
+table {
+  position: absolute;
+  border: 10px solid green;
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  border-spacing: 0 0;
+}
+.contentbox {
+  box-sizing: content-box;
+  width: 60px;
+  height: 60px;
+}
+td {
+  padding: 0;
+}
+

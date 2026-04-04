@@ -1,0 +1,14 @@
+
+  #outer {
+    width: 100px;
+    height: 100px;
+    overflow: clip;
+    overflow-clip-margin: 50px;
+  }
+  #target {
+    width: 100px;
+    height: 100px;
+    border-shape: circle(45px at 50% 50%);
+    border: 10px solid purple;
+    background: green;
+  }

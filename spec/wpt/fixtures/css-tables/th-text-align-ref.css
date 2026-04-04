@@ -1,0 +1,16 @@
+
+  table {
+    font-size: 15px;
+    border: 1px solid green;
+    margin-bottom: 5px;
+  }
+
+  th {
+    width: 150px;
+    border: 1px solid blue;
+  }
+
+  td {
+    border: 1px solid purple;
+  }
+  

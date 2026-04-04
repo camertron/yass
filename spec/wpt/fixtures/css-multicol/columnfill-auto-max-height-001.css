@@ -1,0 +1,19 @@
+
+  div
+    {
+      color: green;
+      column-count: 2;
+      column-fill: auto; /* fill columns sequentially */
+      column-gap: 4em; /* computes to 100px */
+      column-rule: red solid 4em;
+      font-family: Ahem;
+      /*
+      To download Ahem font:
+      http://www.w3.org/Style/CSS/Test/Fonts/Ahem/
+      */
+      font-size: 25px;
+      line-height: 1;
+      max-height: 100px;
+      width: 300px;
+    }
+  

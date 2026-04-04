@@ -1,0 +1,28 @@
+
+  .container {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation: clippath2 10000s step-end, clippath1 20s 0.001s;
+  }
+
+  /* Use un-interpolatable keyframes to force discrete transition */
+  @keyframes clippath1 {
+    0% {
+      clip-path: circle(50% at 50% 50%);
+    }
+
+    100% {
+      clip-path: inset(11px 11px);
+    }
+  }
+
+  @keyframes clippath2 {
+    0% {
+      clip-path: circle(10% at 50% 50%);
+    }
+
+    100% {
+      clip-path: circle(25% at 50% 50%);
+    }
+  }

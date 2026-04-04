@@ -1,0 +1,19 @@
+
+html {
+  overflow: hidden;
+}
+.anchor, .element {
+  background: green;
+  width: 100px;
+  height: 100px;
+}
+.anchor {
+  background: red;
+  anchor-name: --anchor;
+}
+.element {
+  position: absolute;
+  position-anchor: --anchor;
+  bottom: anchor(top);
+  left: 50px;
+}

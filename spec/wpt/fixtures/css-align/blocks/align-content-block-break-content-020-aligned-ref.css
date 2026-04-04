@@ -1,0 +1,49 @@
+
+  @import "/fonts/ahem.css";
+  html { font: 10px/1 Ahem; max-width: 800px; }
+
+
+  .pager {
+    column-fill: auto;
+    column-width: 15em;
+    height: 5em;
+  }
+  .test {
+    height: 5em; break-inside: avoid;
+    /* show bounds of test box without interfering with margin-collapsing */
+    border-inline: solid black 1em;
+  }
+  .test:last-child {
+    height: 4.5em;
+  }
+  .large, .float {
+    height: 2.5em;
+    break-inside: avoid;
+    background: orange;
+  }
+  .float {
+    float: right;
+  }
+  .margin {
+    padding: 0.2em; /* using padding because of margin handling bugs
+    margin-block: 0.5em;
+  }
+  .margin > * {
+    margin-block: -0.3em;
+switch back once fixed */
+  }
+  hr {
+    border: solid 1px; margin: 0.5em;
+  }
+
+  /* readability */
+  .pager { border: solid 2px gray; margin: 0.5em 0; }
+  .test { color: #8888; text-align: center; }
+  .label { color: black; font-weight: bold; }
+
+  /* reference */
+  .center .test { align-content: center; }
+  .end    .test { align-content: end; }
+  /* margins are truncated by unforced breaks, so mimic that */
+  .test .large:first-child { margin-top: 0; }
+  .test .large:last-child  { margin-bottom: 0; }

@@ -1,0 +1,18 @@
+
+        @keyframes transformanim
+        {
+            from { transform: scale(0.5); }
+            to { transform: scale(var(--finalScale)); }
+        }
+
+        /* Start the animation in the paused state and fill at both ends so we can inspect values from both keyframes. */
+        #target
+        {
+            animation-name: transformanim;
+            animation-duration: 1s;
+            animation-play-state: paused;
+            animation-fill-mode: both;
+            transform-origin: 0 0;
+            --finalScale: 2;
+        }
+    

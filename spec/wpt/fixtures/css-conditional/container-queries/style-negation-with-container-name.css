@@ -1,0 +1,19 @@
+
+.foo {
+  container-name: --foo;
+}
+
+.bar {
+  container-name: --bar;
+  --bar: baz;
+}
+
+.test {
+  background: lightgreen;
+  @container --foo not style(--bar: baz) {
+    background: pink;
+  }
+  @container --bar not style(--bar: baz) {
+    background: yellow;
+  }
+}

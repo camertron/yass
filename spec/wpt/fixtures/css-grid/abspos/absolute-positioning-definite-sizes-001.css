@@ -1,0 +1,25 @@
+
+.grid {
+  display: grid;
+  grid-template: 50px 1fr / 1fr;
+
+  position: absolute;
+  left: 50px;
+  top: 50px;
+
+  width: 200px;
+  height: 200px;
+
+  border: 7px solid #ccc;
+  font: 10px/1 Ahem;
+}
+
+.row1 {
+  grid-row-start: 1;
+  background-color: yellow;
+}
+
+.row2 {
+  grid-row-start: 2;
+  background-color: cyan;
+}

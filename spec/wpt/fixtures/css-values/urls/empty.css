@@ -1,0 +1,10 @@
+
+#inline-unquoted {
+    background-image: url();
+    cursor: url(), pointer;
+}
+
+#inline-quoted {
+    background-image: url("");
+    cursor: url(""), pointer;
+}

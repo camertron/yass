@@ -1,0 +1,5 @@
+
+        #div {
+            --prop: attr(data-foo type(<ident>));
+        }
+    

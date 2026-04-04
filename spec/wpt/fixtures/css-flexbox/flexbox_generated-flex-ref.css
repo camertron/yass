@@ -1,0 +1,13 @@
+
+div {
+	background: #3366cc;
+	border: 1px solid black;
+}
+div::after {
+	content: "xxx";
+	background: yellow;
+	margin: 1em;
+	width: 200px;
+	height: 2em;
+	display: block;
+}

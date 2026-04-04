@@ -1,0 +1,10 @@
+
+.grid {
+    display: grid;
+    grid-template-rows: minmax(15px, min-content) max-content auto;
+    grid-template-columns: 3em 2em 1em;
+    background-color: gray;
+    height: 100px;
+    width: 100px;
+    font: 10px/1 Ahem;
+}

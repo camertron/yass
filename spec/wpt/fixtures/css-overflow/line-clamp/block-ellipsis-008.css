@@ -1,0 +1,11 @@
+
+.clamp {
+  line-clamp: 1;
+  color: teal;
+}
+.container::first-line {
+  color: purple;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.5em;
+}

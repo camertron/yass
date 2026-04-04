@@ -1,0 +1,9 @@
+
+blockquote {
+  text-decoration: underline;
+  color: blue;
+  font-size: 80px;
+}
+p {
+  font-size: 20px;
+}

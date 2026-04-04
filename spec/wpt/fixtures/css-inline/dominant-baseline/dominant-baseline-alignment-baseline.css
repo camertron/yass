@@ -1,0 +1,15 @@
+
+    .auto         .line { dominant-baseline: auto; }
+    .text-bottom  .line { dominant-baseline: text-bottom; }
+    .alphabetic   .line { dominant-baseline: alphabetic; }
+    .ideographic  .line { dominant-baseline: ideographic; }
+    .middle       .line { dominant-baseline: middle; }
+    .central      .line { dominant-baseline: central; }
+    .mathematical .line { dominant-baseline: mathematical; }
+    .hanging      .line { dominant-baseline: hanging; }
+    .text-top     .line { dominant-baseline: text-top; }
+
+    .line {
+      font: 150px/1 BaselineDiagnosticAlphabeticZero;
+    }
+  

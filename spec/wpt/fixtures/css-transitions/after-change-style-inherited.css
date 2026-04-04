@@ -1,0 +1,49 @@
+
+  #t1 :is(.outer, .inner) { transition: color 1000s steps(2, start); }
+  #t1 .outer { color: red; }
+  #t1 .inner { color: black; }
+  #t1 .outer.green { color: lime; }
+  #t1 .outer.green .inner { color: unset; }
+
+
+  #t2 :is(.outer, .inner) { transition: background-color 1000s steps(2, start); }
+  #t2 .outer { background-color: red; }
+  #t2 .inner { background-color: black; }
+  #t2 .outer.green { background-color: lime; }
+  #t2 .outer.green div { background-color: inherit; }
+
+
+  #t3 .trans {
+    transition: 1000s steps(2, start);
+    transition-property: color, word-spacing;
+  }
+
+  #t3 .a2 { color: red; }
+  #t3 .a3 { color: black; }
+  #t3 .a2.green { color: lime; }
+  #t3 .a2.green .a3 { color: unset; }
+
+  #t3 .a1 { word-spacing: 17px; }
+  #t3 .a3 { word-spacing: 0px; }
+  #t3 .a1.wide { word-spacing: 100px; }
+  #t3 .a1.wide .a3 { word-spacing: unset; }
+
+
+  #t4 :is(.outer, .inner) { transition: color 1000s steps(2, start); }
+  #t4 .outer { color: red; }
+  #t4 .inner { color: black; }
+  #t4 .outer.green { color: lime; }
+  #t4 .outer.green .inner { color: unset; }
+  @starting-style {
+    #t4 .outer.green { color: pink; }
+  }
+
+
+  #t5 :is(.outer, .inner) { transition: color 1000s steps(2, start); }
+  #t5 .outer { color: red; }
+  #t5 .inner { color: black; }
+  #t5 .outer.green { color: lime; }
+  #t5 .container { container-type: inline-size; }
+  @container (width < 100000px) {
+    #t5 .outer.green .inner { color: unset; }
+  }

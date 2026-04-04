@@ -1,0 +1,12 @@
+
+  .foo {
+    color:blue;
+    background-color:yellow;
+  }
+  .bar {
+    background-color:orange;
+  }
+  .bar-over-foo {
+    color:blue;
+    background-color:orange;
+  }

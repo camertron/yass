@@ -1,0 +1,12 @@
+
+@view-transition { navigation: auto; }
+html { background: red; }
+#target {
+  width: 200px;
+  height: 200px;
+  background: black;
+  color: white;
+  position: absolute;
+  top: 40px;
+  view-transition-name: target;
+}

@@ -1,0 +1,39 @@
+
+.target {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  view-transition-name: target;
+}
+.child {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: 100px;
+  left: 100px;
+  background: green;
+  clip-path: inset(-10px -100px -50px -20px);
+}
+.hidden {
+  width: 10px;
+  height: 10px;
+  view-transition-name: hidden;
+}
+
+html::view-transition-old(target), html::view-transition-new(target) {
+  animation: unset;
+}
+html::view-transition-old(target) {
+  opacity: 0;
+}
+html::view-transition-new(target) {
+  opacity: 1;
+}
+
+html::view-transition-group(hidden) {
+  animation-duration: 300s;
+  visibility: hidden;
+}
+
+html::view-transition-group(root) { animation: unset; opacity: 0; }
+html::view-transition { background: lightpink; }

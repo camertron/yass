@@ -1,0 +1,17 @@
+
+:root {
+  --red-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="16" style="background: red"></svg>');
+  --green-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="16" style="background: green"></svg>');
+}
+ul {
+  float: left;
+}
+.inside {
+  list-style-position: inside;
+}
+.text::marker {
+  content: "text";
+}
+.image::marker {
+  content: var(--green-image);
+}

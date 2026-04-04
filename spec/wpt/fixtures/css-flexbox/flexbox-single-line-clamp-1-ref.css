@@ -1,0 +1,13 @@
+
+.container {
+  display: block;
+  background: gray;
+  max-height: 200px;
+}
+.panel {
+  background: lightblue;
+  width: 150px;
+  height: 200px;
+  border: 1px solid purple;
+  box-sizing: border-box;
+}

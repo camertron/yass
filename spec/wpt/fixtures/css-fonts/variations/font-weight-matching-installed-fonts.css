@@ -1,0 +1,54 @@
+
+
+        .testcase {
+            float:left;
+            margin: 5px;
+            font-size:48pt;
+            font-feature-settings: "kern" 1;
+            color: rgba(0,0,0,0.5);
+            background: linear-gradient(to left, lime 0%, lime 91px, red 91px);
+        }
+
+        @font-face {
+            font-family: fontMatch;
+            src: local('CSSTest Weights 900');
+            font-weight: 100;
+        }
+
+        @font-face {
+            font-family: fontMatch;
+            src: local('CSSTest Weights 800');
+            font-weight: 250;
+        }
+
+        @font-face {
+            font-family: fontMatch;
+            src: local('CSSTest Weights 700');
+            font-weight: 400;
+        }
+
+        @font-face {
+            font-family: fontMatch;
+            src: local('CSSTest Weights 600');
+            font-weight: 450;
+        }
+
+        @font-face {
+            font-family: fontMatch;
+            src: local('CSSTest Weights 300');
+            font-weight: 500;
+        }
+
+        @font-face {
+            font-family: fontMatch;
+            src: local('CSSTest Weights 200');
+            font-weight: 750;
+        }
+
+        @font-face {
+            font-family: fontMatch;
+            src: local('CSSTest Weights 100');
+            font-weight: 900;
+        }
+
+    

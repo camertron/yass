@@ -1,0 +1,13 @@
+
+.container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+table {
+  background: green;
+  height: 100px;
+  position: absolute;
+  border-spacing: 0;
+  color: transparent;
+}

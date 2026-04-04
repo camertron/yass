@@ -1,0 +1,31 @@
+
+@font-face {
+  font-family: 'high';
+  font-style: normal;
+  font-weight: 400;
+  src:  url(/fonts/Revalia.woff) format('woff');
+}
+
+div {
+  position: absolute;
+  font-size: 100px;
+  width: 2em; /* plenty of room for the (invisible) text */
+  text-align: right;
+  color: transparent;
+}
+span { /* visible thing aligned to the baseline, and small enough to not influence its position */
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+/* white #lh-auto is on top of red #lh-manual,
+   and as their baselines should line up
+   #lh-manual should be fully covered,
+   and no red should be visible */
+#lh-manual { font-family: high; }
+#lh-manual span { background: red; }
+
+#lh-auto { font-family: high; line-height: normal; }
+#lh-auto span { background: white; }
+

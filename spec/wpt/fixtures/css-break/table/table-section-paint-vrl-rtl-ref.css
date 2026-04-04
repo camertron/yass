@@ -1,0 +1,15 @@
+
+body {
+  writing-mode: vertical-rl;
+  direction: rtl;
+}
+.multicol {
+  inline-size: 400px;
+  block-size: 100px;
+  columns: 4;
+  column-fill: auto;
+  gap: 0;
+}
+.pattern {
+  background: repeating-linear-gradient(to left, orange, orange 30px, dodgerblue 30px, dodgerblue 60px);
+}

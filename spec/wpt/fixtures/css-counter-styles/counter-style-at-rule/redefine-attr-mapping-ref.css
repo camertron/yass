@@ -1,0 +1,8 @@
+
+  .circle { list-style-type: circle; }
+  .square { list-style-type: square; }
+  .hiragana { list-style-type: hiragana; }
+  .katakana { list-style-type: katakana; }
+  .hiragana-iroha { list-style-type: hiragana-iroha; }
+  .katakana-iroha { list-style-type: katakana-iroha; }
+  ::marker { font-family: inherit; }

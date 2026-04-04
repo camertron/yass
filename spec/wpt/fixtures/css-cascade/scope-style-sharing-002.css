@@ -1,0 +1,94 @@
+
+    @scope (.scope-start) to (:scope:last-of-type > .foo) {
+      .foo {
+        z-index: 1;
+      }
+    }
+  
+
+    @scope (.scope-start) to (:scope:first-of-type > .foo) {
+      .foo {
+        z-index: 1;
+      }
+    }
+    .scope-start:first-child {
+      color: green;
+    }
+  
+
+    @scope (.scope-start:first-of-type > .foo) {
+      :scope {
+        z-index: 1;
+      }
+    }
+  
+
+    @scope (.scope-start:last-of-type > .foo) {
+      :scope {
+        z-index: 1;
+      }
+    }
+  
+
+      @scope {
+        .foo {
+          z-index: 1;
+        }
+      }
+    
+
+      @scope {
+        .foo {
+          z-index: 1;
+        }
+      }
+    
+
+        @scope {
+          :scope {
+            z-index: 1;
+          }
+        }
+      
+
+        @scope {
+          :scope {
+            z-index: 1;
+          }
+        }
+      
+
+    @scope (.scope-start:has(> .bar)) {
+      .foo {
+        z-index: 1;
+      }
+    }
+  
+
+    @scope (.scope-start:has(> .bar)) {
+      .foo {
+        z-index: 1;
+      }
+    }
+  
+
+    @scope (#first-parent) {
+      .foo {
+        z-index: 1;
+      }
+    }
+  
+
+    @scope (#second-parent) {
+      .foo {
+        z-index: 1;
+      }
+    }
+  
+
+    @scope (.root) {
+      > div:nth-of-type(2) > div {
+        z-index: 1;
+      }
+    }
+  

@@ -1,0 +1,11 @@
+
+    html {
+        background: green;
+    }
+    div {
+        width: 200px;
+        height: 200px;
+        background: red;
+        filter: grayscale();
+        mix-blend-mode: screen;
+    }

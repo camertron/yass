@@ -1,0 +1,13 @@
+
+  #flex {
+    display: flex;
+    flex-wrap: wrap;
+    height: 150px;
+    background: green;
+    align-content: space-between;
+  }
+  .abs {
+    position: absolute;
+    height: 25px;
+    width: 50%;
+  }

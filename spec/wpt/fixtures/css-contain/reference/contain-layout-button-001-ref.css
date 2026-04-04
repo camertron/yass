@@ -1,0 +1,13 @@
+
+div.fakeButton {
+  display: inline-block;
+  border: 5px solid green;
+  padding: 0;
+  margin-bottom: -5px;
+  color: transparent;
+  width: 0;
+  height: 0px;
+  /* Layout containment creates a stacking context, the following lines simuluate the same in the reference file. */
+  position: relative;
+  z-index: 1;
+}

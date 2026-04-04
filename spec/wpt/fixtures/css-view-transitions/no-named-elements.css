@@ -1,0 +1,16 @@
+
+body { background: red; }
+
+:root { view-transition-name: none; }
+
+@keyframes no-op {
+  from {opacity: 1;}
+  to {opacity: 1;}
+}
+
+:root::view-transition {
+  width: 100%;
+  height: 100%;
+  background: blue;
+  animation: no-op 300s;
+}

@@ -1,0 +1,13 @@
+
+    div {
+        height: 1.5in;
+        width: 100px;
+    }
+    .orange {
+        background: orange;
+    }
+    .blue {
+        background: blue;
+        width: 50px;
+        float: right;
+    }

@@ -1,0 +1,14 @@
+
+#cb {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+}
+#test {
+	margin-right: 5px;
+	margin-top: 25px;
+	margin-left: 25px;
+	width: 70px;
+	height: 70px;
+	background:green;
+}

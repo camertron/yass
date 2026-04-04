@@ -1,0 +1,25 @@
+
+  :root {
+    font-size: 10px;
+    zoom: 2;
+  }
+  body { margin: 0 }
+  .container {
+    font-size: 20px;
+  }
+  .child {
+    zoom: 2;
+  }
+  line {
+    stroke-width: 10px;
+    stroke: lime;
+  }
+  polygon, polyline, text {
+    fill: lime;
+  }
+  text {
+    font: 10px/1 Ahem;
+  }
+  svg {
+    background-color: red;
+  }

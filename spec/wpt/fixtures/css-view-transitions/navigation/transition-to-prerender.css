@@ -1,0 +1,16 @@
+
+@view-transition {
+  navigation: auto;
+}
+html {
+  background-color: red;
+}
+html.outgoing {
+  background-color: cornflowerblue;
+}
+html.incoming {
+  background-color: hotpink;
+}
+::view-transition {
+  background-color: limegreen;
+}

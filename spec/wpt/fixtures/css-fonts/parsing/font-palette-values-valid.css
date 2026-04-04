@@ -1,0 +1,106 @@
+
+/* 0 */
+@font-palette-values --A {
+}
+
+/* 1 */
+@font-palette-values --B {
+    font-weight: 400;
+}
+
+/* 2 */
+@font-palette-values --C {
+    font-family: foo;
+    font-family: bar;
+    base-palette: 1;
+    base-palette: "baz";
+    base-palette: 2;
+    override-colors: "a" #123;
+    override-colors: 3 #123;
+    override-colors: "b" #123;
+}
+
+/* 3 */
+@font-palette-values --D {
+    base-palette: "foo";
+    base-palette: 1;
+    base-palette: "bar";
+    override-colors: 3 #123;
+    override-colors: "baz" #123;
+    override-colors: 4 #123;
+}
+
+/* 4 */
+@font-palette-values --E {
+    override-colors: 3 rgb(17, 34, 51);
+    override-colors: 3 rgb(68, 85, 102);
+}
+
+/* 5 */
+@font-palette-values --F {
+    font-family: "foo";
+}
+
+/* 6 */
+@font-palette-values --G {
+    override-colors: 3 rgb(17, 34, 51), 4 rgb(68, 85, 102);
+}
+
+/* 7 */
+@font-palette-values --H {
+    override-colors: 3 rgb(17, 34, 51), 3 rgb(68, 85, 102);
+}
+
+/* 8 */
+@font-palette-values --I {
+    override-colors: 0 #0000FF;
+}
+
+/* 9 */
+@font-palette-values --J {
+    override-colors: 0 green;
+}
+
+/* 10 */
+@font-palette-values --K {
+    override-colors: 0 transparent;
+}
+
+/* 11 */
+@font-palette-values --L {
+    override-colors: 0 rgba(1 2 3 / 4);
+}
+
+/* 12 */
+@font-palette-values --M {
+    override-colors: 0 lab(29.2345% 39.3825 20.0664);
+}
+
+/* 13 */
+@font-palette-values --N {
+    override-colors: 0 color(display-p3 100% 100% 100%);
+}
+
+/* 14 */
+@font-palette-values --O {
+    override-colors: 0 transparent;
+}
+
+/* 15 */
+@font-palette-values -- {
+}
+
+/* 16 */
+@font-palette-values --P {
+    font-family: foo, bar, baz;
+}
+
+/* 17 */
+@font-palette-values --Q {
+    override-colors: 0 color-mix(in lch, red, blue);
+}
+
+/* 18 */
+@font-palette-values --R {
+    override-colors: 0 color-mix(in lch, color-mix(in lch, red, blue), color-mix(in lch, green, white));
+}

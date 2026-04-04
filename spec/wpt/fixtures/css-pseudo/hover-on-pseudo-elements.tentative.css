@@ -1,0 +1,26 @@
+
+  div::after {
+    content: "after";
+    color: blue;
+  }
+
+  div::after:hover {
+    color: red;
+  }
+
+  div::before {
+    content: "before";
+    color: green;
+  }
+
+  div::before:hover {
+    color: yellow;
+  }
+
+  li::marker {
+    color: purple;
+  }
+
+  li::marker:hover {
+    color: orange;
+  }

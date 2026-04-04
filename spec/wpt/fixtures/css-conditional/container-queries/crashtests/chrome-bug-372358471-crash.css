@@ -1,0 +1,13 @@
+
+  body {
+    &::first-letter { color: green; }
+    &::before { content: "."; }
+  }
+  canvas {
+    float: left;
+    container-type: inline-size;
+    &::first-line {
+      color: pink;
+    }
+  }
+  :first-of-type {}

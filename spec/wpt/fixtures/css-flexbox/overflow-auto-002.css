@@ -1,0 +1,36 @@
+
+body {
+  height: 200vh;
+}
+
+section {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-menu {
+    border: 1px solid black;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-body {
+    height: 1000px;
+    flex: 1 1 0%;
+    display: flex;
+    min-height: 0px;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    overflow: auto;
+    flex: 1 1 0;
+}
+
+li {
+    height: 20px;
+    background-color: red;
+}

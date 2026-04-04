@@ -1,0 +1,10 @@
+
+.container {
+  color:transparent;
+  font:50px/1 Ahem;
+}
+.outline {
+  color:orange;
+  display:inline-block;
+  outline:blue solid 2px;
+}

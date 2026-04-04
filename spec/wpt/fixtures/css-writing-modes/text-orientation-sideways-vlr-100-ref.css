@@ -1,0 +1,16 @@
+
+@font-face {
+    font-family: "orientation";
+    src: url("/fonts/adobe-fonts/CSSHWOrientationTest.otf");
+}
+html {
+    writing-mode: vertical-lr;
+}
+.test {
+    font: 20px/1 "orientation";
+    height: 17em;
+    text-orientation: sideways;
+}
+.line {
+    white-space: pre;
+}

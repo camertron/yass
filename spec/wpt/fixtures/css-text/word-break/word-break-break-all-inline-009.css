@@ -1,0 +1,18 @@
+
+div, span {
+    font: 10px / 1 Ahem;
+    color: green;
+}
+.fail {
+    position: absolute;
+    background: green;
+    color: red;
+    height: 100px;
+    z-index: -1;
+}
+.testdiv {
+    width: 5ch;
+}
+.test {
+    word-break: break-all;
+}

@@ -1,0 +1,9 @@
+
+      img {
+        width: 30px;
+        height: 30px;
+        display: block;
+        border: 2px dotted purple;
+        margin-bottom: 2px; /* (Just for spacing things out, visually) */
+      }
+    

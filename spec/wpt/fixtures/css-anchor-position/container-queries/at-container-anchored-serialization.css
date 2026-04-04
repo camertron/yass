@@ -1,0 +1,6 @@
+
+  @container anchored(        fallback:--foo) { }
+  @container ANChoreD(fallback:    ) { }
+  @container anchoRed(fallback) { }
+  @container  anchored(  ( fallback: flip-INLINE) OR ( FALLBACK : --bar  ) ) { }
+  @container anchored (fallback: top right) { }

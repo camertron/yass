@@ -1,0 +1,10 @@
+
+  #target {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    view-transition-name: target;
+    opacity: 0.5;
+    z-index: 1;
+  }

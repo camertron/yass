@@ -1,0 +1,24 @@
+
+html, body { margin: 0; padding: 0; }
+
+:root {
+  scroll-snap-type: block mandatory;
+  overflow: hidden; /* hide scrollbars for reftest analysis */
+}
+
+body {
+  scroll-padding: 25%;
+}
+
+#fail {
+  height: 120vh;
+  font: bold 2em;
+  background: red;
+}
+
+#target {
+  margin: 120vh 0;
+  scroll-snap-align: end;
+  border-bottom: solid orange thick;
+  height: 20px; /* Avoid subpixel sizes depending on fonts */
+}

@@ -1,0 +1,10 @@
+
+ul { background: green }
+
+li:has(strong) {
+  display: none;
+
+  :has(> &) {
+    background: red;
+  }
+}

@@ -1,0 +1,10 @@
+
+
+#circles, #circles div {
+    border: 1em solid blue;
+    border-radius:50%;
+    margin: auto;
+}
+
+#circles { width:9em; height:9em; }
+

@@ -1,0 +1,21 @@
+
+        @keyframes animate {
+            0% {
+                filter: contrast(0%);
+            }
+            100% {
+                filter: none;
+            }
+        }
+
+        .square {
+            width: 100px;
+            height: 100px;
+            background: black;
+            animation-name: animate;
+            animation-play-state: paused;
+            animation-delay: -2s;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+        }
+    

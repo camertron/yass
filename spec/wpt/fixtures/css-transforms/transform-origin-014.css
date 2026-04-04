@@ -1,0 +1,9 @@
+
+#target1 {
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+}
+
+#target2, #target3, #target4 {
+  transform-origin: 50% 50%;
+}

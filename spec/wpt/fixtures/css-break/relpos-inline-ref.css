@@ -1,0 +1,13 @@
+
+  span {
+      position: relative;
+      left: -100px;
+      top: 100px;
+      border: 1px solid;
+      background:hotpink;
+  }
+  .fakecol {
+      float: left;
+      width: 150px;
+      height: 100%;
+  }

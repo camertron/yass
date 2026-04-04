@@ -1,0 +1,27 @@
+
+  #scroller {
+    overflow: scroll;
+    scroll-marker-group: after;
+    width: 200px;
+    height: 100px;
+  }
+
+  .item {
+    height: 100px;
+    width: 100%;
+  }
+
+  .item::scroll-marker {
+    content: " ";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+  }
+
+  #scroller::scroll-marker-group {
+    display: flex;
+  }
+
+  #scroller.hide-group::scroll-marker-group {
+    display: none;
+  }

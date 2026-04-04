@@ -1,0 +1,13 @@
+
+.cb {
+  position: absolute;
+}
+
+#host1::part(anchor) {
+  anchor-name: --a1;
+  margin-left: 15px;
+}
+#target1 {
+  position: absolute;
+  left: anchor(--a1 left);
+}

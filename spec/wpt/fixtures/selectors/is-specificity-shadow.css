@@ -1,0 +1,3 @@
+
+  main :not(:is(:host(#a))) { color: green; }
+  main :not(:is(:host(.a))) { color: red; }

@@ -1,0 +1,16 @@
+
+.parent {
+  border-radius: 30px;
+}
+.target {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  background-color: black;
+  margin-right: 5px;
+  border-radius: 10px;
+}
+.expected {
+  background-color: green;
+  margin-right: 15px;
+}

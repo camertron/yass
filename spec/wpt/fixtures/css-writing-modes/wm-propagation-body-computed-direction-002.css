@@ -1,0 +1,13 @@
+
+  html
+    {
+      direction: ltr;
+      writing-mode: vertical-rl;
+    }
+
+  body
+    {
+      direction: rtl;
+      writing-mode: vertical-lr;
+    }
+  

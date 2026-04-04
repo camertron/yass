@@ -1,0 +1,14 @@
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    height: 200px;
+    width: 500px;
+    gap: 10px;
+}
+
+.grid > div {
+    width: 50px;
+    height: 100px;
+    background-color: orange;
+}

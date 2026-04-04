@@ -1,0 +1,9 @@
+
+#target, #reference {
+  width: 100px;
+  height: 100px;
+}
+
+#reference {
+  background-color: green;
+}

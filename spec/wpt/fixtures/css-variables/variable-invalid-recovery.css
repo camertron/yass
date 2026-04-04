@@ -1,0 +1,8 @@
+
+p {
+  color: red;
+  transform: scale(var(--#invalid));
+}
+p {
+  color: green;
+}

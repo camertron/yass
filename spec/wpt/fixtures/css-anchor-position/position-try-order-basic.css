@@ -1,0 +1,111 @@
+
+  #cb {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+  }
+  #anchor {
+    position: absolute;
+    left: 150px;
+    top: 200px;
+    width: 150px;
+    height: 150px;
+    background-color: coral;
+    anchor-name: --a;
+  }
+  #target, #ref {
+    position: absolute;
+    left: 450px; /* force fallback */
+    width: 40px;
+    height: 40px;
+    background-color: skyblue;
+    position-anchor: --a;
+  }
+  #ref {
+    background-color: seagreen;
+  }
+
+/*
+
+The IMCB for --right is the whole area to the right of the anchor, and similarly
+for --left, etc.
+
+  ┌──────────────┐
+  │          xxxx│
+  │          xxxx│
+  │    ┌────┐xxxx│
+  │    │    │xxxx│
+  │    └────┘xxxx│
+  │          xxxx│
+  │          xxxx│
+  └──────────────┘
+
+**/
+
+  @position-try --right {
+    inset: unset;
+    left: anchor(right);
+  }
+  @position-try --left {
+    inset: unset;
+    right: anchor(left);
+  }
+  @position-try --top {
+    inset: unset;
+    bottom: anchor(top);
+  }
+  @position-try --bottom {
+    inset: unset;
+    top: anchor(bottom);
+  }
+
+/*
+
+The IMCB for --right-sweep is the area that would be "swept" by the anchor if it
+moved right, and similarly for --left-sweep, etc.
+
+   ┌──────────────┐
+   │              │
+   │              │
+   │    ┌────┐xxxx│
+   │    │    │xxxx│
+   │    └────┘xxxx│
+   │              │
+   │              │
+   └──────────────┘
+
+*/
+
+  @position-try --right-sweep {
+    inset: unset;
+    top: anchor(top);
+    bottom: anchor(bottom);
+    left: anchor(right);
+    align-self: center;
+  }
+
+  @position-try --left-sweep {
+    inset: unset;
+    top: anchor(top);
+    bottom: anchor(bottom);
+    right: anchor(left);
+    align-self: center;
+  }
+
+  @position-try --bottom-sweep {
+    left: anchor(left);
+    right: anchor(right);
+    top: anchor(bottom);
+    justify-self: center;
+  }
+
+  @position-try --top-sweep {
+    left: anchor(left);
+    right: anchor(right);
+    bottom: anchor(top);
+    justify-self: center;
+  }
+
+
+

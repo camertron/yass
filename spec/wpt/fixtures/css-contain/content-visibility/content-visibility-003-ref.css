@@ -1,0 +1,8 @@
+
+#parent {
+  width: 100px;
+}
+#container {
+  border-top: solid green 50px;
+  border-bottom: solid green 50px;
+}

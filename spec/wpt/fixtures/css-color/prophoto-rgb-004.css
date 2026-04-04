@@ -1,0 +1,4 @@
+
+    .test { background-color: red; width: 12em; height: 6em; margin-top: 0; }
+    .ref { background-color: lab(87.5745% -186.6921 150.9905); width: 12em; height: 6em; margin-bottom: 0; } /* color(prophoto-rgb 0 1 0) converted to Lab */
+    .test { background-color: color(prophoto-rgb 0 1 0); }

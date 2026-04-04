@@ -1,0 +1,29 @@
+
+    #outer {
+      --z: 2;
+    }
+    #target {
+      z-index: inherit(--z);
+    }
+  
+
+    #outer {
+      --z: 2;
+    }
+    #target {
+      z-index: inherit(--z, 7);
+    }
+  
+
+    @property --z {
+      syntax: "<integer>";
+      inherits: false;
+      initial-value: 0;
+    }
+    #outer {
+      --z: 2;
+    }
+    #target {
+      z-index: inherit(--z, 7);
+    }
+  

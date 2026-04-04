@@ -1,0 +1,20 @@
+
+#container {
+  position: fixed;
+  inset: 0;
+}
+#anchor {
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  width: 50px;
+  height: 80px;
+  anchor-name: --anchor;
+}
+#target {
+  position: fixed;
+  inset: auto;
+  top: anchor(--anchor top);
+  left: anchor(--anchor right);
+  margin: 0;
+}

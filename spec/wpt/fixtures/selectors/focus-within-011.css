@@ -1,0 +1,9 @@
+
+      div {
+        border: solid 15px blue;
+        outline: none;
+      }
+      div:focus-within {
+        border-color: green;
+      }
+    

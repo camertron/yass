@@ -1,0 +1,4 @@
+
+        #x:dir(rtl) + span { background-color: lime }
+        #outer { direction:ltr }
+    

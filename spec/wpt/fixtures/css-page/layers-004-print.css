@@ -1,0 +1,27 @@
+
+@layer layer2, layer1;
+@page b{
+    margin: 3cm;
+}
+@layer layer1 {
+    @page b {
+        margin: 1cm;
+    }
+    @page :first {
+        margin: 0cm;
+    }
+}
+@layer layer2 {
+    @page b {
+        margin: 0;
+    }
+    @page a:first {
+        margin: 2cm;
+    }
+}
+div {
+    width: 1cm;
+    height: 1cm;
+    border: 2px solid red;
+}
+  

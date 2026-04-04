@@ -1,0 +1,8 @@
+
+.clamp {
+  font: 16px / 32px monospace;
+  white-space: pre;
+  background-color: yellow;
+  padding: 0 4px;
+  width: 35.1ch;
+}

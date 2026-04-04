@@ -1,0 +1,9 @@
+
+  #target::before {
+    content: "";
+    animation: move 1s;
+  }
+
+  @keyframes move {
+    to { transform: translate(100px); }
+  }

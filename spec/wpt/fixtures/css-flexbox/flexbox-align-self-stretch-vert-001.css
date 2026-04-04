@@ -1,0 +1,21 @@
+
+    div.fixedWidthWrapper {
+      width: 200px;
+      /* Small enough that 3 characters can _easily_ fit in our width */
+      font-size: 12px;
+    }
+    div.vertContainer {
+      display: flex;
+      flex-direction: column;
+    }
+    div.vertItem {
+      background: red;
+    }
+    div.horizContainer {
+      display: flex;
+    }
+    div.horizItem {
+      flex: 1;
+      background: lime;
+    }
+  

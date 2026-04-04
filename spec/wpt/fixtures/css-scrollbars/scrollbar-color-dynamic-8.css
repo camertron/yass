@@ -1,0 +1,14 @@
+
+  :root::-webkit-scrollbar {
+    background: pink;
+  }
+  :root::-webkit-scrollbar-thumb {
+    background: orange;
+  }
+
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200vw;
+    height: 200vh;
+  }

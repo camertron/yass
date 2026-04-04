@@ -1,0 +1,69 @@
+
+    html,body {
+      color:black; background-color:white; font:8px/1 monospace; padding:0; margin:0;
+    }
+
+    .grid-lanes {
+      position: relative;
+      display: grid-lanes;
+      grid-template-columns: 90px 90px 90px;
+      width: 320px;
+      height: 150px;
+      gap: 10px;
+      padding: 15px;
+      border: 2px solid black;
+      margin: 10px;
+    }
+
+    .grid-lanes > div {
+      position: absolute;
+      border: 1px solid #333;
+      width: 70px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .flex-start-item {
+      grid-column: 1 / 2;
+      align-self: flex-start;
+      justify-self: flex-start;
+      background: lightcoral;
+    }
+
+    .flex-end-item {
+      grid-column: 2 / 3;
+      align-self: flex-end;
+      justify-self: flex-end;
+      background: lightblue;
+    }
+
+    .mixed-legacy {
+      grid-column: 3 / 4;
+      align-self: flex-start;
+      justify-self: end;
+      background: lightgreen;
+    }
+
+    .normal-item {
+      grid-column: 1 / 2;
+      align-self: normal;
+      justify-self: normal;
+      background: lightyellow;
+    }
+
+    .auto-item {
+      grid-column: 2 / 3;
+      align-self: auto;
+      justify-self: auto;
+      background: plum;
+    }
+
+    .legacy-center {
+      grid-column: 3 / 4;
+      align-self: flex-start;
+      justify-self: center;
+      background: orange;
+    }
+  

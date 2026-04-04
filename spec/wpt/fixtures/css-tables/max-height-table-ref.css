@@ -1,0 +1,15 @@
+
+td {
+  padding: 0;
+}
+
+table {
+  border-spacing: 0;
+  border: 1px solid black;
+  background: green;
+  padding: 5px;
+}
+div {
+  width: 5px;
+  height: 5px;
+}

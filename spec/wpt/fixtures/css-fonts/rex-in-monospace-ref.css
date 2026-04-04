@@ -1,0 +1,9 @@
+
+  @font-face {
+    font-family: ExTest;
+    src: url(../css-values/resources/ExTest.woff);
+  }
+  :root {
+    font-family: ExTest;
+    font-size: 20px;
+  }

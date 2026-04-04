@@ -1,0 +1,14 @@
+
+body, html {
+  color:black;
+  font-size:15px/1 monospace;
+  padding-left: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+}
+.orthogonal {
+    writing-mode: vertical-rl;
+}

@@ -1,0 +1,15 @@
+
+@counter-style foo {
+  system: fixed;
+  symbols: A B C;
+}
+
+@counter-style bar {
+  system: fixed;
+  symbols: '1' '2' '3';
+}
+
+@counter-style foo {
+  system: fixed;
+  symbols: X Y Z;
+}

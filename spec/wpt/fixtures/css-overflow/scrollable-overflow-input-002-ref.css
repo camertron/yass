@@ -1,0 +1,10 @@
+
+input {
+  box-sizing: border-box;
+  width: 160px;
+  padding-inline: 40px 60px;
+  background: yellow;
+  font: 20px/1 Ahem;
+  border: 0;
+  direction: rtl;
+}

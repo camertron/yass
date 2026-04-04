@@ -1,0 +1,26 @@
+
+    div {
+      padding: 3px;
+      border: 1px solid;
+      background: white;
+    }
+
+    @scope {
+      div {
+        background: red;
+      }
+    }
+
+    @scope (.explicit-scope) {
+      div {
+        background: green;
+      }
+    }
+  
+
+      @scope {
+        div {
+          background: blue;
+        }
+      }
+    

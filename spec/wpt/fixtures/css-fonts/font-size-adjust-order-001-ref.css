@@ -1,0 +1,8 @@
+
+  div {
+    margin: 10px;
+    font: 20px monospace;
+    background: yellow;
+    width: 10ch;
+    font-size-adjust: 1.0;
+  }

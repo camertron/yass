@@ -1,0 +1,7 @@
+
+div {
+  width: 3em;
+  border: thin solid;
+  white-space: balance;
+}
+.float { float: left; }

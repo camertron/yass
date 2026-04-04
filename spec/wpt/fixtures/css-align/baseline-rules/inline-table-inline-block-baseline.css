@@ -1,0 +1,14 @@
+
+.container {
+    border: solid 1px black;
+}
+.block {
+    display: inline-block;
+    background: aqua;
+}
+.table {
+    display: inline-table;
+    font-size: 40px;
+    background: tan;
+    margin-block-start: 50px;
+}

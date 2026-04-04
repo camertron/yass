@@ -1,0 +1,30 @@
+
+.scroller {
+  position: relative;
+  height: 200px;
+  width: 100px;
+  overflow: scroll;
+}
+
+#sticky {
+  background-color: green;
+  position: sticky;
+  top: 150px;
+}
+
+#before {
+  background-color: fuchsia;
+}
+
+#after {
+  background-color: orange;
+}
+
+.box {
+  height: 50px;
+  width: 50px;
+}
+
+.padding {
+  height: 500px;
+}

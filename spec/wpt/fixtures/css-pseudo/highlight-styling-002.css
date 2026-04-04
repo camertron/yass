@@ -1,0 +1,10 @@
+
+    main {
+        font-size: 7em;
+        margin: 0.5em;
+        --x: green;
+    }
+    main::selection {
+        color: white;
+        background-color: var(--x, red);
+    }

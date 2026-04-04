@@ -1,0 +1,45 @@
+
+.inside {
+  list-style-position: inside;
+}
+
+.none2symbol {
+  list-style-type: none;
+}
+
+.symbol2none {
+  list-style-type: square;
+}
+
+.symbol2symbol {
+  list-style-type: disc;
+}
+
+.symbol2ordinal {
+  list-style-type: disc;
+}
+
+.ordinal2ordinal {
+  list-style-type: upper-roman;
+}
+
+
+.none2symbol {
+  list-style-type: square;
+}
+
+.symbol2none {
+  list-style-type: none;
+}
+
+.symbol2symbol {
+  list-style-type: square;
+}
+
+.symbol2ordinal {
+  list-style-type: upper-roman;
+}
+
+.ordinal2ordinal {
+  list-style-type: decimal;
+}

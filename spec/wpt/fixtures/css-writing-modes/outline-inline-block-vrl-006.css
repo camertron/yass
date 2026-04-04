@@ -1,0 +1,12 @@
+
+.container {
+  color:transparent;
+  font:50px/1 Ahem;
+  height:6em;
+  writing-mode:vertical-rl;
+}
+.outline {
+  color:orange;
+  display:inline-block;
+  outline:blue solid 2px;
+}

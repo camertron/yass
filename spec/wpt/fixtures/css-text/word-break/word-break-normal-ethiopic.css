@@ -1,0 +1,10 @@
+
+div {
+    width: 0;
+    color: blue;
+}
+.ref {
+    color: orange;
+    width: auto;
+    white-space: pre;
+}

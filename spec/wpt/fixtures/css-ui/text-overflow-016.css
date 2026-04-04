@@ -1,0 +1,32 @@
+
+.test, .test2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100px;
+  white-space: pre;
+  font: 50px/1 Ahem;
+  height: 20px;
+  position: relative;
+}
+span {
+  display: inline-block;
+  width: 60px;
+  height: 1em;
+  vertical-align: bottom;
+}
+
+/* if the ellipsis is shorter than the expected 40px (or misplaced) the red background will show */
+.test {
+  color: green;
+  background: url("support/1x1-red.png") right / 40px auto no-repeat;
+}
+
+/* if the ellipsis (which is red) is longer that the expected 40px (or misplaced), it won't be fully covered by the green abspos */
+.test2 { color: red; }
+.test2::after {
+  content: "";
+  position: absolute;
+  top: 0; right: 0; bottom: 0;
+  width: 40px;
+  background: green;
+}

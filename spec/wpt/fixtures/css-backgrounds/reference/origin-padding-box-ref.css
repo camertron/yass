@@ -1,0 +1,14 @@
+
+  div
+    {
+      display: inline-block;
+      vertical-align: bottom;
+    }
+
+  div.light-blue-border
+    {
+      border: 16px solid rgba(60, 150, 255, 0.4);
+      height: 256px;
+      width: 482px;
+    }
+  

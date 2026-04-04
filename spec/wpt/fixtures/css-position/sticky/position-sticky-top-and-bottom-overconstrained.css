@@ -1,0 +1,17 @@
+
+
+.scroller {
+  height: 100px;
+  overflow: auto;
+  position: relative;
+}
+.padding {
+  height: 200px;
+}
+.sticky {
+  position: sticky;
+  background: green;
+  top: 20px;
+  bottom: 0;
+  height: 200px;
+}

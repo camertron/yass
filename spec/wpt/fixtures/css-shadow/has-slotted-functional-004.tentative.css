@@ -1,0 +1,11 @@
+
+        slot {
+          display: block;
+          width: 100px;
+          height: 100px;
+          background-color: red;
+        }
+        :has-slotted(.slotted-element) {
+          background-color: green;
+        }
+      

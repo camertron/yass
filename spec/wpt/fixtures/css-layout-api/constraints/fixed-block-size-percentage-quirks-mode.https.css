@@ -1,0 +1,21 @@
+
+body {
+  height: 100px;
+}
+
+.test {
+  background: red;
+  --expected-block-size: 50; /* In quirks mode we should get 100px * 50% */
+  width: 100px;
+  height: 50%;
+}
+
+.child {
+  background: green;
+}
+
+@supports (display: layout(test)) {
+  .test {
+    display: layout(test);
+  }
+}

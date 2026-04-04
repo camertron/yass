@@ -1,0 +1,12 @@
+
+  .filler { height: 10000px }
+
+  .smooth {
+    scroll-behavior: smooth;
+  }
+
+  #scrollable {
+    overflow: scroll;
+    width: 100px;
+    height: 100px;
+  }

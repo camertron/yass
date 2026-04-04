@@ -1,0 +1,31 @@
+
+body { margin: 0 }
+#anchor, #target::before, #target::after {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+#anchor.moved {
+    left: 200px;
+    top: 200px;
+}
+#anchor {
+    left: 50px;
+    top: 100px;
+    anchor-name: --a;
+    background: blue;
+}
+#target::before {
+    position-anchor: --a;
+    left: anchor(right);
+    top: anchor(top);
+    background: green;
+    content:'';
+}
+#target::after {
+    position-anchor: --a;
+    left: anchor(left);
+    top: anchor(bottom);
+    background: green;
+    content:'';
+}

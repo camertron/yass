@@ -1,0 +1,7 @@
+
+  body { margin: 0px;}
+  .rel { position:relative; }
+  .inline-block { display:inline-block; width:100px; height:1px; }
+  .inline-block.large { width:200px; }
+  #target { position:absolute; width:100%; height:100px; background:green; }
+  #target-fixed { position:fixed; width:100%; height:100px; background:yellow; }

@@ -1,0 +1,21 @@
+
+    .flexContainer {
+      background: purple;
+      width: 70px;
+      height: 70px;
+      margin-bottom: 5px;
+    }
+    .bigItem {
+      width: 200px;
+      background: blue;
+      height: 75%;
+    }
+    .smallItem {
+      background: teal;
+      margin-right: 10px;
+      height: 25%;
+    }
+    .scroll { overflow: scroll }
+    .auto   { overflow: auto   }
+    .hidden { overflow: hidden }
+  

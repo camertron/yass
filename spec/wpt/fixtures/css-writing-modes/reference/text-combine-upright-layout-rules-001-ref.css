@@ -1,0 +1,12 @@
+
+#container {
+  writing-mode: vertical-rl;
+  font: 50px/1 Ahem;
+}
+#container > div {
+  margin:.2em;
+}
+.tcy {
+  text-combine-upright: all;
+  color:transparent;
+}

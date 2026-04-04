@@ -1,0 +1,14 @@
+
+  @import "support/test-red.css";
+  @import "support/test-green.css"
+    supports(display: block);
+  @import "support/test-red.css"
+    supports(foo: bar);
+  div {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    padding: 5px; /* Avoids text antialiasing issues */
+    background: red;
+  }
+  

@@ -1,0 +1,8 @@
+
+  #target {
+    direction: rtl;
+    font-size: 3em;
+  }
+  #target::highlight(caret) {
+    background: lime;
+  }

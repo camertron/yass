@@ -1,0 +1,17 @@
+
+    #verticalRL {
+        writing-mode: vertical-rl;
+    }
+    #verticalLR {
+        writing-mode: vertical-lr;
+    }
+    #sidewaysRL {
+        writing-mode: sideways-rl;
+    }
+    #sidewaysLR {
+        writing-mode: sideways-lr;
+    }
+    .highlighted {
+      background-color: yellow;
+      color: blue;
+    }

@@ -1,0 +1,21 @@
+
+  .multicol {
+    columns: 3;
+    column-fill: auto;
+    column-gap: 0px;
+    width: 100px;
+    height: 100px;
+    background: red;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: red;
+  }
+
+  .flex>div {
+    height: 100px;
+    background: green;
+  }

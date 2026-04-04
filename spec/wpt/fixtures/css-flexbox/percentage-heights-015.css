@@ -1,0 +1,23 @@
+
+  .container {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100px;
+    max-height: 200px;
+  }
+
+  .item {
+    min-height: 0px;
+    background: red;
+    width: 100px;
+  }
+
+  .child {
+    height: 50%;
+    background: green
+  }
+
+  .tall {
+    height: 250px;
+  }
+  

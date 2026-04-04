@@ -1,0 +1,9 @@
+
+.cousin {
+  width: 1em;
+  height: 1em;
+  background: purple;
+}
+.special.cousin:not(:has(span)) {
+  background: blue;
+}

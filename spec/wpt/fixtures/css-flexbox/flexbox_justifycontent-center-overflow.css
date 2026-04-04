@@ -1,0 +1,15 @@
+
+.flexbox {
+  background: blue;
+  margin-left: 50px;
+  height: 150px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+span {
+  background: orange;
+  margin: 10px;
+  flex: 1 0 40px;
+}

@@ -1,0 +1,104 @@
+
+
+.grid {
+  grid-template-columns: 50px 100px 150px 200px;
+  grid-template-rows: 50px 100px 150px 200px;
+  width: 500px;
+  height: 500px;
+  border: 5px solid black;
+  margin: 30px;
+  padding: 15px;
+  /* Ensures that the grid container is the containing block of the absolutely positioned grid children. */
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.thirdRowThirdColumnSpanning2Rows {
+  grid-column: 3;
+  grid-row: 3 / span 2;
+  background-color: maroon;
+}
+
+.thirdRowThirdColumnSpanning2Rows2Columns {
+  grid-column: 3 / span 2;
+  grid-row: 3 / span 2;
+  background-color: aqua;
+}
+
+.endFirstRowEndFirstColumn {
+  background-color: blue;
+  grid-column-end: 2;
+  grid-row-end: 2;
+}
+
+.endFirstRowEndSecondColumn {
+  background-color: lime;
+  grid-column-end: 3;
+  grid-row-end: 2;
+}
+
+.endSecondRowEndFirstColumn {
+  background-color: purple;
+  grid-column-end: 2;
+  grid-row-end: 3;
+}
+
+.endThirdRowEndThirdColumnSpanning2Rows {
+  grid-column-end: 4;
+  grid-row: span 2 / 4;
+  background-color: maroon;
+}
+
+.endThirdRowEndThirdColumnSpanning2Rows2Columns {
+  grid-column: span 2 / 4;
+  grid-row: span 2 / 4;
+  background-color: aqua;
+}
+
+.onlyThirdRowOnlyThirdColumnSpanning2Rows {
+  grid-column: 3 / 4;
+  grid-row: 3 / 5;
+  background-color: maroon;
+}
+
+.onlyThirdRowOnlyThirdColumnSpanning2Rows2Columns {
+  grid-column: 3 / 5;
+  grid-row: 3 / 5;
+  background-color: aqua;
+}
+
+.offsetLeft25 {
+  left: 25px;
+}
+
+.offsetRight50 {
+  right: 50px;
+}
+
+.offsetTop75 {
+  top: 75px;
+}
+
+.offsetBottom100 {
+  bottom: 100px;
+}
+
+.offsetLeftMinus20 {
+  left: -20px;
+}
+
+.offsetRightMinus40 {
+  right: -40px;
+}
+
+.offsetTopMinus60 {
+  top: -60px;
+}
+
+.offsetBottomMinus80 {
+  bottom: -80px;
+}
+

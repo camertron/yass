@@ -1,0 +1,21 @@
+
+body {
+  width: 200px;
+}
+
+.test {
+  writing-mode: vertical-rl;
+  background: red;
+  --expected-block-size: 100;
+  width: 50%;
+}
+
+.child {
+  background: green;
+}
+
+@supports (display: layout(test)) {
+  .test {
+    display: layout(test);
+  }
+}

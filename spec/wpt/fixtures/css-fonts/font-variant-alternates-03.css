@@ -1,0 +1,25 @@
+
+  @font-face {
+    font-family: fwf;
+    src: url(support/fonts/FontWithFancyFeatures.otf);
+  }
+  @font-feature-values fwf {
+    @stylistic {
+      foo: 1;
+      bar: 2;
+      baz: 3;
+    }
+  }
+  .test {
+	  font-family: fwf;
+	  font-size: 2em;
+	  line-height: 1.1;
+	  font-variant-alternates: character-variant(doesnt-exist) styleset(doesnt-exist);
+  }
+  .high {
+	 font-variant-alternates: stylistic(foo);
+  }
+  .low {
+   font-feature-settings: "hist" off, "salt" 01, "ss01" off, "ss02" off, "ss03" off,
+    "cv01" off, "cv02" off, "cv03" off,  "swsh" 00, "cswh" 00, "ornm" 00, "nalt" 00;
+  }

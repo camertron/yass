@@ -1,0 +1,8 @@
+
+div {
+  display: inline-flex;
+  border: 5px solid green;
+  contain-intrinsic-size: 111px 222px;
+  contain: size;
+  color: transparent;
+}

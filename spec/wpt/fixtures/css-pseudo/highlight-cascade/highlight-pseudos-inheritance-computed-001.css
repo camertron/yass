@@ -1,0 +1,29 @@
+
+  .target::selection {
+    background-color: green;
+    color: lime;
+  }
+  .target::target-text {
+    background-color: green;
+    color: lime;
+  }
+  .target::search-text {
+    background-color: green;
+    color: lime;
+  }
+  .target::search-text:current {
+    background-color: red;
+    color: red;
+  }
+  .target::spelling-error {
+    background-color: green;
+    color: lime;
+  }
+  .target::grammar-error {
+    background-color: green;
+    color: lime;
+  }
+  .target::highlight(foo) {
+    background-color: green;
+    color: lime;
+  }

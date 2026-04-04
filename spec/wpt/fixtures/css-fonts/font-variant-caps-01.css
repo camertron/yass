@@ -1,0 +1,16 @@
+
+  @font-face {
+    font-family: fwf;
+    src: url(support/fonts/FontWithFancyFeatures.otf);
+  }
+  .test {
+	  font-family: fwf;
+	  font-size: 3em;
+	  line-height: 1.1;
+  }
+  .high {
+	 font-variant-caps: normal;
+  }
+  .low {
+	 font-feature-settings: "smcp" off, "c2sc" off, "pcap" off, "c2pc" off, "unic" off, "titl" off;
+  }

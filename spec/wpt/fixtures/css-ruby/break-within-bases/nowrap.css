@@ -1,0 +1,15 @@
+
+.tw-nowrap {
+  text-wrap: nowrap;
+}
+.ws-nowrap {
+  white-space: nowrap;
+}
+
+span {
+  white-space: nowrap;
+}
+
+p {
+  inline-size: 6em;
+}

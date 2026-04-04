@@ -1,0 +1,22 @@
+
+            .parent {
+                position: absolute;
+                z-index: 1;
+                width: 100px;
+                height: 100px;
+            }
+            .blender {
+                background: #FF0;
+                width: 100px;
+                height: 100px;
+                margin-top: -60px;
+                mix-blend-mode: difference;
+            }
+            .text {
+                height: 60px;
+                color: #F00;
+            }
+            body {
+                background: lightgray;
+            }
+        

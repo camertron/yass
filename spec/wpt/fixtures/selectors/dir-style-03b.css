@@ -1,0 +1,4 @@
+
+      div { color: lime; text-align: left; }
+      :not(:dir(ltr)) + div { color: blue }
+    

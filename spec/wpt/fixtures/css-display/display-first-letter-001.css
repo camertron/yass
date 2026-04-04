@@ -1,0 +1,5 @@
+
+  #t1::first-letter { float: left; display: flex; font-size: 30px }
+  #t2::first-letter { float: left; font-size: 30px }
+  #t3::first-letter { display: flex; font-size: 30px }
+  #t4::first-letter { font-size: 30px }

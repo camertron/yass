@@ -1,0 +1,19 @@
+
+
+@page {
+  size: landscape;
+}
+div {
+  box-sizing: border-box;
+  width: 4in;
+  height: 2in;
+  border-top: none;
+  border-right: 15px solid orange;
+  border-bottom: none;
+  border-left: 15px solid blue;
+}
+body {
+  margin: 0;
+}
+
+  

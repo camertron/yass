@@ -1,0 +1,5 @@
+
+        div { width: 100px; height: 100px; }
+        div:has(*:lang(fr)) { background: red; }
+        div:has(*:lang(en)) { background: green; }
+    

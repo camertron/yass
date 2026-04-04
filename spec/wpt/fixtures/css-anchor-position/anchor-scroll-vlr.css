@@ -1,0 +1,56 @@
+
+:root {
+  /* Prevents creatings scrollbar on the viewport due to anchored element's
+   * layout position being out of the viewport.
+   * TODO(crbug.com/1309178): Revisit this behavior.
+   */
+  overflow: clip;
+}
+
+body {
+  font: 20px/1 Ahem;
+  margin: 0;
+  writing-mode: vertical-lr;
+  white-space: nowrap;
+}
+
+#scroll-container {
+  width: 400px;
+  height: 400px;
+  overflow: scroll;
+}
+
+#scroll-contents {
+  width: 1000px;
+  height: 1000px;
+  position: relative;
+}
+
+#placefiller-above-anchor {
+  width: 500px;
+}
+
+#placefiller-before-anchor {
+  display: inline-block;
+  height: 500px;
+}
+
+#anchor {
+  anchor-name: --anchor;
+}
+
+#inner-anchored {
+  color: green;
+  position: absolute;
+  top: anchor(top);
+  left: anchor(right);
+  position-anchor: --anchor;
+}
+
+#outer-anchored {
+  color: yellow;
+  position: absolute;
+  top: anchor(top);
+  right: anchor(left);
+  position-anchor: --anchor;
+}

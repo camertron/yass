@@ -1,0 +1,9 @@
+
+    /* * (universal) */::selection {
+        background-color: green;
+        color: white;
+    }
+    main::selection,
+    aside ::selection {
+        color: yellow;
+    }

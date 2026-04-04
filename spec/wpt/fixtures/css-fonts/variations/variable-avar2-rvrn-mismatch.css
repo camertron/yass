@@ -1,0 +1,23 @@
+
+    @font-face {
+      font-family: avar2test_variablesubstitution;
+      src: url(../resources/avar/rvrnTest[opsz\,wdth\,wght].ttf);
+    }
+
+    body {
+      font-family: avar2test_variablesubstitution, sans-serif;
+      font-size: 220px;
+    }
+
+    .variable-alternates {
+      font-variation-settings:
+        "wght" 1000,
+        "wdth" 90;
+    }
+
+    .avar-alternates {
+      font-variation-settings:
+        "wght" 1000,
+        "wdth" 75;
+    }
+  

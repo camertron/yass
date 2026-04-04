@@ -1,0 +1,60 @@
+
+#invalid_foo {
+  text-decoration-upright: foo;
+}
+
+#invalid_all_none {
+  text-decoration-upright: all none;
+}
+
+#invalid_none_digits {
+  text-decoration-upright: none digits;
+}
+
+#invalid_digits_bar {
+  text-decoration-upright: digits bar;
+}
+
+#invalid_digits_4_none {
+  text-decoration-upright: digits 4 none;
+}
+
+#invalid_digits2 {
+  text-decoration-upright: digits2;
+}
+
+#invalid_digits_1 {
+  text-decoration-upright: digits 1;
+}
+
+#invalid_digits_positive5 {
+  text-decoration-upright: digits +5;
+}
+
+#invalid_digits_2_00 {
+  text-decoration-upright: digits 2.00;
+}
+
+#invalid_digits_2_e_0 {
+  text-decoration-upright: digits 2e0;
+}
+
+#invalid_digits_positive2_e_0 {
+  text-decoration-upright: digits +2e0;
+}
+
+#invalid_digits_3_e_positive0 {
+  text-decoration-upright: digits 3e+0;
+}
+
+#invalid_digits_3_e_negative0 {
+  text-decoration-upright: digits 3e-0;
+}
+
+#invalid_digits_positive4_e_positive0 {
+  text-decoration-upright: digits +4e+0;
+}
+
+#invalid_digits_positive4_e_negative0 {
+  text-decoration-upright: digits +4e-0;
+}

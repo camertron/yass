@@ -1,0 +1,21 @@
+
+  div
+    {
+      font-size: 80px; /* arbitrary font size */
+    }
+
+  div#test-blue
+    {
+      background-color: blue;
+      height: 1.8em;
+      width: 5ch;
+    }
+
+  div#reference-orange
+    {
+      background-color: orange;
+      color: orange;
+      float: left;
+      line-height: 1.8; /* arbitrary line-height */
+    }
+  

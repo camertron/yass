@@ -1,0 +1,11 @@
+
+.outer {
+  display: flex;
+  height: 100px;
+}
+.inner {
+  background: red;
+}
+img {
+  height: 100%;
+}

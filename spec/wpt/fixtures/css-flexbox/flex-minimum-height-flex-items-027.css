@@ -1,0 +1,18 @@
+
+.OuterFlexbox {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 100px;
+}
+
+.InnerFlexbox {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.InnerFlexbox-body {
+  background: green;
+  min-height: 0;
+}

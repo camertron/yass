@@ -1,0 +1,5 @@
+
+    body { background-color: grey; }
+    .test { background-color: red; width: 12em; height: 6em; margin-top: 0; }
+    .ref { background-color: rgb(99.993% 100% 100%); width: 12em; height: 6em; margin-bottom: 0; } /* color(a98-rgb 1 1 1) converted to sRGB */
+    .test { background-color: color(a98-rgb 1 1 1); }

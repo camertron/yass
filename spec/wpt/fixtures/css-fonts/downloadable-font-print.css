@@ -1,0 +1,9 @@
+
+
+@font-face {
+  font-family: "MarkA";
+  src: url(resources/markA.ttf);
+}
+
+body { font-family: "MarkA"; }
+

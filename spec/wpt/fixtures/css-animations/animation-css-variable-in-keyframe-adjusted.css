@@ -1,0 +1,7 @@
+
+
+@keyframes anim {
+    from { margin-left: var(--margin-left) }
+    to   { margin-left: calc(var(--margin-left) * 2) }
+}
+

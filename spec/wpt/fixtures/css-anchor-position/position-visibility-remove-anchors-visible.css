@@ -1,0 +1,31 @@
+
+  #scroll-container {
+    overflow: hidden scroll;
+    width: 300px;
+    height: 100px;
+    font: 20px/1 Ahem;
+  }
+
+  #anchor {
+    anchor-name: --a1;
+    width: 100px;
+    height: 100px;
+    background: orange;
+    font: 20px/1 Ahem;
+  }
+
+  #spacer {
+    height: 100px;
+  }
+
+  #target {
+    position-anchor: --a1;
+    position-visibility: anchors-visible;
+    position-area: bottom;
+    width: 100px;
+    height: 100px;
+    background: green;
+    position: absolute;
+    inset: 0;
+    font: 20px/1 Ahem;
+  }

@@ -1,0 +1,5 @@
+
+body { color: red; }
+@supports (color: var(--a)var(--b)) {
+  p { color: green; }
+}

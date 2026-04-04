@@ -1,0 +1,36 @@
+
+body {
+  margin: 0;
+}
+#scroller {
+  width: 200px;
+  height: 100px;
+  overflow: scroll;
+  will-change: scroll-position;
+}
+#spacer {
+  height: 400px;
+}
+#anchor {
+  width: 100px;
+  height: 100px;
+  anchor-name: --a;
+}
+#target {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: red;
+  left: 0;
+  bottom: anchor(top);
+  position-anchor: --a;
+}
+#overlap {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 150px;
+  left: 0;
+  z-index: 100;
+  background: green;
+}

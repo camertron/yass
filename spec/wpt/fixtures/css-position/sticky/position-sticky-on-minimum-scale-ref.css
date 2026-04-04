@@ -1,0 +1,17 @@
+
+html {
+  scrollbar-width: none;
+}
+body {
+  width: 200vw;
+  margin: 0px;
+}
+div {
+  width: 50vw;
+  height: 100px;
+  display: inline-block;
+  background: blue;
+}
+.last {
+  background: red;
+}

@@ -1,0 +1,7 @@
+
+  * {
+    color: yellow;
+  }
+  :not(.b ~ *) {
+    color: green;
+  }

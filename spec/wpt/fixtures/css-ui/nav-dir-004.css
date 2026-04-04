@@ -1,0 +1,11 @@
+
+    #container > div {
+        clear: left;
+    }
+    #container > div > a {
+        float: left;
+        margin-right: 1ex;
+    }
+    #start {
+        nav-left: #finish;
+    }

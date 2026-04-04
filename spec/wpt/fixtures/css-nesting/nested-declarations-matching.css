@@ -1,0 +1,98 @@
+
+  .trailing {
+    --x: FAIL;
+    & { --x: FAIL; }
+    --x: PASS;
+  }
+
+
+  .trailing_no_leading {
+    & { --x: FAIL; }
+    --x: PASS;
+  }
+
+
+  .trailing_multiple {
+    --x: FAIL;
+    --y: FAIL;
+    --z: FAIL;
+    --w: FAIL;
+    & { --x: FAIL; }
+    --x: PASS;
+    --y: PASS;
+    & { --z: FAIL; }
+    --z: PASS;
+    --w: PASS;
+  }
+
+
+  .trailing_specificity {
+    --x: FAIL;
+    :is(&, div.nomatch2) { --x: PASS; } /* Specificity: (0, 1, 1) */
+    --x: FAIL; /* Specificity: (0, 1, 0) */
+  }
+
+
+  #nomatch, .specificity_top_level {
+    --x: FAIL;
+    :is(&, div.nomatch2) { --x: PASS; } /* Specificity: (0, 1, 1) */
+    --x: FAIL; /* Specificity: (0, 1, 0). In particular, this does not have
+               specificity like :is(#nomatch, .specificity_top_level). */
+  }
+
+
+  #nomatch, .specificity_top_level_max, div.specificity_top_level_max {
+    --x: FAIL;
+    :is(:where(&), div.nomatch2) { --x: FAIL; } /* Specificity: (0, 1, 1) */
+    --x: PASS; /* Specificity: (0, 1, 1) (for div.specificity_top_level_max) */
+  }
+
+
+  .nested_pseudo::after {
+    --x: FAIL;
+    @media (width > 0px) {
+      --x: PASS;
+    }
+  }
+
+
+  #nomatch, .nested_group_rule {
+    --x: FAIL;
+    @media (width > 0px) {
+      --x: FAIL; /* Specificity: (0, 1, 0) */
+    }
+    --x: PASS;
+  }
+
+
+  .nested_scope_rule {
+    div:where(&) { /* Specificity: (0, 0, 1) */
+      --x: PASS;
+    }
+    @scope (&) {
+      --x: FAIL; /* Specificity: (0, 0, 0) */
+    }
+  }
+
+
+  .nested_scope_rule_trailing {
+    div:where(&) { /* Specificity: (0, 0, 1) */
+      --x: PASS;
+    }
+    @scope (&) {
+      --ignored: 1;
+      .ignored {}
+      --x: FAIL; /* Specificity: (0, 0, 0) */
+    }
+  }
+
+
+  .set_parent_selector_text {
+    div {
+      color: red;
+    }
+    .a1 {
+      .ignored {}
+      color: green;
+    }
+  }

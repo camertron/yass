@@ -1,0 +1,12 @@
+
+body {
+  margin: 0;
+}
+.container {
+  padding: 30px;
+}
+.target {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}

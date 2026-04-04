@@ -1,0 +1,11 @@
+
+html {
+  background-color: white;
+  font-size: 24px;
+  color: transparent;
+  font-family: Ahem;
+}
+body {
+  background-color: green;
+  background-clip: text;
+}

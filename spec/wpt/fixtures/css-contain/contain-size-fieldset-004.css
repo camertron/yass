@@ -1,0 +1,16 @@
+
+  .contain {
+    contain: size;
+    border: none;
+    color: transparent;
+    visibility: hidden;
+  }
+  .innerContents {
+    height: 50px;
+    width: 50px;
+  }
+  .flexBaselineCheck {
+    display: flex;
+    align-items: baseline;
+  }
+  

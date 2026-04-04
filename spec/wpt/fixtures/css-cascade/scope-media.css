@@ -1,0 +1,12 @@
+
+  @scope (.a) {
+    @media (width > 0px) {
+      :scope {
+        z-index: 1;
+      }
+
+      .b {
+        background-color: green;
+      }
+    }
+  }

@@ -1,0 +1,9 @@
+
+#container {
+  writing-mode: vertical-rl;
+  font-size: 20px;
+  text-autospace: normal;
+}
+.upright {
+  text-orientation: upright;
+}

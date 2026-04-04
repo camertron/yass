@@ -1,0 +1,77 @@
+
+      @scope (:host) {
+        .a {
+          z-index: 1;
+        }
+      }
+    
+
+      @scope (:host(div)) {
+        .a {
+          z-index: 1;
+        }
+      }
+      /* Should not match: */
+      @scope (:host(span)) {
+        .a {
+          z-index: 42;
+        }
+      }
+    
+
+      @scope (:host) {
+        :scope {
+          z-index: 1;
+        }
+      }
+    
+
+        /* Should not match host, nor outside shadow. */
+        :is(:scope, .a, .host) {
+          z-index: 2;
+        }
+
+        @scope (:host) {
+          :is(:scope, .a) {
+            z-index: 1;
+          }
+        }
+      
+
+          @scope {
+            /* Matches host */
+            :scope {
+              z-index: 1;
+            }
+            :scope > .a {
+              z-index: 2;
+            }
+          }
+      
+
+          @scope (:host) {
+            :scope {
+              & {
+                z-index: 1;
+              }
+            }
+          }
+      
+
+          @scope (:host) {
+            :scope .a {
+              & {
+                z-index: 1;
+              }
+            }
+          }
+      
+
+          @scope (:host) {
+            :scope > .a {
+              & {
+                z-index: 1;
+              }
+            }
+          }
+      

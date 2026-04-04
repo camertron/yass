@@ -1,0 +1,19 @@
+
+#target {
+  width: 100px;
+  height: 100px;
+  backdrop-filter: drop-shadow(50px 0px 0px currentcolor);
+}
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+#container {
+  /* 0.98 was chosen to work around https://bugzil.la/1915676 */
+  opacity: 0.98;
+  width: 50px;
+  height: 100px;
+  background-color: green;
+}

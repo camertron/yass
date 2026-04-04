@@ -1,0 +1,12 @@
+
+.outline-container {
+  margin: 10px 0px;
+  width: 10px;
+  height: 10px;
+  outline: auto;
+  font: 10px/1 Ahem;
+}
+
+.outline-container > div {
+  color: lime;
+}

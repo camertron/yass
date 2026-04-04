@@ -1,0 +1,13 @@
+
+ol {
+  quotes: "\2018" "\2019";
+}
+::marker {
+  content: open-quote counter(list-item) close-quote " ";
+}
+:nth-child(2)::marker {
+  quotes: "«" "»";
+}
+:nth-child(3)::marker {
+  quotes: "‹" "›";
+}

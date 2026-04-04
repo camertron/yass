@@ -1,0 +1,12 @@
+
+div {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  contain: paint;
+  view-transition-name: target;
+}
+
+::view-transition-group(target) {
+  animation-duration: 300s;
+}

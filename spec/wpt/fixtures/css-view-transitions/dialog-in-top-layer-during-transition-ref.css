@@ -1,0 +1,18 @@
+
+div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+}
+
+.dialog {
+  background: lightgreen;
+}
+
+.backdrop {
+  background: grey;
+  top: 120px;
+}
+

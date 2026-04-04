@@ -1,0 +1,19 @@
+
+  html
+    {
+      writing-mode: vertical-rl;
+    }
+
+  body
+    {
+      writing-mode: horizontal-tb;
+    }
+
+  img#orange-square
+    {
+      height: 100px;
+      padding-right: 1em;
+      vertical-align: top;
+      width: 100px;
+    }
+  

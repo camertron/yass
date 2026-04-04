@@ -1,0 +1,11 @@
+
+      .failure {
+          background: pink;
+      }
+      #visibility {
+          visibility: var(--my-visibility, visible);
+      }
+      #display {
+          display: var(--my-display, inline-block);
+      }
+    

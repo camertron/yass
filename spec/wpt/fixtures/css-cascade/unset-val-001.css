@@ -1,0 +1,24 @@
+
+.square {
+  width: 100px;
+  height: 100px;
+}
+.under {
+  background-color: green;
+  margin-bottom: -100px;
+}
+.outer {
+  color: green;
+  background: red;
+}
+.inner {
+  color: red;
+  background-color: red;
+  font-size: 40px;
+  text-align: center;
+}
+.inner {
+  color: unset;/* inherit from .outer */
+  background-color: unset;/* initial, transparent, .under shows thru */
+}
+  

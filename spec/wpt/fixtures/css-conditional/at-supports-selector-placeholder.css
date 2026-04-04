@@ -1,0 +1,10 @@
+
+			div {
+				background:red;
+				height:100px;
+				width:100px;
+			}
+			@supports selector(input::placeholder) {
+				div { background-color:green; }
+			}
+		

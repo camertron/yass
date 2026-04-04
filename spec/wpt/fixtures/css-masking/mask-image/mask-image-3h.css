@@ -1,0 +1,8 @@
+
+      div {
+        background-color: purple;
+        mask-image: url(#mask1), url(#mask2);
+        width: 100px;
+        height: 100px;
+      }
+    

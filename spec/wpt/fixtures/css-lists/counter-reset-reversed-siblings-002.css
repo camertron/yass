@@ -1,0 +1,3 @@
+
+  .list { counter-reset: reversed(c); }
+  .item::before { content: counter(c); }

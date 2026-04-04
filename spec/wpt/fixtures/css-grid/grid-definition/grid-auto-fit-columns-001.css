@@ -1,0 +1,28 @@
+
+
+.grid {
+    border: 2px solid magenta;
+    width: 200px;
+    position: relative;
+    justify-content: start;
+    grid-auto-columns: 157px;
+    grid-auto-rows: 25px;
+}
+
+.gridOnlyAutoRepeat { grid-template-columns: repeat(auto-fit, 30px [autobar]); }
+.gridPercentAutoRepeat { grid-template-columns: repeat(auto-fit, 30% [autobar]); padding: 0 13px; }
+.gridMinMaxAutoRepeat { grid-template-columns: repeat(auto-fill, minmax(13px, 30px)); }
+.gridMaxMinAutoRepeat { grid-template-columns: repeat(auto-fill, minmax(30px, 13px)); }
+.gridMaxMinPercentAutoRepeat { grid-template-columns: repeat(auto-fill, minmax(30px, 6.5%)); }
+.gridAutoRepeatAndFixedBefore { grid-template-columns: 10px [foo] 20% [bar] repeat(auto-fit, [autofoo] 35px); }
+.gridAutoRepeatAndFixedAfter { grid-template-columns: repeat(auto-fit, [first] 30px [last]) [foo] minmax(60px, 80px) [bar] minmax(45px, max-content); }
+.gridAutoRepeatAndFixed { grid-template-columns: [start] repeat(2, 50px [a]) [middle] repeat(auto-fit, [autofoo] 15px [autobar]) minmax(5%, 10%) [end]; }
+.gridMultipleNames { grid-template-columns: [start] 20px [foo] 50% repeat(auto-fit, [bar] 20px [start foo]) [foo] 10% [end bar]; }
+.gridMultipleTracks { grid-template-columns: [start] 20px repeat(auto-fit, [a] 2em [b c] 10% [d]) [e] minmax(75px, 1fr) [last]; }
+.gridMinMaxFixedFlex { grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); }
+
+.item { background: cyan; }
+.item:nth-child(2n) { background: green; }
+
+.gap { grid-column-gap: 20px; }
+

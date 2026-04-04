@@ -1,0 +1,16 @@
+
+    .crazy-class {
+      height: 110px;
+      width: 110px;
+      display: flex;
+
+      column-gap: 10px;
+
+      column-rule-style: solid;
+      column-rule-width: 1px; /* start at 1px */
+    }
+
+    .flex-item {
+      width: 50px;
+    }
+  

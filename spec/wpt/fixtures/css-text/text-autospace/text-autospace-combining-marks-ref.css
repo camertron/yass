@@ -1,0 +1,11 @@
+
+.test {
+  font-size: 40px;
+  border: solid 3px salmon;
+  width: fit-content;
+  margin-bottom: 2px;
+  text-autospace: no-autospace;
+}
+.manual-spacing {
+  margin-right: 0.125em;
+}

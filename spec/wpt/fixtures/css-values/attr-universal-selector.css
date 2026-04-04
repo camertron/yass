@@ -1,0 +1,13 @@
+
+  @property --some-string {
+    syntax: "<string>";
+    inherits: true;
+    initial-value: "empty";
+  }
+  * {
+    --some-string: "https://does-not-exist.test/404.png";
+  }
+  div {
+    --some-string: attr(data-foo);
+    background-image: image-set(var(--some-string));
+  }

@@ -1,0 +1,30 @@
+
+  .container {
+    display: flex;
+    align-items: end;
+    float: left;
+    border: 2px solid purple;
+    padding: 2px;
+    margin-bottom: 2em;
+    height: 500px;
+    width: 150px;
+  }
+
+  span {
+    display: block;
+    background: lightgrey;
+    border: 2px solid black;
+    margin: 11px 13px 17px 7px;
+    inline-size: 6px;
+  }
+
+  .small { font: 12px Ahem; }
+  .big   { font: 20px Ahem; }
+
+  .hl  { writing-mode: horizontal-tb;  direction: ltr; }
+  .hr  { writing-mode: horizontal-tb;  direction: rtl; }
+  .sl  { writing-mode: sideways-lr;    direction: ltr; }
+  .sr  { writing-mode: sideways-rl;    direction: ltr; }
+  .sl_rtl { writing-mode: sideways-lr; direction: rtl; }
+  .sr_rtl { writing-mode: sideways-rl; direction: rtl; }
+  

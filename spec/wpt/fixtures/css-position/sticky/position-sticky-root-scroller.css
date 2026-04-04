@@ -1,0 +1,13 @@
+
+body {
+  /* Assumption: 3000px is taller than any user agents test window size. */
+  height: 3000px;
+}
+
+#sticky {
+  position: sticky;
+  top: 50px;
+  width: 200px;
+  height: 200px;
+  background-color: green;
+}

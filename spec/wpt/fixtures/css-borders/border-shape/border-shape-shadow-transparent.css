@@ -1,0 +1,8 @@
+
+  body { padding: 50px; }
+  #target {
+    width: 100px; height: 100px;
+    background: transparent;
+    border-shape: circle(50px at 50% 50%);
+    box-shadow: 0 0 0 20px black;
+  }

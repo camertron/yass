@@ -1,0 +1,12 @@
+
+  div
+    {
+      font-size: 100px;
+    }
+
+  div::selection
+    {
+      background-color: transparent;
+      color: red;
+    }
+  

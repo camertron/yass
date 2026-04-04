@@ -1,0 +1,22 @@
+
+
+#container {
+  position: relative;
+}
+
+#image-wrapper {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  background: green;
+}
+
+#content-wrapper {
+  margin-left: 30%;
+}
+
+#target {
+  display: block;
+  min-height: 100%;
+  opacity: 0.5;
+}

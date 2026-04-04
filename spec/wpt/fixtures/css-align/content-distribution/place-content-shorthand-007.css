@@ -1,0 +1,12 @@
+
+div {
+  display: grid;
+  grid: 200px / 200px;
+  width: 400px;
+  height: 400px;
+  background: blue;
+  place-content: end space-evenly;
+}
+span {
+  background: green;
+}

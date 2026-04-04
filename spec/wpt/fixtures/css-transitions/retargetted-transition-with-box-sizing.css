@@ -1,0 +1,9 @@
+
+#target {
+  width: 100px;
+  height: 200px;
+  transition-properties: transform;
+  transition-duration: 1s;
+  transition-delay: -0.5s;
+  transition-timing-function: linear;
+}

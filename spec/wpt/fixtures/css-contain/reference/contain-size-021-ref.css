@@ -1,0 +1,16 @@
+
+  div.inline-block {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+  }
+
+  div#blue-test {
+    background-color: blue;
+    padding: 50px;
+    box-sizing: border-box;
+  }
+
+  div#orange-reference {
+    background-color: orange;
+  }

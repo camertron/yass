@@ -1,0 +1,13 @@
+
+div {
+    border: solid;
+    font-family: monospace;
+    margin: 1ch;
+    width: 9.1ch;
+}
+.test {
+    border-color: blue;
+}
+.ref {
+    border-color: orange;
+}

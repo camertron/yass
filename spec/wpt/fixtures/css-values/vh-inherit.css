@@ -1,0 +1,9 @@
+
+
+			html, body { margin: 0px; padding: 0px; }
+
+			html { background: red; }
+			#outer { position: relative; background: green; width: 50vw; height: 100vh; }
+			#inner { position: absolute; background: green; left: 100%; width: inherit; height: inherit; }
+
+	

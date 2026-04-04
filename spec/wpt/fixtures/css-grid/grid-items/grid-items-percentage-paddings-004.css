@@ -1,0 +1,23 @@
+
+.container {
+    width: 100px;
+}
+.child {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    background: red;
+}
+.ref {
+    position: absolute;
+    z-index: -1;
+    background: none;
+    height: 100px;
+}
+.grid {
+    background: none;
+}
+#item {
+    padding: 10%;
+    background: green;
+}

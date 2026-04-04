@@ -1,0 +1,24 @@
+
+  :root {
+    view-transition-name: none;
+  }
+  body { margin: 0 }
+  .outer {
+    /* Removing this makes it work */
+    transform: scale(0.5);
+  }
+  .inner {
+    view-transition-name: inner;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+  }
+  :root::view-transition {
+    background: pink;
+  }
+  :root::view-transition-group(inner),
+  :root::view-transition-image-pair(inner),
+  :root::view-transition-old(inner),
+  :root::view-transition-new(inner) {
+    animation-play-state: paused;
+  }

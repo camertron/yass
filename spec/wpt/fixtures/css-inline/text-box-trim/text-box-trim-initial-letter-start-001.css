@@ -1,0 +1,13 @@
+
+.spacer {
+  height: 50px;
+  background: lightgray;
+}
+.target {
+  font: 40px/1 Ahem;
+  text-box-trim: trim-start;
+  text-box-edge: text;
+}
+.target::first-letter {
+  initial-letter: 2 1;
+}

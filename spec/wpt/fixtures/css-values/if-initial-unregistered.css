@@ -1,0 +1,4 @@
+
+  div {
+    color: if(style(--x:initial): green; else: red);
+  }

@@ -1,0 +1,16 @@
+
+:root {
+  font: 20px/1 Ahem;
+  scrollbar-width: none;
+}
+
+#target {
+  text-shadow: red -20px -50px;
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+
+body {
+  background: pink;
+}

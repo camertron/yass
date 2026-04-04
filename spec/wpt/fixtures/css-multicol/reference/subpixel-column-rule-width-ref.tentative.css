@@ -1,0 +1,8 @@
+
+    .columns {
+      column-count: 2;
+      column-rule: 1px solid gray;
+      width: 420px;
+      height: 50px;
+    }
+  

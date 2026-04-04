@@ -1,0 +1,7 @@
+
+.first::before {
+  content: var(--variable-1);
+}
+.second::after {
+  content: var(--variable-2);
+}

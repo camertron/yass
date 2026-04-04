@@ -1,0 +1,8 @@
+
+.container, .has-height {
+  border: 1px solid;
+}
+
+.inline {
+  outline: 1px solid;
+}

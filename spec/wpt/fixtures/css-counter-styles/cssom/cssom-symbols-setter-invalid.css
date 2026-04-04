@@ -1,0 +1,5 @@
+
+@counter-style foo {
+  system: alphabetic;
+  symbols: A B C;
+}

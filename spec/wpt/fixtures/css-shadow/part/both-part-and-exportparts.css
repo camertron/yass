@@ -1,0 +1,7 @@
+
+  ::part(bar) {
+    color: green;
+  }
+  ::part(baz) {
+    background: lime;
+  }

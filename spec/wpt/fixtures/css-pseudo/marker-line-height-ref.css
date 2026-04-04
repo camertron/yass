@@ -1,0 +1,14 @@
+
+::marker { font-family: inherit; }
+ol {
+  float: left;
+  width: 50px;
+  list-style-position: inside;
+  line-height: 3;
+}
+li:first-child {
+  list-style-type: disc;
+}
+div {
+  line-height: 1;
+}

@@ -1,0 +1,27 @@
+
+#container {
+    font: 50px/1 Ahem;
+    text-decoration-skip-ink: none;
+}
+.vlr {
+    writing-mode:vertical-lr;
+}
+.vrl {
+    writing-mode:vertical-rl;
+}
+.test, .ref {
+    border:solid thin;
+    margin:.2em;
+}
+p {
+    margin:0 .5em;
+}
+.underline {
+    text-decoration:underline;
+}
+.overline {
+    text-decoration:overline;
+}
+.emphasis {
+    text-emphasis:filled;
+}

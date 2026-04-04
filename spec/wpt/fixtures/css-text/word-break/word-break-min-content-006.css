@@ -1,0 +1,9 @@
+
+#wrapper {
+  width: 0px;
+  word-break: break-word;
+}
+#test {
+  float: left;
+  border: 2px solid blue;
+}

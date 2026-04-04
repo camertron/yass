@@ -1,0 +1,13 @@
+
+  #flex {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    position: relative;
+    justify-content: flex-end;
+  }
+  #flex > div {
+    width: 100px;
+    height: 100px;
+    flex: none;
+  }

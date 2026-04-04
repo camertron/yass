@@ -1,0 +1,28 @@
+
+#valid_none {
+  text-combine-upright: none;
+}
+
+#valid_all {
+  text-combine-upright: all;
+}
+
+#valid_initial {
+  text-combine-upright: initial;
+}
+
+#valid_inherit_outer {
+  text-combine-upright: all;
+}
+
+#valid_inherit_inner {
+  text-combine-upright: inherit;
+}
+
+#valid_unset_outer {
+  text-combine-upright: all;
+}
+
+#valid_unset_inner {
+  text-combine-upright: unset;
+}

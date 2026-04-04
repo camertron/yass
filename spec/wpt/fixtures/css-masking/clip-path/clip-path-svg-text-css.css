@@ -1,0 +1,8 @@
+
+text {
+  font: 50px/1 Ahem;
+  text-shadow: grey 10px 10px;
+  fill: none;
+  stroke: red;
+  stroke-width: 10px;
+}

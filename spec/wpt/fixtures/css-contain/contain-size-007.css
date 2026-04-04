@@ -1,0 +1,8 @@
+
+div {
+  display: table-row-group;
+  contain: size;
+}
+section {
+  overflow: hidden;
+}

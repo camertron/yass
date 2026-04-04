@@ -1,0 +1,14 @@
+
+  input::before,
+  video::before,
+  progress::before {
+    content: "X";
+    display: block;
+    /* Not resolvable if box is not generated */
+    width: 10%;
+  }
+  span {
+    display: block;
+    /* Not resolvable if box is not generated */
+    width: 10%;
+  }

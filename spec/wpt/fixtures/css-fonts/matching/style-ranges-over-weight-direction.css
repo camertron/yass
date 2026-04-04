@@ -1,0 +1,42 @@
+
+    /* Matches, 2 & 3 in stretch, has wrong style, but in the right search
+     direction, so weight 400 gets chosen for 1-3. */
+    @font-face {
+    font-family: variable_axes;
+    src: url("resources/variabletest_matching.ttf");
+    font-stretch: 62.5% 75%;
+    font-style: oblique -90deg;
+    font-weight: 400;
+    }
+
+    /* Matches 2 & 3 in stretch and weight but has wrong style and in the wrong
+    search direction, chosen for 4 and 5. */
+    @font-face {
+    font-family: variable_axes;
+    src: url("resources/variabletest_matching.ttf");
+    font-stretch: 62.5% 75%;
+    font-style: oblique -20deg;
+    font-weight: 200 300;
+    }
+
+
+    /* Matches 7 & 8 in stretch, has wrong style, but in the right search
+    direction from 7 and above, so weight 600 gets chosen for 7-9. */
+    @font-face {
+    font-family: variable_axes;
+    src: url("resources/variabletest_matching.ttf");
+    font-stretch: 125% 150%;
+    font-style: oblique 90deg;
+    font-weight: 500;
+    }
+
+
+    /* Matches 7 & 8 in stretch and weight, but has wrong style and in the wrong
+    search direction for 7 and above, gets chosen for 6. */
+    @font-face {
+    font-family: variable_axes;
+    src: url("resources/variabletest_matching.ttf");
+    font-stretch: 125% 150%;
+    font-style: oblique 20deg;
+    font-weight: 700 800;
+    }

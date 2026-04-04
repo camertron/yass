@@ -1,0 +1,8 @@
+
+  html, body { margin: 0; padding: 0 }
+  #fixedmoves {
+    position: absolute;
+    background: green;
+    height: 100px;
+    width: 100px;
+  }

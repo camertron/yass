@@ -1,0 +1,12 @@
+
+@font-face {
+    font-family: "webfont";
+    src: url("/fonts/mplus-1p-regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    }
+select { font-family: webfont; font-size: 24px; }
+.test { text-align: center; vertical-align: middle; width: 100%; }
+
+
+.test { writing-mode: vertical-rl; }

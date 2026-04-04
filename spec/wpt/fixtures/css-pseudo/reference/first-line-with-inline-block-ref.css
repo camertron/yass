@@ -1,0 +1,10 @@
+
+.outer-f {
+  color: red;
+}
+.fl-atomic {
+  display: inline-block;
+}
+.inner-f {
+  color: lime;
+}

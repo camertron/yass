@@ -1,0 +1,16 @@
+
+.test {
+  writing-mode: vertical-lr;
+  background: red;
+  --expected-block-size: null;
+}
+
+.child {
+  background: green;
+}
+
+@supports (display: layout(test)) {
+  .test {
+    display: layout(test);
+  }
+}

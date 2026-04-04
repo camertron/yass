@@ -1,0 +1,20 @@
+
+  .basic {
+    display: inline-block;
+    overflow: scroll;
+    position: relative;
+    border: 2px solid green;
+  }
+  .height-ref {
+    height: 60px;
+  }
+  .width-ref {
+    width: 60px;
+  }
+  .innerContents {
+    color: transparent;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+  }
+  

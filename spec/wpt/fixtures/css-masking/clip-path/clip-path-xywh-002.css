@@ -1,0 +1,7 @@
+
+  #rect {
+    width: 400px;
+    height: 200px;
+    background-color: green;
+    clip-path: xywh(12.5% 25% 37.5% 50%);
+  }

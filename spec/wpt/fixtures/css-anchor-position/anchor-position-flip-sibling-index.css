@@ -1,0 +1,16 @@
+
+  body { margin: 0; }
+  #anchor {
+    anchor-name: --a;
+    width: 100px;
+    height: 100px;
+  }
+  #abs {
+    position-anchor: --a;
+    position-try-fallbacks: flip-block;
+    position: absolute;
+    bottom: anchor(calc(20% * sibling-index()));
+    width: 100px;
+    height: 100px;
+    background: teal;
+  }

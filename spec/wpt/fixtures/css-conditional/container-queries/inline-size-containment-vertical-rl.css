@@ -1,0 +1,9 @@
+
+  #ancestry { writing-mode: vertical-rl; }
+  #keg { container-type: inline-size; }
+  @container (max-height: 200px) {
+    #target { width: 400px; }
+  }
+  @container (min-height: 400px) {
+    #target { width: 20px; }
+  }

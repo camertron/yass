@@ -1,0 +1,8 @@
+
+#container {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 20px;
+  width: 10ch;
+}

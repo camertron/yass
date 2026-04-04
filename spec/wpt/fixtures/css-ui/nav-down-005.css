@@ -1,0 +1,19 @@
+
+    div > a {
+        float: left;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    div {
+        clear: left;
+    }
+
+    #parent {
+        nav-down: #finish;
+    }
+
+    #intermediate {
+        nav-down: #end;
+    }
+

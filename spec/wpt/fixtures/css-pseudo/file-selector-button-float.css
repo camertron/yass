@@ -1,0 +1,7 @@
+
+input {
+  color: transparent;
+}
+input::file-selector-button {
+  float: left;
+}

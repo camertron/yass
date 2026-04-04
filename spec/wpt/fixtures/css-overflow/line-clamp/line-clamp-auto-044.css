@@ -1,0 +1,9 @@
+
+.clamp {
+  line-clamp: auto;
+  max-height: 4lh;
+  background-color: yellow;
+}
+p {
+  margin: 0;
+}

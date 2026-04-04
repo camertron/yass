@@ -1,0 +1,19 @@
+
+#a, #b, #c, #d, #e, #f {
+  position: fixed;
+}
+#margin {
+  margin: 10px;
+}
+#transform {
+  transform: translateX(10px);
+}
+#perspective {
+  perspective: 10px;
+}
+#filter {
+  filter: opacity(25%);
+}
+#contain {
+  contain: paint;
+}

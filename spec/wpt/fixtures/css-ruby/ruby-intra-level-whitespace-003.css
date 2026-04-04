@@ -1,0 +1,17 @@
+
+  rbc::before {
+    display: ruby-base;
+    content: "before";
+  }
+  rbc::after {
+    display: ruby-base;
+    content: " ";
+  }
+  rtc::before {
+    display: ruby-text;
+    content: " ";
+  }
+  rtc::after {
+    display: ruby-text;
+    content: "after";
+  }

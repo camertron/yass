@@ -1,0 +1,14 @@
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 400px;
+    gap: 10px;
+}
+
+img {
+  width: stretch;
+  max-width: 100px;
+  height: auto;
+  display: block;
+}

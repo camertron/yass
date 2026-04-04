@@ -1,0 +1,11 @@
+
+.clamp {
+  line-clamp: auto;
+  max-height: 4lh;
+  width: 500px;
+  background-color: yellow;
+}
+.size-containment {
+  contain: size;
+  text-align: right;
+}

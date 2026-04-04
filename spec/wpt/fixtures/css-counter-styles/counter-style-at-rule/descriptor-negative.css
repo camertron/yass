@@ -1,0 +1,9 @@
+
+  @counter-style a {
+    system: extends decimal;
+    negative: \207B;
+  }
+  @counter-style b {
+    system: extends decimal;
+    negative: '(' ')';
+  }

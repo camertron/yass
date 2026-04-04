@@ -1,0 +1,35 @@
+
+  .containing-block {
+    border: 1px solid black;
+
+    position: relative;
+    width: 500px;
+    height: 200px;
+  }
+
+  .box {
+    /* Can only use anchor-size() with position: absolute */
+    position: absolute;
+    background-color: green;
+    anchor-name: --box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  #box1 {
+    width: 50px;
+    height: 60px;
+  }
+
+  #box2, #box3, #box4, #box5 {
+    width: calc(anchor-size(--box width) + 10px);
+    height: calc(anchor-size(--box height) + 20px);
+  }
+
+  #box2 { left: 60px; }
+  #box3 { left: 130px; }
+  #box4 { left: 210px; }
+  #box5 { left: 300px; }

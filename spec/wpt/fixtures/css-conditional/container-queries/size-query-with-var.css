@@ -1,0 +1,74 @@
+
+  @property --registered {
+    syntax: "<length>";
+    inherits: false;
+    initial-value: 0;
+  }
+  @property --registered-keyword {
+    syntax: "none|fail";
+    inherits: false;
+    initial-value: none;
+  }
+  @property --registered-number {
+    syntax: "<number>";
+    inherits: false;
+    initial-value: 0;
+  }
+  #container {
+    width: 400px;
+    container-type: inline-size;
+    --unregistered: 200px;
+    --unregistered-keyword: fail;
+    --unregistered-number: 200;
+    --unregistered-number-zero: 0;
+    --registered: 200px;
+    --registered-keyword: fail;
+    --registered-number: 200;
+    --registered-number-zero: 0;
+  }
+  #target {
+    --match-zero: no;
+    --match-unknown: no;
+    --match-unknown-fallback: no;
+    --match-unregistered: no;
+    --match-unregistered-keyword: no;
+    --match-unregistered-number: no;
+    --match-unregistered-number-zero: no;
+    --match-registered: no;
+    --match-registered-keyword: no;
+    --match-registered-number: no;
+    --match-registered-number-zero: no;
+  }
+  @container (width > 0) {
+    #target { --match-zero: yes; }
+  }
+  @container (width > var(--unknown)) {
+    #target { --match-unknown: yes; }
+  }
+  @container (width > var(--unknown, 100px)) {
+    #target { --match-unknown-fallback: yes; }
+  }
+  @container (width > var(--unregistered)) {
+    #target { --match-unregistered: yes; }
+  }
+  @container (width > var(--unregistered-keyword)) {
+    #target { --match-unregistered-keyword: yes; }
+  }
+  @container (width > var(--unregistered-number)) {
+    #target { --match-unregistered-number: yes; }
+  }
+  @container (width > var(--unregistered-number-zero)) {
+    #target { --match-unregistered-number-zero: yes; }
+  }
+  @container (width > var(--registered)) {
+    #target { --match-registered: yes; }
+  }
+  @container (width > var(--registered-keyword)) {
+    #target { --match-registered-keyword: yes; }
+  }
+  @container (width > var(--registered-number)) {
+    #target { --match-registered-number: yes; }
+  }
+  @container (width > var(--registered-number-zero)) {
+    #target { --match-registered-number-zero: yes; }
+  }

@@ -1,0 +1,12 @@
+
+.grid {
+  background: green;
+  display: inline-grid;
+  grid-template-rows: 100px;
+}
+.subgrid {
+  width: 100px;
+  display: grid;
+  grid-template-rows: subgrid;
+}
+.w200 { width: 200px }

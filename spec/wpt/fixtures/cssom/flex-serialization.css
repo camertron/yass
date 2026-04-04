@@ -1,0 +1,7 @@
+
+        div { flex: initial; }
+        div { flex: 0; }
+        div { flex: initial; flex-basis: initial; flex-shrink: initial; }
+        div { flex: initial; flex-shrink: 0; }
+        div { flex: initial; flex-basis: 0; flex-shrink: 2;}
+    

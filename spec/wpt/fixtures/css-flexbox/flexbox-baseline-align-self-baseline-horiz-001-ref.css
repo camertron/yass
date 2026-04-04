@@ -1,0 +1,22 @@
+
+    body {
+      margin: 0;
+      font-size: 20px;
+      line-height: 20px;
+    }
+    .flexContainer {
+      display: inline-block;
+      background: lightblue;
+      vertical-align: top;
+    }
+    .hugeAndUnaligned {
+      font-size: 35px;
+      line-height: 35px;
+      vertical-align: top;
+    }
+    .smallFont {
+      font-size: 10px;
+      line-height: 10px;
+    }
+    .flexContainer > * { display: inline; }
+  

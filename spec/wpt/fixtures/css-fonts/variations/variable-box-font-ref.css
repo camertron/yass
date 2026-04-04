@@ -1,0 +1,10 @@
+
+    @font-face {
+    font-family: variabletest_box;
+    src: url(resources/variabletest_box.ttf);
+    }
+
+    body {
+    font-family: variabletest_box, sans-serif;
+    font-size: 200px;
+    }

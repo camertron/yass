@@ -1,0 +1,26 @@
+
+  #container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    border: 2px solid;
+    background: #eee;
+  }
+  #anchor {
+    position: absolute;
+    left: -200px;
+    top: 500px;
+    width: 100px;
+    height: 100px;
+    anchor-name: --anchor;
+    background: blue;
+  }
+  #anchored {
+    position: absolute;
+    align-self: stretch;
+    justify-self: stretch;
+    position-anchor: --anchor;
+    background: #FA08;
+    outline: 1px solid orange;
+  }

@@ -1,0 +1,9 @@
+
+  #target {
+    --green: green;
+    color: var(--green);
+  }
+  #target {
+    color: red;
+    color: revert-rule;
+  }

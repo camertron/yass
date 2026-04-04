@@ -1,0 +1,15 @@
+
+  div {
+    width: 200px;
+    height: 100px;
+    background: red; /* This will show up if the test fails */
+  }
+
+  div::before {
+    content: "A B"; /* Two "words" to become flex items */
+    display: flex;
+    justify-content: space-between; /* Pushes "A" and "B" to the edges */
+    width: 200px;
+    height: 100px;
+    background: green; /* This should cover the red background */
+  }

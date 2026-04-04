@@ -1,0 +1,21 @@
+
+  html {
+    /* Make sure scrollbars are created on body and not propagated to viewport */
+    overflow: scroll;
+  }
+  body {
+    height: 500px;
+    overflow: scroll;
+    container-type: scroll-state;
+  }
+  #target {
+    height: 5000px;
+    --top: no;
+    --bottom: no;
+    @container scroll-state(scrollable: top) {
+      --top: yes;
+    }
+    @container scroll-state(scrollable: bottom) {
+      --bottom: yes;
+    }
+  }

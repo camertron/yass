@@ -1,0 +1,19 @@
+
+  #scroller {
+    overflow: auto;
+    width: 600px;
+    height: 300px;
+    border: 2px solid blue;
+    will-change: scroll-position;
+  }
+
+  #svg {
+    position: relative;
+    top: -300px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .spacer {
+    height: 200vh;
+  }

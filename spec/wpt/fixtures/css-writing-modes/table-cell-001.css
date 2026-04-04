@@ -1,0 +1,19 @@
+
+table, td {
+  padding: 0;
+  border-spacing: 0;
+  font: 20px/20px ahem;
+}
+td { background: green; }
+#t2 { writing-mode: vertical-rl; }
+
+#red {
+  font: 20px/20px ahem;
+  position: absolute;
+  z-index: -1;
+  background: red;
+  height: 4em;
+  width: 5em;
+}
+
+

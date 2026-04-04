@@ -1,0 +1,13 @@
+
+  :root {
+    print-color-adjust: exact;
+    writing-mode: vertical-rl;
+  }
+  body {
+    margin: 0;
+    background: linear-gradient(90deg, lightgray 0%, lightgray 50%, white 50%, white 100%)
+  }
+  @page {
+    size: 800px 600px;
+    margin: 0;
+  }

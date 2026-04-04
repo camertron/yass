@@ -1,0 +1,14 @@
+
+:root {
+  --color: #fff;
+  background: var(--color);
+  color: var(--color);
+}
+div {
+  display: block;
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  background-color: #323232;
+  border: 10px solid var(--color);
+}

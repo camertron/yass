@@ -1,0 +1,19 @@
+
+#reference-overlapped-red {
+    position: absolute;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+}
+
+#flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+img {
+  min-width: 0; /* Disable min-size: auto so we don't have to think about it. */
+  min-height: 100px;
+}

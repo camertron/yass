@@ -1,0 +1,15 @@
+
+    div {
+      width: 100px;
+      height: 200px;
+      line-height: 3em;
+    }
+    .vertical {
+      writing-mode: vertical-lr;
+    }
+    ::highlight(highlight1) {
+      text-underline-offset: 1svb;
+      text-decoration-line: underline;
+      text-decoration-color: green;
+      text-decoration-thickness: 1svi;
+    }

@@ -1,0 +1,9 @@
+
+      #outer {
+        border: 10px solid transparent;
+        width: 64px;
+        height: 128px;
+        background-clip: content-box;
+        background-color: purple;
+      }
+    

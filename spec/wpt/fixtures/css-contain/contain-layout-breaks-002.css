@@ -1,0 +1,27 @@
+
+  article
+    {
+      column-fill: auto; /* columns are filled sequentially */
+      column-gap: 0em;
+      columns: 2 100px; /* 2 columns each 100px wide */
+      float: left; /* to make multi-column element shrink-wrap */
+      height: 400px; /* give more than enough to go wrong */
+    }
+
+  div#yellow-normal
+    {
+      border-top: yellow solid 100px;
+    }
+
+  div#blue-parent
+    {
+      border-top: blue solid 100px;
+      contain: layout;
+    }
+
+  div#orange-child
+    {
+      border-top: orange solid 100px;
+      break-before: column;
+    }
+  

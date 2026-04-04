@@ -1,0 +1,21 @@
+
+body {
+  width: 800px;
+  height: 600px;
+}
+
+.green {
+  background: green;
+}
+
+.blue {
+  background: blue;
+}
+
+.inner {
+  height: 200px;
+}
+
+.small {
+  height: 100px;
+}

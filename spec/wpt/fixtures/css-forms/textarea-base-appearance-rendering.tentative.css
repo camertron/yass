@@ -1,0 +1,12 @@
+
+body {
+  font-family: monospace;
+  background-color: black;
+  color: green;
+}
+textarea {
+  /* Without setting the width, we would be relying on intrinsic sizing which
+   * is not specified or interoperable. */
+  width: 150px;
+  height: 40px;
+}

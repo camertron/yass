@@ -1,0 +1,10 @@
+
+.reftest-wait rt {
+  background-color: red;
+}
+ruby {
+  position: relative;
+}
+p {
+  position: relative;
+}

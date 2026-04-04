@@ -1,0 +1,18 @@
+
+      div {
+        margin: 2px;
+      }
+      .div1::before {
+        content: cross-fade(
+          75% url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400' style='background: black'><rect fill='red' width='150' height='150'/></svg>"),
+          25% url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='200' style='background: black'><rect fill='blue' width='150' height='150'/></svg>")
+        );
+      }
+      .div2::before {
+        content: cross-fade(
+          37.5% url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='400' style='background: black'><rect fill='red' width='150' height='150'/></svg>"),
+          12.5% url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='200' style='background: black'><rect fill='blue' width='150' height='150'/></svg>"),
+          green
+        );
+      }
+    

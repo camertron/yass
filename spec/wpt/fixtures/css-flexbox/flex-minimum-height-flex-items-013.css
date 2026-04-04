@@ -1,0 +1,24 @@
+
+.outer {
+  display: flex;
+  flex-direction: column;
+  height: 20px;
+  width: 100px;
+  background: red;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  background: green;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.tall {
+  width: 50px;
+  height: 100px;
+}

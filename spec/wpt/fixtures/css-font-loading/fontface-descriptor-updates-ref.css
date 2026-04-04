@@ -1,0 +1,5 @@
+
+@font-face { font-family: test; src: url(resources/GenR102.woff2); }
+@font-face { font-family: test; font-style:italic; src: url(resources/GenI102.woff2); }
+body { font-family: sans-serif; }
+.test { font-family: test, sans-serif; }

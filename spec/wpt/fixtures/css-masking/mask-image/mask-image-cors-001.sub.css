@@ -1,0 +1,10 @@
+
+  /* Zero out the margin in the outer document, so that the iframe's inner
+     document is rendered directly at the top-left corner. (This makes the
+     reference case slightly simpler.) */
+  body { margin: 0; }
+  iframe {
+    border: none;
+    height: 400px;
+    width: 400px;
+  }

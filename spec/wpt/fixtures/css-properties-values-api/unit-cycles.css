@@ -1,0 +1,46 @@
+
+    :root {
+        --unregistered-em: 10em;
+        --unregistered-rem: 10rem;
+        --unregistered-ex: 10ex;
+        --unregistered-ch: 10ch;
+        --unregistered-lh: 10lh;
+        --unregistered-em-env: calc(10em + env(test, 0px));
+        --unregistered-rem-env: calc(10rem + env(test, 0px));
+        --unregistered-ex-env: calc(10ex + env(test, 0px));
+        --unregistered-ch-env: calc(10ch + env(test, 0px));
+        --unregistered-lh-env: calc(10lh + env(test, 0px));
+    }
+
+    :root, #target {
+        --font-size-em: 2em;
+        --font-size-rem: 2rem;
+        --font-size-ex: 2ex;
+        --font-size-ch: 2ch;
+        --font-size-px: 42px;
+        --font-size-lh: 2lh;
+        --line-height-lh: 2lh;
+        --font-size-em-via-var: var(--unregistered-em);
+        --font-size-rem-via-var: var(--unregistered-rem);
+        --font-size-ex-via-var: var(--unregistered-ex);
+        --font-size-ch-via-var: var(--unregistered-ch);
+        --line-height-lh-via-var: var(--unregistered-lh);
+        --font-size-em-universal: 2em;
+        --font-size-rem-universal: 2rem;
+        --font-size-ex-universal: 2ex;
+        --font-size-ch-universal: 2ch;
+        --font-size-px-universal: 42px;
+        --font-size-lh-universal: 2lh;
+    }
+
+    #parent {
+        --font-size-em-inherited: 4em;
+        --font-size-ex-inherited: 4ex;
+        --font-size-ch-inherited: 4ch;
+        --line-height-lh-inherited: 4lh;
+    }
+
+    #target {
+        font-size: 11px;
+        line-height: 13px;
+    }

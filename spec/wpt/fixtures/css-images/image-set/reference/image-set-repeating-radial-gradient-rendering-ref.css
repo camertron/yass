@@ -1,0 +1,6 @@
+
+  #test {
+    width: 100px;
+    height: 100px;
+    background: repeating-radial-gradient(red, blue 25%);
+  }

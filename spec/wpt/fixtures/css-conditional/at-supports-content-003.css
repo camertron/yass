@@ -1,0 +1,29 @@
+
+		div {
+			background: red;
+			width: 100px;
+			height: 100px;
+			animation: green 4s both;
+		}
+
+		@supports (color: blue) {
+			@keyframes green {
+				from {
+					background: green;
+				}
+				to {
+					background: green;
+				}
+			}
+		}
+		@supports not (color: blue) {
+			@keyframes green {
+				from {
+					background: red;
+				}
+				to {
+					background: red;
+				}
+			}
+		}
+	

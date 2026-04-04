@@ -1,0 +1,6 @@
+
+p {
+  color: green;
+  --a: red;
+  color: var(--a) !important !important;
+}

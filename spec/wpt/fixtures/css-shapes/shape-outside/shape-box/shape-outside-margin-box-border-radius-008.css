@@ -1,0 +1,31 @@
+
+  .bfc {
+    width: 200px;
+    line-height: 0;
+    direction: rtl;
+  }
+
+  .container {
+    direction: ltr;
+    unicode-bidi: bidi-override;
+  }
+
+  .shape {
+    float: right;
+    shape-outside: margin-box;
+    border-top-left-radius: 50%;
+    box-sizing: content-box;
+    height: 20px;
+    width: 20px;
+    padding: 20px;
+    border: 20px solid lightgreen;
+    margin: 10px;
+    background-color: orange;
+  }
+
+  .box {
+    display: inline-block;
+    width: 60px;
+    background-color: blue;
+  }
+  

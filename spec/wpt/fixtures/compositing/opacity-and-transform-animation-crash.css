@@ -1,0 +1,10 @@
+
+  @keyframes anim {
+    from {
+      opacity: 0.99;
+    }
+    to {
+      opacity: 0.9;
+      transform: scale(1, 1);
+    }
+  }

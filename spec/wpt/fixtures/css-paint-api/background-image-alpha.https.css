@@ -1,0 +1,18 @@
+
+.container {
+  width: 100px;
+  height: 100px;
+}
+
+#canvas-opaque {
+  background-image: paint(opaque);
+}
+
+#canvas-nonopaque {
+  background-image: paint(nonOpaque);
+}
+
+#background {
+  background-color: yellow;
+  display: inline-block;
+}

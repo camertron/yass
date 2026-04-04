@@ -1,0 +1,11 @@
+
+  html
+    {
+      writing-mode: vertical-lr;
+    }
+
+  div
+    {
+      text-orientation: upright;
+    }
+  

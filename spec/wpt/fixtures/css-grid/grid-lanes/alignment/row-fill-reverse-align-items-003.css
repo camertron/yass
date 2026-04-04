@@ -1,0 +1,23 @@
+
+    html, body {
+      font: 16px/1 monospace;
+      background: white;
+    }
+
+    .grid-lanes {
+      display: grid-lanes;
+      grid-lanes-direction: row fill-reverse;
+      grid-template-rows: repeat(2, 80px);
+      border: 1px solid blue;
+      gap: 4px;
+      height: min-content;
+      width: 180px;
+    }
+
+    item {
+      display: block;
+      width: min-content;
+      color: white;
+      background: #555;
+    }
+  

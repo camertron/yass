@@ -1,0 +1,11 @@
+
+.clamp {
+  width: 10.1ch;
+  max-height: 80px;
+  font: 16px / 32px monospace;
+  background-color: yellow;
+  padding: 4px;
+  line-clamp: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,17 @@
+
+.wrapper {
+  width: 100px;
+  background: green;
+}
+.float {
+  float: right;
+  width: 50px;
+  height: 50px;
+  background: green;
+}
+.bfc {
+  overflow: hidden;
+  width: 100px;
+  height: 50px;
+  background: green;
+}

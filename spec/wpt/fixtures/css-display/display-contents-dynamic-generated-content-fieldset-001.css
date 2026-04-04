@@ -1,0 +1,9 @@
+
+.after::after {
+  content: "FAIL";
+  color: red;
+}
+div {
+  display: contents;
+  border: 10px solid red;
+}

@@ -1,0 +1,11 @@
+
+#container {
+  writing-mode: vertical-rl;
+  font-size: 20px;
+}
+.upright {
+  text-orientation: upright;
+}
+.no-autospace {
+  text-autospace: no-autospace;
+}

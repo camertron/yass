@@ -1,0 +1,8 @@
+
+  #container {
+    container-type: inline-size;
+    width: 10px;
+  }
+  #target {
+    font-size: 40px;
+  }

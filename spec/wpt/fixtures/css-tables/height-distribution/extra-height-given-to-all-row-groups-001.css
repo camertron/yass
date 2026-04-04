@@ -1,0 +1,17 @@
+
+table {
+  background: green;
+  border-collapse:collapse;
+}
+
+td {
+  padding:0px;
+}
+
+#redSquare {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  position: absolute;
+  z-index: -1;
+}

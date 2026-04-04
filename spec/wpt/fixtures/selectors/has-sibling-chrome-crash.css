@@ -1,0 +1,5 @@
+
+  :has(> :where(label:first-child + [a="a"]:only-of-type,
+    [a="a"]:only-of-type + label:last-child)) label:last-child {
+      margin-inline: 1em;
+  }

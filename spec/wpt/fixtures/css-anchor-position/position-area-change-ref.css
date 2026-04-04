@@ -1,0 +1,21 @@
+
+  body, html {
+    margin: 0;
+    padding: 0;
+  }
+  .spacer {
+    height: 300px;
+  }
+  #anchor {
+    background: yellow;
+    width: 100px;
+    height: 50px;
+  }
+  #anchored {
+    position: absolute;
+    top: 350px;
+    left: 0;
+    background: green;
+    width: 100px;
+    height: 50px;
+  }

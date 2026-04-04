@@ -1,0 +1,14 @@
+
+  :root { font-size: 10px; }
+
+  /* To make output more readable */
+  :root > * { font-size: initial; }
+
+  #container {
+    container-type: size;
+    width: 200px;
+    height: 50px;
+  }
+  @container (width = calc(100px + 10rem)) {
+    #target { color: green; }
+  }

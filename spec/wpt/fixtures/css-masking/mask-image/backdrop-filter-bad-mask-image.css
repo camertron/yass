@@ -1,0 +1,15 @@
+
+  .backdrop-filter {
+    backdrop-filter: invert(1);
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .bad-mask {
+    /* This invalid mask-image should fully-mask this element. */
+    mask-image: url("invalid://nonexistent");
+  }
+
+  .double-mask {
+    /* Multiple invalid mask layers: all invalid, element should be fully masked. */
+    mask-image: url("invalid://nonexistent"), url("invalid://nonexistent");
+  }

@@ -1,0 +1,8 @@
+
+  #ref1, #ref2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin: 100px;
+    box-shadow: 0 0 10px 0 black;
+  }

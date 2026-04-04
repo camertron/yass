@@ -1,0 +1,10 @@
+
+    body {
+        overflow: hidden;
+        image-orientation: none;
+    }
+    div {
+        display: inline-block;
+        width: 100px;
+        vertical-align: top;
+    }

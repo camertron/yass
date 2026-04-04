@@ -1,0 +1,7 @@
+
+.grid {
+    display: grid;
+    flow-tolerance: 0;
+    grid-template-columns: repeat(4, 50px);
+    padding: 10px;
+}

@@ -1,0 +1,12 @@
+
+.v-rl {
+  writing-mode: vertical-rl;
+  width: 200px;
+}
+span {
+  -webkit-text-combine: horizontal; /*testing the layout text-combine, not it's support in general*/
+  text-combine-upright: all;
+  white-space: pre;
+}
+#test { color: blue; }
+#ref { color: orange; }

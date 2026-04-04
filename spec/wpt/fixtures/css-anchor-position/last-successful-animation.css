@@ -1,0 +1,34 @@
+
+  #container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: teal;
+  }
+
+  #anchor {
+    position: relative;
+    top: 100px;
+    left: 100px;
+    width: 100px;
+    height: 100px;
+    background: red;
+    anchor-name: --a;
+  }
+
+  /* Dummy animation keyframe */
+  @keyframes anime {
+    from { background: #000000; }
+    to { background: #ffffff; }
+  }
+
+  #anchored {
+    position-anchor: --a;
+    position-try-fallbacks: flip-block;
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    position-area: top center;
+    background: lime;
+    animation: anime 1s linear;
+  }

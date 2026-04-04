@@ -1,0 +1,30 @@
+
+  body { margin: 100px; }
+  .outer {
+    width: 100px;
+    height: 100px;
+    background: grey;
+    overflow: clip;
+    border-shape: circle(50% at 50% 50%);
+    border: 10px solid purple;
+    display: inline-block;
+    margin-right: 200px;
+    vertical-align: top;
+  }
+  .target {
+    width: 200px;
+    height: 200px;
+    background: rgba(0, 255, 0, 0.5);
+    position: relative;
+    left: -50px;
+    top: -50px;
+  }
+  #border-box-ref {
+    overflow-clip-margin: 20px border-box;
+  }
+  #padding-box-ref {
+    overflow-clip-margin: 20px padding-box;
+  }
+  #padding-box-ref-outside {
+    overflow-clip-margin: 20px padding-box;
+  }

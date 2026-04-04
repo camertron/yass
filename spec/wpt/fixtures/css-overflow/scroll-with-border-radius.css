@@ -1,0 +1,14 @@
+
+  #scroller {
+    border-radius: 100px;
+    overflow: auto;
+    width: 300px;
+    height: 300px;
+    border: 2px solid blue;
+    will-change: scroll-position;
+  }
+
+  .spacer {
+    height: 200vh;
+  }
+

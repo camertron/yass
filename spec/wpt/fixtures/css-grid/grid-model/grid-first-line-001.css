@@ -1,0 +1,9 @@
+
+  .grid {
+    display: grid;
+    color: green;
+  }
+
+  .grid::first-line {
+    color: red;
+  }

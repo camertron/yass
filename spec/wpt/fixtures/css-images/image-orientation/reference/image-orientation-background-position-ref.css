@@ -1,0 +1,25 @@
+
+    .exif-2 {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 50px;
+        height: 50PX;
+        background-color: grey;
+        background-image: url(../support/exif-orientation-2-ur-pre-rotated.jpg);
+        background-repeat: no-repeat;
+        background-position: -30px -20px;
+    }
+
+    .exif-6 {
+        position: absolute;
+        top: 10px;
+        left: 70px;
+        width: 50px;
+        height: 50PX;
+        background-color: grey;
+        background-image: url(../support/exif-orientation-6-ru-pre-rotated.jpg);
+        background-repeat: no-repeat;
+        background-position: -20px -30px;
+    }
+

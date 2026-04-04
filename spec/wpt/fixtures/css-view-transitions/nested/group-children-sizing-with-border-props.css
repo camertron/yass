@@ -1,0 +1,41 @@
+
+#clipper {
+  view-transition-group: contain;
+  view-transition-name: clipper;
+
+  border-width: 5px 10px 15px 20px;
+  border-radius: 0px 60px 50px 70px;
+  corner-shape: squircle;
+  border-style: solid;
+  border-color: green;
+
+  height: 200px;
+  width: 200px;
+}
+
+.item {
+  view-transition-name: match-element;
+  background: blue;
+  position: relative;
+  top: -25px;
+  left: -10px;
+
+  height: 50px;
+  width: 250px;
+  margin: 1px;
+  border: 1px solid black;
+}
+
+.item.popout {
+  view-transition-group: none;
+}
+
+::view-transition-group(*),
+::view-transition-old(*),
+::view-transition-new(*) {
+  animation-play-state: paused;
+}
+
+::view-transition-group-children(clipper) {
+  overflow: clip;
+}

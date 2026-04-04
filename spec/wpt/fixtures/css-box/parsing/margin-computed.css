@@ -1,0 +1,8 @@
+
+  #parent {
+    width: 200px;
+  }
+  #target {
+    width: 0px;
+    font-size: 40px;
+  }

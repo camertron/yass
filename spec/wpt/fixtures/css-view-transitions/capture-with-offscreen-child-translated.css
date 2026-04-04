@@ -1,0 +1,38 @@
+
+.target {
+  width: 100px;
+  height: 100px;
+  view-transition-name: target;
+  background: blue;
+}
+.invisible {
+  position: absolute;
+  top: -100px;
+  width: 50px;
+  height: 50px;
+  background: green;
+}
+
+::view-transition-group(target) {
+  animation: unset;
+  top: 200px;
+}
+
+::view-transition-group(root) {
+  visibility: hidden;
+  animation-duration: 500s;
+}
+
+::view-transition-old(*) {
+  animation: unset;
+  opacity: 1;
+}
+
+::view-transition-new(*) {
+  animation: unset;
+  opacity: 0;
+}
+
+::view-transition {
+  background: pink;
+}

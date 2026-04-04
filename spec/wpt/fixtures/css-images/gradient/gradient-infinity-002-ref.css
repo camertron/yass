@@ -1,0 +1,13 @@
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.box > div {
+  width: 100px;
+  height: 100px;
+  border: solid 1px black;
+  padding: 1px;
+  background-color: lime;
+}

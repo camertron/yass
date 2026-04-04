@@ -1,0 +1,9 @@
+
+  .container {
+    font: 100px/1 Ahem;
+    line-height: 100px;
+  }
+  .container > span {
+    clip-path: circle(50%);
+    color: green;
+  }

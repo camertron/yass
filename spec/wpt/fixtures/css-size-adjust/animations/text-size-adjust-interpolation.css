@@ -1,0 +1,17 @@
+
+.container {
+    display: inline-block;
+}
+
+.parent {
+    text-size-adjust: 70%;
+}
+
+.target {
+    text-size-adjust: 60%;
+}
+
+.expected {
+  color: green;
+  margin-right: 30px;
+}

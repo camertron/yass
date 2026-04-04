@@ -1,0 +1,14 @@
+
+#contain-paint {
+  contain: paint;
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+#child {
+  background: green;
+  box-shadow: 0 0 100px 100px red;
+  width: 100px;
+  height: 100px;
+}

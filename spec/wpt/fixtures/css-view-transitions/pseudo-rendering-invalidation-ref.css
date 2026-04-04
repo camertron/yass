@@ -1,0 +1,19 @@
+
+:root {
+  background-color: limegreen;
+}
+
+div {
+  position: absolute;
+  left: 0px;
+  top: 600px;
+  width: 100px;
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  background: darkseagreen;
+}

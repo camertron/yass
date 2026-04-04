@@ -1,0 +1,14 @@
+
+.container {
+  font-size: 20px;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.contain-layout {
+  display: block;
+  contain: layout;
+  color: transparent;
+}

@@ -1,0 +1,24 @@
+
+.wrapper {
+  height: 110px;
+}
+.wrapper > * {
+  contain: layout;
+  background: cyan;
+  font-size: 20px;
+  vertical-align: baseline;
+}
+.wrapper > :nth-child(1) {
+  background: magenta;
+}
+.inline-block {
+  display: inline-block;
+}
+canvas {
+  width: 100px;
+  height: 100px;
+}
+fieldset, details {
+  display: inline-block;
+  width: max-content;
+}

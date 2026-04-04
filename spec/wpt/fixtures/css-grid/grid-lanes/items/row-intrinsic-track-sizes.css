@@ -1,0 +1,14 @@
+
+#grid-lanes {
+  display: grid-lanes;
+  width: 120px;
+  height: 120px;
+  border: solid;
+  font: 10px/1 Ahem;
+}
+#item {
+  background: blue;
+  /* make min-content contribution differ from minimum contribution */
+  min-width: 12px;
+  min-height: 12px;
+}

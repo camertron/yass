@@ -1,0 +1,71 @@
+
+  @import url("/fonts/ahem.css");
+  :root { font-family: 'Ahem'; font-size: 10px; line-height: 10px; }
+  #log { font-family: sans-serif; }
+  #em_container {
+    container-type: inline-size;
+    width: 100px;
+    font-size: 100px;
+  }
+  #ex_container {
+    container-type: inline-size;
+    font-size: 50px;
+    width: 10ex;
+    height: 50rex;
+  }
+  #cap_container {
+    container-type: inline-size;
+    font-size: 50px;
+    width: 10cap;
+  }
+  #ch_container {
+    container-type: inline-size;
+    font-size: 50px;
+    width: 10ch;
+  }
+  #ic_container {
+    container-type: inline-size;
+    font-size: 50px;
+    width: 10ic;
+  }
+  #lh_container {
+    container-type: inline-size;
+    line-height: 50px;
+    width: 10lh;
+  }
+  @container (width: 1em) {
+    #em_test { color: green }
+  }
+  @container (width: 10rem) {
+    #rem_test { color: green }
+  }
+  @container (width: 10cap) {
+    #cap_test { color: green }
+  }
+  @container (width: 50rcap) {
+    #rcap_test { color: green }
+  }
+  @container (width: 10ex) {
+    #ex_test { color: green }
+  }
+  @container (width: 50rex) {
+    #rex_test { color: green }
+  }
+  @container (width: 10ch) {
+    #ch_test { color: green }
+  }
+  @container (width: 50rch) {
+    #rch_test { color: green }
+  }
+  @container (width: 10ic) {
+    #ic_test { color: green }
+  }
+  @container (width: 50ric) {
+    #ric_test { color: green }
+  }
+  @container (width: 10lh) {
+    #lh_test { color: green }
+  }
+  @container (width: 50rlh) {
+    #rlh_test { color: green }
+  }

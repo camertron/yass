@@ -1,0 +1,19 @@
+
+    body { overflow: hidden; }
+    .flexbox {
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: flex-start;
+        width: 100px;
+        height: 100px;
+        background: red;
+    }
+    .grid {
+        display: grid;
+        align-items: baseline;
+    }
+    .gridItem {
+        background: green;
+        height: 100px;
+        writing-mode: vertical-lr;
+    }

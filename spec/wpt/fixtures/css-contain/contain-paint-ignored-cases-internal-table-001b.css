@@ -1,0 +1,15 @@
+
+      tbody {
+        contain: paint;
+        z-index: 10;
+      }
+      th {
+        background-color: blue;
+        padding-left: 50px;
+      }
+      caption {
+        position: fixed;
+        background-color: yellow;
+        z-index: 2;
+      }
+    

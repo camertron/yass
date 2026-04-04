@@ -1,0 +1,23 @@
+
+#container {
+  font-family: monospace;
+  font-size: 20px;
+  hyphens: auto;
+}
+
+#container > div {
+  border: 1px solid blue;
+}
+
+#container > div > div {
+  border: 1px solid gray;
+}
+
+span.wrapper {
+  white-space: pre;
+}
+
+.float {
+  float: right;
+  margin-right: -100px;
+}

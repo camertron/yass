@@ -1,0 +1,17 @@
+
+    @font-face {
+        font-family: "Lato-Medium";
+        src: url(/fonts/Lato-Medium.ttf);
+    }
+    @supports not (font-synthesis-style: none) {
+        .test {color: red;}
+    }
+    .test {
+        font-family: "Lato-Medium";
+        font-size: 3em;
+        font-kerning: none;
+    }
+    p.nosynth::first-letter {
+        font-style: italic;
+        font-synthesis-style: none;
+    }

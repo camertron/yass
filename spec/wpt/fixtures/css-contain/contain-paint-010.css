@@ -1,0 +1,16 @@
+
+#contain-paint {
+  contain: paint;
+  width: 100px;
+  height: 50px;
+  background: red;
+}
+
+#fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: green;
+  width: 100px;
+  height: 50px;
+}

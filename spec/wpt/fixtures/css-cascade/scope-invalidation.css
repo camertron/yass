@@ -1,0 +1,173 @@
+
+  main * {
+    background-color: black;
+  }
+
+
+    @scope (.a) {
+      span { background-color: green; }
+    }
+  
+
+    @scope (.a, .b) {
+      span { background-color: green; }
+    }
+  
+
+    @scope (.a) {
+      :scope { background-color: green; }
+    }
+  
+
+    @scope (.a) to (.b) {
+      span { background-color: green; }
+    }
+  
+
+    @scope (.a) to (.b, .c) {
+      span { background-color: green; }
+    }
+  
+
+    @scope (.a) to (.b) {
+      span { background-color: green; }
+    }
+  
+
+    @scope (.a) to (.b .c) {
+      span { background-color: green; }
+    }
+  
+
+    @scope (.a) to (.b ~ .c) {
+      span { background-color: green; }
+    }
+  
+
+    @scope (.a) {
+      @scope (.b) {
+        span { background-color: green; }
+      }
+    }
+  
+
+    @scope (.a) {
+      :scope { background-color:green; }
+    }
+  
+
+    @scope (.a:has(.c)) {
+      .b { background-color:green; }
+    }
+  
+
+    @scope (.a:has(.c)) {
+      :scope { background-color:green; }
+    }
+  
+
+    @scope (.a:has(.c)) {
+      :scope { background-color:green; }
+      :scope .b { background-color:green; }
+    }
+  
+
+    @scope (.a) to (.b:has(.c)) {
+      .b { background-color:green; }
+    }
+  
+
+    @scope (.a) {
+      .b ~ :scope { background-color:green; }
+    }
+  
+
+    @scope (.a ~ .b) {
+      .c { background-color:green; }
+    }
+  
+
+    @scope (.a + .b) {
+      .c { background-color:green; }
+    }
+  
+
+    @scope (.root) {
+      :not(:scope) { background-color:green; }
+    }
+  
+
+    @scope (.root) {
+      :not(:scope) > .a { background-color:green; }
+    }
+  
+
+    @scope (.root) to (:not(:scope)) {
+      :is(div, :scope) { background-color: green; }
+    }
+  
+
+    @scope (.root) to (:not(:scope) > .a) {
+      :is(div, :scope) { background-color: green; }
+    }
+  
+
+    @scope (:nth-child(2n of .a)) {
+      :scope { background-color: green; }
+    }
+  
+
+    @scope (#wrapper) to (:nth-child(4n of .a)) {
+      div { background-color: green; }
+    }
+  
+
+    @scope (.a) {
+      .nomatch { background-color: green; }
+    }
+  
+
+    @scope (.a) {
+      .nomatch { background-color: green; }
+    }
+  
+
+    .a {
+      > .b, > .c {
+        background-color: green; /* Specificity: (0, 2, 0) */
+      }
+    }
+    @scope (.a.a) {
+      .nomatch1 {
+        background-color: red; /* Specificity: (0, 1, 0) */
+      }
+      .nomatch2 {
+        background-color: red; /* Specificity: (0, 1, 0) */
+      }
+    }
+  
+
+    @scope (.a .b) {
+      @scope(.c .d, .e .f) {
+        .g {
+          background-color: green;
+        }
+      }
+    }
+  
+
+    @scope (.a) to (.b .c) {
+      :scope .d .f{
+        background-color: green;
+      }
+    }
+    
+
+        @scope(.a) {
+          @scope {
+            @scope(> .b) {
+              :scope { background: green; }
+            }
+          }
+        }
+      

@@ -1,0 +1,15 @@
+
+  body > div {
+    border: solid silver;
+    float: left;
+    margin: 1em;
+    border-inline-start-color: orange;
+    border-block-start-color: aqua;
+    border-inline-end-color: lime;
+    border-block-end-color: yellow;
+  }
+  colgroup:first-child { background: fuchsia; }
+  col:last-child { background: purple; }
+  .flex { display: flex; }
+  .grid { grid-template-columns: auto auto }
+  hr { clear: both }

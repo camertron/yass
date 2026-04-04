@@ -1,0 +1,17 @@
+
+  body {
+    writing-mode: vertical-rl;
+  }
+
+  section {
+    background-color: green;
+    block-size: 100px;
+    display: flex;
+  }
+  section > div{
+    background-color: grey;
+    flex: 1 1 auto;
+  }
+  section > div:not(:first-child) {
+    margin-inline-start: 20px;
+  }

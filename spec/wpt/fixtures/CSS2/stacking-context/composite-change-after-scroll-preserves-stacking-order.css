@@ -1,0 +1,11 @@
+
+    #one, #two {
+        width: 200px; height: 200px; background: lightblue; position: relative
+    }
+    #one {
+        background: lightblue
+    }
+    #two {
+        background: lightgray;
+        margin-top: -200px;
+    }

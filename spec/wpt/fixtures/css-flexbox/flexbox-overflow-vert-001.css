@@ -1,0 +1,23 @@
+
+    .flexContainer {
+      background: purple;
+      display: flex;
+      flex-direction: column;
+      width: 70px;
+      height: 70px;
+      margin-bottom: 5px;
+    }
+    .bigItem {
+      background: blue;
+      width: 200px;
+      flex: 3;
+    }
+    .smallItem {
+      background: teal;
+      margin-right: 10px;
+      flex: 1;
+    }
+    .scroll { overflow: scroll }
+    .auto   { overflow: auto   }
+    .hidden { overflow: hidden }
+  

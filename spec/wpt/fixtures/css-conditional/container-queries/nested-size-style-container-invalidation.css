@@ -1,0 +1,16 @@
+
+  #container {
+    container-type: size;
+    width: 1000px;
+  }
+  #container.narrow {
+    width: 600px;
+  }
+  #target {
+    color: red;
+  }
+  @container (width < 800px) {
+    @container style(--foo: bar) {
+      #target { color: green; }
+    }
+  }

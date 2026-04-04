@@ -1,0 +1,23 @@
+
+.clamp {
+  font-size: 10px;
+  line-clamp: "abcdefghi";
+  font-family: monospace;
+  width: 49.1ch;
+  line-height: 1;
+  max-height: 120px;
+  text-wrap: balance;
+  color: red;
+  background: red;
+
+}
+b {
+    font-weight: normal;
+    font-size: 3em;
+}
+aside {
+    position: absolute;
+    width: 600px;
+    height: 120px;
+    background: white;
+}

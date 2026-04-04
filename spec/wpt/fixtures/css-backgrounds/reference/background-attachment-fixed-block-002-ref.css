@@ -1,0 +1,29 @@
+
+  body
+    {
+      height: 50vh;
+      margin: 0px;
+    }
+
+  div#filler-before
+    {
+      height: 100vh;
+    }
+
+  div#lime
+    {
+      background-color: lime;
+      height: 25vh;
+     }
+
+  div#purple
+    {
+      background-color: purple;
+      height: 25vh;
+    }
+
+  div#filler-after
+    {
+      height: 50vh;
+    }
+  

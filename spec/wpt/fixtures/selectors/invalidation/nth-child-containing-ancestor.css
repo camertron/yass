@@ -1,0 +1,4 @@
+
+  div:nth-child(odd of .a .b) {
+    color: green;
+  }

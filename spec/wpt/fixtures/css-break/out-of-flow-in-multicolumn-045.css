@@ -1,0 +1,20 @@
+
+  .multicol {
+    column-count: 2;
+    column-fill: auto;
+    column-gap: 0px;
+    height: 100px;
+    width: 100px;
+    margin-left: -110px;
+    margin-top: -100px;
+  }
+  .rel {
+    position: relative;
+    height: 200px;
+  }
+  .abs {
+    position: absolute;
+    width: 50px;
+    height: 200px;
+    background: green;
+  }

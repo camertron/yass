@@ -1,0 +1,15 @@
+
+.parent {
+  margin-left: 40px;
+  right: 30px;
+}
+.target {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  right: 10px;
+}
+.expected {
+  background-color: green;
+}

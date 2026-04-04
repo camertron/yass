@@ -1,0 +1,46 @@
+
+  .color-transition {
+    transition: color 100s steps(2, start);
+  }
+
+  @starting-style {
+    #t1 { color: red; }
+  }
+  #t1 { color: green; }
+
+  @starting-style {
+    div#t2 { color: lime; }
+  }
+  #t2 { color: green; }
+
+  #t3 { color: green; }
+  @starting-style {
+    #t3 { color: red; }
+  }
+  #t3 > div { color: green; }
+
+  #t4 { color: green; }
+  #t4[hidden] { color: red; }
+  #t4 > div { color: lime; }
+  @starting-style {
+    #t4 > div { color: inherit; }
+  }
+
+  #t5 { color: green; }
+  @starting-style {
+    #t5 { color: black; }
+  }
+  #t5 > div { color: lime; }
+  @starting-style {
+    #t5 > div { color: inherit; }
+  }
+
+  #t6 { color: green; }
+  @starting-style {
+    #t6 { color: black; }
+  }
+  #t6 .color-transition { color: lime; }
+  @starting-style {
+    #t6 .color-transition { color: inherit; }
+  }
+

@@ -1,0 +1,25 @@
+
+        body {
+            margin: 0;
+        }
+        .green, .blue {
+            position: absolute;
+            top: 70px;
+        }
+        .left-rect {
+            left: 10px;
+        }
+        .right-rect {
+            width: 50px;
+            height: 100px;
+            left: 70px;
+            background: rgb(0,100,0);
+        }
+        .blue {
+            width: 2px;
+            height: 100px;
+            background-color: blue;
+        }
+        .left-line { left: 65px; }
+        .right-line { left: 125px }
+    

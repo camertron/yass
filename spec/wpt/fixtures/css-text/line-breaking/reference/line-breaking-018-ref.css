@@ -1,0 +1,10 @@
+
+.outer { float: left; padding: 0 1em; margin: 1em; border: 1px solid silver; }
+
+.outer div { font-family: monospace; line-height: 2; margin: 1em 0; border: 1px dotted silver; }
+
+.test20 div { width: 20ch; }
+.test27 div { width: 27ch; }
+.test30 div { width: 30ch; }
+
+b { color: blue; border-left: 2px solid red; border-right: 2px solid green; }

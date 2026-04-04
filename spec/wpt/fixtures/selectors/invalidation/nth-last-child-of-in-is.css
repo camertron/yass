@@ -1,0 +1,4 @@
+
+  p:is(:nth-last-child(even of .c)) {
+    color: green;
+  }

@@ -1,0 +1,12 @@
+
+.list {
+  counter-reset: reversed(foo);
+}
+.item::before {
+  counter-increment: foo -1;
+  content: "B" counter(foo);
+}
+.item::after {
+  counter-increment: foo -2;
+  content: "A" counter(foo);
+}

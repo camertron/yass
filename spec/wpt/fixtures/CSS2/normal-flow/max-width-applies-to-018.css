@@ -1,0 +1,8 @@
+
+.float {
+  float: left;
+  height: 100px;
+  width: 200px;
+  max-width: 100px;
+  background: green;
+}

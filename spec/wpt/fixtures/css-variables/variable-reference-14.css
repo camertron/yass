@@ -1,0 +1,9 @@
+
+#a {
+  --a: green !important;
+}
+p {
+  color: red;
+  --a: crimson;
+  color: var(--a);
+}

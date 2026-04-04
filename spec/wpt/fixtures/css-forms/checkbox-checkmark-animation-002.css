@@ -1,0 +1,12 @@
+
+input {
+  all: unset;
+  appearance: base;
+}
+input::checkmark {
+  all: unset;
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+}

@@ -1,0 +1,11 @@
+
+rt {
+  display: ruby-text;
+  contain: layout;
+  background: white;
+  overflow: hidden;
+}
+span {
+  position: relative;
+  z-index: -1;
+}

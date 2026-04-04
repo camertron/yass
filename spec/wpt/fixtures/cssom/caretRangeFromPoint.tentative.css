@@ -1,0 +1,9 @@
+
+  div {
+    display: inline-block;
+    font-family: monospace;
+  }
+  canvas {
+    display: block;
+    background: green;
+  };

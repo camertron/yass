@@ -1,0 +1,10 @@
+
+.square {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+.item:not(:has(~ .item > :nth-child(2))) {
+  background: green;
+}

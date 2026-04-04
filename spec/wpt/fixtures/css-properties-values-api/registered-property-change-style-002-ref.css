@@ -1,0 +1,11 @@
+
+      .failure {
+          background: pink;
+      }
+      #visibility {
+          visibility: hidden;
+      }
+      #display {
+          display: none;
+      }
+    

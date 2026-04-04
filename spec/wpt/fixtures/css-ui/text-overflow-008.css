@@ -1,0 +1,8 @@
+
+.test {
+  font: 100px/1 Ahem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 0.5em;
+  color: red;
+}

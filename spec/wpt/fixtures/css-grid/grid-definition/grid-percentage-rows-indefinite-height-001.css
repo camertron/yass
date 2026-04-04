@@ -1,0 +1,14 @@
+
+.grid {
+  position: relative;
+  font: 25px/1 Ahem;
+  margin: 50px 0;
+}
+
+.border {
+  border: 10px solid;
+}
+
+.padding {
+  padding: 5px;
+}

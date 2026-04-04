@@ -1,0 +1,24 @@
+
+  div#red-overlapped-test
+    {
+      background-color: red;
+      contain: paint;
+      height: 50px;
+      padding: 25px 0px;
+      width: 100px;
+    }
+
+  img
+    {
+      vertical-align: bottom;
+    }
+
+  div#green-overlapping-reference
+    {
+      background-color: green;
+      bottom: 100px;
+      height: 100px;
+      position: relative;
+      width: 100px;
+    }
+  

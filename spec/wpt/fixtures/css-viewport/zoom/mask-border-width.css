@@ -1,0 +1,14 @@
+
+    .box {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        mask-border-slice: 10;
+        mask-border-source: linear-gradient(45deg, pink, blue, white, black, green);
+        mask-border-width: 8px;
+        margin: 10px;
+    }
+
+    .zoom {
+        zoom: 2;
+    }

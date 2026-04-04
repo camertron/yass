@@ -1,0 +1,117 @@
+
+
+#outer {
+  container-name: outer;
+  container-type: size;
+  width: 100px;
+  height: 100px;
+}
+
+#inner {
+  container-name: inner;
+  container-type: size;
+  width: 50px;
+  height: 50px;
+}
+
+
+  @container (width: 50px) {
+    @container (height: 50px) {
+      #child { --implicit:true; }
+    }
+  }
+
+
+  @container (width: 70px) {
+    @container (height: 50px) {
+      #child { --implicit-outer-fail:true; }
+    }
+  }
+
+
+  @container (width: 50px) {
+    @container (height: 70px) {
+      #child { --implicit-inner-fail:true; }
+    }
+  }
+
+
+  @container outer (width: 100px) {
+    @container inner (height: 50px) {
+      #child { --named-outer-inner:true; }
+    }
+  }
+
+
+  @container inner (width: 50px) {
+    @container outer (height: 100px) {
+      #child { --named-outer-inner-reverse:true; }
+    }
+  }
+
+
+  @container unknown (width: 100px) {
+    @container inner (height: 50px) {
+      #child { --named-failing-outer:true; }
+    }
+  }
+
+
+  @container outer (width: 100px) {
+    @container unknown (height: 50px) {
+      #child { --named-failing-inner:true; }
+    }
+  }
+
+
+  @container outer (width: 100px) {
+    @container (height: 50px) {
+      #child { --named-outer-inner-implicit:true; }
+    }
+  }
+
+
+  @container (width: 50px) {
+    @container inner (height: 50px) {
+      #child { --implicit-outer-inner-named:true; }
+    }
+  }
+
+
+  @container (width: 50px) {
+    @container outer (height: 100px) {
+      #child { --implicit-outer-inner-named-reverse:true; }
+    }
+  }
+
+
+  @container (width > 1px) {
+    @container (width > 2px) {
+      @container (width > 3px) {
+        #child { --three-levels:true; }
+      }
+    }
+  }
+
+
+  @container (width > 1px) {
+    @container (width > 2000px) {
+      @container (width > 3px) {
+        #child { --three-levels-middle-fail:true; }
+      }
+    }
+  }
+
+
+  @container (width: 50px) {
+    @container outer (height: 100px) {
+      #child { --inner-named-invalidation:true; }
+    }
+  }
+
+
+  @container (width: 50px) {
+    @container outer (height: 100px) {
+      #child { --outer-implicit-invalidation:true; }
+    }
+  }

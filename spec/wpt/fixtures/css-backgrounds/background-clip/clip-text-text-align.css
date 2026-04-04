@@ -1,0 +1,8 @@
+
+.clip {
+  font: 50px/1 Ahem;
+  width: 250px;
+  color: transparent;
+  background-color: green;
+  background-clip: text;
+}

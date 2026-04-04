@@ -1,0 +1,17 @@
+
+  #outer {
+    container-type: inline-size;
+    width: 100px;
+  }
+  #inner {
+    background-color: black;
+    transition: background-color 60s;
+  }
+  #inner.target {
+    background-color: white;
+  }
+  @container (width > 200px) {
+    #inner.target  {
+      background-color: lime;
+    }
+  }

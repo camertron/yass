@@ -1,0 +1,17 @@
+
+.container {
+    border: solid 1px black;
+    writing-mode: vertical-rl;
+}
+.block {
+    display: inline-block;
+    background: aqua;
+}
+.table {
+    display: inline-table;
+    font-size: 40px;
+    background: tan;
+}
+.margin {
+    margin-block-start: 50px;
+}

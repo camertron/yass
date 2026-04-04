@@ -1,0 +1,15 @@
+
+
+* { background-color: inherit; }
+
+body { background-color: rgba(0, 0, 0, 0); }
+
+.t1 .sibling + *,
+.t2 .sibling ~ *,
+.t3 + .sibling + *,
+.t4 + .sibling,
+.t5 + *,
+.t6 ~ .sibling,
+.t7 + * + * .child { background-color: rgb(0, 128, 0); }
+
+    

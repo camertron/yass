@@ -1,0 +1,20 @@
+
+    @font-face {
+        font-family: CSSTest;
+        src: url(/fonts/CSSTest/csstest-basic-italic.ttf);
+    }
+    main {
+        font: 80px/1 CSSTest;
+        margin: 0.5em;
+        width: min-content;
+    }
+    .unselected {
+        background: black;
+    }
+    .orange {
+        color: orange;
+    }
+    .selected {
+        background: #0000FFC0;
+        color: transparent;
+    }

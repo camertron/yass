@@ -1,0 +1,20 @@
+
+div {
+  background: blue;
+  margin: 1em;
+  padding: 1em;
+}
+
+span {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+
+.has-c {
+  background: green;
+}
+
+.c {
+  background: purple;
+}

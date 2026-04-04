@@ -1,0 +1,23 @@
+
+  @page {
+    margin: 1in;
+  }
+  @page letter {
+    size: letter;
+  }
+  @page letter-landscape {
+    size: letter landscape;
+  }
+  @page legal {
+    size: legal;
+  }
+  @page legal-landscape {
+    size: legal landscape;
+  }
+  @page ledger {
+    size: ledger;
+  }
+  @page ledger-landscape {
+    size: ledger landscape;
+  }
+  body { margin: 0; }

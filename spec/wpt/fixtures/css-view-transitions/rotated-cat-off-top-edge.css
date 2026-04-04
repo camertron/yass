@@ -1,0 +1,22 @@
+
+.target {
+  transform: rotate(330deg) translate3d(110px, 10px, 10px);
+  border-radius: 0.375rem;
+  width: 400px;
+  height: 400px;
+}
+::view-transition-group(root) {
+  animation-duration: 500s;
+  animation-play-state: paused;
+}
+
+::view-transition-old(*) {
+  animation: unset;
+  opacity: 1;
+}
+
+::view-transition-new(*) {
+  animation: unset;
+  opacity: 0;
+}
+

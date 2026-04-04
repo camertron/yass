@@ -1,0 +1,14 @@
+
+.container {
+  border: solid 2px;
+  display: flow-root;
+  width: 300px;
+}
+
+.child {
+  background: green;
+  border: solid 2px;
+  box-sizing: border-box;
+  float: left;
+  height: 100px;
+}

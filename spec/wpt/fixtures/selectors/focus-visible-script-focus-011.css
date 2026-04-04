@@ -1,0 +1,23 @@
+
+  #warning {
+    display: none;
+    background: red;
+  }
+
+  @supports not selector(:focus-visible) {
+    #instructions {
+      display: none;
+    }
+
+    #warning {
+      display: block;
+    }
+  }
+
+  :focus-visible {
+    outline: solid thick red;
+  }
+
+  :focus:not(:focus-visible) {
+    background-color: lime;
+  }

@@ -1,0 +1,17 @@
+
+@view-transition {
+  navigation: auto;
+}
+.right {
+  view-transition-name: target;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 300px;
+  background: green;
+}
+::view-transition-group(*),
+::view-transition-new(*),
+::view-transition-old(*) {
+  animation-play-state: paused;
+}

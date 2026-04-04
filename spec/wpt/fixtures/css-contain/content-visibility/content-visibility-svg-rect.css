@@ -1,0 +1,12 @@
+
+body {
+  margin: 0;
+  padding: 0;
+}
+div {
+  content-visibility:hidden;
+}
+rect {
+  stroke-width: 5px;
+  stroke:green;
+}

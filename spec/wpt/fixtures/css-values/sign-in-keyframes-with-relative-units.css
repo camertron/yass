@@ -1,0 +1,45 @@
+
+  @font-face {
+    font-family: "COLR-test-font";
+    src: url("resources/COLR-palettes-test-font.ttf") format("truetype");
+  }
+
+  @font-palette-values --MyFirstPalette {
+    font-family: "COLR-test-font";
+    base-palette: 1;
+  }
+
+  @font-palette-values --MySecondPalette {
+    font-family: "COLR-test-font";
+    base-palette: 2;
+  }
+
+  @keyframes --a {
+    from {
+      scale: calc(1.5 + sign(1em - 10px));
+      rotate: calc(1.5deg + sign(1em - 10px) * 1deg);
+      text-size-adjust: calc(1.5% + sign(1em - 10px) * 1%);
+      font-style: oblique calc(1.5deg + sign(1em - 10px) * 1deg);
+      font-weight: calc((1.5 + sign(1em - 10px)) * 100);
+      font-palette: palette-mix(in lch, --MyFirstPalette calc(1.5% + 1% * sign(1em - 10px)), --MySecondPalette);
+      font-variation-settings: 'wght' calc((1.5 + sign(1em - 10px)) * 100);
+    }
+    to {
+      scale: 1;
+      rotate: 1deg;
+      text-size-adjust: 1%;
+      font-style: oblique 1deg;
+      font-weight: 100;
+      font-palette: palette-mix(in lch, --MyFirstPalette 1%, --MySecondPalette);
+      font-variation-settings: 'wght' 100;
+    }
+  }
+  #target {
+    animation-name: --a;
+    animation-duration: 1000s;
+    animation-timing-function: steps(2, start);
+    width: 100px;
+    height: 100px;
+    background: teal;
+    font-size: 8px;
+  }

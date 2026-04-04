@@ -1,0 +1,11 @@
+
+p {
+  color: green;
+}
+span {
+  color: red;
+  --a:var(--b)var(--c);
+  --b:orange;
+  --c:red;
+  color: var(--a);
+}

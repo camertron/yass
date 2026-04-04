@@ -1,0 +1,19 @@
+
+#container {
+  content-visibility: auto;
+}
+@keyframes fade {
+  from { opacity: 1; }
+  to { opacity: 0;  }
+}
+#target {
+  background: green;
+  height: 100px;
+  width: 100px;
+}
+.animate {
+  animation: fade 1s linear 2 alternate;
+}
+.transition {
+  transition: opacity 1s linear;
+}

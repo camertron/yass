@@ -1,0 +1,9 @@
+
+.grid-lanes {
+    display: inline grid-lanes;
+    background: green;
+    width: 100px;
+    min-height: 60%;
+    grid-template-columns: repeat(auto-fill, 50px);
+    aspect-ratio: 1/1;
+}

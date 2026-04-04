@@ -1,0 +1,10 @@
+
+  #testcase {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: green;
+    will-change: transform;
+    filter: drop-shadow(16px 16px 20px red);
+    clip-path: inset(0px 200px 200px 0px);
+  }

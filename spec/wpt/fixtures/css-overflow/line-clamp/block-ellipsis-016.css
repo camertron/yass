@@ -1,0 +1,8 @@
+
+.clamp {
+  line-clamp: 3;
+  width: 20.1ch;
+  border: 1px solid black;
+  font-family: monospace;
+  overflow-wrap: anywhere;
+}

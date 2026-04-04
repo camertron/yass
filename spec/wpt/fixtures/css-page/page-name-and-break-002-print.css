@@ -1,0 +1,9 @@
+
+.a {
+    page: a;
+}
+.b {
+    break-before: page;
+    page: b;
+}
+  

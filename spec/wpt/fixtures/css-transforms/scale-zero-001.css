@@ -1,0 +1,19 @@
+
+        .greenSquare {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 100px;
+            height: 100px;
+            background: green;
+        }
+        .redSquare {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 100px;
+            height: 100px;
+            background: red;
+            transform: scale(0);
+        }
+    

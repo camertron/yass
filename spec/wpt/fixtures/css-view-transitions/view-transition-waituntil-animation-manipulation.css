@@ -1,0 +1,18 @@
+
+:root { view-transition-name: none }
+
+#target {
+  width: 100px;
+  height: 100px;
+  background: green;
+  view-transition-name: target;
+}
+
+#target.after {
+  background: red;
+}
+
+::view-transition { background: lightpink; }
+::view-transition-group(*) {
+  animation-duration: 1ms;
+}

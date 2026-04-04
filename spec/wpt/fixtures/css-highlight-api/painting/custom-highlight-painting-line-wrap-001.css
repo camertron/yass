@@ -1,0 +1,8 @@
+
+  div {
+    font: 16px/1 Ahem;
+    width: 100px;
+  }
+  ::highlight(test) {
+    background-color: green;
+  }

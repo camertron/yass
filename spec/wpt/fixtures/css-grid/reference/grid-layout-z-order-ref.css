@@ -1,0 +1,26 @@
+
+      body {
+        margin: 0;
+        padding: 0;
+        border: 0 none;
+      }
+      #caseTitle {
+        margin: 10px;
+        height: 40px;
+      }
+      #grid {
+        margin: 0;
+        width: 150px;
+        color:white;
+      }
+      .a {
+        background: blue;
+        width: 100px;
+        float:left
+      }
+      .b {
+        background: yellow;
+        width: 50px;
+        float:left;
+      }
+    

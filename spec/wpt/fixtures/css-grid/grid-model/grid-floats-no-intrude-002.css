@@ -1,0 +1,10 @@
+
+.grid {
+  grid-auto-columns: minmax(50px, max-content);
+  grid-auto-rows: minmax(50px, max-content);
+}
+
+.floatChild {
+  float: left;
+  clear: both;
+}

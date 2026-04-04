@@ -1,0 +1,8 @@
+
+  .flex {
+    display: inline-flex;
+    width: 100px;
+    height: 200px;
+    vertical-align: top;
+    margin: 2px;
+  }

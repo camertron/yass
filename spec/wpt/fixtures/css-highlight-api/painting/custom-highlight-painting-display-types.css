@@ -1,0 +1,12 @@
+
+  ::highlight(example-highlight) {
+    background-color: yellow;
+    color: blue;
+  }
+  body {
+    font-family: monospace;
+    font-size: 16px;
+  }
+  .container {
+    margin: 10px 0;
+  }

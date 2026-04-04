@@ -1,0 +1,4 @@
+
+/* the CSS below is not part of the test */
+.test span { font-size: 24px; font-family: sans-serif; background-color:#2AA5F7; color: white; }
+.ref span { font-size: 24px; font-family: sans-serif; background-color:#270CEF; color: white; }

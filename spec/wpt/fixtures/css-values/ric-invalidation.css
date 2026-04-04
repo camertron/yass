@@ -1,0 +1,13 @@
+
+  @import url("/fonts/ahem.css");
+  html {
+    font-family: 'Ahem';
+    font-size: 40px;
+  }
+  body {
+    font-family: monospace;
+    font-size: 20px;
+  }
+  div {
+    width: 10ric;
+  }

@@ -1,0 +1,99 @@
+
+table {
+  font: 20px/1 Ahem;
+  border: 1px solid gray;
+  display: inline-table;
+  margin: 1em;
+}
+
+td {
+  padding: 0;
+  color: green;
+}
+
+table.vrl td {
+  writing-mode: vertical-rl;
+}
+
+table.slr td {
+  writing-mode: sideways-lr;
+}
+
+table.h {
+  writing-mode: vertical-lr;
+}
+
+table.h td {
+  writing-mode: initial;
+}
+
+/* If text-align works correctly on the cells, their green Ahem glyphs
+   should cover the red part of each background. */
+.left {
+  text-align: left;
+  background: linear-gradient(to bottom, red 20%, transparent 20%);
+}
+.slr .left {
+  background: linear-gradient(to top, red 20%, transparent 20%);
+}
+.center {
+  text-align: center;
+  background: linear-gradient(to bottom, transparent 40%, red 40%, red 60%, transparent 60%);
+}
+.right {
+  text-align: right;
+  background: linear-gradient(to bottom, transparent 80%, red 80%);
+}
+.slr .right {
+  background: linear-gradient(to top, transparent 80%, red 80%);
+}
+.start,
+.slr .start:dir(rtl)
+ {
+  text-align: start;
+  background: linear-gradient(to bottom, red 20%, transparent 20%);
+}
+.start:dir(rtl),
+.slr .start  {
+  background: linear-gradient(to top, red 20%, transparent 20%);
+}
+.end,
+.slr .end:dir(rtl)
+ {
+  text-align: end;
+  background: linear-gradient(to bottom, transparent 80%, red 80%);
+}
+.end:dir(rtl),
+.slr .end
+ {
+  background: linear-gradient(to top, transparent 80%, red 80%);
+}
+.justify {
+  text-align-last: justify;
+  background: linear-gradient(to bottom, red 20%, transparent 20% 80%, red 80% );
+}
+
+.h .left {
+  background: linear-gradient(to right, red 20%, transparent 20%);
+}
+.h .center {
+  background: linear-gradient(to right, transparent 40%, red 40%, red 60%, transparent 60%);
+}
+.h .right {
+  background: linear-gradient(to right, transparent 80%, red 80%);
+}
+.h .start {
+  background: linear-gradient(to right, red 20%, transparent 20%);
+}
+.h .start:dir(rtl) {
+  background: linear-gradient(to left, red 20%, transparent 20%);
+}
+.h .end {
+  background: linear-gradient(to right, transparent 80%, red 80%);
+}
+.h .end:dir(rtl) {
+  background: linear-gradient(to left, transparent 80%, red 80%);
+}
+.h .justify {
+  background: linear-gradient(to right, red 20%, transparent 20% 80%, red 80% );
+}

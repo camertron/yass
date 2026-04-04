@@ -1,0 +1,11 @@
+
+  #reference {
+    column-rule-style: dotted; /* Avoid column-rule-width computed style 0px */
+    column-rule-width: medium;
+  }
+  #container {
+    border-style: solid; /* Avoid border-*-width computed style 0px */
+  }
+  #target {
+    border-style: solid; /* Avoid border-*-width computed style 0px */
+  }

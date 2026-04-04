@@ -1,0 +1,11 @@
+
+#container {
+  content-visibility: auto;
+  width: max-content;
+  background: lightblue;
+}
+
+#child {
+  width: 150px;
+  height: 150px;
+}

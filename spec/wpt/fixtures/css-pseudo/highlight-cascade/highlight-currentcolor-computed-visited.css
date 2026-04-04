@@ -1,0 +1,28 @@
+
+  a {
+    color: lime;
+  }
+  a:visited {
+    color: cyan;
+  }
+  a:visited::selection {
+    color: currentcolor;
+  }
+  a:visited::target-text {
+    color: currentcolor;
+  }
+  a:visited::search-text {
+    color: currentcolor;
+  }
+  a:visited::search-text:current {
+    color: red;
+  }
+  a:visited::spelling-error {
+    color: currentcolor;
+  }
+  a:visited::grammar-error {
+    color: currentcolor;
+  }
+  a:visited::highlight(foo) {
+    color: currentcolor;
+  }

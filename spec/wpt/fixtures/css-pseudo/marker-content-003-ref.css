@@ -1,0 +1,9 @@
+
+li {
+  list-style-type: 'X';
+  background: grey;
+}
+li::marker {
+  padding-right: 10px;
+}
+span { font-size: 32pt; }

@@ -1,0 +1,33 @@
+
+    body {
+        margin: 0px;
+    }
+    .flex-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 110px;
+        width: 110px;
+        display: flex;
+        column-gap: 10px;
+        row-gap: 10px;
+        column-rule-color: blue;
+        column-rule-style: solid;
+        column-rule-width: 10px;
+        row-rule-color: gold;
+        row-rule-style: solid;
+        row-rule-width: 10px;
+        flex-wrap: wrap;
+    }
+    .flex-item {
+        background: skyblue;
+        width: 50px;
+    }
+    .overflow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: scroll;
+        height: 80px;
+        width: 80px;
+    }

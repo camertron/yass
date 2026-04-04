@@ -1,0 +1,9 @@
+
+div {
+  cursor: url("support/cursors/fail.png"), help;
+  cursor: auto;
+  color: blue;
+}
+p {
+  cursor: text;
+}

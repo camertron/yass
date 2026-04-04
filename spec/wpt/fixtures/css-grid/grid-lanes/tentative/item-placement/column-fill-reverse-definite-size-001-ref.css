@@ -1,0 +1,15 @@
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 50px);
+      column-gap: 10px;
+      height: 200px;
+      width: min-content;
+      border: solid blue;
+    }
+    .column {
+      display: flex;
+      flex-direction: column-reverse;
+      row-gap: 10px;
+    }
+  

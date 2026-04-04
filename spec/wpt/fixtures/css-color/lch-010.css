@@ -1,0 +1,3 @@
+
+    .test { background-color: hsl(0, 100%, 63%); width: 12em; height: 12em; }
+    .test { background-color: lch(0% 110 60); } /* l = 0% should always be black */

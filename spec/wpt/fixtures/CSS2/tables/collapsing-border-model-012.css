@@ -1,0 +1,9 @@
+
+table {
+  border-collapse: collapse;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  padding: 100px;
+  background: green;
+}

@@ -1,0 +1,79 @@
+
+      @function --b() {
+        @container --cont (width = 10px) {
+          result: 10px;
+        }
+      }
+      ::part(target) {
+        --actual: --b();
+        --expected: 10px;
+      }
+      .container {
+        container: --cont / size;
+        width: 10px;
+        height: 10px;
+      }
+    
+
+      @function --b() {
+        @container --cont (width = 5px) {
+          result: 5px;
+        }
+        @container --cont (width = 10px) {
+          result: 10px;
+        }
+      }
+      ::part(target) {
+        --actual: --b();
+        --expected: 5px;
+      }
+      .container {
+        container: --cont / size;
+        width: 10px;
+        height: 10px;
+      }
+    
+
+          @function --b() {
+            result: FAIL;
+          }
+          .container {
+            container: --cont / size;
+            width: 5px;
+            height: 5px;
+          }
+        
+
+      @function --b() {
+        @container --cont (width = 5px) {
+          result: 5px;
+        }
+        @container --cont (width = 10px) {
+          result: 10px;
+        }
+      }
+      .container {
+        container: --cont / size;
+        width: 10px;
+        height: 10px;
+      }
+    
+
+          @function --c() {
+            @container --cont (width = 5px) {
+              result: 5px;
+            }
+            @container --cont (width = 10px) {
+              result: 10px;
+            }
+          }
+          .container {
+            container: --cont / size;
+            width: 5px;
+            height: 5px;
+          }
+          ::slotted(#target) {
+            --actual: --b() --c();
+            --expected: 5px 5px;
+          }
+        

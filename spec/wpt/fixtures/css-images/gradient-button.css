@@ -1,0 +1,11 @@
+
+#button {
+    width: 300px;
+    height: 80px;
+    padding: 20px 30px;
+    background: linear-gradient(blue, green);
+    border-width: 5px;
+    border-style: solid;
+    border-color: red;
+    border-radius: 10px;
+}

@@ -1,0 +1,6 @@
+
+  .default {
+    object-fit: none;
+    overflow: visible;
+    object-position: 25px 50px;
+  }

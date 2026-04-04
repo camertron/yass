@@ -1,0 +1,42 @@
+
+:root {
+  view-transition-name: none;
+  background-color: limegreen;
+  box-shadow: 0 0 0 10px inset red;
+}
+
+body {
+  height: 400vh;
+}
+
+div {
+  position: absolute;
+  left: 200px;
+  top: 600px;
+  width: 100px;
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  background: darkseagreen;
+  view-transition-name: target;
+}
+
+::view-transition-group(target),
+::view-transition-image-pair(target),
+::view-transition-old(target),
+::view-transition-new(target) {
+  animation-play-state: paused;
+}
+
+::view-transition {
+  position: static;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: limegreen;
+}
+

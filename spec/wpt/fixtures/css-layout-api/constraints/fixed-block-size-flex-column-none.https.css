@@ -1,0 +1,21 @@
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
+
+.test {
+  background: red;
+  --expected-block-size: null;
+}
+
+.child {
+  background: green;
+}
+
+@supports (display: layout(test)) {
+  .test {
+    display: layout(test);
+  }
+}

@@ -1,0 +1,12 @@
+
+#d1, #d2 {
+  overflow-block: hidden;
+  overflow-inline: scroll
+}
+#d1 {
+  writing-mode: horizontal-tb;
+}
+#d2 {
+  writing-mode: vertical-rl;
+}
+

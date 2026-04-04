@@ -1,0 +1,6 @@
+
+  #inner {
+    /* Extremely short so that we can just do a double-rAF and
+     * expect that this transition will have completed: */
+    transition: opacity 0.01s;
+  }

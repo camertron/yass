@@ -1,0 +1,14 @@
+
+@font-face {
+  font-family: test;
+  font-style: normal;
+  src: url("resources/markA.ttf");
+}
+@font-face {
+  font-family: test;
+  font-style: oblique;
+  src: url("resources/markB.ttf");
+}
+div {
+  font: 50px test;
+}

@@ -1,0 +1,4 @@
+
+.anchor:has(:first-child + :last-child) {
+  color: green;
+}

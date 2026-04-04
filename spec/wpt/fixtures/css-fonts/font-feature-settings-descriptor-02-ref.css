@@ -1,0 +1,9 @@
+
+  @font-face {
+    font-family: "liga1";
+    src: url('support/fonts/LigatureSymbolsWithSpaces.woff');
+  }
+  .ligaOFF {
+    font-family: liga1;
+    font-feature-settings: "liga" off;
+  }

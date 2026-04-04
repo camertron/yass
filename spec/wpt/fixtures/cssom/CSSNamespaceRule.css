@@ -1,0 +1,5 @@
+
+        @namespace svg url(http://servo);
+        @namespace url(http://servo1);
+        @namespace svg url("http://servo2");
+    

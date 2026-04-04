@@ -1,0 +1,29 @@
+
+  #cb {
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
+  .anchor {
+    width: 100px;
+    height: 100px;
+  }
+  #anchor-a {
+    anchor-name: --a;
+    /* Makes #anchored overflow when aligned with right edge */
+    margin-left: 100px;
+  }
+  #anchor-b {
+    anchor-name: --b;
+  }
+  #anchored {
+    position: absolute;
+    left: anchor(right);
+    width: 300px;
+    height: 100px;
+    position-anchor: --a;
+    position-try-fallbacks: --pf;
+  }
+  @position-try --pf {
+    position-anchor: --b;
+  }

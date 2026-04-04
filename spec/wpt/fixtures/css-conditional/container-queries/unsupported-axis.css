@@ -1,0 +1,86 @@
+
+  #container {
+    width: 200px;
+    height: 100px;
+    container-type: inline-size;
+  }
+
+
+  @container (width > 0px) {
+    #target { --width:true; }
+  }
+
+
+  @container (height > 0px) {
+    #target { --height:true; }
+  }
+
+
+  @container ((height > 0px) or (width > 0px)) {
+    #target { --height-or-width:true; }
+  }
+
+
+  @container ((width > 0px) or (height > 0px)) {
+    #target { --width-or-height:true; }
+  }
+
+
+  @container ((orientation: landscape) or (width > 0px)) {
+    #target { --orientation-or-width:true; }
+  }
+
+
+  @container ((width > 0px) or (orientation: landscape)) {
+    #target { --width-or-orientation:true; }
+  }
+
+
+  @container ((height > 0px) or (orientation: landscape)) {
+    #target { --height-or-orientation:true; }
+  }
+
+
+  @container ((height > 0px) or (orientation: landscape)) {
+    #target { --height-or-orientation2:true; }
+  }
+
+
+  @container (inline-size > 0px) {
+    #target { --inline-size:true; }
+  }
+
+
+  @container (block-size > 0px) {
+    #target { --block-size:true; }
+  }
+
+
+  @container (block-size > 0px) {
+    #target { --block-size2:true; }
+  }
+
+
+  @container not (width < 0px) {
+    #target { --not-width:true; }
+  }
+
+
+  @container not (height < 0px) {
+    #target { --not-height:true; }
+  }
+
+
+  @container not (inline-size < 0px) {
+    #target { --not-inline-size:true; }
+  }
+
+
+  @container not (block-size < 0px) {
+    #target { --not-block-size:true; }
+  }
+
+
+  @container not (orientation) {
+    #target { --not-orientation:true; }
+  }

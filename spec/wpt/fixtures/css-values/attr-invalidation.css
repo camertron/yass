@@ -1,0 +1,4 @@
+
+  div {
+    width: attr(data-foo type(<length>));
+  }

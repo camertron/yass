@@ -1,0 +1,7 @@
+
+.some-hidden > :not(:is(.always-matches, :not(:last-of-type))) {
+  display: none;
+}
+.to-show {
+  color: green;
+}

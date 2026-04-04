@@ -1,0 +1,11 @@
+
+  div {
+    width: 100px;
+    height: 100px;
+    &.light {
+      background-image: url("/images/green.png");
+    }
+    &.dark {
+      background-image: url("/images/red.png");
+    }
+  }

@@ -1,0 +1,3 @@
+
+    body { background-color: grey; }
+    .test { background-color: color(srgb 1 1 1); width: 12em; height: 12em; } /* color(srgb-linear 1 1 1) converted to sRGB */

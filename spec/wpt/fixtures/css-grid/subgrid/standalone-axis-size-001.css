@@ -1,0 +1,15 @@
+
+.grid {
+  display: grid;
+  grid-template-rows: 100px;
+}
+.subgrid {
+  display: grid;
+  background: red;
+  width: min-content;
+  grid-template-rows: subgrid;
+}
+.item {
+  background: green;
+  width: 100px;
+}

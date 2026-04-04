@@ -1,0 +1,15 @@
+
+.container {
+  container-type: size;
+}
+
+/* Prevent double layout due to scrollbar speculation */
+html {
+  overflow: hidden;
+}
+
+@container (width > 1px) {
+  .item {
+    display: list-item;
+  }
+}

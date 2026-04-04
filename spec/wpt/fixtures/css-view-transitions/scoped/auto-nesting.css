@@ -1,0 +1,50 @@
+
+    .box {
+      height: 100px;
+      width: 100px;
+      view-transition-name: match-element;
+      color: white;
+      margin-bottom: 10px;
+      position: relative;
+    }
+    .c1 {
+      background-color: rebeccapurple;
+    }
+    .c2 {
+      background-color: hotpink;
+    }
+    .c3 {
+      background-color: mediumvioletred;
+    }
+    #a {
+      background-color: #eee;
+      border: 5px solid black;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 250px;
+      height: 250px;
+      overflow: clip;
+    }
+    #b {
+      background-color: #eee;
+      border: 5px solid black;
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      overflow: visible;
+      left: 300px;
+      top: 0;
+    }
+
+
+  ::view-transition-group(*),
+  ::view-transition-image-pair(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    /* freeze all animations at the end */
+    animation-duration: 100000s;
+    animation-timing-function: steps(1, jump-start);
+  }
+
+  

@@ -1,0 +1,10 @@
+
+.clamp {
+  font-size: 16px / 16px serif;
+  white-space: pre-wrap;
+  background-color: yellow;
+  padding-bottom: 1em;
+}
+ruby.under {
+  ruby-position: under;
+}

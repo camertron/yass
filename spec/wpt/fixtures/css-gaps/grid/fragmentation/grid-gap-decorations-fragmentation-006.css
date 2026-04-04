@@ -1,0 +1,18 @@
+
+  .multicol {
+    columns: 3;
+    column-fill: auto;
+    width: 100px;
+    height: 100px;
+    background: green;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    row-gap: 20px;
+    background: red;
+    row-rule: solid;
+  }
+  .grid-item {
+    background: green;
+  }

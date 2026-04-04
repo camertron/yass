@@ -1,0 +1,7 @@
+
+  @keyframes animate {
+    to { background-image: url(foo.jpg); }
+  }
+  #target {
+    animation: animate 100s;
+  }

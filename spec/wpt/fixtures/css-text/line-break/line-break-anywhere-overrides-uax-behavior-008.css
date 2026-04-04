@@ -1,0 +1,16 @@
+
+div {
+  position: relative;
+  font: 50px / 1 Ahem;
+}
+.red {
+  position: absolute;
+  background: green;
+  color: red;
+  z-index: -1;
+}
+.test {
+  color: green;
+  width: 3ch;
+  line-break: anywhere;
+}

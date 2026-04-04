@@ -1,0 +1,14 @@
+
+.container {
+  display: inline-block;
+  border: solid 3px cornflowerblue;
+  width: 100px;
+  height: 100px;
+  container-type: size;
+}
+div > div {
+  box-sizing: border-box;
+  width: 200px;
+  height: 100cqh;
+  border: solid 10px orange;
+}

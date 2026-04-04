@@ -1,0 +1,19 @@
+
+  @keyframes anim {
+    from {
+      --ref:PASS;
+      container-name: FAIL;
+      container-type: size;
+    }
+    to {
+      --ref:PASS;
+      container-name: FAIL;
+      container-type: size;
+    }
+  }
+  #container {
+    --ref:FAIL;
+    container-name: PASS;
+    container-type: inline-size;
+    animation: anim 1s linear paused;
+  }

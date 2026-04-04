@@ -1,0 +1,8 @@
+
+  body {
+    -webkit-text-stroke-width: 3px;
+    font-size: 25px;
+  }
+  ::highlight(foo) {
+    background-color: green;
+  }

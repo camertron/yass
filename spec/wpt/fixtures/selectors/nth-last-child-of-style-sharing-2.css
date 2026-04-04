@@ -1,0 +1,4 @@
+
+:nth-last-child(3n+1 of .target) {
+    background-color: lime;
+}

@@ -1,0 +1,8 @@
+
+div {
+  background: blue;
+  color: white;
+}
+.hidden {
+  content-visibility: hidden;
+}

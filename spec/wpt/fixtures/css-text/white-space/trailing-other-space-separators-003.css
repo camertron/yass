@@ -1,0 +1,11 @@
+
+div {
+  position: absolute;
+  width: max-content;
+  line-height: 1;
+  color: transparent;
+  white-space: pre-line;
+}
+.red { background: red; }
+.green { background: green; }
+#pre { white-space:pre; }

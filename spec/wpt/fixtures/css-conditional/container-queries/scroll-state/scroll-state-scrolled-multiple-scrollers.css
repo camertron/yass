@@ -1,0 +1,32 @@
+
+  .scroller {
+    width: 200px;
+    height: 200px;
+    container-type: scroll-state;
+    overflow-y: scroll;
+  }
+  .filler {
+    height: 600px;
+  }
+  .target {
+    --top1: no;
+    --top2: no;
+    --bottom1: no;
+    --bottom2: no;
+  }
+  #target1 {
+    @container scroll-state(scrolled: top) {
+      --top1: yes;
+    }
+    @container scroll-state(scrolled: bottom) {
+      --bottom1: yes;
+    }
+  }
+  #target2 {
+    @container scroll-state(scrolled: top) {
+      --top2: yes;
+    }
+    @container scroll-state(scrolled: bottom) {
+      --bottom2: yes;
+    }
+  }

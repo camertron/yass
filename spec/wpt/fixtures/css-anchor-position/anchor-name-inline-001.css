@@ -1,0 +1,23 @@
+
+.container {
+  font-family: Ahem;
+  font-size: 10px;
+  line-height: 1;
+  width: 10em;
+}
+.relpos {
+  position: relative;
+}
+.abspos {
+  position: absolute;
+}
+.anchor {
+  anchor-name: --a1;
+  background: orange;
+}
+.target {
+  position: absolute;
+  width: anchor-size(--a1 width);
+  height: 10px;
+  background: lime;
+}

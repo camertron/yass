@@ -1,0 +1,24 @@
+
+    body {
+        height: 5000px;
+    }
+
+    .filler {
+        width: 20px;
+        height: 500px;
+        background-color: silver;
+    }
+
+    #container {
+        height: 800px;
+        width: 800px;
+        padding: 10px;
+        border: 1px solid black;
+    }
+
+    #target {
+        border: 1px solid gray;
+        padding: 10px;
+        height: 150px;
+        background-color: orange;
+    }

@@ -1,0 +1,21 @@
+
+@font-face {
+  font-family: halt-font;
+  font-display: block;
+  src: url('/fonts/noto/cjk/NotoSansCJKjp-Regular-subset-halt.otf');
+}
+@font-face {
+  font-family: chws-font;
+  font-display: block;
+  src: url('/fonts/noto/cjk/NotoSansCJKjp-Regular-subset-chws.otf');
+}
+#container {
+  font-family: Arial, halt-font;
+  font-size: 20px;
+}
+.chws #container {
+  font-family: Arial, chws-font;
+}
+:root.vrl {
+  writing-mode: vertical-rl;
+}

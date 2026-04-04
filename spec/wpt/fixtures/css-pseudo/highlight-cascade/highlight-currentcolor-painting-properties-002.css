@@ -1,0 +1,34 @@
+
+div {
+  color: lime;
+  background: green;
+  margin: 10px;
+}
+::highlight(below) {
+  color: yellow;
+  background: maroon;
+}
+::highlight(empty) {
+}
+::highlight(color-currentcolor) {
+  color: currentcolor;
+}
+::highlight(backgroundcolor-currentcolor) {
+  background-color: currentcolor;
+}
+::highlight(textdecorationcolor-currentcolor) {
+  text-decoration-line: underline;
+  text-decoration-color: currentcolor;
+}
+::highlight(color-currentcolor-backgroundcolor-currentcolor) {
+  color: currentcolor;
+  background-color: currentcolor;
+}
+::highlight(color-currentcolor-backgroundcolor-blue) {
+  color: currentcolor;
+  background-color: blue;
+}
+::highlight(color-blue-backgroundcolor-currentcolor) {
+  color: blue;
+  background-color: currentcolor;
+}

@@ -1,0 +1,16 @@
+
+      body {
+        margin: 0;
+        transform: rotate(90deg);
+        transform-origin: 100px 100px;
+        overflow: hidden;
+      }
+      div {
+        background: url(support/transform-triangle-down.svg) fixed;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        left: 50px;
+        top: 50px;
+      }
+    

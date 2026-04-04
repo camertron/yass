@@ -1,0 +1,9 @@
+
+body {
+  height: 2000px;
+}
+
+input {
+  position: sticky;
+  top: 10px;
+}

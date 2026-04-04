@@ -1,0 +1,18 @@
+
+#container {
+  background: red;
+
+  box-sizing: border-box;
+  border: solid green 10px;
+  width: 100px;
+  height: 200px;
+}
+
+#block {
+  background: green;
+  height: 80px;
+}
+
+#target {
+  height: 100%;
+}

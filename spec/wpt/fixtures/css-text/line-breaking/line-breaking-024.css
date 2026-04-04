@@ -1,0 +1,12 @@
+
+div {
+    border-right: 6em solid;
+    width: 6em;
+}
+.test {
+    color: blue;
+}
+.ref {
+    white-space: pre;
+    color: orange;
+}

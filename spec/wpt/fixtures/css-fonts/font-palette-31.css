@@ -1,0 +1,21 @@
+
+@font-face {
+    font-family: "COLR-test-font1";
+    src: url("resources/COLR-palettes-test-font.ttf") format("truetype");
+    unicode-range: U+41;
+}
+
+@font-face {
+    font-family: "COLR-test-font2";
+    src: url("resources/COLR-palettes-test-font.ttf") format("truetype");
+}
+
+@font-palette-values --MyPalette {
+    font-family: "COLR-test-font1";
+    base-palette: 5;
+}
+
+@font-palette-values --MyPalette {
+    font-family: "COLR-test-font2";
+    base-palette: 2;
+}

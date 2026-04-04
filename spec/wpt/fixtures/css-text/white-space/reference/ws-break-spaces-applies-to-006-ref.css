@@ -1,0 +1,17 @@
+
+  table
+    {
+      border: black solid 2px;
+      border-spacing: 0px;
+      font-family: monospace;
+      font-size: 32px;
+      margin-bottom: 0.25em;
+      white-space: pre;
+      width: 4ch;
+    }
+
+  td
+    {
+      padding: 0px;
+    }
+  

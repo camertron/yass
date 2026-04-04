@@ -1,0 +1,11 @@
+
+.block {
+  display: block;
+  width: 600px;
+  border: 2px solid black;
+  line-height: 0;
+}
+svg {
+  background: teal;
+  width: max-content;
+}

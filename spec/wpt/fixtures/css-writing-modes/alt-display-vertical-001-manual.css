@@ -1,0 +1,13 @@
+
+  .vrl
+    {
+      float: right;
+      writing-mode: vertical-rl;
+    }
+
+  .vlr
+    {
+      float: left;
+      writing-mode: vertical-lr;
+    }
+  

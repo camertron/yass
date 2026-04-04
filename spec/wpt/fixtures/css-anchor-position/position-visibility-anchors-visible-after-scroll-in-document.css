@@ -1,0 +1,23 @@
+
+  #anchor {
+    anchor-name: --anchor;
+    margin-left: 150vw;
+    width: 100px;
+    height: 100px;
+    background: orange;
+  }
+
+  #spacer {
+    height: 100px;
+  }
+
+  #target {
+    position-anchor: --anchor;
+    position-visibility: anchors-visible;
+    position-area: left center;
+    width: 100px;
+    height: 100px;
+    background: green;
+    position: absolute;
+    inset: 0;
+  }

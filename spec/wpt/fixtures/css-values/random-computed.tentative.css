@@ -1,0 +1,80 @@
+
+  @property --x {
+    syntax: "<number>";
+    inherits: true;
+    initial-value: 3;
+  }
+  @property --y {
+    syntax: "<number>";
+    inherits: true;
+    initial-value: 3;
+  }
+  @property --random-length-1 {
+    syntax: "<length>";
+    inherits: true;
+    initial-value: 3px;
+  }
+  @property --random-length-2 {
+    syntax: "<length>";
+    inherits: true;
+    initial-value: 3px;
+  }
+  @property --random-in-initial {
+    syntax: "<number>";
+    inherits: false;
+    initial-value: random(1, 30);
+  }
+  @property --percent {
+    syntax: "<percentage>";
+    inherits: true;
+    initial-value: 3%;
+  }
+  @property --transform-function {
+    syntax: "<transform-function>";
+    inherits: true;
+    initial-value: translate(3%);
+  }
+  #container {
+    font-size: 30px;
+  }
+  .randomNoIdentifier {
+    width: random(0px, 300000px);
+    height: random(0px, 300000px);
+    left: random(0px, 300000px);
+    right: random(0px, 300000px);
+    margin: random(0px, 300000px) random(0px, 300000px);
+    --x: random(0, 300000);
+    --y: random(0, 300000);
+    --random-length-1: random(fixed random(0, 1), 0px, 100px);
+    --random-length-2: random(fixed random(0, 1), 0px, 100px);
+  }
+  .randomMatchElement {
+    width: random(element-shared, 0px, 300000px);
+    height: random(element-shared, 0px, 300000px);
+    left: random(element-shared, 0px, 300000px);
+    right: random(element-shared, 0px, 300000px);
+    margin: random(element-shared, 0px, 300000px) random(element-shared, 0px, 300000px);
+    translate: random(element-shared, 0%, 300000%);
+    scale: random(element-shared, 1, 300000) random(element-shared, 1, 300000);
+  }
+  .randomIdentifier {
+    width: random(--identifier, 0px, 300000px);
+    height: random(--identifier, 0px, 300000px);
+    left: random(--identifier, 0px, 300000px);
+    right: random(--identifier, 0px, 300000px);
+    margin: random(--identifier 0px, 300000px) random(--identifier 0px, 300000px);
+  }
+  .randomMatchElementAndIdentifier {
+    width: random(element-shared --other-identifier, 0px, 300000px);
+    height: random(element-shared --other-identifier, 0px, 300000px);
+    left: random(element-shared --other-identifier, 0px, 300000px);
+    right: random(element-shared --other-identifier, 0px, 300000px);
+    margin: random(element-shared --other-identifier 0px, 300000px) random(element-shared --other-identifier 0px, 100000px);
+  }
+  .randomFixed {
+    width: random(fixed 0.5, 1px, 300000px);
+    height: random(fixed 0.5, 1px, 300000px);
+    left: random(fixed 0.5, 1px, 300000px);
+    right: random(fixed 0.5, 1px, 300000px);
+    margin: random(fixed 0.5 1px, 300000px) random(fixed 0.5 1px, 300000px);
+  }

@@ -1,0 +1,4 @@
+
+.inactive > ::part(content) {
+  color: red;
+}

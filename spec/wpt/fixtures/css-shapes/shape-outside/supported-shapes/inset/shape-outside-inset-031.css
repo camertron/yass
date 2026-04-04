@@ -1,0 +1,35 @@
+
+        #container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            margin-left: 25px;
+        }
+        #test-container {
+            /* allow at most 1.5 glyphs to overflow the left edge of #container. */
+            margin-left: -30px;
+            width: 230px;
+            height: 200px;
+            font: 20px/1 Ahem;
+            background-color: red;
+            color: green;
+            text-align: right;
+        }
+        #test-shape {
+            margin-left: 30px;
+            float: right;
+            width: 200px;
+            height: 200px;
+            shape-margin: 70px;
+            shape-outside: inset(95px 40px 95px 150px);
+        }
+        #static-shape {
+            position: absolute;
+            left: 50px;
+            top: 20px;
+            width: 150px;
+            height: 160px;
+            background-color: green;
+        }
+    

@@ -1,0 +1,39 @@
+
+        div {
+            position: absolute;
+            top: 50px;
+            line-height: 100px;
+        }
+        u, span {
+            display: inline-block;
+            font: 20px/1 Ahem;
+            width: 100px;
+            text-align-last: justify;
+        }
+        span {
+            color: red;
+            /* shift the glyphs down to where the test underlines will be */
+            position: relative;
+            top: 0.8em;
+        }
+        u {
+            color: transparent;
+            text-decoration: green underline;
+            text-decoration-skip-ink: none;
+            /* place underline exactly at the bottom of the text */
+            text-underline-position: auto;
+            text-underline-offset: 0px;
+            text-decoration-skip-ink: none;
+            text-decoration-thickness: 20px;
+        }
+        .test0, .test1, .test2 {
+            /* set thickness to computed font size */
+            text-decoration-thickness: 100%;
+        }
+        .test1 {
+            font-size-adjust: 0.25; /* this should result in a smaller used font size */
+        }
+        .test2 {
+            font-size-adjust: 1.25; /* this should result in a larger used font size */
+        }
+    

@@ -1,0 +1,10 @@
+
+    .target {
+        background: green;
+        width: 100px;
+        height: 100px;
+        border-radius: 25px;
+        border: 10px solid black;
+        box-sizing: border-box;
+        corner-shape: square superellipse(24) round square;
+    }

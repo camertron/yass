@@ -1,0 +1,14 @@
+
+#container {
+  scroll-snap-type: both mandatory;
+  overflow: hidden;
+  columns: 1;
+  gap: 0;
+  column-fill: auto;
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+.snapColumns::column {
+  scroll-snap-align: start;
+}

@@ -1,0 +1,11 @@
+
+.spacer {
+  width: 150px;
+  height: 3000px;
+  background: lightblue;
+}
+#container {
+  contain: style layout;
+  width: 150px;
+  height: 150px;
+}

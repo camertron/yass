@@ -1,0 +1,5 @@
+
+    #contents { display: contents }
+    #contents::first-letter { background-color: red }
+    #container::first-letter { color: green }
+    span { color: green }

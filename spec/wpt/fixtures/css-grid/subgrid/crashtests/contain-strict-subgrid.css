@@ -1,0 +1,11 @@
+
+
+#gridcontainer {
+  display: grid;
+  contain: strict;
+}
+
+.item {
+  display: grid;
+  grid: subgrid [x] / subgrid [x];
+}

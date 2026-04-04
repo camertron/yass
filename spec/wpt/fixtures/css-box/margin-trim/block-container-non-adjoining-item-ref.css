@@ -1,0 +1,12 @@
+
+.container {
+    background-color: green;
+    width: min-content;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+    background-clip: padding-box;
+}
+.child {
+    width: 100px;
+    height: 50px;
+}

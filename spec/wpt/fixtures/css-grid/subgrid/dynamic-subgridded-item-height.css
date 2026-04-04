@@ -1,0 +1,16 @@
+
+.wrapper {
+  background: red;
+  height: 100px;
+  width: 100px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 100px;
+}
+.subgrid {
+  display: grid;
+  grid-template-columns: subgrid;
+  overflow: clip;
+}
+.container { background: green }

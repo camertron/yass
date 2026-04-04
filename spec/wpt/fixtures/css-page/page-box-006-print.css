@@ -1,0 +1,16 @@
+
+  @page {
+    size: 400px;
+    margin: 50px;
+    background: blue;
+  }
+  @page :first {
+    background: white;
+  }
+  :root {
+    print-color-adjust: exact;
+  }
+  body {
+    margin: 0;
+    background: yellow;
+  }

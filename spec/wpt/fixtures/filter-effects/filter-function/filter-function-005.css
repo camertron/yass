@@ -1,0 +1,8 @@
+
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    image-rendering: crisp-edges;
+    content: filter(url(resources/green-transparent-20x10.png), drop-shadow(50px 0 0 green));
+}

@@ -1,0 +1,10 @@
+
+        .constraining-container {
+            height: 50px;
+        }
+
+        .flex-container {
+            height: 50%;
+            display: flex;
+        }
+    

@@ -1,0 +1,24 @@
+
+  #warning {
+    display: none;
+    background: red;
+  }
+
+  @supports not selector(:focus-visible) {
+    #instructions {
+      display: none;
+    }
+
+    #warning {
+      display: block;
+    }
+  }
+
+  :focus-visible {
+    outline: green solid 5px;
+  }
+
+  :focus:not(:focus-visible) {
+    outline: 0;
+    background-color: red;
+  }

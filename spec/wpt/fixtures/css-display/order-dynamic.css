@@ -1,0 +1,16 @@
+
+main {
+  display: flex;
+}
+div {
+  height: 200px;
+  width: 200px;
+}
+#red {
+  position: absolute;
+  z-index: -1;
+  background: red;
+}
+#green {
+  background: green;
+}

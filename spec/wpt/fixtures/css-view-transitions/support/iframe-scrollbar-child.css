@@ -1,0 +1,22 @@
+
+      body.scrollable {
+        width: 200lvw;
+        height: 200lvh;
+      }
+
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: skyblue;
+      }
+
+      ::view-transition-new(*) {
+        animation-duration: 30s;
+        opacity: 0;
+      }
+      ::view-transition-old(*) {
+        animation: unset;
+        opacity: 1;
+      }
+      */
+    

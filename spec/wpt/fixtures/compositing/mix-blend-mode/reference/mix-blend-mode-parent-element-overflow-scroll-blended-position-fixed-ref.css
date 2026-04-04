@@ -1,0 +1,22 @@
+
+            .parent {
+                background: aqua;/*rgb(0,255,255);*/
+                width: 150px;
+                height: 150px;
+                position: relative;
+                z-index: 1;
+                overflow:scroll;
+            }
+
+            .blended {
+                background: blue;/*rgb(0,0,255);*/
+                width: 100px;
+                height: 100px;
+                position: fixed;
+            }
+
+            .scrollableContent {
+                width: 200px;
+                height: 200px;
+            }
+        

@@ -1,0 +1,5 @@
+
+@counter-style foo {
+  system: extends decimal;
+  negative: '(' ')';
+}

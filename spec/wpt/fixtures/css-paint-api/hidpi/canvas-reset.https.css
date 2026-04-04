@@ -1,0 +1,9 @@
+
+.container {
+  width: 270px;
+  height: 275px;
+}
+
+#canvas-geometry {
+  background-image: paint(geometry);
+}

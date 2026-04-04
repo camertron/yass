@@ -1,0 +1,11 @@
+
+.cell {
+  display: table-cell;
+}
+.grid {
+  display: grid;
+  grid-template: 100px / 100px;
+}
+img {
+  height: 100%;
+}

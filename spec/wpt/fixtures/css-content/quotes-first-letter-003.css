@@ -1,0 +1,4 @@
+
+  #outer { quotes: "'X" "'Y"; }
+  #outer::first-letter { color: green; }
+  #inner::first-letter { color: red; }

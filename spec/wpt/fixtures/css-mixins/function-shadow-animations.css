@@ -1,0 +1,58 @@
+
+  @property --length {
+    syntax: "<length>";
+    inherits: false;
+    initial-value: 0px;
+  }
+
+  @function --from() { result: 1000px; }
+  @function --to() { result: 2000px; }
+
+
+      @keyframes --anim {
+        from { width: --from(); }
+        to { width: --to(); }
+      }
+      @function --from() { result: 0px; }
+      @function --to() { result: 100px; }
+      div {
+        animation: --anim 1000s linear paused forwards;
+      }
+      #t00 { animation-delay: 0s; }
+      #t04 { animation-delay: -400s; }
+      #t05 { animation-delay: -500s; }
+      #t06 { animation-delay: -600s; }
+      #t10 { animation-delay: -1000s; }
+    
+
+      @keyframes --anim {
+        from { --length: --from(); }
+        to { --length: --to(); }
+      }
+      @function --from() { result: 0px; }
+      @function --to() { result: 100px; }
+      div {
+        animation: --anim 1000s linear paused forwards;
+      }
+      #t00 { animation-delay: 0s; }
+      #t04 { animation-delay: -400s; }
+      #t05 { animation-delay: -500s; }
+      #t06 { animation-delay: -600s; }
+      #t10 { animation-delay: -1000s; }
+    
+
+      @keyframes --anim {
+        from { --untyped: --from(); }
+        to { --untyped: --to(); }
+      }
+      @function --from() { result: 0px; }
+      @function --to() { result: 100px; }
+      div {
+        animation: --anim 1000s linear paused forwards;
+      }
+      #t00 { animation-delay: 0s; }
+      #t04 { animation-delay: -400s; }
+      #t05 { animation-delay: -500s; }
+      #t06 { animation-delay: -600s; }
+      #t10 { animation-delay: -1000s; }
+    

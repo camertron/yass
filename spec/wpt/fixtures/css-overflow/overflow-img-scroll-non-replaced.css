@@ -1,0 +1,8 @@
+
+  img {
+    border: solid;
+    display: block;
+    width: 150px;
+    padding: 10px;
+    overflow: scroll;
+  }

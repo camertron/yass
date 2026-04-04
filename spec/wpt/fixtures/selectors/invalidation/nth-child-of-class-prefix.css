@@ -1,0 +1,4 @@
+
+  p:nth-child(even of [class^=t]) {
+    color: green;
+  }

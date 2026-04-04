@@ -1,0 +1,14 @@
+
+my-parent::part(base) { font-size: 1px !important; }
+my-child::part(base) { font-size: 1px !important; }
+my-parent::part(child-base) { font-size: 2rem; }
+
+
+      :host::part(base) { background: red !important; }
+      my-child::part(child-base) { background: red !important; }
+      :host::part(child-base) { background: green; }
+    
+
+        :host::part(base) { background: red; }
+        :host::part(child-base) { background: red !important; }
+        

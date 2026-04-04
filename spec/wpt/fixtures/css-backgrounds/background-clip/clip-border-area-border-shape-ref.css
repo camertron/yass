@@ -1,0 +1,21 @@
+
+    .test {
+        display: inline-block;
+        margin: 20px;
+        width: 300px;
+        height: 150px;
+        box-sizing: border-box;
+        border: 50px solid blue;
+    }
+
+    .circle {
+        border-shape: circle();
+    }
+
+    .hexagon {
+        border-shape: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    }
+
+    .diamond {
+        border-shape: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }

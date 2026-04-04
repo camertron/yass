@@ -1,0 +1,7 @@
+
+  html {
+    display: table;
+    border-right: solid;
+  }
+  head { display: inline; }
+  body { direction: rtl; }

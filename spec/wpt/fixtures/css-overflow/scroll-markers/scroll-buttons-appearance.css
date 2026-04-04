@@ -1,0 +1,10 @@
+
+  div::scroll-button(block-start) {
+    content: "appearance: auto";
+    /* appearance: auto is the default. */
+  }
+  div::scroll-button(block-end) {
+    content: "appearance: none";
+    appearance: none;
+  }
+

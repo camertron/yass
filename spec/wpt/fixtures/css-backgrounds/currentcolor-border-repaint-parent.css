@@ -1,0 +1,13 @@
+
+    #container {
+        color: red;
+    }
+
+    #container.green {
+        color: green;
+    }
+
+    #target {
+        border: 50px solid currentColor;
+        width: 0;
+    }

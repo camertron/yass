@@ -1,0 +1,10 @@
+
+.clamp {
+  line-clamp: 3;
+
+  font: 16px / 32px serif;
+  white-space: pre-wrap;
+}
+.ruby-under ruby {
+  ruby-position: under;
+}

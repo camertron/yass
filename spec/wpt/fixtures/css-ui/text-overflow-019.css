@@ -1,0 +1,10 @@
+
+div{
+  font-size: 25px;
+  font-family: monospace;
+  width: 2.1ch;
+  white-space: pre;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: solid blue;
+}

@@ -1,0 +1,8 @@
+
+    #parent {
+        nav-right: #error;
+    }
+
+    #intermediate {
+        nav-right: #foobar;
+    }

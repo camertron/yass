@@ -1,0 +1,8 @@
+
+li {
+  counter-increment: foo 5;
+}
+li::marker {
+  content: counters(list-item, ".") counter(foo, decimal-leading-zero);
+}
+span { font-size: 32pt; }

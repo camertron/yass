@@ -1,0 +1,9 @@
+
+  img {
+    columns: 5;
+    line-height: 20px;
+    orphans: 1;
+    widows: 1;
+    color: red;
+    background: red;
+  }

@@ -1,0 +1,13 @@
+
+			div {
+				background-color:red;
+				height:100px;
+				width:100px;
+			}
+			@supports (width: 0) {
+				div { background-color:green; }
+			}
+			@supports not(foo: baz) {
+				div { background-color:red; }
+			}
+		

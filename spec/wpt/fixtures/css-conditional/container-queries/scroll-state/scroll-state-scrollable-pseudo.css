@@ -1,0 +1,30 @@
+
+  #scroller {
+    container-type: scroll-state;
+    overflow: auto;
+    width: 100px;
+    height: 100px;
+  }
+  #wrapper {
+    width: 10px;
+    height: 10px;
+  }
+  #wrapper.large {
+    width: 75px;
+    height: 75px;
+  }
+  #target {
+    width: 200%;
+    height: 200%;
+    --before: no;
+    --after: no;
+    @container scroll-state(scrollable) {
+      &::before {
+        --before: yes;
+        content: " ";
+      }
+      &::after {
+        --after: yes;
+      }
+    }
+  }

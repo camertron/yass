@@ -1,0 +1,4 @@
+
+  main { color: green; }
+  :root::selection { background-color: lime; }
+  :root::highlight(foo) { background-color: lime; }

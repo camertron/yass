@@ -1,0 +1,69 @@
+
+
+.wrapper {
+  /* lay out in a nice grid */
+  display: grid;
+  gap: 0.25em;
+  grid-template-columns: repeat(6, max-content);
+}
+
+.scroller {
+  scroll-snap-type: both mandatory;
+  overflow: hidden;
+  scroll-padding: 0;
+  width: 50px;
+  height: 50px;
+  border: solid silver;
+  border-block-start-color: blue;
+  border-inline-start-color: blue;
+}
+.area {
+  width: 200px;
+  height: 200px;
+}
+
+.target {
+  margin: 5px;
+  scroll-snap-align: start;
+}
+
+.small .target {
+  width: 30px;
+  height: 30px;
+  background: orange;
+}
+
+.large .target {
+  width: 51px;
+  height: 51px;
+  border-block-end: 20px solid red;
+  border-inline-end: 20px solid red;
+}
+
+.large .target::before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: orange;
+}
+
+.TB  { writing-mode: horizontal-tb; }
+.LR  { writing-mode: vertical-lr; }
+.RL  { writing-mode: vertical-rl; }
+.ltr { direction: ltr; }
+.rtl { direction: rtl; }
+
+.TB.ltr.invert .target { writing-mode: vertical-rl;   direction: rtl; }
+.TB.rtl.invert .target { writing-mode: vertical-lr;   direction: rtl; }
+.LR.ltr.invert .target { writing-mode: vertical-rl;   direction: rtl; }
+.LR.rtl.invert .target { writing-mode: vertical-rl;   direction: ltr; }
+.RL.ltr.invert .target { writing-mode: vertical-lr;   direction: rtl; }
+.RL.rtl.invert .target { writing-mode: horizontal-tb; direction: ltr; }
+
+.large.invert {
+  /* key off target‘s writing mode, which we just inverted */
+  border: solid silver;
+  border-block-end-color: blue;
+  border-inline-end-color: blue;
+}

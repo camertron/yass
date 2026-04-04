@@ -1,0 +1,15 @@
+
+  #outer {
+    top: 100px;
+    left: 100px;
+    position: relative;
+    width: 600px;
+    height: 400px;
+  }
+  #box {
+    background-color: green;
+    position: relative;
+    transform: translate(-40px, 320px);
+    width: 100px;
+    height: 100px;
+  }

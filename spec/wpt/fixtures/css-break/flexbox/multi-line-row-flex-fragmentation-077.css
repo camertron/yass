@@ -1,0 +1,13 @@
+
+  .flex {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .flex > div {
+    flex: 0 0 100%;
+    background: green;
+  }
+  .flex > div > div {
+    contain:size;
+    height: 50px;
+  }

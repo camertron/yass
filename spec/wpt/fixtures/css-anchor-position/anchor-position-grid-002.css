@@ -1,0 +1,23 @@
+
+.grid {
+  display: grid;
+  grid-template-columns: 50px 100px;
+  grid-template-rows: 30px 100px;
+  position: relative;
+}
+.anchor {
+  anchor-name: --a;
+  grid-column: 2;
+  grid-row: 2;
+  background: red;
+}
+.target {
+  grid-column: 2;
+  grid-row: 2;
+  position: absolute;
+  left: anchor(--a left);
+  top: anchor(--a top);
+  width: anchor-size(--a width);
+  height: anchor-size(--a height);
+  background: green;
+}

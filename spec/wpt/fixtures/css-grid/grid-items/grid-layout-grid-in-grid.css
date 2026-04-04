@@ -1,0 +1,46 @@
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #caseTitle {
+        margin: 10px;
+        height: 40px;
+      }
+      #grid {
+        height: 150px;
+        width: 150px;
+        background: #eee;
+        display: grid;
+        grid-template-columns: 50px 100px;
+        grid-template-rows: 100px 50px;
+      }
+      .a {
+        background: blue;
+        grid-column: 1;
+        grid-row: 1;
+      }
+      .b {
+        background: yellow;
+        grid-column: 2;
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: 50px 50px;
+        grid-template-rows: 50px 50px;
+      }
+      .b1 {
+        background: orange;
+        grid-column: 1;
+        grid-row: 1;
+      }
+      .b2 {
+        background: cyan;
+        grid-column: 2;
+        grid-row: 2;
+      }
+      .c {
+        background: pink;
+        grid-column: 2;
+        grid-row: 2;
+      }
+    

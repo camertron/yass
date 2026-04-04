@@ -1,0 +1,12 @@
+
+  @page {
+   @top-center {
+   content: string(title);
+   }
+
+  }
+
+ h1 {
+ string-set: title counter(page) ' of ' counter(pages);
+ }
+

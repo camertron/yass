@@ -1,0 +1,8 @@
+
+    #parent {
+        nav-down: #end;
+    }
+
+    #intermediateParent, #intermediate {
+        nav-down: inherit;
+    }

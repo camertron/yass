@@ -1,0 +1,24 @@
+
+.relpos {
+  position: relative;
+}
+.anchor1 {
+  anchor-name: --a1, --a2;
+  width: 30px;
+  height: 10px;
+  background: orange;
+}
+.target {
+  position: absolute;
+  height: 10px;
+  background: lime;
+}
+#target1 {
+  width: anchor-size(--a1 width);
+}
+#target2 {
+  width: anchor-size(--a2 width);
+}
+#target3 {
+  width: anchor-size(--a3 width, 11px);
+}

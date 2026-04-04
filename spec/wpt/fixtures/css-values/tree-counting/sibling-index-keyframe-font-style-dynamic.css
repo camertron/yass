@@ -1,0 +1,12 @@
+
+  @keyframes --anim {
+    from {
+      font-style: oblique calc(5deg * sibling-index());
+    }
+    to {
+      font-style: oblique 9deg;
+    }
+  }
+  #target {
+    animation: --anim 1000s step-end;
+  }

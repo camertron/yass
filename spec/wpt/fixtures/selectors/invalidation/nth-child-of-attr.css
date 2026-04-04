@@ -1,0 +1,4 @@
+
+  p:nth-child(even of [attr="yes"]) {
+    color: green;
+  }

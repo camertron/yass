@@ -1,0 +1,10 @@
+
+html {
+  --scale: 1;
+}
+.indent {
+  text-indent: calc(1rem * var(--scale));
+}
+.zoom {
+  --scale: 2;
+}

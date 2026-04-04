@@ -1,0 +1,10 @@
+
+  #scroll-container {
+    overflow: hidden scroll;
+    width: 300px;
+    height: 100px;
+  }
+
+  #spacer {
+    height: 200px;
+  }

@@ -1,0 +1,11 @@
+
+select {
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  print-color-adjust: exact;
+}

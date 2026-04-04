@@ -1,0 +1,18 @@
+
+    div {
+        height: 100px;
+        position: absolute;
+        top: 80px;
+    }
+    .red {
+        background-color: red;
+        left: 80px;
+        width: 100px;
+    }
+    .green{
+        background-color: green;
+        left: 30px;
+        transform: rotateY(60deg);
+        width: 200px;
+    }
+    

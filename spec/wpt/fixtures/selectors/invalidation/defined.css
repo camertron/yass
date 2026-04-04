@@ -1,0 +1,18 @@
+
+      #container {
+        color: gray;
+      }
+
+      #a1:defined {
+        color: blue;
+      }
+      :defined + #b1 {
+        color: green;
+      }
+      :defined > #c1 {
+        color: red;
+      }
+      div + :defined + * #d1 {
+        color: yellow;
+      }
+  

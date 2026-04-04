@@ -1,0 +1,55 @@
+
+        .container {
+          width: 250px;
+          font-family: Ahem;
+          font-size: 20px;
+          line-height: 1.5em;
+          border: 1px solid black;
+          padding-top: 5px;
+        }
+        #test {
+            color: green;
+        }
+        #test-float-left {
+          shape-outside: polygon(50px 0px, 100px 100px, 0px 100px);
+          float: left;
+          width: 100px;
+          height: 100px;
+        }
+        #failure-container {
+            z-index: -1;
+        }
+        #test, #failure-container {
+            position: absolute;
+            top: 70px;
+        }
+        .fail {
+            position: absolute;
+            height: 20px;
+            background-color: red;
+        }
+        #bar-1 {
+            top: 11px;
+            left: 66px;
+            width: 160px;
+        }
+        #bar-2 {
+            top: 41px;
+            left: 81px;
+            width: 140px;
+        }
+        #bar-3 {
+            top: 71px;
+            left: 96px;
+            width: 120px;
+        }
+        #triangle {
+            position: absolute;
+            top: 70px;
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            clip-path: polygon(50px 0px, 100px 100px, 0px 100px);
+        }
+
+    

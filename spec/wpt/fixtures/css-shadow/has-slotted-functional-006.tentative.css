@@ -1,0 +1,11 @@
+
+        [name] {
+          display: block;
+          width: 100px;
+          height: 100px;
+          background-color: red;
+        }
+        :has-slotted(div) + :has-slotted(div) {
+          background-color: green;
+        }
+      

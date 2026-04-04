@@ -1,0 +1,14 @@
+
+div {
+  font: 50px/1 Ahem;
+}
+.red {
+  position: absolute;
+  z-index: -1;
+  color: red;
+  white-space: pre;
+}
+.test {
+  color: green;
+  width: 0;
+}

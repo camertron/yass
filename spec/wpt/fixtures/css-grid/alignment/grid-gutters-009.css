@@ -1,0 +1,14 @@
+
+    #grid {
+        display: grid;
+        width: 200px;
+        gap: 10%;
+        grid-template-columns: 90px 90px;
+        grid-template-rows: 90px 90px;
+        background-color: green;
+        margin-bottom: 30px;
+    }
+
+    #grid > div {
+        background-color: silver;
+    }

@@ -1,0 +1,9 @@
+
+  p {
+    /* Prevent collapsing body and paragraph margins. */
+    float: left;
+  }
+
+  .green {
+    color: green;
+  }

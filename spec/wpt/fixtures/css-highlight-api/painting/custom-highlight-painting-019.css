@@ -1,0 +1,12 @@
+
+  body {
+    text-decoration: 2px green underline;
+  }
+  ::highlight(foo) {
+    color:blue;
+    text-decoration: 2px blue underline;
+  }
+  ::highlight(bar) {
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+  }

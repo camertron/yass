@@ -1,0 +1,5 @@
+
+div { font-size: 150%;}
+div > span { margin-right: 1em; white-space: nowrap; }
+/* the CSS above is not part of the test */
+.test { text-transform: full-size-kana; }

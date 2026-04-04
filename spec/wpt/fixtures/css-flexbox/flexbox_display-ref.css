@@ -1,0 +1,11 @@
+
+ol {
+	background: #3366cc;
+	padding: 0;
+	list-style: none;
+	border: 1px solid black;
+}
+li {
+	background: #ffcc00;
+	margin: 2em;
+}

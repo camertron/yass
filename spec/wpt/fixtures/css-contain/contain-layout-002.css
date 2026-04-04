@@ -1,0 +1,22 @@
+
+div {
+  position: relative;
+  background: red;
+  width: 100px;
+  height: 100px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+rb {
+  contain: layout;
+  display: ruby-base;
+  font-family: Ahem;
+  font-size: 100px;
+  line-height: 1;
+}
+rb::after {
+  content: "X";
+  color: green;
+  position: absolute;
+  top:0; left: 0;
+}

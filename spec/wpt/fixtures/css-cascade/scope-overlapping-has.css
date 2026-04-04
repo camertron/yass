@@ -1,0 +1,9 @@
+
+  :where(*) {
+    background-color: green;
+  }
+  @scope (.a) to (.limit) {
+    :scope:has(.b:not(:scope .a *)) .hello {
+      background-color: red;
+    }
+  }

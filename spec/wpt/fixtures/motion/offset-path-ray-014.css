@@ -1,0 +1,19 @@
+
+  #outer {
+    top: 100px;
+    left: 100px;
+    position: relative;
+    width: 600px;
+    height: 400px;
+  }
+  #box {
+    background-color: green;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    offset-path: ray(0deg closest-side);
+    offset-distance: 100%;
+    offset-position: normal;
+    width: 100px;
+    height: 100px;
+  }

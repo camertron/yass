@@ -1,0 +1,12 @@
+
+.grid-lanes {
+    display: grid-lanes;
+    background: gray;
+    grid-template-columns: repeat(2, auto 50px);
+    width: 900px;
+    height: 400px;
+}
+
+.grid-lanes > div {
+    height: 100px;
+}

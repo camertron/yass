@@ -1,0 +1,16 @@
+
+.clamp {
+  line-clamp: auto;
+  max-height: 4lh;
+  font: 16px / 32px serif;
+  white-space: pre;
+  background-color: yellow;
+  border: 1px solid black;
+  padding: 4px;
+}
+#inline-block {
+  display: inline-block;
+  background-color: orange;
+  height: 0.5lh;
+  width: 1em;
+}

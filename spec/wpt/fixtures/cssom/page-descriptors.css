@@ -1,0 +1,13 @@
+
+@page {
+    size: a3;
+    page-orientation: rotate-right;
+    margin: 1em 24px 2in 101.5mm;
+}
+@page {
+    size: jis-b5 landscape;
+}
+@page {
+    size: 216mm;
+}
+  

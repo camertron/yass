@@ -1,0 +1,47 @@
+
+  div
+    {
+      height: 25px;
+      width: 100px;
+    }
+
+  div#first-sub-test
+    {
+      background-image: url("support/pattern-rg-rr-200x200.png");
+      background-position: min(0%, 100%) max(0%, 100%);
+
+    /*
+
+    the first value represents the horizontal position (or offset) and (...)
+    the second value represents the vertical position (or offset). The
+    <length-percentage> values represent an offset of the top left
+    corner of the background image from the top left corner of the
+    background positioning area.
+
+    A percentage for the horizontal offset is relative to
+    (width of background positioning area - width of background image).
+    A percentage for the vertical offset is relative to
+    (height of background positioning area - height of background image),
+    where the size of the image is the size given by background-size.
+
+    */
+    }
+
+  div#second-sub-test
+    {
+      background-image: url("support/pattern-rr-rg-200x200.png");
+      background-position: min(0%, 100%) min(0%, 100%);
+    }
+
+  div#third-sub-test
+    {
+      background-image: url("support/pattern-rr-gr-200x200.png");
+      background-position: max(0%, 100%) min(0%, 100%);
+    }
+
+  div#fourth-sub-test
+    {
+      background-image: url("support/pattern-gr-rr-200x200.png");
+      background-position: max(0%, 100%) max(0%, 100%);
+    }
+  

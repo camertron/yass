@@ -1,0 +1,15 @@
+
+    #container {
+        color: red;
+    }
+
+    #container.green {
+        color: green;
+    }
+
+    #target {
+        outline: 50px solid color-mix(in hsl, transparent 0%, currentColor 100%);
+        outline-offset: -50px;
+        width: 100px;
+        height: 100px;
+    }

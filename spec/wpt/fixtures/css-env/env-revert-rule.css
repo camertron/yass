@@ -1,0 +1,8 @@
+
+  #test1 {
+    color: green;
+  }
+  #test1 {
+    color: red;
+    color: env(unknown-env, revert-rule);
+  }

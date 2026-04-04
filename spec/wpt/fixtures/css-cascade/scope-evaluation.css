@@ -1,0 +1,129 @@
+
+  :where(main *) {
+    background-color: black;
+  }
+
+
+    @scope (.a) {
+      span { background-color: green; }
+    }
+  
+
+    @scope (.a) {
+      .a { background-color: green; }
+    }
+  
+
+    @scope (.a) {
+      :scope { background-color: green; }
+    }
+  
+
+    @scope (.a) to (.c) {
+      span { background-color: green; }
+    }
+  
+
+    @scope (.a) {
+      :scope > span { background-color: green; }
+    }
+  
+
+    @scope (.a) to (:scope > .b) {
+      span { background-color: green; }
+    }
+  
+
+    @scope (.a) to (:scope > .b) {
+      span { background-color: green; }
+    }
+  
+
+    @scope (.a) {
+      @scope (:scope > .b) {
+        span { background-color: green; }
+      }
+    }
+  
+
+    @scope (.a) to (:scope > .b) {
+      .c { background-color: green; }
+    }
+  
+
+    @scope (.a) to (.b) {
+      .c { background-color: green; }
+    }
+  
+
+    @scope (.a) {
+      @scope (.b) {
+        span { background-color: green; }
+      }
+    }
+  
+
+    @scope (.b) {
+      @scope (.a) {
+        span { background-color: green; }
+      }
+    }
+  
+
+    @scope (.a) {
+      @scope (.b) to (.c) {
+        span { background-color: green; }
+      }
+    }
+  
+
+    @scope (.a) {
+      :scope { background-color: green; }
+    }
+  
+
+    @scope (.a) to (.b) {
+      * { background-color: green; }
+    }
+  
+
+    @scope (.a) to (.b > *) {
+      * { background-color: green; }
+    }
+  
+
+    @scope (.a) to (:scope) {
+      * { background-color: green; }
+    }
+  
+
+    @scope (.a) {
+      :scope + .c { background-color: green; }
+    }
+  
+
+    @scope (.a) {
+      :scope + .c { background-color: green; }
+    }
+  
+
+    @scope (.a) {
+      > span { background-color: green; }
+    }
+  
+
+    @scope (.a) {
+      /* Can never match anything. */
+      :scope > :scope { background-color: green; }
+    }
+  
+
+    @scope (.a:has(.c)) {
+      .b { background-color:green; }
+    }
+  
+
+    @scope (.a) to (.b, .c) {
+      * { background-color:green; }
+    }
+  

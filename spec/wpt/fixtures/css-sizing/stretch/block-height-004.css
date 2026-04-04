@@ -1,0 +1,12 @@
+
+  .outer {
+    width: 100px;
+    height: 100px;
+    outline: solid;
+    position: relative;
+  }
+
+  .inner {
+    height: stretch;
+    margin: 10px;
+  }

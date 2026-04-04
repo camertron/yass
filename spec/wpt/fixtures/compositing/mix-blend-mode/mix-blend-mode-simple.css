@@ -1,0 +1,13 @@
+
+            div {
+                width: 100px;
+                height: 100px;
+            }
+            .parent {
+                background: #FF0;
+            }
+            .child {
+                background: #F00;
+                mix-blend-mode: difference;
+            }
+        

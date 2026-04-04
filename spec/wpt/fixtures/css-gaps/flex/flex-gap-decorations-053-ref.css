@@ -1,0 +1,34 @@
+
+    body {
+        margin: 0px;
+    }
+    #flexbox {
+        width: 400px;
+        border: 2px solid #333;
+        background-color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 10px;
+    }
+    .item {
+        width: 70px;
+        height: 50px;
+        background-color: #007bff;
+        color: white;
+        display: flex;
+    }
+    .rule {
+        position: absolute;
+        top: 2px;
+        height: 50px;
+        background: gold;
+        width: 5px;
+    }
+    .row-rule {
+        position: absolute;
+        display: inline;
+        height: 0px;
+        border-bottom: 5px solid red;
+        top: 54.5px;
+    }

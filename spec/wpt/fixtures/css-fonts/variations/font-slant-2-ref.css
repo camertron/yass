@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: test;
+  src: url(resources/Inter.var.subset.ttf);
+}
+.test {
+  font: 32px/1.5 test;
+}

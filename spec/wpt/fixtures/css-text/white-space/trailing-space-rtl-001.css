@@ -1,0 +1,11 @@
+
+body {
+  direction: rtl;
+  white-space: pre-wrap;
+}
+.bg {
+  background: orange;
+}
+.override {
+  unicode-bidi: bidi-override;
+}

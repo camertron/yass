@@ -1,0 +1,17 @@
+
+    div.image {
+        display: inline-block;
+    }
+    div.container {
+        display: inline-block;
+        width: 100px;
+        vertical-align: top;
+    }
+    img {
+        width: 100px;
+        height: 100px;
+        background-repeat: no-repeat;
+    }
+    body {
+        overflow: hidden;
+    }

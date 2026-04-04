@@ -1,0 +1,12 @@
+
+:root, body {
+  margin: 0;
+  height: 100%;
+}
+
+#target {
+  height: 300px;
+  background-color: lightBlue;
+  border: orange 10px solid;
+  box-sizing: border-box;
+}

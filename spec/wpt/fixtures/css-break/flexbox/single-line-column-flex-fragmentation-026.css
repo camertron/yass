@@ -1,0 +1,6 @@
+
+  .content {
+    width:50px;
+    background:green;
+    contain:size;
+  }

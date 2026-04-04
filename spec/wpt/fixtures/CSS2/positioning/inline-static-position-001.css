@@ -1,0 +1,16 @@
+
+.tests, .no-tests {
+  margin-bottom: 1em;
+  font-family: Ahem;
+  font-size: 10px;
+  line-height: 1;
+}
+.tests > div, .no-tests > div {
+  position: relative;
+  width: 10ch;
+  border: 1px solid blue;
+}
+.abs {
+  position: absolute;
+  color: orange;
+}

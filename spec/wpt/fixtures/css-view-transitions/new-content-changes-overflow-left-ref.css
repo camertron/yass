@@ -1,0 +1,13 @@
+
+body { background: pink }
+#target {
+  position: relative;
+  background: green;
+  left: 10px;
+  width: 100px;
+  height: 100px;
+  view-transition-name: target;
+}
+#target.toggle {
+  outline: 300px solid transparent;
+}

@@ -1,0 +1,22 @@
+
+li {
+  list-style-position: inside;
+  width: 0;
+}
+::marker {
+  white-space: normal;
+}
+.hyphens-manual.explicit ::marker,
+.hyphens-manual.inherit {
+  hyphens: manual;
+}
+.hyphens-none.explicit ::marker,
+.hyphens-none.inherit {
+  hyphens: none;
+}
+.marker-string {
+  list-style-type: "foo\AD bar";
+}
+.marker-content::marker {
+  content: "foo\AD bar";
+}

@@ -1,0 +1,17 @@
+
+  li, ::marker {
+    color: red;
+  }
+  li::before, li::after {
+    display: list-item;
+    content: "Before";
+  }
+  li::after {
+    content: "After";
+  }
+  .tweak::marker {
+    color: blue;
+  }
+  .tweak, .tweak::before, .tweak::after {
+    color: initial;
+  }

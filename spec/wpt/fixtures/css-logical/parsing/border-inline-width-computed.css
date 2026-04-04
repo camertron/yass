@@ -1,0 +1,11 @@
+
+  #box {
+    border-style: dotted; /* Avoid border-*-width computed style 0 */
+    border-top-width: thin;
+    border-right-width: medium;
+    border-bottom-width: thick;
+  }
+  #target {
+    font-size: 40px;
+    border-inline-style: dotted; /* Avoid border-inline-*-width computed style 0 */
+  }

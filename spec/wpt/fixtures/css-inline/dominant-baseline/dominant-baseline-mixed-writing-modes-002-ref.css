@@ -1,0 +1,15 @@
+
+    .line {
+      font: 500px/1 BaselineDiagnosticAlphabeticZero;
+      unicode-bidi: bidi-override;
+    }
+
+    span {
+        font-size: calc(1em / 1.61803398875);
+        alignment-baseline: text-top;
+    }
+    .r { writing-mode: horizontal-tb; direction: ltr; }
+    .d { writing-mode: vertical-lr; }
+    .l { writing-mode: horizontal-tb; direction: rtl; }
+    .u { writing-mode: sideways-rl; }
+  

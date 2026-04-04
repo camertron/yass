@@ -1,0 +1,17 @@
+
+      #container {
+        width: 200px;
+        height: 200px;
+      }
+      #target {
+        position: relative;
+        left: 140%;
+        top: 70%;
+        width: 40px;
+        height: 40px;
+        background-color: lime;
+        offset-path: ray(180deg closest-side);
+        offset-distance: 100%;
+        offset-position: auto;
+      }
+    

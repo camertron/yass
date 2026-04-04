@@ -1,0 +1,32 @@
+
+    body {
+        margin: 0px;
+    }
+    .section {
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 340px;
+    }
+    .flex > * {
+        background: lightgray;
+        width: 100px;
+        height: 100px;
+    }
+    .flex > :first-child {
+        background: salmon;
+    }
+    .col-seg {
+        position: absolute;
+        width: 6px;
+        background: blue;
+    }
+    .row-seg {
+        position: absolute;
+        height: 6px;
+        background: red;
+    }

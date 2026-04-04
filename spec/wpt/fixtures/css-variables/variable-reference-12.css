@@ -1,0 +1,8 @@
+
+:root {
+  --a: "hello";
+  --b: "there";
+}
+#a:before {
+  content: var(--a) " " var(--b);
+}

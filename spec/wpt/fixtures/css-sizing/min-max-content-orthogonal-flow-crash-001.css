@@ -1,0 +1,12 @@
+
+body {
+  width: fit-content;
+}
+#target {
+  display: block;
+  writing-mode: vertical-lr;
+  columns: 2;
+}
+.after #target {
+  float: left;
+}

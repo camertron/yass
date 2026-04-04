@@ -1,0 +1,17 @@
+
+#container {
+  width: 150px;
+  height: 150px;
+  background: lightblue;
+  position: relative;
+}
+div > div {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+.hidden {
+  content-visibility: hidden;
+}
+.flex { display: flex; }
+.abspos { position: absolute; }

@@ -1,0 +1,48 @@
+
+body {
+  margin: 0;
+}
+
+.rel {
+  position: relative;
+  background: lightgray;
+}
+
+.anchor {
+  anchor-name: --a;
+  background: orange;
+}
+
+.target {
+  position: absolute;
+  left: anchor(--a left);
+  right: anchor(--a right);
+  top: anchor(--a top);
+  bottom: anchor(--a bottom);
+  background: lime;
+  opacity: 0.5;
+}
+
+
+#test1.multicol {
+  column-count: 3;
+  column-width: 100px;
+  column-gap: 10px;
+  width: 320px;
+  height: 100px;
+}
+
+#test1 .rel{
+  width: 100px;
+  height: 300px;
+}
+
+#test1 .spacer {
+  height: 175px;
+}
+
+#test1 .anchor {
+  margin-left: 25px;
+  width: 50px;
+  height: 50px;
+}

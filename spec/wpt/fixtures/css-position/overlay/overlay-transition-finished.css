@@ -1,0 +1,18 @@
+
+  #transition-in, #red {
+    /* Force display:block both popover open or closed to not rely on
+       @starting-style or display transitions. */
+    display: block;
+    border: none;
+    width: 100vw;
+    height: 100vh;
+  }
+  #red {
+    position: fixed;
+    background-color: red;
+  }
+  #transition-in {
+    transition: overlay 0.1s step-end;
+    transition-behavior: allow-discrete;
+    background-color: green;
+  }

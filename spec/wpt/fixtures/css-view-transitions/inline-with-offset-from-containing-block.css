@@ -1,0 +1,33 @@
+
+  :root {
+    scrollbar-width: none;
+    font: 20px/1 Ahem;
+  }
+  .outer {
+    transform: scale(2);
+    width: 100vw;
+    text-align: center;
+  }
+  .inner {
+    padding: 10px;
+    transform: translate(20px);
+    view-transition-name: text;
+  }
+  :root {
+    view-transition-name: none;
+  }
+
+  html::view-transition {
+    background: pink;
+  }
+  html::view-transition-group(text) {
+    border: 10px solid black;
+    margin: -10px 0 0 -10px;
+    animation-play-state: paused;
+  }
+  html::view-transition-image-pair(text),
+  html::view-transition-old(text),
+  html::view-transition-new(text) {
+    animation-play-state: paused;
+  }
+

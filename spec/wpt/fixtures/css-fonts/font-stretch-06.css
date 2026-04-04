@@ -1,0 +1,17 @@
+
+    @font-face {
+				font-family: "test";
+				src: url(support/fonts/fail.woff) format("woff");
+                font-stretch: semi-expanded;
+			}
+    @font-face {
+				font-family: "test";
+				src: url(support/fonts/pass.woff) format("woff");
+                font-stretch: normal;
+			}
+    .test {
+				font-family: "test";
+				font-size: 6em;
+                font-stretch: normal;
+			}
+

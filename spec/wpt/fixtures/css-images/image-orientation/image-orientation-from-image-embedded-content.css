@@ -1,0 +1,18 @@
+
+    iframe {
+        display: inline-block;
+        width: 120px;
+        height: 110px;
+        vertical-align: top;
+        image-orientation: from-image;
+    }
+    embed {
+        object-fit: none;
+        object-position: top left;
+        image-orientation: from-image;
+    }
+    object {
+        object-fit: none;
+        object-position: top left;
+        image-orientation: from-image;
+    }

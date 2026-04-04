@@ -1,0 +1,15 @@
+
+.parent {
+  height: 200px;
+}
+.target {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  display: inline-block;
+  margin-right: 5px;
+  height: 10px;
+}
+.expected {
+  background-color: green;
+}

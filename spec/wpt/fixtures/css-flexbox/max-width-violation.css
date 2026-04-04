@@ -1,0 +1,31 @@
+
+.columns {
+  display: flex;
+  width: 800px;
+}
+
+.columns > div {
+  background: #aaa;
+}
+
+.column1 {
+  width: 800px;
+  overflow: auto;
+  max-width: 150px;
+}
+
+.column2 {
+  flex: 0.8 0 0;
+}
+
+.red {
+  position: absolute;
+  width: 510px;
+  background: red !important;
+  height: 10px;
+  z-index: -1;
+}
+
+.abspos {
+  position: absolute;
+}

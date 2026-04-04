@@ -1,0 +1,17 @@
+
+  div
+    {
+      font-size: 300%;
+    }
+
+  div::spelling-error
+    {
+      color: green;
+    }
+
+  div::grammar-error
+    {
+      background-color: yellow;
+      color: red;
+    }
+  

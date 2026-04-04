@@ -1,0 +1,19 @@
+
+body {
+  position: relative;
+  width: 120px;
+}
+
+.test {
+  background: red;
+  position: absolute;
+  left: 0px;
+  right: 20px;
+}
+
+@supports (display: layout(test)) {
+  .test {
+    background: green;
+    display: layout(test);
+  }
+}

@@ -1,0 +1,12 @@
+
+     body {
+         color: red;
+         text-shadow: 0 0 10px currentcolor;
+     }
+
+     p {
+         text-shadow: inherit;
+         color: green;
+         font: 1.5em Georgia, serif;
+     }
+    

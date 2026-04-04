@@ -1,0 +1,33 @@
+
+  .container {
+    writing-mode: sideways-lr;
+    position: absolute;
+    inline-size: 200px;
+    line-height: 0;
+  }
+
+  .shape {
+    float: left;
+    /* Omit shape-outside */
+    clip-path: circle(50% at right 40px bottom 40px) border-box;
+    box-sizing: content-box;
+    block-size: 40px;
+    inline-size: 40px;
+    padding: 20px;
+    border: 20px solid lightgreen;
+    margin-inline-start: 20px;
+    margin-inline-start: 20px;
+    margin-block-end: 20px;
+    background-color: orange;
+  }
+
+  .box {
+    position: absolute;
+    inline-size: 60px;
+    background-color: blue;
+  }
+
+  .long {
+    inline-size: 200px;
+  }
+  

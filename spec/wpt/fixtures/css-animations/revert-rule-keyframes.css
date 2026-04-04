@@ -1,0 +1,21 @@
+
+  @property --x {
+    syntax: "<length>";
+    inherits: false;
+    initial-value: 0px;
+  }
+  @keyframes anim {
+    from {
+      width: revert-rule;
+      --x: revert-rule;
+    }
+    to {
+      width: 200px;
+      --x: 200px;
+    }
+  }
+  #target {
+    width: 100px;
+    --x: 100px;
+    animation: anim 3600s steps(2, start);
+  }

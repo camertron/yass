@@ -1,0 +1,10 @@
+
+  #transition-in, #transition-out {
+    /* Force display:block both popover open or closed to not rely on
+       @starting-style or display transitions. */
+    display: block;
+  }
+  .enable-transitions :is(#transition-in, #transition-out) {
+    transition: overlay 60s step-end;
+    transition-behavior: allow-discrete;
+  }

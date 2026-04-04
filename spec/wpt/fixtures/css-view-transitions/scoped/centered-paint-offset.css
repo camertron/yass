@@ -1,0 +1,10 @@
+
+
+body { margin: 20px }
+#scope { contain: layout; text-align: center;
+  width: 200px; height: 100px; padding: 20px;
+  background: #eee; border: 20px solid #acf; }
+#scope::view-transition-group(*) { animation-play-state: paused; }
+#scope::view-transition-new(*) { animation: unset; opacity: 1; }
+#scope::view-transition-old(*) { animation: unset; opacity: 0; }
+

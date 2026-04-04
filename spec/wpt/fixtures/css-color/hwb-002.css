@@ -1,0 +1,3 @@
+
+    .test { background-color: red; width: 12em; height: 12em; }
+    .test { background-color: hwb(0 0% 100%); } /* black (sRGB #000000) converted to hwb */

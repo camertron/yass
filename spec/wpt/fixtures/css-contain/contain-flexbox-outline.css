@@ -1,0 +1,8 @@
+
+body {
+  contain: strict;
+  display: flex;
+}
+html {
+  outline: 1px auto;
+}

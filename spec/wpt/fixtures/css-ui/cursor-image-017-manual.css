@@ -1,0 +1,6 @@
+
+div.test{
+  background: #D2B48C; border: 2px solid #555;
+  cursor: url("support/cursors/not-an-image.foo"), url("support/cursors/woolly-64.png"), url("support/cursors/woolly-64.ico"), help;
+  width: 128px; height: 128px;
+}

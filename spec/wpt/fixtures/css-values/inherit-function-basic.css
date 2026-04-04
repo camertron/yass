@@ -1,0 +1,48 @@
+
+    #parent {
+      --z: 2;
+    }
+    #target {
+      --z: 13;
+      z-index: inherit(--z);
+    }
+  
+
+    :root {
+      --z: 2;
+    }
+    #foo {
+      --z: 13;
+      z-index: inherit(--z);
+    }
+  
+
+    #foo {
+      --z: 13;
+      z-index: inherit(--z, 4);
+    }
+  
+
+    #e1 { --v: e1; }
+    #e2 { --v: e2 inherit(--v); }
+    #e3 { --v: e3 inherit(--v); }
+  
+
+    @property --f {
+      syntax: "<length>";
+      inherits: false;
+      initial-value: 0px;
+    }
+    #e1 { font-size: 3px; --f: 1em; }
+    #e2 { font-size: 5px; --f: calc(1em + inherit(--f)); }
+    #e3 { font-size: 7px; --f: calc(1em + inherit(--f)); }
+  
+
+    #parent {
+      --z: 2;
+    }
+    #target {
+      --z: 13;
+      z-index: if(style(--z > inherit(--z)):4; else:7);
+    }
+  

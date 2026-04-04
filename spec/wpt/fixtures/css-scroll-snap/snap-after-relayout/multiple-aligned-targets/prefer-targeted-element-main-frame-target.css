@@ -1,0 +1,31 @@
+
+    #space {
+      height: 300vh;
+      width: 300vw;
+      position: absolute;
+    }
+    #scroller {
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+      width: 450px;
+      height: 450px;
+      border: solid 1px black;
+      position: relative;
+    }
+    .box {
+      height: 200px;
+      width: 200px;
+      position: absolute;
+      background-color: green;
+      scroll-snap-align: start;
+    }
+    .box:target {
+      background-color: red;
+    }
+    .toprow { top: 0px; }
+    .midrow { top: 210px; }
+    .bottomrow { top: 420px; }
+    .leftcol { left: 0px; }
+    .midcol { left: 210px; }
+    .rightcol { left: 420px; }
+  

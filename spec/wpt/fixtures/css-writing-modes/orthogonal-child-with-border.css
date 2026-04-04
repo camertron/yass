@@ -1,0 +1,13 @@
+
+    #outer {
+      position: absolute;
+      background: red;
+      writing-mode: vertical-lr;
+    }
+    #inner {
+      width: 100px;
+      border: 0px solid green;
+      border-width: 40px 20px 60px 30px;  /* top + bottom borders = 100px */
+      writing-mode: horizontal-tb;
+    }
+  

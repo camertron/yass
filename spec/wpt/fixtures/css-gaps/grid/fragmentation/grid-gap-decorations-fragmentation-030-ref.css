@@ -1,0 +1,27 @@
+
+  .multi-col {
+    columns: 3;
+    height: 115px;
+    width: 1020px;
+    column-gap: 0;
+    column-fill: auto;
+  }
+  body {
+    margin: 0px;
+  }
+  .container {
+    display: grid;
+    grid-template: repeat(3, 100px) / repeat(3, 100px);
+    gap: 20px;
+  }
+  .col-rule {
+    height: 115px;
+    width: 0px;
+    position: absolute;
+    left: 107px;
+    top: 0px;
+    border-right: 6px solid rgba(128 0 0 / 0.5);
+  }
+  .item {
+    background: rgba(192 192 192 / 0.75);
+  }

@@ -1,0 +1,18 @@
+
+  @scope {
+    .a {
+      width: 100px;
+      height: 100px;
+      background: green;
+    }
+  }
+
+
+      @scope {
+        .a {
+          width: 100px;
+          height: 100px;
+          background: red;
+        }
+      }
+    

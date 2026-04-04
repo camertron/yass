@@ -1,0 +1,18 @@
+
+body {
+	margin: 0;
+}
+div {
+	background: #3366cc;
+	border: 1px solid black;
+}
+div::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+p {
+	background: #ffcc00;
+	margin: 2em;
+	float: left;
+}

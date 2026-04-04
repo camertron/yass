@@ -1,0 +1,9 @@
+
+#container {
+  height: fit-content;
+  position: fixed;
+  top: 50%;
+  background-color: gold;
+  margin: auto;
+  bottom: 0;
+}

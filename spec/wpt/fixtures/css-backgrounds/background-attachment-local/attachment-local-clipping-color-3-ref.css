@@ -1,0 +1,11 @@
+
+#outer {
+  width: 200px;
+  height: 255px;
+  padding: 25px 40px 0;
+  border: 10px dashed;
+  background: green content-box;
+}
+p {
+  margin-top: 20px;
+}

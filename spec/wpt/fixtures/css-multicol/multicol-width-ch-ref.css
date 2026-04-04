@@ -1,0 +1,8 @@
+
+  .multicol-ref {
+    font: 10px ahem;
+    display: grid;
+    grid-template-columns: 1fr 1ch 1fr 1ch 1fr 1ch 1fr 1ch 1fr;
+    width: 69ch;
+    background: yellow;
+  }

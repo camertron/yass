@@ -1,0 +1,22 @@
+
+body {
+  margin: 0;
+  overflow: hidden; /* hide scrollbars */
+}
+
+#container {
+  height: 300px;
+  overflow: auto;
+}
+
+#overflowClipContainer {
+  overflow: clip;
+  height: 600px;
+}
+
+#sticky {
+  position: sticky;
+  top: 0;
+  height: 50px;
+  background-color: yellow;
+}

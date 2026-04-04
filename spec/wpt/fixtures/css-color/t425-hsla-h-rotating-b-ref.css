@@ -1,0 +1,10 @@
+
+    table { border-spacing: 0; padding: 0; border: none; }
+    td { border: none; padding: 0; }
+    td { width: 1.2em; height: 1.2em; }
+    #one { background: #FF0000; }
+    #two { background: rgba(255, 255, 0, 0.8); }
+    #three { background: rgba(0, 255, 0, 0.4); }
+    #four { background: rgba(0, 255, 255, 0.6); }
+    #five { background: rgba(0, 0, 255, 0.8); }
+    #six { background: rgba(255, 0, 255, 0.4); }

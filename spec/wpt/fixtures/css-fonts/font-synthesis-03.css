@@ -1,0 +1,16 @@
+
+    @font-face {
+				font-family: "test";
+				src: url(/fonts/Lato-Medium.ttf);
+			}
+    @supports not (font-synthesis: none) {
+        .test {color: red;}
+    }
+    .test {
+				font-family: "test";
+				font-size: 3em;
+			}
+    .nosynth {
+        font-style: italic;
+        font-synthesis: none;
+    }

@@ -1,0 +1,13 @@
+
+@namespace url("http://www.w3.org/2000/svg");
+
+*|div {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+/* Type selector, so ns should apply and this should match */
+*|*:not(div) {
+  display: none;
+}

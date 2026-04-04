@@ -1,0 +1,14 @@
+
+html,body {
+  color:black; background-color:white; font:15px/1 monospace; padding:0; margin:0;
+}
+
+.grid-lanes {
+    display: grid-lanes;
+    background: gray;
+    position: relative;
+    flow-tolerance: 0;
+    grid-template-rows: auto auto auto;
+    width: max-content;
+    padding: 10px;
+}

@@ -1,0 +1,7 @@
+
+body { margin: 0 }
+body > div { float: left; height: 100px; width: 1px; }
+body > div > div { background: blue }
+
+/* to give the max-height something to restrict */
+span { display: block; height: 300px }

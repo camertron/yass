@@ -1,0 +1,29 @@
+
+div {
+	position: absolute;
+}
+
+.ref,
+.test {
+	border-radius: 30px;
+}
+
+.ref {
+	width: 104px;
+	height: 104px;
+	left: -2px;
+	top: -2px;
+	background-color: green;
+}
+
+.test,
+.contents {
+	background-color: red;
+	width: 100px;
+	height: 100px;
+}
+
+.test {
+	overflow: hidden;
+}
+

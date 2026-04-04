@@ -1,0 +1,56 @@
+
+  /* Selectors for content-visibility */
+  #spacer_for_far_to_viewport {
+      height: 300vh;
+  }
+  .content_visibility {
+      /* Dynamic modification of content-visibility may change whether style
+         containment is applied, which in turn may cause drastic invalidations
+         (e.g. rebuilding counters). Make the test more robust by forcing
+         style containment to always apply. */
+      contain: style;
+  }
+  #visible .content_visibility {
+      content-visibility: visible;
+  }
+  #hidden .content_visibility {
+      content-visibility: hidden;
+  }
+  #auto_far .content_visibility {
+      content-visibility: auto;
+  }
+  #auto_close .content_visibility {
+      content-visibility: auto;
+  }
+  #visible_to_hidden .content_visibility {
+      content-visibility: visible;
+  }
+  #hidden_to_visible .content_visibility {
+      content-visibility: hidden;
+  }
+  #visible_to_auto_far .content_visibility {
+      content-visibility: visible;
+  }
+  #auto_far_to_visible .content_visibility {
+      content-visibility: auto;
+  }
+  #hidden_to_auto_close .content_visibility {
+      content-visibility: hidden;
+  }
+  #auto_close_to_hidden .content_visibility {
+      content-visibility: auto;
+  }
+  #auto_dynamic_relevancy .content_visibility {
+      content-visibility: auto;
+  }
+
+  /* Selectors for testing sizing as empty */
+  .content_visibility {
+      display: inline-block;
+  }
+  .box {
+      display: inline-block;
+      width: 50px;
+      height: 5px;
+      background: black;
+  }

@@ -1,0 +1,16 @@
+
+  .container {
+    background-color: red;
+    display: flex;
+    height: 100px;
+    width: 100px;
+  }
+  .frozen-child {
+    flex-grow: 1;
+    max-width: 0px;
+    background: red;
+  }
+  .non-frozen-child {
+    flex-grow: 1;
+    background: green;
+  }

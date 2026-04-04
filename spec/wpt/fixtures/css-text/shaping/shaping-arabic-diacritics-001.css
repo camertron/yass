@@ -1,0 +1,8 @@
+
+@font-face {
+    font-family: ArabicTest;
+    src: url('/fonts/noto/NotoNaskhArabic-regular.woff2') format('woff2');
+}
+.test {
+    font: 120px/2 ArabicTest, sans-serif;
+}

@@ -1,0 +1,21 @@
+
+  @font-face {
+    font-family: foo;
+    src: url('/fonts/Ahem.ttf');
+  }
+
+  @font-face {
+    font-family: foo;
+    font-weight: 900;
+    /* A font with significantly different ex-height metric than Aham. */
+    src: url('/fonts/noto/noto-sans-v8-latin-regular.woff');
+  }
+
+  div {
+    font-family: foo, sans-serif;
+    width: 10ex;
+    height: 20px;
+    background: blue;
+    margin: 20px;
+    font-size: 20px;
+  }

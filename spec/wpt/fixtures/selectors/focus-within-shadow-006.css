@@ -1,0 +1,8 @@
+
+  /* Suppress things that cannot be reproduced in the reference file */
+  :focus {
+    outline: none;
+  }
+  :focus-within {
+      border-color: green;
+  }

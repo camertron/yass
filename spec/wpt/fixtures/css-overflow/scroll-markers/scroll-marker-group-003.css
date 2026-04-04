@@ -1,0 +1,39 @@
+
+  :root {
+    --after-background: red;
+    --scroll-marker-group-background: red;
+  }
+
+  div {
+    scroll-marker-group: after;
+  }
+
+  div>* {
+    background: green;
+    display: flex;
+    height: 20px;
+    width: 100px;
+  }
+
+  div.before::before {
+    background: green;
+    content: "";
+    display: flex;
+    height: 20px;
+    width: 100px;
+  }
+
+  div.after::after {
+    background: var(--after-background);
+    content: "";
+    display: flex;
+    height: 20px;
+    width: 100px;
+  }
+
+  div.scroll-marker-group::scroll-marker-group {
+    background: var(--scroll-marker-group-background);
+    display: flex;
+    height: 20px;
+    width: 100px;
+  }

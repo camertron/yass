@@ -1,0 +1,12 @@
+
+
+    @page {
+        size: a4;
+    }
+    @page small_page {
+        size: a5 portrait;
+    }
+    @page large_page {
+        size: a3 landscape;
+    }
+

@@ -1,0 +1,11 @@
+
+  div::selection {
+    background-color: green;
+    text-decoration-line: underline;
+    text-decoration-style: line;
+    text-decoration-thickness: 1px;
+    text-decoration-color: yellow;
+  }
+  span::selection {
+    background-color: blue;
+  }

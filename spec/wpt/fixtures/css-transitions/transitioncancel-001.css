@@ -1,0 +1,16 @@
+
+#a {
+    height: 100px;
+    width: 100px;
+    transition: background-color 2s;
+}
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+}
+.hidden {
+    display: none !important;
+}
+    

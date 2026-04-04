@@ -1,0 +1,6 @@
+
+  #t {
+    color: red;
+    transition-property: color, color;
+    transition-duration: 1s, 0s;
+  }

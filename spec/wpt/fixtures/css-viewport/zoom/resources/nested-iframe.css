@@ -1,0 +1,12 @@
+
+body {
+  --top-scale: 1;
+  --sub-scale: 1;
+  margin: calc(12px * var(--top-scale));
+  background-color: orange;
+}
+iframe {
+  border: none;
+  width: calc(96px * var(--top-scale) * var(--sub-scale));
+  height: calc(48px * var(--top-scale) * var(--sub-scale));
+}

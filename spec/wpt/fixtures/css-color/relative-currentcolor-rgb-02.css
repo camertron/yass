@@ -1,0 +1,12 @@
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: yellow;
+  background-color: rgb(from currentColor g r b);
+}
+div div {
+  color: #800000;
+  background-color: inherit;
+}

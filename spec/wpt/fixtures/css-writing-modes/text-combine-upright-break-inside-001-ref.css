@@ -1,0 +1,4 @@
+
+.test { writing-mode: vertical-rl; }
+.test > p { height: 3em; margin: 0 5em; }
+.tcy, .fake-tcy { color: transparent; }

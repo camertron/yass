@@ -1,0 +1,21 @@
+
+        @keyframes coloranim
+        {
+            from { border: 1px solid blue; }
+            to { border: 1px solid var(--endColor); }
+        }
+
+        /* Start the animation in the paused state and fill at both ends so we can inspect values from both keyframes. */
+        #target
+        {
+            animation-name: coloranim;
+            animation-duration: 1s;
+            animation-play-state: paused;
+            animation-fill-mode: both;
+        }
+        #target
+        {
+            border: 1px solid red;
+            --endColor: green;
+        }
+    

@@ -1,0 +1,13 @@
+
+div {
+  font-size: 10px;
+  width: 12ch;
+  line-height: 1;
+  background: yellow;
+}
+.float {
+  float: left;
+  width: 12ch;
+  height: 1em;
+  background: orange;
+}

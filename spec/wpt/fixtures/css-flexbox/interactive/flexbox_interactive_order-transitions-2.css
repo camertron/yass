@@ -1,0 +1,25 @@
+
+div {
+	display: flex;
+}
+span {
+	background: yellow;
+	width: 1em;
+	height: 2em;
+}
+.test {
+	background: #3366cc;
+	order: 0;
+}
+div:hover .test {
+	transition: order 10s;
+	order: -1;
+}
+p~div {
+	margin: 1em;
+	float: left;
+	display: block;
+}
+p~div span {
+	float: left;
+}

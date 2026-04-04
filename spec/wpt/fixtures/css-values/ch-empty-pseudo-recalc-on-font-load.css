@@ -1,0 +1,8 @@
+
+.before::before,
+.after::after,
+.backdrop::backdrop {
+  font: 25px/1 "custom font", monospace;
+  background: linear-gradient(45deg, red, blue);
+  background-size: 1ch 1ch;
+}

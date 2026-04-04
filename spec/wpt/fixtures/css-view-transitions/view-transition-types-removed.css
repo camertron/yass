@@ -1,0 +1,19 @@
+
+
+body { background: lightpink; }
+html:active-view-transition-type(type-name) #target {
+  background: red;
+}
+
+#target {
+  view-transition-name: target;
+  background: green;
+  width: 100px;
+  height: 100px;
+}
+
+html::view-transition-group(root) {
+  display: none;
+}
+
+html::view-transition { background: white; }

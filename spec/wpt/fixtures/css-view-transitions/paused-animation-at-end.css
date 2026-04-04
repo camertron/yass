@@ -1,0 +1,13 @@
+
+:root { view-transition-name: unset; }
+#target {
+  width: 100px;
+  height: 100px;
+  view-transition-name: target;
+}
+.one {
+  background: blue;
+}
+.two {
+  background: green;
+}

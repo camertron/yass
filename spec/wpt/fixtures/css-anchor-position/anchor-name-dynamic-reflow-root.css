@@ -1,0 +1,23 @@
+
+body { margin: 0 }
+.tabs {
+  display: flex;
+}
+.tab {
+  height: 20px;
+  width: 100px;
+}
+.cur {
+  anchor-name: --current-tab;
+}
+.highlight {
+  position: absolute;
+  width: anchor-size(width);
+  left: anchor(left);
+  right: anchor(right);
+  height: 100px;
+  background: green;
+  top: anchor(bottom);
+  position-anchor: --current-tab;
+  transform: scaleY(1); /* This is important to test the bug */
+}

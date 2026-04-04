@@ -1,0 +1,11 @@
+
+@page { size: 5in 3in; margin: 0.5in; }
+body {
+  margin: 0;
+  font-size: 0.25in;
+}
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  border: 0.25in solid black;
+}

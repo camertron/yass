@@ -1,0 +1,9 @@
+
+.a {
+    page: a;
+    break-after: page;
+}
+.b {
+    page: b;
+}
+  

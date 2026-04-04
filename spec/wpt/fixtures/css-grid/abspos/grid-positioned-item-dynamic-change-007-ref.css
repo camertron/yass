@@ -1,0 +1,16 @@
+
+.green {
+  background: green;
+  width: 100px;
+  height: 50px;
+  margin-bottom: 8px;
+}
+
+.blue {
+  border: 3px solid blue;
+  box-sizing: border-box;
+  background: green;
+  width: 100px;
+  height: 100px;
+}
+

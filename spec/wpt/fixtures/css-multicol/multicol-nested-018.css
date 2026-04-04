@@ -1,0 +1,13 @@
+
+  .mc {
+    columns: 2;
+    column-gap: 0;
+    column-fill: auto;
+  }
+  .ib {
+    display: inline-block;
+    vertical-align: top;
+    width: 200%;
+    height: 50px;
+    background: green;
+  }

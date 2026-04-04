@@ -1,0 +1,27 @@
+
+      div {
+        margin: 1px;
+        background: lime;
+        float: left;
+      }
+
+      .square {
+        width: 24px;
+        height: 24px;
+      }
+      .bigWide {
+        width: 48px;
+        height: 32px;
+      }
+      .bigTall {
+        width: 32px;
+        height: 48px;
+      }
+      .small {
+        width: 8px;
+        height: 8px;
+      }
+
+      br { clear: both; }
+
+    

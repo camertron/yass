@@ -1,0 +1,23 @@
+
+  body {
+    margin: 0px;
+  }
+  .flex-container {
+    height: 110px;
+    width: 110px;
+    display: flex;
+    column-gap: 10px;
+    row-gap: 10px;
+    column-rule: 10px solid pink !important;
+    row-rule-color: green;
+    row-rule-style: solid;
+    row-rule-width: 10px;
+    flex-wrap: wrap;
+  }
+  #container {
+    column-rule: 9px dotted blue;
+  }
+  .flex-item {
+    background: skyblue;
+    width: 50px;
+  }

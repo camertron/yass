@@ -1,0 +1,11 @@
+
+      @mixin --m1() {
+        @result {
+          color: green;
+        }
+      }
+      div {
+        color: red;
+        @apply --m1;
+      }
+    

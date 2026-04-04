@@ -1,0 +1,17 @@
+
+      @keyframes anim {
+        to {
+          translate: 0px 100px;
+          offset-distance: 100%;
+          transform: translateX(-100px);
+        }
+      }
+      #target {
+        position: absolute;
+        width: 100px;
+        height: 50px;
+        background-color: lime;
+        offset-path: path("M25 0v100");
+        animation: anim 10s -5s paused linear;
+      }
+    

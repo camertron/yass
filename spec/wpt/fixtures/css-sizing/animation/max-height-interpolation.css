@@ -1,0 +1,15 @@
+
+.parent {
+  max-height: 30px;
+}
+.target {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  display: inline-block;
+  max-height: 10px;
+}
+.expected {
+  background-color: green;
+}
+

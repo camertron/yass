@@ -1,0 +1,14 @@
+
+  ::marker {
+    color: red;
+  }
+  li::marker {
+    color: blue;
+  }
+  li::before, li::after {
+    display: list-item;
+    content: "Before";
+  }
+  li::after {
+    content: "After";
+  }

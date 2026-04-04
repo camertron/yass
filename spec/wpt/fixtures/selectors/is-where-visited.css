@@ -1,0 +1,27 @@
+
+  :visited, :link {
+    color: black;
+  }
+
+  #parent1 :is(:visited) {
+    color: green;
+  }
+  #parent1 :is(:link):nth-child(even) {
+    color: magenta;
+  }
+
+  :is(#parent2 .a + :visited, #parent2 .e:link) {
+    color: tomato;
+  }
+
+  main :is(a:visited > :where(.a + span + span, .f)) {
+    color: skyblue;
+  }
+
+  main :is(a:link > :where(.a + span + span, .f)) {
+    color: blue;
+  }
+
+  main :is(a:is(:link, :visited) > :where(.b, .e)) {
+    color: maroon;
+  }

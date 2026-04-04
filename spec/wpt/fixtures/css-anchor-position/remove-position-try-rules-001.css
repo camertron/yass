@@ -1,0 +1,31 @@
+
+  @position-try --pf1 {
+    left: auto;
+    right: anchor(left);
+    top: 200px;
+  }
+
+
+  @position-try --pf2 {
+    left: auto;
+    right: anchor(left);
+    top: 300px;
+  }
+
+
+  #anchor {
+    anchor-name: --a;
+    margin-left: 100px;
+    height: 100px;
+    background: hotpink;
+  }
+  #box {
+    position: absolute;
+    position-anchor: --a;
+    top: 100px;
+    left: anchor(right);
+    position-try-fallbacks: --pf1,--pf2;
+    width: 50px;
+    height: 50px;
+    background: cyan;
+  }

@@ -1,0 +1,28 @@
+
+#flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 250px;
+}
+.item {
+  border: 1px solid black;
+  box-sizing: content-box;
+}
+#one {
+  background: lightblue;
+  width: 55px;
+  height: 21px;
+}
+#two {
+  background: lightgreen;
+  width: 66px;
+  height: 42px;
+}
+#three {
+  background: lightgrey;
+  align-self: stretch;
+  width: 77px;
+  height: 63px;
+}

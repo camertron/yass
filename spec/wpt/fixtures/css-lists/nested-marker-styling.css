@@ -1,0 +1,20 @@
+
+* {
+  font-family: Ahem;
+}
+div::before {
+  content: "before";
+  display: list-item;
+  list-style-position: inside;
+}
+div::after {
+  content: "after";
+  display: list-item;
+  list-style-position: inside;
+}
+div::before::marker {
+  content: "before-marker";
+}
+div::after::marker {
+  content: "after-marker";
+}

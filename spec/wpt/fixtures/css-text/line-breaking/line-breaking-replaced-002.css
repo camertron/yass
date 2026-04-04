@@ -1,0 +1,11 @@
+
+.test {
+    width: 50px;
+}
+.red {
+    position: absolute;
+    color: red;
+    z-index: -1;
+    padding-left: 60px;
+    padding-top: 40px;
+}

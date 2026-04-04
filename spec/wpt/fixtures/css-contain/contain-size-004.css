@@ -1,0 +1,10 @@
+
+div {
+  overflow: hidden;
+  position: absolute;
+}
+rtc {
+  contain: size;
+  display: ruby-text-container;
+  font-size: 1rem;
+}

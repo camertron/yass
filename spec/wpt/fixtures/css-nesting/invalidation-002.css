@@ -1,0 +1,9 @@
+
+  .a {
+    color: green;
+  }
+  .a {
+    & .b {
+      color: red;
+    }
+  }

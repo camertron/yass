@@ -1,0 +1,4 @@
+
+    /* :any-link and :link should match similarly */
+    #subject:has(#target:link:any-link) { color: green; }
+    #subject:has(#svgTarget:link:any-link) { color: blue; }

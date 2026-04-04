@@ -1,0 +1,24 @@
+
+    target1 {
+        background-color: red;
+    }
+
+    :nth-child(1 of target1):nth-last-child(1 of target1) {
+        background-color: green;
+    }
+
+    .target {
+        background-color: red;
+    }
+
+    :nth-child(1 of .target):nth-last-child(1 of .target) {
+        background-color: green;
+    }
+
+    [data-target] {
+        background-color: red;
+    }
+
+    :nth-child(1 of [data-target]):nth-last-child(1 of [data-target]) {
+        background-color: green;
+    }

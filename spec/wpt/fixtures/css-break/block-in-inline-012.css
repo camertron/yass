@@ -1,0 +1,24 @@
+
+  .multicol {
+    position: relative;
+    overflow: hidden;
+    font: 16px/16px Ahem;
+    columns: 4;
+    gap: 0;
+    column-fill: auto;
+    width: 100px;
+    height: 100px;
+    orphans: 1;
+    widows: 1;
+    background: red;
+  }
+  .filler {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 16px;
+    background: green;
+  }
+  grinch {
+    color: green;
+  }

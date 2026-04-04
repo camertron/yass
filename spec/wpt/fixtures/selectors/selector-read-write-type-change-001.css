@@ -1,0 +1,4 @@
+
+      span { color: green; }
+      :read-write + span { color: red }
+    

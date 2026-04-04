@@ -1,0 +1,12 @@
+
+        /* Positioned container allows for the self-describing statement to still
+           be visible in the case of failure */
+        .container {
+            position: relative;
+        }
+        .greenSquare {
+            display: inline-block;
+            margin-top: -200px;
+            background: green;
+        }
+    

@@ -1,0 +1,10 @@
+
+  body {
+    margin: 0;
+  }
+  .autoBehavior {
+    scroll-behavior: auto;
+  }
+  .smoothBehavior {
+    scroll-behavior: smooth;
+  }

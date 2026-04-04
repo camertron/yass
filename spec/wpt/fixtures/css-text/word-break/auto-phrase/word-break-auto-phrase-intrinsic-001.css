@@ -1,0 +1,6 @@
+
+.container > div {
+  word-break: auto-phrase;
+  font-size: 10px;
+  border: 1px solid;
+}

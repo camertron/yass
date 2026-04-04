@@ -1,0 +1,16 @@
+
+    iframe {
+      position: absolute;
+      left: 25px;
+      top: 25px;
+      width: 50vw;
+      height: 50vh;
+    }
+    /* This div overlaps with the iframe, because the iframe is empty it should
+     * be visible behind the iframe. */
+    div {
+      background-color: skyblue;
+      width: 100px;
+      height: 100px;
+    }
+  

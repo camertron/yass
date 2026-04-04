@@ -1,0 +1,19 @@
+
+  body {
+    margin: 0;
+  }
+
+  #scroller {
+    overflow: auto;
+    scroll-marker-group: before;
+
+    &::scroll-marker-group {
+      background: red;
+      height: 100px;
+      width: 100px;
+    }
+
+    &::scroll-marker-group:hover {
+      background: green;
+    }
+  }

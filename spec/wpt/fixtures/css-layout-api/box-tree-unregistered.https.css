@@ -1,0 +1,25 @@
+
+@supports (display: layout(unregistered)) {
+  .test {
+    display: layout(unregistered);
+  }
+}
+
+.container {
+  float: left;
+  margin: 20px 0;
+  border: solid 2px;
+  width: 100px;
+}
+
+.float {
+  float: left;
+  width: 100%;
+  height: 40px;
+  background: hotpink;
+}
+
+.inflow {
+  height: 40px;
+  background: hotpink;
+}

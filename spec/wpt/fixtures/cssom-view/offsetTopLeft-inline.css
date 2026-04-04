@@ -1,0 +1,15 @@
+
+  .container {
+    float: left;
+    width: 8em;
+    height: 7em;
+    padding: 1em;
+    color: red;
+  }
+  .correctionFluid {
+    position: absolute;
+    background: white;
+
+    /* Add some fluff to cover text ink-overflow. */
+    outline:2px solid white;
+  }

@@ -1,0 +1,6 @@
+
+.flex-item {
+    flex: 1 0 auto;
+    height: 100%;
+    border: 1px solid blue;
+}

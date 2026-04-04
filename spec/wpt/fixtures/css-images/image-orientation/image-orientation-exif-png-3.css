@@ -1,0 +1,4 @@
+
+    div { width: 400px; height: 400px; display: inline-block; }
+    div.early { background-image: url(support/F-exif-chunk-early.png)}
+    div.late {background-image: url(support/F-exif-late.png)}

@@ -1,0 +1,13 @@
+
+  #test {
+    padding-right: 0px;
+    transition-duration: 2s;
+    transition-property: padding-right;
+    transition-timing-function: linear;
+  }
+  #ref {
+    background-color: blue;
+    float: right;
+    height: 100px;
+    width: 100px;
+  }

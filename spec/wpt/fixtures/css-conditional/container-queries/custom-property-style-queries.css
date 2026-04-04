@@ -1,0 +1,218 @@
+
+  #outer {
+    container-name: outer;
+    --inner: false;
+    --outer: true;
+    --inner-no-space:false;
+    --outer-no-space:true;
+    --inner-space-after:false ;
+    --outer-space-after:true ;
+  }
+  #inner {
+    --inner: true;
+    --outer: false;
+    --inner-no-space:true;
+    --outer-no-space:false;
+    --inner-space-after:true ;
+    --outer-space-after:false ;
+  }
+
+
+  #important {
+    --foo: bar;
+  }
+  @container style(--foo: bar !important) {
+    #important-child { color: green; }
+  }
+
+
+  #var-query {
+    --foo: baz;
+    --bar: baz;
+  }
+  @container style(--foo: var(--bar)) {
+    #var-subst { color: green; }
+  }
+  @container not style(--foo: var(--unknown)) {
+    #var-subst-unknown { color: green; }
+  }
+  @container not style(--foo: var(--unknown, nomatch)) {
+    #var-subst-unknown-fallback { color: green; }
+  }
+  @container style(--foo: var(--unknown, baz)) {
+    #var-subst-matching-fallback { color: green; }
+  }
+  @container style(--baz: var(--unknown)) {
+    #var-subst-unknown-matching { color: green; }
+  }
+
+
+  #revert {
+    --foo: revert;
+  }
+  #revert-layer {
+    --foo: revert-layer;
+  }
+  #revert-rule {
+    --foo: revert-rule;
+  }
+  @container not style(--foo: revert) {
+    #revert-child { color: green; }
+  }
+  @container not style(--foo: revert-layer) {
+    #revert-layer-child { color: green; }
+  }
+  @container not style(--foo: revert-rule) {
+    #revert-rule-child { color: green; }
+  }
+  @container style(--foo: revert) {
+    #revert-child { color: red; }
+  }
+  @container style(--foo: revert-layer) {
+    #revert-layer-child { color: red; }
+  }
+  @container style(--foo: revert-rule) {
+    #revert-rule-child { color: red; }
+  }
+
+
+  #defaulting {
+    --inherit: baz;
+    --inherit-no: baz;
+  }
+  #defaulting-container {
+    --inherit-no: bar;
+    --unset-no: baz;
+    --initial-no: baz;
+    --space-no: baz;
+    --explicit-initial: initial;
+    --space: ;
+  }
+  @container style(--initial: initial) {
+    #initial { color: green; }
+  }
+  @container not style(--initial) {
+    #initial-implicit { color: green; }
+  }
+  @container not style(--initial-no: initial) {
+    #initial-no { color: green; }
+  }
+  @container style(--initial-no) {
+    #initial-no-implicit { color: green; }
+  }
+  @container style(--inherit: inherit) {
+    #inherit { color: green; }
+  }
+  @container not style(--inherit-no: inherit) {
+    #inherit-no { color: green; }
+  }
+  @container style(--explicit-initial: initial) {
+    #explicit-initial { color: green; }
+  }
+  @container not style(--explicit-initial) {
+    #explicit-initial-implicit { color: green; }
+  }
+  @container style(--space: ) {
+    #space { color: green; }
+  }
+  @container not style(--space-no: ) {
+    #space-no { color: green; }
+  }
+  @container style(--unset: unset) {
+    #unset { color: green; }
+  }
+  @container not style(--unset-no: unset) {
+    #unset-no { color: green; }
+  }
+
+
+  @property --reg-length {
+    syntax: "<length>";
+    inherits: false;
+    initial-value: 10px;
+  }
+
+  #registered {
+    container-type: inline-size;
+    width: 200px;
+    font-size: 20px;
+  }
+
+  #reg-container-px {
+    --reg-length: 10px;
+  }
+  @container style(--reg-length: 10px) {
+    #reg-px { color: green; }
+  }
+  @container style(--reg-length: initial) {
+    #reg-px-initial { color: green; }
+  }
+  @container not style(--reg-length) {
+    #reg-px-initial-implicit { color: green; }
+  }
+
+  #reg-container-font-relative {
+    --reg-length: 10px;
+  }
+  @container style(--reg-length: 0.5em) {
+    #reg-font-relative { color: green; }
+  }
+
+  #reg-container-font-relative-2 {
+    --reg-length: 0.5em;
+  }
+  @container style(--reg-length: 10px) {
+    #reg-font-relative-2 { color: green; }
+  }
+
+  #reg-container-container-relative {
+    width: 100px;
+    --reg-length: 100px;
+  }
+  @container style(--reg-length: 50cqi) {
+    #reg-container-relative { color: green; }
+  }
+
+  #reg-container-initial {
+    --reg-length: 10px;
+  }
+  @container style(--reg-length: 10px) {
+    #reg-initial-value { color: green; }
+  }
+  @container style(--reg-length: initial) {
+    #reg-initial-keyword { color: green; }
+  }
+  @container not style(--reg-length) {
+    #reg-initial-implicit { color: green; }
+  }
+
+
+  #original-text {
+    --number: 100.00;
+    --spaces: a   b;
+  }
+  @container style(--number: 100.00) {
+    #original-text-number {
+      color: green;
+    }
+  }
+  @container style(--number: 100.0) {
+    #original-text-number {
+      color: red;
+    }
+  }
+  @container style(--number: 100) {
+    #original-text-number {
+      color: red;
+    }
+  }
+  @container style(--spaces: a   b) {
+    #original-text-spaces {
+      color: green;
+    }
+  }
+  @container style(--spaces: a b) {
+    #original-text-spaces {
+      color: red;
+    }
+  }

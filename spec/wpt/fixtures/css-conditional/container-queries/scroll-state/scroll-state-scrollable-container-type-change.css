@@ -1,0 +1,15 @@
+
+  #scroller {
+    container-type: scroll-state;
+    overflow: auto;
+    width: 100px;
+    height: 100px;
+  }
+  #target {
+    width: 200px;
+    height: 200px;
+    --scrollable: no;
+    @container scroll-state(scrollable) {
+      --scrollable: yes;
+    }
+  }

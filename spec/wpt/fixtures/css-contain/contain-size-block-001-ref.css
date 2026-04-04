@@ -1,0 +1,28 @@
+
+  .basic {
+    border: 1em solid green;
+  }
+  .height-ref {
+    height: 50px;
+    background: lightblue;
+  }
+  .width-ref {
+    width: 50px;
+  }
+  .floatLBasic-ref {
+    float: left;
+  }
+  .floatLWidth-ref {
+    float: left;
+    width: 50px;
+  }
+  .flexBaselineCheck {
+    display: flex;
+    align-items: baseline;
+  }
+  .innerContents {
+    color: transparent;
+    width: 0;
+    height: 0;
+  }
+  

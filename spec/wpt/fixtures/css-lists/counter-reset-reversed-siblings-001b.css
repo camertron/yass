@@ -1,0 +1,4 @@
+
+.counter-use::before {
+  content: counter(foo);
+}

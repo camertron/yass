@@ -1,0 +1,11 @@
+
+.clamp {
+  display: flow-root;
+  font: 16px / 32px serif;
+  background-color: yellow;
+}
+.clamp > div {
+  padding: 6px;
+  border: 2px solid black;
+  white-space: pre;
+}

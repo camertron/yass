@@ -1,0 +1,22 @@
+
+  .size {
+    width:60px;
+    height:60px;
+  }
+  .overlay {
+    position:absolute;
+    top:69px;
+    pointer-events:none;
+  }
+  .purple {
+    background-color: rebeccapurple;
+  }
+  .yellow {
+    background-color: yellow;
+  }
+  .teal {
+    background-color: teal;
+  }
+  .pink {
+    background-color: pink;
+  }

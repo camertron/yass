@@ -1,0 +1,37 @@
+
+    .flexContainer {
+      display: flex;
+      flex-wrap: wrap;
+
+      /* These let us show where each flex line begins (and hence, how tall
+         the flex lines end up) */
+      align-content: flex-start;
+      align-items: flex-start;
+
+      width: 30px;
+      background: yellow;
+      border: 1px dotted black;
+      float: left;
+      margin: 5px;
+    }
+    .collapsedItem {
+      visibility: collapse;
+      width: 15px;
+      height: 25px;
+    }
+    .halfWidthItem {
+      width: 15px;
+      height: 15px;
+      background: teal;
+    }
+    .fullWidthItem {
+      width: 30px;
+      height: 20px;
+      background: purple;
+    }
+    .veryTallItem {
+      width: 15px;
+      height: 40px;
+      background: olive;
+    }
+  

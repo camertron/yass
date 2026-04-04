@@ -1,0 +1,10 @@
+
+  html {
+      width: 100px;
+      margin-left: auto;
+  }
+  body { /* Just to make testharness display nicely. */
+      position: absolute;
+      left: 0;
+      right: 0;
+  }

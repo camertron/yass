@@ -1,0 +1,13 @@
+
+div {
+  width: 500px;
+}
+.inline-block {
+  display: inline-block;
+  width: 100px;
+  height: 1px;
+  background: blue;
+}
+.w200 {
+  width: 200px;
+}

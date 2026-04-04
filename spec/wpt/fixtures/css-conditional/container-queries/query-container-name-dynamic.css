@@ -1,0 +1,6 @@
+
+  .container { container-name: --foo; }
+  #inner { --match-inner: no; }
+  #outer { --match-outer: no; }
+  @container --foo { #inner { --match-inner: yes; } }
+  @container --foo { #outer { --match-outer: yes; } }

@@ -1,0 +1,15 @@
+
+.grid {
+  display: inline-grid;
+  background: red;
+  gap: 25px;
+}
+.subgrid {
+  display: grid;
+  grid-template-columns: subgrid;
+}
+.item {
+  background: green;
+  height: 25px;
+  width: 100px;
+}

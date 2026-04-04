@@ -1,0 +1,16 @@
+
+  #scroller {
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+    overflow: hidden;
+    position: relative;
+  }
+  #child {
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }

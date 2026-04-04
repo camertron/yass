@@ -1,0 +1,24 @@
+
+  div {
+    color: black;
+  }
+  #outer {
+    width: 300px;
+  }
+
+  #intermediate {
+    width: 250px;
+  }
+
+  #inner {
+    width: 200px;
+  }
+
+  .container {
+    container-type: inline-size;
+  }
+
+  @container ((max-width: 200px) or (min-width: 300px)) {
+    #child { color: green; }
+  }
+

@@ -1,0 +1,9 @@
+
+  #cover {
+    background: white;
+    position: fixed;
+    width: 100%;
+    height: 200px;
+    top: 0;
+    border: 1px solid black;
+  }

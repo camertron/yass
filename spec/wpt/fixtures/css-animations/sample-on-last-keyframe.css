@@ -1,0 +1,9 @@
+
+    #test {
+      animation:  test 1s reverse paused;
+    }
+    @keyframes test {
+      from { opacity: 0; }
+      to { opacity: 0.5; }
+    }
+  

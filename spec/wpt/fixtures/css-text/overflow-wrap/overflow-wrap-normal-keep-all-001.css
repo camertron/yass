@@ -1,0 +1,6 @@
+
+  div {
+    overflow-wrap: normal;
+    word-break: keep-all;
+    width: 0;
+  }

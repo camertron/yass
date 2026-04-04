@@ -1,0 +1,30 @@
+
+.grid { font: 10px/1 Ahem; }
+
+.minWidth10 { min-width: 10px; }
+.minWidth20 { min-width: 20px; }
+.minWidth30 { min-width: 30px; }
+.minWidth40 { min-width: 40px; }
+.minWidth50 { min-width: 50px; }
+.minWidth60 { min-width: 60px; }
+.minWidth70 { min-width: 70px; }
+.minWidth90 { min-width: 90px; }
+.minWidthMaxContent { min-width: max-content; }
+
+.width50 { width: 50px; }
+.width60 { width: 60px; }
+.width200 { width: 200px; }
+
+.border5 { border: 5px solid #abc; }
+.padding8 { padding: 0px 8px 0px; }
+
+/* All these 4 cases are equivalent. We use them interchangeably. */
+.gridAuto { grid-template-columns: auto; }
+.gridMinMaxAutoAuto { grid-template-columns: minmax(auto, auto); }
+.gridMinMaxAutoMaxContent { grid-template-columns: minmax(auto, max-content); }
+.gridMinMaxMinContentAuto { grid-template-columns: minmax(min-content, auto); }
+
+/* All these 3 cases are equivalent. We use them interchangeably. */
+.gridAutoAndAuto { grid-template-columns: auto auto; }
+.gridAutoAndMinMaxAutoAuto { grid-template-columns: auto minmax(auto, auto); }
+.gridMinMaxAutoMaxContentAndAuto { grid-template-columns: minmax(auto, max-content) auto; }

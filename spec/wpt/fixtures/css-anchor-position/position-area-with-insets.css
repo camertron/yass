@@ -1,0 +1,19 @@
+
+  #container {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+  }
+  #anchored {
+    position: absolute;
+    align-self: stretch;
+    justify-self: stretch;
+    position-anchor: --anchor;
+  }
+  #anchor {
+    margin-top: 150px;
+    margin-left: 100px;
+    width: 150px;
+    height: 75px;
+    anchor-name: --anchor;
+  }

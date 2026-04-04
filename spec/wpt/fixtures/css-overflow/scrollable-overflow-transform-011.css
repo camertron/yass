@@ -1,0 +1,26 @@
+
+.transformed {
+  height: 0;
+  width: 0;
+  transform: rotate(89deg);
+  text-indent: 250px;
+}
+
+.transformed::after {
+  text-indent: 0;
+  content: "";
+}
+
+.outer {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  background: red;
+}
+
+.good {
+  width: 200px;
+  height: 200px;
+  background: green;
+}
+

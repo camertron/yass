@@ -1,0 +1,19 @@
+
+  .clamp {
+    display: flow-root;
+    background-color: yellow;
+    width: 300px;
+  }
+  .float {
+    float: right;
+    background-color: pink;
+  }
+  .margin {
+    margin: 0.5lh;
+  }
+  .abspos {
+    position: absolute;
+    background-color: green;
+    left: auto;
+    right: auto;
+  }

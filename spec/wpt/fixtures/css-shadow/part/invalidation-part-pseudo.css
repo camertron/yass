@@ -1,0 +1,8 @@
+
+/* NOTE: Even though it might be tempting to use :focus instead, because we
+   can more easily add that state programmatically, that'd defeat the point
+   of the test, since :focus / :focus-visible has default styles which
+   invalidate the element's style anyways */
+#host::part(a):hover {
+  background: blue;
+}

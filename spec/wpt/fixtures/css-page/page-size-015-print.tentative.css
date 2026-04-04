@@ -1,0 +1,11 @@
+
+  /* The default page box size in WPT is 5 by 3 inches. */
+  @page {
+    width: 150vw;
+    height: 200vh;
+    margin: 0;
+
+    /* This has no effect, since both width and height are specified,
+       using viewport units. */
+    size: 1234px;
+  }

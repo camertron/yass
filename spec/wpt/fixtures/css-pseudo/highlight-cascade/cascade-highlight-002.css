@@ -1,0 +1,18 @@
+
+  div
+    {
+      font-size: 300%;
+    }
+
+  ::selection
+    {
+      background-color: green;
+      color: yellow;
+    }
+
+  div#test::selection
+    {
+      background-color: red;
+      color: black;
+    }
+  

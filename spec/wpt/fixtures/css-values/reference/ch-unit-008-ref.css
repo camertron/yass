@@ -1,0 +1,21 @@
+
+  div
+    {
+      float: left;
+      font-size: 80px; /* arbitrary font size */
+      line-height: 1.8; /* arbitrary line-height */
+    }
+
+  div#blue
+    {
+      background-color: blue;
+      color: blue;
+    }
+
+  div#orange
+    {
+      background-color: orange;
+      color: orange;
+      clear: left;
+    }
+  

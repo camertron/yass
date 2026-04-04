@@ -1,0 +1,71 @@
+
+  .box {
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    width: 200px;
+    height: 100px;
+  }
+
+  .with-before::before {
+    content: 'before';
+    display: block;
+    width: 50px;
+    height: 30px;
+  }
+
+  .display-none::before {
+    content: 'hidden';
+    display: none;
+  }
+
+  .no-content::before {
+    /* No content property, pseudo-element won't be generated */
+  }
+
+  .empty-content::before {
+    content: '';
+    /* Empty content still creates a pseudo-element */
+  }
+
+  .hidden-visibility::before {
+    content: 'invisible';
+    visibility: hidden;
+    display: block;
+    width: 40px;
+    height: 20px;
+  }
+
+  .zero-size::before {
+    content: '';
+    width: 0;
+    height: 0;
+  }
+
+  .transformed::before {
+    content: 'transformed';
+    display: block;
+    width: 100px;
+    height: 50px;
+    transform: rotate(45deg);
+  }
+
+  .scaled::before {
+    content: 'scaled';
+    display: block;
+    width: 100px;
+    height: 50px;
+    transform: scale(2);
+  }
+
+  .float-before::before {
+    content: 'float';
+    float: left;
+    width: 60px;
+    height: 40px;
+  }
+
+  .inline-before::before {
+    content: 'inline';
+    display: inline;
+  }

@@ -1,0 +1,6 @@
+
+    body { counter-reset: foo 0 Foo 5; }
+    div:before { content: counters(foo, ".") "-" counters(Foo, "."); }
+    div.a { counter-increment: foo; }
+    div.b { counter-increment: Foo 2; }
+    

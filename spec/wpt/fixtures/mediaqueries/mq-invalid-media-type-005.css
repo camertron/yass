@@ -1,0 +1,25 @@
+
+    @media not and {
+        div { background-color: red; }
+    }
+    @media and {
+        div { background-color: red; }
+    }
+    @media not or {
+        div { background-color: red; }
+    }
+    @media or {
+        div { background-color: red; }
+    }
+    @media not not {
+        div { background-color: red; }
+    }
+    @media not {
+        div { background-color: red; }
+    }
+    @media not only {
+        div { background-color: red; }
+    }
+    @media only {
+        div { background-color: red; }
+    }

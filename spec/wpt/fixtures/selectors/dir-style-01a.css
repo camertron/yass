@@ -1,0 +1,6 @@
+
+      div { text-align: left; }
+      :dir(ltr) { color: blue }
+      :dir(rtl) { color: lime }
+      :dir(foopy) { color: red }
+    

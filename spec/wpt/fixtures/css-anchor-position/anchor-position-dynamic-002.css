@@ -1,0 +1,21 @@
+
+#container {
+  position: relative;
+}
+#anchor1 {
+  anchor-name: --a1;
+}
+#anchor2 {
+  anchor-name: --a2;
+}
+#anchor1, #anchor2 {
+  width: 5px;
+  height: 7px;
+  background: orange;
+}
+.after #anchor1, .after #anchor2 {
+  width: 10px;
+}
+.target {
+  position: absolute;
+}

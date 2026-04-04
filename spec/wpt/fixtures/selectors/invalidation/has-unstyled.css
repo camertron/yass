@@ -1,0 +1,7 @@
+
+div, main { color: grey }
+.none { display: none; }
+#subject:has(.test) { color: red; }
+#subject:has(~ #sibling .test) { color: green; }
+#subject:has(:is(.test_inner #subject_descendant)) { color: blue; }
+#subject:has(~ #sibling :is(.test_inner #sibling_descendant)) { color: yellow; }

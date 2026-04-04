@@ -1,0 +1,7 @@
+
+.widget {
+  float: left;
+  clear: both;
+  width: auto;
+  box-sizing: border-box;
+}

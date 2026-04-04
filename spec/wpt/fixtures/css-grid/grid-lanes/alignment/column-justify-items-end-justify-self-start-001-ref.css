@@ -1,0 +1,21 @@
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    background: gray;
+    width: 300px;
+    align-items: start;
+    justify-items: end;
+}
+.flex {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+.two-span-item {
+    background-color: lightpink;
+}
+.fifty-width {
+    width: 50px;
+    background-color: lightblue;
+}

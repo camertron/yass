@@ -1,0 +1,12 @@
+
+  #container {
+    will-change: transform;
+  }
+  #child {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+  }

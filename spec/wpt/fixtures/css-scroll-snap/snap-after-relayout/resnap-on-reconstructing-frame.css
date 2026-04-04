@@ -1,0 +1,17 @@
+
+#scroller {
+  scroll-snap-type: y mandatory;
+  width: 500px;
+  height: 200px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+.child {
+  scroll-snap-align: start;
+  width: 500px;
+  height: 100%;
+}
+video {
+  height: 100%;
+}

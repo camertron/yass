@@ -1,0 +1,14 @@
+
+.wrapper {
+  grid-template-areas: "a b" "a c";
+}
+.grid {
+  display: grid;
+  grid-template-areas: inherit;
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+.item {
+  background: green;
+}

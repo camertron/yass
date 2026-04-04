@@ -1,0 +1,11 @@
+
+        .host {
+            display: block;
+            width: 100px;
+            height: 10px;
+            background: red;
+        }
+        #host-3, #host-5, #host-10 {
+            background: green;
+        }
+    

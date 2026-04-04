@@ -1,0 +1,13 @@
+
+  /* The default page box size in WPT is 5 by 3 inches. */
+  @page {
+    size: 200vh 100vw; /* 6 by 5 inches */
+    margin: 10vw; /* 0.5in */
+  }
+  :root {
+    print-color-adjust: exact;
+  }
+  body {
+    margin: 0;
+    background: yellow;
+  }

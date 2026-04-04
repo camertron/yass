@@ -1,0 +1,13 @@
+
+p {
+  /* Making sure the margin collapsing quirk doesn't apply:
+   * https://html.spec.whatwg.org/multipage/rendering.html#margin-collapsing-quirks */
+  margin-block: 1em;
+}
+.clamp {
+  line-clamp: 5;
+  font: 25px/25px Ahem;
+  width: 100px;
+  color: transparent;
+  background: linear-gradient(green, green) 0 0 / 100px 100px no-repeat, red;
+}

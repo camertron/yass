@@ -1,0 +1,13 @@
+
+  #container {
+    container-type: size;
+    width: 200px;
+    height: 200px;
+  }
+  iframe {
+    width: 200px;
+    height: 40px;
+  }
+  @container (width > 300px) {
+    iframe { width: 400px; }
+  }

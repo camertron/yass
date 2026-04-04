@@ -1,0 +1,13 @@
+
+.grid {
+  display: grid;
+  width: 400px;
+  grid-template-columns: 25% 25% 25% 25%;
+  line-height: 0;
+}
+.percent {
+  width: 100%;
+}
+canvas {
+  background: green;
+}

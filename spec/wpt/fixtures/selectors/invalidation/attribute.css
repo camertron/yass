@@ -1,0 +1,84 @@
+
+      div {
+        color: gray;
+      }
+
+      #a1[style] {
+        color: blue;
+      }
+      #a1[style] > #b1 {
+        color: green;
+      }
+      #a1[style] #c1 {
+        color: red;
+      }
+      #a1[style] + #d1 {
+        color: yellow;
+      }
+
+      [id=a2] {
+        color: blue;
+      }
+      [id=a2] > #b2 {
+        color: green;
+      }
+      [id=a2] #c2 {
+        color: red;
+      }
+      [id=a2] + #d2 {
+        color: yellow;
+      }
+
+      #a3[class~=q] {
+        color: blue;
+      }
+      #a3[class~=q] > #b3 {
+        color: green;
+      }
+      #a3[class~=q] #c3 {
+        color: red;
+      }
+      #a3[class~=q] + #d3 {
+        color: yellow;
+      }
+
+      #a4[run|=one] {
+        color: blue;
+      }
+      #a4[run|=one] > #b4 {
+        color: green;
+      }
+      #a4[run|=one] #c4 {
+        color: red;
+      }
+      #a4[run|=one] + #d4 {
+        color: yellow;
+      }
+
+      #a5 {
+        color: blue;
+      }
+      #a5 > #b5 {
+        color: green;
+      }
+      #a5 #c5 {
+        color: red;
+      }
+      #a5 + #d5 {
+        color: yellow;
+      }
+
+      #a6.q {
+        color: blue;
+      }
+      #a6.q > #b6 {
+        color: green;
+      }
+      #a6.q #c6 {
+        color: red;
+      }
+      #a6.q + #d6 {
+        color: yellow;
+      }
+
+  

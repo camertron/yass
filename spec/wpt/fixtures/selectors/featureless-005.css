@@ -1,0 +1,16 @@
+
+        div {
+          width: 100px;
+          height: 50px;
+        }
+        .red { background-color: red; }
+        .green { background-color: green; }
+
+        :host:has(.t1) .t1 {
+          background-color: green;
+        }
+
+        :has(.t2) .t2 {
+          background-color: red;
+        }
+      

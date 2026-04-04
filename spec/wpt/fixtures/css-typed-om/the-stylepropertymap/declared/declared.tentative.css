@@ -1,0 +1,15 @@
+
+div {
+  height: 10px;
+  width: 50%;
+  width: 'lemon';
+  --foo: auto;
+  transition-duration: 1s, 2s;
+  color: 10;
+}
+
+#target {
+  height: 20px;
+  --foo: 1s;
+  width: 10%;
+}

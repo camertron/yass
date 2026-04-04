@@ -1,0 +1,21 @@
+
+div {
+  font-size: 2rem;
+  font-family: Ahem;
+  width: 3ch;
+}
+#test1, #test2 {
+  white-space: pre-wrap;
+  color: green;
+}
+#test2 {
+  text-align: right;
+}
+
+.ref {
+  white-space: pre;
+  color: red;
+  position: absolute;
+  z-index: -1;
+}
+

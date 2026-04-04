@@ -1,0 +1,7 @@
+
+#grid {
+    display: inline-grid;
+    grid-template-columns: minmax(auto, 0);
+    grid-template-rows: minmax(auto, 0);
+    width: 200px;
+}

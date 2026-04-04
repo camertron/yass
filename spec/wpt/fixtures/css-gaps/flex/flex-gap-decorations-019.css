@@ -1,0 +1,18 @@
+
+  .flex-container {
+    display: flex;
+    gap: 10px;
+    height: 100px;
+    width: 100px;
+    background: red;
+    rule-color: green;
+    rule-width: 10px;
+    rule-style: solid;
+
+    flex-wrap: wrap;
+  }
+
+  .flex-item {
+    background: green;
+    width: 45px;
+  }

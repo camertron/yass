@@ -1,0 +1,23 @@
+
+.clamp {
+  line-clamp: 4;
+  font: 16px / 32px serif;
+  padding: 4px;
+  background-color: yellow;
+  border: 2px solid black;
+}
+.inner {
+  background-color: orange;
+  margin: 4px;
+  /* There is no border, so the margins of the .inner boxes will collapse */
+}
+.inner .inner {
+  white-space: pre;
+}
+.clamped-margin {
+  /* These boxes are after the clamp point, so their margins should not affect
+   * the size of their parent boxes. */
+  background-color: red;
+  margin: 20px;
+  height: 20px;
+}

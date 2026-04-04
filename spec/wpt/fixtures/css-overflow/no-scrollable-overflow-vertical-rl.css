@@ -1,0 +1,21 @@
+
+  .scroll-container {
+    writing-mode: vertical-rl;
+    inline-size: 100px;
+    block-size: 100px;
+    overflow: auto;
+  }
+  .multicol {
+    block-size: 100px;
+    inline-size: 100px;
+    column-fill: auto;
+    column-count: 2;
+    column-gap: 0;
+  }
+  .float {
+    float: left;
+    inline-size: 50px;
+    block-size: 100px;
+    background: green;
+  }
+  

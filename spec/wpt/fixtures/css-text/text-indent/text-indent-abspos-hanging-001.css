@@ -1,0 +1,15 @@
+
+.test {
+  line-height: 1;
+  width: 8ch;
+}
+.hanging {
+  text-indent: 2ch hanging;
+}
+.marker {
+  display: inline;
+  position: absolute;
+  width: 4ch;
+  height: 1em;
+  background: lime;
+}

@@ -1,0 +1,30 @@
+
+/* We have a wrapper in this test to ensure that any text that is positioned
+ * slightly outside the "test" box doesn't affect the rendering.
+ * This wrapper has a 10px inline padding which does the trick. */
+.wrapper {
+  background: green;
+  padding: 0 10px;
+  width: 80px;
+}
+
+.test {
+  --child-expected: ["1", "default", "3", "4", "5"];
+
+  background: red;
+  color: green;
+  width: 80px;
+  --child: default;
+}
+
+.inflow {
+  visibility: hidden;
+  --child: 3;
+}
+
+@supports (display: layout(test)) {
+  .test {
+    background: green;
+    display: layout(test);
+  }
+}

@@ -1,0 +1,46 @@
+
+.group {
+  width: 500px;
+  border: 1px solid black;
+}
+.container {
+  /* This is the container that holds our float+bfc.  We make it an
+     inline-block so that we can test a bunch of these in a row.  */
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: 40px;
+  /* This border and margin are just cosmetic, to avoid overlap between
+   * adjacent containers within a row. */
+  border: 1px solid gray;
+  margin-left: 30px;
+}
+
+.float {
+  /* We'll set the float property elsewhere (to 'right' or 'left'). */
+  width: 7px;
+  height: 8px;
+  background: fuchsia;
+  border: 1px solid purple;
+  /* Each .float's margin-box (which the corresponding .bfc's border-box cannot
+   * overlap) is 14px wide:
+   *   7px content + 2px horizontal border + 5px horizontal margin
+   * Note that we're intentionally using a nonzero 'margin' here, to be sure
+   * the UA is using the float's margin-box (and not one of its other
+   * boxes) for this non-overlapping calculation. */
+  margin: 1px 3px 1px 2px;
+}
+.bfc {
+  /* Each .bfc's border-box width is 2px (from the border) plus whatever we
+   * resolve 'width:auto' to, which is influenced by the particular choice of
+   * 'margin' values (and the available space). */
+  display: flow-root;
+  background: aqua;
+  height: 15px;
+  border: 1px solid blue;
+
+  /* https://drafts.csswg.org/css-sizing-4/#stretch-fit-sizing */
+  width: -moz-available;
+  width: -webkit-fill-available;
+  width: stretch;
+}

@@ -1,0 +1,26 @@
+
+#flex {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 200px;
+}
+.item {
+  border: 1px solid black;
+  box-sizing: content-box;
+}
+#one {
+  background: lightblue;
+  height: 11px;
+  flex-grow: 3;
+}
+#two {
+  background: lightgreen;
+  height: 22px;
+  flex-grow: 2;
+}
+#three {
+  background: lightgrey;
+  height: 33px;
+  flex-grow: 1;
+}

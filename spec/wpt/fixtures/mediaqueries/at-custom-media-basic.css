@@ -1,0 +1,7 @@
+
+@custom-media --foo (width > 0px);
+@media (--foo) {
+  :root {
+    background: green;
+  }
+}

@@ -1,0 +1,13 @@
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+
+  img {
+    outline: 5px solid red;
+  }
+
+  img:animated-image {
+    outline: 5px solid green;
+  }

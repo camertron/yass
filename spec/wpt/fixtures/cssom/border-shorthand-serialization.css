@@ -1,0 +1,15 @@
+
+    .a {
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+    }
+    .b {
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        border-image: linear-gradient(white,black);
+    }
+    .c {
+        border: 1px solid black;
+    }

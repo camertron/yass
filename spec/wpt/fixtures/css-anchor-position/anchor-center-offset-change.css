@@ -1,0 +1,19 @@
+
+  #cb {
+    position: relative;
+    width: 200px;
+    height: 200px;
+  }
+  #anchor {
+    width: 100px;
+    height: 100px;
+    anchor-name: --anchor;
+  }
+  #anchored {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    position-anchor: --anchor;
+    align-self: anchor-center;
+    left: anchor(--unknown right, 0px);
+  }

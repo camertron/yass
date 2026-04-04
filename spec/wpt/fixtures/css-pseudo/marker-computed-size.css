@@ -1,0 +1,15 @@
+
+:root {
+  --image: url('/images/green-100x50.png');
+}
+:root::after {
+  /* Preload image */
+  content: var(--image);
+}
+#target {
+  font: 10px/1 Ahem;
+  --content: normal;
+}
+#target::marker {
+  content: var(--content);
+}

@@ -1,0 +1,15 @@
+
+#test {
+  position: absolute;
+  background: orange;
+  height: 100px;
+  width: 100px;
+  overflow: auto;
+  resize: both;
+}
+#ref {
+  position: absolute;
+  background: green;
+  height: 100px;
+  width: 100px;
+}

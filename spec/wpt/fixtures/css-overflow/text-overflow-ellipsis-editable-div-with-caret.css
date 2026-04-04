@@ -1,0 +1,11 @@
+
+  #editable {
+    font: 20px/1;
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 10px;
+    outline: none;
+    caret-color: transparent;
+  }

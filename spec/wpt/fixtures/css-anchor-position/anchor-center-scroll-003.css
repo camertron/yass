@@ -1,0 +1,42 @@
+
+.abs-cb {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.scroller {
+  overflow: scroll;
+  scrollbar-width: none;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  width: 400px;
+  height: 400px;
+}
+
+.anchor {
+  anchor-name: --a;
+  background: red;
+  width: 100px;
+  height: 100px;
+}
+
+.positioned {
+  position: absolute;
+  background: green;
+  position-anchor: --a;
+  width: 100px;
+  height: 100px;
+  position-area: span-all;
+  justify-self: anchor-center;
+}
+
+.dn {
+  display: none;
+}

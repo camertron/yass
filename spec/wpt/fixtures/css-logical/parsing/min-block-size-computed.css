@@ -1,0 +1,10 @@
+
+  #target {
+    font-size: 40px;
+  }
+  #container {
+    display: flex;
+  }
+  #box {
+    min-block-size: auto;
+  }

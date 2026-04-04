@@ -1,0 +1,71 @@
+
+.grid100And200 {
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 200px 200px;
+    position: relative; /* For the <p> comments */
+}
+
+.grid50And100 {
+    grid: 100px 100px / 50px 50px;
+    width: 200px;
+    height: 300px;
+    position: relative; /* For the <p> comments */
+}
+
+.gridAuto20And40 {
+    grid-auto-columns: 20px;
+    grid-auto-rows: 40px;
+    width: 400px;
+    height: 300px;
+    position: relative; /* For the <p> comments */
+}
+
+.gridWithPaddingBorder {
+    grid-template-columns: 100px 200px;
+    grid-template-rows: 200px 200px;
+    padding: 10px 15px 20px 30px;
+    border-width: 5px 10px 15px 20px;
+    border-style: dotted;
+    border-color: blue;
+    position: relative; /* For the <p> comments */
+}
+
+.gridWithAutoColumns {
+    grid-auto-columns: 20px;
+    border: 2px solid black;
+    width: 10px;
+    margin-left: 200px;
+    position: relative;
+}
+
+.gridWithAutoRows {
+    grid-auto-rows: 40px;
+    border: 2px solid black;
+    height: 50px;
+    width: 20px;
+    position: relative;
+}
+
+.stretchedGrid { grid-auto-columns: auto; }
+
+.gridRowColumnGaps {
+    grid-row-gap: 15px;
+    grid-column-gap: 20px;
+}
+
+div.grid > div { font: 10px/1 Ahem; }
+
+.cell {
+    width: 20px;
+    height: 40px;
+}
+
+div.gridWithPaddingBorder > div.cell {
+    margin: 4px 8px 12px 16px;
+}
+
+.container {
+    position: relative;
+    margin-bottom: 10px;
+}
+

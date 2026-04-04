@@ -1,0 +1,7 @@
+
+#target {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  background-image: radial-gradient(ellipse 50px 10000px at 0px 50px, blue 0% 50px, green 50px);
+}

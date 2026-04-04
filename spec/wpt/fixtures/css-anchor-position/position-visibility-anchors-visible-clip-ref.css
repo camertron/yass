@@ -1,0 +1,19 @@
+
+.clip {
+    overflow: hidden;
+    border: 2px solid red;
+}
+.c {
+    position: absolute;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid green;
+}
+.anchor {
+    background: blue;
+}
+.anchored {
+    position: absolute;
+    background: green;
+}

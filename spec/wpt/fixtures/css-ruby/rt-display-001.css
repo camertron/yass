@@ -1,0 +1,13 @@
+
+  ruby
+    {
+      background-color: lightblue;
+      font-size: 60px;
+    }
+
+  span.rt
+    {
+      display: ruby-text;
+      font-size: 50%;
+    }
+  

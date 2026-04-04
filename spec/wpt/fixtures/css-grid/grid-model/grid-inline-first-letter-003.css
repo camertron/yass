@@ -1,0 +1,8 @@
+
+  .inline-grid {
+    display: inline-grid;
+  }
+
+  .item::first-letter {
+    color: green;
+  }

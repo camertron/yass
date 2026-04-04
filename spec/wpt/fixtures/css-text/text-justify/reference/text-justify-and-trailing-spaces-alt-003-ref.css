@@ -1,0 +1,11 @@
+
+div {
+  width: 7ch;
+  font: 20px monospace;
+  background: blue;
+  margin-left: 20px;
+  direction: rtl;
+}
+span {
+  background: green;
+}

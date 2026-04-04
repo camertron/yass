@@ -1,0 +1,5 @@
+
+        html {
+            filter: url(#full_page_filter)
+        }
+    

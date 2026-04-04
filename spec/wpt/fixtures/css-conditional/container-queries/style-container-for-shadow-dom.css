@@ -1,0 +1,69 @@
+
+        @container style(--foo: bar) {
+          #t1 { color: green; }
+        }
+      
+
+      @container style(--foo: baz) {
+        #t2 { color: green; }
+      }
+    
+
+        @container style(--foo: bar) {
+          ::slotted(#t3) { color: green; }
+        }
+      
+
+        @container style(--foo: bar) {
+          :host(#t4) { color: green; }
+        }
+      
+
+      @container style(--foo: baz) {
+        #ancestor-part > div::part(part) { color: green; }
+      }
+    
+
+        @container style(--foo: baz) {
+          ::slotted(#t6)::before {
+            content: "X";
+            color: green;
+          }
+        }
+      
+
+        @container style(--foo: bar) {
+          :host(#t7)::before {
+            content: "X";
+            color: green;
+          }
+        }
+      
+
+    @container style(--foo: quz) {
+      #ancestor-part-before > div::part(part)::before {
+        content: "X";
+        color: green;
+      }
+    }
+  
+
+    @container style(--foo: quz) {
+      #ancestor-inner-part > div::part(inner-part) { color: green; }
+    }
+  
+
+      @container style(--foo: bar) {
+        #t10 { color: green; }
+      }
+    
+
+      @container style(--foo: bar) {
+        #container-for-part > div::part(part) { color: green; }
+      }
+    
+
+        @container style(--foo: baz) {
+          :host::part(part) { color: green; }
+        }
+      

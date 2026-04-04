@@ -1,0 +1,4 @@
+
+p { padding-left: 1em; }
+#a { --style: solid; --left: black dotted; border-style: var(--style); border-left: var(--left); border-top: none; border-right: none; border-bottom: none; }
+#b { --style: solid; --left: black dotted; border-left: var(--left); border-style: var(--style); border-top: none; border-right: none; border-bottom: none; }

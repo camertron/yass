@@ -1,0 +1,7 @@
+
+body > div { width: 20em; margin: 1em; padding: 2px; border: 1px solid silver; }
+div > div { margin: .5em; padding: .5em; background: yellow; }
+.is { float: inline-start; }
+.ie { float: inline-end; }
+.ltr { direction: ltr; }
+.rtl { direction: rtl; }

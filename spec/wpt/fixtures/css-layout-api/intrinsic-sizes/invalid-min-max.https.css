@@ -1,0 +1,14 @@
+
+.test {
+  background: red;
+  border: solid 2px;
+  height: 100px;
+  width: max-content;
+}
+
+@supports (display: layout(invalid-sizes)) {
+  .test {
+    display: layout(invalid-sizes);
+    background: green;
+  }
+}

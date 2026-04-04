@@ -1,0 +1,12 @@
+
+#target {
+  display: grid;
+  grid-template: 50px 50px 50px 50px / 50px 50px 50px;
+  width: 200px;
+  border: solid 3px;
+  position: relative;
+  line-height: 20px;
+}
+#target > div {
+  writing-mode: vertical-rl;
+}

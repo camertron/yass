@@ -1,0 +1,13 @@
+
+body, html {
+  color:black;
+  font-size:15px/1 monospace;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+}
+.orthogonal {
+    writing-mode: vertical-rl;
+}

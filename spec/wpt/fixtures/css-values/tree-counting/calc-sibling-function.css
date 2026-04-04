@@ -1,0 +1,16 @@
+
+    html {
+      z-index: calc(sibling-index() * 2);
+      widows: calc(sibling-count() * 2);
+    }
+    #test {
+      z-index: calc(sibling-index());
+      counter-increment: foo calc(sibling-count());
+      left: calc(10% + 100px * sibling-index());
+    }
+    #test::before {
+      content: "";
+      z-index: calc(sibling-index() * 2);
+      widows: calc(sibling-count() * 2);
+    }
+  

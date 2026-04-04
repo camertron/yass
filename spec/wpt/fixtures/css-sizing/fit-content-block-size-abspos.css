@@ -1,0 +1,12 @@
+
+body {
+  overflow: hidden;
+}
+#container {
+  height: fit-content;
+  position: absolute;
+  top: 50%;
+  background-color: gold;
+  margin: auto;
+  bottom: 0;
+}

@@ -1,0 +1,9 @@
+
+body { margin: 0; }
+#flex {
+  display: flex;
+  width: 55px;
+}
+#flex > div {
+  flex-grow: 1;
+}

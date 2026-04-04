@@ -1,0 +1,9 @@
+
+p {
+  color: red;
+}
+p {
+  color: orange;
+  --0: green;
+  color: var(--\30);
+}

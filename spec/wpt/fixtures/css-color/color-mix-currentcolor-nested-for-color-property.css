@@ -1,0 +1,10 @@
+
+body {
+    color: color(srgb 0 0 1);
+}
+div {
+    color: color-mix(in srgb, color-mix(in srgb, currentColor 50%, color(srgb 0 1 0)), white);
+}
+div > div {
+    color: inherit;
+}

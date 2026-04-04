@@ -1,0 +1,17 @@
+
+.square {
+  width: 100px;
+  height: 100px;
+}
+.green {
+  background-color: green;
+}
+.top {
+  position: absolute;
+}
+.fail {
+  background-color: red;
+  display: inline-block;
+  display: unset;/* initial, inline */
+}
+  

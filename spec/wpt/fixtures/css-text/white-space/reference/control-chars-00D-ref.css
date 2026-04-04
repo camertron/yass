@@ -1,0 +1,15 @@
+
+div {
+  font-size: 2em;
+  font-family: monospace;
+  color: blue;
+  width: 4ch;
+}
+#ref {
+    color: orange;
+}
+.p {white-space: pre;}
+.pw {white-space: pre-wrap;}
+.pl {white-space: pre-line;}
+.bs {white-space: break-spaces;}
+.nw {white-space: nowrap;}

@@ -1,0 +1,7 @@
+
+body {margin: 0;}
+div {
+	background: yellow;
+	margin-top: -20em;
+	display: inline-flex;
+}

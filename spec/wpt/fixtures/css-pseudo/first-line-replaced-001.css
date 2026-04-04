@@ -1,0 +1,6 @@
+
+.inner {
+  display: inline-block;
+  margin: 10px;
+}
+*::first-line { visibility: visible; }

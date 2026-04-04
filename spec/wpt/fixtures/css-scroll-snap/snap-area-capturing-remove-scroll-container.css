@@ -1,0 +1,53 @@
+
+div {
+  position: absolute;
+  margin: 0px;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  margin: 0px;
+}
+
+#middle-scroller {
+  top: 100px;
+  height: 500px;
+  width: 500px;
+  overflow: scroll;
+  background-color: rgb(12, 61, 2);
+  scroll-snap-type: none;
+}
+
+#inner-scroller {
+  top: 200px;
+  height: 400px;
+  width: 400px;
+  overflow: scroll;
+  background-color: rgb(65, 139, 50);
+  scroll-snap-type: y mandatory;
+}
+
+.space {
+  width: 2000px;
+  height: 2000px;
+}
+
+#inner-snap-area {
+  top: 300px;
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  scroll-snap-align: start;
+}
+
+#document-snap-area {
+  top: 500px;
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  scroll-snap-align: start;
+}
+

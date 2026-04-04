@@ -1,0 +1,20 @@
+
+#scroller {
+  display: flex;
+  overflow-x: hidden;
+  scroll-snap-align: start;
+  scroll-snap-type: x mandatory;
+  width: 500px;
+  height: 200px;
+  position: absolute;
+}
+.child {
+  display: flex;
+  flex: 0 0 500px;
+  scroll-snap-align: start;
+  width: 500px;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}

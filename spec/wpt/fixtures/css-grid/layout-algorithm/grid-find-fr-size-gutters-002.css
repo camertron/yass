@@ -1,0 +1,10 @@
+
+.grid {
+  position: relative;
+  display: inline-grid;
+  grid-gap: 50px 100px;
+  font: 10px/1 Ahem;
+  margin: 50px;
+}
+
+.grid div:nth-child(1) { background: magenta; }

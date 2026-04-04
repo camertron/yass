@@ -1,0 +1,11 @@
+
+div {
+  font-size: 2em;
+  width: 7em;
+  border: solid blue;
+  margin: 1em;
+}
+#test {
+  word-space-transform: ideographic-space;
+  word-break: keep-all;
+}

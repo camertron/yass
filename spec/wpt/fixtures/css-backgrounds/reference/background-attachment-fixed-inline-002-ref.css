@@ -1,0 +1,24 @@
+
+  body
+    {
+      height: 50vh;
+      margin: 0px;
+    }
+
+  div#filler-before
+    {
+      height: 125vh;
+    }
+
+  div#purple
+    {
+      background-color: purple;
+      height: 25vh;
+      width: 50vh;
+     }
+
+  div#filler-after
+    {
+      height: 50vh;
+    }
+  

@@ -1,0 +1,19 @@
+
+.multicol {
+  margin: 1em;
+  border: solid silver;
+  width: 300px;
+  column-width: 100px;
+  column-gap: 0;
+  height: 100px;
+}
+
+.container {
+  border: 15px aqua;
+  border-style: none solid;
+  height: 250px;
+}
+.clear {
+  border-bottom: 5px solid orange;
+  background: red;
+}

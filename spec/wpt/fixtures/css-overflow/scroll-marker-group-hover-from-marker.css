@@ -1,0 +1,35 @@
+
+  body {
+    margin: 0;
+  }
+
+  #scroller {
+    overflow: auto;
+    scroll-marker-group: before;
+  }
+
+  #scroller::scroll-marker-group {
+    height: 100px;
+    width: 100px;
+    background: red;
+  }
+
+  #scroller::scroll-marker-group:hover {
+    background: green;
+  }
+
+  #scroller>div {
+    height: 100px;
+  }
+
+  #scroller>div::scroll-marker {
+    content: "A";
+    display: block;
+    width: 50px;
+    height: 50px;
+    color: red;
+  }
+
+  #scroller>div::scroll-marker:hover {
+    color: green;
+  }

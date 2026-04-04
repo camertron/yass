@@ -1,0 +1,21 @@
+
+#scroller {
+  margin-top: 200px;
+  height: 200px;
+  overflow-y: scroll;
+}
+
+#anchor {
+  anchor-name: --a;
+}
+
+#spacer {
+  height: 400px;
+}
+
+#target {
+  position: fixed;
+  top: anchor(bottom);
+  left: anchor(left);
+  position-anchor: --a;
+}

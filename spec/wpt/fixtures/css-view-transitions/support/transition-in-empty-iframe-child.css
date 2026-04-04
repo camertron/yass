@@ -1,0 +1,22 @@
+
+      ::view-transition-new(*) {
+        animation: unset;
+        opacity: 1;
+      }
+      ::view-transition-old(*) {
+        animation-duration: 30s;
+        opacity: 0;
+      }
+
+      div {
+        width: 50vw;
+        height: 50vh;
+        background-color: limegreen;
+        border: 1px solid black;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+    

@@ -1,0 +1,18 @@
+
+.grid {
+    display: grid;
+    background: gray;
+    align-items: start;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    flex-wrap: nowrap;
+}
+
+.max-content-item {
+    width: max-content;
+    height: 20px;
+}

@@ -1,0 +1,17 @@
+
+.container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: lime;
+}
+
+.oof {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background: hotpink;
+}

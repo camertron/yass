@@ -1,0 +1,25 @@
+
+.green { color: green; }
+.red { color: red; }
+.testContent, .testBefore, .testAfter {
+  display: inline-block;
+}
+div div {
+  width: 50px;
+  line-height: 30px;
+  border: 20px solid green;
+  background-color: red;
+  margin: 10px;
+}
+.testBefore div::before {
+  content: "";
+}
+.testAfter div::after {
+  content: "";
+}
+.normal { white-space: normal; }
+.nowrap { white-space: nowrap; }
+.pre { white-space: pre; }
+.prewrap { white-space: pre-wrap; }
+.preline { white-space: pre-line; }
+.breakspaces { white-space: break-spaces; }

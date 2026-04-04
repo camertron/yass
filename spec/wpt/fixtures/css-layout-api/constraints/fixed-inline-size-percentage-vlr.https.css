@@ -1,0 +1,17 @@
+
+body {
+  height: 200px;
+  writing-mode: vertical-lr;
+}
+
+.test {
+  background: red;
+  height: 50%;
+}
+
+@supports (display: layout(test)) {
+  .test {
+    background: green;
+    display: layout(test);
+  }
+}

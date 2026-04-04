@@ -1,0 +1,18 @@
+
+div {
+  width: 100px;
+  height: 100px;
+}
+.clip {
+  clip-path: inset(0);
+}
+.fixed {
+  position: fixed;
+  background: red;
+  z-index: -1;
+  bottom: 0;
+}
+.green {
+  position: relative;
+  background: green;
+}

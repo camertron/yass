@@ -1,0 +1,16 @@
+
+.test {
+  background: red;
+  --expected-block-size: null;
+  width: 100px;
+}
+
+.child {
+  background: green;
+}
+
+@supports (display: layout(test)) {
+  .test {
+    display: layout(test);
+  }
+}

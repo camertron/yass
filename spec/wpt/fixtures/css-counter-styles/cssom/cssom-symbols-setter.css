@@ -1,0 +1,5 @@
+
+@counter-style foo {
+  system: cyclic;
+  symbols: X Y Z;
+}

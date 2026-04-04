@@ -1,0 +1,45 @@
+
+  body {
+    margin: 0;
+  }
+
+  #scroller {
+    background: white;
+    overflow: auto;
+    width: 600px;
+    height: 300px;
+    /* use tabs mode so activated markers receive focus and can handle
+       arrow-key events directly */
+    scroll-marker-group: before tabs;
+    white-space: nowrap;
+  }
+
+  #scroller::scroll-marker-group {
+    display: flex;
+    height: 20px;
+    width: 300px;
+  }
+
+  #scroller div {
+    background: blue;
+    display: inline-block;
+    height: 280px;
+    width: 600px;
+  }
+
+  #scroller div::scroll-marker {
+    content: "";
+    background: blue;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    opacity: 1;
+  }
+
+  #scroller div::scroll-marker:target-current {
+    background: green;
+  }
+
+  #scroller div::scroll-marker:focus {
+    opacity: 0.5;
+  }

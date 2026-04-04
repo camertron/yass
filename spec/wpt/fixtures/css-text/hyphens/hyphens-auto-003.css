@@ -1,0 +1,15 @@
+
+.fail {
+    position: absolute;
+    background: red;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+}
+.test {
+    font: 50px/1 Ahem;
+    width: 4ch;
+    color: green;
+
+    hyphens: auto;
+}

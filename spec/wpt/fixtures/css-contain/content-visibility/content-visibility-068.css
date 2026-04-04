@@ -1,0 +1,19 @@
+
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+.spacer {
+  height: 3000px;
+  background: lightblue;
+}
+#container {
+  background: lightgreen;
+  contain-intrinsic-size: 50px 100px;
+  content-visibility: auto;
+}
+#focusable {
+  width: 10px;
+  height: 10px;
+}

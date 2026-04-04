@@ -1,0 +1,5 @@
+
+  :root { container-name: --root; }
+  @container --root style(--foo: unset) {
+    #target { color: green; }
+  }

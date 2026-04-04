@@ -1,0 +1,12 @@
+
+  #flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 250px;
+  }
+  #flex > div {
+    width: 50%;
+    background: green;
+    flex: none;
+  }

@@ -1,0 +1,39 @@
+
+		.multicol-wrapper>*{
+			font: 20px/1 Ahem;
+		}
+
+		div.multicol-wrapper{
+			border: thin solid black;
+			display: inline-block;
+			margin: 1em auto;
+			width: 360px;
+		}
+
+		.multicol-basic-ref{
+			background: yellow;
+			width: 360px;
+			column-count: 3;
+			column-gap: 0;
+			column-rule: none;
+		}
+
+		.multicol-basic-ref-item{
+			background: #000;
+		}
+
+		.item-1{
+			background: purple;
+			color: purple;
+		}
+
+		.item-2{
+			background: orange;
+			color: orange;
+		}
+
+		.item-3{
+			background: blue;
+			color: blue;
+		}
+	

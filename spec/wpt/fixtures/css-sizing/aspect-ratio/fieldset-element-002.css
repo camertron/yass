@@ -1,0 +1,13 @@
+
+  fieldset {
+    inline-size: 200px;
+    aspect-ratio: 20 / 1;
+    max-block-size: 20px;
+    background: yellow;
+  }
+
+  legend {
+    background: black;
+    color: white;
+    padding: 3px 6px;
+  }

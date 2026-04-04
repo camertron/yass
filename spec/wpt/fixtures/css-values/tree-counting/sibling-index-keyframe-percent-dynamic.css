@@ -1,0 +1,12 @@
+
+  @keyframes --anim {
+    from {
+      text-size-adjust: calc(50% * sibling-index());
+    }
+    to {
+      text-size-adjust: 90%;
+    }
+  }
+  #target {
+    animation: --anim 1000s step-end;
+  }

@@ -1,0 +1,9 @@
+
+#inner {
+  --length: 10px;
+  --color: red;
+}
+#outer {
+  --length: 77px;
+  --color: blue;
+}

@@ -1,0 +1,14 @@
+
+.tooltip {
+  height: 68px;
+  position: relative;
+  max-width: 200px;
+  min-width: 260px;
+  background-color: red;
+}
+
+#outer {
+  background-color: blue;
+  position: absolute;
+  height: 136px;
+}

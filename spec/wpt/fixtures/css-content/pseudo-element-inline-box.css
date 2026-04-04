@@ -1,0 +1,6 @@
+
+  div::before {
+    border: 10px solid blue;
+    content: url(resources/rect.svg);
+    display: inline;
+  }

@@ -1,0 +1,17 @@
+
+.table {
+  display: table;
+}
+.row {
+  display: table-row;
+}
+.cell {
+  display: table-cell;
+}
+.spacing {
+  border-collapse: separate;
+  border-spacing: 17px 11px;
+}
+.zoom {
+  zoom: 2;
+}

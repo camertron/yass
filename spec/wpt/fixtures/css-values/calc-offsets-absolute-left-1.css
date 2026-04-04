@@ -1,0 +1,4 @@
+
+body { margin: 0 100px; width: 200px }
+body > div { height: 3px; position: relative }
+div[style] { background: blue; position: absolute; height: 3px; width: 100px }

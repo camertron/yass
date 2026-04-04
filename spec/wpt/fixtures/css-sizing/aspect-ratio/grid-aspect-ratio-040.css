@@ -1,0 +1,13 @@
+
+  .grid {
+    display: grid;
+    width: 100px;
+  }
+
+  .item {
+    all: unset;
+    aspect-ratio: 1 / 1;
+    background-color: green;
+    height: 100%;
+    width: 100%;
+  }

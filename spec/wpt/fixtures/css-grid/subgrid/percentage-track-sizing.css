@@ -1,0 +1,12 @@
+
+.grid {
+  display: grid;
+  background: red;
+  height: 100px;
+  width: 100px;
+}
+.subgrid {
+  display: grid;
+  grid-template-columns: 100% 0%;
+  grid-template-rows: subgrid;
+}

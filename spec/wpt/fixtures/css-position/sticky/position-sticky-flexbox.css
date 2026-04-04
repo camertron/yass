@@ -1,0 +1,36 @@
+
+.scroller {
+  overflow: scroll;
+  width: 350px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.flex-container {
+  width: 600px;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.sticky {
+  position: sticky;
+  left: 50px;
+}
+
+.green {
+  background-color: green;
+}
+
+.flex-item {
+  width: 100px;
+  height: 85px;
+  display: flex;
+}
+
+.indicator {
+  position: absolute;
+  background-color: red;
+  width: 100px;
+  height: 85px;
+}

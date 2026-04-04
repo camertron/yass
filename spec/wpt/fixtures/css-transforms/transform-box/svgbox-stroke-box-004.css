@@ -1,0 +1,9 @@
+
+#target {
+  fill: green;
+  stroke: black;
+  stroke-width: 20;
+  vector-effect: non-scaling-stroke;
+  transform-box: border-box;
+  transform: scale(0.5) translateY(-100%);
+}

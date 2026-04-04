@@ -1,0 +1,90 @@
+
+.group {
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  height: 250px;
+}
+
+.inlineGroup {
+  display: inline-block;
+  position: relative;
+  width: 250px;
+  height: 150px;
+}
+
+.scroller {
+  position: relative;
+  width: 100px;
+  height: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.inlineGroup .scroller {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.contents {
+  height: 500px;
+}
+
+.inlineGroup .contents {
+  height: 100%;
+  width: 500px;
+}
+
+.prepadding {
+  height: 100px;
+}
+
+.inlineGroup .prepadding {
+  display: inline-block;
+  height: 100%;
+  width: 100px;
+}
+
+.container {
+  height: 200px;
+}
+
+.inlineGroup .container {
+  display: inline-block;
+  height: 100%;
+  width: 200px;
+}
+
+.filler {
+  height: 100px;
+}
+
+.inlineGroup .filler {
+  display: inline-block;
+  height: 100%;
+  width: 100px;
+}
+
+.indicator {
+  background-color: red;
+  position: absolute;
+}
+
+.sticky {
+  background-color: green;
+  position: sticky;
+}
+
+.box {
+  width: 100%;
+  height: 100px;
+}
+
+.inlineGroup .box {
+  display: inline-block;
+  height: 100%;
+  width: 100px;
+}

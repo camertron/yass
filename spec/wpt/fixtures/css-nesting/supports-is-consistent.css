@@ -1,0 +1,8 @@
+
+  /* This test is expected to pass even if the browser does not support nesting. */
+  @supports selector(&) {
+    p {
+      color: red;
+      & { color: inherit; }
+    }
+  }

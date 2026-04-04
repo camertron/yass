@@ -1,0 +1,7 @@
+
+li:before {
+    content: counter(list-item) " ";
+}
+li:after {
+    content: " " counter(list-item);
+}

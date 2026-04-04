@@ -1,0 +1,14 @@
+
+#container {
+  width: 150px;
+  height: 150px;
+  background: lightblue;
+}
+
+div {
+  width: 50px;
+  height: 50px;
+}
+.composited { will-change: transform; }
+#one { background: pink; }
+#two { background: red; }

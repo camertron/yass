@@ -1,0 +1,12 @@
+
+  .container {
+    display: flex;
+    width: 200px;
+    border: 1px solid black;
+  }
+  td {
+    background-color: cyan;
+    width: 100%;
+    border: 1px solid gray;
+  }
+

@@ -1,0 +1,15 @@
+
+div {
+  display: inline-block;
+  font: 100px/1 Ahem;
+  width: 100px;
+  height: 100px;
+}
+#first {
+  color: blue;
+  position: relative;
+  top: 20px;
+}
+#second {
+  color: green;
+}

@@ -1,0 +1,5 @@
+
+div::before {
+  --my-attr: attr(data-foo);
+  content: var(--my-attr);
+}

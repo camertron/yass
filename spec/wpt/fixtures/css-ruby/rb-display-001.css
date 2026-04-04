@@ -1,0 +1,12 @@
+
+  ruby
+    {
+      background-color: lightblue;
+      font-size: 60px;
+    }
+
+  span.rb
+    {
+      display: ruby-base;
+    }
+  

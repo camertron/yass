@@ -1,0 +1,13 @@
+
+.grid {
+  display: grid;
+  width: 100px;
+  height: 100px;
+  background: red;
+  grid-template-columns: [area-start] repeat(auto-fill, 10px) [area-end];
+  grid-template-rows: [area-start] repeat(auto-fill, 10px [area-start]) [area-end];
+}
+.grid > div {
+  grid-area: area;
+  background: green;
+}

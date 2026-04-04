@@ -1,0 +1,12 @@
+
+  @keyframes --anim {
+    from {
+      transform: translateX(calc(10px * sibling-index()));
+    }
+    to {
+      transform: none;
+    }
+  }
+  #target {
+    animation: --anim 1000s step-end;
+  }

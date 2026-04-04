@@ -1,0 +1,12 @@
+
+#output {
+  width: 100px;
+  height: 100px;
+}
+body {
+  -webkit-mask-box-image-source: url(resources/dot.png);
+  column-count: 3;
+}
+.test-wait {
+  column-count: 600;
+}

@@ -1,0 +1,7 @@
+
+div {
+  position: absolute;
+  columns: 2;
+  column-fill: balance-all;
+  column-gap: 0;
+}

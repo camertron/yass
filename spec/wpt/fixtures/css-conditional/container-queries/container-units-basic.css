@@ -1,0 +1,6 @@
+
+  .inline { container-type: inline-size; }
+  .size { container-type: size; }
+  .inline.outer { width: 500px; }
+  .size.outer { height: 400px; }
+  .inline.inner { width: 300px; }

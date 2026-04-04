@@ -1,0 +1,9 @@
+
+  #container {
+    transform: scale(0.5);
+    background-color: lightblue;
+    font-size: 80px;
+  }
+  #animated, #content {
+    will-change: transform;
+  }

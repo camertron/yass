@@ -1,0 +1,19 @@
+
+  fieldset {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    min-height: 200px;
+    padding: 0px;
+    border: 1px solid;
+    position: relative;
+  }
+
+  .item {
+    height: 100px;
+    width: 100px;
+    background: orange;
+  }
+

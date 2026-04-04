@@ -1,0 +1,8 @@
+
+#test {
+  width: 100px;
+  height: 100px;
+  background: orange;
+  overflow: hidden;
+  resize: horizontal;
+}

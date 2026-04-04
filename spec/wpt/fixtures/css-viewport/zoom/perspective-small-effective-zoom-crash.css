@@ -1,0 +1,8 @@
+
+@keyframes kf {
+  from { transform: perspective(10px) }
+}
+* {
+  zoom: 10%;
+  animation: kf 1s;
+}

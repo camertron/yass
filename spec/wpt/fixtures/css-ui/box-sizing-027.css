@@ -1,0 +1,8 @@
+
+#test {
+	box-sizing: border-box;
+	border: 10px solid blue;
+	padding: 10px;
+	width: 100px;
+	height: 100px;
+}

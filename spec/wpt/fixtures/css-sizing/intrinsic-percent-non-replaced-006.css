@@ -1,0 +1,11 @@
+
+#outer {
+  display: inline-block;
+  border: 5px solid;
+  padding: 3px;
+}
+#inner {
+  min-width: calc(100px + 50%);
+  min-height: calc(100px + 50%);
+  border: 2px solid cyan;
+}

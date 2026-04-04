@@ -1,0 +1,18 @@
+
+  div::scroll-button(block-end) {
+    content: "";
+    background: green;
+    display: flex;
+    height: 50px;
+    width: 100px;
+    border: none;
+  }
+
+  div::scroll-button(block-start) {
+    content: "";
+    background: green;
+    display: flex;
+    height: 50px;
+    width: 100px;
+    border: none;
+  }

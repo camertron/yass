@@ -1,0 +1,11 @@
+
+  .anchor {
+    width: 100px;
+    height: 100px;
+    background: orange;
+  }
+  .target {
+    width: 100px;
+    height: 100px;
+    background: green;
+  }

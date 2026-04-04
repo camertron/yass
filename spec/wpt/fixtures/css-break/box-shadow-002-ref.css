@@ -1,0 +1,6 @@
+
+  #mc > div {
+    position: absolute;
+    inline-size: 50px;
+    border: 10px solid;
+  }

@@ -1,0 +1,25 @@
+
+@layer base, override;
+@layer base {
+  .padding-block {
+    --p: 10px;
+    padding-block: var(--p);
+  }
+  .padding-block-two {
+    --p1: 10px;
+    --p2: 20px;
+    padding-block: var(--p1) var(--p2);
+  }
+  .margin-inline {
+    --m: 5px;
+    margin-inline: var(--m);
+  }
+}
+@layer override {
+  .padding-block,
+  .padding-block-two,
+  .margin-inline {
+    padding-block: revert-layer;
+    margin-inline: revert-layer;
+  }
+}

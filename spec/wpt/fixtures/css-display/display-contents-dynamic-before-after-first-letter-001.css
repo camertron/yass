@@ -1,0 +1,6 @@
+
+    div { color: blue; }
+    div::first-letter { color: red; }
+    div::before { display: contents; content: "PASS"; border: 1px solid red; }
+    .active div::before,
+    .active div::first-letter { color: green; }

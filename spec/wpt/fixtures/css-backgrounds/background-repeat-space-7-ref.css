@@ -1,0 +1,27 @@
+
+      .outer
+      {
+        border: 1px solid black;
+        width: 106px;
+        height: 192px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .inner
+      {
+        height: 64px;
+        width: 32px;
+        background-image: url(support/aqua-yellow-32x32.png);
+        background-repeat: no-repeat;
+        background-size: 32px 64px;
+      }
+      .inner_gradient
+      {
+        height: 64px;
+        width: 32px;
+        background-image: linear-gradient(to top left, red, green);
+        background-repeat: no-repeat;
+        background-size: 32px 64px;
+      }
+    

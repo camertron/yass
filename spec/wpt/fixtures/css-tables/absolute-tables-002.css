@@ -1,0 +1,26 @@
+
+.cb {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  outline: 2px dashed lightblue;
+}
+
+.table {
+  background-color: orange;
+  position: absolute;
+  width: 50px;
+  right: 0px;
+}
+
+.cell {
+  border: 1px solid green;
+  width: 100px;
+}
+
+.cell > div {
+  width: 200px;
+}
+
+.vertical { writing-mode: vertical-lr; }
+.horizontal { writing-mode: horizontal-tb; }

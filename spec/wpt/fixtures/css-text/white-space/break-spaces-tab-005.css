@@ -1,0 +1,17 @@
+
+div {
+  font: 20px/1 Ahem;
+}
+#test {
+  white-space: break-spaces;
+  color: green;
+  width: 2ch;
+}
+#ref {
+  white-space: pre;
+  width: 2ch;
+  background: red;
+  color: green;
+  position: absolute;
+  z-index:-1;
+}

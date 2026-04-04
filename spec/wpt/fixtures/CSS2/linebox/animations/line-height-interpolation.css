@@ -1,0 +1,15 @@
+
+.parent {
+  line-height: 30px;
+}
+
+.target {
+  display: inline-block;
+  font: 20px sans-serif;
+  line-height: 10px;
+}
+
+.expected {
+  color: green;
+  margin-right: 30px;
+}

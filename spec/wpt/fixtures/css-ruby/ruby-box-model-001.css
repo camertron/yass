@@ -1,0 +1,19 @@
+
+.r { display: ruby; }
+.rbc { display: ruby-base-container; }
+.rb { display: ruby-base; }
+.rtc { display: ruby-text-container; }
+.rt { display: ruby-text; }
+
+.pv { padding-top: 100px; padding-bottom: 100px; }
+.ph { padding-left: 100px; padding-right: 100px; }
+.bv, .bh { border-style: solid; border-color: transparent; }
+.bv  { border-top-width: 100px; border-bottom-width: 100px; }
+.bh { border-left-width: 100px; border-right-width: 100px; }
+.mv { margin-top: 100px; margin-bottom: 100px; }
+.mh { margin-left: 100px; margin-right: 100px; }
+
+.r { font: 50px/1 monospace; }
+
+.rb { background: pink; }
+.rt { background: orange; }

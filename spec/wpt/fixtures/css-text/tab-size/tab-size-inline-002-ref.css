@@ -1,0 +1,8 @@
+
+div {
+    font-family: monospace;
+    white-space: pre;
+    font-size: 2em;
+}
+.wrong { color: orange; }
+.right { color: blue; }

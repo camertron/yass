@@ -1,0 +1,22 @@
+
+  #inner { container-name: --foo }
+  #outer { container-name: --bar }
+  #target {
+    --match-foo: no;
+    --match-bar: no;
+    --match-baz: no;
+  }
+  @container --foo { #target { --match-foo: yes; } }
+  @container --bar { #target { --match-bar: yes; } }
+  @container --baz { #target { --match-baz: yes; } }
+
+
+  @container --in-shadow {
+    #slotted { --match-in-shadow: yes; }
+  }
+
+
+      @container --for-host {
+        #in-shadow { --match-for-host: yes; }
+      }
+    

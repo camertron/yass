@@ -1,0 +1,19 @@
+
+  #container {
+    border: 1px solid black;
+    font: 30px monospace;
+    width: 400px;
+  }
+  .inline-flex {
+    display: inline-flex;
+    width: 100px;
+    border: 1px solid gray;
+  }
+
+  .small {
+    display: flex;
+    align-items: flex-end;
+    font: 8px monospace;
+    background: pink;
+  }
+  

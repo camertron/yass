@@ -1,0 +1,32 @@
+
+    body {
+        margin: 0px;
+    }
+
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        width: 600px;
+        gap: 90px;
+
+        column-rule: 5px solid rgba(0, 0, 255, 0.5);
+        row-rule: 5px solid rgba(255, 0, 0, 0.5);
+
+        column-rule-break: intersection;
+        column-rule-inset: 0;
+
+        row-rule-break: intersection;
+        row-rule-inset: 0;
+    }
+
+    .item {
+        height: 100px;
+        background: lightgray;
+    }
+
+    .a { width: 100px; }
+    .b { width: 200px; }
+    .c { width: 90px; }
+    .d { width: 160px; }
+    .e { width: 110px; }
+    .f { width: 120px; }

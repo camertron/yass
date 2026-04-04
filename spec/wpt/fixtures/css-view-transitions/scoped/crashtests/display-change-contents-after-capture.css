@@ -1,0 +1,15 @@
+
+    #scope {
+      display: block;
+      width: 200px;
+      height: 200px;
+      background: lightblue;
+      padding: 20px;
+    }
+    #child {
+      view-transition-name: child;
+      width: 100px;
+      height: 100px;
+      background: coral;
+    }
+  

@@ -1,0 +1,18 @@
+
+    .test {
+      display: flex;
+      width: 3em;
+    }
+
+    .test > span {
+      width: 1em;
+    }
+
+    #row {
+      flex-direction: row;
+    }
+
+    #row-reverse {
+      flex-direction: row-reverse;
+    }
+  

@@ -1,0 +1,20 @@
+
+#reference-container {
+  width: 300px;
+}
+#reference-container, #reference {
+  border-style: solid; /* Avoid border-top-width computed style 0 */
+  border-top-width: medium;
+}
+
+#container, #target {
+  border-block-end-style: solid; /* Avoid border-block-end-width computed style 0 */
+  border-block-start-style: solid;
+  border-inline-end-style: solid;
+  border-inline-start-style: solid;
+}
+
+#container {
+  color: blue;
+  width: 300px;
+}

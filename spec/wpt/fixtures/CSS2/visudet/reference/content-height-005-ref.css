@@ -1,0 +1,14 @@
+
+
+div {
+  font-size: 50px;
+  display: inline-block;
+}
+
+span {
+  padding-left: 1em;
+  color: black;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+}
+

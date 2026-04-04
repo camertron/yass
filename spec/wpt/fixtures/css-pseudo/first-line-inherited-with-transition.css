@@ -1,0 +1,9 @@
+
+  p::first-line { color: orange; }
+  span {
+    background-color: black;
+    transition: background-color 1000s steps(2, start);
+  }
+  span.lime {
+    background-color: lime;
+  }

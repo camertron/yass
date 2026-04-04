@@ -1,0 +1,15 @@
+
+  .container { container-type: inline-size; }
+  #outer { width: 300px; }
+  #inner { width: 500px; }
+
+  #inner::highlight(hi) {
+    color: red;
+    background: transparent;
+  }
+  @container (width >= 400px) {
+    #inner.green::highlight(hi) {
+      color: green;
+      background: transparent;
+    }
+  }

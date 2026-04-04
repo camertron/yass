@@ -1,0 +1,12 @@
+
+  .scrollable {
+    overflow: auto;
+    width: 400px;
+    height: 200px;
+  }
+  .autoBehavior {
+    scroll-behavior: auto;
+  }
+  .smoothBehavior {
+    scroll-behavior: smooth;
+  }

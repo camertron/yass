@@ -1,0 +1,7 @@
+
+  #crash {
+    position: absolute;
+    left: anchor(right);
+    --grad: linear-gradient(black, blue);
+    content: var(--grad);
+  }

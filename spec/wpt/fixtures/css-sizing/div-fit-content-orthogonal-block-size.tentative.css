@@ -1,0 +1,10 @@
+
+  #outer {
+    inset: 0;
+    background-color: black;
+    position: absolute;
+    block-size: fit-content;
+    inline-size: 100px;
+    writing-mode: vertical-rl;
+    border: 5px solid red;
+  }

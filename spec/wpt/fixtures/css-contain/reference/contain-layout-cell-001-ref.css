@@ -1,0 +1,25 @@
+
+  table
+    {
+      background-color: blue;
+      border-spacing: 2px;
+      height: 206px;
+      table-layout: fixed;
+      width: 206px;
+    }
+
+  td
+    {
+      background-color: white;
+      padding: 0px;
+      vertical-align: baseline;
+    }
+
+  span
+    {
+      background-color: green;
+      color: white;
+      font-family: monospace;
+      vertical-align: top;
+    }
+  

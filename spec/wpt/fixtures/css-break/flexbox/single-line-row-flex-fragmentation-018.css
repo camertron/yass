@@ -1,0 +1,5 @@
+
+  #flex {
+    display: flex;
+    break-after: avoid;
+  }

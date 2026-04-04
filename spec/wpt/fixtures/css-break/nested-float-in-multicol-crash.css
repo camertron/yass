@@ -1,0 +1,9 @@
+
+  .float {
+    float: left;
+    clear: both;
+  }
+  div {
+    padding-bottom: 10px;
+    padding-top: 10000000000px;
+  }

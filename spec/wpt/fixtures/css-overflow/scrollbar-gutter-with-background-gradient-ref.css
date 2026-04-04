@@ -1,0 +1,7 @@
+
+  html {
+    scrollbar-gutter: stable both-edges;
+    background-image: linear-gradient(to right, green, blue);
+    position: fixed;
+    inset: 0;
+  }

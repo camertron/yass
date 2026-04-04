@@ -1,0 +1,14 @@
+
+  div {
+    width: 10ch;
+    font-family: monospace;
+  }
+  .float {
+    float: right;
+    width: 5ch;
+    height: 5ch;
+    background: blue;
+  }
+  .nowrap {
+    white-space: nowrap;
+  }

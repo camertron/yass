@@ -1,0 +1,15 @@
+
+    #a {
+        width: 300px;
+        height: 200px;
+        position: absolute;
+        left: 200px;
+        top: 150px;
+        border-width: 50px;
+        border-style: solid;
+        border-image: linear-gradient(green, green);
+        background-color: blue;
+        background-clip: content-box;
+        border-image-outset: 50px 10px 50px 100px;
+        border-image-slice: 33%;
+    }

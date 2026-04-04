@@ -1,0 +1,36 @@
+
+  :root {
+    --top: top;
+  }
+  #cb {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+  }
+
+  #anchor {
+    anchor-name: --a;
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    left: 75px;
+    top: 75px;
+    background: coral;
+  }
+
+  #main > div, #ref {
+    position: absolute;
+    background: seagreen;
+  }
+
+  #ref {
+    inset: unset;
+    width: unset;
+    height: unset;
+    min-width: unset;
+    min-height: unset;
+    max-width: unset;
+    max-height: unset;
+  }
+

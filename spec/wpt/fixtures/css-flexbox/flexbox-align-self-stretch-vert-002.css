@@ -1,0 +1,14 @@
+
+    div.container {
+      display: flex;
+      flex-flow: column wrap;
+      width: 100px;
+      height: 20px;
+      border: 2px solid black;
+    }
+    div.item {
+      /* Tall enough to force wrapping (since parent height is 20px): */
+      min-height: 15px;
+      border: 1px dotted blue;
+    }
+  

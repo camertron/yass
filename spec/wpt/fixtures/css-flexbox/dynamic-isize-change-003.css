@@ -1,0 +1,20 @@
+
+#flexbox {
+  display: flex;
+  flex-direction: column;
+  inline-size: 50px;
+  block-size: 100px;
+  background: red;
+}
+
+#flexbox > div {
+  box-sizing: border-box;
+  flex-basis: 100px;
+
+  /* The following padding will give our flex item a content-box inline-size of
+     25px, both before and after this test's dynamic change. (Note that the
+     horizontal axis is the flex container's cross axis, so the item stretches
+     its width by default to fill the available space.) */
+  padding-right: calc(100% - 25px);
+  background: green;
+}

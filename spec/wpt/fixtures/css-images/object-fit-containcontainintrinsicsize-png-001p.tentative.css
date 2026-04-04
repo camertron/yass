@@ -1,0 +1,28 @@
+
+      video {
+        border: 1px dashed gray;
+        padding: 1px;
+        image-rendering: pixelated;
+        float: left;
+        object-position: top left;
+        contain: size;
+      }
+      br {
+        clear: both;
+      }
+      .big {
+        contain-intrinsic-width: 32px;
+        contain-intrinsic-height: 48px;
+      }
+      .small {
+        contain-intrinsic-width: 8px;
+        contain-intrinsic-height: 8px;
+      }
+
+      .cover { object-fit: cover }
+      .contain { object-fit: contain }
+      .fill { object-fit: fill }
+      .none { object-fit: none }
+      .scaledown { object-fit: scale-down }
+
+    

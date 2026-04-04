@@ -1,0 +1,8 @@
+
+html {
+	order: 666;
+}
+body {
+	color: red;
+	order: inherit;
+}

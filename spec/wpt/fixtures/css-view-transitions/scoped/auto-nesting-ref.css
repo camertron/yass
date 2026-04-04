@@ -1,0 +1,41 @@
+
+    .box {
+      height: 100px;
+      width: 100px;
+      view-transition-name: match-element;
+      color: white;
+      margin-bottom: 10px;
+      position: relative;
+    }
+    .c1 {
+      background-color: rebeccapurple;
+    }
+    .c2 {
+      background-color: hotpink;
+    }
+    .c3 {
+      background-color: mediumvioletred;
+    }
+    #a {
+      background-color: #eee;
+      border: 5px solid black;
+      view-transition-name: a;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 250px;
+      height: 250px;
+      overflow: clip;
+    }
+    #b {
+      background-color: #eee;
+      border: 5px solid black;
+      view-transition-name: none;
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      overflow: visible;
+      left: 300px;
+      top: 0;
+    }
+  

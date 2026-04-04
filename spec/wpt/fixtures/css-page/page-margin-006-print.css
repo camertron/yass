@@ -1,0 +1,15 @@
+
+  @page {
+    size: 6in;
+    margin: 13px;
+    margin: inherit;
+  }
+  :root {
+    print-color-adjust: exact;
+    background: yellow;
+    margin: 0.5in;
+  }
+  body {
+    margin: 0;
+    background: cyan;
+  }

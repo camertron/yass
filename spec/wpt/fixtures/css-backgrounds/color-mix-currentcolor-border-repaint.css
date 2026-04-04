@@ -1,0 +1,10 @@
+
+    #target {
+        color: red;
+        border: 50px solid color-mix(in hsl, transparent 0%, currentColor 100%);
+        width: 0;
+    }
+
+    #target.green {
+        color: green;
+    }

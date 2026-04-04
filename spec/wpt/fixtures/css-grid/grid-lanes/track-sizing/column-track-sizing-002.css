@@ -1,0 +1,8 @@
+
+.grid-lanes {
+    display: grid-lanes;
+    grid-template-columns: minmax(15px, min-content) max-content auto;
+    background-color: gray;
+    width: 100px;
+    font: 10px/1 Ahem;
+}

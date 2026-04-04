@@ -1,0 +1,6 @@
+
+  div::after {
+    container-type: size;
+    content: '';
+    display: block;
+  }

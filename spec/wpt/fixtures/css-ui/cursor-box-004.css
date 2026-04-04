@@ -1,0 +1,10 @@
+
+#container {
+  position: absolute;
+  background: blue;
+  cursor: crosshair;
+}
+#test {
+  margin: 100px 50px;
+  cursor: url("support/cursors/fail.png"), help;
+}

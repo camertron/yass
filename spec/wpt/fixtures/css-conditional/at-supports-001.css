@@ -1,0 +1,12 @@
+
+		div {
+			background-color:red;
+			height:50px;
+			width:100px;
+		}
+		@supports (margin: 0) {
+			.test1 { background:green; }
+			.test2 { background: red; }
+		}
+		.test2 { background: green; }
+	

@@ -1,0 +1,12 @@
+
+html {
+  background: red;
+  /* an "L" shape */
+  clip-path: polygon(50px 50px, 100px 50px, 100px 100px, 150px 100px, 150px 150px, 50px 150px);
+  will-change: transform;
+}
+div {
+  width: 500px;
+  height: 500px;
+  background: green;
+}

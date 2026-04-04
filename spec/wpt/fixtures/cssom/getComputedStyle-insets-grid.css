@@ -1,0 +1,5 @@
+
+
+span { display: grid; grid-template-columns: 100px 100px; }
+span { position: absolute; grid-column: 2; }
+

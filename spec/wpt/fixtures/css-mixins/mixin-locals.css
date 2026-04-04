@@ -1,0 +1,74 @@
+
+    @mixin --m1() {
+      --my-color: green;
+      font-size: 200px;  /* Will be ignored. */
+      @result {
+        color: var(--my-color);
+      }
+    }
+    #e1 {
+      color: red;
+      @apply --m1;
+    }
+  
+
+    @mixin --m1b() {
+      --my-color: blue;
+      @result {
+        color: var(--my-color);
+      }
+    }
+    #e1b {
+      color: red;
+      @apply --m1b;
+    }
+  
+
+    @mixin --m2() {
+      --my-color: var(--real-color);
+      --real-color: green;
+      @result {
+        color: var(--my-color);
+      }
+    }
+    #e2 {
+      color: red;
+      @apply --m2;
+    }
+  
+
+    @mixin --m3(--real-color) {
+      --my-color: var(--real-color);
+      @result {
+        color: var(--my-color);
+      }
+    }
+    #e3 {
+      color: red;
+      @apply --m3(green);
+    }
+  
+
+    @mixin --m4(--should-fail: var(--parameter-does-not-see-inner)) {
+      --parameter-does-not-see-inner: red;
+      @result {
+        color: var(--should-fail);
+      }
+    }
+    #e4 {
+      --parameter-does-not-see-inner: green;
+      @apply --m4;
+    }
+  
+
+    @mixin --m5() {
+      --declared-before-result: unused;
+      @result {
+        color: var(--declared-after-result);
+      }
+      --declared-after-result: green;
+    }
+    #e5 {
+      @apply --m5;
+    }
+  

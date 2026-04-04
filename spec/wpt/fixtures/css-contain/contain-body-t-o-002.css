@@ -1,0 +1,23 @@
+
+html {
+    writing-mode: vertical-lr;
+    direction: rtl;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+body {
+    margin: 0;
+    border-top: 100px solid red;
+    border-bottom: 100px solid green;
+    width: 100vw;
+    height: 100vh;
+    text-orientation: upright;
+    contain: paint;
+}
+p {
+    margin: auto;
+    padding: 150px 0;
+    writing-mode: horizontal-tb;
+    direction: ltr;
+}

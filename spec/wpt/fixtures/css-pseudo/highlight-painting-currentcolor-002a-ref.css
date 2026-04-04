@@ -1,0 +1,13 @@
+
+  .a {
+    color: yellow;
+    background-color: blue;
+  }
+  .b {
+    color: lime;
+    background-color: blue;
+  }
+  .selection {
+    color: currentColor;
+    background-color: currentColor;
+  }

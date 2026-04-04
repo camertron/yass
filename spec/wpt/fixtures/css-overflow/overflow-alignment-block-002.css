@@ -1,0 +1,64 @@
+
+  /* Cram Tests */
+  body { height: 600px; border-bottom: solid orange; } /* Reftest Max Size. Do not exceed this line. */
+  html { font-size: 10px; }
+  th, td { padding: 0; }
+
+  /* Styling/Readability */
+  abbr, th[scope=row] { font-variant: small-caps; text-transform: lowercase; color: gray; }
+  thead { display: table-footer-group; }
+  caption { font-weight: bold; caption-side: bottom; }
+  /* Note: Annotations are at the bottom / right to avoid using up checked reftest area. */
+
+  /* Create an overflowing box with a 9-grid of colors */
+   .indicator {
+      width: 72px;
+      height: 72px;
+      writing-mode: horizontal-tb;
+      direction: ltr;
+   }
+   .indicator > div {
+      width: 24px;
+      height: 24px;
+   }
+   .indicator > .tl { background: teal;        float: left;  }
+   .indicator > .tc { background: lightblue;   float: left;  }
+   .indicator > .tr { background: aqua;        float: right; }
+   .indicator > .cl { background: gold;        float: left;  clear: both; }
+   .indicator > .cc { background: orange;      float: left;  }
+   .indicator > .cr { background: yellow;      float: right; }
+   .indicator > .bl { background: fuchsia;     float: left;  clear: both; }
+   .indicator > .bc { background: thistle;     float: left;  }
+   .indicator > .br { background: purple;      float: right; }
+   .indicator > [class] { background: red; }          /* Remove for debugging */
+
+   /* Create a test box containing the overflowing indicator */
+   .test {                                            /* Expand for debugging */
+      width: 24px;
+      height: 24px;
+      overflow: scroll;
+   }
+   .align-normal           .test { place-content: normal; }
+   .align-stretch          .test { place-content: stretch; }
+   .align-left             .test { place-content: start left; }
+   .align-right            .test { place-content: start right; }
+   .align-space-around     .test { place-content: space-around; }
+   .align-space-evenly     .test { place-content: space-evenly; }
+   .align-space-between    .test { place-content: space-between; }
+   .ltr { direction: ltr; }
+   .rtl { direction: rtl; }
+   .htb { writing-mode: horizontal-tb; }
+   .vrl { writing-mode: vertical-rl; }
+   .vlr { writing-mode: vertical-lr; }
+   .no-scroll { overflow: hidden; }
+
+   /* Pass Conditions */                              /* Remove for debugging */
+   .scroll-TL .tl { background: green; }
+   .scroll-BR .br { background: green; }
+
+   .start .no-scroll.ltr.htb .tl,
+   .start .no-scroll.ltr.vrl .tr,
+   .start .no-scroll.ltr.vlr .tl,
+   .start .no-scroll.rtl.htb .tr,
+   .start .no-scroll.rtl.vrl .br,
+   .start .no-scroll.rtl.vlr .bl { background: green; }

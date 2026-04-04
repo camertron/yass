@@ -1,0 +1,14 @@
+
+#target {
+  height: 50px;
+  width: 0;
+  background: green;
+  float: right;
+}
+
+span {
+  float: left;
+  width: 50px;
+  height: 50px;
+  background: green;
+}

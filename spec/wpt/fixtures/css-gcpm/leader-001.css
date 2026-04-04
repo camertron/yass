@@ -1,0 +1,4 @@
+
+
+span.cn::after { content: leader(dotted); }
+

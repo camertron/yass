@@ -1,0 +1,10 @@
+
+    @font-face {
+        font-family: "Inter";
+        src: url('support/fonts/Inter-VF.subset.ttf');
+    }
+    .style60 {
+        font-family: "Inter";
+        font-size: 3em;
+        font-style: oblique 60deg;
+    }

@@ -1,0 +1,16 @@
+
+div {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  padding: 50px;
+  border-radius: 100px;
+  overflow: hidden
+}
+div::before {
+  content:"";
+  display: block;
+  background: green;
+  width: 100px;
+  height: 100px;
+}

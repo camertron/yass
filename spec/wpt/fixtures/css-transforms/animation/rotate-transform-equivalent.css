@@ -1,0 +1,21 @@
+
+  .block {
+    border: 2px solid white; /* Avoid anti-aliasing artifacts */
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+  }
+
+  .rotation {
+    background: red;
+  }
+
+  .overlay {
+    background: green;
+  }
+
+  #rotateAdd {
+    rotate: 1 0 0 45deg;
+  }

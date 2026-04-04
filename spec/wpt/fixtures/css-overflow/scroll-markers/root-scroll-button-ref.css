@@ -1,0 +1,11 @@
+
+  body {
+    margin: 0;
+  }
+
+  .item {
+    width: 600px;
+    height: 300px;
+    margin-bottom: 20px;
+    background: green;
+  }

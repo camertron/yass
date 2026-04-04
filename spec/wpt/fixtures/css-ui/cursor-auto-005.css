@@ -1,0 +1,22 @@
+
+#test {
+  border: solid blue;
+  width: 200px;
+  cursor: auto;
+}
+#test * {
+  cursor: url("support/cursors/fail.png"), help !important; /* Override UA styles, regardless of specificity */
+  cursor: auto !important; /* Override UA styles, regardless of specificity */
+  resize: none; /* The appearance of the cursor over UA provided resize controls is out of scope. */
+  overflow: hidden; /* The appearance of the cursor over UA provided scroll controls is out of scope */
+}
+#ref {
+  width: 100px;
+  height: 100px;
+  cursor: default;
+  border: solid orange;
+}
+:root {
+  cursor: help; /* give the root element a different cursor so that
+  it is easy to tell if something changes when hovering the target.*/
+}

@@ -1,0 +1,23 @@
+
+  * {
+    font-family: monospace;
+  }
+
+  .scroller {
+    overflow: hidden;
+    scroll-marker-group: before;
+  }
+
+  .scroller::scroll-marker-group {
+    display: block;
+    height: 2em;
+    overflow: hidden;
+  }
+
+  .scroller>* {
+    display: flex;
+  }
+
+  .scroller>*::scroll-marker {
+    content: attr(text);
+  }

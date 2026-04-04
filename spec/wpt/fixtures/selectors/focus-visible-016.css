@@ -1,0 +1,23 @@
+
+  @supports not selector(:focus-visible) {
+    :focus {
+      outline: red solid 5px;
+      background-color: red;
+    }
+  }
+
+  div:focus-visible {
+    background: red;
+  }
+
+  div:focus:not(:focus-visible) {
+    background-color: lime;
+  }
+
+  input:focus-visible {
+    background: lime;
+  }
+
+  input:focus:not(:focus-visible) {
+    background-color: red;
+  }

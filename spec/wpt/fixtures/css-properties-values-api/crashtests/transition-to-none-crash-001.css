@@ -1,0 +1,4 @@
+
+  div {
+    transition: --my-property steps(2, start) 100s;
+  }

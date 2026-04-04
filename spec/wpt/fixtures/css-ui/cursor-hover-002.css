@@ -1,0 +1,10 @@
+
+div {
+  cursor: url("support/cursors/fail.png"), help;
+  width: 100px;
+  height: 100px;
+  border: solid blue;
+}
+:hover div {
+  cursor: crosshair;
+}

@@ -1,0 +1,8 @@
+
+  :root {
+    print-color-adjust: exact;
+  }
+  @page {
+    size: 5in;
+    background: #eee;
+  }

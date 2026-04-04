@@ -1,0 +1,9 @@
+
+  .ancestor {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 100px;
+    top: 0;
+    background-color: green;
+  }

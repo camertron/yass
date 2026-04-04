@@ -1,0 +1,7 @@
+
+#x {
+  width: 280px;
+  height: 280px;
+  background-image: repeating-linear-gradient(to bottom right, white, black, white 30px);
+}
+  

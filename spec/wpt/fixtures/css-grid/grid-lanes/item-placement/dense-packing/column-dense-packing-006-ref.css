@@ -1,0 +1,8 @@
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+}
+.upwards {
+    transform: translateY(-20px);
+}

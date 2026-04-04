@@ -1,0 +1,16 @@
+
+  #anchor {
+    anchor-name: --anchor;
+  }
+  #popover {
+    top: anchor(--anchor bottom);
+  }
+  ::backdrop {
+    transition: opacity 1s step-end;
+    opacity: 1;
+  }
+  @starting-style {
+    ::backdrop {
+      opacity: 0;
+    }
+  }

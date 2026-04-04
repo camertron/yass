@@ -1,0 +1,15 @@
+
+    @counter-style a {
+      system: extends upper-roman;
+      range: 1 6;
+      pad: 4 '*';
+    }
+    @counter-style b {
+      system: fixed 2;
+      symbols: g h;
+    }
+    @counter-style c {
+      system: additive;
+      additive-symbols: 3 c, 2 b, 1 a;
+    }
+  

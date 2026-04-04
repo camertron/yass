@@ -1,0 +1,18 @@
+
+img {
+	box-sizing: border-box;
+	width: auto;
+	height: auto;
+	background: white;
+	padding-bottom: 30px;
+	max-height: 100px;
+}
+
+#ref {
+	display: inline-block;
+	margin-bottom: 30px; /*for alignement*/
+	width: 70px;
+	height: 70px;
+	background: green;
+}
+

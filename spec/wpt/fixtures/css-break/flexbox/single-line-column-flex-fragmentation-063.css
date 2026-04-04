@@ -1,0 +1,28 @@
+
+  .multicol {
+    column-count: 4;
+    column-gap: 0;
+    column-fill: auto;
+    background: red;
+    width: 100px;
+    height: 100px;
+  }
+
+  .multicol > div {
+    background: green;
+  }
+
+  .flexbox {
+    display: flex;
+    flex-direction: column;
+    height: 340px;
+    border: 5px solid green;
+    justify-content: end;
+  }
+
+  .flexbox > div {
+    contain: size;
+    width: 15px;
+    height: 50px;
+  }
+  

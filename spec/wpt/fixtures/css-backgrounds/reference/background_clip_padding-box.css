@@ -1,0 +1,25 @@
+
+        /* Positioned container allows for the self-describing statement to still
+           be visible in the case of failure */
+        .container {
+            position: absolute;
+        }
+        .ref {
+			background-color: red;
+			height: 130px;
+			left: 10px;
+			top: 10px;
+			width: 130px;
+			position: absolute;
+         }
+
+		 .ref1 {
+			height: 130px;
+			left: 5px;
+			top: 5px;
+			width: 130px;
+			position: absolute;
+			border: blue dotted 5px ;
+         }
+
+    

@@ -1,0 +1,8 @@
+
+p { color: green; }
+/* Ensure that we initially match it, and stop matching it afterwards */
+@media (min-width: 310px) {
+  p {
+    color: red;
+  }
+}

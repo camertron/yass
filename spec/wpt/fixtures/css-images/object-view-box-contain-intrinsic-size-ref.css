@@ -1,0 +1,10 @@
+
+.default {
+  object-fit: fill;
+  width: 100px;
+  height: 200px;
+  position: relative;
+  top: -100px;
+  left: -50px;
+  clip-path: inset(101px 0px 0px 51px);
+}

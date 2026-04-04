@@ -1,0 +1,10 @@
+
+button, select {
+  appearance: none;
+  contain: layout;
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  margin: 5px;
+  padding: 2px;
+}

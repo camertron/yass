@@ -1,0 +1,14 @@
+
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+}
+html {
+  color: transparent;
+  border: 20px solid transparent;
+}
+body {
+  background-color: green;
+  background-clip: border-area;
+}

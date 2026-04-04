@@ -1,0 +1,35 @@
+
+      .objectOuter {
+        border: 1px dashed gray;
+        padding: 1px;
+        float: left;
+      }
+      .objectOuter > * {
+        background-image: url("support/colors-16x8.svg");
+        background-size: auto auto;
+        background-repeat: no-repeat;
+      }
+      .bigWide {
+        width: 48px;
+        height: 32px;
+      }
+      .bigTall {
+        width: 32px;
+        height: 48px;
+      }
+      .small {
+        width: 8px;
+        height: 8px;
+      }
+
+      br { clear: both; }
+
+      .tr { background-position: top right }
+      .bl { background-position: bottom left }
+      .tl { background-position: top 25% left 25% }
+      .br { background-position: bottom 1px right 2px }
+
+      .tc { background-position: top 3px center }
+      .cr { background-position: center right 25% }
+      .default { background-position: 50% 50% }
+    

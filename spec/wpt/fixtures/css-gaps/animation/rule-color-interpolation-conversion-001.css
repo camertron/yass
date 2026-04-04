@@ -1,0 +1,9 @@
+
+    #target {
+      column-rule-color: blue;
+      animation: color-anim 2s linear paused;
+    }
+    @keyframes color-anim {
+      from { column-rule-color: red; }
+    }
+  

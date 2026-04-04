@@ -1,0 +1,5 @@
+
+*::after, .a:only-of-type {
+  content: counters(ct1, '.', disc);
+  display: table-caption;
+}

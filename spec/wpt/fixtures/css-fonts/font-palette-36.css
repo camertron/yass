@@ -1,0 +1,17 @@
+
+@font-face {
+    font-family: "COLR-test-font";
+    src: url("resources/COLR-palettes-test-font.ttf") format("truetype");
+}
+@font-face {
+    font-family: "foo bar";
+    src: url("resources/COLR-palettes-test-font.ttf") format("truetype");
+}
+@font-face {
+    font-family: foo;
+    src: url("resources/COLR-palettes-test-font.ttf") format("truetype");
+}
+@font-palette-values --MyPalette {
+    font-family: "COLR-test-font", "foo bar", foo;
+    base-palette: light;
+}

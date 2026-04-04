@@ -1,0 +1,9 @@
+
+p {
+  color: red;
+}
+p {
+  color: orange;
+  --\61: green;
+  color: var(--a);
+}

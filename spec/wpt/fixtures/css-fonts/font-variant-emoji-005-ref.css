@@ -1,0 +1,5 @@
+
+body { background: white; }
+p { font: 16px/3 serif; }
+span { color: white; font: 25px Ahem; }
+span span { color: initial; font-variant-emoji: emoji; }

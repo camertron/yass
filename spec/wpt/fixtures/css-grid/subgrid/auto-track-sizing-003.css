@@ -1,0 +1,19 @@
+
+.wrapper {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+.grid {
+  display: grid;
+  width: min-content;
+  background: green;
+  color: transparent;
+  font: 25px/1 Ahem;
+}
+.subgrid {
+  display: grid;
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  grid-template: subgrid / subgrid;
+}

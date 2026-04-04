@@ -1,0 +1,10 @@
+
+  textarea {
+    font-size: 3em;
+    transition: margin-bottom 1e10s steps(2, start);
+    margin-bottom: 10px;
+  }
+
+  .margin {
+    margin-bottom: 20px;
+  }

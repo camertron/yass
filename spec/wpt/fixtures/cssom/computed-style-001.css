@@ -1,0 +1,13 @@
+
+    #outside {
+        width: 200px;
+        height: 200px;
+    }
+    #outside div {
+        font-size: 100px;
+    }
+    #inside {
+        width: 50%;
+        height: 100px;
+    }
+  

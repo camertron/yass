@@ -1,0 +1,17 @@
+
+#scroll-container {
+  width: 200px;
+  height: 200px;
+  overflow-y: scroll;
+}
+
+#scroller {
+  height: 400px;
+}
+
+#sticky {
+  position: sticky;
+  height: 150px;
+  background: green;
+  top: anchor(--invalid top, 42px); /* Should use the fallback */
+}

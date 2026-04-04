@@ -1,0 +1,83 @@
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 50px);
+      width: 200px;
+      margin-bottom: 20px;
+      align-items: baseline;
+      background: lightgray;
+      font-family: Ahem;
+      line-height: 1;
+    }
+
+    .font-tall-high-baseline {
+      font-size: 20px;
+      padding-top: 20px;
+      width: 50px;
+      background: lightblue;
+    }
+
+    .font-short-low-baseline {
+      font-size: 20px;
+      width: 50px;
+      background: lightgreen;
+    }
+
+    .font-with-top-padding {
+      font-size: 20px;
+      padding-top: 20px;
+      width: 50px;
+      background: coral;
+      align-self: last baseline;
+    }
+
+    .font-with-bottom-padding {
+      font-size: 20px;
+      padding-bottom: 30px;
+      width: 50px;
+      background: lightcyan;
+    }
+
+    .font-small-top-padded {
+      font-size: 20px;
+      padding-top: 60px;
+      width: 50px;
+      background: gold;
+    }
+
+    .font-medium-plain {
+      font-size: 30px;
+      width: 50px;
+      background: plum;
+    }
+
+    .font-with-margin-top {
+      font-size: 20px;
+      margin-top: 10px;
+      width: 50px;
+      background: lightsalmon;
+    }
+
+    .font-with-bottom-padding-no-margin {
+      font-size: 20px;
+      padding-bottom: 20px;
+      width: 50px;
+      background: lavender;
+    }
+
+    .font-with-margin-and-padding {
+      font-size: 20px;
+      margin-top: 20px;
+      padding-top: 10px;
+      width: 50px;
+      background: palegreen;
+    }
+
+    .font-with-small-margin-bottom-padding {
+      font-size: 20px;
+      margin-top: 10px;
+      padding-bottom: 20px;
+      width: 50px;
+      background: powderblue;
+    }
+  

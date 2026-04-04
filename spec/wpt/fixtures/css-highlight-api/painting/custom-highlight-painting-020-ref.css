@@ -1,0 +1,13 @@
+
+  @font-face {
+    font-family: 'mplus';
+    src: url('../../../fonts/mplus-1p-regular.woff');
+  }
+  div {
+      font-size: 7em;
+      font-family: mplus, sans-serif;
+  }
+  ::selection {
+    color:green;
+    text-decoration: blue 2px line-through;
+  }

@@ -1,0 +1,17 @@
+
+  #multicol {
+    column-count: 2;
+    column-gap: 5px;
+    width: 200px;
+  }
+  #container {
+    position: relative;
+    box-sizing: border-box;
+    width: 50px;
+    overflow: auto;
+  }
+  #abs {
+    position: absolute;
+    width: 20px;
+    height: 200px;
+  }

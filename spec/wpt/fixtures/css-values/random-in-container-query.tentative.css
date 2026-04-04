@@ -1,0 +1,42 @@
+
+  @property --length {
+    syntax: "<length>";
+    initial-value: 30px;
+    inherits: true;
+  }
+
+  #container {
+    container-type: size;
+    --length: 30px;
+    --unregistered: random(element-shared, 30px, 10px);
+  }
+  #target {
+    --test1: true;
+    --test2: true;
+    --test3: true;
+    --test4: true;
+    --test5: true;
+    --test6: true;
+    --test7: true;
+  }
+  @container style(--length: random(element-shared, 30px, 10px)) {
+    #target { --test1: false; }
+  }
+  @container style(--length: var(--unregistered)) {
+    #target { --test2: false; }
+  }
+  @container style(--length = random(element-shared, 30px, 10px)) {
+    #target { --test3: false; }
+  }
+  @container style(--unregistered = 30px) {
+    #target { --test4: false; }
+  }
+  @container style(random(element-shared, 30px, 10px) = random(element-shared, 30px, 10px)) {
+    #target { --test5: false; }
+  }
+  @container style(random(element-shared, 30px, 10px) <= random(element-shared, 30px, 10px) <= random(element-shared, 10px, 30px)) {
+    #target { --test6: false; }
+  }
+  @container style(--length <= --length <= random(element-shared, 30px, 10px)) {
+    #target { --test7: false; }
+  }

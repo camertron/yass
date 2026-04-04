@@ -1,0 +1,16 @@
+
+  .contain {
+    display: inline-flex;
+    contain:size;
+    border: 1em solid green;
+    background: red;
+  }
+  .innerContents {
+    color: transparent;
+    height: 100px;
+    width: 100px;
+  }
+  .width {
+    width: 50px;
+  }
+  

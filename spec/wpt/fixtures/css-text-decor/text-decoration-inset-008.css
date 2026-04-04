@@ -1,0 +1,21 @@
+
+body {
+  background: white;
+  color: black;
+  font-family: times new roman, serif;
+}
+div {
+  position: relative;
+}
+h1 {
+  position: absolute;
+}
+span {
+  display: inline-block;
+  position: relative;
+}
+u {
+  text-decoration-skip-ink: none;
+  text-decoration-color: black;
+  text-decoration-inset: 10px;
+}

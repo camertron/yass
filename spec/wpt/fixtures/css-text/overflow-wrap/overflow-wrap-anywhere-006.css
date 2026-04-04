@@ -1,0 +1,22 @@
+
+div {
+  position: relative;
+  font-size: 20px;
+  font-family: Ahem;
+  line-height: 1em;
+}
+.red {
+  position: absolute;
+  background: green;
+  color: red;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+}
+.test {
+  color: green;
+  width: 5ch;
+
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}

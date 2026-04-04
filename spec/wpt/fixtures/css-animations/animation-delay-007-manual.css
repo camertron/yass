@@ -1,0 +1,24 @@
+
+  #container {
+    animation-delay: 5s;
+  }
+
+  #test {
+    animation-name: sample;
+    animation-duration: 5s;
+    animation-delay: inherit;
+
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    position: relative;
+  }
+
+  @keyframes sample {
+    from {
+      left: 150px;
+    }
+    to {
+      left: 0px;
+    }
+  }

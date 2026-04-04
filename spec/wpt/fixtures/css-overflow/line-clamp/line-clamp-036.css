@@ -1,0 +1,17 @@
+
+.clamp {
+  line-clamp: 4;
+  font: 25px/1 Ahem;
+}
+.green {
+  color: green;
+}
+.red {
+  background-color: red;
+}
+.lineless {
+  height: 1lh;
+}
+.ifc {
+  display: flow-root;
+}

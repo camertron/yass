@@ -1,0 +1,12 @@
+
+  div {
+    overflow: auto;
+    scroll-marker-group: before;
+  }
+
+  div::scroll-marker-group {
+    background: green;
+    display: flex;
+    height: 100px;
+    width: 100px;
+  }

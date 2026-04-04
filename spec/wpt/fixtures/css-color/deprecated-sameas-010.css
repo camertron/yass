@@ -1,0 +1,6 @@
+
+    .test { background-color: red; width: 12em; height: 6em; }
+    .ref { background-color: GrayText; width: 12em; height: 6em; }
+    @supports (color: InactiveCaptionText) {
+        .test { background-color: InactiveCaptionText; }
+    }

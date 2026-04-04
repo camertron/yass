@@ -1,0 +1,15 @@
+
+.parent {
+  rotate: 90deg;
+}
+
+.target {
+  width: 40px;
+  height: 20px;
+  background-color: grey;
+  rotate: 10deg;
+}
+
+.expected {
+  background-color: green;
+}

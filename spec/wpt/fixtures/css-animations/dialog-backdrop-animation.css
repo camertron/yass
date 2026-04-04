@@ -1,0 +1,10 @@
+
+
+dialog[open]::backdrop {
+    animation: dialog-backdrop-animation 1ms;
+}
+
+@keyframes dialog-backdrop-animation {
+    from { opacity: 0 }
+}
+

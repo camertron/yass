@@ -1,0 +1,8 @@
+
+div::first-line {
+  ruby-position: under;
+  color: orange;
+}
+ruby::first-line, rt::first-line {
+  color: red;
+}

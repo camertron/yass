@@ -1,0 +1,18 @@
+
+    .parent {
+      row-rule-style: solid;
+      row-rule-color: white;
+    }
+
+    .target {
+      display: flex;
+      row-gap: 10px;
+      row-rule-width: 10px;
+      row-rule-style: solid;
+      row-rule-color: black, black, black;
+      flex-wrap: wrap;
+      column-rule-color: 10px;
+      column-rule-style: solid;
+      column-rule-color: black, red, blue;
+    }
+  

@@ -1,0 +1,17 @@
+
+  @property --reg-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: red;
+  }
+
+  #light { color-scheme: light; }
+  #dark { color-scheme: dark; }
+  .container { --reg-color: light-dark(white, black); }
+
+  @container style(--reg-color: white) {
+    #t1 { color: green; }
+  }
+  @container style(--reg-color: black) {
+    #t2 { color: green; }
+  }

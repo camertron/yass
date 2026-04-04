@@ -1,0 +1,25 @@
+
+            .parent {
+                background: aqua;/*rgb(0,255,255);*/
+                width: 140px;
+                height: 140px;
+                padding-top: 1px;
+                transform:rotateX(20deg);
+            }
+            .blended {
+                background: fuchsia;/*rgb(255,0,255);*/
+                margin-top: 20px;
+                margin-left: 20px;
+                width: 200px;
+                height: 200px;
+                transform:rotateX(20deg);
+            }
+            .childOfBlended {
+                background: yellow;/*rgb(255,255,0);*/
+                width: 120px;
+                height: 122px;
+            }
+            p {
+                will-change: transform;
+            }
+        

@@ -1,0 +1,5 @@
+
+  #element {
+    object-view-box: inset(0px);
+    transition: object-view-box 100s -50s linear;
+  }

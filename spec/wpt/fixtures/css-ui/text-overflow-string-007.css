@@ -1,0 +1,15 @@
+
+  div {
+    font-family: monospace;
+    font-size: 10px;
+    overflow: hidden;
+    /* This custom ellipsis string has mixed LTR/RTL characters
+     * ("A" and "ום"), but its base direction (determined by the first strong
+     * char 'A') is LTR. */
+    text-overflow: "A ום";
+    width: 130px;
+  }
+  span {
+    font-family: Ahem;
+    font-size: 30px;
+  }

@@ -1,0 +1,18 @@
+
+  #container {
+    background-color: red;
+    display: flex;
+    height: 100px;
+    width: 100px;
+  }
+  #container div{
+    background-color: green;
+    height: 100px;
+  }
+  #ref {
+    width: 50px;
+  }
+  #test {
+    flex-basis: auto;
+    width: 50px;
+  }

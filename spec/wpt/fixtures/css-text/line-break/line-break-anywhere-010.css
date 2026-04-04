@@ -1,0 +1,21 @@
+
+div {
+  position: relative;
+  font-size: 25px;
+  font-family: Ahem;
+  line-height: 1em;
+}
+.red {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: green;
+  color: red;
+  z-index: -1;
+}
+.test {
+  color: green;
+  width: 4ch;
+  white-space: pre-wrap;
+  line-break: anywhere;
+}

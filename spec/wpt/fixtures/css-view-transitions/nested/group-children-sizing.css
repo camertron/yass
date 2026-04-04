@@ -1,0 +1,35 @@
+
+#clipper {
+  view-transition-group: contain;
+  view-transition-name: clipper;
+
+  height: 200px;
+  width: 200px;
+}
+
+.item {
+  view-transition-name: match-element;
+  background: blue;
+  position: relative;
+  top: -25px;
+  left: -10px;
+
+  height: 50px;
+  width: 250px;
+  margin: 1px;
+  border: 1px solid black;
+}
+
+.item.popout {
+  view-transition-group: root;
+}
+
+::view-transition-group(*),
+::view-transition-old(*),
+::view-transition-new(*) {
+  animation-play-state: paused;
+}
+
+::view-transition-group-children(clipper) {
+  overflow: clip;
+}

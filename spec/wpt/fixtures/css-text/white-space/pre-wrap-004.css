@@ -1,0 +1,13 @@
+
+div {
+  font-size: 20px;
+  font-family: Ahem;
+  line-height: 1em;
+  white-space: pre-wrap;
+  color: green;
+
+  background: linear-gradient(red, red) 0 0/2ch 2ch no-repeat;
+
+  width: 4ch;
+  line-break: loose;
+}

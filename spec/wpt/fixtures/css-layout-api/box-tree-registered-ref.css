@@ -1,0 +1,10 @@
+
+.container {
+  margin: 20px 0;
+  border: solid 2px;
+  width: 100px;
+}
+
+.pink {
+  background: hotpink;
+}

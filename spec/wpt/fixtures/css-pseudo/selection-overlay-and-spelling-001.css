@@ -1,0 +1,23 @@
+
+  div
+    {
+      font-size: 60px;
+    }
+
+  div::selection
+    {
+      background-color: rgba(0%, 50%, 100%, 0.5);
+      /*
+      a very lite blue color
+      according to
+      https://www.colorhexa.com/7fbfff
+      */
+      color: yellow;
+    }
+
+  div::spelling-error
+    {
+      background-color: yellow;
+      color: red;
+    }
+  

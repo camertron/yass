@@ -1,0 +1,8 @@
+
+.clamp {
+  line-clamp: 2;
+  width: 63.1ch;
+  border: 1px solid black;
+  font-family: monospace;
+  hyphens: manual; /* Initial value, but explicit since that's the target of the test*/
+}

@@ -1,0 +1,20 @@
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    height: 100px;
+    width: 100px;
+    background: red;
+    column-rule-color: green;
+    column-rule-style: solid;
+    column-rule-width: 10px;
+    row-rule-color: green;
+    row-rule-style: solid;
+    row-rule-width: 10px;
+  }
+
+  .grid-item {
+    background: green;
+  }

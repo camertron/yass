@@ -1,0 +1,28 @@
+
+      #container {
+        overflow-y: scroll;
+        height: 500px;
+        width: 300px;
+        border: solid 1px black;
+        position: absolute;
+        scroll-snap-type: y mandatory;
+      }
+      .snap_area {
+        scroll-snap-align: start;
+        height: 400px;
+        width: 200px;
+        left: 50px;
+        position: absolute;
+      }
+      #area1 {
+        background-color: blue;
+      }
+      #area2 {
+        top: 400px;
+        background-color: yellow;
+      }
+      #area3 {
+        top: 800px;
+        background-color: green;
+      }
+    

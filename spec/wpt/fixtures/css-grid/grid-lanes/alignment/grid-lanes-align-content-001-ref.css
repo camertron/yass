@@ -1,0 +1,38 @@
+
+html,body {
+  color:black; background-color:white; font:15px/1 monospace; padding:0; margin:0;
+}
+
+grid {
+  display: inline-block;
+  color: #444;
+  border: 1px solid;
+  padding: 2px;
+  height: 100px;
+  width: 86px;
+  position: relative;
+}
+
+.multicolumn-content {
+  column-count: 4;
+  column-gap: 2px;
+  column-width: 20px;
+  height: max-content;
+}
+
+.column-item {
+  background-color: #444;
+  color: #fff;
+  width: 20px;
+  height: 15px;
+  break-inside: avoid;
+  margin-bottom: 1px;
+  line-height: 1em;
+}
+
+.tall { padding-top:30px;}
+
+.safe {
+  height: 10px;
+}
+

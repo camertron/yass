@@ -1,0 +1,11 @@
+
+    @font-face {
+				font-family: "test";
+				src: url(/fonts/Lato-Medium.ttf);
+			}
+    .test {
+				font-family: "test";
+				font-size: 3em;
+                font-synthesis: weight style;
+                color: green;
+			}

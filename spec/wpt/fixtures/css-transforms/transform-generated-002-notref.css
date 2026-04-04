@@ -1,0 +1,6 @@
+
+      span::before {
+        display: block;
+        content: 'abc';
+      }
+    

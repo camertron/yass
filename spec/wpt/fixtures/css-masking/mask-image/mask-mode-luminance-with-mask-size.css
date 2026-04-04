@@ -1,0 +1,17 @@
+
+      div {
+        background-color: blue;
+        position: absolute;
+
+        width: 100px;
+        height: 100px;
+
+        top: 10px;
+        left: 10px;
+
+        mask-mode: luminance;
+        mask-size: 100px 50px;
+        mask-image: url(support/transparent-100x50-blue-100x50.png);
+      }
+
+    

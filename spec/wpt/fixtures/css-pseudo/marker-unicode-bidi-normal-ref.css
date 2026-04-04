@@ -1,0 +1,15 @@
+
+ol {
+  float: left;
+  list-style-type: none;
+}
+.rtl {
+  direction: rtl;
+}
+.marker {
+  unicode-bidi: normal;
+  color: blue;
+}
+.text {
+  background: yellow;
+}

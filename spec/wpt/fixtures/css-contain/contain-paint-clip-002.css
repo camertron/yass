@@ -1,0 +1,11 @@
+
+  .root {
+    contain: paint;
+    width: 100px;
+    height: 100px;
+    background: green;
+    margin: 25px;
+    padding: 10px;
+    border-radius: 4em;
+  }
+  

@@ -1,0 +1,10 @@
+
+  * {
+    /* Browsers typically ignore the :visited alpha and use the unvisited
+       alpha instead, which by default is 0, in which case a failure would
+       not be detected. */
+    background-color: white;
+  }
+  div *:not(:link):not(:visited) {
+    background-color: green;
+  }

@@ -1,0 +1,11 @@
+
+      div {
+        background-color: purple;
+        width: 50px;
+        height: 50px;
+      }
+      div.mask-by-data-url {
+        /* a 50x50 opaque blue rect */
+        mask: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+Cjxzdmcgd2lkdGg9IjUwIiBoZWlnaHQ9IjUwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxyZWN0IHg9IjAiIHk9IjAiICB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIGZpbGw9ImJsdWUiIGZpbGwtb3BhY2l0eT0iMSIvPgo8L3N2Zz4K");
+      }
+    

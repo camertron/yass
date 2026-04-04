@@ -1,0 +1,21 @@
+
+.spacer {
+  background: lightgray;
+  block-size: 100px;
+}
+.target {
+  font: 50px/2 Ahem;
+  text-box-trim: trim-end;
+  text-box-edge: text;
+}
+.clamp {
+  line-clamp: 3;
+}
+@supports not (line-clamp: 3) {
+  .clamp {
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}

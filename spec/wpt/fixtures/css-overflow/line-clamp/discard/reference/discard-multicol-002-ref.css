@@ -1,0 +1,11 @@
+
+div {
+  font-family: monospace;
+  gap: 1ch;
+  width: 27ch;
+  columns: 3;
+  height: 2lh;
+
+  border: 1px solid;
+  margin: 1em;
+}

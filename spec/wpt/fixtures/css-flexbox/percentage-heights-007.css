@@ -1,0 +1,23 @@
+
+x-flexbox {
+  display: flex;
+  flex-direction: column;
+}
+
+x-item {
+  flex: 0 0 100px;
+}
+
+x-item>div {
+  width: 100px;
+  height: 100%;
+  background: green;
+}
+
+#reference-overlapped-red {
+  position: absolute;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+}

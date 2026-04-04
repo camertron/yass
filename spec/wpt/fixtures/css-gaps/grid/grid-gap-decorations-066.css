@@ -1,0 +1,18 @@
+
+  body {
+    margin: 0px;
+  }
+  .container {
+    gap: 10px;
+    row-rule: 2px solid red;
+    column-rule: 2px solid blue;
+  }
+  .grid {
+    display: inline-grid;
+    grid-template: repeat(2, 50px) / repeat(2, 50px);
+  }
+  .item {
+    background: lightgray;
+    width: 50px;
+    height: 50px;
+  }

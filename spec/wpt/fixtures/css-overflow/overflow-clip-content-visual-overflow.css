@@ -1,0 +1,22 @@
+
+  body {
+    margin: 0
+  }
+
+  .parent {
+    width: 100px;
+    height: 100px;
+    will-change: transform;
+  }
+
+  .child {
+    width: 100px;
+    height: 100px;
+    background: black;
+    box-shadow: 10px 50px 5px red;
+  }
+
+  .spacer {
+    width: 100px;
+    height: 150px;
+  }

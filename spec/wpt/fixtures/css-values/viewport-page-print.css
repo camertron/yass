@@ -1,0 +1,15 @@
+
+body {
+    margin: 0;
+}
+:root {
+    background: red;
+}
+@page {
+    margin: 0;
+}
+div {
+    background: green;
+    width: 100vw;
+    height: 100vh;
+}

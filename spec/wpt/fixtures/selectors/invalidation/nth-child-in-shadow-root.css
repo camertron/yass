@@ -1,0 +1,8 @@
+
+        :nth-child(odd) {
+            color: green;
+        }
+        :nth-child(even) {
+            color: red;
+        }
+        

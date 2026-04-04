@@ -1,0 +1,16 @@
+
+div {
+  width: 100px;
+  background: blue;
+}
+
+inline-block {
+  display: inline-block;
+  width: 80px;
+  height: 1em;
+  background: orange;
+}
+
+sep {
+  font-size: 0;
+}

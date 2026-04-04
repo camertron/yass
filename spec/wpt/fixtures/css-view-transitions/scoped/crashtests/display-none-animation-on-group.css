@@ -1,0 +1,36 @@
+
+  #target {
+    background-color: rebeccapurple;
+    height: 100px;
+    width: 100px;
+    view-transition-name: target;
+  }
+
+  @keyframes vanish-then-show {
+    0% {
+      opacity: 1;
+      display: block;
+    }
+    40% {
+      opacity: 0;
+      display: none;
+    }
+    60% {
+      opacity: 0;
+      display: none;
+    }
+    100% {
+      opacity: 1;
+      display: block;
+    }
+  }
+
+  #target.update {
+    background-color: lightgoldenrodyellow;
+  }
+
+  ::view-transition-group(target) {
+    animation: vanish-then-show ease-in-out;
+    animation-duration: 300ms;
+  }
+

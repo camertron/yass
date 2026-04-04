@@ -1,0 +1,6 @@
+
+div.test{
+  background: #D2B48C; border: 2px solid #555;
+  cursor: cross-fade( url("support/cursors/woolly-64.ico"), green), cross-fade( url("support/cursors/woolly-64.png"), green), help;
+  width: 128px; height: 128px;
+}

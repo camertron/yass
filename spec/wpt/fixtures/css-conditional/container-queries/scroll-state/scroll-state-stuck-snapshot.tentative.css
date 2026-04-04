@@ -1,0 +1,21 @@
+
+  #scroller {
+    overflow-y: scroll;
+    height: 300px;
+  }
+  #filler {
+    height: 250px;
+  }
+  #stuck {
+    container-type: scroll-state;
+    position: sticky;
+    bottom: 0;
+    height: 100px;
+    background-color: teal;
+  }
+  #target {
+    --stuck: no;
+    @container scroll-state(stuck: bottom) {
+      --stuck: yes;
+    }
+  }

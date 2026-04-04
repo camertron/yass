@@ -1,0 +1,11 @@
+
+.parent {
+  tab-size: 20;
+}
+.target {
+  font: 10px sans-serif;
+  tab-size: 5;
+}
+.expected {
+  color: green;
+}

@@ -1,0 +1,25 @@
+
+  html
+    {
+      writing-mode: vertical-lr;
+    }
+
+  html::after
+    {
+      content: "This text must be written vertically, below the orange square.";
+      display: block;
+    }
+
+  body
+    {
+      writing-mode: horizontal-tb;
+    }
+
+  img#orange-square
+    {
+      height: 100px;
+      padding-right: 1em;
+      vertical-align: top;
+      width: 100px;
+    }
+  

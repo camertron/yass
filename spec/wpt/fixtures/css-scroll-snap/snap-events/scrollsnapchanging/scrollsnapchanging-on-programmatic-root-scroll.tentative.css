@@ -1,0 +1,47 @@
+
+    :root {
+      scroll-snap-type: y mandatory;
+    }
+
+    .box {
+      position: absolute;
+      left: 150px;
+      height: 80vh;
+      width: 100px;
+      border: solid 1px white;
+    }
+
+    .snap {
+      scroll-snap-align: start;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+
+    .green {
+      background-color: green;
+    }
+
+    .yellow {
+      background-color: yellow;
+    }
+
+    #snap_area_1 {
+      top: 0px;
+    }
+
+    #snap_area_2 {
+      top: calc(80vh + 2px);
+    }
+
+    #snap_area_3 {
+      top: calc(160vh + 4px);
+    }
+
+    .large_space {
+      height: 400vh;
+      width: 400vw;
+      position: absolute;
+    }
+  

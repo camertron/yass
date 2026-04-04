@@ -1,0 +1,11 @@
+
+.decoration-thickness {
+  text-decoration: underline blue;
+  text-decoration-thickness: 5px;
+}
+.zoom {
+  zoom: 2;
+}
+#zoomed-inherited {
+  text-decoration-thickness: inherit;
+}

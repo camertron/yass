@@ -1,0 +1,20 @@
+
+        @scope (.a:hover) {
+          :scope { z-index: 1; }
+        }
+    
+
+        @scope (.a:hover) {
+          :scope .b { z-index: 1; }
+        }
+    
+
+        @scope (.a) to (:scope:hover) {
+          :scope { z-index: 1; }
+        }
+    
+
+        @scope (.a) to (.b:hover) {
+          .b { z-index: 1; }
+        }
+    

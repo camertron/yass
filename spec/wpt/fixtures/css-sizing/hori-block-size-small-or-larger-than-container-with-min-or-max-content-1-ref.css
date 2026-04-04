@@ -1,0 +1,23 @@
+
+    html, body {
+      margin: 0;
+    }
+
+    .container {
+      width: 120px;
+      height: 200px;
+      border: 2px solid blue;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .container > * {
+      border: 2px solid lime;
+      padding: inherit;
+      display: inline-block;
+
+      font-family: Ahem;
+      font-size: 10px;
+      line-height: 15px;
+    }
+  

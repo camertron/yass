@@ -1,0 +1,12 @@
+
+#target {
+  width: 150px;
+  height: 100px;
+  background-color: green;
+  animation: anim linear 2s -1s paused;
+}
+
+@keyframes anim {
+  from { width: 50px; }
+  to { width: revert-layer; }
+}

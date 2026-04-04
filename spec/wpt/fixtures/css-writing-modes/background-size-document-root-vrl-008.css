@@ -1,0 +1,21 @@
+
+  img
+    {
+      margin-left: 100px;
+    }
+
+  iframe
+    {
+      border: transparent 0px none;
+      height: 100px;
+      vertical-align: top;
+      width: 250px;
+    }
+
+  img#reference-overlapped-red
+    {
+      bottom: 100px;
+      position: relative;
+      z-index: -1;
+    }
+  

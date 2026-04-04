@@ -1,0 +1,17 @@
+
+  body,html {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  iframe {
+    margin: 10px;
+    width: 90%;
+    height: 90%;
+    border: 1px solid black;
+  }
+
+  .spacer {
+    height: 120vh;
+  }

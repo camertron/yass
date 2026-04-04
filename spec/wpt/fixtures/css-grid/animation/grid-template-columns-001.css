@@ -1,0 +1,17 @@
+
+    @keyframes anim {
+      from {
+        grid-template-columns: 20px 1fr;
+      }
+      to {
+        grid-template-columns: 100px 1fr;
+      }
+    }
+    .grid {
+      display: grid;
+      width: 400px;
+      grid-gap: 10px;
+      animation: anim 10s -5s paused linear;
+    }
+    span { border: 1px solid; }
+  

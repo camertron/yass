@@ -1,0 +1,8 @@
+
+body, #a {
+  columns: 42 0px;
+  position: fixed;
+  top: 9em;
+  scale: 0;
+  text-shadow: 24px 1px rgb(35, 92, 212);
+}

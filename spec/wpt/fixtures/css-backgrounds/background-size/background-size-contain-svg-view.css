@@ -1,0 +1,12 @@
+
+  #target {
+    width: 100px;
+    height: 100px;
+    background-image: url('support/sprite-view-no-viewbox.svg#rect');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border: 25px solid green;
+    box-sizing: border-box;
+    background-origin: border-box;
+    background-size: contain;
+  }

@@ -1,0 +1,19 @@
+
+.box {
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+#scroller {
+  writing-mode: vertical-lr;
+  overflow: scroll;
+  width: 300px;
+  height: 300px;
+}
+#container{
+  width: 600px;
+  height: 600px;
+}
+#target {
+  background-color: #ff0;
+}

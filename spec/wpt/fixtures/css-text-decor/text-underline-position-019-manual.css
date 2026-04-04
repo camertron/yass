@@ -1,0 +1,15 @@
+
+#htmlsrc { margin: 2em; }
+#htmlsrc p {
+	font-size: 28px;
+	border-radius: 5px;
+	line-height: 1.5;
+	}
+:lang(mn) { font-family: "Mongolian Baiti", "Noto sans Mongolian", serif; }
+:lang(ja) { font-family: "Hiragino Maru Gothic Pro", "MS Mincho", sans-serif; }
+
+
+div span {
+text-decoration:underline;
+text-underline-position:auto;
+}

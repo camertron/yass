@@ -1,0 +1,13 @@
+
+  #parent {
+    border: 4px dotted blue;
+    height: 150px;
+    margin: 26px;
+    width: 150px;
+  }
+  #child {
+    border: 4px dotted green;
+    height: 110px;
+    margin: 16px;
+    width: 110px;
+  }

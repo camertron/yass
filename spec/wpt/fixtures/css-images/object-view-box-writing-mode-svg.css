@@ -1,0 +1,9 @@
+
+html {
+  writing-mode: vertical-lr;
+}
+.view_box_subset {
+  object-view-box: inset(25px 0px 0px 0px);
+  object-fit: fill;
+  background-color: black;
+}

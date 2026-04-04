@@ -1,0 +1,15 @@
+
+.test {
+  text-decoration-color: orange;
+}
+span {
+    text-decoration: underline solid blue;
+}
+span + span::before {
+    content: "\a";
+    white-space:pre;
+}
+div {
+    margin-top: 1em;
+}
+

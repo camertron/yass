@@ -1,0 +1,4 @@
+
+  #block { color: green; }
+  #block::first-line { color: blue; }
+  .green { color: green; }

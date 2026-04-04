@@ -1,0 +1,7 @@
+
+  .container {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    clip-path: ellipse(35% 25% at 25% 50%);
+  }

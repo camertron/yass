@@ -1,0 +1,15 @@
+
+#float {
+	background: #3366cc;
+	padding: 1em;
+	float: left;
+}
+#flex {
+	background: #ffcc00;
+	overflow: hidden;
+}
+div div {
+	margin: 2em;
+	height: 4em;
+	clear: both;
+}

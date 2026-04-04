@@ -1,0 +1,11 @@
+
+div {
+  width: 100px;
+  height: 100px;
+  contain: paint;
+  position: absolute;
+  top: 50px;
+  left: 200px;
+  background: green;
+}
+body { background: lightpink; }

@@ -1,0 +1,21 @@
+
+    body {
+        margin: 0;
+    }
+    div {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .parent {
+        view-transition-name: parent;
+    }
+
+    .child {
+        view-transition-name: child;
+        view-transition-group: parent;
+        background: green;
+    }

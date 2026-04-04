@@ -1,0 +1,33 @@
+
+  #scroll-container {
+    overflow: hidden scroll;
+    width: 300px;
+    height: 100px;
+  }
+
+  .anchor {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    display: inline-block;
+  }
+
+  #anchor1 {
+    height: 200px;
+    anchor-name: --a1;
+  }
+
+  #anchor2 {
+    anchor-name: --a2;
+  }
+
+  #target {
+    position-anchor: --a2;
+    position-visibility: anchors-visible;
+    position-area: bottom center;
+    width: 100px;
+    height: 100px;
+    background: green;
+    position: absolute;
+    inset: 0;
+  }

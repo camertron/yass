@@ -1,0 +1,16 @@
+
+.grid {
+  display: inline-grid;
+  grid-template-rows: 100px;
+  background-color: green;
+}
+
+.item {
+  writing-mode: vertical-lr;
+}
+
+.item > span {
+  display: inline-block;
+  inline-size: 100px;
+  block-size: 50px;
+}

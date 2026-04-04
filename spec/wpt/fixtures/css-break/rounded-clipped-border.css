@@ -1,0 +1,27 @@
+
+  .container {
+    float: left;
+    margin: 10px;
+    text-align: center;
+    inline-size: fit-content;
+  }
+  .multicol {
+    columns: 3;
+    column-fill: auto;
+    gap: 10px;
+    inline-size: 320px;
+    block-size: 120px;
+    border: solid;
+    background: lightgray;
+  }
+  .clipper {
+    block-size: 300px;
+    border-radius: 50px;
+    border: 20px solid blue;
+    overflow: clip;
+    background: red;
+  }
+  .child {
+    block-size: 300px;
+    background: yellow;
+  }

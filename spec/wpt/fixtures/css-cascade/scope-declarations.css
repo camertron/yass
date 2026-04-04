@@ -1,0 +1,30 @@
+
+    @scope (.a) {
+      z-index: 1;
+    }
+  
+
+      @scope {
+        z-index: 1;
+      }
+    
+
+    @scope (.a) {
+      :where(:scope) {
+        z-index: 1;
+      }
+      z-index: 2; /* Wins due to order */
+    }
+    @scope (.b) {
+      z-index: 1;
+      :where(:scope) {
+        z-index: 2; /* Wins due to order */
+      }
+    }
+    @scope (.c) {
+      :scope {
+        z-index: 1; /* Wins due to specificity */
+      }
+      z-index: 2;
+    }
+  

@@ -1,0 +1,15 @@
+
+        .container {
+            position: absolute;
+            top: 70px;
+            left: 8px;
+            width: 200px;
+            height: 200px;
+            font-family: Ahem;
+            font-size: 20px;
+            line-height: 20px;
+            text-align: right;
+            color: green;
+        }
+        #image  { float: right; }
+    

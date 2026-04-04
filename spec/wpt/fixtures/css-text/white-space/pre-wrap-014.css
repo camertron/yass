@@ -1,0 +1,18 @@
+
+div {
+  font-size: 20px;
+  font-family: Ahem;
+  line-height: 1em;
+  height: 1em;
+  white-space: pre-wrap;
+
+  color: transparent;
+  background: red;
+
+  width: 4ch;
+  text-align: justify;
+}
+span {
+  color: green;
+  background: green;
+}

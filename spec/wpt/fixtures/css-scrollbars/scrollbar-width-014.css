@@ -1,0 +1,34 @@
+
+  body {
+    scrollbar-width: thin;
+  }
+
+  :root::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* This is so that browsers that don't implement the WebKit prefix still pass the test */
+  @supports not selector(::-webkit-scrollbar) {
+    :root {
+      overflow: hidden;
+    }
+  }
+
+  :root,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  #content {
+    height: 10vh;
+    width: 100%;
+    background: lightsalmon;
+  }
+
+  #expander {
+    /* force vertical scroll */
+    height: 200vh;
+    width: 300px;
+    background: gray;
+  }

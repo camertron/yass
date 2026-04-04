@@ -1,0 +1,18 @@
+
+#target {
+  position: relative;
+  background: green;
+  left: 10px;
+  width: 100px;
+  height: 100px;
+  view-transition-name: target;
+}
+#target.toggle {
+  outline: 300px solid transparent;
+}
+
+html::view-transition-group(*) { animation-duration: 300s; }
+html::view-transition-new(*) { animation: unset; opacity: 1; }
+html::view-transition-old(*) { animation: unset; opacity: 0; }
+html::view-transition-group(root) { animation: unset; opacity: 0; }
+html::view-transition { background: pink; }

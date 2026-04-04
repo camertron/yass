@@ -1,0 +1,15 @@
+
+  #parent {
+    border: 2px solid blue;
+    height: 150px;
+    overflow: auto;
+    resize: both;
+    width: 150px;
+  }
+  #child {
+    border: 2px solid green;
+    height: 75px;
+    overflow: auto;
+    resize: inherit;
+    width: 75px;
+  }

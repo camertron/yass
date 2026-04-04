@@ -1,0 +1,8 @@
+
+  @counter-style a {
+    system: extends decimal;
+    pad: 3 "0";
+    pad: -1 "X";
+    pad: "#";
+    pad: 2 0;
+  }

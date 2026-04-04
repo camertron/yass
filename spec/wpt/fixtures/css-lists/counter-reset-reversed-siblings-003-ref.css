@@ -1,0 +1,3 @@
+
+  .item1::before { content: "4"; }
+  .item2::before { content: "2"; }

@@ -1,0 +1,8 @@
+
+div {
+  font-size: 2em;
+  border: solid black;
+  margin: 5px;
+  width: min-content;
+  hyphens: none;
+}

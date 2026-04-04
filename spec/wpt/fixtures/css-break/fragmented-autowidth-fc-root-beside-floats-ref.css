@@ -1,0 +1,14 @@
+
+  .fakecolumn {
+    float: left;
+    width: 200px;
+    height: 100px;
+    margin-left: 10px;
+  }
+  .fakecolumn:first-child {
+    margin-left: 0;
+  }
+  .part {
+    height: 100px;
+    background: hotpink;
+  }

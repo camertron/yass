@@ -1,0 +1,8 @@
+
+div {
+  display: flex;
+}
+
+.inner {
+  margin-left: -4em;
+}

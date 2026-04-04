@@ -1,0 +1,11 @@
+
+section {
+  float: left;
+}
+.inside {
+  list-style-position: inside;
+}
+span {
+  float: right;
+}
+::marker { font-family: inherit; }

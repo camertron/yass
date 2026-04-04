@@ -1,0 +1,16 @@
+
+div {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+#red {
+  background: red;
+}
+#target {
+  background: green;
+  z-index: -1;
+}
+#target.front {
+  z-index: 1;
+}

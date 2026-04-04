@@ -1,0 +1,9 @@
+
+body { margin-left: 5em; }
+li { list-style-position: inside }
+li:first-child > * { list-style-type: 'marker '; }
+li:last-child > ::marker { content: 'marker '; }
+span { display:inline list-item; }
+ibi { display:inline flow-root list-item; list-style-position: inside; }
+ibo { display:inline flow-root list-item; list-style-position: outside; }
+first-letter { color:green; }

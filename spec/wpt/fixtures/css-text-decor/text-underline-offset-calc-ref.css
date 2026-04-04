@@ -1,0 +1,14 @@
+
+div {
+  display: flex;
+  font-size: 22px;
+}
+.underline {
+  text-decoration-color: green;
+  text-decoration-line: underline;
+  text-decoration-thickness: 15px;
+  text-decoration-skip-ink: none;
+}
+.ref {
+  text-underline-offset: 1em;
+}

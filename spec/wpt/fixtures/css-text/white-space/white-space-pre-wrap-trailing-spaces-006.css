@@ -1,0 +1,13 @@
+
+div {
+  font: 25px/1 Ahem;
+  color: green;
+  background: red;
+
+  width: 2ch;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+span {
+  background: blue;
+}

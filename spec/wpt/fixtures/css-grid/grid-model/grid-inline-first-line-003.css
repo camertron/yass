@@ -1,0 +1,9 @@
+
+  .inline-grid {
+    display: inline-grid;
+    color: red;
+  }
+
+  .item::first-line {
+    color: green;
+  }

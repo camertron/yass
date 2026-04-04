@@ -1,0 +1,5 @@
+
+    .square { border: 1px solid black; width: 200px; height: 200px}
+    .ref { background-color: lch(100% 150 20); height: 100px}
+    /* l = 150% should clamp back to 100% */
+    .test { background-color: lch(150% 150 20); height: 100px}

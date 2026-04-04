@@ -1,0 +1,40 @@
+
+#containing-block {
+  width: 400px;
+  height: 400px;
+  transform: scale(1);
+  border: 1px solid black;
+}
+
+#scroller {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 400px;
+  height: 400px;
+  overflow-y: scroll;
+}
+
+.box {
+  min-height: 100px;
+  width: 100px;
+}
+
+#anchor {
+  anchor-name: --a;
+  background: orange;
+}
+
+#anchored {
+  position: absolute;
+  top: anchor(bottom);
+  width: 100px;
+  height: 100px;
+  background: green;
+  position-anchor: --a;
+  position-try-fallbacks: --pf;
+}
+
+@position-try --pf {
+  top: auto;
+  bottom: anchor(top);
+}

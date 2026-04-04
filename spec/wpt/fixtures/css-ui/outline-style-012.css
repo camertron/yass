@@ -1,0 +1,17 @@
+
+  #parent {
+    height: 110px;
+    margin: 30px;
+    outline-color: blue;
+    outline-style: dotted;
+    outline-width: 4px;
+    padding: 20px;
+    width: 110px;
+  }
+  #child {
+    height: 110px;
+    outline-color: green;
+    outline-style: inherit;
+    outline-width: 4px;
+    width: 110px;
+  }

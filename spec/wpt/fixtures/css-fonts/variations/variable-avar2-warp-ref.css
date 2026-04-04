@@ -1,0 +1,23 @@
+
+    @font-face {
+      font-family: avar2test_avar1;
+      src: url(../resources/avar/DesignSpaceWarpTestAvar1[opsz\,wdth\,wght].ttf);
+    }
+
+    body {
+      font-family: avar2test_avar1, sans-serif;
+      font-size: 200px;
+    }
+
+    .light-expanded {
+      font-variation-settings:
+        "wght" 100,
+        "wdth" 125;
+    }
+
+    .bold-condensed {
+      font-variation-settings:
+        "wght" 900,
+        "wdth" 75;
+    }
+  

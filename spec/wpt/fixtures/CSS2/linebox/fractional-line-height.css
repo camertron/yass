@@ -1,0 +1,3 @@
+
+  .container { float:left; overflow:auto; width:50px; }
+  .container > span { display:inline-block; width:10px; }

@@ -1,0 +1,6 @@
+
+svg {
+  background: green;
+  padding: 50px 0;
+  contain: size;
+}

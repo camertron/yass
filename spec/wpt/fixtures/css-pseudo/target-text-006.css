@@ -1,0 +1,6 @@
+
+  p.white { color: white; }
+  p::target-text {
+    color: black;
+    background-color: orange;
+  }

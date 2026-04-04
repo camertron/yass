@@ -1,0 +1,65 @@
+
+    .containing-block {
+        position: relative;
+        height: 100px;
+        width: 100px;
+
+        overflow: scroll;
+    }
+
+    #containing-block-vertical-rl {
+        writing-mode: vertical-rl;
+    }
+
+    .anchor {
+        width: 20px;
+        height: 20px;
+        background: red;
+
+        position: absolute;
+        left: 50px;
+        top: 50px;
+    }
+
+    #anchor-1 {
+        anchor-name: --anchor1;
+    }
+
+    #anchor-2 {
+        anchor-name: --anchor2;
+    }
+
+    .target-anchor-function {
+        position: absolute;
+        top: anchor(top);
+        left: anchor(left);
+        right: anchor(right);
+        bottom: anchor(bottom);
+
+        background: green;
+    }
+
+    #target-anchor-function-1 {
+        position-anchor: --anchor1;
+    }
+
+    #target-anchor-function-2 {
+        position-anchor: --anchor2;
+    }
+
+    .target-position-area {
+        position: absolute;
+        position-area: center center;
+        width: 100%;
+        height: 100%;
+
+        background: blue;
+    }
+
+    #target-position-area-1 {
+        position-anchor: --anchor1;
+    }
+
+    #target-position-area-2 {
+        position-anchor: --anchor2;
+    }

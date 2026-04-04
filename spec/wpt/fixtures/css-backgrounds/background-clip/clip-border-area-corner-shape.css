@@ -1,0 +1,39 @@
+
+    .test {
+        display: inline-block;
+        margin: 20px;
+        width: 300px;
+        height: 150px;
+        box-sizing: border-box;
+        border: 50px solid transparent;
+        border-radius: 40%;
+        background-clip: border-area;
+        background-image: url(../resources/blue-100.png);
+    }
+
+    .round {
+        corner-shape: round;
+    }
+
+    .squircle {
+        corner-shape: squircle;
+    }
+
+    .bevel {
+        corner-shape: bevel;
+    }
+
+    .scoop {
+        corner-shape: scoop;
+    }
+
+    .notch {
+        corner-shape: notch;
+    }
+
+    .mixed {
+        corner-top-left-shape: squircle;
+        corner-top-right-shape: bevel;
+        corner-bottom-right-shape: scoop;
+        corner-bottom-left-shape: notch;
+    }

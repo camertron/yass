@@ -1,0 +1,18 @@
+
+  div {
+    font: 25px/1 Ahem;
+    width: 4ch;
+    height: 4ch;
+    background:
+      linear-gradient(green, green) 0 1ch / 1ch 1ch no-repeat,
+      linear-gradient(green, green) 0 2ch / 2ch 1ch no-repeat,
+      linear-gradient(green, green) 1ch 3ch / 3ch 1ch no-repeat,
+      red;
+
+    text-align: right;
+    white-space: normal;
+    color: green;
+  }
+  .pre-wrap {
+    white-space: pre-wrap;
+  }

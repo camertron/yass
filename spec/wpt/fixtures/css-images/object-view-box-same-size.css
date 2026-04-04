@@ -1,0 +1,6 @@
+
+.default {
+  object-view-box: inset(0px 0px 0px 0px);
+  object-fit: fill;
+  background-color: black;
+}

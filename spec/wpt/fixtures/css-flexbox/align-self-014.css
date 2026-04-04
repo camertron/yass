@@ -1,0 +1,18 @@
+
+html, body {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  align-self: center;
+}
+
+.content > div {
+  width: 400px;
+  display: inline-block;
+}

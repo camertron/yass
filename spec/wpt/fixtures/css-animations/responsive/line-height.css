@@ -1,0 +1,12 @@
+
+  #target {
+    animation-name: line-height-animation;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: -2s;
+    animation-play-state: paused;
+  }
+  @keyframes line-height-animation {
+    from { line-height: inherit; }
+    to { line-height: 20px; }
+  }

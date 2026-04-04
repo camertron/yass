@@ -1,0 +1,6 @@
+
+br { clear: both }
+table { border-collapse: collapse; float: left; }
+td { padding: 0 }
+.loser { border: 25px solid red }
+.winner { border: 25px solid green }

@@ -1,0 +1,8 @@
+@import "inline-cache-base-uri.css";
+
+  :root {
+    background-image: url("../../images/blue.png");
+    background-color: purple;
+  }
+
+@import "inline-cache-base-uri.css";

@@ -1,0 +1,11 @@
+
+*:first-of-type {
+  padding: 0% 712px 434px 35%;
+}
+embed {
+  position: absolute;
+}
+#a {
+  backdrop-filter: invert(100%);
+  text-justify: distribute;
+}

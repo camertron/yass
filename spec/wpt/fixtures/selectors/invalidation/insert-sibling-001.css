@@ -1,0 +1,4 @@
+
+    .c { background-color: blue; }
+    .a + * + .c { background-color: green; }
+  

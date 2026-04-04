@@ -1,0 +1,8 @@
+
+  dialog {
+    inset: 100px;
+  }
+  dialog::backdrop {
+    background-color: green;
+    inset: 100px;
+  }

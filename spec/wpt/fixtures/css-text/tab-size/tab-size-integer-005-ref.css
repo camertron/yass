@@ -1,0 +1,17 @@
+
+@font-face {
+    /* this font-family does not support <space>, so should not be used to resolve tab-size */
+    font-family: without-space;
+    src: url("/fonts/CanvasTest-nospace.ttf");
+}
+@font-face {
+    /* the <space> in this font is much narrower than the default/.notdef in "first" */
+    font-family: with-space;
+    src: url("/fonts/GentiumPlus-R.woff");
+}
+div {
+    font: 40px/2 without-space, with-space, sans-serif;
+}
+span {
+    font-family: with-space, sans-serif;
+}

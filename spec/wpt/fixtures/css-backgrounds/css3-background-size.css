@@ -1,0 +1,9 @@
+
+    div{
+      width:60px;
+      height:60px;
+      background:url(support/60x60-green.png);
+      background-size:50%;
+      background-repeat: no-repeat;
+    }
+  

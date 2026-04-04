@@ -1,0 +1,14 @@
+
+div {
+  font: 20px/1 Ahem;
+  white-space: pre;
+}
+#ref {
+  color: orange;
+}
+#test {
+  color: blue;
+}
+
+/* this is just filler content to have an invisible last line, as jutification does not affect the last line */
+a { color: white; }

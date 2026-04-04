@@ -1,0 +1,154 @@
+
+  @function --a() { result: 42px; }
+
+
+      @function --a() {
+        result: 10px;
+      }
+      #target {
+        --actual: --a();
+        --expected: 10px;
+      }
+    
+
+      #target {
+        --actual: --a();
+        --expected: 42px;
+      }
+    
+
+          @function --a() {
+            result: 11px;
+          }
+          #target {
+            --actual: --a();
+            --expected: 11px;
+          }
+        
+
+      @function --a() {
+        result: 12px;
+      }
+    
+
+          #target {
+            --actual: --a();
+            --expected: 12px;
+          }
+        
+
+      @function --b() {
+        result: B;
+      }
+    
+
+          @function --c() {
+            result: C;
+          }
+          #target {
+            --actual: --a() --b() --c();
+            --expected: 42px B C;
+          }
+        
+
+      @function --b() {
+        result: 14px;
+      }
+      ::part(target) {
+        --actual: --a() --b();
+        --expected: 42px 14px;
+      }
+    
+
+          @function --a() {
+            result: FAIL-a;
+          }
+          @function --b() {
+            result: FAIL-b;
+          }
+        
+
+      @function --b() {
+        result: 16px;
+      }
+    
+
+          @function --c() {
+            result: 15px;
+          }
+          ::slotted(#target) {
+            --actual: --a() --b() --c();
+            --expected: 42px 16px 15px;
+          }
+        
+
+      @function --b() {
+        result: 17px;
+      }
+    
+
+          @function --c() {
+            result: 18px;
+          }
+          :host {
+            --actual: --a() --b() --c();
+            --expected: 42px 17px 18px;
+          }
+        
+
+      @function --b() {
+        result: --c(); /* 20px */
+      }
+      @function --c() {
+        result: 20px;
+      }
+    
+
+          @function --c() {
+            result: C;
+          }
+          #target {
+            --actual: --b() --c();
+            --expected: 20px C;
+          }
+        
+
+      @function --b() {
+        --lb: --c();
+        result: var(--lb); /* 22px */
+      }
+      @function --c() {
+        result: 22px;
+      }
+    
+
+          @function --c() {
+            result: C;
+          }
+          @function --d() {
+            --ld: --b() --c();
+            result: var(--ld);
+          }
+          #target {
+            --actual: --d();
+            --expected: 22px C;
+          }
+        
+
+      @function --a() {
+        result: 24px;
+      }
+      @function --b() {
+        result: --a(); /* 24px */
+      }
+    
+
+          @function --a() {
+            result: --b(); /* Calls --b() in outer scope. */
+          }
+          #target {
+            /* Nothing is in a cycle here. */
+            --actual: --a();
+            --expected: 24px;
+          }
+        

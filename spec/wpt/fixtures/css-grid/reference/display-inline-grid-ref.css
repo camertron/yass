@@ -1,0 +1,33 @@
+
+    #container {
+      position:relative;
+    }
+
+    #table {
+      width:400px;
+      height:100px;
+      border-collapse:collapse;
+    }
+
+    #table td {
+      padding:0;
+      vertical-align:top;
+    }
+
+    #table td:first-child {
+      width:100px;
+    }
+
+    #table tr:last-child td {
+      height:30px;
+    }
+
+    #table-wrapper {
+      display:inline-block;
+      clear:right;
+    }
+
+    span {
+      vertical-align:top;
+    }
+  

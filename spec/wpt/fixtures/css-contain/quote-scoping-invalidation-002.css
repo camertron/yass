@@ -1,0 +1,13 @@
+
+  #root {
+    quotes: "A" "Z" "1" "9" "(" ")" "+" "-";
+  }
+  #root::before, #root span::before {
+    content: open-quote;
+  }
+  #root::after {
+    content: close-quote;
+  }
+ .contain-style {
+   contain: style;
+ }

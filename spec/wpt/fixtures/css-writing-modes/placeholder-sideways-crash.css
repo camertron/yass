@@ -1,0 +1,7 @@
+
+*:empty {
+  writing-mode: vertical-rl;
+}
+*:focus-within {
+  text-orientation: sideways;
+}

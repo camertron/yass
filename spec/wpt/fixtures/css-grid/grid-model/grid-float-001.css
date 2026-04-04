@@ -1,0 +1,22 @@
+
+  #reference-overlapped-red {
+    position: absolute;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+  }
+
+  .grid {
+    display: grid;
+  }
+
+  .test-overlapping-green {
+    background-color: green;
+    width: 100px;
+    height: 50px;
+  }
+
+  .float-left {
+    float: left;
+  }

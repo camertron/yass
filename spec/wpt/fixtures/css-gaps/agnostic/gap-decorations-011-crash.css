@@ -1,0 +1,7 @@
+
+    #current {
+        column-rule-style: solid;
+        columns: 2;
+        height: 1px;
+        column-rule-color: repeat(auto, blue);
+    }

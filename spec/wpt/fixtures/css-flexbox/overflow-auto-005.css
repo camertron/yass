@@ -1,0 +1,58 @@
+
+.test-row {
+    display: flex;
+    margin-bottom: 5px;
+}
+.test-row > div {
+    flex: none;
+}
+
+.container {
+    margin-right: 5px;
+    border: 5px solid lightgreen;
+    width: 100px;
+}
+
+.horizontal-tb {
+    writing-mode: horizontal-tb;
+}
+
+.vertical-rl {
+    writing-mode: vertical-rl;
+}
+
+.vertical-lr {
+    writing-mode: vertical-lr;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.column-reverse {
+    flex-direction: column-reverse;
+}
+
+.flexbox {
+    border: 0 solid pink;
+    display: flex;
+    height: 100px;
+    width: 100px;
+    overflow: auto;
+}
+
+.flexbox > div {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(at right 60%, red, yellow, green);
+    flex: none;
+}
+

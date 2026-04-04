@@ -1,0 +1,21 @@
+
+.test {
+  background: red;
+  height: 100px;
+  width: min-content;
+}
+
+.child {
+  min-width: 75px;
+}
+
+@supports (display: layout(parent)) {
+  .test {
+    display: layout(parent);
+    background: green;
+  }
+
+  .child {
+    display: layout(child);
+  }
+}

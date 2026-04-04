@@ -1,0 +1,15 @@
+
+article {
+  columns: 2 1ch;
+  column-gap: 0;
+  float: left;
+  font-family: monospace;
+  margin-right: 3em;
+}
+div {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+#test > div {
+  contain: style;
+}

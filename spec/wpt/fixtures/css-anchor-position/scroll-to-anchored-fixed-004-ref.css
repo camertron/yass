@@ -1,0 +1,36 @@
+
+  /* Force scrolling. */
+  body {
+    border: solid silver;
+    height: 100vh;
+    width: 100vw;
+  }
+  .anchor {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    width: 100vw;
+    height: 100vh;
+    border: solid silver;
+    anchor-name: --foo;
+  }
+
+  /* Attach to anchor in vertical axis */
+  .fixed {
+    position: absolute;
+    position-anchor: --foo;
+    position-area: center span-all;
+    place-self: start;
+    left: calc(100vw - 5em);
+    padding: 1em 2em;
+    border: solid orange 10px;
+    margin: 5px;
+  }
+
+  /* Avoid pixel differences. */
+  .fixed {
+    font-family: Ahem;
+  }
+  a:focus {
+    outline: solid blue;
+  }

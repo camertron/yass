@@ -1,0 +1,29 @@
+
+  #vertical {
+    width: 500px;
+    writing-mode: vertical-lr;
+  }
+
+  #padded {
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 100%;
+    background-color: orange;
+  }
+
+  #horizontal {
+    writing-mode: horizontal-tb;
+    width: 100%;
+  }
+
+  #container {
+    width: 100%;
+    container-type: inline-size;
+    background-color: green;
+  }
+
+  #first, #second { height: 50px; }
+
+  @container (width <= 400px) {
+    #second { display: none; }
+  }

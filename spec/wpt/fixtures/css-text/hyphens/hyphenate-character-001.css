@@ -1,0 +1,7 @@
+
+div {
+  font: 16px monospace;
+  width: 4.5ch;  /* wide enough that the first potential break in "re-al-iza-tion" should NOT be used */
+  hyphens: manual;
+  hyphenate-character: "";
+}

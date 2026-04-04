@@ -1,0 +1,5 @@
+
+  .bad-mask {
+    /* This invalid mask-image should fully-mask this element. */
+    mask-image: url("invalid://nonexistent");
+  }

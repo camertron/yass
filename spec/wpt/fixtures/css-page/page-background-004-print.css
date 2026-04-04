@@ -1,0 +1,23 @@
+
+  :root {
+    print-color-adjust: exact;
+  }
+  @page {
+    size: 500px 300px;
+    margin: 50px;
+    border: 10px solid;
+    padding: 50px;
+    background-color: yellow;
+  }
+  @page border {
+    background-clip: border-box;
+  }
+  @page padding {
+    background-clip: padding-box;
+  }
+  @page content {
+    background-clip: content-box;
+  }
+  body {
+    margin: 0;
+  }

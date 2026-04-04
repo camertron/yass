@@ -1,0 +1,6 @@
+
+.test { text-align: justify-all; direction: ltr; }
+/* the CSS below is not part of the test */
+.test, .ref { border: 1px solid orange; margin: 20px; width: 510px; color: orange; font: 30px/1 Ahem; }
+.ref { word-spacing: 20px; }
+.last-line { word-spacing: 90px; }

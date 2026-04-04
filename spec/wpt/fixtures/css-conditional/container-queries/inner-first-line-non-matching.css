@@ -1,0 +1,5 @@
+
+  #outer::first-line { color: green }
+  @container (width > 99999px) {
+    #inner::first-line { color: red }
+  }

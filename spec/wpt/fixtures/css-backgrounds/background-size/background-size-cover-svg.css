@@ -1,0 +1,12 @@
+
+    div {
+      height: 400px;
+      width: 600px;
+      position: relative;
+      background-color: red;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom center;
+      background-image: url("support/rectangle-2560x208.svg");
+    }
+  

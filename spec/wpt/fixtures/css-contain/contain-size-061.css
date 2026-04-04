@@ -1,0 +1,8 @@
+
+  div
+    {
+      contain: size;
+      font-size: 100px;
+      overflow: hidden;
+    }
+  

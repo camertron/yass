@@ -1,0 +1,13 @@
+
+.item {
+  width: 30px;
+  flex: 1 1 auto;
+  background: red;
+}
+#reference-overlapped-red {
+  position: absolute;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+}

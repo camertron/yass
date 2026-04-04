@@ -1,0 +1,21 @@
+
+.wrapper {
+  float: left;
+  width: 50px;
+  background: red;
+}
+.wrapper.phantom {
+  background: green;
+}
+.wrapper > div {
+  line-height: 0;
+  background: green;
+}
+.wrapper.phantom > div {
+  background: red
+}
+.wrapper > div::after {
+  content: "";
+  display: flow-root;
+  margin-top: 200px;
+}

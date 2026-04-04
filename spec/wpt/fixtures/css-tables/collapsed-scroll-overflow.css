@@ -1,0 +1,14 @@
+
+  main table {
+    display: inline-table;
+    border-collapse: collapse;
+    background:gray;
+    font-size: 40px;
+  }
+  main thead {
+    background: yellow;
+  }
+  main tbody {
+    background: green;
+    border: 80px dotted blue;
+  }

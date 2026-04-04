@@ -1,0 +1,13 @@
+
+  #container {
+    background-color: green;
+    display: flex;
+    height: 100px;
+    width: 100px;
+  }
+  #test {
+    background-color: red;
+    flex-basis: 0;
+    height: 100px;
+    width: 100px;
+  }

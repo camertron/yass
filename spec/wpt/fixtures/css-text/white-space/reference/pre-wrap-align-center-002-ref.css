@@ -1,0 +1,9 @@
+
+.test {
+  font: 20px Ahem, monospace;
+  width: 15ch;
+  border: 1px solid gray;
+  padding: 5px;
+  white-space: normal;
+  text-align: center;
+}

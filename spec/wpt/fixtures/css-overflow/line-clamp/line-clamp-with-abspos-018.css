@@ -1,0 +1,15 @@
+
+.clamp {
+  line-clamp: 4;
+  font: 16px / 32px serif;
+  padding: 0 4px;
+  white-space: pre;
+  background-color: yellow;
+}
+.abspos {
+  position: absolute;
+  right: 0;
+  margin: 4px;
+  white-space: pre;
+  background-color: skyblue;
+}

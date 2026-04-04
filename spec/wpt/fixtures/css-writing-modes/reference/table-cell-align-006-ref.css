@@ -1,0 +1,27 @@
+
+table {
+  font: 20px/1 Ahem;
+  border: 1px solid gray;
+  display: inline-table;
+  margin: 1em;
+}
+
+td {
+  padding: 0;
+  color: green;
+  vertical-align: top;
+}
+
+td div {
+  position: relative;
+}
+
+.t {
+  top: 0;
+}
+.m {
+  top: 2em;
+}
+.b {
+  top: 4em;
+}

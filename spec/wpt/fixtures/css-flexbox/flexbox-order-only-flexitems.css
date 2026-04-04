@@ -1,0 +1,17 @@
+
+    #test {
+      display: block; /* Not a flex container */
+    }
+
+    #leftmost {
+      order: 2;
+    }
+
+    #middle {
+      order:1;
+    }
+
+    #rightmost {
+      order:0;
+    }
+  

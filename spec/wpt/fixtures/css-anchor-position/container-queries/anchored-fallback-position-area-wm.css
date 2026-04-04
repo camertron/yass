@@ -1,0 +1,32 @@
+
+  #abs-container {
+    writing-mode: vertical-lr;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+  }
+  #anchor {
+    direction: rtl;
+    anchor-name: --a;
+    width: 100px;
+    height: 100px;
+  }
+  .anchored {
+    container-type: anchored;
+    position: absolute;
+    writing-mode: horizontal-tb;
+    direction: rtl;
+    position-anchor: --a;
+    position-area: left;
+    /* Does not fit left of the anchor, triggers fallback */
+    width: 100px;
+    height: 100px;
+  }
+  #a1 { position-try-fallbacks: self-block-end self-inline-start; }
+  #a2 { position-try-fallbacks: block-end inline-end; }
+  #t1, #t2 {
+    /* Logical values are resolved against anchored / anchor container elements. */
+    @container anchored(fallback: bottom right) { --physical: yes; }
+    @container anchored(fallback: self-inline-start self-block-end) { --anchor: yes; }
+    @container anchored(fallback: inline-end block-end) { --abs-container: yes; }
+  }

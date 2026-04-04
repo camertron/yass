@@ -1,0 +1,16 @@
+
+body {
+  width: 200px;
+}
+
+.test {
+  background: red;
+  width: 50%;
+}
+
+@supports (display: layout(test)) {
+  .test {
+    background: green;
+    display: layout(test);
+  }
+}

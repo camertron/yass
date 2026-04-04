@@ -1,0 +1,15 @@
+
+  div
+    {
+      font-size: 64px;
+    }
+
+  div > p
+    {
+      border: black solid 1px;
+    }
+
+  span.full-width
+    {
+      text-transform: full-width;
+    }

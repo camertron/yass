@@ -1,0 +1,6 @@
+
+table { margin: 1em 1em 2em 1em; border-collapse: collapse; }
+
+#a thead, #a tbody { border-block-end-width: 1px; border-block-end-style: solid; }
+#b thead, #b tbody { border-block-end: 1px solid blue; }
+#c thead, #c tbody { border-block-end-width: 5px; border-block-end-style: solid; }

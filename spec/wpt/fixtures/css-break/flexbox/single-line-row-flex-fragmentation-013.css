@@ -1,0 +1,8 @@
+
+  #flex {
+    display: flex;
+  }
+  #flex > div {
+    background: green;
+    width: 10px;
+  }

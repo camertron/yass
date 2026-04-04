@@ -1,0 +1,18 @@
+
+  #container {
+    container-type: size;
+    width: 200px;
+    --foo: bar;
+  }
+  @container (width > 0px) {
+    div { color: green }
+  }
+  @container (width > 0px) or (foo: bar) {
+    #t1 { color: red }
+  }
+  @container (width > 0px) or foo(bar) {
+    #t2 { color: red }
+  }
+  @container style(--foo: bar) or (foo: bar) {
+    #t3 { color: red }
+  }

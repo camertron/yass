@@ -1,0 +1,8 @@
+
+  span::highlight(example-highlight) {
+    background: yellow;
+  }
+
+  .blue::highlight(example-highlight) {
+    background: blue;
+  }

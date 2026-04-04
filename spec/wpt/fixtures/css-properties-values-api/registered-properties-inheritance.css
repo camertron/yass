@@ -1,0 +1,14 @@
+
+#outer {
+    --inherited-length-1: 10px;
+    --inherited-length-2: var(--non-inherited-length-1);
+    --inherited-length-3: 30px;
+    --non-inherited-length-1: 22px;
+    --non-inherited-length-3: calc(var(--non-inherited-length-2) * 10);
+}
+
+#inner {
+    --inherited-length-3: 15px;
+    --non-inherited-length-1: 40px;
+    --non-inherited-length-2: 90px;
+}

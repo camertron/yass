@@ -1,0 +1,4 @@
+
+    .test { background-color: red; width: 12em; height: 6em; margin-top: 0; }
+    .ref { background-color: rgb(12.8128% 53.105% 92.7645%); width: 12em; height: 6em; margin-bottom: 0; } /* lch(55% 60 270) converted to sRGB */
+    .test { background-color: lch(55% 60 270); }

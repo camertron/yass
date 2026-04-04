@@ -1,0 +1,9 @@
+
+    .test {
+        line-height: 2em;
+        font-size: 40px;
+        color: transparent;
+        background-color: green;
+        background-clip: text;
+        text-decoration-thickness: 20px;
+    }

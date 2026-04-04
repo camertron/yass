@@ -1,0 +1,32 @@
+
+      div {
+        width: 100px;
+        height: 100px;
+      }
+
+      .outer {
+        border: 1px solid black;
+      }
+
+      .outer > div {
+        background-color: purple;
+        mask-image: url(support/50x50-opaque-blue.svg);
+        mask-repeat: no-repeat;
+      }
+
+      #inner1 {
+        mask-position: left 20px bottom 0px;
+      }
+
+      #inner2 {
+        mask-position: left 40% bottom 0%;
+      }
+
+      #inner3 {
+        mask-position: right 60% bottom 0%;
+      }
+
+      #inner4 {
+        mask-position: right 30px bottom 0px;
+      }
+    

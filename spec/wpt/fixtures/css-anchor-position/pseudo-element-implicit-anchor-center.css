@@ -1,0 +1,25 @@
+
+  #anchor {
+    display: flow-root;
+    margin-left: -50px;
+    margin-top: -50px;
+    width: 200px;
+    height: 200px;
+  }
+  #anchor::after {
+    content: "";
+    position: absolute;
+    position-anchor: auto;
+    width: 100px;
+    height: 100px;
+    background: green;
+    /* Should be centered inside #anchor */
+    place-self: anchor-center;
+  }
+  #ref {
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }

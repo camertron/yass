@@ -1,0 +1,8 @@
+
+.grid, .inline-grid
+{
+  width: 20em;
+  column-count: 2;
+  column-gap: 100px;
+  font-kerning: none;
+}

@@ -1,0 +1,12 @@
+
+        body {
+            background: #fff;
+        }
+
+        div {
+            width: 200px;
+            height: 50px;
+            margin: 10px;
+            background-image: linear-gradient(to right in hsl longer hue, red var(--pos) var(--pos));
+        }
+    

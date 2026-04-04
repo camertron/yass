@@ -1,0 +1,9 @@
+
+.grid {
+    display: grid;
+    background: gray;
+    position: relative;
+    grid-template-columns: 30px 40px 50px 30px;
+    padding: 10px;
+    grid-auto-flow: dense;
+}

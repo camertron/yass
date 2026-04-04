@@ -1,0 +1,8 @@
+
+div {
+  display: table-footer-group;
+  contain: paint;
+}
+span {
+  position: absolute;
+}

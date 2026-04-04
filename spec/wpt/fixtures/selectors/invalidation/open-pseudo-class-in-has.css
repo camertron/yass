@@ -1,0 +1,4 @@
+
+  #subject:has(#dialog:open) { color: green; }
+  #subject:has(#details:open) { color: blue; }
+  #subject:has(#select:open) { color: red; }

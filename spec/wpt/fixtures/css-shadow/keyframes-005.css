@@ -1,0 +1,7 @@
+
+  #host {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    animation: myanim 10s infinite;
+  }

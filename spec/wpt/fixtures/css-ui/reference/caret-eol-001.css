@@ -1,0 +1,8 @@
+
+div {
+    font-size: 40px;
+    font-family: monospace;
+    width: 5ch;
+    outline: none;
+    white-space: pre;
+}

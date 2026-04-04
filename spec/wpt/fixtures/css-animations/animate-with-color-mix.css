@@ -1,0 +1,61 @@
+
+  @keyframes missing-from-legacy-to {
+    to { background-color: rgb(0, 255, 0); }
+  }
+
+  @keyframes missing-to-legacy-from {
+    from { background-color: rgb(0, 255, 0); }
+  }
+
+  @keyframes missing-from-srgb-to {
+    to { background-color: color(srgb 0 1 0); }
+  }
+
+  @keyframes missing-to-srgb-from {
+    from { background-color: color(srgb 0 1 0); }
+  }
+
+  @keyframes missing-from-rgba-to {
+    to { background-color: rgba(255, 255, 255, 0.75); }
+  }
+
+  @keyframes missing-to-rgba-from {
+    from { background-color: rgba(255, 255, 255, 0.75); }
+  }
+
+  #target {
+    color: black;
+    background-color: color-mix(in srgb, white 50%, currentColor);
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    height: 100px;
+    width: 100px;
+  }
+  .missing-from-legacy-to {
+    animation-name: missing-from-legacy-to;
+  }
+
+  .missing-to-legacy-from {
+    animation-name: missing-to-legacy-from;
+  }
+
+  .missing-from-srgb-to {
+    animation-name: missing-from-srgb-to;
+  }
+
+  .missing-to-srgb-from {
+    animation-name: missing-to-srgb-from;
+  }
+
+  .missing-from-rgba-to {
+    background-color: color-mix(in srgb, transparent 50%, currentColor);
+    animation-name: missing-from-rgba-to;
+  }
+
+  .missing-to-rgba-from {
+    background-color: color-mix(in srgb, transparent 50%, currentColor);
+    animation-name: missing-to-rgba-from;
+  }
+

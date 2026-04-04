@@ -1,0 +1,15 @@
+
+    .no-autospace {
+        text-autospace: no-autospace;
+    }
+    .auto-space {
+        text-autospace: ideograph-numeric;
+    }
+    .manual-space {
+        margin-left: 0.125em;
+    }
+    p {
+        font-size: 40px;
+        margin: 2px;
+        font-family: Ahem;
+    }

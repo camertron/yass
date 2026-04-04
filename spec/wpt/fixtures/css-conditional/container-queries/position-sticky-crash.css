@@ -1,0 +1,20 @@
+
+.container {
+  min-width: 30px;
+  container-type: inline-size;
+}
+
+.scroller {
+  overflow: scroll;
+  width: 100px;
+  height: 100px;
+}
+
+@container (width = 100px) {
+  .scroller { display: none; }
+}
+
+.float {
+  background: cyan;
+  float: left;
+}

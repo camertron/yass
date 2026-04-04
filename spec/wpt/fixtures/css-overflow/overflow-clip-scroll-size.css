@@ -1,0 +1,16 @@
+
+  .parent {
+    width: 100px;
+    height: 101px;
+  }
+  .child {
+    width: 200px;
+    height: 201px;
+  }
+  .overflow_clip_and_border {
+    width: 100px;
+    height: 101px;
+    overflow: clip;
+    border-width: 2px;
+    border-style: solid;
+  }

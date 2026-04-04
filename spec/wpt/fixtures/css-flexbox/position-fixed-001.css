@@ -1,0 +1,18 @@
+
+.fixed-pos{
+  position: fixed;
+  background: red;
+}
+
+.inner {
+  width: 100%;
+  background: green;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}

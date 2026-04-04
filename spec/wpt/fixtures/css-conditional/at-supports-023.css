@@ -1,0 +1,12 @@
+
+			div {
+				background-color:red;
+				height:100px;
+				width:100px;
+			}
+			@media all {
+				@supports (width: 0)) {}
+				@supports (margin:0) { div { background-color:green !important; } }
+			}
+			div { background-color:red; }
+		

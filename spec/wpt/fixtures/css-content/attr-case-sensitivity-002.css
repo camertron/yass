@@ -1,0 +1,3 @@
+
+    #casematch:before { content: attr(RESULT); }
+    #lowercase:before { content: attr(RESULT); }

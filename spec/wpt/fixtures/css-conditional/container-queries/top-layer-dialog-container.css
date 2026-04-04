@@ -1,0 +1,11 @@
+
+  #parent { width: 100px; }
+  #dialog {
+    container-type: inline-size;
+    width: auto;
+    border: none;
+  }
+  #child { color: red; }
+  @container (min-width: 200px) {
+    #child { color: green; }
+  }

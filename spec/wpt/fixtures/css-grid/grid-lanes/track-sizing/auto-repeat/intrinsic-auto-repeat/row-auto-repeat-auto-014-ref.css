@@ -1,0 +1,14 @@
+
+.grid {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 100px 100px;
+    background: gray;
+    width: 200px;
+    height: 500px;
+}
+
+.grid > div {
+    height: 100px;
+    width: 100px;
+}

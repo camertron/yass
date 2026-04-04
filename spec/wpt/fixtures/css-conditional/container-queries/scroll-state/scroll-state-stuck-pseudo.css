@@ -1,0 +1,27 @@
+
+  #scroller {
+    overflow-y: scroll;
+    height: 200px;
+  }
+  #filler {
+    height: 100px;
+  }
+  #stuck {
+    #inner {
+      height: 50px;
+    }
+    container-type: scroll-state;
+    position: sticky;
+    bottom: 0;
+    --before: no;
+    --after: no;
+    @container scroll-state(stuck: bottom) {
+      &::before {
+        --before: yes;
+        content: " ";
+      }
+      &::after {
+        --after: yes;
+      }
+    }
+  }

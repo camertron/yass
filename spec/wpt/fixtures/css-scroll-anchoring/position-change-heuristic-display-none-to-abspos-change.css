@@ -1,0 +1,8 @@
+
+#hidden {
+  display: none;
+  background: red;
+}
+#spacer {
+  height: calc(100vh + 200px); /* At least 200px of scroll range */
+}

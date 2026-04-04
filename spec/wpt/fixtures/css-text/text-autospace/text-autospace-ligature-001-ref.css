@@ -1,0 +1,17 @@
+
+@font-face {
+  font-family: ligature-font;
+  src: url('/fonts/Lato-Medium-Liga.ttf');
+}
+#test-container {
+  font-family: ligature-font;
+  font-size: 40px;
+  text-autospace: no-autospace;
+}
+.spacing-right {
+  margin-right: 0.125em;
+}
+.spacing-left {
+  margin-left: 0.125em;
+}
+

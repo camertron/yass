@@ -1,0 +1,10 @@
+
+  div { font-size: 4em; }
+  div:last-of-type::first-letter { text-transform: uppercase; }
+  body {
+    /* Optional bit, just to avoid the arabic strings being too far off to the right,
+     which makes them harder to notice if you're going through a lot of tests
+     and not paying all that much attention. */
+    max-width: 600px;
+    max-width: max-content;
+  }

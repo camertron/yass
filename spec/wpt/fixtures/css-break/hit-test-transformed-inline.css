@@ -1,0 +1,13 @@
+
+  body {
+    margin: 0;
+  }
+  #mc {
+    columns: 2;
+    gap: 0;
+    column-fill: auto;
+    width: 600px;
+    height: 20px;
+    line-height: 20px;
+    font: 20px/1 ahem;
+  }

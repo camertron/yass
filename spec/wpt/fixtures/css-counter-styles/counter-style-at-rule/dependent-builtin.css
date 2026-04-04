@@ -1,0 +1,5 @@
+
+  @counter-style a {
+    system: extends simp-chinese-informal;
+    range: 1000 1004;
+  }

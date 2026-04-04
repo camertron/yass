@@ -1,0 +1,30 @@
+
+     .multi-column {
+        columns: 2;
+        height: 87px;
+        column-width: 140px;
+        width: 290px;
+        gap: 10px;
+    }
+
+    body {
+        margin: 0px;
+    }
+
+    #flexbox {
+        width: 140px;
+        background-color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        row-rule: 5px solid gold;
+        height: 180px;
+        align-content: space-between;
+    }
+
+    .item {
+        width: 70px;
+        height: 50px;
+        background-color: #007bff;
+        color: white;
+        display: flex;
+    }

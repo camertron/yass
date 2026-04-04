@@ -1,0 +1,5 @@
+
+  @keyframes animationKeyframes {
+    from { opacity: 0.1; filter: blur(1px); }
+    to { opacity: 0.9; filter: blur(5px); }
+  }

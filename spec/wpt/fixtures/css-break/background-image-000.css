@@ -1,0 +1,14 @@
+
+  .container {
+    writing-mode: horizontal-tb;
+    inline-size: 472px;
+  }
+  .mc {
+    columns: 3;
+    column-gap: 10px;
+    column-fill: auto;
+    block-size: 120px;
+    border: 1px solid;
+    margin-block-end: 20px;
+    background: yellow;
+  }

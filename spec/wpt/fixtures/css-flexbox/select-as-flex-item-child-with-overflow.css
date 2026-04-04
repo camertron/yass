@@ -1,0 +1,12 @@
+
+.flexBox {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  width: 100px;
+}
+
+select {
+  font-family: Ahem;
+  width: 100%;
+}

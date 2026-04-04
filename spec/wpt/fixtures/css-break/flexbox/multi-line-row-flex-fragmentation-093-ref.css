@@ -1,0 +1,11 @@
+
+  #multicol {
+    columns: 4;
+    width: 100px;
+    height: 100px;
+    gap: 0;
+    column-fill: auto;
+  }
+  #multicol > div {
+    width: 25px;
+  }

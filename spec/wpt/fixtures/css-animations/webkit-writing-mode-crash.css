@@ -1,0 +1,8 @@
+
+  @keyframes test {
+    from { -webkit-writing-mode: var(--x) }
+    to { -webkit-writing-mode: var(--y) }
+  }
+  div {
+    animation: test 1s;
+  }

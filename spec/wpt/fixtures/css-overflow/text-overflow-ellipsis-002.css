@@ -1,0 +1,14 @@
+
+#parent {
+  background-color: green;
+  display: inline-block;
+  vertical-align: top;
+  font-family: Ahem;
+}
+#element {
+  visibility: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 4ch;
+  overflow: hidden;
+}

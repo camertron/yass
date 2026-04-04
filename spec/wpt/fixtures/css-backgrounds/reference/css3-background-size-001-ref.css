@@ -1,0 +1,18 @@
+
+            div {
+                width: 150px;
+                height: 150px;
+            }
+            img {
+                display: block;
+            }
+            #div1 img {
+                width: 30%;
+            }
+            #div2 img {
+                width: 60%;
+            }
+            #div3 img {
+                width: 100%;
+            }
+    

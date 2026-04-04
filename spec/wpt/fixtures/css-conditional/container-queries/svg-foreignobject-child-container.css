@@ -1,0 +1,15 @@
+
+  svg {
+    display: block;
+    width: 200px;
+    height: 200px;
+    container-type: size;
+  }
+  #container {
+    width: 100px;
+    height: 100px;
+    container-type: size;
+  }
+  @container (width = 100px) {
+    #inner { color: green; }
+  }

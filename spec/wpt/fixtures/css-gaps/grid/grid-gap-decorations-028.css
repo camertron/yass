@@ -1,0 +1,9 @@
+
+  #target1 {
+    display: grid;
+    column-rule-color: lime;
+  }
+
+  grid:link:visited #target1 {
+    column-rule-color: blue;
+  }

@@ -1,0 +1,14 @@
+
+#abs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: green;
+}
+#float { float: left; }
+span {
+  position: relative;
+  padding-left: 100px;
+}

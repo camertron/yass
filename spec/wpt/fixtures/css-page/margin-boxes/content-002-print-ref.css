@@ -1,0 +1,13 @@
+
+  @page {
+    margin: 0;
+  }
+  body {
+    margin: 0;
+  }
+  .content::before {
+    content: open-quote "Trøndere gråter når " open-quote "Vinsjan på kaia" close-quote " blir deklamert" close-quote;
+  }
+  .bottom::before {
+    quotes: "[" "]" "{" "}";
+  }

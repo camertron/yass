@@ -1,0 +1,19 @@
+
+x-word-h {
+  display: inline-block;
+  height: 10px;
+  width: 20px;
+  background: blue;
+}
+
+x-word-v {
+  display: inline-block;
+  height: 20px;
+  width: 10px;
+  background: blue;
+}
+
+* {
+  /* This is for easier manual calculations, not necessary to demonstrate behavior. */
+  line-height: 0;
+}

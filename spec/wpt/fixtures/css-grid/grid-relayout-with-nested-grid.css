@@ -1,0 +1,11 @@
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(min-content, 100px) auto;
+}
+.nested_grid {
+  border: 5px solid;
+  display: grid;
+  justify-items: baseline;
+  overflow-wrap: break-word;
+}

@@ -1,0 +1,3 @@
+
+*:has([e]),
+:nth-last-child(n of:read-only[d=""][b=""] d){}

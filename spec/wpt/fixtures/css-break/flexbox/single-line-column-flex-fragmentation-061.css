@@ -1,0 +1,21 @@
+
+  .multicol {
+    column-count: 2;
+    column-gap: 0;
+    column-fill: auto;
+    background: red;
+    inline-size: 100px;
+    block-size: 100px;
+  }
+
+  .flexbox {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    font: 40px/1 Ahem;
+    background: green;
+    color: green;
+    border: solid green;
+    border-width: 15px 5px;
+  }
+  

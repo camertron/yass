@@ -1,0 +1,22 @@
+
+  div.inline-block
+    {
+      display: inline-block;
+    }
+
+  div#blue-test
+    {
+      background-color: blue;
+      color: transparent;
+      contain: size;
+      font-size: 100px;
+      padding: 50px;
+    }
+
+  div#orange-reference
+    {
+      background-color: orange;
+      height: 100px;
+      width: 100px;
+    }
+  

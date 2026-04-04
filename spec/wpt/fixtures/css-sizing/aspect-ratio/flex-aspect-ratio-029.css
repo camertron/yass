@@ -1,0 +1,9 @@
+
+    div {
+        display: flex;
+    }
+    img {
+        max-height: 100px;
+        max-width: 100px;
+        height: auto;
+    }

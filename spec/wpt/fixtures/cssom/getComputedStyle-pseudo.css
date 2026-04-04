@@ -1,0 +1,90 @@
+
+#test { width: 100px; }
+
+#contents {
+  display: contents;
+  border: 10px solid red;
+}
+
+#test::before,
+#test::after,
+#contents::before,
+#contents::after,
+#flex::before,
+#flex::after {
+  content: " ";
+  width: 50%;
+  height: 10px;
+  display: block;
+}
+#none {
+  display: none;
+}
+#none::before,
+#none::after {
+  content: "Foo";
+}
+#flex {
+  display: flex;
+}
+#flex-no-pseudo {
+  display: flex;
+}
+#contents-pseudos::before,
+#contents-pseudos::after {
+  display: contents;
+  content: "foo";
+  position: absolute;
+}
+#contents-pseudos-dynamic::before,
+#contents-pseudos-dynamic::after {
+  display: block;
+  content: "foo";
+  position: absolute;
+}
+#contents-pseudos-dynamic.contents::before,
+#contents-pseudos-dynamic.contents::after {
+  display: contents;
+}
+#pseudo-invalid::backdrop {
+  color: rgb(0, 128, 0);
+}
+#pseudo-invalid::file-selector-button {
+  color: rgb(0, 128, 0);
+}
+#pseudo-invalid::grammar-error {
+  color: rgb(0, 128, 0);
+}
+#pseudo-invalid::highlight(name) {
+  color: rgb(0, 128, 0);
+}
+#pseudo-invalid::marker {
+  color: rgb(0, 128, 0);
+}
+#pseudo-invalid::placeholder {
+  color: rgb(0, 128, 0);
+}
+#pseudo-invalid::spelling-error {
+  color: rgb(0, 128, 0);
+}
+#pseudo-invalid::view-transition {
+  color: rgb(0, 128, 0);
+}
+#pseudo-invalid::view-transition-image-pair(name) {
+  color: rgb(0, 128, 0);
+}
+#pseudo-invalid::view-transition-group(name) {
+  color: rgb(0, 128, 0);
+}
+#pseudo-invalid::view-transition-old(name) {
+  color: rgb(0, 128, 0);
+}
+#pseudo-invalid::view-transition-new(name) {
+  color: rgb(0, 128, 0);
+}
+#pseudo-invalid {
+  color: rgb(255, 0, 0)
+}
+#test-file-input::file-selector-button {
+  color: rgb(0, 128, 0);
+}

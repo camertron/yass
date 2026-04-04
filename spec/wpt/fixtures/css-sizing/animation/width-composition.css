@@ -1,0 +1,7 @@
+
+.target::before {
+  display: block;
+  content: "";
+  width: 75px;
+  height: 125px;
+}

@@ -1,0 +1,9 @@
+
+.target {
+  border: 1px solid;
+  width: 8ch;
+  text-indent: 4ch;
+}
+.after {
+  text-indent: 4ch hanging;
+}

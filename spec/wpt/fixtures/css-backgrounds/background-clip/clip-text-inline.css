@@ -1,0 +1,9 @@
+
+body {
+  font-size: 40px;
+}
+.text-clip {
+  background: blue;
+  background-clip: text;
+  color: rgba(255,0,0,0.5);
+}

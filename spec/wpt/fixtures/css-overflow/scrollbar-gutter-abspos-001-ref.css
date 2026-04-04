@@ -1,0 +1,13 @@
+
+.container {
+  scrollbar-gutter: stable;
+  overflow-y: auto;
+  width: 100px;
+  height: 200px;
+  position: relative;
+}
+.child {
+  width: 100%;
+  height: 100px;
+  background: green;
+}

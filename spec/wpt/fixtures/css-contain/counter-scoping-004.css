@@ -1,0 +1,9 @@
+
+  .list-item {
+    contain: style;
+    counter-increment: my-list-counter;
+    margin-left: 40px;
+  }
+  .list-item::before {
+    content: '[' counter(my-list-counter, decimal) '] ';
+  }

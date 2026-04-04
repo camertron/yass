@@ -1,0 +1,13 @@
+
+#outer {
+    visibility: hidden;
+}
+#outer.visible {
+    visibility: visible;
+}
+#container {
+    container-type: inline-size;
+}
+#container.visible {
+    visibility: visible;
+}

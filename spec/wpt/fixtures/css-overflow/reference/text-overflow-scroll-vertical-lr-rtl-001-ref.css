@@ -1,0 +1,7 @@
+
+  div {
+    display: inline-block;
+    writing-mode: vertical-lr;
+    font: 100px/1 Ahem;
+    height: 400px;
+  }

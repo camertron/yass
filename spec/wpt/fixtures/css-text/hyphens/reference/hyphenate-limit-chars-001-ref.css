@@ -1,0 +1,8 @@
+
+#container > div {
+  border: black solid 2px;
+  font-family: monospace;
+  font-size: 20px;
+  line-height: 1;
+  width: 1ch;
+}

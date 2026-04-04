@@ -1,0 +1,21 @@
+
+  div::before {
+    animation-name: sample;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+
+    background-color: blue;
+    content: "Filler Text";
+    display: block;
+    height: 100px;
+    width: 100px;
+    position: relative;
+  }
+  @keyframes sample {
+    from {
+      background-color: yellow;
+    }
+    to {
+      background-color: green;
+    }
+  }

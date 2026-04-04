@@ -1,0 +1,10 @@
+
+  dialog { color: red; }
+  #container { width: 100px; }
+  #container, #outer { container-type: inline-size; }
+  @container (min-width: 200px) {
+    #outer { width: 400px; color: lime; }
+  }
+  @container (min-width: 400px) {
+    #inner { color: green; }
+  }

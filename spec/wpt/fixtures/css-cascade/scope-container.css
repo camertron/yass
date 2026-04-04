@@ -1,0 +1,18 @@
+
+  main {
+    width: 100px;
+    height: 100px;
+    container-type: size;
+  }
+
+  @scope (.a) {
+    @container (width > 0px) {
+      :scope {
+        z-index: 1;
+      }
+
+      .b {
+        background-color: green;
+      }
+    }
+  }

@@ -1,0 +1,12 @@
+
+      body {
+        margin: 0;
+      }
+
+      div {
+        background: green;
+        width: 100px;
+        height: 100px;
+        transform: scaleY(0.5);
+      }
+    

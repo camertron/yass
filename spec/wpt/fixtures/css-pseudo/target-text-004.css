@@ -1,0 +1,12 @@
+
+  p::target-text {
+    background-color: red;
+    color: lime;
+  }
+  p::selection {
+    background-color: green;
+    color: currentColor;
+  }
+  #sel {
+    font-family: Ahem;
+  }

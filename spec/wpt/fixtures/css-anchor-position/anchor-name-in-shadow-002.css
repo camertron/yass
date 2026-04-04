@@ -1,0 +1,13 @@
+
+body {
+  margin: 0;
+}
+
+.host {
+  width: 100px;
+  height: 100px;
+}
+
+#host2 {
+  margin-left: 200px;
+}

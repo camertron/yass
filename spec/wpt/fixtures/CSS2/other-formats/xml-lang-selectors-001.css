@@ -1,0 +1,8 @@
+
+   [lang] { background: red; color: yellow; }
+   [lang="ch"] { background: red; color: yellow; }
+   [lang|="ch"] { background: red; color: yellow; }
+   [lang~="ch"] { background: red; color: yellow; }
+   [xml:lang] { background: red; color: yellow; }
+   [xml:lang|="ch"] { background: red; color: yellow; }
+  

@@ -1,0 +1,21 @@
+
+  div#wrapper, div#reference
+    {
+      border: black solid 2px;
+      font-family: monospace;
+      font-size: 32px;
+      margin-bottom: 0.25em;
+      width: 4ch;
+    }
+
+  div#test
+    {
+      display: inline;
+      white-space: break-spaces;
+    }
+
+  div#reference
+    {
+      white-space: pre;
+    }
+  

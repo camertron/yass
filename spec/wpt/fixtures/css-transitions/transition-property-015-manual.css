@@ -1,0 +1,7 @@
+
+  #test {
+    border-spacing: 10px;
+    transition-duration: 2s;
+    transition-property: border-spacing;
+    transition-timing-function: linear;
+  }

@@ -1,0 +1,10 @@
+
+      #parent {
+        --var1: inherited;
+      }
+      #child {
+        --my-width: env(test, 100px);
+        width: var(--my-width);
+        --var1: env(nonexistent);
+      }
+    

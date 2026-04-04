@@ -1,0 +1,9 @@
+
+    main {
+        font-size: 7em;
+        margin: 0.5em;
+    }
+    main > span::selection {
+        background-color: green;
+        color: white;
+    }

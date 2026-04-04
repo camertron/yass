@@ -1,0 +1,16 @@
+
+  div
+    {
+      background-color: green;
+      border-radius: 30px;
+      height: 144px;
+      margin-left: 18px;
+      margin-top: 24px;
+      width: 144px;
+    }
+
+  div + div
+    {
+      margin-top: 6px;
+    }
+  

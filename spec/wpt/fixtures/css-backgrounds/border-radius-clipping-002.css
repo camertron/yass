@@ -1,0 +1,20 @@
+
+  body
+    {
+      overflow: hidden;
+      /*
+      otherwise, horizontal and vertical
+      scroll bars will be generated
+      */
+    }
+
+  div#fail-condition
+    {
+      border-radius: 250em;
+      color: red;
+      font-size: 32px;
+      height: 500em;
+      overflow: hidden;
+      width: 500em;
+    }
+  

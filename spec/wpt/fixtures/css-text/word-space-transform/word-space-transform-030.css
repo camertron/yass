@@ -1,0 +1,11 @@
+
+div {
+  font-size: 2em;
+  border: solid black;
+  margin: 5px;
+  width: min-content;
+  word-break: keep-all;
+}
+#test {
+  word-space-transform: ideographic-space auto-phrase;
+}

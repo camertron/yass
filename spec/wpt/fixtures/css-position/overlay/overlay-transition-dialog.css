@@ -1,0 +1,4 @@
+
+dialog.animate {
+  transition: overlay 2s allow-discrete, display 2s allow-discrete;
+}

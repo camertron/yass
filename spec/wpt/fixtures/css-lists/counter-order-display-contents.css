@@ -1,0 +1,9 @@
+
+      .counted {
+        counter-increment: section;
+      }
+
+      .counted::before {
+        content: "C=" counter(section) " ";
+      }
+    

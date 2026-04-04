@@ -1,0 +1,13 @@
+
+.transition {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transition: translate 10000ms linear;
+  will-change: translate;
+  translate: 0;
+}
+.offscreen {
+  background-color: purple;
+  translate: -1000px;
+}

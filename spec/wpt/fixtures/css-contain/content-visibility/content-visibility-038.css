@@ -1,0 +1,22 @@
+
+#container {
+  background: lightgreen;
+  contain: layout;
+}
+.hidden {
+  content-visibility: hidden;
+}
+#sizer {
+  width: 100px;
+  height: 100px;
+}
+.child {
+  width: 20px;
+  height: 20%;
+  background: cyan;
+}
+#spacer {
+  width: 150px;
+  height: 150px;
+  background: green;
+}

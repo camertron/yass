@@ -1,0 +1,15 @@
+
+  #container {
+    container-name: container;
+  }
+  .match {
+    --match: true;
+  }
+  #inner {
+    color: red;
+  }
+  @container container style(--match: true) {
+    #inner {
+      color: green;
+    }
+  }

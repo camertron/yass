@@ -1,0 +1,12 @@
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+@media (color-gamut: rec-2020),
+       not (color-gamut: rec-2020)
+{
+    div { background-color: red; }
+}

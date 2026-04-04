@@ -1,0 +1,20 @@
+
+
+@keyframes rotate-animation {
+    from { rotate: 0; }
+    to   { rotate: 180deg; }
+}
+
+svg {
+    width: 400px;
+    height: 400px;
+    overflow: visible;
+}
+
+rect {
+    width: 100px;
+    height: 100px;
+    transform-origin: 100px 100px;
+    animation: rotate-animation 1ms linear forwards;
+}
+

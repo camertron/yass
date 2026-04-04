@@ -1,0 +1,24 @@
+
+    .flex-container {
+      display: flex;
+      column-gap: 20px;
+      width: 160px;
+      height: 50px;
+      background: red;
+      column-rule: 20px solid green;
+    }
+
+    .flex-item {
+      background: green;
+      height: 50px;
+    }
+
+    #item1 {
+      /* Start at 40px, will change to 90px */
+      width: 40px;
+    }
+
+    #item2 {
+      width: 50px;
+    }
+  

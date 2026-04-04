@@ -1,0 +1,17 @@
+
+  .multicol {
+      position: relative;
+      columns: 3;
+      column-fill: auto;
+      column-gap: 10px;
+      width: 320px;
+      height: 200px;
+      orphans: 1;
+      widows: 2;
+      column-rule: 1px dotted;
+      line-height: 20px;
+  }
+  .ibk {
+      display: inline-block;
+      width: 70px;
+  }

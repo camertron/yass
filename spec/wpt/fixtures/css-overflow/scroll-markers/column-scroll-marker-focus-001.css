@@ -1,0 +1,28 @@
+
+  body {
+    margin: 0;
+  }
+  #container {
+    scroll-marker-group: before;
+    overflow: hidden;
+    columns: 9;
+    column-fill: auto;
+    column-rule: solid;
+    height: 100px;
+    line-height: 20px;
+  }
+  #container::scroll-marker-group {
+    display: flex;
+    height: 20px;
+    background: hotpink;
+  }
+  #container::column::scroll-marker {
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    background: blue;
+  }
+  #container::column::scroll-marker:focus {
+    background: cyan;
+  }

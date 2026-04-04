@@ -1,0 +1,4 @@
+
+:nth-child(2n + 1 of :nth-child(n of .target)) {
+    background-color: lime;
+}

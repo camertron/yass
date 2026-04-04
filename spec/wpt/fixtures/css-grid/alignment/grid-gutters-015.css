@@ -1,0 +1,12 @@
+
+.grid {
+  display: inline-grid;
+  padding: 10px;
+  grid-template-columns: 40px 40px;
+  grid-template-rows: 40px 40px;
+  border: solid;
+  gap: 20%;
+}
+.grid > div {
+  background: green;
+}

@@ -1,0 +1,13 @@
+
+.c7 {
+  text-decoration: underline;
+  appearance: button;
+}
+
+.c7::first-line {
+  text-decoration: overline;
+}
+
+.c15 {
+  text-decoration: line-through;
+}

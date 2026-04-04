@@ -1,0 +1,50 @@
+
+  #cb {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+  }
+  #anchor {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    width: 50px;
+    height: 50px;
+    background-color: tomato;
+    anchor-name: --a;
+  }
+  #target {
+    left: 200px; /* force fallback */
+  }
+  #target, #ref {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: skyblue;
+    position-area: bottom right;
+    position-anchor: --a;
+  }
+  #ref {
+    background-color: seagreen;
+  }
+
+
+
+
+  @position-try --top {
+    inset: unset; /* Undo force fallback */
+    position-area: top;
+  }
+  @position-try --right {
+    inset: unset; /* Undo force fallback */
+    position-area: right;
+  }
+  @position-try --bottom {
+    inset: unset; /* Undo force fallback */
+    position-area: bottom;
+  }
+  @position-try --left {
+    inset: unset; /* Undo force fallback */
+    position-area: left;
+  }

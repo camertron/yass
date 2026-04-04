@@ -1,0 +1,15 @@
+
+      p {
+        margin: 0;
+        padding: 1em;
+      }
+      div.wrapper {
+        font-size: 2em;
+        text-decoration: underline; /* so browsers that don't accept the color will still show something */
+        text-decoration: underline blue;
+      }
+      sup.test {
+        text-decoration: underline;
+        text-decoration: underline green;
+      }
+    

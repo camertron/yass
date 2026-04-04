@@ -1,0 +1,26 @@
+
+@keyframes outline-anim {
+  from {
+    outline: solid 1px black;
+  }
+  to {
+    outline: dotted 1px black;
+  }
+}
+
+#test1 {
+  animation: outline-anim 3s 0s paused linear;
+  outline: solid 1px black;
+}
+#test2 {
+  animation: outline-anim 3s -1s paused linear;
+  outline: solid 1px black;
+}
+#test3 {
+  animation: outline-anim 3s -2s paused linear;
+  outline: solid 1px black;
+}
+#test4 {
+  animation: outline-anim 3s 0s paused reverse linear;
+  outline: solid 1px black;
+}

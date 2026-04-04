@@ -1,0 +1,21 @@
+
+body > div {
+  /* styling */
+  border: solid gray;
+  font: 30px/1 Ahem;
+  color: silver;
+  float: left;
+  margin: 8px;
+
+  /* test */
+  text-decoration: underline;
+  text-decoration-color: orange;
+  text-decoration-thickness: 4px;
+  text-shadow: 2px 4px aqua;
+}
+.lr {
+  writing-mode: sideways-lr;
+}
+.rl {
+  writing-mode: sideways-rl;
+}

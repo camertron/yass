@@ -1,0 +1,15 @@
+
+        .container {
+            position: absolute;
+        }
+        .greenSquare {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            /* Position the div so its identical to the div in the test file */
+            /* Add fill color to match the test file */
+            top: 0px;
+            left: 50px;
+            background: green;
+        }
+    

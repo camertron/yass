@@ -1,0 +1,14 @@
+
+#container {
+  display: flex;
+}
+@keyframes keyframe { }
+
+
+#container::after {
+  animation: keyframe 1s infinite;
+  content: '';
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}

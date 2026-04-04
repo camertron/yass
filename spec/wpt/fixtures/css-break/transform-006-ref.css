@@ -1,0 +1,19 @@
+
+  .transformed {
+      transform: rotate(25deg);
+      transform-origin: bottom right;
+      background: hotpink;
+  }
+  .child {
+      margin-left: auto;
+      width: 50px;
+      background: lime;
+  }
+  .fake-column {
+      float: left;
+      width: 100px;
+      height: 100px;
+  }
+  .fake-column:not(:last-child) {
+      margin-right: 20px;
+  }

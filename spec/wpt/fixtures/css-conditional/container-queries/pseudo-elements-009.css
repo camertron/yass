@@ -1,0 +1,13 @@
+
+  #container {
+    container-type: inline-size;
+    width: 500px;
+  }
+
+  ::selection { color: red; background: transparent; }
+  ::highlight(hi) { color: red; background: transparent; }
+
+  @container (width >= 400px) {
+    ::selection { color: green }
+    ::highlight(hi) { color: green }
+  }

@@ -1,0 +1,6 @@
+
+  body { line-height: 20px; }
+  .flexbox { display: flex; }
+  .inline-flexbox { display: inline-flex; }
+  .flexbox-first-letter::first-letter { line-height: 100px; color: red; }
+  .container-first-letter::first-letter { line-height: 200px; color: green; }

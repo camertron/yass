@@ -1,0 +1,20 @@
+
+#scrollContainer {
+  overflow: hidden;
+  font: 16px / 32px serif;
+  height: 4lh;
+  border: 1px solid black;
+}
+.clamp {
+  line-clamp: 4;
+  padding: 0 4px;
+  white-space: pre;
+  background-color: yellow;
+}
+.float {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin: 4px;
+  background-color: skyblue;
+}

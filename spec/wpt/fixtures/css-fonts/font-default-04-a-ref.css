@@ -1,0 +1,16 @@
+
+  @font-face {
+    font-family: fwf;
+    src: url(support/fonts/FontWithFancyFeatures.otf);
+  }
+  .tests {
+	  font-family: fwf;
+	  font-size: 4em;
+	  line-height: 1.1;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: green;
+  }
+  .default {
+    color: purple;
+  }

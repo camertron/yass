@@ -1,0 +1,27 @@
+
+  body {
+    margin: 0;
+  }
+
+  #scroller {
+    scroll-marker-group: before links;
+    overflow: scroll;
+    height: 200px;
+
+    li {
+      height: 200px;
+      background: purple;
+      border: 1px solid black;
+
+      &::scroll-marker {
+        content: "S";
+        padding: 10px;
+        color: white;
+        background: red;
+      }
+    }
+
+    li::scroll-marker:hover {
+      background: blue;
+    }
+  }

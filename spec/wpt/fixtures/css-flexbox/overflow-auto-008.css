@@ -1,0 +1,19 @@
+
+.vflex {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  margin: 10px 0 10px 0;
+}
+
+.hbox {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.rect {
+  min-height: 100px;
+  min-width: 100px;
+  background-color: green;
+  display: inline-block;
+}

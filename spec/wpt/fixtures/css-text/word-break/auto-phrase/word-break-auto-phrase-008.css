@@ -1,0 +1,12 @@
+
+div {
+  font-size: 2em;
+  border-left: solid black;
+  margin: 15px;
+  width: 0;
+  hyphens: manual;
+}
+#test {
+  word-break: auto-phrase;
+  overflow-wrap: normal;
+}

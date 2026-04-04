@@ -1,0 +1,25 @@
+
+table {
+  font: 20px/1 Ahem;
+  border: 1px solid gray;
+}
+
+td {
+  width: 2em;
+  padding: 0;
+  color: green;
+}
+
+td > div {
+  position: relative;
+}
+
+.left {
+  left: 0;
+}
+.center {
+  left: 0.5em;
+}
+.right {
+  left: 1em;
+}

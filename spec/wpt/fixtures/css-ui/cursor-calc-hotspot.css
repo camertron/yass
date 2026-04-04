@@ -1,0 +1,14 @@
+
+  #t1 {
+    font-size: 20px;
+    cursor: url(data:image/x-icon,) calc(7 * sign(1em - 18px)) 0, auto;
+  }
+  #t2 {
+    cursor: url(data:image/x-icon,) calc(4 * sibling-index()) 0, auto;
+  }
+  #t3 {
+    cursor: url(data:image/x-icon,) calc(9) 0, auto;
+  }
+  #t4 {
+    cursor: url(data:image/x-icon,) calc(10 * sign(2px)) 0, auto;
+  }

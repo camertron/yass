@@ -1,0 +1,44 @@
+
+html { view-transition-name: none }
+#target {
+  width: 100px;
+  height: 100px;
+  contain: paint;
+  background: blue;
+  view-transition-name: shared;
+}
+#target.before {
+  position: relative;
+  left: 200px;
+}
+
+#unrelated {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  top: 200px;
+  left: 200px;
+}
+#unrelated:hover {
+  background: green;
+}
+
+html::view-transition {
+  pointer-events: none;
+}
+html::view-transition-group(*) {
+  pointer-events: auto;
+}
+
+html::view-transition-group(shared) {
+  animation-delay: 300s;
+}
+html::view-transition-old(shared) {
+  animation: unset;
+  opacity: 0;
+}
+html::view-transition-new(shared) {
+  animation: unset;
+  opacity: 1;
+}

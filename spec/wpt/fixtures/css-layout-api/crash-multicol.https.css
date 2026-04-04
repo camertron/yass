@@ -1,0 +1,5 @@
+
+#test {
+  display: layout('test');
+  columns: 2;
+}

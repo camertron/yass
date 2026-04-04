@@ -1,0 +1,12 @@
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: red;
+  background-color: color(from currentColor xyz-d50 x y z);
+}
+div div {
+  color: green;
+  background-color: inherit;
+}

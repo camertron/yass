@@ -1,0 +1,17 @@
+
+  html
+    {
+      writing-mode: sideways-lr;div
+    }
+
+  img
+    {
+      vertical-align: bottom;
+    }
+
+  div
+    {
+      margin-left: 1em;
+      margin-bottom: -8px;
+    }
+  

@@ -1,0 +1,3 @@
+
+@counter-style lower-roman { system: extends disc; }
+@counter-style upper-roman { system: extends disc; }

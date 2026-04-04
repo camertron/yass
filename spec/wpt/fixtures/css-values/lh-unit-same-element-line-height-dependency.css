@@ -1,0 +1,9 @@
+
+div {
+    background-image: linear-gradient(green, green);
+    background-repeat: no-repeat;
+    background-size: 100px 1lh;
+    line-height: 100px;
+    width: 100px;
+    color: transparent;
+}

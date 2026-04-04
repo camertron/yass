@@ -1,0 +1,15 @@
+
+.outer {
+    height: 100px;
+    overflow:scroll;
+}
+.outer > div, td:nth-child(1) {
+    background-color: lightgreen;
+}
+td:nth-child(2) {
+    background-color: lightblue;
+}
+table, td {
+    padding: 0;
+    border-spacing: 0;
+}

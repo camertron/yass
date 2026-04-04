@@ -1,0 +1,18 @@
+
+        my-host, my-host2, my-host3, my-host4 {
+            display: block;
+            width: 100px;
+            height: 25px;
+        }
+        my-host2 {
+            background: green;
+        }
+        my-host3 {
+            background: red;
+            color: green;
+        }
+        my-host4 {
+            background: green;
+            color: green;
+        }
+    

@@ -1,0 +1,17 @@
+
+#reference-overlapped-green {
+  position: absolute;
+  background-color: green;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+}
+.outer {
+  width: min-content;
+  max-height: 100px;
+  background: red;
+}
+.target {
+  aspect-ratio: 1/1;
+  height: 100%;
+}

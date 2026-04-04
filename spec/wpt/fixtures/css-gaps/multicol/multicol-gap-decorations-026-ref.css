@@ -1,0 +1,22 @@
+
+  body {
+    margin: 0;
+    font: Ahem;
+  }
+
+  .col {
+    height: 100px;
+    column-count: auto;
+    border: 2px solid red;
+    column-width: 50px;
+    gap: 5px;
+  }
+
+  .column-rule {
+    height: 100px;
+    width: 5px;
+    background: gold;
+    position: absolute;
+    top: 2px;
+    left: 54px;
+  }

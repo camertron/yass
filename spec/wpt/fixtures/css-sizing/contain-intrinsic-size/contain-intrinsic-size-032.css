@@ -1,0 +1,21 @@
+
+.ciw-0 {
+  contain-intrinsic-width: 0px;
+}
+.ciw-100 {
+  contain-intrinsic-width: 100px;
+}
+.cih-0 {
+  contain-intrinsic-height: 0px;
+}
+.cih-100 {
+  contain-intrinsic-height: 100px;
+}
+select {
+  padding: 0;
+  border: solid;
+  margin: 5px;
+}
+.test {
+  contain: size;
+}

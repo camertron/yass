@@ -1,0 +1,15 @@
+
+.multicol {
+  column-count: 3;
+  column-fill: auto;
+  border: 1px solid;
+  height: 160px;
+  width: 20ch;
+  font-family: Ahem;
+  font-size: 40px;
+  line-height: 1;
+}
+.down-half {
+  position: relative;
+  top: 20px;
+}

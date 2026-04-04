@@ -1,0 +1,22 @@
+
+body {
+  background: white;
+  color: black;
+}
+div {
+  position: relative;
+}
+h1 {
+  position: absolute;
+}
+span {
+  display: inline-block;
+  position: relative;
+}
+u {
+  display: inline-block;
+  position: absolute;
+  text-decoration-color: black;
+  width: calc(100% - 0.5em);
+  overflow: clip;
+}

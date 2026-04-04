@@ -1,0 +1,5 @@
+
+/* We use Ahem to avoid very minor differences between the test and the
+   reference that occur with certain font+platform combinations. */
+div     { font-family: Ahem, monospace; font-size: 20px; white-space: pre; }
+div .ws { margin: -1ch; }

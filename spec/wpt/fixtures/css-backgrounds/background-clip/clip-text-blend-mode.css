@@ -1,0 +1,9 @@
+
+#target {
+  font-size: 100px;
+  background-image: linear-gradient(#f00, #f00), linear-gradient(#ff0, #ff0);
+  background-color: red;
+  background-blend-mode: difference, normal;
+  background-clip: text;
+  color: transparent;
+}

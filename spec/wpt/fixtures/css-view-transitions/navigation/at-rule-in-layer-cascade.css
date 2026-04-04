@@ -1,0 +1,18 @@
+
+@layer inertA, inertB, active;
+
+@layer inertA {
+  @view-transition {
+    navigation: none;
+  }
+}
+@layer active {
+  @view-transition {
+    navigation: auto;
+  }
+}
+@layer inertB {
+  @view-transition {
+    navigation: none;
+  }
+}

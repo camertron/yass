@@ -1,0 +1,18 @@
+
+    body {
+      font: 14px serif;
+    }
+    .flexContainer {
+      display: inline-flex;
+      height: 16px;
+      width: 16px;
+      background: pink;
+      border: 0px dotted black;
+      /* (Elements that want a border will set their border-width.) */
+    }
+    .abs {
+      position: absolute;
+      top: 0;
+      font-size: 8px;
+    }
+  

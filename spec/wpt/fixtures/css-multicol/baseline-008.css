@@ -1,0 +1,12 @@
+
+  .part {
+      display: inline-block;
+      width: 50px;
+      height: 100px;
+      background: green;
+      color: transparent;
+  }
+  .multicol {
+      columns: 2;
+      column-fill: auto;
+  }

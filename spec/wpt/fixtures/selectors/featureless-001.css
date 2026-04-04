@@ -1,0 +1,16 @@
+
+        div {
+          width: 100px;
+          height: 50px;
+        }
+        .red { background-color: red; }
+        .green { background-color: green; }
+        :host div.red {
+          /* Make sure :host matches the host element... */
+          background-color: green;
+        }
+        div > div.green {
+          /* And make sure *other* selectors *don't* match it. */
+          background-color: red;
+        }
+      

@@ -1,0 +1,16 @@
+
+div {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  contain: paint;
+  view-transition-name: shared;
+}
+
+html::view-transition,
+html::view-transition-group(shared),
+html::view-transition-image-pair(shared),
+html::view-transition-old(shared),
+html::view-transition-new(shared) {
+  background: blue;
+}

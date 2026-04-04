@@ -1,0 +1,12 @@
+
+  .container {
+    container-type: inline-size;
+    width: 100px;
+    height: 100px;
+    writing-mode: vertical-lr;
+  }
+  .child {
+    background-color: green;
+    height: 50px;
+    width: 50px;
+}

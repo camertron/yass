@@ -1,0 +1,13 @@
+
+.parent {
+  letter-spacing: 2px;
+}
+.target {
+  font: 10px sans-serif;
+  font-weight: bold;
+  letter-spacing: 30px;
+}
+.expected {
+  color: green;
+  margin-right: 30px;
+}

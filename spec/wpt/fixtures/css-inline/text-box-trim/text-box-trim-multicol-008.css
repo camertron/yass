@@ -1,0 +1,14 @@
+
+.multicol {
+  column-count: 3;
+  column-fill: auto;
+  border: 1px solid;
+  height: 160px;
+  width: 20ch;
+  text-box-trim: trim-start;
+  font-family: Ahem;
+  font-size: 40px;
+  line-height: 2;
+  orphans: 1;
+  widows: 1;
+}

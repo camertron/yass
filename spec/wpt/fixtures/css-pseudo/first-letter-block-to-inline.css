@@ -1,0 +1,3 @@
+
+  #outer.block::first-letter { color: red }
+  #outer.block { display: block }

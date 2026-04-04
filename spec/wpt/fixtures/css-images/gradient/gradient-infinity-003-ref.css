@@ -1,0 +1,6 @@
+
+  div {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle at 0% 100%, lime 100%, red 0);
+  }

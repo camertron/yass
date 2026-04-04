@@ -1,0 +1,6 @@
+
+  svg > rect {
+    offset-path: url(#target);
+    offset-distance: 50%;
+    offset-rotate: 0deg;
+  }

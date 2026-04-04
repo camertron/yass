@@ -1,0 +1,14 @@
+
+div {
+  background: blue;
+  color: white;
+}
+img {
+  width: 400px;
+  height: 200px;
+  background: lightblue;
+  border: 1px solid black;
+}
+.hidden {
+  content-visibility: hidden;
+}

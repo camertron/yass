@@ -1,0 +1,6 @@
+
+  input { background-color: green; }
+  input::file-selector-button {
+    color: green;
+    background-color: inherit;
+  }

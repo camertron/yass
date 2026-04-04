@@ -1,0 +1,15 @@
+
+    html,body {
+      color:black; background-color:white; font:12px/1 monospace; padding:0; margin:0;
+    }
+
+    div > div { background: grey; grid-column:2 / span 2; }
+
+    i {
+      grid-row: 1;
+      counter-increment: i;
+    }
+    i::before { content: counter(i, decimal); }
+
+    x { background: silver; }
+  

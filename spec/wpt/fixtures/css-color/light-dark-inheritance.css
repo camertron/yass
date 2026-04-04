@@ -1,0 +1,11 @@
+
+.square {
+  width: 100px;
+  height: 100px;
+  color-scheme: dark;
+  background-color: currentColor;
+}
+.container {
+  color-scheme: light;
+  color: light-dark(green, red);
+}

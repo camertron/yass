@@ -1,0 +1,30 @@
+
+  body {
+    margin: 0px;
+  }
+  .container {
+    display: grid;
+    grid-template: repeat(3, 50px) / repeat(3, 50px);
+    gap: 20px;
+    padding: 0px;
+  }
+  .item {
+    background: lightgray;
+  }
+  .col-gap {
+    height: 135px;
+    border-right: 10px rgba(0, 0, 255, 0.5) solid;
+    width: 0px;
+    position: absolute;
+    top: 0px;
+    left: 55px;
+  }
+
+  .row-gap {
+    width: 135px;
+    border-bottom: 10px rgba(255, 0, 0, 0.5) solid;
+    height: 0px;
+    position: absolute;
+    top: 55px;
+    left: 0px;
+  }

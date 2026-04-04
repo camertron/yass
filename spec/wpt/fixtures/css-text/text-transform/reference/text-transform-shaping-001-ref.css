@@ -1,0 +1,6 @@
+
+  div { font-size: 4em; }
+  body {
+    max-width: 600px;
+    max-width: max-content;
+  }

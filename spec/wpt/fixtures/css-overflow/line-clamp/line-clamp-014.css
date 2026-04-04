@@ -1,0 +1,9 @@
+
+.block {
+  font: 16px / 32px serif;
+  background-color: yellow;
+}
+.clamp {
+  line-clamp: 4;
+  white-space: pre;
+}

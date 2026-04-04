@@ -1,0 +1,15 @@
+
+#outer {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+#container {
+  display: inline-flex;
+  height: 50px;
+  background: green;
+}
+#target {
+  height:100%;
+  display:block;
+}

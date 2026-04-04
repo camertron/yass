@@ -1,0 +1,17 @@
+
+.flex {
+  display: flex;
+  width: 100px;
+  height: 100px;
+}
+.item-flex-none {
+  width: 50px;
+  flex: none;
+  background: green;
+}
+.item-grid-container {
+  display: grid;
+  width: 200%;
+  grid-template-columns: repeat(auto-fill, 50px);
+  background: green;
+}

@@ -1,0 +1,7 @@
+
+.clamp {
+  width: 29.1ch;
+  border: 1px solid black;
+  font-family: monospace;
+  white-space: pre
+}

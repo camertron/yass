@@ -1,0 +1,15 @@
+
+
+.target::after {
+  content: "default";
+}
+
+@keyframes content-animation {
+  from { content: "from" }
+  to   { content: "to" }
+}
+
+.target.animated::after {
+  animation: content-animation 1s paused linear forwards;
+}
+

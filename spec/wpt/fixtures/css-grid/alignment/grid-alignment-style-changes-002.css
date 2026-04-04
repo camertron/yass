@@ -1,0 +1,21 @@
+
+#container {
+  position: relative;
+  display: inline-grid;
+  grid: 100px / 50px 50px 50px;
+  background: grey;
+  align-items: baseline;
+}
+#item1 {
+  height: 20px;
+  background: blue;
+}
+#item2 {
+  height: 50px;
+  background: green;
+  align-self: center;
+}
+#item3 {
+  height: 30px;
+  background: red;
+}

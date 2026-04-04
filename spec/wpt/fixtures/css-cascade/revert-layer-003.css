@@ -1,0 +1,20 @@
+
+@layer {
+  #target {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+  }
+}
+
+@layer {
+  #target {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+  }
+
+  #target {
+    all: revert-layer;
+  }
+}

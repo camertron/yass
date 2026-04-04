@@ -1,0 +1,16 @@
+
+.relpos {
+  position: relative;
+}
+.anchor1 {
+  anchor-name: --a1;
+  width: 10px;
+  height: 10px;
+  background: orange;
+}
+.target {
+  position: absolute;
+  width: anchor-size(--a1 width);
+  height: 10px;
+  background: lime;
+}

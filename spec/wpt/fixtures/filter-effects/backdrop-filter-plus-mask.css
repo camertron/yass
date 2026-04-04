@@ -1,0 +1,13 @@
+
+body {
+  overflow: hidden;
+}
+div {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  width: 200px;
+  height: 200px;
+  backdrop-filter: invert(1);
+  clip-path: url(#heart);
+}

@@ -1,0 +1,6 @@
+
+div {
+  hyphens: auto;
+  width: 5ch;
+  border: 1px solid blue;
+}

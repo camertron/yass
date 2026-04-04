@@ -1,0 +1,80 @@
+
+  @counter-style base {
+    system: cyclic;
+    symbols: 'One' 'Two' 'Three';
+    suffix: '. ';
+  }
+
+  @counter-style explicit-bullets {
+    system: extends base;
+    speak-as: bullets;
+  }
+  @counter-style explicit-numbers {
+    system: extends base;
+    speak-as: numbers;
+  }
+  @counter-style explicit-words {
+    system: extends base;
+    speak-as: words;
+  }
+
+  @counter-style auto-alphabetic {
+    system: alphabetic;
+    symbols: 'One' 'Two' 'Three';
+    suffix: '. ';
+    speak-as: auto;
+  }
+  @counter-style auto-cyclic {
+    system: cyclic;
+    symbols: 'One' 'Two' 'Three';
+    suffix: '. ';
+    speak-as: auto;
+  }
+  @counter-style auto-extends {
+    system: extends base;
+    speak-as: auto;
+  }
+  @counter-style auto-fixed {
+    system: fixed;
+    symbols: 'One' 'Two' 'Three';
+    suffix: '. ';
+    speak-as: auto;
+  }
+  @counter-style auto-symbolic {
+    system: symbolic;
+    symbols: 'One' 'Two' 'Three';
+    suffix: '. ';
+    speak-as: auto;
+  }
+  @counter-style auto-numeric {
+    system: numeric;
+    symbols: 'Zero' 'One' 'Two' 'Three';
+    suffix: '. ';
+    speak-as: auto;
+  }
+  @counter-style auto-additive {
+    system: additive;
+    additive-symbols: 3 'Three', 2 'Two', 1 'One';
+    suffix: '. ';
+    speak-as: auto;
+  }
+
+  @counter-style reference-bullets {
+    system: fixed;
+    symbols: 'Yi' 'Er' 'San';
+    suffix: '> ';
+    speak-as: explicit-bullets;
+  }
+  @counter-style reference-numbers {
+    system: fixed;
+    symbols: 'Yi' 'Er' 'San';
+    suffix: '> ';
+    speak-as: explicit-numbers;
+  }
+  @counter-style reference-words {
+    system: fixed;
+    symbols: 'Yi' 'Er' 'San';
+    suffix: '> ';
+    speak-as: explicit-words;
+  }
+

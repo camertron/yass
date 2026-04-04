@@ -1,0 +1,16 @@
+
+#test {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: orange;
+  overflow: hidden;
+  resize: both;
+}
+#target {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: blue;
+}
+#log { margin-top: 200px; }

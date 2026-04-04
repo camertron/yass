@@ -1,0 +1,17 @@
+
+  .flex {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+
+  .flex-item {
+    width: 50px;
+    background-color: green;
+  }
+
+  .empty-grid {
+    display: grid;
+    grid-gap: 50px;
+  }

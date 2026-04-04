@@ -1,0 +1,5 @@
+
+/* 3n of paragraph with the class foobar but for which foobar is not the only class. */
+p:nth-child(3n+1 of p.foobar:not([class=foobar])) {
+    background-color: lime;
+}

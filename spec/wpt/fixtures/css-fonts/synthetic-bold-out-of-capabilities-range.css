@@ -1,0 +1,10 @@
+
+    @font-face {
+        font-family: "Inter";
+        src: url('support/fonts/RobotoExtremo-VF-wght-400-500.subset.ttf');
+    }
+    .style900 {
+        font-family: "Inter";
+        font-size: 3em;
+        font-weight: 900;
+    }

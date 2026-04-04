@@ -1,0 +1,14 @@
+
+.container {
+  border: solid;
+  width: 200px;
+  text-indent: 200px;
+  text-align: right;
+}
+
+.content {
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  background: green;
+}

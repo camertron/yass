@@ -1,0 +1,17 @@
+
+#inline-block {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  background: green;
+}
+
+#inline-flex {
+  display: inline-flex;
+}
+
+#inline-flex > div {
+  width: 100px;
+  height: 50px;
+  background: green;
+}

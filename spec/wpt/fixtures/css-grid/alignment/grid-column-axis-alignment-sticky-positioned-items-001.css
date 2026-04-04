@@ -1,0 +1,44 @@
+
+.container {
+  border: solid 1px;
+  overflow: auto;
+  height: 500px;
+}
+.grid {
+  position: relative;
+  float: left;
+  display: grid;
+  grid-template-columns: 75px 75px 75px 75px;
+  grid-template-rows: 100px 100px 100px 300px;
+  background: grey;
+  height: 400px;
+  margin-right: 20px;
+}
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 20px;
+  height: 20px;
+  background-color: #cae8ca;
+}
+.item1 {
+  top: 0px;
+  grid-column: 1;
+  grid-row: 1;
+}
+.item2 {
+  top: 0px;
+  grid-column: 2;
+  grid-row: 2;
+}
+.item3 {
+  top: 0px;
+  grid-column: 3;
+  grid-row: 3;
+}
+.item4 {
+  grid-column: 4;
+  grid-row: 4;
+  background: lightgrey;
+}
+.scroll { overflow: auto; }

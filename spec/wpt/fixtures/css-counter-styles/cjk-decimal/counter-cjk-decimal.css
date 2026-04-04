@@ -1,0 +1,4 @@
+
+  div::after {
+    content: counter(n, cjk-decimal);
+  }

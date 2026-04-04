@@ -1,0 +1,7 @@
+
+.grid-lanes {
+    display: grid-lanes;
+    grid-template-rows: 20px 1fr 30%;
+    width: 100px;
+    height: 100px;
+}

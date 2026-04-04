@@ -1,0 +1,30 @@
+
+body {
+  margin: 0;
+  height: 200vh;
+}
+
+#scroller {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  overflow-y: scroll;
+}
+
+#anchor {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 200px;
+  background: orange;
+  anchor-name: --a;
+}
+
+#target {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  bottom: anchor(top);
+  position-anchor: --a;
+  background: lime;
+}

@@ -1,0 +1,28 @@
+
+.test {
+  writing-mode: horizontal-tb;
+  background: red;
+  width: 100px;
+}
+
+.child {
+  writing-mode: vertical-rl;
+  visibility: hidden;
+  line-height: 0;
+
+  --available-block-size: -20;
+}
+
+.inline {
+  display: inline-block;
+  width: 8px;
+}
+
+.inline-size-10 { height: 10px; }
+
+@supports (display: layout(test)) {
+  .test {
+    background: green;
+    display: layout(test);
+  }
+}

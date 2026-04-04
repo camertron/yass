@@ -1,0 +1,7 @@
+
+  .test {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    background-image: url("http://{{hosts[][]}}:{{ports[http][1]}}/css/support/1x1-red.png" cross-origin(anonymous));
+  }

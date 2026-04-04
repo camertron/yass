@@ -1,0 +1,11 @@
+
+#a {
+  column-count: 2;
+  height: 5px;
+}
+#b {
+  box-decoration-break: clone;
+  padding: 4px 0px;
+  border: 1px dotted black;
+  height: 10px;
+}

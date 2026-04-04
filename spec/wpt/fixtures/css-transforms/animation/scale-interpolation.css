@@ -1,0 +1,14 @@
+
+    .parent {
+      scale: 0.5 1 2
+    }
+    .target {
+      width: 10px;
+      height: 10px;
+      background-color: black;
+      scale: 1.1 1;
+    }
+    .expected {
+      background-color: green;
+    }
+    

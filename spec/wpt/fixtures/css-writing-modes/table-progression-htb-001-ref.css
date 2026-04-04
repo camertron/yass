@@ -1,0 +1,21 @@
+
+  table {
+    border-spacing: 0;
+    margin: 1em;
+    float: left;
+  }
+  td {
+    width: 1em;
+    height: 1em;
+    border: solid gray;
+  }
+
+  .navy { background: navy}
+  .blue { background: blue }
+  .aqua { background: aqua }
+  .teal { background: teal }
+  .purp { background: purple }
+  .pink { background: fuchsia }
+  .yllw { background: yellow }
+  .orng { background: orange }
+  caption { background: green; }

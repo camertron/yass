@@ -1,0 +1,21 @@
+
+    @supports not selector(:focus-visible) {
+      #next:focus {
+        outline: red solid 5px;
+        background-color: red;
+      }
+    }
+
+    button {
+      border: 0;
+    }
+
+    :focus-visible {
+      outline: green solid 5px;
+    }
+
+    :focus:not(:focus-visible) {
+      background-color: red;
+      outline: 0;
+    }
+  

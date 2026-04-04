@@ -1,0 +1,21 @@
+
+.box {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: blue;
+}
+.above {
+  top: -100px;
+}
+.parent {
+  filter: url(#f1);
+  background-color: white;
+  position: relative;
+  top: 100px;
+}

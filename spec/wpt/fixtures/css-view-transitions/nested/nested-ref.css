@@ -1,0 +1,9 @@
+
+    body {
+        margin: 0;
+    }
+    div.green {
+        position: fixed;
+        inset: 0;
+        background: green;
+    }

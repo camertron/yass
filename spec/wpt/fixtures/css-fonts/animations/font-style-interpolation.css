@@ -1,0 +1,16 @@
+
+.container {
+  font-style: oblique 20deg;
+}
+.container2 {
+  font-style: oblique 5deg;
+}
+.target {
+  display: inline-block;
+  font: 100px sans-serif;
+  font-style: normal;
+}
+.expected {
+  color: green;
+  margin-right: 30px;
+}

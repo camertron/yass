@@ -1,0 +1,11 @@
+
+  :root {
+    color-scheme: light;
+  }
+
+  .spacer {
+    height: 300vh;
+
+    /* Hack so WebKit will put this iframe in a layer */
+    will-change: transform;
+  }

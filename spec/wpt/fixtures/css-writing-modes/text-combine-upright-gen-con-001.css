@@ -1,0 +1,30 @@
+
+div {
+  writing-mode: vertical-rl;
+  font: 32px serif;
+  margin: 1em;
+  padding: .25em;
+  border: 1px solid gray;
+}
+div#test {
+  counter-set: a 3 b 1;
+}
+p#a::before {
+  text-combine-upright: all;
+  content: '1';
+}
+p#b::before {
+  text-combine-upright: all;
+  content: '(' '2' ')';
+}
+p#c::before {
+  text-combine-upright: all;
+  content: '(' counter(a, decimal) '.' counter(b, lower-alpha) ')';
+}
+p#d::after {
+  text-combine-upright: all;
+  content: 'h' 'e' 'll' 'o';
+}
+span {
+  text-combine-upright: all;
+}

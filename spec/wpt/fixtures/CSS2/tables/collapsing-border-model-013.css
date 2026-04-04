@@ -1,0 +1,12 @@
+
+div {
+  float: left;
+  background: green;
+}
+table {
+  border-collapse: collapse;
+  box-sizing: content-box;
+  width: 100px;
+  height: 100px;
+  padding: 100px;
+}

@@ -1,0 +1,30 @@
+
+* {
+  text-decoration-line: underline blink;
+  -webkit-appearance: progress-bar;
+  columns: 11px;
+}
+
+#x4 {
+  -webkit-user-modify: read-write;
+  animation: keyframes4 2s;
+}
+
+
+@keyframes keyframes0 {
+  20% {
+    scroll-padding-left: 1em
+  }
+}
+
+@keyframes keyframes3 {
+  20% {
+    scroll-padding-block-end: auto
+  }
+}
+
+@keyframes keyframes4 {
+  60% {
+    background-position: 65%
+  }
+}

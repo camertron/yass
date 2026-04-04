@@ -1,0 +1,13 @@
+
+  .inline-block {
+    float: left;
+    width: 100px;
+  }
+
+  #reference-overlapped-red {
+    position: absolute;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+  }

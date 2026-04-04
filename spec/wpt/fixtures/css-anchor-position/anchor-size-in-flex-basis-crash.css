@@ -1,0 +1,11 @@
+
+#dut1 {
+  display: flex;
+}
+#dut2 {
+  flex-basis: anchor-size(--a width, 10px);
+}
+#dut3 {
+  flex-basis: auto;
+  width: anchor-size(--a width, 10px);
+}

@@ -1,0 +1,36 @@
+
+body {
+  margin: 0;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+}
+
+#scroller1 {
+  width: 200px;
+  height: 200px;
+}
+
+#scroller1,#scroller2 {
+  overflow: scroll;
+}
+
+#anchor {
+  height: 20px;
+  background: orange;
+}
+
+#anchored1 {
+  position: absolute;
+  top: 70px;
+  background: green;
+}
+
+#anchored2 {
+  position: absolute;
+  top: 170px;
+  background: lime;
+}
+

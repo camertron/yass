@@ -1,0 +1,11 @@
+
+p {
+	text-decoration-line: underline;
+	text-underline-position: auto;
+	margin: 0.5em;
+}
+
+div {
+	float: left;
+	margin: 0.5em;
+}

@@ -1,0 +1,5 @@
+
+ body { overflow:hidden; display:table; border-spacing:0; margin:40px 8px 8px }
+ .caption { display:caption; margin-bottom:10px }
+ .td { display:table-cell; width:20px; height:20px; margin-top:-15px; background:black }
+ p { position:absolute; top:0; left:8px }

@@ -1,0 +1,10 @@
+
+.height-filler {
+  height: 100px;
+}
+
+.test {
+  width: 100px;
+  height: var(--custom-height);
+  background-color: green;
+}

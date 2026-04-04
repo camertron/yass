@@ -1,0 +1,8 @@
+
+#target {
+  margin: 50px;
+  height: 0px;
+  width: 0px;
+  outline: 50px solid lime;
+  clip-path: inset(-20px round 5px);
+}

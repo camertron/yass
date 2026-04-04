@@ -1,0 +1,20 @@
+
+  :root {
+    font-size: 16px;
+  }
+  div {
+    margin: 40px;
+    font-size: 20px;
+  }
+  ::highlight(highlight1) {
+    text-underline-offset: 0.5em;
+    text-decoration-line: underline;
+    text-decoration-color: green;
+    text-decoration-thickness: 0.25rem;
+  }
+  #h2::highlight(highlight1) {
+    text-underline-offset: 1.0em;
+    text-decoration-line: underline;
+    text-decoration-color: blue;
+    text-decoration-thickness: 0.125rem;
+  }

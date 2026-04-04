@@ -1,0 +1,13 @@
+
+.test {
+  display: inline-block;
+  width: 25px;
+  height: 100px;
+  margin: 10px;
+}
+.b {
+  background: linear-gradient(rgba(255 0 0 / 0), 75%, red);
+}
+.e {
+  background: linear-gradient(blue, 75%, rgba(0 0 255 / 0));
+}

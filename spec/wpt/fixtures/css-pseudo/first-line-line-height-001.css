@@ -1,0 +1,12 @@
+
+div {
+  font: 16px monospace;
+  line-height: 24px;
+  width: 45ch;
+  background: #eee;
+}
+div:first-line {
+  font-size: 2.5em;
+  line-height: 2em;
+  background: yellow;
+}

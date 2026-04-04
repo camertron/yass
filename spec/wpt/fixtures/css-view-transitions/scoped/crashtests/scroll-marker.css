@@ -1,0 +1,55 @@
+
+    #wrapper {
+      position: relative;
+      view-transition-group: contain;
+      overflow: clip;
+    }
+    #scroller {
+      height: 300px;
+      width: 300px;
+      overflow: auto;
+      position: relative;
+    }
+    @supports (scroll-marker-group:before) {
+      #scroller {
+        scroll-marker-group: before;
+      }
+      #scroller::scroll-marker-group {
+        padding: 5px;
+        height: 20px;
+        display: block;
+        width: 300px;
+        position: relative;
+        z-index: 1;
+      }
+      #scroller .item::scroll-marker {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: blue;
+        border-radius: 100%;
+        display: inline-block;
+        margin: 5px;
+        position: relative;
+        opacity: 0.9;
+      }
+      #scroller .item::scroll-marker:target-current {
+        background-color: aqua;
+      }
+    }
+    .item {
+      view-transition-name: match-element;
+      height: 300px;
+      width: 100%;
+      position: relative;
+    }
+    .item:nth-child(even){
+      background-color: rebeccapurple;
+    }
+    .item:nth-child(odd){
+      background-color: hotpink;
+    }
+    ::view-transition-group(*) {
+      animation-duration: 3s;
+    }
+  

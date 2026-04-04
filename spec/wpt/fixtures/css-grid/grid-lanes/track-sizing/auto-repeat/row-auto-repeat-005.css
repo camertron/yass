@@ -1,0 +1,6 @@
+
+.grid-lanes {
+    display: grid-lanes;
+    height: 100px;
+    grid-template-rows: repeat(auto-fill, minmax(50px, 25px));
+}

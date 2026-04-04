@@ -1,0 +1,35 @@
+
+  div
+    {
+      display: inline-block;
+      font-size: 32px;
+      margin-right: 5ch;
+      width: 0;
+      word-break: break-all;
+    }
+
+  span
+    {
+      white-space: pre;
+    }
+
+  div#first-sub-test
+    {
+      white-space: normal;
+    }
+
+  div#second-sub-test
+    {
+      white-space: pre-wrap;
+    }
+
+  div#third-sub-test
+    {
+      white-space: break-spaces;
+    }
+
+  div#fourth-sub-test
+    {
+      white-space: pre-line;
+    }
+  

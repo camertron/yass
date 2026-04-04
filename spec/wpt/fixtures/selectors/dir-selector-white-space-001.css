@@ -1,0 +1,11 @@
+
+       div {
+           width: 100px;
+           height: 100px;
+           background-color: red;
+       }
+
+       #a:dir( ltr) { background-color: green; }
+       #b:dir(ltr ) { background-color: green; }
+       #c:dir( ltr ) { background-color: green; }
+    

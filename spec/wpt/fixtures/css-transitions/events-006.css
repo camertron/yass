@@ -1,0 +1,11 @@
+
+.before::before,
+.after:after {
+  content: '';
+  transition: padding-left .01s;
+  padding-left: 1px;
+}
+.before.active::before,
+.after.active:after {
+  padding-left: 10px;
+}

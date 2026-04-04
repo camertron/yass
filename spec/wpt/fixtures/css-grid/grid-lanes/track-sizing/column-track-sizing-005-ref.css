@@ -1,0 +1,9 @@
+
+.grid {
+    display: grid;
+    grid-template-columns: 90px 80px 100px;
+    width: 290px;
+    height: 425px;
+    gap: 10px;
+    background: lightgoldenrodyellow;
+}

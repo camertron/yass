@@ -1,0 +1,12 @@
+
+  html::-webkit-scrollbar {
+    width: 300px;
+  }
+
+  html::-webkit-scrollbar-thumb {
+    background-color: black;
+  }
+
+  html::-webkit-scrollbar-track:vertical {
+    background-color: hotpink;
+  }

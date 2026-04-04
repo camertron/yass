@@ -1,0 +1,16 @@
+
+  @font-face {
+    font-family: fwf;
+    src: url(support/fonts/FontWithFancyFeatures.otf);
+  }
+  .test {
+	  font-family: fwf;
+	  font-size: 3em;
+	  line-height: 1.1;
+  }
+  .high {
+	 font-variant-east-asian: jis04;
+  }
+  .low {
+   font-feature-settings: "jp78" off, "jp83" off, "jp90" off, "jp04" on, "smpl" off,  "trad" off, "fwid" off, "pwid" off, "ruby" off ;
+  }

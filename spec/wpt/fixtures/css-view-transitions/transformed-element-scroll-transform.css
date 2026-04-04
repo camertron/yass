@@ -1,0 +1,18 @@
+
+        :root {
+            view-transition-name: none;
+        }
+
+        ::view-transition-group(*) {
+            animation-duration: 10s;
+        }
+
+        #target {
+            width: 100px;
+            height: 100px;
+            background: green;
+            margin: 300px;
+            view-transition-name: target;
+            rotate: 90deg;
+        }
+    

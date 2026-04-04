@@ -1,0 +1,11 @@
+
+  * {
+    contain: size layout;
+  }
+  html {
+    outline-style: auto;
+    margin-bottom: 39%;
+  }
+  #target {
+    -webkit-appearance: button;
+  }

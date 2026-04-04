@@ -1,0 +1,5 @@
+
+.empty-container {
+  display: grid-lanes;
+  grid-template-rows: auto;
+}

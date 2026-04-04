@@ -1,0 +1,39 @@
+
+  .block {
+    background-color: blue;
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: 50px;
+  }
+
+  #target1 {
+    view-transition-name: a;
+  }
+
+  #target2 {
+    view-transition-name: b;
+  }
+
+  ::view-transition-group(*),
+  ::view-transition-image-pair(*),
+  ::view-transition-old(*) {
+    animation: unset;
+  }
+
+  ::view-transition-old(*) {
+    opacity: 0;
+  }
+
+  @keyframes stylize {
+    from {
+      opacity: 0.5;
+    }
+    to {
+      opacity: 1.0;
+    }
+  }
+  ::view-transition-new(*) {
+    animation: stylize 1s paused;
+  }
+

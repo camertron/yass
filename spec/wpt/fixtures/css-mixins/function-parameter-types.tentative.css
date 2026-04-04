@@ -1,0 +1,94 @@
+
+    @function --f(--c <color>) {
+      result: if(
+        style(--c:red): PASS;
+        else: FAIL);
+    }
+    #target {
+      --actual: --f(#f00);
+      --expected: PASS;
+    }
+  
+
+    @function --f(--c <color>) {
+      --c:#00f; /* <color> */
+      result: if(
+        style(--c:blue): PASS;
+        else: FAIL);
+    }
+    #target {
+      --actual: --f(#000);
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      result: if(
+        style(--c:red): PASS;
+        else: FAIL);
+    }
+    @function --g(--c <color>) {
+      result: --f();
+    }
+    #target {
+      --actual: --g(#f00);
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      result: if(
+        style(--c:blue): PASS;
+        else: FAIL);
+    }
+    @function --g(--c <color>) {
+      --c:#00f; /* <color> */
+      result: --f();
+    }
+    #target {
+      --actual: --g(#f00);
+      --expected: PASS;
+    }
+  
+
+    @function --f(--c type(*)) {
+      result: if(
+        style(--c:red): FAIL1;
+        style(--c:#f00): FAIL2;
+        style(--c:lime): FAIL3;
+        style(--c:#0f0): PASS;
+        else: FAIL4);
+    }
+    @function --g(--c <color>) {
+      result: --f(#0f0);
+    }
+    #target {
+      --actual: --g(#f00);
+      --expected: PASS;
+    }
+  
+
+    @function --f(--c <color>) {
+      --c: 3;
+      result: var(--c, PASS);
+    }
+    #target {
+      --actual: --f(#f00);
+      --expected: PASS;
+    }
+  
+
+    @property --c {
+      syntax: "<color>";
+      inherits: false;
+      initial-value: black;
+    }
+    @function --f() {
+      result: if(style(--c:#f00): PASS; else: FAIL);
+    }
+    #target {
+      --c: red;
+      --actual: --f();
+      --expected: PASS;
+    }
+  

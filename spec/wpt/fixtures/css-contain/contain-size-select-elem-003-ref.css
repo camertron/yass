@@ -1,0 +1,15 @@
+
+  select {
+    color: transparent;
+  }
+  .minWidth {
+    min-width: 100px;
+  }
+  .width {
+    width: 100px;
+  }
+  .floatLWidth {
+    float: left;
+    width: 100px;
+  }
+  

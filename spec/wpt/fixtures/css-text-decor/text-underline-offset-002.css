@@ -1,0 +1,23 @@
+
+        #main{
+            border-bottom: 1px solid cyan;
+            display: flex;
+        }
+        #text, #norm{
+            text-decoration-color: green;
+            text-decoration-line: underline;
+            text-decoration-skip-ink: none;
+            font: 20px/1 Ahem;
+            color: transparent;
+            position: relative;
+            margin-right: 10px;
+        }
+        #text{
+            top: 10px;
+            text-underline-offset: 11px;
+        }
+        #norm{
+            top: 21px;
+            text-underline-offset: 0px;
+        }
+    

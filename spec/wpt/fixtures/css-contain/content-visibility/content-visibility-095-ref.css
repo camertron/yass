@@ -1,0 +1,10 @@
+
+#table {
+  width: 150px;
+  height: 150px;
+  background: lightblue;
+  contain: content;
+}
+#positioned {
+  position: absolute;
+}

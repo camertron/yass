@@ -1,0 +1,13 @@
+
+.symbol {
+  list-style-type: disc;
+}
+.decimal {
+  list-style-type: decimal;
+}
+.string {
+  list-style-type: "string";
+}
+.content::marker {
+  content: "content";
+}

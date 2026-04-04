@@ -1,0 +1,13 @@
+
+    div {
+        width: 2ch;
+        height: 100px;
+        font: 50px/1 Ahem;
+        color: green;
+
+        overflow-y: hidden;
+        overflow-x: auto;
+        white-space: pre-wrap;
+
+        direction: rtl;
+    }

@@ -1,0 +1,8 @@
+CSS zoom applies to word-spacing when specified and inherited
+
+.spacing {
+  word-spacing: 2rem;
+}
+.zoom {
+  zoom: 2;
+}

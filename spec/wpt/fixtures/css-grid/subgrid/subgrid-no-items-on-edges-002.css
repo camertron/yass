@@ -1,0 +1,17 @@
+
+.wrapper {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+.grid {
+  display: inline-grid;
+  grid: repeat(2, auto) / repeat(4, auto);
+  background: red;
+}
+.subgrid {
+  display: grid;
+  grid-template: subgrid / subgrid;
+  background: green;
+  padding: 11px 3px 9px 7px;
+}

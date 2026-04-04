@@ -1,0 +1,15 @@
+
+  .multicol {
+    columns: 3;
+    column-fill: auto;
+    width: 640px;
+    height: 400px;
+    gap: 20px;
+    text-box-trim: trim-both;
+    font-family: Ahem;
+    font-size: 50px;
+    line-height: 100px;
+    orphans: 2;
+    widows: 1;
+    background: yellow;
+  }

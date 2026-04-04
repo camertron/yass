@@ -1,0 +1,5 @@
+
+    ul.inside { list-style-position: inside; }
+    .before::before { content: "before"; }
+    .after::after { content: "after"; }
+  

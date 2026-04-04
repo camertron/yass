@@ -1,0 +1,24 @@
+
+  div
+    {
+      color: transparent;
+      font-size: 16px;
+      padding: 8px;
+    }
+
+  div#floated-left
+    {
+      background-color: blue;
+      float: left;
+      margin: 8px;
+      width: 6em;
+    }
+
+  div#with-contain-paint-size
+    {
+      background-color: orange;
+      width: 12em;
+
+      contain: paint size;
+    }
+  

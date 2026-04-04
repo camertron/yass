@@ -1,0 +1,8 @@
+
+.grid-lanes {
+    display: grid-lanes;
+    flow-tolerance: 0;
+    grid-template-rows: 10px 10px 20px 15px 5px;
+    grid-auto-flow: dense;
+    grid-lanes-pack: dense;
+}

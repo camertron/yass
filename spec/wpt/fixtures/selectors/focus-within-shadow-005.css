@@ -1,0 +1,10 @@
+
+#target:focus-within {
+  border: solid 15px green;
+}
+
+
+/* Suppress things that cannot be reproduced in the reference file */
+:focus {
+  outline: none;
+}

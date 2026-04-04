@@ -1,0 +1,6 @@
+
+  @container (width) {
+    section::highlight(custom-highlight) {
+      --foo: bar;
+    }
+  }

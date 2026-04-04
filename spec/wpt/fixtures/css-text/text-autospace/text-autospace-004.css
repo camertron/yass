@@ -1,0 +1,15 @@
+
+#container {
+  writing-mode: sideways-lr;
+}
+.test {
+  font-family: Ahem;
+  font-size: 40px;
+}
+.normal {
+  text-autospace: normal;
+  /* These properties have no effect in sideways-* writing modes,
+     so should not disable the auto-space insertion: */
+  text-orientation: upright;
+  text-combine-upright: all;
+}

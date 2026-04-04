@@ -1,0 +1,13 @@
+
+
+
+      #anchor {
+        width: 100px;
+        height: 100px;
+      }
+      #anchored {
+        position-anchor: --panel-anchor;
+        position: absolute;
+        inset: anchor(top) anchor(right) anchor(bottom) anchor(left);
+      }
+    

@@ -1,0 +1,4 @@
+
+    #contents { display: contents }
+    #contents::first-line { background-color: red }
+    #container::first-line { color: green }

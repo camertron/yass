@@ -1,0 +1,17 @@
+
+.parent {
+  corner-shape: bevel;
+  padding: 10px;
+}
+
+.target {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  corner-shape: bevel superellipse(3) superellipse(-2.5) square;
+}
+
+.expected {
+  background-color: green;
+}

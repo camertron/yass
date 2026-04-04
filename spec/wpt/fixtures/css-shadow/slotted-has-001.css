@@ -1,0 +1,14 @@
+
+        slot {
+          display: block;
+          width: 100px;
+          height: 100px;
+          background-color: red;
+        }
+        ::slotted(:has(:first-child)) {
+          display: block;
+          width: 100px;
+          height: 100px;
+          background-color: green;
+        }
+      

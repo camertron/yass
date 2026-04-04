@@ -1,0 +1,8 @@
+
+      html {
+        background: url(support/transform-triangle-left.svg);
+        overflow: hidden;
+        transform: rotate(90deg);
+        transform-origin: 50px 50px;
+      }
+    

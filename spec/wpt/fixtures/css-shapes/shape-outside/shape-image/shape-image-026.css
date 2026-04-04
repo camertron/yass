@@ -1,0 +1,40 @@
+
+        body {
+            margin: 0;
+        }
+        .container {
+          font: 50px/1 Ahem;
+          padding: 50px;
+          position: absolute;
+          top: 20px;
+          left: -40px;
+        }
+        #test {
+            width: 200px;
+            color: rgb(0,100,0);
+        }
+        #image {
+            float: left;
+            shape-outside: url("support/left-half-rectangle.png");
+            shape-margin: 10px;
+        }
+        .blue {
+            width: 2px;
+            height: 100px;
+            background-color: blue;
+        }
+        .left-line { left: 65px; }
+        .right-line { left: 125px; }
+
+        .failure {
+            left: 70px;
+            width: 50px;
+            height: 100px;
+            background-color: red;
+            z-index: -1;
+        }
+        .blue, .failure {
+            position: absolute;
+            top: 70px;
+        }
+    

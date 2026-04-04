@@ -1,0 +1,4 @@
+
+#move, #obj, #bdo {
+  filter: url(#target);
+}

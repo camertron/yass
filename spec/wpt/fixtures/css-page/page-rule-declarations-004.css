@@ -1,0 +1,19 @@
+
+    @page 1 {
+        size: 1in;
+    }
+    @page -3 {
+        size: 2in;
+    }
+    @page --a {
+        size: 3in;
+    }
+    @page 7cm {
+        size: 4in;
+    }
+    @page 0.17 {
+        size: 5in;
+    }
+    @page a, 123 {
+        size: 6in;
+    }

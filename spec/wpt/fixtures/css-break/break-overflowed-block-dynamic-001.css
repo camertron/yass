@@ -1,0 +1,18 @@
+
+  #multicol {
+    columns: 2;
+    column-fill: auto;
+    column-gap: 0;
+    height: 400px; /* Must be large enough so that .target doesn't break initially. */
+    width: 100px;
+    background: red;
+  }
+  #block {
+    height: 25px;
+  }
+  #target {
+    background: green;
+    width: 50px;
+    height: 200px; /* Expected to be broken into 2 columns after runTest() */
+  }
+  

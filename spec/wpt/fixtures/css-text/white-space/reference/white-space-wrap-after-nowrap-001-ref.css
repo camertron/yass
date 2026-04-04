@@ -1,0 +1,9 @@
+
+div {
+  width: 10ch;
+  border: 2px solid blue;
+  line-height: 1;
+}
+.ideo > div {
+  width: 1em;
+}

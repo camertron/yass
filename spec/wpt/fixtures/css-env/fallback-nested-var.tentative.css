@@ -1,0 +1,6 @@
+
+      body {
+        --main-bg-color: rgb(0, 128, 0);
+        background-color: env(test, var(--main-bg-color));
+      }
+    

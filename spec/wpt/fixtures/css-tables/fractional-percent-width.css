@@ -1,0 +1,10 @@
+
+  main div {
+    position: relative;
+    border: 1px solid black;
+    width: 400px;
+  }
+  .cell {
+    background-color: skyblue;
+    height: 20px;
+  }

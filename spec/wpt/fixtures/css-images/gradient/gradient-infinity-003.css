@@ -1,0 +1,17 @@
+
+  div {
+    width: 100px;
+    height: 100px;
+  }
+  .test1 {
+    --size1: calc(Infinity * 1px);
+    background: radial-gradient(circle at 0% var(--size1), lime var(--size1), red 0);
+  }
+  .test2 {
+    --size2: calc(Infinity * 1%);
+    background: radial-gradient(circle at 0% var(--size2), lime var(--size2), red 0);
+  }
+  .test3 {
+    --size3: calc(16777200px * 150);
+    background: radial-gradient(circle at 0% var(--size3), lime var(--size3), red 0);
+  }

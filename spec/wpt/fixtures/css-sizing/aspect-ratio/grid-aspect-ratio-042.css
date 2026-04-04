@@ -1,0 +1,12 @@
+
+#container {
+  display: grid;
+  inline-size: 100px;
+  aspect-ratio: 2 / 1;
+  background: green;
+  max-block-size: 100px;
+}
+#item {
+  inline-size: 100%;
+  block-size: 200px;
+}

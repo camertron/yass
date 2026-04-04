@@ -1,0 +1,13 @@
+
+div {
+  margin-top: -2px;
+  width: 50px;
+  height: 100px;
+  float: left;
+}
+.fuchsia {
+  background: fuchsia;
+}
+.orange {
+  background: orange;
+}

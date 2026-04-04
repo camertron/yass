@@ -1,0 +1,26 @@
+
+  #test-container > div { background-color: green; }
+  #target1:has(:is(.item + .item + .item)) { background-color: red; }
+  #target2:has(:is(.invalid .item, .item + .item + .item)) { background-color: red; }
+  #target3:has(:is(.item + .item + .item > .child + .child + .child)) { background-color: red; }
+  #target4:has(:is(.item + .item + .item > .child):is(.child + .child + .child)) { background-color: red; }
+  #target5:has(:is(.item + .item + .item > .child)) { background-color: red; }
+  #target6:has(:is(.invalid .item, .item + .item + .item > .child)) { background-color: red; }
+  #target7:has(:is(.item + .item + .item > .child + .child + .child)) { background-color: red; }
+  #target8:has(:is(.child + .child + .child):is(.item + .item + .item > .child)) { background-color: red; }
+  #target9:has(:is(:where(:is(.item + .item + .item) > .child) + .child + .child)) { background-color: red; }
+  #target10:has(:is(.item:nth-child(3))) { background-color: red; }
+  #target11:has(:is(.item:nth-child(3) > .child:nth-child(3))) { background-color: red; }
+  #target12:has(:is(.item:nth-last-child(3))) { background-color: red; }
+  #target13:has(:is(.item:nth-last-child(3) > .child:nth-last-child(3))) { background-color: red; }
+  #target14:has(:is(.item:nth-child(3) > .child)) { background-color: red; }
+  #target15:has(:is(.item:nth-child(3) > .child:nth-child(3))) { background-color: red; }
+  #target16:has(:is(.item:nth-last-child(3) > .child)) { background-color: red; }
+  #target17:has(:is(.item:nth-last-child(3) > .child:nth-last-child(3))) { background-color: red; }
+  .item + .item + .item {
+    #target18:has(&) { background-color: red; }
+    #target19:has(:is(& > .child + .child + .child)) { background-color: red; }
+  }
+  .item + .item + .item > .child {
+    #target20:has(:is(& + .child + .child)) { background-color: red; }
+  }

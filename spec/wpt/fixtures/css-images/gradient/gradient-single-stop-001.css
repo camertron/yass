@@ -1,0 +1,19 @@
+
+        body {
+            background: #fff;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+
+        #fail {
+            background: red;
+        }
+
+        #test {
+            background-image: linear-gradient(green);
+        }
+    

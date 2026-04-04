@@ -1,0 +1,12 @@
+
+  body {
+    font-size: 3em;
+    font-weight: bolder;
+
+  }
+  #affected1 {
+    color: red;
+  }
+  #affected2 {
+    color: green;
+  }

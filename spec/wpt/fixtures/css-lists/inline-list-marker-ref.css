@@ -1,0 +1,10 @@
+
+html,body {
+  color:black; background-color:white; font:16px/1 monospace; padding:0; margin:0;
+}
+ol,ul,li { margin:0; padding:0; }
+body { margin-left: 40px; }
+
+span { border: 1px solid; }
+.wrap { width: 22ch; }
+ib { display:inline-block; }

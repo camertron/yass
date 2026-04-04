@@ -1,0 +1,16 @@
+
+  #container {
+    container-type: size;
+    width: 200px;
+    height: 200px;
+  }
+
+  #counter::before {
+    content: counter(my-counter);
+  }
+
+  @container (min-width: 300px) {
+    #counter {
+      counter-reset: my-counter 100;
+    }
+  }

@@ -1,0 +1,10 @@
+
+.constrained-width-flex {
+    width: 100px;
+    display: flex;
+    border: 1px solid black;
+}
+.constrained-height-flex {
+    display: flex;
+    height: 100px;
+}

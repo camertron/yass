@@ -1,0 +1,44 @@
+
+    body {
+        margin: 0px;
+    }
+
+    .container {
+      width: 200px;
+      height: 426px;
+      column-count: 3;
+      column-width: 60px;
+      column-gap: 10px;
+    }
+
+    .items {
+      background: rgb(96 139 168 / 0.2);
+      height: 100px;
+      width: 60px;
+      margin: 0px;
+      writing-mode: vertical-rl;
+    }
+
+    .spanner {
+      height: 5px;
+      background: cyan;
+      column-span: all;
+      opacity: 0.5;
+    }
+
+    .col-rule-container {
+      width: 5px;
+      height: 420px;
+      position: absolute;
+      top: 0px;
+      left: 62.5px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .col-rule {
+      background: blue;
+      height: 100px;
+      width: 5px;
+    }

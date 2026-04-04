@@ -1,0 +1,16 @@
+
+        .container {
+            display: flex;
+            flex-flow: row-reverse wrap-reverse;
+            writing-mode: vertical-rl;
+            border: 2px solid black;
+            height: 90px;
+        }
+        .item {
+            width: 15px;
+            height: 45px;
+
+            /* make sure UA that doesn't support writing mode and flexbox fails. */
+            float: right;
+        }
+    

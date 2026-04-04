@@ -1,0 +1,10 @@
+
+    .outer {
+      color: red;
+    }
+
+    .inner {
+      all: inherit;
+      color: green;
+    }
+  

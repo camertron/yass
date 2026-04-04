@@ -1,0 +1,16 @@
+
+        .rows {
+            border: 1px solid black;
+            display: inline-grid;
+            grid-auto-flow: column;
+            grid-template-rows: [u] repeat(auto-fill, [v] 10px [w] 10px [x] 10px [y]) [z];
+            grid-auto-columns: 5px;
+            grid-row-gap: 3px;
+            width: min-content;
+            /* Does not fit a whole-number of repetitions */
+            height: 94px;
+        }
+        div > div {
+            background: blue;
+        }
+    

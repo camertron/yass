@@ -1,0 +1,18 @@
+
+.parent {
+  display: block;
+  width: 600px;
+  height: 300px;
+}
+html.no-parent-height .parent {
+  height: auto;
+}
+.target {
+  display: block;
+}
+.target::before {
+  display: block;
+  content: "";
+  width: 23px;
+  height: 100px;
+}

@@ -1,0 +1,5 @@
+
+  :root {
+    contain: style;
+    counter-increment: a1;
+  }

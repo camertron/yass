@@ -1,0 +1,10 @@
+
+  #scope {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+  }
+
+  .explicit-all {
+    view-transition-scope: all;
+  }

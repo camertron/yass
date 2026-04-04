@@ -1,0 +1,6 @@
+
+  div { display: inline; }
+  ::target-text {
+    color: darkgrey;
+    background-color: orange;
+  }

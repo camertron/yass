@@ -1,0 +1,13 @@
+
+  @font-face {
+    font-family: Foo;
+    src: url(notfound.ttf);
+  }
+  @font-palette-values --foo {
+    font-family: Foo;
+    override-colors: 0 lch(from blue calc(0.5 * l) c h);
+  }
+  #target {
+    font-family: Foo;
+    font-palette: --foo;
+  }

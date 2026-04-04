@@ -1,0 +1,7 @@
+
+  :root::selection {
+    --background-color: red;
+  }
+  div::selection {
+    background-color: var(--background-color, green);
+  }

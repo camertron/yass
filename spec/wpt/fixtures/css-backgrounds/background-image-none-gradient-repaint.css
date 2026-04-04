@@ -1,0 +1,11 @@
+
+  #box {
+    width: 150px;
+    height: 150px;
+  }
+  .red {
+    background: none, linear-gradient(to right, red, red);
+  }
+  .green {
+    background: none, linear-gradient(to right, green, green);
+  }

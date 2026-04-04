@@ -1,0 +1,20 @@
+
+     .container {
+          position: absolute;
+          z-index: 11;
+          height: 100px;
+          width: 100px;
+          background-color:green;
+          margin-top: 200px;
+          transform: scaleY(2);
+      }
+
+      .hidden {
+          position: absolute;
+          z-index: 10;
+          height: 200px;
+          width: 100px;
+          background-color:red;
+          margin-top: 150px;
+      }
+  

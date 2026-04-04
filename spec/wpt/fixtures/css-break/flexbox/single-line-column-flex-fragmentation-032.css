@@ -1,0 +1,11 @@
+
+  #flex {
+    display: flex;
+    flex-direction: column;
+    background: green;
+    height: 50px;
+  }
+  #flex > div {
+    width: 50px;
+    background: green;
+  }

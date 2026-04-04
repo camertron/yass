@@ -1,0 +1,12 @@
+
+body {
+    margin: 0;
+}
+
+.testcase {
+    position: absolute;
+}
+
+.testcase div {
+    background-color: green;
+}

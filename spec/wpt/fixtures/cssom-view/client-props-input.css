@@ -1,0 +1,12 @@
+
+  input, textarea {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 200px;
+    width: 300px;
+    border-style: solid;
+    border-width: 10px 20px;
+    padding: 2px;
+    box-sizing: content-box;
+  }
+  .block { display: block; }

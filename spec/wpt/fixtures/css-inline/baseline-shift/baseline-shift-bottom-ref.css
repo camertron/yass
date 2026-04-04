@@ -1,0 +1,15 @@
+
+    #line {
+      position: relative;
+      height: 100px;
+    }
+
+    #line > * {
+      position: absolute;
+      background: black;
+    }
+
+    #e1 { left: 0; bottom: 0; }
+    #e2 { left: 120px; bottom: 0; }
+    #e3 { left: 200px; bottom: 0; }
+  

@@ -1,0 +1,13 @@
+
+  body {
+    text-align: end;
+  }
+
+  p {
+    text-align: left;
+  }
+
+  div {
+    border: 1px solid blue;
+    text-align: match-parent;
+  }

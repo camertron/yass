@@ -1,0 +1,41 @@
+
+:root {
+  font: 12px/1 Ahem;
+}
+
+.target {
+  contain: paint;
+  inline-size: 100px;
+  block-size: 40000px;
+  view-transition-name: target;
+}
+
+.top {
+  /* Ahem font sometimes causes slight difference between actual and reference
+    images due to anti-aliasing when bordering the white background in this
+    case. Adding a padding reduces the test flakiness. */
+  padding-top: 1px;
+  inline-size: 100%;
+  block-size: 100px;
+  background: lightblue;
+}
+
+.middle {
+  inline-size: 100%;
+  block-size: 39800px;
+  background: green;
+}
+
+.bottom {
+  inline-size: 100%;
+  block-size: 100px;
+  background: blue;
+}
+
+.hidden {
+  contain: paint;
+  inline-size: 10px;
+  block-size: 10px;
+  background: grey;
+  visibility: hidden;
+}

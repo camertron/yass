@@ -1,0 +1,16 @@
+
+.multicol {
+  width: 0px;
+  column-count: 2;
+  column-gap: 0px;
+}
+
+.relative-layer {
+  position: relative;
+}
+
+.child {
+  width: 100px;
+  height: 200px;
+  background: green;
+}

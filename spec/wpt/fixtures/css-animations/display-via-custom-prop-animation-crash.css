@@ -1,0 +1,17 @@
+
+  :root {
+    --disp: block;
+  }
+
+  @keyframes switch {
+    0% { --disp: none; }
+    100% { --disp: block; }
+  }
+
+  #target {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    animation: switch 0.5s;
+    display: var(--disp);
+  }

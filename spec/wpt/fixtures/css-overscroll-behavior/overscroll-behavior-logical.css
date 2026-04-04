@@ -1,0 +1,15 @@
+
+div {
+  overscroll-behavior-block: contain;
+  overscroll-behavior-inline: none;
+}
+#horizontal {
+  writing-mode: horizontal-tb;
+}
+#vertical {
+  writing-mode: vertical-rl;
+}
+#horizontalreversed {
+  writing-mode: horizontal-tb;
+  direction: rtl;
+}

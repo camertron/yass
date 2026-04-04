@@ -1,0 +1,8 @@
+
+.item {
+  counter-reset: reversed(foo);
+}
+.item::before {
+  counter-increment: foo -2;
+  content: counter(foo);
+}

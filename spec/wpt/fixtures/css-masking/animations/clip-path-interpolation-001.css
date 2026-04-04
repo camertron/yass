@@ -1,0 +1,8 @@
+
+.parent {
+  clip-path: circle(80% at 30% 10%);
+}
+
+.target {
+  clip-path: circle(60% at 10% 30%);
+}

@@ -1,0 +1,10 @@
+
+  :not(:placeholder-shown) + #t1,
+  :placeholder-shown + #t2,
+  :placeholder-shown + #t3,
+  :placeholder-shown + #t4,
+  :not(:placeholder-shown) + #t5,
+  :not(:placeholder-shown) + #t6,
+  :not(:placeholder-shown) + #t7 {
+    color: green;
+  }

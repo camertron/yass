@@ -1,0 +1,18 @@
+
+  .container { container-type: inline-size; }
+  #target { display: list-item; }
+  @container (max-width: 200px) {
+    #target::before { content: "PASS"; color: green; }
+    #target::after { color: green; }
+    #target::marker { color: green; }
+    #target::first-line { color: green; }
+    #target::first-letter { color: green; }
+  }
+  @container ((min-width: 300px) and (max-width: 350px)) {
+    #outer::first-line { color: green; }
+    #outer::first-letter { color: green; }
+  }
+  dialog::backdrop { background-color: lime; }
+  @container (max-width: 100px) {
+    dialog::backdrop { background-color: green; }
+  }

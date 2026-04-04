@@ -1,0 +1,9 @@
+
+body {
+  color: orange;
+}
+p {
+  color: red;
+  --0: green;
+  color: var(--0);
+}

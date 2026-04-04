@@ -1,0 +1,9 @@
+
+div {
+    border: solid;
+    width: min-content;
+    white-space: nowrap;
+}
+.br { border-color: blue; }
+.end-of-element { border-color: orange; }
+

@@ -1,0 +1,13 @@
+
+	@font-face {
+		font-family: Lato;
+		src: url(support/fonts/Lato-Medium.ttf);
+	}
+  .test {
+    font-size: 4em;
+    font-variant-ligatures: common-ligatures;
+    font-feature-settings: "liga" on, "clig" on;
+    margin-left: 1em;
+    font-family: Lato;
+  }
+

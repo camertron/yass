@@ -1,0 +1,43 @@
+
+  button {
+    border: 1em solid green;
+    margin: 0;
+    /* In case the testcase's 'inner' text is taller than the button, don't let
+       it influence its line-box's size.  This lets us more-easily compare
+       sizing between empty buttons vs. contained nonempty buttons. */
+    vertical-align: top;
+  }
+  .vaBaseline {
+    vertical-align: baseline;
+  }
+  .width-ref {
+    width: 50px;
+  }
+  .height-ref {
+    height: 50px;
+    background: lightblue;
+  }
+  .floatLBasic-ref {
+    float: left;
+  }
+  .floatLWidth-ref {
+    float: left;
+    width: 50px;
+  }
+  br { clear: both }
+  .iFlexBasic-ref {
+    display: inline-flex;
+  }
+  .iFlexWidth-ref {
+    display: inline-flex;
+    width: 50px;
+  }
+  .innerContents {
+    color: transparent;
+    height: 0;
+    width: 0;
+  }
+  .orthog-ref {
+    writing-mode: vertical-lr;
+  }
+  

@@ -1,0 +1,14 @@
+
+  #outer, #inner1, #inner2 {
+    width: 200px;
+    container-type: inline-size;
+  }
+  #inner1 {
+    display: table;
+  }
+  p {
+    color: green;
+  }
+  @container (min-width: 1px) {
+    p { color: red; }
+  }

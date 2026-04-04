@@ -1,0 +1,19 @@
+
+body { margin: 0; }
+#anchor {
+  width: 100px;
+  height: 100px;
+  margin-left: 200px;
+  margin-top: 200px;
+  color: orange;
+  anchor-name: --a;
+}
+
+.target {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  color: lime;
+  position-try-fallbacks: --fallback;
+  left: 999999px; /* force fallback */
+}

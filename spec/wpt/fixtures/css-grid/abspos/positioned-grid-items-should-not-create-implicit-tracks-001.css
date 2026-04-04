@@ -1,0 +1,21 @@
+
+
+.grid {
+  grid-auto-columns: 100px;
+  grid-auto-rows: 50px;
+  width: 400px;
+  height: 300px;
+  /* Ensures that the grid container is the containing block of the absolutely positioned grid children. */
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.seventhRowFourthColumn {
+  background-color: coral;
+  grid-column: 4;
+  grid-row: 7;
+}
+

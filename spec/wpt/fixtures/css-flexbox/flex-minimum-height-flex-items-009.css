@@ -1,0 +1,14 @@
+
+.container {
+  height: 300px;
+  outline: 2px solid black;
+}
+
+.inner
+{
+  width: 400px;
+  flex: 1;
+  background-color: green;
+}
+#container2 .flexbox > * { flex-basis: 0; }
+#container2 .column > * { flex-basis: auto; }

@@ -1,0 +1,11 @@
+
+  div {
+    font-size: 10px;
+    overflow: hidden;
+    text-overflow: "שלום 1234";
+    width: 150px;
+  }
+  span {
+    font-family: Ahem;
+    font-size: 30px;
+  }

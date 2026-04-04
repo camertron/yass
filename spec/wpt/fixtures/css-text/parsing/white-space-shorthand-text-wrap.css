@@ -1,0 +1,27 @@
+
+.balance {
+  text-wrap: balance;
+}
+
+
+#text-wrap-after-white-space {
+  white-space: normal;
+  text-wrap: balance;
+}
+
+
+#white-space-after-text-wrap-balance {
+  text-wrap: balance;
+  white-space: normal;
+}
+
+
+#white-space-after-text-wrap-nowrap {
+  text-wrap: nowrap balance;
+  white-space: normal;
+}
+
+
+.normal {
+  white-space: normal;
+}

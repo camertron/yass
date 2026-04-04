@@ -1,0 +1,9 @@
+
+.container {
+  font-family: monospace;
+  font-size: 20px;
+  inline-size: 15ch;
+  border: 1px solid;
+  overflow-wrap: break-word;
+  text-wrap: balance;
+}

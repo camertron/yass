@@ -1,0 +1,15 @@
+
+div {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  top: 0;
+  left: 0;
+  background: red;
+}
+.outer {
+  position: relative;
+}
+.outer, .sibling {
+  transform-style: preserve-3d;
+}

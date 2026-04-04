@@ -1,0 +1,8 @@
+
+      div {
+        margin: 2px;
+        width: 200px;
+        height: 200px;
+        background-image: cross-fade(color(srgb 1.0 0.0 0.0 / 0.01), color(srgb 0.0 1.0 0.0 / 1.0))
+      }
+    

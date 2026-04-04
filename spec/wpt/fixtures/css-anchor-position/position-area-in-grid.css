@@ -1,0 +1,31 @@
+
+  #container {
+    display: grid;
+    grid: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    outline: 1px solid;
+  }
+
+  #anchor {
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    width: 150px;
+    height: 75px;
+    anchor-name: --anchor;
+    background: blue;
+  }
+
+  #anchored {
+    grid-row-start: 2;
+    grid-row-end: span 2;
+    grid-column-start: 3;
+    grid-column-end: auto;
+    position: absolute;
+    align-self: stretch;
+    justify-self: stretch;
+    position-anchor: --anchor;
+    border: solid orange;
+  }

@@ -1,0 +1,15 @@
+
+body {
+  columns: 2;
+  --iframe-width: 256px;
+  --iframe-height: 128px;
+  --scale: 1;
+}
+iframe {
+  border: none;
+  width: calc(var(--iframe-width) * var(--scale));
+  height: calc(var(--iframe-height) * var(--scale));
+}
+.scale {
+  --scale: 1.5;
+}

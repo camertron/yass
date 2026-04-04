@@ -1,0 +1,10 @@
+
+fieldset {
+  color: red;
+}
+.contents {
+  display: contents;
+  color: green;
+  border: 10px solid red;
+  unicode-bidi: normal;
+}

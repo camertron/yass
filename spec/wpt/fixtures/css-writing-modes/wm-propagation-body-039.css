@@ -1,0 +1,18 @@
+
+  html
+    {
+      writing-mode: horizontal-tb;
+    }
+
+  body
+    {
+      writing-mode: sideways-lr;
+    }
+
+  div
+    {
+      background-color: teal;
+      height: 100px;
+      width: 100px;
+    }
+  

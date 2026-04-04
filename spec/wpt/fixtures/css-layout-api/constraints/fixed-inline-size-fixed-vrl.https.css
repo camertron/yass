@@ -1,0 +1,13 @@
+
+.test {
+  background: red;
+  height: 100px;
+  writing-mode: vertical-rl;
+}
+
+@supports (display: layout(test)) {
+  .test {
+    background: green;
+    display: layout(test);
+  }
+}

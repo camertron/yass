@@ -1,0 +1,11 @@
+
+    .target {
+        width: 200px;
+        height: 200px;
+        box-sizing: border-box;
+        corner-shape: bevel notch squircle scoop;
+        border-radius: 20%;
+        background: green;
+        border: 20px solid purple;
+        box-shadow: -5px 5px 0 10px blue inset;
+    }

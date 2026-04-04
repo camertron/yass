@@ -1,0 +1,9 @@
+
+  #container {
+    container-name: --bar;
+    --foo: bar;
+  }
+  #target { color: red; }
+  @container --baz style(--foo: bar) {
+    #target { color: green; }
+  }

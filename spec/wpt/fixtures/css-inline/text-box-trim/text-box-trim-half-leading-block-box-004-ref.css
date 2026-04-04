@@ -1,0 +1,9 @@
+
+.div-parent {
+  outline: 1px solid orange;
+  font: 20px/3 Ahem;
+}
+.inner {
+  margin: -10px;
+  padding: 10px;
+}

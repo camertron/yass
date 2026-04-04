@@ -1,0 +1,6 @@
+
+  input { background-color: green; }
+  input::placeholder {
+    color: green;
+    background-color: inherit;
+  }

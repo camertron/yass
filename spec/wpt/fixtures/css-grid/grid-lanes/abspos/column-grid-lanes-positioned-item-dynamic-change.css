@@ -1,0 +1,17 @@
+
+    .grid-lanes {
+        display: grid-lanes;
+        grid-template-columns: 75px 25px;
+        position: relative;
+    }
+
+    .absolute {
+        background: green;
+        position: absolute;
+        grid-column: 2 / 3;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+  

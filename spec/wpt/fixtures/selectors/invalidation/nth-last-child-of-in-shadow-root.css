@@ -1,0 +1,5 @@
+
+      div:nth-last-child(even of .foo) {
+        color: green;
+      }
+    

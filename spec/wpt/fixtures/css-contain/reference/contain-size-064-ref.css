@@ -1,0 +1,7 @@
+
+div { font-size: 50px; }
+.green { background: green; }
+.grid {
+    display: grid;
+    grid-template-columns: min-content max-content;
+}

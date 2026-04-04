@@ -1,0 +1,13 @@
+
+  .outer {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border: solid;
+  }
+
+  .outer>div {
+    position: absolute;
+    margin: auto;
+    background: lime;
+  }

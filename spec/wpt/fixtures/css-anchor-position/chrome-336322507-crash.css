@@ -1,0 +1,7 @@
+
+  #crash {
+    --grad: linear-gradient(black, white);
+    background: var(--grad);
+    position: absolute;
+    top: anchor(center);
+  }

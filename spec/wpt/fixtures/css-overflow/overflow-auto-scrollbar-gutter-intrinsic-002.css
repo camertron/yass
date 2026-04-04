@@ -1,0 +1,16 @@
+
+  .line {
+    display: flex;
+  }
+  .container {
+    block-size: 50px;
+    border: 5px solid black;
+    overflow: auto;
+    scrollbar-gutter: stable both-edges;
+    margin: 10px;
+  }
+  .tall {
+    /* trigger overflow */
+    block-size: 5000px;
+  }
+  

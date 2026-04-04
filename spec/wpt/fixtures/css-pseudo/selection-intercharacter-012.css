@@ -1,0 +1,17 @@
+
+  div
+    {
+      font-size: 48px;
+      letter-spacing: 1em;
+    }
+
+  div::selection
+    {
+      background-color: yellow;
+    }
+
+  span::selection
+    {
+      background-color: orange;
+    }
+  

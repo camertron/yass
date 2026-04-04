@@ -1,0 +1,7 @@
+
+input:user-valid {
+  color: rgb(0, 255, 0);
+}
+input:user-invalid {
+  background-color: rgb(255, 0, 0);
+}

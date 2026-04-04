@@ -1,0 +1,15 @@
+
+span {
+  outline: solid green 10px;
+  color: green;
+}
+div {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  line-height: 40px;
+  font-size: 40px;
+  background: red;
+  font-family: Ahem;
+}

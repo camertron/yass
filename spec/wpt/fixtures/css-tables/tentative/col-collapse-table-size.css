@@ -1,0 +1,26 @@
+
+
+  main table {
+    right: 0;
+    display:inline-table;
+    border: 1px solid black;
+  }
+  main col {
+    visibility:collapse;
+  }
+  main td {
+    width: 200px;
+    height: 20px;
+  }
+  main caption {
+    background: yellow;
+  }
+  main td:nth-child(1) {
+    background: rgba(255,0,0,0.2);
+  }
+  main td:nth-child(2) {
+    background: rgba(200,200,200,1.0);
+  }
+  main table:hover col {
+    visibility: visible;
+  }

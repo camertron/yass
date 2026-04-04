@@ -1,0 +1,22 @@
+
+  .outer {
+    display: flex;
+  }
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    inline-size: 100px;
+  }
+
+  .item {
+    overflow: hidden; /* This is essential to reproduce the bug. */
+    min-block-size: 100px;
+    background: red;
+  }
+
+  .child {
+    block-size: 100%;
+    background: green;
+  }
+  

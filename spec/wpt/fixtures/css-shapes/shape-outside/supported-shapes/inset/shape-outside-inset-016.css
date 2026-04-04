@@ -1,0 +1,29 @@
+
+  .container {
+    width: 200px;
+    line-height: 0;
+  }
+
+  .shape {
+    float: left;
+    shape-outside: inset(20px) border-box;
+    clip-path: inset(20px) border-box;
+    box-sizing: content-box;
+    height: 40px;
+    width: 40px;
+    padding: 20px;
+    border: 20px solid lightgreen;
+    margin: 20px;
+    background-color: orange;
+  }
+
+  .box {
+    display: inline-block;
+    width: 60px;
+    background-color: blue;
+  }
+
+  .long {
+    width: 200px;
+  }
+  

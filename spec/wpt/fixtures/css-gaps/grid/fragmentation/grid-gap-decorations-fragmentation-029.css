@@ -1,0 +1,25 @@
+
+  body {
+    margin: 0px;
+  }
+  .multi-col {
+    columns: 2;
+    height: 220px;
+    width: 690px;
+    column-gap: 0;
+    column-fill: auto;
+  }
+  .container {
+    display: grid;
+    grid-template: repeat(3, 100px) / repeat(3, 100px);
+    gap: 20px;
+    rule: 6px solid;
+    column-rule-color: rgba(128 0 0 / 0.5);
+    row-rule-color: rgba(0 0 128 / 0.5);
+    rule-visibility-items: between;
+    rule-break: intersection;
+    rule-inset: overlap-join;
+  }
+  .item {
+    background: rgba(192 192 192 / 0.75);
+  }

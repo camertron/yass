@@ -1,0 +1,37 @@
+
+      @mixin --m1() {
+        @result {
+        color: green;
+        & {
+          --foo: bar;
+        }
+        }
+      }
+    
+
+       #foo {
+         @apply --m1;
+       }
+    
+
+      @mixin --m2() {
+        @result {
+          @contents
+        }
+      }
+    
+
+      #foo {
+        color: red;
+        @apply --m2 { color: green; }
+      }
+    
+
+    
+
+      @mixin --m3(--arg type(<length>): 1em, --other-arg) {
+        @result {
+          margin-left: var(--arg);
+        }
+      }
+    

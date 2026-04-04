@@ -1,0 +1,5 @@
+
+iframe {
+  border: none;
+  contain-intrinsic-block-size: from-element 100px;
+}

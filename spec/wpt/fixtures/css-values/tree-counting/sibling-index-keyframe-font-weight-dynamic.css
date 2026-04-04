@@ -1,0 +1,12 @@
+
+  @keyframes --anim {
+    from {
+      font-weight: calc(100 * sibling-index());
+    }
+    to {
+      font-weight: 600;
+    }
+  }
+  #target {
+    animation: --anim 1000s step-end;
+  }

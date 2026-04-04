@@ -1,0 +1,21 @@
+
+  body
+    {
+      font-size: 60px;
+    }
+
+  ruby
+    {
+      background: lightblue;
+    }
+
+  span#rbc
+    {
+      display: ruby-base-container;
+    }
+
+  rtc
+    {
+      display: ruby-text-container;
+    }
+  

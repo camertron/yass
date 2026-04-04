@@ -1,0 +1,17 @@
+
+.spacer {
+  height: 40px;
+  background: lightgray;
+}
+.target {
+  font: 40px/2 Ahem;
+  text-box-trim: trim-both;
+  text-box-edge: text;
+}
+em {
+  text-emphasis: dot;
+  text-emphasis-position: over;
+}
+em + em {
+  text-emphasis-position: under;
+}

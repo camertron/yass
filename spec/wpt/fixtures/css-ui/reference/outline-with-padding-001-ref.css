@@ -1,0 +1,11 @@
+
+inline-block {
+  display: inline-block;
+  width: 65px;
+  color: transparent;
+  background: orange;
+}
+spacer {
+  display: inline-block;
+  width: 99px;
+}

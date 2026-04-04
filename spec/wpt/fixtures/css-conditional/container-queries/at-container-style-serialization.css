@@ -1,0 +1,18 @@
+
+  @container style(        --foo:bar) { }
+  @container STyle(--foo:    ) { }
+  @container STyle(--foo:) { }
+  @container STyle(--foo) { }
+  @container  style(  ( --FOO: BAR) OR ( prop: val  ) ) { }
+  @container style (--foo: bar) { }
+  @container style(--foo: bar   baz) { }
+  @container style(--foo:2.100  ) { }
+
+  /* extra levels of parentheses */
+  @container style((--foo: bar)) { }
+  @container style(((--foo: bar))) { }
+  @container style(( (  (( (--foo )) )  ))) { }
+  @container style((not ((--foo: BAR)))) { }
+  @container style(((--FOO: BAR)) and (--bar: foo)) { }
+  @container style((((--foo) or ((--bar)))) and ((--baz)) and ((not ((--xyzzy))))) { }
+  @container style((((--a: b) or ((b: a)))) and ((--baz)) and ((not ((x: y))))) { }

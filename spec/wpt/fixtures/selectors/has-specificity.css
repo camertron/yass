@@ -1,0 +1,24 @@
+
+  main :has(#foo) { --t0:PASS; }
+  main :has(.foo) { --t0:FAIL; }
+
+  main :has(span#foo) { --t1:PASS; }
+  main :has(#foo) { --t1:FAIL; }
+
+  main :has(.bar, #foo) { --t2:FAIL; }
+  main :has(#foo, .bar) { --t2:PASS; }
+
+  main :has(.bar, #foo) { --t3:PASS; }
+  main :has(.foo, .bar) { --t3:FAIL; }
+
+  main :has(span + span) { --t4:PASS; }
+  main :has(span) { --t4:FAIL; }
+
+  main :has(span, li, #foo) { --t5:PASS; }
+  main :has(span, li, p) { --t5:FAIL; }
+
+  main div:has(.foo) { --t6:FAIL; }
+  main div.baz { --t6:PASS; }
+
+  main div.baz { --t7:FAIL; }
+  main div:has(.foo) { --t7:PASS; }

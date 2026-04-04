@@ -1,0 +1,15 @@
+
+  body {
+    background-color: green;
+  }
+  [popover] {
+    display: block;
+    visibility: hidden;
+    transition-delay: 2s;
+    transition-property: overlay;
+    transition-duration: 2s;
+    transition-behavior: allow-discrete;
+  }
+  [popover]::backdrop {
+    background-color: blue;
+  }

@@ -1,0 +1,11 @@
+
+  #shape {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    clip-path: shape(from top left,
+                    hline to center,
+                    vline to center,
+                    hline to left,
+                    close);
+  }

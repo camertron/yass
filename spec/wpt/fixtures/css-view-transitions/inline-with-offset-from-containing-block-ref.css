@@ -1,0 +1,18 @@
+
+  :root {
+    scrollbar-width: none;
+    font: 20px/1 Ahem;
+  }
+  .outer {
+    transform: scale3d(2, 2, 1);
+    width: 100vw;
+    text-align: center;
+  }
+  .inner {
+    transform: translate(10px);
+    padding: 10px;
+    border: 10px solid black;
+  }
+  body {
+    background: pink;
+  }

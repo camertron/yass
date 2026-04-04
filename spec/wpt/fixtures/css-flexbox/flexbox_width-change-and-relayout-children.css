@@ -1,0 +1,9 @@
+
+.flexitem {
+    width: 100%;
+    height: 3em;
+    min-height: 3em;
+}
+.child {
+    background-color: salmon;
+}

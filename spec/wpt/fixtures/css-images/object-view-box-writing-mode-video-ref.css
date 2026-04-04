@@ -1,0 +1,14 @@
+
+html {
+  writing-mode: vertical-lr;
+}
+.container_view_box_subset {
+  width: 50px;
+  height: 75px;
+  overflow: hidden;
+  display: inline-block;
+}
+.view_box_subset {
+  position: relative;
+  top: -25px;
+}

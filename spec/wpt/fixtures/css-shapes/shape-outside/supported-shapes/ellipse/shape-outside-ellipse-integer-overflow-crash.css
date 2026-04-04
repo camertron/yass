@@ -1,0 +1,6 @@
+
+.a {
+  float: left;
+  min-height: 99vw;
+  shape-outside: ellipse(61% 100% at 34% 62%);
+}

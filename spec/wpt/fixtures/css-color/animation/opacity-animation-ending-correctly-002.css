@@ -1,0 +1,18 @@
+
+#test {
+  position: sticky;
+  top: 0;
+  height: 50px;
+  background: blue;
+  transform: translate(0);
+  filter: grayscale(0%);
+  transition: opacity 50ms step-start;
+}
+
+#test.fade {
+  opacity: 0.2;
+}
+
+.tall {
+  height: 5000px;
+}

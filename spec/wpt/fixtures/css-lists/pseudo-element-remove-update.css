@@ -1,0 +1,8 @@
+
+body {
+  counter-reset: myCounter;
+}
+div::before {
+  content: counter(myCounter);
+  counter-increment: myCounter;
+}

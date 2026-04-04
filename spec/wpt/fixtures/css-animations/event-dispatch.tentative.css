@@ -1,0 +1,13 @@
+
+@keyframes anim {
+  from { margin-left: 0px; }
+  to { margin-left: 100px; }
+}
+@keyframes anim2 {
+  from { margin-top: 100px; }
+  to { margin-top: 200px; }
+}
+@keyframes anim3 {
+  from { padding-left: 100px; }
+  to { padding-left: 200px; }
+}

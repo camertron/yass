@@ -1,0 +1,30 @@
+
+:root {
+  writing-mode: vertical-lr;
+}
+
+.target {
+  position: fixed;
+  inset-block-start: -90px;
+  inline-size: 100px;
+  block-size: 40000px;
+  view-transition-name: target;
+}
+
+.top {
+  inline-size: 100%;
+  block-size: 100px;
+  background: lightblue;
+}
+
+.middle {
+  inline-size: 100%;
+  block-size: 39800px;
+  background: green;
+}
+
+.bottom {
+  inline-size: 100%;
+  block-size: 100px;
+  background: blue;
+}

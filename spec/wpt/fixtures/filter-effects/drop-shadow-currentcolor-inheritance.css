@@ -1,0 +1,12 @@
+
+#filter {
+    color: red;
+    filter: drop-shadow(100px 0px 0px currentcolor);
+}
+#target {
+  background-color: black;
+  color: green;
+  width: 100px;
+  height: 100px;
+  filter: inherit;
+}

@@ -1,0 +1,23 @@
+
+  body,html { color:black; background:white; font:15px/1 monospace; padding:0; margin:0; }
+
+  .grid {
+    display: grid-lanes;
+    position: relative;
+    border: 1px solid;
+    grid-template-columns: [A-start] 60px 60px 60px;
+    grid-template-areas: "B A";
+    grid-auto-columns: 40px;
+    gap: 0 1px;
+  }
+
+  x {
+    background: grey;
+  }
+
+  y {
+    position: absolute;
+    border: 1px solid blue;
+    bottom:0;height:0;left:0;right:0;
+    grid-row-end:span 1!important;
+  }

@@ -1,0 +1,24 @@
+
+        #ref-overlapped-red {
+            background-color: red;
+            height: 160px;
+            width: 160px;
+        }
+        #test-overlapping-img {
+            background-image: url(support/100x100-blue-and-orange.png);
+            background-origin: border-box;
+            background-size: 50% auto;
+            border: transparent dotted 5px;
+            bottom: 160px;
+            height: 100px;
+            padding: 25px;
+            position: relative;
+            width: 100px;
+
+            /*
+            Background positioning area is 160px wide by 160px tall.
+            So, the image should be scaled to 80px by 80px (near),
+            and repeated once in both horizontally and vertically.
+            */
+        }
+    

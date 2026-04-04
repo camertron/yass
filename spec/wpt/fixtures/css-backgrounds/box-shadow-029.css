@@ -1,0 +1,19 @@
+
+  div#green-overlapping-test
+    {
+      background-color: red;
+      height: 0px;
+      width: 0px;
+
+      box-shadow: green 50px 50px 0px 50px;
+    }
+
+  div#red-overlapped-reference
+    {
+      background-color: red;
+      height: 100px;
+      position: relative;
+      width: 100px;
+      z-index: -1;
+    }
+  

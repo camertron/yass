@@ -1,0 +1,228 @@
+
+    @function --f() {
+      --x: 3px;
+      result: if(style(--x: 3px): PASS; else: FAIL;);
+    }
+    #target {
+      --x: 1px;
+      --actual: --f();
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      --x: 3px;
+      result: if(style(--y: var(--x)): PASS; else: FAIL;);
+    }
+    #target {
+      --x: 1px;
+      --y: 3px;
+      --actual: --f();
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      --x: PASS;
+      result: if(style(--true): var(--x); else: FAIL;);
+    }
+    #target {
+      --true: true;
+      --x: FAIL;
+      --actual: --f();
+      --expected: PASS;
+    }
+  
+
+    @function --f(--x) {
+      result: if(style(--x: 3px): PASS; else: FAIL;);
+    }
+    #target {
+      --x: 1px;
+      --actual: --f(3px);
+      --expected: PASS;
+    }
+  
+
+    @function --f(--x) {
+      result: if(style(--y: var(--x)): PASS; else: FAIL;);
+    }
+    #target {
+      --x: 1px;
+      --y: 3px;
+      --actual: --f(3px);
+      --expected: PASS;
+    }
+  
+
+    @function --f(--x) {
+      result: if(style(--true): var(--x); else: FAIL;);
+    }
+    #target {
+      --true: true;
+      --x: FAIL;
+      --actual: --f(PASS);
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      result: if(style(--true): --g(); else: FAIL;);
+    }
+    @function --g() {
+      result: PASS;
+    }
+    #target {
+      --true: true;
+      --actual: --f();
+      --expected: PASS;
+    }
+  
+
+    @function --f(--x) {
+      --true: true;
+      result: if(style(--true): --g(var(--x)); else: FAIL;);
+    }
+    @function --g(--x) {
+      result: var(--x, FAIL);
+    }
+    #target {
+      --actual: --f(PASS);
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      --x: if(style(--true): var(--x); else: FAIL;);
+      result: var(--x, PASS);
+    }
+    #target {
+      --true: true;
+      --x: FAIL;
+      --actual: --f();
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      --x: if(style(--x): FAIL1; else: FAIL2;);
+      result: var(--x, PASS);
+    }
+    #target {
+      --x: 1px;
+      --actual: --f();
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      --x: if(style(--y: var(--x)): FAIL1; else: FAIL2;);
+      result: var(--x, PASS);
+    }
+    #target {
+      --y: 1px;
+      --x: 1px;
+      --actual: --f();
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      --local: --g();
+      result: var(--local);
+    }
+    @function --g() {
+      result: if(style(--true): --f());
+    }
+    #target {
+      --true: true;
+      --local: FAIL;
+      --tmp: --f();
+      --actual: var(--tmp, PASS);
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      --x: 3px;
+      result: if(style(--x): PASS; else: FAIL);
+    }
+    #target {
+      --x: var(--x);
+      --actual: --f();
+      --expected: PASS;
+    }
+  
+
+    @function --f(--x) {
+      result: if(style(--x): PASS; else: FAIL);
+    }
+    #target {
+      --x: var(--x);
+      --actual: --f(3px);
+      --expected: PASS;
+    }
+  
+
+    @function --f(--c: green) {
+      result: if(style(--c: initial): PASS; else: FAIL);
+    }
+    @function --g() {
+      --c: red;
+      result: --f();
+    }
+    #target {
+      --actual: --g();
+      --expected: PASS;
+    }
+  
+
+    @function --f(--c: red) {
+      --c: green;
+      result: if(style(--c: inherit): PASS; else: FAIL);
+    }
+    @function --g() {
+      --c: green;
+      result: --f();
+    }
+    #target {
+      --actual: --g();
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      result: if(style(--c: initial): PASS; else: FAIL);
+    }
+    #target {
+      --actual: --f();
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      result: if(style(--c: unset): PASS; else: FAIL);
+    }
+    #target {
+      --actual: --f();
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      result: if(style(--c: revert): FAIL; else: PASS);
+    }
+    #target {
+      --actual: --f();
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      result: if(style(--c: revert-layer): FAIL; else: PASS);
+    }
+    #target {
+      --actual: --f();
+      --expected: PASS;
+    }
+  

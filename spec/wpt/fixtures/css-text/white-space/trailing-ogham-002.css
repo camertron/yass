@@ -1,0 +1,9 @@
+
+div {
+    border: solid;
+    width: min-content;
+    white-space: pre-line;
+}
+.soft-wrap { border-color: blue; }
+.hard-break { border-color: orange; }
+

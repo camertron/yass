@@ -1,0 +1,51 @@
+
+html,body {
+  color:black; background-color:white; font:16px/1 monospace;
+}
+
+input { margin: 2px; }
+
+input.i {
+  min-width: 0;
+  background: lime;
+}
+
+input.mi {
+  min-width: 0;
+  max-width: 100%;
+  width: max-content;
+  background: lime;
+}
+
+.n {
+  -webkit-appearance: none;
+}
+
+div {
+  display: inline-block;
+  border:1px solid;
+}
+
+.grid {
+  display: inline-grid;
+  grid: auto / min-content;
+  place-items: start;
+}
+
+.outerFlex {
+  display: flex;
+  width: 100px;
+  border: 1px solid black;
+}
+.innerFlex {
+  display: grid;
+  border: 1px solid pink;
+}
+.innerFlex > input {
+  min-width: 0;
+  justify-self: stretch;
+  background: yellow;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+

@@ -1,0 +1,34 @@
+
+.old {
+  width: 50vw;
+  height: 100vh;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background: blue;
+}
+
+.new {
+  width: 50vw;
+  height: 100vh;
+  position: fixed;
+  left: 50vw;
+  top: 0px;
+  background: grey;
+}
+
+html {
+    overflow: scroll;
+}
+@layer {
+    ::-webkit-scrollbar {
+        background-color: hsl(0, 100%, 10%);
+        color: hsl(0, 100%, 90%);
+    }
+    ::-webkit-scrollbar-thumb {
+        background-color: hsl(0, 100%, 50%);
+    }
+    ::-webkit-scrollbar-corner {
+        background-color: hsl(0, 100%, 0%);
+    }
+}

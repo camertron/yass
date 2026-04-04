@@ -1,0 +1,10 @@
+
+  #script {
+    display: none;
+  }
+
+  @media (scripting) {
+    #script {
+      display: block;
+    }
+  }

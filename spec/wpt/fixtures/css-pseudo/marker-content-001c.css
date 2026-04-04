@@ -1,0 +1,13 @@
+
+li::marker {
+  content: "1.\00a0";
+  display: block;
+  margin: 0 auto 0 auto;
+}
+li:nth-of-type(2)::marker {
+  content: "2.\00a0";
+}
+li:nth-child(3)::marker {
+  content: "3.\00a0";
+}
+span { font-size: 32pt; }

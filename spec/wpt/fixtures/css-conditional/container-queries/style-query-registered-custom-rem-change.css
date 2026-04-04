@@ -1,0 +1,14 @@
+
+  @property --length {
+    syntax: "<length>";
+    initial-value: 0px;
+    inherits: false;
+  }
+
+  :root, body { font-size: 16px; }
+  #container { --length: 100px; }
+
+  #target { color: red; }
+  @container style(--length: calc(1rem * 10)) {
+    #target { color: green; }
+  }

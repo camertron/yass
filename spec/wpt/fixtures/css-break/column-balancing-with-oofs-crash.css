@@ -1,0 +1,12 @@
+
+  .multicol {
+    column-count: 2;
+    width: 200px;
+  }
+  .relpos {
+    position: relative;
+  }
+  .abspos {
+    height: 25%;
+    position: absolute;
+  }

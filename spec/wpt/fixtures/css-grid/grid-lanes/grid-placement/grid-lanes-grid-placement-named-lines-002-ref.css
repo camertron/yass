@@ -1,0 +1,22 @@
+
+  body,html { color:black; background:white; font:15px/1 monospace; padding:0; margin:0; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 40px 40px 40px 60px 60px 60px 40px 40px 40px 40px 40px 40px 40px;
+    position: relative;
+    border: 1px solid;
+    grid-auto-flow: dense;
+    column-gap: 1px;
+  }
+
+  x {
+    background: grey;
+  }
+
+  y {
+    position: absolute;
+    border: 1px solid blue;
+    top:0;height:0;left:0;right:0;
+    grid-row-end:span 1!important;
+  }

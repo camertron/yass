@@ -1,0 +1,13 @@
+
+     div {
+         color: transparent;
+         padding: 40px;
+         box-shadow: 10px 5px 5px currentcolor;
+     }
+
+     p {
+         padding: 2em;
+         border: 1px solid currentcolor;
+         box-shadow: inherit;
+     }
+    

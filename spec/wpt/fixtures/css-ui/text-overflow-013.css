@@ -1,0 +1,26 @@
+
+.test {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre;
+  font: 100px/1 Ahem;
+  color: green;
+
+  /* 2em width and starting with a space
+     because the handling of the ellipsis of the first character on the line is special,
+     and therefore we need to have the thing we want to test in non first position.
+   */
+  width: 2em;
+}
+.red {
+  position: absolute;
+  z-index: -1;
+  width: 100px;
+  height: 100px;
+  background: red;
+  margin-left: 100px; /* moving right to skip the first 100x100 space that starts each line */
+}
+span {
+  vertical-align: sub;
+  color: red;
+}

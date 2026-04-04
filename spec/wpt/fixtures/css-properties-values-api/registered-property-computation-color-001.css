@@ -1,0 +1,13 @@
+
+@property --x {
+  inherits: true;
+  initial-value: black;
+  syntax: "<color>";
+}
+div {
+  color-scheme: dark;
+  --x: light-dark(red, green);
+  background-color: var(--x);
+  width: 100px;
+  height: 100px;
+}

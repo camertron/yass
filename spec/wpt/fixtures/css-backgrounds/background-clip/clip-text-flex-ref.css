@@ -1,0 +1,11 @@
+
+.clip {
+  font-size: 80px;
+  color: green;
+}
+.flex {
+    display: flex;
+}
+.inline-flex {
+    display: inline-flex;
+}

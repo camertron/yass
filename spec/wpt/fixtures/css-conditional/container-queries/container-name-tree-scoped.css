@@ -1,0 +1,42 @@
+
+        :host { container-name: foo; }
+      
+
+    #container-name-host > div {
+      container-type: inline-size;
+    }
+    #t1 { color: red; }
+    @container foo (width > 0px) {
+      #t1 { color: green; }
+    }
+  
+
+        ::slotted(div) {
+          container-name: foo;
+        }
+      
+
+    #container-name-slotted > div > div {
+      container-type: inline-size;
+    }
+    #t2 { color: red; }
+    @container foo (width > 0px) {
+      #t2 { color: green; }
+    }
+  
+
+          :host { container-name: foo; }
+          #t3 { color: red; }
+          @container foo (width > 0px) {
+            #t3 { color: green; }
+          }
+        
+
+          :host { container-name: foo; }
+          ::slotted(div) { color: red; }
+          @container foo (width > 0px) {
+            ::slotted(div) {
+              color: green;
+            }
+          }
+        

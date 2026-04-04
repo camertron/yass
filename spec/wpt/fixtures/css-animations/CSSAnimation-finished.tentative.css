@@ -1,0 +1,5 @@
+
+@keyframes abc {
+  to { transform: translate(10px) }
+}
+@keyframes def {}

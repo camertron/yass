@@ -1,0 +1,19 @@
+
+container {
+    display: block;
+    inline-size: min-content;
+    margin-trim: block-end;
+}
+item {
+    display: block;
+    background-color: green;
+    inline-size: 50px;
+    block-size: 10px;
+    margin-block-end: 10px;
+}
+.border {
+    border: 1px solid black;
+}
+.collapsed {
+    block-size: 0px;
+}

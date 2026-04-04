@@ -1,0 +1,4 @@
+
+div[lang] {
+  font-size: calc(1ex + 1ch + 1em);
+}

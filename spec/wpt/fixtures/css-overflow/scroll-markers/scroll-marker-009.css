@@ -1,0 +1,25 @@
+
+  #scroller {
+    overflow: hidden;
+    scroll-marker-group: before;
+  }
+
+  #scroller::scroll-marker-group {
+    contain: none;
+    /* It should be impossible to disable layout containment for scroll marker groups, so this declaration should have no effect. */
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: red;
+  }
+
+  #scroller>*::scroll-marker {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    content: "";
+    background: green;
+  }

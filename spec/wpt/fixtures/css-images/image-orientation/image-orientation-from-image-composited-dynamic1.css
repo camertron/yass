@@ -1,0 +1,12 @@
+
+    body {
+        overflow: hidden;}
+    img {
+        will-change: transform;
+        image-orientation: none;
+    }
+    div {
+        display: inline-block;
+        width: 100px;
+        vertical-align: top;
+    }

@@ -1,0 +1,13 @@
+
+#target {
+  will-change: transform;
+  rotate: 45deg;
+  width: 100px;
+  height: 100px;
+  background: green;
+}
+#container {
+  width: 100px;
+  height: 100px;
+  background: red;
+}

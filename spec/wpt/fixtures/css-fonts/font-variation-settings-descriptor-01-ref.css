@@ -1,0 +1,9 @@
+
+  @font-face {
+    font-family: "slant";
+    src: url(variations/resources/Inter.var.subset.ttf);
+  }
+  .slantOn {
+    font-family: slant;
+    font-variation-settings: 'slnt' -20;
+  }

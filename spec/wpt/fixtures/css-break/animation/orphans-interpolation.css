@@ -1,0 +1,7 @@
+
+.parent {
+  orphans: 30;
+}
+.target {
+  orphans: 10;
+}

@@ -1,0 +1,13 @@
+
+.container {
+  position: relative;
+  margin: 20px 0;
+  width: 200px;
+  height: 200px;
+  border: solid 2px;
+}
+
+.result {
+  position: absolute;
+  background: green;
+}

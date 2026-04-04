@@ -1,0 +1,4 @@
+
+p:nth-last-child(even of .webkit, .fast) {
+    background-color: lime;
+}

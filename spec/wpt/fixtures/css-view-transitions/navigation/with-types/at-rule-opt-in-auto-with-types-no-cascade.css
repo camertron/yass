@@ -1,0 +1,9 @@
+
+  /* This should be ignored, because the following rule has the default "none" types */
+  @view-transition {
+    types: old-type;
+  }
+
+  @view-transition {
+    navigation: auto;
+  }

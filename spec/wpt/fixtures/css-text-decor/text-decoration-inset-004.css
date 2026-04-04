@@ -1,0 +1,16 @@
+
+body {
+  background: white;
+  color: black;
+}
+div {
+  position: relative;
+}
+h1 {
+  position: absolute;
+  width: 15ch;
+}
+u {
+  text-decoration-color: black;
+  text-decoration-inset: -0.25em;
+}

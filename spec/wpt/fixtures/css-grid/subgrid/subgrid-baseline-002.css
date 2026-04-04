@@ -1,0 +1,37 @@
+
+html,body {
+  color:black; background-color:white; font:16px/1 Ahem; padding:0; margin:0;
+}
+
+.grid {
+  display: grid;
+  grid: 20px repeat(4, auto) 30px / 30px repeat(4, auto) 20px;
+  place-content: start;
+  place-items: baseline start;
+  border: 1px solid;
+  text-decoration: underline blue;
+}
+
+.subgrid {
+  display: grid;
+  grid: auto / subgrid;
+  background: lightgrey;
+  grid-column: 2 / span 4;
+  grid-row: 3 / span 2;
+  min-width: 10px;
+  min-height: 0;
+  background: yellow;
+  place-content: inherit;
+  place-items: start baseline;
+  writing-mode: vertical-rl;
+}
+
+x {
+  min-width: 20px;
+  min-height: 10px;
+  font-size: 8em;
+  background: silver;
+  writing-mode: horizontal-tb;
+}
+
+  

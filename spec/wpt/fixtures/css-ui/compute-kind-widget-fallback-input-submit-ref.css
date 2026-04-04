@@ -1,0 +1,5 @@
+
+    #container { width: 500px; }
+    input[type=submit] {
+        appearance: none;
+    }

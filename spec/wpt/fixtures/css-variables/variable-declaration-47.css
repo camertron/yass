@@ -1,0 +1,14 @@
+
+body {
+  --b: green;
+  color: crimson;
+}
+p {
+  color: red;
+}
+p {
+  color: orange;
+  --a: var(--b);
+  --b: inherit;
+  color: var(--a);
+}

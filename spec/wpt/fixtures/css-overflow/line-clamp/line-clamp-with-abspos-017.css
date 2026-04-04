@@ -1,0 +1,20 @@
+
+.clamp {
+  line-clamp: 3;
+  background-color: yellow;
+}
+.child {
+  font: 16px / 32px monospace;
+  width: 13.1ch;
+}
+.rel {
+  position: relative;
+}
+.abspos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: skyblue;
+}

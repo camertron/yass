@@ -1,0 +1,9 @@
+
+div {
+  color: lime;
+  background: green;
+  margin: 10px;
+}
+::highlight(textshadow-currentcolor) {
+  text-shadow: currentcolor 2px 2px;
+}

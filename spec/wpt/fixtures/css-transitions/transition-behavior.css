@@ -1,0 +1,13 @@
+
+.testcase {
+  float: left;
+  width: 100px;
+  height: 100px;
+  transition: all 1s;
+}
+#discrete {
+  transition-behavior: allow-discrete;
+}
+.animated {
+  float: right;
+}

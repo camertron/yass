@@ -1,0 +1,6 @@
+
+    #box {
+      transition: padding 1s;
+      padding: 0px 1px 2px 3px;  // top right bottom left
+    }
+  

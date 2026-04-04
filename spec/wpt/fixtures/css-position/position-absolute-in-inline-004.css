@@ -1,0 +1,15 @@
+
+  #container {
+    height: 100px;
+    width: 100px;
+    font: 20px/1 Ahem;
+    color: white;
+    background-color: red;
+  }
+  .abs {
+    position: absolute;
+    background-color: green;
+    height: 100px;
+    width: 50px;
+    top: -50px;
+  }

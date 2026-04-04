@@ -1,0 +1,4 @@
+
+      span { color: red; }
+      :placeholder-shown + span { color: green }
+    

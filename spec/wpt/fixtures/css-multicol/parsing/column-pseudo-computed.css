@@ -1,0 +1,13 @@
+
+  #target {
+    font-size: 20px;
+    scroll-margin-bottom: 4px;
+  }
+  #target::column {
+    font-size: 40px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    scroll-margin: 2px;
+    scroll-margin-top: 2em;
+    scroll-margin-bottom: inherit;
+  }

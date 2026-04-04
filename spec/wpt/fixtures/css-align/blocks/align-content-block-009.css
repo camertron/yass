@@ -1,0 +1,51 @@
+
+  @import "/fonts/ahem.css";
+  html { font: 10px/1 Ahem; max-width: 800px; }
+  .label { display: none; }
+  #manual { display: none; }
+
+
+  /* scramble test styles */
+  [style$="start"        ] { align-content: end           !important; }
+  [style$="center"       ] { align-content: unsafe end    !important; }
+  [style$="end"          ] { align-content: start         !important; }
+  [style$="baseline"     ] { align-content: unsafe end    !important; }
+  [style$="last baseline"] { align-content: start         !important; }
+  [style$="flex-start"   ] { align-content: normal        !important; }
+  [style$="flex-end"     ] { align-content: start         !important; }
+  [style$="unsafe start" ] { align-content: center        !important; }
+  [style$="unsafe center"] { align-content: baseline      !important; }
+  [style$="unsafe end"   ] { align-content: unsafe center !important; }
+  [style$="safe start"   ] { align-content: unsafe end    !important; }
+  [style$="safe center"  ] { align-content: normal        !important; }
+  [style$="safe end"     ] { align-content: unsafe end    !important; }
+  [style$="space-evenly" ] { align-content: end           !important; }
+  [style$="space-between"] { align-content: unsafe center !important; }
+  [style$="space-around" ] { align-content: start         !important; }
+  [style$="normal"       ] { align-content: unsafe end    !important; }
+
+
+  html, body { margin: 0; padding: 0; }
+
+  .test { height: 1em; margin: 0.5em 2em;
+          /* show bounds of test box without interfering with margin-collapsing */
+          background: black; padding-right: 2px; }
+  /* ensure float is contained */
+    .float { float: right; background: orange; height: 2em }
+  /* ensure margin is contained */
+    .in-flow { margin-top: 1em; background: orange }
+  /* ensure relpos is ignored */
+    .relpos { position: relative; top: -1.5em; }
+  /* ensure abspos static position follows alignment */
+    .wrapper { position: relative; }
+    .abspos { position: absolute; right: 0; margin-top: -1.5em; }
+  /* ensure overflow is not counted */
+    .overflow { height: 0; }
+
+  /* cram into 800x600 */
+  html { max-height: 600px; columns: 3 }
+  .wrapper { break-inside: avoid; border: solid 2px gray; padding: 3em 0; }
+
+  /* readability */
+  .test > * { color: #8888; }
+  .label { color: black; font-weight: bold; }

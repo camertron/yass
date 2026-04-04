@@ -1,0 +1,17 @@
+
+.parent {
+  padding: 0 4px;
+  background-color: yellow;
+}
+.clamp {
+  line-clamp: auto;
+  max-height: 5lh;
+  font: 16px / 32px serif;
+  white-space: pre-wrap;
+  width: 200px;
+}
+.float {
+  float: left;
+  width: 300px;
+  background-color: orange;
+}

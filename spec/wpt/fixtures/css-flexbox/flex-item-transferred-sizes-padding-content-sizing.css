@@ -1,0 +1,11 @@
+
+    .flexContainer {
+      display: flex;
+      flex-direction: column;
+      float: left;
+    }
+    .item {
+      background: green;
+      padding: 5px 5px 5px 5px;
+    }
+  

@@ -1,0 +1,18 @@
+
+  div
+    {
+      bottom: 8px;
+      left: auto;
+      position: absolute;
+    }
+
+  img
+    {
+      vertical-align: bottom;
+    }
+
+  img + img
+    {
+      padding-left: 1em;
+    }
+  

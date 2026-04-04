@@ -1,0 +1,9 @@
+
+  @counter-style a {
+    system: fixed;
+    suffix: ":";
+  }
+  @counter-style b {
+    system: fixed invalid;
+    suffix: ":";
+  }

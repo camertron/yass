@@ -1,0 +1,11 @@
+
+  .boundary {
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+  }
+  .abs {
+    position: absolute;
+    background: green;
+    zoom: 2;
+  }

@@ -1,0 +1,13 @@
+
+.parent {
+  display: block;
+  width: 200px;
+}
+.target {
+  display: block;
+}
+.target::before {
+  display: block;
+  content: "";
+  width: 100px;
+}

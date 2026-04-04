@@ -1,0 +1,42 @@
+
+.anchor {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  height: 30px;
+  color: white;
+  background-color: green;
+  anchor-name: --myAnchor;
+}
+.infobox {
+  color: darkblue;
+  background-color: azure;
+  border: 1px solid #ddd;
+  padding: 10px;
+  position: fixed;
+  position-anchor: --myAnchor;
+  top: calc(anchor(bottom) + 5px);
+  left: 0px;
+  justify-self: safe anchor-center;
+}
+
+.anchor2 {
+  position: fixed;
+  top: 0px;
+  left: 340px;
+  height: 30px;
+  width: 100px;
+  color: white;
+  background-color: green;
+  anchor-name: --myAnchor2;
+}
+.infobox2 {
+  color: darkblue;
+  background-color: azure;
+  border: 1px solid #ddd;
+  padding: 10px;
+  position: fixed;
+  position-anchor: --myAnchor2;
+  left: calc(anchor(right) + 5px);
+  align-self: safe anchor-center;
+}

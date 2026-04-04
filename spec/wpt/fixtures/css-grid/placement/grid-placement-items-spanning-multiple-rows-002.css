@@ -1,0 +1,12 @@
+
+.grid {
+  width: 100px;
+  height: 100px;
+  display: grid;
+  background: red;
+  grid-auto-rows: 5px;
+  grid-template-columns: repeat(4, 25px);
+}
+.grid > div {
+  background: green;
+}

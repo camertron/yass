@@ -1,0 +1,9 @@
+
+div {
+  width: 6ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+div.first-line {
+  color: orange;
+}

@@ -1,0 +1,33 @@
+
+  .scroller {
+    width: 600px;
+    height: 300px;
+    overflow: scroll;
+  }
+
+  .scroller div {
+    width: 600px;
+    height: 300px;
+    margin-bottom: 20px;
+    background: green;
+  }
+
+  .wrapper {
+    scroll-target-group: auto;
+  }
+
+  .wrapper a {
+    color: blue;
+  }
+
+  .wrapper a:target-current {
+    color: green;
+  }
+
+  .wrapper a:target-before {
+    color: red;
+  }
+
+  .wrapper a:target-after {
+    color: yellow;
+  }

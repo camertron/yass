@@ -1,0 +1,12 @@
+
+  main table {
+    border-spacing: 0;
+  }
+  main td {
+    background: gray;
+    width:100px;
+    padding: 0;
+  }
+  .bb {
+    box-sizing: border-box;
+  }

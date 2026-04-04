@@ -1,0 +1,6 @@
+
+  @counter-style foo {
+    system: cyclic;
+    symbols: ‣;
+    suffix: " ";
+  }

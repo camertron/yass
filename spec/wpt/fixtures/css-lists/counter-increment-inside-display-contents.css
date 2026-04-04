@@ -1,0 +1,5 @@
+
+  .inc { counter-increment: x }
+  .reset-6 { counter-reset: x 6 }
+  .contents { display: contents }
+  .result::before { content: counter(x) }

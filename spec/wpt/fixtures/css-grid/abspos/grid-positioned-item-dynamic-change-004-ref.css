@@ -1,0 +1,19 @@
+
+#grid {
+  display: grid;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border: solid;
+  grid-template: 50px 50px / 50px 50px;
+}
+
+#abspos {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  grid-area: 2 / 2 / 2 / 2;
+  width: 20px;
+  height: 20px;
+  background: lime;
+}

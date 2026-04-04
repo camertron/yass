@@ -1,0 +1,8 @@
+
+#target::before {
+  font: 50px/1 Ahem;
+  display: inline-flex;
+  content: "X";
+  border: 2px solid black;
+  color: green;
+}

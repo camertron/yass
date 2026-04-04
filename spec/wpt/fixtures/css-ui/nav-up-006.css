@@ -1,0 +1,18 @@
+
+    div > a {
+        float: right;
+        margin-up: 1em;
+        margin-right: 1em;
+    }
+
+    div {
+        clear: right;
+    }
+
+    #parent {
+        nav-up: #finish;
+    }
+
+    #intermediate {
+        nav-up: #end;
+    }

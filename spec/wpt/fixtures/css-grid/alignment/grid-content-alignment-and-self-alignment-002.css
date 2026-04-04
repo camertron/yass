@@ -1,0 +1,68 @@
+
+body {
+  margin: 0px;
+}
+
+.grid {
+  position: relative;
+}
+.spanningTwo {
+  grid-auto-columns: 20px;
+  grid-auto-rows: 40px;
+  grid-template-areas: "a a b"
+                       "c d b";
+  width: 300px;
+  height: 200px;
+}
+.spanningThree {
+  grid-auto-columns: 50px;
+  grid-auto-rows: 50px;
+  grid-template-areas: ". . . . . ."
+                       ". b b b c ."
+                       ". . . . c ."
+                       ". . . . c ."
+                       ". . . . . .";
+  width: 550px;
+  height: 450px;
+}
+
+.gridRowColumnGaps {
+  grid-row-gap: 20px;
+  grid-column-gap: 10px;
+}
+
+.i1 { grid-row: 1; }
+.i2 { grid-row: 2; }
+.i3 { grid-row: 3; grid-column: 6; }
+.i4 { grid-row: 4; grid-column: 6; }
+.i5 { grid-row: 5; grid-column: 6; }
+
+.a {
+  grid-area: a;
+  background-color: blue;
+}
+.b {
+  grid-area: b;
+  background-color: lime;
+}
+.c {
+  grid-area: c;
+  background-color: purple;
+}
+.d {
+  grid-area: d;
+  background-color: orange;
+}
+.stretchedGrid {
+  grid-auto-columns: minmax(20px, auto);
+  grid-auto-rows: minmax(40px, auto);
+}
+
+.cell {
+  width: 20px;
+  height: 40px;
+}
+.cell1 {
+  width: 20px;
+  height: 20px;
+}

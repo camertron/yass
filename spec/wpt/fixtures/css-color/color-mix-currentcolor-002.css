@@ -1,0 +1,12 @@
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: red;
+  background-color: color-mix(in lch, currentColor 50%, blue);
+}
+div div {
+  color: green;
+  background-color: inherit;
+}

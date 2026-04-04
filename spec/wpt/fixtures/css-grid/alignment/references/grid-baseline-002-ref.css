@@ -1,0 +1,19 @@
+
+.flexbox {
+    display: flex;
+}
+.inline-flexbox {
+    display: inline-flex;
+}
+.flex-one {
+    flex: 1;
+}
+.inline-block { display: inline-block; }
+.flexbox, .inline-flexbox { background-color: lightgrey; }
+.border { border: 11px solid pink; }
+.padding { padding: 13px; }
+.margin { margin: 8px 0; }
+.flexbox > div {
+    min-width: 0;
+    min-height: 0;
+}

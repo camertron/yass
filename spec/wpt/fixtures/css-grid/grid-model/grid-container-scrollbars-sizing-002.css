@@ -1,0 +1,9 @@
+
+.grid, .inline-grid {
+  overflow: scroll;
+}
+.gridItem {
+  width: 100px;
+  height: 100px;
+  background: green;
+}

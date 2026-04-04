@@ -1,0 +1,30 @@
+
+@font-face
+{
+  font-family: "mplus-1p-regular";
+  src: url("/fonts/mplus-1p-regular.woff") format("woff");
+}
+
+html
+{
+  font-family: "mplus-1p-regular";
+}
+
+.b { background: lightblue; }
+.mbp {
+  margin: 1px 3px 5px 7px;
+  padding: 3px 5px 7px 1px;
+  border-width: 3px 1px 7px 5px;
+  border-style: solid;
+}
+.columns {
+  columns: 3 auto;
+  column-rule: 1px;
+  background: lightgrey;
+  height: 2em;
+}
+rbc {
+  display: ruby-base-container;
+  unicode-bidi: isolate;
+}
+.w { white-space: nowrap; width:2.5em; margin: 1em 0em; }

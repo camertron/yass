@@ -1,0 +1,14 @@
+
+.inner {
+  position: absolute;
+  inset: 4px;
+  background: green;
+}
+.dst {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 1px solid blue;
+  box-sizing: border-box;
+}
+body { background: lightpink; }

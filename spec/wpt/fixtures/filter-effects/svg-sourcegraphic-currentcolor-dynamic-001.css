@@ -1,0 +1,12 @@
+
+rect {
+  fill: currentColor;
+}
+
+.filtered {
+  filter: url(#filter);
+}
+
+.green {
+  color: green;
+}

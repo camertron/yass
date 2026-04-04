@@ -1,0 +1,8 @@
+
+  #crash {
+    position: absolute;
+    left: anchor(right);
+    --svg: url("data:image/svg+xml,");
+    content: var(--svg);
+    fill: var(--svg);
+  }

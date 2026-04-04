@@ -1,0 +1,19 @@
+
+
+@keyframes scale-animation {
+    from { scale: 1; }
+    to   { scale: 2; }
+}
+
+svg {
+    width: 400px;
+    height: 400px;
+}
+
+rect {
+    width: 100px;
+    height: 100px;
+    transform-origin: top left;
+    animation: scale-animation 1ms linear forwards;
+}
+

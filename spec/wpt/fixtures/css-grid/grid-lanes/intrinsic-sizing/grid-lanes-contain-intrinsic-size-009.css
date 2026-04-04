@@ -1,0 +1,24 @@
+
+.cis-both {
+  contain-intrinsic-size: 55px 66px;
+}
+
+.cis-width {
+  contain-intrinsic-size: 55px none;
+}
+
+.cis-height {
+  contain-intrinsic-size: none 66px;
+}
+
+select {
+  padding: 0;
+}
+
+.test {
+  display: grid-lanes;
+  contain: size;
+  background: lightblue;
+  border: 1px solid blue;
+  margin: 5px;
+}

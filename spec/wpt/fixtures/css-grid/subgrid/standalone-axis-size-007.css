@@ -1,0 +1,17 @@
+
+.grid {
+  background: red;
+  display: inline-grid;
+}
+.subgrid {
+  display: grid;
+  grid-row: span 2;
+  background: green;
+  min-width: min-content;
+  grid-auto-flow: column;
+  grid-template-rows: subgrid;
+}
+.w100 {
+  height: 50px;
+  width: 100px;
+}

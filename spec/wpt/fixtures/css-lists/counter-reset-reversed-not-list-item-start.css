@@ -1,0 +1,3 @@
+
+  .reset-reversed { counter-reset: reversed(not-list-item) 7 }
+  .result::before { content: counter(not-list-item) }

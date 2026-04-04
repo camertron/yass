@@ -1,0 +1,36 @@
+
+    body {
+        margin: 0px;
+    }
+
+    .flex-container {
+        height: 110px;
+        width: 340px;
+        border: solid 2px;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .flex-item {
+        background: skyblue;
+        width: 50px;
+    }
+
+    .row-gap {
+        width: 340px;
+        height: 0px;
+        border-bottom: solid 5px rgba(255, 0, 0, 0.5);
+        position: absolute;
+        left: 2px;
+        top: 54.5px;
+    }
+
+    .col-gap {
+        height: 57.5px;
+        width: 0px;
+        border-right: solid 5px rgba(0, 0, 255, 0.5);
+        position: absolute;
+        left: 0px;
+        top: 2px;
+    }

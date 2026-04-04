@@ -1,0 +1,9 @@
+
+.grid {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 100px);
+    grid-template-columns: 100px 100px 100px;
+    background: gray;
+    width: 300px;
+    height: 300px;
+}

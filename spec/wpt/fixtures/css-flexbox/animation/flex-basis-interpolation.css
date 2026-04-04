@@ -1,0 +1,7 @@
+
+.parent {
+  flex-basis: 3%;
+}
+.target {
+  flex-basis: 1%;
+}

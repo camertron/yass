@@ -1,0 +1,18 @@
+
+  #scroller {
+    height: 100px;
+  }
+
+  #scroller::scroll-marker-group {
+    display: flex;
+    height: 100px;
+    background: gray;
+  }
+
+  #scroller>div::scroll-marker {
+    display: block;
+    width: 25px;
+    height: 100%;
+    content: "";
+    background: yellow;
+  }

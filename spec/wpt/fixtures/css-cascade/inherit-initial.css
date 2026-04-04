@@ -1,0 +1,11 @@
+
+html {
+  z-index: inherit;
+  position: inherit;
+  overflow: inherit;
+  background-color: inherit;
+}
+body {
+  overflow: scroll;
+  background-color: pink;
+}

@@ -1,0 +1,31 @@
+
+
+  .a {
+    /* This should have no effect. Only at-rules containing style rules
+       are vaild when nested. */
+    @layer theme, base;
+  }
+
+  /* The theme layer wins over the base layer. */
+  @layer base, theme;
+
+  .a {
+    @layer theme {
+      & {
+        z-index: 1;
+      }
+
+      .b {
+        background-color: green;
+      }
+    }
+  }
+
+  @layer base {
+    .a {
+      z-index: 0;
+    }
+    .a .b {
+      background-color: red;
+    }
+  }

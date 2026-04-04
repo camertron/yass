@@ -1,0 +1,11 @@
+
+/*
+   This is a regression test for:
+     https://github.com/servo/servo/pull/18807
+     https://bugzilla.mozilla.org/show_bug.cgi?id=1407092
+ */
+div {
+  width: calc(1ex + 1ex);
+  height: calc(1ex + 1ex);
+  background: green;
+}

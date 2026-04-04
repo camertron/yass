@@ -1,0 +1,7 @@
+
+span { -webkit-text-stroke: 5px orange; }
+span.i { paint-order: initial; }
+span.f { paint-order: fill; }
+span.fs { paint-order: fill stroke; }
+span.s { paint-order: stroke; }
+span.sf { paint-order: stroke fill; }

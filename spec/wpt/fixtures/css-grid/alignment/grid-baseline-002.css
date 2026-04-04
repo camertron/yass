@@ -1,0 +1,9 @@
+
+.inline-block { display: inline-block; }
+.grid, .inline-grid {
+   background-color: lightgrey;
+   grid-auto-flow: column;
+}
+.border { border: 11px solid pink; }
+.padding { padding: 13px; }
+.margin { margin: 8px 0; }

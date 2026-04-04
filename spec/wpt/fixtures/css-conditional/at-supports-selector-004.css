@@ -1,0 +1,9 @@
+
+  div {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+  }
+  @supports selector(div, div) {
+    div { background: red };
+  }

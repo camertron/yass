@@ -1,0 +1,15 @@
+
+:root {
+  print-color-adjust: exact;
+}
+body {
+  margin: 0;
+}
+div {
+  background: red;
+}
+@media (width: 100px) and (height: 100px) {
+  div {
+    background: green;
+  }
+}

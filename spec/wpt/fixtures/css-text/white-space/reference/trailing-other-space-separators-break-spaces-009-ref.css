@@ -1,0 +1,16 @@
+
+div {
+  white-space: pre;
+  font-size: 10px;
+  line-height: 1;
+  width: 2em;
+}
+section {
+  font-family: Ahem;
+  float: left;
+  margin: 0 1em;
+  color: blue;
+}
+.ref {
+  color: orange;
+}

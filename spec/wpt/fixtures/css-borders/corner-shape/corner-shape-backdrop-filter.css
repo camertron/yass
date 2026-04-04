@@ -1,0 +1,13 @@
+
+    .target {
+        width: 200px;
+        height: 200px;
+        corner-shape: squircle scoop notch bevel;
+        border-radius: 40%;
+    }
+
+    .backdrop {
+        background: rgba(0 128 0 / 50%);
+        backdrop-filter: brightness(0);
+    }
+

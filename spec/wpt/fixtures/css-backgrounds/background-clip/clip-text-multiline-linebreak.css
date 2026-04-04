@@ -1,0 +1,10 @@
+
+.container {
+  line-height: 1;
+}
+.textclip {
+  font-size: 100px;
+  background-color: lime;
+  background-clip: text;
+  color: transparent;
+}

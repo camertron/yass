@@ -1,0 +1,17 @@
+
+img {
+	box-sizing: border-box;
+	width: auto;
+	height: auto;
+	background: white;
+	padding-right: 30px;
+	max-width: 100px;
+}
+
+#ref {
+	display:inline-block;
+	height: 70px;
+	width: 70px;
+	background: green;
+}
+

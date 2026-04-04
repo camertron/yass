@@ -1,0 +1,5 @@
+
+#grid-lanes {
+    display: grid-lanes;
+    grid-template-columns: repeat(auto-fit, minmax(20px, 30px) auto);
+}

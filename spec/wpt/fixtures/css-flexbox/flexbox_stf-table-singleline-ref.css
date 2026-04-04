@@ -1,0 +1,8 @@
+
+div, p {
+	font-family: Ahem;
+	display: inline-block;
+}
+p {
+	margin: 1em 0;
+}

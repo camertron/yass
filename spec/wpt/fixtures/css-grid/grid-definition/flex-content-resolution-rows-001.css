@@ -1,0 +1,38 @@
+
+.gridFlexContent {
+    grid-template-columns: 50px;
+    grid-template-rows: 1fr 1fr;
+}
+.gridMaxFlexContent {
+    grid-template-columns: 50px;
+    grid-template-rows: minmax(30px, 2fr);
+}
+.gridTwoMaxFlexContent {
+    grid-template-columns: 50px;
+    grid-template-rows: minmax(10px, 1fr) minmax(10px, 2fr);
+}
+.gridTwoDoubleMaxFlexContent {
+    grid-template-columns: 50px;
+    grid-template-rows: minmax(10px, 0.5fr) minmax(10px, 2fr);
+}
+.gridRespectBaseSize {
+    grid-template-columns: 50px;
+    grid-template-rows: minmax(75px, 1fr) minmax(0px, 2fr);
+}
+.gridRespectProportions {
+    grid-template-columns: 50px;
+    grid-template-rows: minmax(25px, .25fr) minmax(0px, .5fr) minmax(0px, 2fr);
+}
+.gridRespectBaseSizeProportions {
+    grid-template-columns: 50px;
+    grid-template-rows: minmax(50px, .25fr) minmax(0px, .5fr) minmax(0px, 1fr);
+}
+.gridRespectBaseSizeBeforeProportions {
+    grid-template-columns: 50px;
+    grid-template-rows: minmax(50px, .25fr) minmax(0px, .5fr) minmax(0px, 1fr);
+}
+.thirdRowFirstColumn {
+    background-color: yellow;
+    grid-column: 1;
+    grid-row: 3;
+}

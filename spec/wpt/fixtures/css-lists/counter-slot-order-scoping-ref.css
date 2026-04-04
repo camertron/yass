@@ -1,0 +1,13 @@
+
+      .counted {
+        counter-increment: section;
+      }
+
+      .reset {
+        counter-reset: section;
+      }
+
+      .counted::before {
+        content: "C=" counter(section) " ";
+      }
+    

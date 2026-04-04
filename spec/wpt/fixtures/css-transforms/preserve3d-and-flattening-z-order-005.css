@@ -1,0 +1,25 @@
+
+div, span {
+  height: 100px;
+  width: 100px;
+  background: red;
+}
+span {
+  display: inline-block;
+  vertical-align: top;
+}
+div:not(:first-child):not(.outer) {
+  /* put everything at the same position without using absolute positioning */
+  margin-top: -100px;
+}
+.outer, .sibling {
+  transform-style: preserve-3d;
+}
+.sibling {
+  transform: translateZ(-10px);
+}
+.child {
+  will-change: transform;
+  position: relative;
+  z-index: -1;
+}

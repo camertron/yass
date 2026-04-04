@@ -1,0 +1,16 @@
+
+#container {
+  position: relative;
+  background: red;
+
+  box-sizing: border-box;
+  width: 100px;
+  max-height: 100px;
+  overflow: auto;
+}
+
+#target {
+  position: absolute;
+  width: 100px;
+  height: 200px;
+}

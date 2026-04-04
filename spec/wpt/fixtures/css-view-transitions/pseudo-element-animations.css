@@ -1,0 +1,17 @@
+
+/* Override UA stylesheet to avoid any impact on our tests */
+:root {
+  view-transition-name: none;
+}
+:root::view-transition,
+:root::view-transition-group(*),
+:root::view-transition-image-pair(*),
+:root::view-transition-old(*),
+:root::view-transition-new(*) {
+  animation: unset;
+}
+
+@keyframes css-anim {
+  from { margin-left: 100px; }
+  to { margin-left: 100px; }
+}

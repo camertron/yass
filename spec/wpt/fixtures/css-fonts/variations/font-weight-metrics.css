@@ -1,0 +1,21 @@
+
+@font-face {
+  font-family: test;
+  font-weight: 100 900;
+  src: url(resources/Inter.var.subset.ttf);
+}
+div {
+  font: 32px test;
+  position: absolute;
+  margin: 1em;
+}
+.light {
+  background: red;
+  color: red;
+  font-weight: 100;
+}
+.heavy {
+  background: green;
+  color: green;
+  font-weight: 900;
+}

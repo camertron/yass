@@ -1,0 +1,9 @@
+
+
+@font-face {
+  font-family: "MarkB";
+  src: url(resources/markB.ttf);
+}
+
+body { font-family: "MarkB"; }
+

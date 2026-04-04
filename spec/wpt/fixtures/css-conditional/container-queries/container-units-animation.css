@@ -1,0 +1,28 @@
+
+  #container {
+    container-type: size;
+    width: 200px;
+    height: 200px;
+  }
+
+  @keyframes anim_cqw { from { top: 20cqw; } to { top: 40cqw; } }
+  @keyframes anim_cqh { from { top: 20cqh; } to { top: 40cqh; } }
+  @keyframes anim_cqi { from { top: 20cqi; } to { top: 40cqi; } }
+  @keyframes anim_cqb { from { top: 20cqb; } to { top: 40cqb; } }
+  @keyframes anim_cqmin { from { top: 20cqmin; } to { top: 40cqmin; } }
+  @keyframes anim_cqmax { from { top: 20cqmax; } to { top: 40cqmax; } }
+
+  #container > div.css-animation {
+    animation-delay: -5s;
+    animation-play-state: paused;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+  }
+
+  .css-animation.cqw { animation-name: anim_cqw; }
+  .css-animation.cqh { animation-name: anim_cqh; }
+  .css-animation.cqi { animation-name: anim_cqi; }
+  .css-animation.cqb { animation-name: anim_cqb; }
+  .css-animation.cqmin { animation-name: anim_cqmin; }
+  .css-animation.cqmax { animation-name: anim_cqmax; }
+

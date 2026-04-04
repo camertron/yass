@@ -1,0 +1,22 @@
+
+.cell {
+  width: 50px;
+  height: auto;
+  min-height: 50px
+}
+
+.invisibleFont {
+  color: lime;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.clearLeft {
+  clear: left;
+}
+
+.relative {
+  position: relative;
+}

@@ -1,0 +1,16 @@
+
+ul {
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+#target {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: green;
+}
+::marker { color: white; }

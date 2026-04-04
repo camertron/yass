@@ -1,0 +1,246 @@
+
+      /* (& > .b) behaves like (:where(:scope) > .b), due & mapping to :where(:scope).*/
+      @scope (.a) to (& > .b) {
+        :scope { z-index:1; }
+      }
+
+      /* Should not match, since <scope-end> refers to the scope itself. */
+      @scope (.a) to (.b&) {
+        :scope { z-index:42; }
+      }
+    
+
+      /* (.b) behaves like (:scope .b), due :scope being prepended
+          implicitly. */
+      @scope (.a) to (.b) {
+        :scope { z-index:1; }
+      }
+
+      /* Should not match, since <scope-end> refers to the scope itself. */
+      @scope (.a) to (.b:scope) {
+        :scope { z-index:42; }
+      }
+    
+
+      @scope (.a) to (> .b) {
+        *, :scope { z-index:1; }
+      }
+    
+
+      @scope (#div) {
+        & {
+          z-index: 1;
+          & {
+            z-index: 2;
+          }
+        }
+      }
+    
+
+      @scope (#div) {
+        :scope {
+          z-index: 1;
+          & {
+            z-index: 2;
+          }
+        }
+      }
+    
+
+      @scope (#div) {
+        :scope {
+          z-index: 1;
+          & {
+            & {
+              z-index: 2;
+            }
+          }
+        }
+      }
+    
+
+      .a {
+        @scope (.b) {
+          .c { z-index: 1; }
+        }
+      }
+    
+
+      .a {
+        @scope (&.b) {
+          :scope { z-index: 1; }
+        }
+      }
+    
+
+      .a {
+        @scope (.b) {
+           /* The & points to <scope-start>, which contains an implicit &
+              which points to .a. */
+           &.c { z-index: 1; }
+        }
+      }
+    
+
+      .a {
+        @scope (.b) {
+          z-index: 1;
+        }
+      }
+    
+
+      .a {
+        /* The '& .b' selector is wrapped in :where() to prevent a false
+           positive when the implementation incorrectly wraps
+           the z-index declaration in a rule with &-behavior
+           rather than :where(:scope)-behavior. */
+        @scope (:where(& .b)) {
+          z-index: 1; /* Should win due to proximity */
+        }
+      }
+      :where(.b) { z-index: 2; }
+    
+
+      @scope (.a) {
+        .b {
+          /* When nesting, because we’re  inside a defined scope,
+             the `:scope` should reference the scoping root node properly, and
+             check for the presence of an extra class on it, essentially
+             being equal to `:scope.x .b { z-index: 1 }`. */
+          &:is(:scope.x *) {
+            z-index: 1;
+          }
+          /* This should not match, as we have a defined scope, and should
+             not skip to the root. */
+          &:is(:root:scope *) {
+            z-index: 2;
+          }
+        }
+        /* The nested case can be though of the following when expanded: */
+        .c:is(:scope.x *) {
+          z-index: 3;
+        }
+      }
+    
+
+      @scope (.b) {
+        .a:not(:scope) {
+          & :scope {
+            z-index: 1;
+          }
+        }
+      }
+    
+
+      @scope (.b) {
+        .a:not(:scope) {
+          :scope { /* & implied */
+            z-index: 1;
+          }
+        }
+      }
+    
+
+      @scope (.b) {
+        .a:not(:scope) {
+          > :scope { /* & implied */
+            z-index: 1;
+          }
+        }
+      }
+    
+
+      @scope (.a) {
+        .b:not(:scope) {
+          @media (width) {
+            z-index: 1;
+          }
+        }
+      }
+    
+
+      @scope (.a) {
+        @scope(#descendant) {
+          :scope {
+            z-index: 1;
+          }
+        }
+        @scope (> #child) {
+          :scope {
+            z-index: 1;
+          }
+        }
+      }
+    
+
+      .nest {
+        @scope {
+          #child {
+            color: green;
+          }
+        }
+      }
+    
+
+  .a {
+    @scope (.b) {
+      #child {
+        color: red;
+      }
+    }
+  }
+
+
+  .a {
+    @scope (.b) {
+      #child {
+        color: red;
+      }
+    }
+  }
+
+
+  :where(.a) {
+    color: red;
+  }
+  @scope (.a) {
+  }
+
+
+  #child {
+    color: green; /* Specificity: (1, 0, 0) */
+  }
+  .b {
+    #child {
+      @scope (&) {
+        --x: 1;
+        color: red; /* Specificity: (0, 0, 0), effectively :where(:scope) */
+      }
+    }
+  }
+
+
+    :where(.x) {
+      background-color: black;
+    }
+    .a {
+      @scope (&) {
+        :scope .x { background-color: green; }
+      }
+    }
+  
+
+    :where(.x) {
+      background-color: black;
+    }
+    .a {
+      @scope (&) {
+        :scope .x {
+          .unused {}
+          /* CSSNestedDeclarations { */
+          background-color: green;
+          /* } { */
+        }
+      }
+    }
+  

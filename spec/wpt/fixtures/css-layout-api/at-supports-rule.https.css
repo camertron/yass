@@ -1,0 +1,10 @@
+
+#test {
+  content: 'fail';
+}
+
+@supports (display: layout(foo)) {
+  #test {
+    content: 'pass';
+  }
+}

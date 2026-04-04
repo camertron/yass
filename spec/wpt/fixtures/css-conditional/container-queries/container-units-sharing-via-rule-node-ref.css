@@ -1,0 +1,10 @@
+
+.test {
+  border: 1px solid;
+  max-width: max-content;
+}
+
+span {
+  display: block;
+  background-color: green;
+}

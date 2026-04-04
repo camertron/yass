@@ -1,0 +1,29 @@
+
+html,body {
+  color:black; background-color:white; font:15px/1 monospace; padding:0; margin:0;
+}
+
+grid {
+  display: inline-grid;
+  gap: 1px 2px;
+  grid-template-columns: repeat(4,20px);
+  grid-template-rows: 1em auto;
+  color: #444;
+  border: 1px solid;
+  padding: 2px;
+  width: 100px;
+  align-items: start;
+  vertical-align: text-top;
+}
+
+item {
+  background-color: #444;
+  color: #fff;
+}
+
+.tall { padding-top:30px; grid-row:span 2; }
+
+.safe {
+  width: 10px;
+  margin-right: 75px;
+}

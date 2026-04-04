@@ -1,0 +1,19 @@
+
+  @position-try --opt {
+    position-area: right center;
+  }
+  #anchor {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    anchor-name: --a;
+  }
+  #anchored {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: lime;
+    position-anchor: --a;
+    position-area: left center;
+    position-try-fallbacks: --opt;
+  }

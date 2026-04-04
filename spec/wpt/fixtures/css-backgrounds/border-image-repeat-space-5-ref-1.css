@@ -1,0 +1,146 @@
+
+      .outer {
+        width: 135px;
+        height: 135px;
+      }
+      .inner1 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 27px;
+        height: 27px;
+        background-image: url("support/border.png");
+      }
+      .inner2_1 {
+        position: absolute;
+        top: 0px;
+        left: 27px;
+        width: 27px;
+        height: 27px;
+        background-image: url("support/border.png");
+        background-position: -27px 0px;
+      }
+      .inner2_2 {
+        position: absolute;
+        top: 0px;
+        left: 54px;
+        width: 27px;
+        height: 27px;
+        background-image: url("support/border.png");
+        background-position: -27px 0px;
+      }
+      .inner2_3 {
+        position: absolute;
+        top: 0px;
+        left: 81px;
+        width: 27px;
+        height: 27px;
+        background-image: url("support/border.png");
+        background-position: -27px 0px;
+      }
+      .inner3 {
+        position: absolute;
+        top: 0px;
+        left: 108px;
+        width: 27px;
+        height: 27px;
+        background-image: url("support/border.png");
+      }
+      .inner4_1 {
+        position: absolute;
+        top: 27px;
+        left: 0px;
+        width: 27px;
+        height: 27px;
+        background-image: url("support/border.png");
+        background-position: 0px -27px;
+      }
+      .inner4_2 {
+        position: absolute;
+        top: 54px;
+        left: 0px;
+        width: 27px;
+        height: 27px;
+        background-image: url("support/border.png");
+        background-position: 0px -27px;
+      }
+      .inner4_3 {
+        position: absolute;
+        top: 81px;
+        left: 0px;
+        width: 27px;
+        height: 27px;
+        background-image: url("support/border.png");
+        background-position: 0px -27px;
+      }
+      .inner5_1 {
+        position: absolute;
+        top: 27px;
+        left: 108px;
+        width: 27px;
+        height: 27px;
+        background-image: url("support/border.png");
+        background-position: -54px -27px;
+      }
+      .inner5_2 {
+        position: absolute;
+        top: 54px;
+        left: 108px;
+        width: 27px;
+        height: 27px;
+        background-image: url("support/border.png");
+        background-position: -54px -27px;
+      }
+      .inner5_3 {
+        position: absolute;
+        top: 81px;
+        left: 108px;
+        width: 27px;
+        height: 27px;
+        background-image: url("support/border.png");
+        background-position: -54px -27px;
+      }
+      .inner6 {
+        position: absolute;
+        top: 108px;
+        left: 0px;
+        width: 27px;
+        height: 27px;
+        background-image: url("support/border.png");
+      }
+      .inner7_1 {
+        position: absolute;
+        top: 108px;
+        left: 27px;
+        width: 27px;
+        height: 27px;
+        background-image: url("support/border.png");
+        background-position: -27px -54px;
+      }
+      .inner7_2 {
+        position: absolute;
+        top: 108px;
+        left: 54px;
+        width: 27px;
+        height: 27px;
+        background-image: url("support/border.png");
+        background-position: -27px -54px;
+      }
+      .inner7_3 {
+        position: absolute;
+        top: 108px;
+        left: 81px;
+        width: 27px;
+        height: 27px;
+        background-image: url("support/border.png");
+        background-position: -27px -54px;
+      }
+      .inner8 {
+        position: absolute;
+        top: 108px;
+        left: 108px;
+        width: 27px;
+        height: 27px;
+        background-image: url("support/border.png");
+      }
+    

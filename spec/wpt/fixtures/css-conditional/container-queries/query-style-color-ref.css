@@ -1,0 +1,28 @@
+
+@property --c {
+  syntax: "<color>";
+  initial-value: transparent;
+  inherits: true;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+}
+
+.outer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+  gap: .5em;
+}
+
+.outer div {
+  border-left: 1em solid black;
+  color: white;
+}
+
+.outer div::before {
+  content: attr(style);
+	display: block;
+  padding: .5em;
+  background: green;
+}

@@ -1,0 +1,20 @@
+
+  #container {
+    width: 300px;
+    height: 300px;
+    border-radius: 100px;
+    overflow: hidden;
+    border: 2px solid blue;
+  }
+
+  #scroller {
+    overflow: auto;
+    width: 300px;
+    height: 300px;
+    will-change: scroll-position;
+  }
+
+  .spacer {
+    height: 200vh;
+  }
+

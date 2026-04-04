@@ -1,0 +1,8 @@
+
+  #no-snap { container-type: scroll-state; }
+  @container scroll-state(snapped: none) {
+    #target { --snapped-none: true }
+  }
+  @container not scroll-state(snapped) {
+    #target { --snapped-boolean: true }
+  }

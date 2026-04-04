@@ -1,0 +1,14 @@
+
+    #contain-parent {
+        width: fit-content;
+    }
+
+    #contain-layout {
+        contain: layout;
+        background: green;
+    }
+
+    #content {
+        width: 50px;
+        height: 100px;
+    }

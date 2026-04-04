@@ -1,0 +1,8 @@
+
+    .backgroundSize{
+        background: url("../support/1x1-green.png");
+        background-size: 50% 100%;
+        background-repeat: repeat-y;
+        height: 100px;
+    }
+    

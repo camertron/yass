@@ -1,0 +1,9 @@
+
+#quote {
+  container-type: size;
+  display: inline-block;
+}
+div {
+  appearance: auto;
+  container-type: size;
+}

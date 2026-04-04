@@ -1,0 +1,17 @@
+
+body {
+  perspective: 1000px;
+}
+.box {
+  background: lightblue;
+  width: 100px;
+  height: 100px;
+  transform: rotateY(60deg);
+}
+.outer {
+  width: 100px;
+  height: 100px;
+  transform: rotateY(60deg);
+  perspective: 1000px;
+}
+body { background: lightpink; }

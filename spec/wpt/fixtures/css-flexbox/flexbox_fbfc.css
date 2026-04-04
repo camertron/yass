@@ -1,0 +1,18 @@
+
+* {margin: 0;}
+body {width: 600px;}
+#float {
+	background: #3366cc;
+	width: 25%;
+	float: left;
+}
+#flex {
+	background: #ffcc00;
+	width: 80%;
+	display: flex;
+}
+div div {
+	background: pink;
+	margin: 2em;
+	height: 4em;
+}

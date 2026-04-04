@@ -1,0 +1,12 @@
+
+  @keyframes --anim {
+    from {
+      width: calc(10px * sibling-index());
+    }
+    to {
+      width: calc(50px);
+    }
+  }
+  #target {
+    animation: --anim 2s;
+  }

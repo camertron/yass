@@ -1,0 +1,11 @@
+
+  #test {
+    height: 100px;
+    margin-left: 20px;
+    outline-style: solid;
+    outline-width: 2px;
+    transition-duration: 2s;
+    transition-property: outline-width;
+    transition-timing-function: linear;
+    width: 100px;
+  }

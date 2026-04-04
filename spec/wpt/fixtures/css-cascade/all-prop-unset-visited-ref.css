@@ -1,0 +1,4 @@
+
+  :root { color: green; }
+  a:visited { color: red; }
+  a:visited { color: unset; }

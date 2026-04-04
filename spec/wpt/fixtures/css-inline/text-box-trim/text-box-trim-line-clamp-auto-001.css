@@ -1,0 +1,13 @@
+
+.spacer {
+  background: lightgray;
+  block-size: 100px;
+}
+.target {
+  font: 50px/2 Ahem;
+  text-box-trim: trim-end;
+  text-box-edge: text;
+
+  line-clamp: auto;
+  max-height: 285px;
+}

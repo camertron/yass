@@ -1,0 +1,13 @@
+
+table {
+  border-spacing: 50px 100px;
+  background: green;
+}
+td {
+  width: 100px;
+  padding: 0;
+  background: red;
+}
+tr + tr {
+  visibility: collapse;
+}

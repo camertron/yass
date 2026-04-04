@@ -1,0 +1,8 @@
+
+  ::highlight(foo) {
+    color:limegreen;
+    background-color:yellow;
+  }
+  ::target-text {
+    background-color:orange;
+  }

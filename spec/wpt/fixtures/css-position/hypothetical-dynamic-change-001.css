@@ -1,0 +1,13 @@
+
+  .ancestor, .child {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    /* NOTE: child remains auto-positioned */
+  }
+  .ancestor {
+    left: 0;
+    top: 0;
+    background-color: red;
+  }

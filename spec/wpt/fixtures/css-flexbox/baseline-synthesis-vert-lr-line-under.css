@@ -1,0 +1,22 @@
+
+.flexbox {
+    display: flex;
+    writing-mode: vertical-lr;
+    text-orientation: sideways;
+    align-items: baseline;
+    background-color: red;
+    position: relative;
+}
+.item {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+}
+.wide {
+    width: 100px;
+}
+.absolute {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}

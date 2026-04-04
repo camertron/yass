@@ -1,0 +1,11 @@
+
+  div {
+    font: 100px/1 Ahem;
+    height: 400px;
+    white-space: pre;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    writing-mode: vertical-lr;
+    direction: rtl;
+  }

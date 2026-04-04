@@ -1,0 +1,14 @@
+
+@property --x {
+  inherits: true;
+  initial-value: currentcolor;
+  syntax: "<color>";
+}
+:root {
+  color: green;
+}
+div {
+  background-color: var(--x);
+  width: 100px;
+  height: 100px;
+}

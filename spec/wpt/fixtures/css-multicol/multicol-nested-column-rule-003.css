@@ -1,0 +1,6 @@
+
+  .mc {
+    columns: 2;
+    column-gap: 20px;
+    column-rule: 20px solid green;
+  }

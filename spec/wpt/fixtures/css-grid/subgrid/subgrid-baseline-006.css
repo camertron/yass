@@ -1,0 +1,27 @@
+
+.item {
+  inline-size: 40px;
+  box-sizing: border-box;
+  border: solid 5px hotpink;
+  line-height: 0;
+  margin-block-start: 3px;
+  margin-block-end: 5px;
+}
+.small {
+  width: 30px;
+  height: 30px;
+  border: solid 5px cyan;
+}
+.first {
+  align-self: baseline;
+}
+.last {
+  align-self: last baseline;
+}
+span {
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border: solid 5px orange;
+  display: inline-block;
+}

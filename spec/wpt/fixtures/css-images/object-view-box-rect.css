@@ -1,0 +1,5 @@
+
+.default {
+  object-view-box: rect(50px 50px 100px 25px);
+  object-fit: fill;
+}

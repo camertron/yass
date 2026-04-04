@@ -1,0 +1,17 @@
+
+.trim {
+    margin-trim: block;
+}
+container {
+    display: block;
+}
+item {
+    display: block;
+    inline-size: 50px;
+    block-size: 10px;
+    background-color: green;
+}
+.collapsed {
+    margin-block: 50px 100px;
+    block-size: 0px;
+}

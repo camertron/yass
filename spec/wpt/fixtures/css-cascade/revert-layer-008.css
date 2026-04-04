@@ -1,0 +1,17 @@
+
+@layer revert-to, revert-from;
+
+@layer revert-from {
+  #target {
+    font-size: 10px;
+    transition: font-size 2s linear -1s;
+  }
+
+  #target.reverted {
+    font-size: revert-layer;
+  }
+}
+
+@layer revert-to {
+  #target { font-size: 20px; }
+}

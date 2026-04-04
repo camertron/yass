@@ -1,0 +1,17 @@
+
+  .grid {
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: repeat(auto-fill, 25%);
+    grid-auto-rows: 100px;
+    min-width: 50%;
+    float: left;
+  }
+
+  .wrapper {
+    width: 600px;
+  }
+
+  #cell {
+    background: lime;
+  }

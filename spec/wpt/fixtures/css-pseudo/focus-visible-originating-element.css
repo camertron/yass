@@ -1,0 +1,16 @@
+
+  input {
+    outline: none;
+
+    &:not(:disabled):focus-visible::before {
+      background-color: green;
+    }
+  }
+
+  input::before {
+    content: "";
+    background-color: red;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+  }

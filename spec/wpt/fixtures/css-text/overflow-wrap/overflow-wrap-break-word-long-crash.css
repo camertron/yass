@@ -1,0 +1,15 @@
+
+html, body {
+  margin: 0;
+}
+body {
+  overflow-wrap: break-word;
+  width: 2147483648px;
+}
+div {
+  /* Double the width in case CSS parser clamps the body width. */
+  width: 200%;
+}
+span {
+  border-left: 2147483648px solid;
+}

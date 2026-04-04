@@ -1,0 +1,11 @@
+
+  @keyframes --anim {
+    0% { interactivity: auto; }
+  }
+  #inert {
+    animation: --anim 10000s step-end;
+    interactivity: inert;
+    width: 100px;
+    height: 100px;
+    background: lime;
+  }

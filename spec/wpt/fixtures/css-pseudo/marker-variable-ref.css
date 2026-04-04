@@ -1,0 +1,9 @@
+
+      .firstTest::marker {
+        color: rgb(255 119 0 / 0.75);
+      }
+
+      .secondTest::marker {
+        color: rgb(255 119 0);
+      }
+    

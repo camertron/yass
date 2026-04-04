@@ -1,0 +1,5 @@
+
+#testCases div { width: 100px; height: 25px; }
+#host1:lang(zh) { background: green; }
+#host3 > :lang(ja) { background: green; }
+#host4 > div { background: red; }

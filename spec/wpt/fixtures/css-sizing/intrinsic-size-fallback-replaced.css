@@ -1,0 +1,10 @@
+
+  .test {
+    border: 0;
+    padding: 0;
+    background-color: blue;
+  }
+
+  .vertical {
+    writing-mode: vertical-rl;
+  }

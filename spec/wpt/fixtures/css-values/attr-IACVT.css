@@ -1,0 +1,8 @@
+
+    #expected {
+        background-color: red;
+    }
+    #test {
+        background-color: red;
+        background-color: attr(data-color type(<color>));
+    }

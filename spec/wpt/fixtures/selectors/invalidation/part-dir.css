@@ -1,0 +1,10 @@
+
+  my-element::part(inner) {
+    background-color: #ff0000;
+  }
+  my-element::part(inner):dir(ltr) {
+    background-color: #00ff00;
+  }
+  my-element::part(inner):dir(rtl) {
+    background-color: #0000ff;
+  }

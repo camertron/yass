@@ -1,0 +1,9 @@
+
+  div {
+    border: 1px solid;
+  }
+  #myHeightChanges {
+    width: 100px;
+    height: 100px;
+    background: green;
+  }

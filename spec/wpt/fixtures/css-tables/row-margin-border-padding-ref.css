@@ -1,0 +1,15 @@
+
+.ltr { direction:ltr; }
+.rtl { direction:rtl; }
+table, td {
+  border: 3px solid;
+}
+.bc table {
+  border-collapse: collapse;
+}
+
+.inherited > td {
+  border: 3px dashed;
+  padding: 5px;
+  margin: 7px;
+}

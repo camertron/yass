@@ -1,0 +1,10 @@
+
+  #container {
+    container-type: size;
+    width: 200px;
+    height: 4em;
+    border: 1px solid black;
+  }
+  @container (width > 300px) {
+    #child { color: green; }
+  }

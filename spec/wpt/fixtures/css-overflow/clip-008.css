@@ -1,0 +1,18 @@
+
+  #testHolder {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+  #clipped {
+    width: 100px;
+    height: 100px;
+    overflow-x: clip;
+    background-color: wheat;
+    border-radius: 50%;
+  }
+  #contents {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+  }

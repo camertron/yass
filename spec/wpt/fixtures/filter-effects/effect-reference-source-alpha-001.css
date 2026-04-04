@@ -1,0 +1,10 @@
+
+div {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+#test {
+  background-color: red;
+  filter: opacity(0) url(#f);
+}

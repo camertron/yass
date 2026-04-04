@@ -1,0 +1,20 @@
+
+.container {
+  color: grey;
+}
+
+#subject1:is(.container:has(.descendant):focus-within, .never-matches) {
+  color: red;
+}
+
+#subject2:where(.container:has(.descendant):focus-within, .never-matches) {
+  color: orangered;
+}
+
+#subject3:is(:nth-child(1 of .container):focus-within, .never-matches) {
+  color: darkred;
+}
+
+#subject4:where(:nth-child(1 of .container):focus-within, .never-matches) {
+  color: pink;
+}

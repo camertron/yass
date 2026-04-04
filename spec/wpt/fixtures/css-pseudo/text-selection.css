@@ -1,0 +1,20 @@
+
+.test {
+  font: 10px/1 Ahem;
+  margin-left: 200px;
+}
+#before::before {
+  content: "::before";
+  display: inline-block;
+  margin-left: -80px;
+}
+#marker {
+  display: list-item;
+  list-style-type: "::marker";
+}
+#before-marker::before {
+  content: "";
+  display: list-item;
+  list-style-type: "::marker";
+  height: 0;
+}

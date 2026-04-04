@@ -1,0 +1,8 @@
+
+html,body {
+  color:black; background-color:white; font:24px/1 Ahem; padding:0; margin:0;
+}
+
+body { margin:200px; }
+span { background:cyan; }
+span:nth-child(2n+1) { background:grey; }

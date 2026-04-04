@@ -1,0 +1,10 @@
+
+div {background: blue;}
+p {
+	font-family: ahem;
+	background: yellow;
+	column-rule: 1em solid lime;
+	columns: 2;
+	margin: 0 auto;
+	width: 200px;
+}

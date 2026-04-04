@@ -1,0 +1,5 @@
+
+.target {
+  /* If outline-style is none (the default), the computed style of outline-width is 0. */
+  outline-style: solid;
+}

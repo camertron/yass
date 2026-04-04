@@ -1,0 +1,17 @@
+
+div {
+	background: #3366cc;
+	height: 4em;
+}
+div::after, p {
+	content: "xxx";
+	background: yellow;
+	margin: 1em;
+	width: 200px;
+	height: 2em;
+	float: left;
+}
+div::after {
+	content: "yyy";
+	display: block;
+}

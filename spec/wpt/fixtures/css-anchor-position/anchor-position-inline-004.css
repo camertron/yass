@@ -1,0 +1,98 @@
+
+body > div {
+  font-family: Ahem;
+  font-size: 10px;
+  line-height: 1;
+  width: 10em;
+}
+.cb {
+  position: relative;
+}
+body > .cb {
+  margin-bottom: 20px;
+}
+.columns {
+  column-count: 3;
+  column-fill: auto;
+  column-gap: 1em;
+  column-width: 10em;
+  orphans: 1;
+  widows: 1;
+  width: 32em;
+  height: 50px;
+}
+.anchor1 {
+  anchor-name: --a1;
+  color: red;
+}
+.target {
+  position: absolute;
+}
+.target1-pos {
+  left: anchor(--a1 left);
+  top: anchor(--a1 top);
+  right: anchor(--a1 right);
+  bottom: anchor(--a1 bottom);
+}
+.target1-size {
+  left: anchor(--a1 left);
+  top: anchor(--a1 top);
+  width: anchor-size(--a1 width);
+  height: anchor-size(--a1 height);
+}
+.target::before {
+  position: absolute;
+  background: green;
+  content: "";
+}
+.target.part1::before {
+  width: 30%;
+  height: 50%;
+}
+.target.part2::before {
+  left: 30%;
+  width: 30%;
+  height: 50%;
+}
+.target.part3::before {
+  left: 60%;
+  width: 40%;
+  height: 50%;
+}
+.target.part4::before {
+  top: 50%;
+  width: 30%;
+  height: 50%;
+}
+.target.part5::before {
+  top: 50%;
+  left: 30%;
+  width: 30%;
+  height: 50%;
+}
+.target.part6::before {
+  top: 50%;
+  left: 60%;
+  width: 40%;
+  height: 50%;
+}
+#mc_part1::before {
+  width: 40px;
+  height: 25px;
+}
+#mc_part2::before {
+  left: 40px;
+  width: 40px;
+  height: 25px;
+}
+#mc_part3::before {
+  top: 25px;
+  width: 40px;
+  height: 25px;
+}
+#mc_part4::before {
+  top: 25px;
+  left: 40px;
+  width: 40px;
+  height: 25px;
+}

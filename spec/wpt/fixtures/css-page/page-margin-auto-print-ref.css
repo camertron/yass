@@ -1,0 +1,23 @@
+
+  @page {
+    size: 20em 7em;
+    margin: 0;
+  }
+  :root {
+    print-color-adjust: exact;
+  }
+  .pagebox {
+    break-before: page;
+    display: flex;
+    width: 20em;
+    height: 7em;
+  }
+  .pagebox > div {
+    width: 12em;
+    height: 3em;
+    margin: auto;
+    background: yellow;
+  }
+  body {
+    margin: 0;
+  }

@@ -1,0 +1,53 @@
+
+    body {
+        margin: 0px;
+    }
+
+    .outer {
+        position: relative;
+        border: 2px solid rgb(96 139 168);
+        width: 200px;
+        height: 200px;
+    }
+
+    .container {
+        position: absolute;
+        column-gap: 10px;
+        display: flex;
+    }
+
+    .item {
+        background: rgb(96 139 168 / 0.2);
+        height: 100%;
+        width: 60px;
+    }
+
+    .row-gap {
+        display: flex;
+        position: absolute;
+        height: 10px;
+        left: -2px;
+        width: 204px;
+        top: 120px;
+        gap: 6px;
+    }
+    .row-gap > div {
+        width: 64px;
+        height: 100%;
+        background: gold;
+    }
+    .column-gap {
+        position: absolute;
+        width: 10px;
+        background: blue;
+    }
+
+    .spanner {
+        position: absolute;
+        background: cyan;
+        width: 200px;
+        height: 18px;
+        top: 40px;
+        left: 0;
+        opacity: 0.5;
+    }

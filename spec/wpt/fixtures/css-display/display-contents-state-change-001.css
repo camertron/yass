@@ -1,0 +1,14 @@
+
+:focus-within .contents {
+  color: green;
+}
+.contents {
+  display: contents;
+  border: 10px solid red;
+  color: red;
+}
+input {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}

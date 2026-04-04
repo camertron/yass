@@ -1,0 +1,8 @@
+
+div {
+  font-size: 50px;
+  font-family: Monospace;
+  width: max-content;
+  border: 1px solid green;
+  letter-spacing: 10px;
+}

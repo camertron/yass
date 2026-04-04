@@ -1,0 +1,28 @@
+
+.container {
+  height: 200px;
+}
+
+.test {
+  background: red;
+  width: 100px;
+}
+
+.child {
+  visibility: hidden;
+  width: 10px;
+  line-height: 0;
+}
+
+.inline {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}
+
+@supports (display: layout(test)) {
+  .test {
+    background: green;
+    display: layout(test);
+  }
+}

@@ -1,0 +1,7 @@
+
+.grid {
+    display: grid;
+    grid-template-rows: repeat(4, 50px);
+    grid-template-columns: repeat(2, 20px) 40px repeat(2, 20px);
+    grid-auto-flow: column;
+}

@@ -1,0 +1,8 @@
+
+div {
+  font-size: 100px;
+  width: 400px;
+  background: red;
+  background-clip: text;
+  color: green;
+}

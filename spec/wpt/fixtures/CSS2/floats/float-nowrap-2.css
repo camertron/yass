@@ -1,0 +1,12 @@
+
+  div {
+    width: 10ch;
+    white-space: nowrap;
+    font-family: monospace;
+  }
+  span {
+    float: right;
+    width: 5ch;
+    height: 5ch;
+    background: blue;
+  }

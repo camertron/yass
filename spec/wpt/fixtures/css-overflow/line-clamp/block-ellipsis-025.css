@@ -1,0 +1,6 @@
+
+.clamp {
+  line-clamp: 4;
+  width: 32.5ch;
+  font-family: monospace;
+}

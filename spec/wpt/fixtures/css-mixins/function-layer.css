@@ -1,0 +1,82 @@
+
+    @layer {
+      @function --f() { result: 1px; }
+    }
+    #target {
+      --actual: --f();
+      --expected: 1px;
+    }
+  
+
+    @layer {
+      @function --f() { result: 1px; }
+    }
+    @layer {
+      @function --f() { result: 2px; }
+    }
+    #target {
+      --actual: --f();
+      --expected: 2px;
+    }
+  
+
+    @layer {
+      @function --f() { result: 1px; }
+    }
+    @layer {
+      @function --f() { result: 2px; }
+    }
+    @function --f() { result: 3px; }
+    #target {
+      --actual: --f();
+      --expected: 3px;
+    }
+  
+
+    @function --f() { result: 3px; }
+    @layer {
+      @function --f() { result: 1px; }
+    }
+    @layer {
+      @function --f() { result: 2px; }
+    }
+    #target {
+      --actual: --f();
+      --expected: 3px;
+    }
+  
+
+    @layer base {
+      @function --f() { result: 10px; }
+    }
+    #target {
+      --actual: --f();
+      --expected: 10px;
+    }
+  
+
+    @layer base {
+      @function --f() { result: 10px; }
+    }
+    @layer theme {
+      @function --f() { result: 20px; }
+    }
+    #target {
+      --actual: --f();
+      --expected: 20px;
+    }
+  
+
+    @layer theme, base;
+
+    @layer base {
+      @function --f() { result: 10px; } /* Winner */
+    }
+    @layer theme {
+      @function --f() { result: 20px; }
+    }
+    #target {
+      --actual: --f();
+      --expected: 10px;
+    }
+  

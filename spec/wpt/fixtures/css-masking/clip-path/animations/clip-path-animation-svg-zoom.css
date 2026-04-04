@@ -1,0 +1,24 @@
+
+  .clipped {
+    background-color: green;
+    stroke: black;
+    stroke-width: 3;
+    fill: red;
+    animation: clippath 20s steps(2, jump-end) -9.999s;
+  }
+
+  .svg {
+    width: 100px;
+    height: 100px;
+    zoom: 1.25;
+  }
+
+  @keyframes clippath {
+    0% {
+      clip-path: circle(50% at 50% 50%);
+    }
+
+    100% {
+      clip-path: circle(20% at 50% 50%);
+    }
+  }

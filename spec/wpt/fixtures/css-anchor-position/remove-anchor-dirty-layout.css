@@ -1,0 +1,9 @@
+
+  #anchor {
+    anchor-name: --a;
+  }
+  #target {
+    position: absolute;
+    top: anchor(top);
+    position-anchor: --a;
+  }

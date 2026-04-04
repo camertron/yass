@@ -1,0 +1,13 @@
+
+
+@import "support/grid-lanes-intrinsic-sizing-visual.css";
+
+grid {
+  display: inline grid-lanes;
+  gap: 1px 2px;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  border: 1px solid;
+  padding: 0 1px 0 2px;
+  vertical-align: top;
+  width: min-content;
+}

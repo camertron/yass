@@ -1,0 +1,13 @@
+
+.parent {
+  min-width: 30px;
+}
+.target {
+  width: 0px;
+  height: 10px;
+  background-color: black;
+  min-width: 10px;
+}
+.expected {
+  background-color: green;
+}

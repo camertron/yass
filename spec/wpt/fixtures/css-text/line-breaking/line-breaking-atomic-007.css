@@ -1,0 +1,11 @@
+
+div {
+  font: 50px/1 Ahem;
+  width: 40px;
+  height: 140px;
+  background: red;
+  color: green;
+}
+span {
+  display: inline-block;
+}

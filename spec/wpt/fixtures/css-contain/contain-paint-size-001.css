@@ -1,0 +1,16 @@
+
+  table
+    {
+      table-layout: fixed;
+      width: 206px;
+    }
+
+  caption
+    {
+      background-color: red;
+      border: green solid 1em;
+      color: red;
+      contain: paint size;
+      font-size: 20px;
+    }
+  

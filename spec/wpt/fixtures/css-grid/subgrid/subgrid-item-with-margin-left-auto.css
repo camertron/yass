@@ -1,0 +1,15 @@
+
+.content {
+  background-color: green;
+}
+.grid {
+  display: grid;
+  width: 100px;
+  font: 25px/1 Ahem;
+  color: green;
+}
+.subgrid {
+  grid-template-columns: subgrid;
+  display: grid;
+  margin-left: auto;
+}

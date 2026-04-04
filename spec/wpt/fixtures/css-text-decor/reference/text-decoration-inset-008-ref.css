@@ -1,0 +1,25 @@
+
+body {
+  background: white;
+  color: black;
+  font-family: times new roman, serif;
+}
+div {
+  position: relative;
+}
+h1 {
+  position: absolute;
+}
+span {
+  display: inline-block;
+  position: relative;
+}
+u {
+  display: inline-block;
+  position: absolute;
+  text-decoration-skip-ink: none;
+  text-decoration-color: black;
+  width: calc(100% - 20px);
+  text-wrap-mode: nowrap;
+  overflow-x: clip;
+}

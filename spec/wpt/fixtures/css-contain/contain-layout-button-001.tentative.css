@@ -1,0 +1,12 @@
+
+button {
+  border: 5px solid green;
+  padding: 0;
+  /* We use a nonzero margin-bottom to be sure we're synthesizing a baseline
+     from the margin-box rather than from the border-box: */
+  margin-bottom: 2px;
+  contain: layout;
+  color: transparent;
+  width: 0;
+  height: 0;
+}

@@ -1,0 +1,9 @@
+
+    @font-face {
+        font-family: "Lato-Medium";
+        src: url(/fonts/Lato-Medium.ttf);
+    }
+    .test {
+        font-family: "Lato-Medium";
+        font-size: 3em;
+    }

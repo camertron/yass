@@ -1,0 +1,13 @@
+
+div {
+  font-size: 2em;
+  border: solid black;
+  margin: 5px;
+  width: 30ch;
+}
+#test {
+  word-space-transform: none;
+}
+#test span {
+  word-space-transform: ideographic-space auto-phrase;
+}

@@ -1,0 +1,18 @@
+
+input.test {
+  width: 100px;
+  height: 100px;
+  font: 105px/1 Ahem;
+  padding: 10px;
+}
+
+textarea.test {
+  width: 100px;
+  height: 100px;
+  font: 105px/1 Ahem;
+  padding: 10px;
+}
+
+input[type="search"].test {
+  box-sizing: content-box;
+}

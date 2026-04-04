@@ -1,0 +1,5 @@
+
+.test, .ref { font-size: 125%; line-height: 1.5em; }
+.test span, .ref span { margin-right: 1em; white-space: nowrap; }
+/* the CSS above is not part of the test */
+.test { text-transform: uppercase; }

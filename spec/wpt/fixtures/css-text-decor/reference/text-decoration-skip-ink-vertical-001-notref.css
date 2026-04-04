@@ -1,0 +1,8 @@
+
+           div{
+                text-decoration: green underline;
+                text-decoration-skip-ink: none;
+                text-underline-offset: -0.2em;
+                writing-mode: vertical-lr;
+           }
+        

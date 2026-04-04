@@ -1,0 +1,16 @@
+
+#parent {
+  writing-mode: vertical-lr;
+}
+
+@layer {
+  .revert-layer {
+    writing-mode: vertical-rl;
+  }
+}
+@layer {
+  .revert-layer {
+    writing-mode: horizontal-tb;
+    writing-mode: revert-layer;
+  }
+}

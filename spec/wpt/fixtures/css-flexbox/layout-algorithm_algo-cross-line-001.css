@@ -1,0 +1,14 @@
+
+            .flex {
+                width: 200px;
+                display: flex;
+                background: red;
+            }
+
+            .flex>* {
+                background: green;
+                height: 200px;
+                flex: 1;
+                overflow: scroll;
+            }
+        

@@ -1,0 +1,14 @@
+
+  #multicol {
+    container-type: inline-size;
+    width: 600px;
+    columns: 2;
+    column-gap: 0;
+    height: 200px;
+  }
+  #spanner { height: 100px; }
+  @container (width = 600px) {
+    #spanner {
+      column-span: all;
+    }
+  }

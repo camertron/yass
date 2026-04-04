@@ -1,0 +1,12 @@
+
+:root { text-autospace: no-autospace; }
+@font-face {
+    font-family: 'mplus-1p-regular';
+    src: url('/fonts/mplus-1p-regular.woff') format('woff');
+    }
+#wrapper { position: relative; }
+.test { color: red; }
+.test, .ref { font-size: 30px; font-family: mplus-1p-regular, sans-serif; width: 185px; padding: 0; border: 1px solid orange; line-height: 1em; }
+
+
+.test { line-break: loose; }

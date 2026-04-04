@@ -1,0 +1,15 @@
+
+  @property --number {
+    syntax: "<number>";
+    inherits: true;
+    initial-value: 0;
+  }
+  @property --number2 {
+    syntax: "<number>";
+    inherits: true;
+    initial-value: 0;
+  }
+  div {
+    --random1: random(1, 10);
+    --random2: random(11, 30);
+  }

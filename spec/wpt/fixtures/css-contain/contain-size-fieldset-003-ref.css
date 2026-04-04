@@ -1,0 +1,17 @@
+
+  .basic {
+    visibility: hidden;
+    border: none;
+  }
+  .container {
+    border: 10px solid green;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .height {
+    height: 30px;
+  }
+  .width {
+    width: 30px;
+  }
+  

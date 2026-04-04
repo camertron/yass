@@ -1,0 +1,21 @@
+
+  @font-face {
+    font-family: my-font;
+    font-weight: 300;
+    font-weight: random(500, 900);
+  }
+  @font-face {
+    font-family: my-font;
+    font-stretch: 30%;
+    font-stretch: random(element-shared, 0%, 10%);
+  }
+  @font-palette-values --palette {
+    font-family: my-font;
+    base-palette: 3;
+    base-palette: random(10, 30);
+  }
+  @font-feature-values my-font {
+    @swash {
+      foo: random(1, 3);
+    }
+  }

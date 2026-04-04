@@ -1,0 +1,16 @@
+
+.no-list > li {
+  display: block;
+}
+.normal::marker {
+  content: normal;
+}
+.string::marker {
+  content: "string";
+}
+.image::marker {
+  content: url("about:invalid");
+}
+.none::marker {
+  content: none;
+}

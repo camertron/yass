@@ -1,0 +1,15 @@
+
+@font-face {
+  font-family: Ahem;
+  src: url(/fonts/Ahem.ttf);
+}
+/* We use Ahem to avoid very minor differences between the test and the
+   reference that occur with certain font+platform combinations. */
+div { font-family: Ahem; font-size: 20px; }
+div.wsn100  { word-spacing: -100%; }
+div.wsn40   { word-spacing: -40%; }
+div.ws0     { word-spacing: 0%; }
+div.ws25    { word-spacing: calc(25% + 0px); }
+div.ws100   { word-spacing: 100%; }
+div.ws300   { word-spacing: calc(100% + 6em + 50%*4 - 12em/2); }
+div.ws400p1 { word-spacing: calc(400% + 1em); }

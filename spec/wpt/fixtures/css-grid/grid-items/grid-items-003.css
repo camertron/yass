@@ -1,0 +1,19 @@
+
+  #reference-overlapped-red {
+    position: absolute;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+  }
+
+  .test-grid-overlapping-green {
+    display: grid;
+    font: 50px/1 Ahem;
+    color: green;
+  }
+
+  .display-none-red {
+    display: none;
+    color: red;
+  }

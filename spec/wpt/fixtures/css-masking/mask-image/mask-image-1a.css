@@ -1,0 +1,11 @@
+
+      div {
+        background-color: purple;
+        width: 100px;
+        height: 100px;
+      }
+
+      div.mask-by-png {
+        mask-image: url(support/transparent-100x50-blue-100x50.png);
+      }
+    

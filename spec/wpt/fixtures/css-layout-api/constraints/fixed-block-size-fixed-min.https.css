@@ -1,0 +1,18 @@
+
+.test {
+  background: red;
+  --expected-block-size: 70;
+  width: 100px;
+  height: 60px;
+  min-height: 70px;
+}
+
+.child {
+  background: green;
+}
+
+@supports (display: layout(test)) {
+  .test {
+    display: layout(test);
+  }
+}

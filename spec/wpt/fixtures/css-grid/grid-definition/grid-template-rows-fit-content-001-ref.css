@@ -1,0 +1,41 @@
+
+.grid {
+  justify-content: start;
+  align-content: start;
+  height: 100px;
+  width: 40px;
+  position: relative;
+  padding-left: 10px;
+  margin-right: 5px;
+  grid-row-gap: 5px;
+  float: left;
+}
+
+.item {
+  font: 10px/1 Ahem;
+  background: cyan;
+  padding-left: 2px;
+}
+
+.spanningItem {
+  font: 10px/1 Ahem;
+  grid-row: 1 / -1;
+  grid-column: 2;
+  background: salmon;
+  padding-left: 2px;
+}
+
+.test {
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 5px;
+  background: purple;
+}
+.test:nth-child(2n) { background: orange; }
+
+.firstRow { grid-row: 1 / 2; }
+.secondRow { grid-row: 2 / 3; }
+.thirdRow { grid-row: 3 / 4; }
+
+div.grid > div { writing-mode: vertical-lr; }
+

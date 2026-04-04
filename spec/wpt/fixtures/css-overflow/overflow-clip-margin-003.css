@@ -1,0 +1,9 @@
+
+  .parent {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      overflow: clip;
+      overflow-clip-margin: 1px;
+      box-shadow: 20px 20px 5px red;
+  }

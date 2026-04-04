@@ -1,0 +1,9 @@
+
+div {
+  font-family: monospace;
+  font-size: 50px;
+  hanging-punctuation: last;
+  overflow: hidden;
+  color: red;
+}
+span {color: white; }

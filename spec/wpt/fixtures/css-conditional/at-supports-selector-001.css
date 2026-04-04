@@ -1,0 +1,9 @@
+
+  div {
+    background-color:red;
+    height:100px;
+    width:100px;
+  }
+  @supports selector(a:link.class#ident) {
+    div { background: green };
+  }

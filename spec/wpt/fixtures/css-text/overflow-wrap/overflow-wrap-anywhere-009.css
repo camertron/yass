@@ -1,0 +1,19 @@
+
+div {
+  position: relative;
+  font: 25px / 1 Ahem;
+}
+.ref {
+  position: absolute;
+  background: green;
+  color: red;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+}
+.test {
+  color: green;
+  width: 3ch;
+
+  overflow-wrap: anywhere;
+}

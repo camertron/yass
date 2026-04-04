@@ -1,0 +1,34 @@
+
+  @page {
+    @top-center {
+      content: "PASS";
+    }
+  }
+
+
+  @page {
+    @top-center {
+      content: "PASS";
+    }
+    padding-left: 10px;
+  }
+
+
+  @page {
+    padding-left: 10px;
+    @top-center {
+      content: "PASS";
+    }
+  }
+
+
+  @page {
+    padding-left: 666px;
+    @top-left {
+      content: "left";
+    }
+    padding-left: 10px;
+    @top-right {
+      content: "right";
+    }
+  }

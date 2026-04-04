@@ -1,0 +1,4 @@
+
+  #test-container > div { background-color: green; }
+  #target1:has(:not(.item, :nth-child(3))) { background-color: red; }
+  #target2:has(:not(.item, :nth-last-child(3))) { background-color: red; }

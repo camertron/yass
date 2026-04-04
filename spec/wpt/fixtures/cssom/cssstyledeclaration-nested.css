@@ -1,0 +1,6 @@
+
+.parent {
+  color: red;
+  .child { background: blue; }
+  font-size: 20px;
+}

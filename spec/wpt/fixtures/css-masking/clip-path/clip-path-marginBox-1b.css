@@ -1,0 +1,12 @@
+
+  .clipped {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    clip-path: margin-box;
+    /* This outline draws far outside the margin box and should be partially clipped. */
+    outline: 200px solid green;
+    margin: 25px;
+    /* Disables margin collapsing. */
+    float: left;
+  }

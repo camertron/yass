@@ -1,0 +1,7 @@
+
+  html {
+    contain: paint;
+  }
+  body {
+    overflow: scroll;
+  }

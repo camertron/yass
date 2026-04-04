@@ -1,0 +1,16 @@
+
+x-flexbox {
+  display: flex;
+  height: min-content;
+}
+
+.fit-content-item {
+  background: green;
+  width: 100px;
+  writing-mode: vertical-lr;
+}
+
+.height-setting-item {
+  height: 100px;
+}
+

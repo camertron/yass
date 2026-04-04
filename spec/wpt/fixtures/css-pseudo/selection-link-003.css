@@ -1,0 +1,11 @@
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  a:visited::selection {
+    color: green;
+  }
+  a:link::selection {
+    color: green;
+  }

@@ -1,0 +1,19 @@
+
+    body {
+        margin: 0px;
+    }
+    .container {
+        gap: 10px;
+        row-rule: 2px solid red;
+        column-rule: 2px solid blue;
+    }
+    .flex {
+        display: inline-flex;
+        flex-wrap: wrap;
+        width: 110px;
+    }
+    .item {
+        background: lightgray;
+        width: 50px;
+        height: 50px;
+    }

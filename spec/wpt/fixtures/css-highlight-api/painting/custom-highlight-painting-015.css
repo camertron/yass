@@ -1,0 +1,8 @@
+
+  ::highlight(foo) {
+    color: red;
+  }
+  ::highlight(bar) {
+    color: blue;
+    background-color: yellow;
+  }

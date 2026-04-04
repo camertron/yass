@@ -1,0 +1,17 @@
+
+.old {
+  width: 50vw;
+  height: 100vh;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background: blue;
+}
+.new {
+  width: 50vw;
+  height: 100vh;
+  position: fixed;
+  left: 50vw;
+  top: 0px;
+  background: grey;
+}

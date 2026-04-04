@@ -1,0 +1,17 @@
+
+  :root {
+    scroll-marker-group: before;
+  }
+
+  .item {
+    height: 100vh;
+  }
+
+  .item::scroll-marker {
+    content: '';
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-left: 10px;
+  }

@@ -1,0 +1,16 @@
+
+  ruby {
+      ruby-position: under;
+  }
+  ruby div {
+      display: inline-block;
+      vertical-align: top;
+      width: 25px;
+      background: green;
+  }
+  .main {
+      height: 75px;
+  }
+  .annotation {
+      height: 25px;
+  }

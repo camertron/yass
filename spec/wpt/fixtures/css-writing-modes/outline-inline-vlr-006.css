@@ -1,0 +1,13 @@
+
+div {
+  color:transparent;
+  font:50px/1 Ahem;
+  height:5em;
+}
+.vlr {
+  writing-mode:vertical-lr;
+}
+.outline {
+  color:orange;
+  outline:blue solid 2px;
+}

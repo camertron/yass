@@ -1,0 +1,14 @@
+
+  @page {
+    size: 6in;
+    margin: 0.5in;
+  }
+  :root {
+    print-color-adjust: exact;
+    background: yellow;
+    margin: 0.5in;
+  }
+  body {
+    margin: 0;
+    background: cyan;
+  }

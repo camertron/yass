@@ -1,0 +1,37 @@
+
+  #combined {
+    container-type: inline-size scroll-state;
+    overflow: scroll;
+    width: 200px;
+    height: 200px;
+  }
+  #outer {
+    container: --container / scroll-state;
+    overflow: scroll;
+    width: 400px;
+    height: 400px;
+  }
+  #inner {
+    container-type: scroll-state;
+    width: 200px;
+    height: 600px;
+  }
+  #target {
+    --match: no;
+    --match-combined: no;
+  }
+
+  @container scroll-state(scrollable), --container scroll-state(scrollable) {
+    #target { --match: yes; }
+  }
+  @container scroll-state(scrollable) {
+    #target { --match: no-way; }
+  }
+
+  @container scroll-state((scrollable:right) and (scrollable:bottom)),
+             (inline-size) and scroll-state((scrollable:right) and (scrollable:bottom)) {
+    #target { --match-combined: yes; }
+  }
+  @container scroll-state((scrollable:right) and (scrollable:bottom)) {
+    #target { --match-combined: no-way; }
+  }

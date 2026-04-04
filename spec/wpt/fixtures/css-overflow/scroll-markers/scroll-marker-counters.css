@@ -1,0 +1,29 @@
+
+  #scroller {
+    overflow: hidden;
+    scroll-marker-group: after;
+    counter-reset: item;
+    height: 100px;
+    width: 100px;
+  }
+
+  #scroller::scroll-marker-group {
+    border: 3px solid black;
+    display: flex;
+    height: 100px;
+    width: 300px;
+  }
+
+  .item {
+    height: 100px;
+    width: 100px;
+  }
+
+  .item::scroll-marker {
+    content: counter(item);
+    counter-increment: item;
+    background-color: green;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+  }

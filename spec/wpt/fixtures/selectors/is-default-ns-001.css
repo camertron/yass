@@ -1,0 +1,9 @@
+
+@namespace url("http://www.w3.org/2000/svg");
+
+/* Type selector, so ns should apply and this should not match */
+*|*:is(div) {
+  width: 100px;
+  height: 100px;
+  background: red;
+}

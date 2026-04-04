@@ -1,0 +1,43 @@
+
+    @font-face {
+        font-family: "Roboto";
+        src: url('support/fonts/RobotoExtremo-VF.subset.ttf') format('truetype');
+        font-display: swap;
+        font-style: normal;
+        font-stretch: 75% 125%;
+    }
+    .stretch50 {
+        font-family: "Roboto";
+        font-size: 3em;
+        font-variation-settings: 'wdth' 50;
+    }
+    .stretch75 {
+        font-family: "Roboto";
+        font-size: 3em;
+        font-variation-settings: 'wdth' 75;
+    }
+    .stretch87 {
+        font-family: "Roboto";
+        font-size: 3em;
+        font-variation-settings: 'wdth' 87.5;
+    }
+    .stretch100 {
+        font-family: "Roboto";
+        font-size: 3em;
+        font-variation-settings: 'wdth' 100;
+    }
+    .stretch112 {
+        font-family: "Roboto";
+        font-size: 3em;
+        font-variation-settings: 'wdth' 112.5;
+    }
+    .stretch125 {
+        font-family: "Roboto";
+        font-size: 3em;
+        font-variation-settings: 'wdth' 125;
+    }
+    .stretch200 {
+        font-family: "Roboto";
+        font-size: 3em;
+        font-variation-settings: 'wdth' 200;
+    }

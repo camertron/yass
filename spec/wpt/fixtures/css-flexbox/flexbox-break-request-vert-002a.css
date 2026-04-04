@@ -1,0 +1,16 @@
+
+    div.flexbox {
+      display: flex;
+      flex-direction: column;
+      border: 1px dashed black;
+      width: 20px;
+      height: 60px;
+      margin: 2px;
+      float: left;
+    }
+    div.item {
+      height: 28px;
+      border: 1px solid blue;
+      background: lightblue;
+    }
+  

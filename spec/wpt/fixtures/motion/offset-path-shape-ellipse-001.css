@@ -1,0 +1,17 @@
+
+#outer {
+  top: 100px;
+  left: 100px;
+  position: relative;
+  width: 600px;
+  height: 400px;
+}
+#box {
+  background-color: green;
+  position: relative;
+  offset-path: ellipse(closest-side closest-side at center);
+  offset-distance: 25%;
+  border-radius: 50% 50% 0 0;
+  width: 100px;
+  height: 100px;
+}

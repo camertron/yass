@@ -1,0 +1,9 @@
+
+  div {
+    font-size: 10px;
+    min-width: 1em;
+    transition: font-size steps(2, start) 10s;
+  }
+  .change {
+    font-size: 20px;
+  }

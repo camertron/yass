@@ -1,0 +1,9 @@
+
+:root {
+  --a: green;
+  color: red;
+}
+p {
+  color: crimson;
+  color: var(--a) var(--b, );
+}

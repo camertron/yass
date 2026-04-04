@@ -1,0 +1,4 @@
+
+  span { color: green }
+  .contents { display: contents }
+  #container::first-line { color: red }

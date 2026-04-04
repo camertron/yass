@@ -1,0 +1,19 @@
+
+div {
+  font-size: 2em;
+  border: solid blue;
+  float: left;
+  margin: 1px;
+}
+.test {
+  word-space-transform: ideographic-space;
+}
+.pre {
+	white-space: pre;
+}
+.mbp span {
+  padding: 0 5px;
+  border: solid transparent;
+  border-width: 0 5px;
+  margin: 0 -10px;
+}

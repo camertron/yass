@@ -1,0 +1,6 @@
+
+    #originating::spelling-error {
+        color: white;
+        --x: initial;
+        background-color: var(--x, red);
+    }

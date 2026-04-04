@@ -1,0 +1,30 @@
+
+#target {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background: green;
+  view-transition-name: target;
+  view-transition-class: cls;
+}
+
+::view-transition-group(*) {
+  animation-play-state: paused;
+}
+
+::view-transition-image-pair(target.cls) {
+  transform: translateX(100px);
+  animation-play-state: paused;
+}
+
+::view-transition-old(*) {
+  animation: unset;
+  opacity: 1;
+}
+
+::view-transition-new(*) {
+  animation: unset;
+  opacity: 0;
+}
+
+

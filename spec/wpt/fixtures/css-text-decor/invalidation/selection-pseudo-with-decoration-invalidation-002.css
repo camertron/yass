@@ -1,0 +1,16 @@
+
+    div {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        line-height: 20px;
+        will-change: transform;
+    }
+    ::selection {
+        background: yellow;
+        color: currentColor;
+        text-decoration-line: underline;
+        text-decoration-style: line;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 10px;
+    }

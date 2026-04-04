@@ -1,0 +1,34 @@
+
+  .contain {
+    display: grid;
+    contain:size;
+    border: 1em solid green;
+    background: red;
+  }
+  .innerContents {
+    color: transparent;
+    height: 100px;
+    width: 100px;
+  }
+  .minHeight {
+    min-height: 40px;
+    background: lightblue;
+  }
+  .height {
+    height: 40px;
+    background: lightblue;
+  }
+  .maxWidth {
+    max-width: 40px;
+  }
+  .width {
+    width: 40px;
+  }
+  .floatLBasic {
+    float: left;
+  }
+  .floatLWidth {
+    float: left;
+    width: 40px;
+  }
+  

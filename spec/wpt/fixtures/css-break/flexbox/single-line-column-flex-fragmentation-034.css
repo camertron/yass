@@ -1,0 +1,10 @@
+
+  #flex {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  #flex > div {
+    width: 20px;
+    background: green;
+  }

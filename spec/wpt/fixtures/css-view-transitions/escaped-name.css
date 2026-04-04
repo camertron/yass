@@ -1,0 +1,21 @@
+
+:root { view-transition-name: none; }
+#first { view-transition-name: first\!; }
+#second { view-transition-name: secon\'d; }
+#third { view-transition-name: third\000021; }
+.box {
+  background: green;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+::view-transition-group(*),
+::view-transition-new(*),
+::view-transition-old(*),
+::view-transition-image-pair(*) {
+  animation-play-state: paused;
+}
+.box.after {
+  background: red;
+  left: 100px;
+}

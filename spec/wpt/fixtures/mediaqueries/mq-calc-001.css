@@ -1,0 +1,10 @@
+
+			div {
+				width: 100px;
+				height: 100px;
+				background-color: red;
+			}
+			@media (min-width: calc(1px - 1px)){
+				div { background-color: green; }
+			}
+	

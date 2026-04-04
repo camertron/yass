@@ -1,0 +1,27 @@
+
+  div#test-overlapping-green
+    {
+      background-color: green;
+      height: 105.83333q;
+      width: 1px;
+      width: 105.83333Q;
+    }
+
+    /*
+
+    25.4mm == 96px
+    Therefore, 26.45833mm == 100px
+    So, 26.45833 * 4 (Q per mm) == 105.83333Q == 100px
+
+    */
+
+  div#reference-overlapped-red
+    {
+      background-color: red;
+      bottom: 100px;
+      height: 100px;
+      position: relative;
+      width: 100px;
+      z-index: -1;
+    }
+  

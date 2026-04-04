@@ -1,0 +1,210 @@
+
+  #ancestor-across-root,
+  #ancestor-skip-slotting,
+  #ancestor-slotted,
+  #ancestor-host,
+  #ancestor-part,
+  #ancestor-slotted-before,
+  #ancestor-host-before,
+  #ancestor-part-before,
+  #ancestor-inner-part,
+  #ancestor-slot-fallback,
+  #inner-scope-host-part {
+    width: 400px;
+    container-type: inline-size;
+  }
+
+
+        @container (width = 400px) {
+          #t1 { color: green; }
+        }
+      
+
+        div {
+          width: 200px;
+          container-type: inline-size;
+        }
+      
+
+      @container (width = 200px) {
+        #t2 { color: green; }
+      }
+    
+
+        slot {
+          display: block;
+          width: 200px;
+          container-type: inline-size;
+        }
+        @container (width = 200px) {
+          ::slotted(#t3) { color: green; }
+        }
+      
+
+        @container (width = 400px) {
+          :host(#t4) { color: green; }
+        }
+      
+
+        div {
+          width: 200px;
+          container-type: inline-size;
+        }
+      
+
+      @container (width = 200px) {
+        #ancestor-part > div::part(part) { color: green; }
+      }
+    
+
+        slot {
+          display: block;
+          width: 200px;
+          container-type: inline-size;
+        }
+        @container (width = 400px) {
+          ::slotted(#t6)::before {
+            content: "X";
+            color: green;
+          }
+        }
+      
+
+      #t6 {
+        width: 400px;
+        container-type: inline-size;
+      }
+    
+
+        :host {
+          width: 200px;
+          container-type: inline-size;
+        }
+        @container (width = 200px) {
+          :host(#t7)::before {
+            content: "X";
+            color: green;
+          }
+        }
+      
+
+    @container (width = 200px) {
+      #ancestor-part-before > div::part(part)::before {
+        content: "X";
+        color: green;
+      }
+    }
+  
+
+        div {
+          width: 200px;
+          container-type: inline-size;
+        }
+      
+
+    @container (width = 200px) {
+      #ancestor-inner-part > div::part(inner-part) { color: green; }
+    }
+  
+
+        div {
+          width: 200px;
+          container-type: inline-size;
+        }
+      
+
+            div {
+              width: 200px;
+              container-type: inline-size;
+            }
+          
+
+      div {
+        width: 200px;
+        container-type: inline-size;
+      }
+      @container (width = 200px) {
+        #t10 { color: green; }
+      }
+    
+
+        div {
+          width: 200px;
+          container-type: inline-size;
+        }
+        #t11 { color: red; }
+      
+
+      @container (width = 200px) {
+        #container-for-part > div::part(part) { color: green; }
+      }
+    
+
+        div {
+          width: 200px;
+          container-type: inline-size;
+        }
+        @container (width = 200px) {
+          :host::part(part) { color: green; }
+        }
+      
+
+      @container --part2 (width >= 0px) {
+        #named-part2-child { color: green; }
+      }
+      #named-part1 {
+        container: --part1 / inline-size;
+        color: red;
+      }
+    
+
+    #named-part-host::part(part2) { container: --part2 / inline-size; }
+    @container --part1 (width >= 0px) {
+      #named-part-host::part(part1-child) { color: green; }
+    }
+  
+
+      @container --slot-container (width >= 0px) {
+        ::slotted(#slotted1) { color: green; }
+      }
+      #named-slotted-container {
+        container: --slot-container / inline-size;
+      }
+    
+
+    @container --slot-container (width >= 0px) {
+      #slotted2 { color: green; }
+    }
+  
+
+      :host {
+        container: --host-container / inline-size;
+      }
+      @container --host-container (width >= 0px) {
+        #host-descendant { color: green; }
+        ::slotted(#host-slotted1) { color: green; }
+      }
+    
+
+    @container --host-container (width >= 0px) {
+      #host-slotted2 { color: green; }
+    }
+  
+
+      .container {
+        width: 400px;
+        container-type: inline-size;
+      }
+    
+
+    @container (width = 200px) {
+      #pseudo-1::before { color: green; }
+    }
+    @container (width = 400px) {
+      #pseudo-2::before { color: green; }
+    }
+    #pseudo-1 {
+      container-type: inline-size;
+      width: 200px;
+    }
+  

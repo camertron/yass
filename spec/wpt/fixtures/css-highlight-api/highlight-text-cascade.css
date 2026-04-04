@@ -1,0 +1,10 @@
+
+        #out::highlight(example-highlight) {
+            background-color: yellow;
+            color:green;
+        }
+        #scoped::highlight(example-highlight) {
+            background-color: blue;
+            color:red;
+        }
+    

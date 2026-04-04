@@ -1,0 +1,10 @@
+
+.clamp {
+  width: 15.1ch;
+  font: 16px / 32px monospace;
+  background-color: yellow;
+  padding: 4px;
+  line-clamp: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

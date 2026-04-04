@@ -1,0 +1,16 @@
+
+body > div {
+  color: red;
+  outline-color: currentcolor;
+  display: table-cell; /*BFC*/
+}
+
+div > div {
+  width: 0; height: 0;
+  margin-left: 50px;
+  margin-top: 50px;
+  color: green;
+  outline-color: inherit;
+  outline-width: 50px;
+  outline-style: solid;
+}

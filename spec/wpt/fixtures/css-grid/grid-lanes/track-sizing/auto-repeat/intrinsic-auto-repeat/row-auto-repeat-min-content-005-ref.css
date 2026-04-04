@@ -1,0 +1,13 @@
+
+.grid {
+    display: grid;
+    background: gray;
+    grid-template-rows: min-content min-content;
+    height: 300px;
+    width: 300px;
+    font: 15px/1 Ahem;
+}
+
+.grid > div {
+    width: 100px;
+}

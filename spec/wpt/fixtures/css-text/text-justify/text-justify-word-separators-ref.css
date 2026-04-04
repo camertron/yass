@@ -1,0 +1,9 @@
+
+        .justified {
+            font: 10px/1 Ahem;
+            text-align: justify;
+            text-justify: inter-word;
+            width: 120px;
+            border: solid 1px black;
+        }
+    

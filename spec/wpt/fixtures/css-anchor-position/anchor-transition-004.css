@@ -1,0 +1,18 @@
+
+  body { margin: 0; }
+  #anchor {
+    anchor-name: --a;
+    width: 100px;
+    height: 100px;
+    background: teal;
+  }
+  #anchored {
+    position: absolute;
+    position-anchor: --a;
+    left: anchor(right, 17px);
+    top: anchor(top, 17px);
+    width: 100px;
+    height: 100px;
+    background: orange;
+    transition: left 2s;
+  }

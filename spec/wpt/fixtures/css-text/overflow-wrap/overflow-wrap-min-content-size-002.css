@@ -1,0 +1,9 @@
+
+#wrapper {
+  width: 0px;
+  overflow-wrap: anywhere;
+}
+#test {
+  float: left;
+  border: 2px solid blue;
+}

@@ -1,0 +1,7 @@
+
+    * {
+        float: inline-end;
+    }
+
+    *::first-letter {
+    }

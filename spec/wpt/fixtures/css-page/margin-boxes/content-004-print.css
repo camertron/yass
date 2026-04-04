@@ -1,0 +1,18 @@
+
+  @page {
+    margin: 4em;
+
+    @top-center {
+      text-align: left;
+      vertical-align: top;
+      content: "Page " counter(page) " of " counter(pages);
+    }
+    @bottom-center {
+      text-align: left;
+      vertical-align: top;
+      content: "Page " counter(page) " of " counter(pages);
+    }
+  }
+  body {
+    margin: 0;
+  }

@@ -1,0 +1,3 @@
+
+    .outer {color: red; background-color: red; font-size: 200%; width: 6em; height: 6em; }
+    .inner {color: green; background-color: currentColor; width: 6em; height: 6em; font-weight: bold;}

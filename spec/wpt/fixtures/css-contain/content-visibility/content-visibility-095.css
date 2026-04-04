@@ -1,0 +1,12 @@
+
+table {
+  width: 150px;
+  height: 150px;
+  background: lightblue;
+}
+#positioned {
+  position: absolute;
+}
+.hidden {
+  content-visibility: hidden;
+}

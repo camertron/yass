@@ -1,0 +1,16 @@
+
+        .container {
+          width: 150px;
+          height: 100px;
+          background-color: black;
+        }
+        img {
+          float: left;
+        }
+        .green {
+            float: right;
+            width: 50px;
+            height: 100px;
+            background-color: rgb(0, 100, 0);
+        }
+    

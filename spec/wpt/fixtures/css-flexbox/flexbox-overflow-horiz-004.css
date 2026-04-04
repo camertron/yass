@@ -1,0 +1,22 @@
+
+    .flexContainer {
+      background: purple;
+      display: flex;
+      flex-wrap: wrap;
+      width: 70px;
+      height: 70px;
+      float: left;
+      margin-right: 5px;
+    }
+    .bigItem {
+      background: blue;
+      width: 50px;
+      height: 200px;
+    }
+    .smallItem {
+      background: teal;
+      width: 50px;
+      height: 20px;
+    }
+    .hidden { overflow: hidden }
+  

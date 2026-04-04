@@ -1,0 +1,15 @@
+
+  #button {
+    width: 400px;
+    height: 400px;
+    margin: 50px;
+    padding: 0;
+    border: 0;
+    background-color: purple;
+    vertical-align: top;
+  }
+  #button > div {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+  }

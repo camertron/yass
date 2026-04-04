@@ -1,0 +1,55 @@
+
+  #host1 {
+    color: red;
+    color: revert-rule;
+  }
+
+
+  #slotted2 {
+    color: red;
+    color: revert-rule;
+  }
+
+
+  #host3 { color: green; }
+
+
+  #host4 {
+    color: red;
+    color: revert-rule;
+  }
+
+
+  #host5 {
+    color: blue;
+    color: revert-rule;
+  }
+
+
+  #host6 {
+    color: blue;
+    color: revert-rule;
+  }
+
+
+  #host7::part(mypart) { color: green; }
+  #host7::part(mypart) { color: revert-rule; }
+
+
+  #host8::part(mypart) { color: revert-rule; }
+
+
+  #host9::part(mypart) { color: green; }
+
+
+  #host10::part(mypart) { color: red; }
+  #host10::part(mypart) { color: green; }
+  #host10::part(mypart) { color: revert-rule; }
+
+
+  #host11 { color: red; color: revert-rule; }
+  #host11::part(mypart) { color: green; }
+
+
+  #host12::part(mypart) { color: green; }
+  #host12.host12cls::part(mypart) { color: revert-rule; }

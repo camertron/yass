@@ -1,0 +1,11 @@
+
+div {
+  width: max-content;
+  background: green;
+  line-height: 0;
+  border: 5px solid black;
+  margin: 5px;
+}
+svg {
+  vertical-align: top;
+}

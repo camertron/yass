@@ -1,0 +1,19 @@
+
+#anchor {
+  anchor-name: --a1;
+  position: fixed;
+  left: 50px;
+  top: 50px;
+  width: 100px;
+  height: 100px;
+  background: orange;
+  visibility: hidden;
+}
+#target {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: fixed;
+  left: anchor(left, 100px);
+  top: anchor(bottom, 100px);
+}

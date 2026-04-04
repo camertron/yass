@@ -1,0 +1,8 @@
+
+  :root {
+    font-size: 50px;
+    text-emphasis-color: green;
+  }
+  em {
+    text-emphasis-style: "!"; /* (Should appear green). */
+  }

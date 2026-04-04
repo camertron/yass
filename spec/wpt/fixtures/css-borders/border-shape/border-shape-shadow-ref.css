@@ -1,0 +1,23 @@
+
+    body {
+        margin: 0;
+    }
+    svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 230px;
+        height: 240px;
+        overflow: visible;
+    }
+    .shadow {
+        fill: purple;
+        stroke: purple;
+        stroke-width: 20px;
+        transform: translate(10px, 20px);
+    }
+    .border {
+        fill: green;
+        stroke: black;
+        stroke-width: 10px;
+    }

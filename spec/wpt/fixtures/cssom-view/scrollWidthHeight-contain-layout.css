@@ -1,0 +1,6 @@
+
+  #target {
+    contain: layout;
+    height: 0;
+    width: 0;
+  }

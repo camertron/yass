@@ -1,0 +1,13 @@
+
+
+.container {
+  width: 0px;
+  height: 0px;
+}
+.child {
+  width: 100px;
+  height: 100px;
+  background: green;
+  will-change: opacity;
+}
+

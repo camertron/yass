@@ -1,0 +1,9 @@
+
+  @supports not (container-type: inline-size) {
+    #container { display: none !important; }
+  }
+  #container {
+    width: 200px;
+    height: 200px;
+    container-type: inline-size;
+  }

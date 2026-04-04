@@ -1,0 +1,8 @@
+
+@keyframes margin {
+    100% { margin-left: 200px }
+}
+
+#child {
+  animation: margin 1s forwards;
+}

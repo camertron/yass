@@ -1,0 +1,17 @@
+
+  #container {
+    columns: 4;
+    height: 2em;
+    column-fill: auto;
+    column-gap: 0;
+    line-height: 2em;
+    background: yellow;
+  }
+
+  .float {
+    float: left;
+    width: 2em;
+    height: 2em;
+    break-inside: avoid;
+    background: blue;
+  }

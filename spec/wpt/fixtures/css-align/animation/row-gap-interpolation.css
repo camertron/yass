@@ -1,0 +1,17 @@
+
+.parent {
+  row-gap: 90px;
+}
+.target {
+  row-gap: 10px;
+}
+.expected div {
+  opacity: 0.7;
+}
+.target > div {
+  height: 20px;
+  background-color: black;
+}
+.target.expected > div {
+  background-color: green;
+}

@@ -1,0 +1,8 @@
+
+#container {
+  width: 20ch;
+  text-wrap: balance;
+}
+span:hover {
+  color: red;
+}

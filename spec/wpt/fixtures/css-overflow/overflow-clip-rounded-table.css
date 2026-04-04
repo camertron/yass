@@ -1,0 +1,9 @@
+
+table {
+    border-radius: 10px;
+    border-collapse: collapse;
+    overflow: clip;
+}
+thead {
+    background: green;
+}

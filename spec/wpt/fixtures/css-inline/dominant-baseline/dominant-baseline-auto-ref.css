@@ -1,0 +1,14 @@
+
+    .line {
+      font: 150px/1 BaselineDiagnosticAlphabeticZero;
+    }
+
+    .horizontal-tb  .line { writing-mode: horizontal-tb; }
+    .vertical-rl    .line { writing-mode: vertical-rl; }
+    .text-sideways  .line { text-orientation: sideways; }
+    .text-mixed     .line { text-orientation: mixed; }
+    .text-upright   .line { text-orientation: upright; }
+
+    .expect-alphabetic  .line > * { alignment-baseline: alphabetic; }
+    .expect-central     .line > * { alignment-baseline: central; }
+  

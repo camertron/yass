@@ -1,0 +1,10 @@
+
+section {
+    text-align: start;
+    font-size: 2em;
+    border: solid;
+    padding: 0 0.5ch;
+    width: 10em;
+}
+.l { color: blue; }
+.r { color: orange; }

@@ -1,0 +1,14 @@
+
+  html {scrollbar-color: transparent transparent;}
+  body {height: 200vh}
+  .container {
+    overflow: auto;
+    height: 200px;
+    width: 200px;
+    background-color: red;
+  }
+
+  .content {
+    height: 300px;
+    width: 300px;
+  }

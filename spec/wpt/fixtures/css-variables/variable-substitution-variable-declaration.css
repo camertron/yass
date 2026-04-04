@@ -1,0 +1,69 @@
+
+        #target1 {
+            margin: var(--var2);
+            --var2: var(--var1) 10px;
+            --var1: var(--var0) 13px 17px;
+            --var0: 23px;
+        }
+
+        #target2parent {
+            --var2: var(--var1, fallback);
+            --var1: var(--var2, fallback);
+        }
+        #target2 {
+            --var1: good;
+        }
+
+        #target3 {
+            --var2: var(--var1, 3px);
+            --var1: var(--var0, 5px);
+        }
+
+        #target4 {
+            --varA: var(--varB);
+            --varB: var(--varA);
+            --varC: var(--varB,13px);
+        }
+
+        #target5 {
+            --varA: var(--varB);
+            --varB: var(--varA) var(--varC);
+            --varC: var(--varB,13px);
+        }
+
+        #target6 {
+            --varA: var(--varB);
+            --varB: var(--varA) var(--varDoesNotExist,var(--varC));
+            --varC: var(--varB,13px);
+        }
+
+        #target7 {
+            --varDoesExist: 5px;
+            --varA: var(--varB);
+            --varB: var(--varA) var(--varDoesExist,var(--varC));
+            --varC: var(--varB,13px);
+        }
+
+        #target8 {
+            --varA: var(--varA, 9px);
+            --varB: var(--varA, 7px);
+        }
+
+        #target9 {
+            --varA: good;
+            --varB: very var(--varA, var(--varC));
+            --varC: var(--varB);
+        }
+
+        #target10parent {
+            --varA: good;
+            --varB: Also good;
+            --varC: another good one;
+        }
+
+        #target10 {
+            --varA: var(--varB);
+            --varB: var(--varA);
+            --varC: var(--varB);
+        }
+    

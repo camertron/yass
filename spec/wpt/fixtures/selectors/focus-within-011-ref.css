@@ -1,0 +1,10 @@
+
+      div {
+        border: solid 15px blue;
+        outline: none;
+        border-color: green;
+      }
+      #child1 {
+        border-color: blue;
+      }
+    

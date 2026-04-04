@@ -1,0 +1,50 @@
+
+  /* Selectors for contain */
+  #none .wrapper {
+      contain: none;
+  }
+  #paint .wrapper {
+      contain: paint;
+  }
+  #none_to_paint .wrapper {
+      contain: none;
+  }
+  #paint_to_none .wrapper {
+      contain: paint;
+  }
+
+  /* Selectors for testing absolute/fixed positioned elements */
+  #top_spacer {
+      height: 100px;
+      background: lightgray;
+  }
+  .absolute_pos {
+      position: absolute;
+      top: 42px;
+  }
+  .fixed_pos {
+      position: fixed;
+      top: 42px;
+  }
+
+  /* Selectors for testing IFC (floats) */
+  .floatleft {
+      float: left;
+  }
+  .clearleft {
+      clear: left;
+  }
+
+  /* Selectors for testing IFC (margin collapsing) */
+  .blockmargin {
+      margin: 25px 0;
+  }
+  .wrapper.blockmargin {
+      background: lightgray;
+  }
+
+  .rect {
+      background: black;
+      width: 50px;
+      height: 100px;
+  }

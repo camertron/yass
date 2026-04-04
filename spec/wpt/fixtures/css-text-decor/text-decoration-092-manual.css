@@ -1,0 +1,14 @@
+
+#htmlsrc { margin: 2em; }
+#htmlsrc p {
+	font-size: 28px;
+	border-radius: 5px;
+	line-height: 1.5;
+	}
+.hint { color: brown; font-family: sans-serif; font-size: 90%; }
+.hint:before { content: '❗ '; }
+
+
+div span {
+text-decoration:line-through;
+}

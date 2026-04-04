@@ -1,0 +1,16 @@
+
+.container > div {
+  font-family: Ahem;
+  font-size: 10px;
+  line-height: 1;
+  color: gray;
+  width: 5ch;
+  outline: 2px solid orange;
+  margin-bottom: 6px;
+  position: relative;
+}
+.pre-wrap {
+  white-space: pre-wrap;
+}
+.bg { background: purple; }
+.h { outline: 4px red solid; }

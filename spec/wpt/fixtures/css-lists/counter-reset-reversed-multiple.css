@@ -1,0 +1,6 @@
+
+  .multi { counter-reset: reversed(c1) reversed(c2); }
+  .item { counter-increment: c1 -1 c2 -2; }
+  .item::before {
+    content: counter(c1) "," counter(c2);
+  }

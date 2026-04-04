@@ -1,0 +1,14 @@
+
+  :root {
+    print-color-adjust: exact;
+  }
+  @page {
+    size: 400px;
+    margin: 0;
+  }
+  @page large {
+    size: 500px 400px;
+  }
+  body {
+    margin: 0;
+  }

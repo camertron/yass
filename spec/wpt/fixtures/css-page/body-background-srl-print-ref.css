@@ -1,0 +1,13 @@
+
+:root {
+  print-color-adjust: exact;
+}
+body {
+  margin: 20px;
+  background: linear-gradient(to bottom, white 0%, white 50%, lightgray 50%, lightgray 100%);
+  padding-bottom: 480px;
+}
+@page {
+  size: 800px 600px;
+  margin: 0;
+}

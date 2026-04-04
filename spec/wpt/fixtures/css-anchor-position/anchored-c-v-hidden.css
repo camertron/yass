@@ -1,0 +1,16 @@
+
+  #anchor {
+    anchor-name: --a;
+    width: 100px;
+    height: 100px;
+  }
+  #anchored {
+    position: absolute;
+    position-anchor: --a;
+    position-area: center;
+    content-visibility: hidden;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+  }
+  #fail { background-color: red; }

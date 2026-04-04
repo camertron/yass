@@ -1,0 +1,23 @@
+
+            #reference-overlapped-red {
+                position: absolute;
+                background-color: red;
+                width: 100px;
+                height: 100px;
+                z-index: -1;
+            }
+
+            #constrained-flex {
+                display: flex;
+                flex-direction: column;
+                height: 10px;
+            }
+
+            img {
+                min-width: 0;
+                min-height: 0;
+                flex: none;
+                flex-basis: 100px;
+                align-self: flex-start;
+            }
+        

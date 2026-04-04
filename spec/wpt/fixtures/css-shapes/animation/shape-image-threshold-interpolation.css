@@ -1,0 +1,7 @@
+
+.parent {
+  shape-image-threshold: 0.4;
+}
+.target {
+  shape-image-threshold: 0.6;
+}

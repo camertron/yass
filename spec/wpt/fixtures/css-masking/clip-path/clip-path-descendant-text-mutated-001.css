@@ -1,0 +1,8 @@
+
+#target {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border-right: 100px solid red;
+  clip-path: url(#clip);
+}

@@ -1,0 +1,12 @@
+
+  html {
+    display: list-item;
+    direction: rtl;
+  }
+  body {
+    direction: ltr;
+  }
+  div {
+    display:table-column-group;
+    column-count: 1;
+  }

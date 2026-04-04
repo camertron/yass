@@ -1,0 +1,13 @@
+
+
+    tr::before {
+      content: "Some long text here that overflows and whatnot.";
+      display: table-cell;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    tr {
+      overflow: hidden;
+    }
+
+  

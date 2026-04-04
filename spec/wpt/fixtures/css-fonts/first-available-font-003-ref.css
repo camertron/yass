@@ -1,0 +1,18 @@
+
+@font-face {
+  font-family: 'A';
+  font-style: normal;
+  font-weight: 400;
+  src:  url(/fonts/Revalia.woff) format('woff');
+}
+div {
+  position: absolute;
+  line-height: normal;
+  font-size: 100px;
+  color: transparent;
+  border: solid black 1px;
+  width: 100px;
+  font-family: A;
+}
+
+.ba { margin-left: 100px; }

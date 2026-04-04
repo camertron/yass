@@ -1,0 +1,40 @@
+
+body {
+  background: lightpink;
+}
+
+#container {
+  width: max-content;
+  position: relative;
+}
+
+.left {
+  left: 50px;
+}
+.right {
+  left: 550px;
+}
+
+div {
+  margin: 10px;
+  contain: paint;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background: green;
+}
+.rounded {
+  width: 100px;
+  height: 100px;
+  background: green;
+  border-radius: 20%;
+}
+.translucent {
+  opacity: 0.5;
+}
+.text {
+  width: 100px;
+  height: 100px;
+}

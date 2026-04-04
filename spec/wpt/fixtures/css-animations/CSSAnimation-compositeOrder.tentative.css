@@ -1,0 +1,17 @@
+
+@keyframes margin50 {
+  from {
+    margin-left: 50px;
+  }
+  to {
+    margin-left: 50px;
+  }
+}
+@keyframes margin100 {
+  from {
+    margin-left: 100px;
+  }
+  to {
+    margin-left: 100px;
+  }
+}

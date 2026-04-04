@@ -1,0 +1,9 @@
+
+#pa {
+  contain: layout;
+  height: 100vh; /*If layout containment applies, the span becomes a BFC, height applies, and knocks SS off the page */
+}
+
+#ss {
+  vertical-align: bottom;
+}

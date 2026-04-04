@@ -1,0 +1,33 @@
+
+  .box {
+    position: absolute;
+    position-anchor: --target-1;
+    top: anchor(top);
+    left: anchor(right);
+    width: 50px;
+    height: 50px;
+    background: red;
+  }
+
+  .container {
+    position: relative;
+    display: inline;
+  }
+
+  .anchor-node {
+    position: absolute;
+    top: anchor(top);
+    left: anchor(right);
+    width: 50px;
+    height: 50px;
+  }
+
+  /* The final anchor that positions the entire chain */
+  .root-anchor {
+    width: 50px;
+    height: 50px;
+    background: yellow;
+    margin-top: 300px;
+    margin-left: 100px;
+    position: absolute;
+  }

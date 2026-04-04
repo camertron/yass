@@ -1,0 +1,8 @@
+
+  .ib {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    height: 25px;
+    background: green;
+  }

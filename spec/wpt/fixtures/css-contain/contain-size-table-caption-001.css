@@ -1,0 +1,13 @@
+
+  .contain {
+    contain:size;
+  }
+  .innerContents {
+    height: 100px;
+    width: 100px;
+    color: transparent;
+  }
+  caption {
+    border: 1em solid green;
+  }
+  

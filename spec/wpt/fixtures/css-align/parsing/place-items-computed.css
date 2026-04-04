@@ -1,0 +1,7 @@
+
+  #grandparent {
+    justify-items: legacy center;
+  }
+  #parent {
+    justify-items: legacy;
+  }

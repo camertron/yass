@@ -1,0 +1,7 @@
+
+  #container {
+    --foo: bar;
+  }
+  @container style(--foo: attr(data-foo type(<custom-ident>))) {
+    #target { color: green; }
+  }

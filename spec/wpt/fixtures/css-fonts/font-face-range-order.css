@@ -1,0 +1,8 @@
+
+@font-face {
+font-family: reversed-range-test;
+font-stretch: 200% 50%;
+font-style: oblique 90deg -90deg;
+font-weight: 900 100;
+src: url(/fonts/Ahem.ttf);
+}

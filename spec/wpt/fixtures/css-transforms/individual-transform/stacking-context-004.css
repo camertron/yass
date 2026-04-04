@@ -1,0 +1,14 @@
+
+.transform {
+  width: 100px;
+  height: 100px;
+  background: red;
+  translate: 0px;
+}
+.child {
+  width: 100px;
+  height: 100px;
+  background: green;
+  position: relative;
+  z-index: -1;
+}

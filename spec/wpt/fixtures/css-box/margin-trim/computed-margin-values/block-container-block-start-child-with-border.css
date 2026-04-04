@@ -1,0 +1,21 @@
+
+container {
+    display: block;
+    margin-trim: block;
+    border: 1px solid black;
+    margin-block-start: 10px;
+}
+item {
+    display: block;
+    inline-size: 50px;
+    block-size: 50px;
+    background-color: green;
+}
+.collapsed {
+    margin-block: 50px;
+    block-size: 0px
+}
+.with-border-and-margin {
+    border: 1px solid black;
+    margin-block-start: 30px;
+}

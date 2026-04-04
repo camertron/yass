@@ -1,0 +1,8 @@
+
+  table {
+    empty-cells: hide;
+    border-collapse: collapse;
+  }
+  td {
+    padding:0;
+  }

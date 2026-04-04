@@ -1,0 +1,7 @@
+
+  .flexbox { white-space: pre; }
+  .a {
+    flex: none;
+    width: 30px;
+    background: salmon;
+  }

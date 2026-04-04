@@ -1,0 +1,21 @@
+
+  body { margin: 0 }
+  :root {
+    font-size: 10px;
+  }
+  .container {
+    font-size: 20px;
+  }
+  line {
+    stroke-width: 40px;
+    stroke: lime;
+  }
+  polygon, polyline, text {
+    fill: lime;
+  }
+  text {
+    font: 40px/1 Ahem;
+  }
+  svg {
+    background-color: red;
+  }

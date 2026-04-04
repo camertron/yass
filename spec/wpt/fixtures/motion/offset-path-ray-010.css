@@ -1,0 +1,14 @@
+
+      #target {
+        position: absolute;
+        left: 300px;
+        top: 100px;
+        width: 300px;
+        height: 200px;
+        background-color: lime;
+        transform-origin: 0px 0px;
+        offset-path: ray(135deg);
+        offset-distance: 20px;
+        offset-position: auto;
+      }
+    

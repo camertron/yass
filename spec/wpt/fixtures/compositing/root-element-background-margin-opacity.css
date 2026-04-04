@@ -1,0 +1,8 @@
+
+html {
+  margin: 100px;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(green, green) top left no-repeat;
+  opacity: 0.5;
+}

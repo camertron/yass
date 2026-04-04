@@ -1,0 +1,12 @@
+
+  #highlight {
+    background-color: yellow;
+    color: limegreen;
+  }
+  #highlight-and-target-text {
+    background-color: orange;
+    color: limegreen;
+  }
+  #target-text {
+    background-color: orange;
+  }

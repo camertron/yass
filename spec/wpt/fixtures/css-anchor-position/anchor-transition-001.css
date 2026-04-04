@@ -1,0 +1,44 @@
+
+body {
+  margin: 0;
+}
+
+#anchor1 {
+  margin-left: 0px;
+  margin-top: 0px;
+  width: 200px;
+  height: 100px;
+  background: orange;
+  anchor-name: --a1;
+}
+
+#anchor2 {
+  margin-left: 400px;
+  margin-top: 200px;
+  width: 100px;
+  height: 200px;
+  background: orange;
+  anchor-name: --a2;
+}
+
+#target {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  background-color: lime;
+  transition: all 10s -5s linear;
+}
+
+#target.before {
+  top: anchor(--a1 top);
+  left: anchor(--a1 right);
+  width: anchor-size(--a1 width);
+  height: anchor-size(--a1 height);
+}
+
+#target.after {
+  top: anchor(--a2 bottom);
+  left: anchor(--a2 left);
+  width: anchor-size(--a2 width);
+  height: anchor-size(--a2 height);
+}

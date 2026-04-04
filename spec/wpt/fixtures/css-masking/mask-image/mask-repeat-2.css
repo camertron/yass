@@ -1,0 +1,26 @@
+
+      div {
+        width: 128px;
+        height: 128px;
+      }
+
+      div.outer {
+        border: 1px solid black;
+      }
+
+      div.inner {
+        background-color: purple;
+        mask-image: url(support/50x50-opaque-blue.svg);
+        mask-position: left top;
+      }
+
+      #space {
+        mask-repeat: space;
+      }
+      #space-x {
+        mask-repeat: space no-repeat;
+      }
+      #space-y {
+        mask-repeat: no-repeat space;
+      }
+    

@@ -1,0 +1,14 @@
+
+main:has(input) div { color: grey }
+main:has(#checkbox:checked) > #subject { color: red }
+main:has(#option:checked) > #subject { color: red }
+main:has(#checkbox:disabled) > #subject { color: green }
+main:has(#option:disabled) > :is(#subject, #subject2) { color: green }
+main:has(#optgroup:disabled) > #subject { color: blue }
+main:not(:has(#checkbox:enabled)) > #subject3 { color: green }
+main:not(:has(#option:enabled)) :is(#subject3, #subject4) { color: green }
+main:not(:has(#optgroup:enabled)) > #subject3 { color: blue }
+main:has(#text_input:valid) > #subject { color: yellow }
+main:not(:has(#text_input:invalid)) > #subject2 { color: yellow }
+main:has(#form:valid) > #subject3 { color: yellow }
+main:not(:has(#form:invalid)) > #subject4 { color: yellow }

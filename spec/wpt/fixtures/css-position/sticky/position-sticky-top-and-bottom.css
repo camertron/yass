@@ -1,0 +1,22 @@
+
+
+.scroller {
+  height: 200px;
+  overflow: auto;
+  position: relative;
+}
+.container {
+  height: 120px;
+}
+.padding, .sticky {
+  height: 50px;
+}
+.overflow-padding {
+  height: 200px;
+}
+.sticky {
+  position: sticky;
+  background: green;
+  top: -25px;
+  bottom: 150px;
+}

@@ -1,0 +1,21 @@
+
+body {
+    margin: 0;
+}
+
+.grid {
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 200px 200px;
+    margin-bottom: 20px;
+}
+
+.widthAndHeightSet {
+    width: 20px;
+    height: 40px;
+}
+.onlyWidthSet { width: 20px; }
+.onlyHeightSet { height: 40px; }
+.maxHeight { max-height: 160px; }
+.maxWidth { max-width: 90px; }
+.minWidth { min-width: 120px; }
+.minHeight { min-height: 220px; }

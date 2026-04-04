@@ -1,0 +1,8 @@
+
+  div {
+    float: left;
+    padding: .5em;
+  }
+  div::after {
+    content: counter(n, ethiopic-numeric);
+  }

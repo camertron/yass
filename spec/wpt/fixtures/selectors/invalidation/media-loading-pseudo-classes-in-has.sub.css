@@ -1,0 +1,7 @@
+
+#subject:has(video:buffering) {
+    background-color: blue;
+}
+#subject:has(video:stalled) {
+    border-color: green;
+}

@@ -1,0 +1,7 @@
+
+  .grid {
+    display: grid;
+    width: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(calc(100% - 10px), calc(100% - 100px)));
+    background-color: green;
+  }

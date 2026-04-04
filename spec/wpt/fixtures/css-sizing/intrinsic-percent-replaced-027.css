@@ -1,0 +1,19 @@
+
+.outer {
+  display: flex;
+  flex-direction: column;
+}
+.inner {
+  display: flex;
+  width: 100px;
+  height: 100px;
+}
+.test {
+  aspect-ratio: 1 / 1;
+  height: 100%;
+  background: red;
+}
+.test > canvas {
+  height: 100%;
+  background: green;
+}

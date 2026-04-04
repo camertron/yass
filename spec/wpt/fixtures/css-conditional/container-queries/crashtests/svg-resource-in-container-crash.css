@@ -1,0 +1,10 @@
+
+  .cq {
+    container-name: cq;
+    container-type: inline-size;
+  }
+  @container cq (min-width: 1px) {
+    .cq {
+      border: 2px solid blue;
+    }
+  }

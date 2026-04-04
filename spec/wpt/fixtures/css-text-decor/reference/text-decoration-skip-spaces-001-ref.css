@@ -1,0 +1,14 @@
+
+span {
+    /* Use separate longhands
+       as Safari does not support the full syntax of the text-decoration shorthand
+       at the time of writing,
+       but that's not what we're testing here.
+     */
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+div{
+    color: orange;
+    font-size: 2em;
+}

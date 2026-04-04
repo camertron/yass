@@ -1,0 +1,9 @@
+
+body {
+  background: lightpink;
+}
+.target {
+  width: 100px;
+  height: 100px;
+  background: green;
+}

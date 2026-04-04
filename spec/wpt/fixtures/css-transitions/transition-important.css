@@ -1,0 +1,10 @@
+
+#target {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    transition: background-color 100s;
+}
+.red {
+    background-color: red !important;
+}

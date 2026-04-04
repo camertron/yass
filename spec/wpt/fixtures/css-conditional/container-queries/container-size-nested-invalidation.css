@@ -1,0 +1,26 @@
+
+  #outer {
+    container-type: size;
+    container-name: outer;
+    width: 100px;
+    height: 100px;
+  }
+
+  /* Note that it's intentional that nothing queries this container. */
+  #inner {
+    container-type: size;
+    width: 42px;
+    height: 42px;
+  }
+
+  @container (width > 90px) {
+    #outer_child {
+      --outer:true;
+    }
+  }
+
+  @container outer (width > 70px) {
+    #inner_child {
+      --inner:true;
+    }
+  }

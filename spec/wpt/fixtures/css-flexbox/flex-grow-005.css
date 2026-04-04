@@ -1,0 +1,20 @@
+
+  #container {
+    background-color: green;
+    display: flex;
+    flex-grow: 2;
+    height: 100px;
+    width: 100px;
+  }
+  #container div {
+    background-color: red;
+    height: 100px;
+    width: 25px;
+  }
+  #cover {
+    background-color: green;
+    height: 100px;
+    position: relative;
+    top: -100px;
+    width: 50px;
+  }

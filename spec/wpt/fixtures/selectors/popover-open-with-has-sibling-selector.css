@@ -1,0 +1,15 @@
+
+    .half-square {
+        width: 100px;
+        height: 50px;
+        background-color: red;
+    }
+    #p1-sibling:not(:has(+:popover-open)) {
+        background-color: green;
+    }
+    #p2-sibling:has(+:popover-open) {
+        background-color: green;
+    }
+    [popover] {
+        visibility: hidden;
+    }

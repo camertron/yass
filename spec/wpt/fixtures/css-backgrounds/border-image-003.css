@@ -1,0 +1,17 @@
+
+  div#red-overlapped-ref
+    {
+      background-color: red;
+      height: 100px;
+      width: 100px;
+    }
+
+  div#green-overlapping-test
+    {
+      border: red solid 40px;
+      height: 20px;
+
+      border-image-slice: 5 fill;
+      border-image-source: url("support/12x12-green.png");
+    }
+  

@@ -1,0 +1,15 @@
+
+x-flexbox {
+  display: flex;
+  height: 100px;
+}
+
+x-item {
+  background: green;
+  writing-mode: vertical-lr;
+}
+
+x-item > div {
+  padding-right: 70%;
+  width: 30px;
+}

@@ -1,0 +1,16 @@
+
+#test {
+	background: red;
+	display: table;
+}
+div div {
+	background: red;
+	width: 0;
+
+	display: flex;
+}
+p {
+	font-family: Ahem;
+	margin: 1em 0;
+	width: 200px;
+}

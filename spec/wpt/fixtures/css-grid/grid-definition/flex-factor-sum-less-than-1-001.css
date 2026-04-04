@@ -1,0 +1,43 @@
+
+.onlyColumnFractionFlexFactors {
+    grid-template-columns: minmax(0, 0.1fr) minmax(0, 0.2fr) minmax(0, 0.3fr);
+    grid-template-rows: 50px;
+    width: 100px;
+}
+.onlyRowFractionFlexFactors {
+    grid-template-columns: 50px;
+    grid-template-rows: minmax(0, 0.1fr) minmax(0, 0.2fr) minmax(0, 0.3fr);
+    width: 50px;
+    height: 100px;
+}
+.fixedAndfractionFlexFactors {
+    grid-template-columns: 50px minmax(0, 0.2fr) 30px;
+    grid-template-rows: minmax(0, 0.1fr) 50px minmax(0, 0.3fr);
+    width: 100px;
+    height: 100px;
+}
+.zeroValueFlexFactor {
+    grid-template-columns: .0fr .2fr .3fr;
+    grid-template-rows: 50px;
+    width: 100px;
+}
+.firstRowThirdColumn {
+    background-color: yellow;
+    grid-column: 3;
+    grid-row: 1;
+}
+.secondRowThirdColumn {
+    background-color: yellow;
+    grid-column: 3;
+    grid-row: 2;
+}
+.thirdRowFirstColumn {
+    background-color: brown;
+    grid-column: 1;
+    grid-row: 3;
+}
+.thirdRowThirdColumn {
+    background-color: magenta;
+    grid-column: 3;
+    grid-row: 3;
+}

@@ -1,0 +1,6 @@
+
+  #test {
+    background-image: image-set(url("/images/green.png") calc(0.5x * 2));
+    width: 100px;
+    height: 100px;
+  }

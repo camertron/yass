@@ -1,0 +1,9 @@
+
+input {
+  appearance: base;
+}
+#parent {
+  text-transform: uppercase;
+  text-align: end;
+  text-indent: 5em;
+}

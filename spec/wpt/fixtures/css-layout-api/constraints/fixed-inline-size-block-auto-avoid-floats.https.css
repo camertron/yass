@@ -1,0 +1,21 @@
+
+body {
+  width: 200px;
+}
+
+.float {
+  float: right;
+  width: 100px;
+  height: 20px;
+}
+
+.test {
+  background: red;
+}
+
+@supports (display: layout(test)) {
+  .test {
+    background: green;
+    display: layout(test);
+  }
+}

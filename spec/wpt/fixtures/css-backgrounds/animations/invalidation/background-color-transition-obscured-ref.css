@@ -1,0 +1,11 @@
+
+.parent {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(100, 100, 0);
+}
+.container {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(100, 0, 100);
+}

@@ -1,0 +1,11 @@
+
+        span{
+            font: 20px/1 Ahem;
+            color: transparent;
+            writing-mode: vertical-lr;
+            text-decoration: green underline;
+            text-decoration-skip-ink: none;
+            text-underline-offset: 5em;
+            text-underline-position: right;
+        }
+    

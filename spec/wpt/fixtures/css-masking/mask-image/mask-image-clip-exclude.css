@@ -1,0 +1,9 @@
+
+div {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background: linear-gradient(green, green) border-box;
+  mask: linear-gradient(red, red) content-box exclude, linear-gradient(red, red);
+}

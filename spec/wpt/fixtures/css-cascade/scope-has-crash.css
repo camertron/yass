@@ -1,0 +1,10 @@
+
+@scope (:not(:has(:nth-child(2 of .category)))) {
+    .category {
+      grid-column:span 2
+    }
+}
+
+@scope (.category-wrap:has(:nth-child(2 of .category))) {
+  /* Non-matching @media-rule, etc */
+}

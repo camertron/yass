@@ -1,0 +1,13 @@
+
+ul {
+	background: #3366cc;
+	padding: 0;
+	list-style: none;
+	border: 1px solid black;
+
+	display: flex inline-flex;
+}
+li {
+	background: #ffcc00;
+	margin: 2em;
+}

@@ -1,0 +1,25 @@
+
+    body {
+        margin: 0px;
+    }
+    .multicol {
+        column-count: 3;
+        column-width: 50px;
+        column-height: 50px;
+        column-gap: 10px;
+        row-gap: 10px;
+        column-rule: 10px solid blue;
+        row-rule: 10px solid red;
+        column-wrap: wrap;
+        width: 110px;
+        height: 170px;
+        margin-bottom: 20px;
+    }
+    .item {
+        background: lightgray;
+        width: 50px;
+        height: 50px;
+    }
+    .item:first-child {
+        background: salmon;
+    }

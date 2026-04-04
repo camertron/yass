@@ -1,0 +1,19 @@
+
+body {
+  display: flex;
+  flex-flow: column;
+  width: 100px;
+  height: 100px;
+}
+
+.test {
+  background: red;
+  flex-grow: 1;
+}
+
+@supports (display: layout(test)) {
+  .test {
+    background: green;
+    display: layout(test);
+  }
+}

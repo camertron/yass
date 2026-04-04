@@ -1,0 +1,12 @@
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+@media (color-gamut: dci-p3),
+       not (color-gamut: dci-p3)
+{
+    div { background-color: red; }
+}

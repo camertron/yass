@@ -1,0 +1,33 @@
+
+       @mixin --m1() {
+         @result {
+           color: red;
+           & {
+             --foo: bar;
+           }
+         }
+       }
+       @mixin --m2() {
+         @result {
+           color: red;
+         }
+       }
+       #target1 {
+         @apply --m1;
+       }
+     
+
+       #target2 {
+         @apply --m2;
+       }
+     
+
+       @mixin --m3() {
+         @result {
+           color: green;
+         }
+       }
+       #target3 {
+         color: red;
+       }
+     

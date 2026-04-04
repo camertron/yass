@@ -1,0 +1,37 @@
+
+  div#container
+    {
+      border-bottom: transparent solid 100px;
+      border-right: transparent solid 100px;
+      height: 400px;
+      width: 100px;
+    }
+
+  div#item
+    {
+      background-color: red;
+      box-sizing: border-box;
+      height: 50px;
+      min-height: calc(50% - 100px);
+    }
+
+  div#item > div
+    {
+      background-color: green;
+      border-bottom: green solid 34px; /* arbitrary border-bottom-width value */
+      border-top: green solid 12px; /* arbitrary border-top-width value */
+      box-sizing: border-box;
+      height: 17px;
+      min-height: 100%; /* content height should be 100px - 34px - 12px == 54px */
+      overflow-y: visible;
+      /*
+      If the content height of innermost div is taller
+      than 54px, then a green rectangle (not a square)
+      will be created.
+
+      If the content height of innermost div is less
+      than 54px, then an horizontal stripe of red
+      will become visible.
+      */
+    }
+  

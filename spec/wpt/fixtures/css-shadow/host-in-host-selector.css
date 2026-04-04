@@ -1,0 +1,6 @@
+
+      /* Should not match */
+      :host(:host) {
+        --x:FAIL;
+      }
+    

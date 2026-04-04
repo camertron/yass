@@ -1,0 +1,19 @@
+
+    .container {
+      height: 100px;
+      width: 100px;
+      background: red;
+    }
+
+    #grid {
+      display: grid;
+      grid-template-columns: auto;
+      gap: 2px;
+      row-rule: green solid 2px;
+      height: 100%;
+    }
+
+    .item {
+      background: green;
+    }
+  

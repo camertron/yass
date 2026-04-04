@@ -1,0 +1,6 @@
+
+div {
+  --foo: attr(data-foo type(<length>));
+  --bar: attr(data-bar type(<length>));
+  --baz: attr(data-baz em);
+}

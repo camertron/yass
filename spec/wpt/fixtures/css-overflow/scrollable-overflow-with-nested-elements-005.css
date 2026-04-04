@@ -1,0 +1,18 @@
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .list .item {
+            width: 10px;
+            height: 10px;
+            background: lime;
+            position: absolute;
+            margin: 0%;
+        }
+
+        .list {
+            position: relative;
+            background: grey;
+        }
+    

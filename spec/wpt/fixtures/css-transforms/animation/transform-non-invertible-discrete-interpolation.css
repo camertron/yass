@@ -1,0 +1,13 @@
+
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    animation: anim 100s linear forwards;
+}
+
+@keyframes anim {
+    from { transform: matrix3d(2,0,0,0, 0,2,0,0, 0,0,0,0, 0,0,0,1) }
+}
+

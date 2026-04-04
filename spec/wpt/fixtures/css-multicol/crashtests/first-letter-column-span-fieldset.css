@@ -1,0 +1,8 @@
+
+*:last-of-type {
+  columns: 474px 1;
+}
+*:valid {
+  column-span: all;
+}
+*::first-letter { }

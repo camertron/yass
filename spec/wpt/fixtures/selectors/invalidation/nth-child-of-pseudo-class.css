@@ -1,0 +1,10 @@
+
+  p:nth-child(odd of :defined) {
+    color: green;
+  }
+
+  not-defined, my-element {
+    display: block;
+    margin-block: 1em;
+    margin-inline: 0;
+  }

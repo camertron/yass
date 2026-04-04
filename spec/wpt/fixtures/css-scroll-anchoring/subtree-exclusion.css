@@ -1,0 +1,8 @@
+
+
+body { height: 4000px }
+#A, #B { width: 100px; background-color: #afa; }
+#B { height: 100px; }
+#inner { width: 100px; height: 100px; background-color: pink; }
+#A { overflow-anchor: none; }
+

@@ -1,0 +1,22 @@
+
+#target {
+  width: max-content;
+  height: max-content;
+}
+.cis-auto {
+  contain-intrinsic-width: auto none;
+}
+.skip-contents {
+  content-visibility: hidden;
+}
+.size-100-50 {
+  inline-size: 100px;
+  block-size: 50px;
+}
+.size-75-25 {
+  inline-size: 75px;
+  block-size: 25px;
+}
+.vertical {
+  writing-mode: vertical-lr;
+}

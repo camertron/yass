@@ -1,0 +1,21 @@
+
+  #scroller {
+    overflow: hidden;
+    scroll-marker-group: after;
+  }
+
+  #scroller::scroll-marker-group {
+    contain: none;
+    /* It should be impossible to disable size containment for scroll marker groups, so this declaration should have no effect. */
+    display: block;
+    width: fit-content;
+    border: 50px solid green;
+    background: red;
+  }
+
+  #scroller>*::scroll-marker {
+    display: block;
+    width: 200px;
+    height: 200px;
+    content: "";
+  }

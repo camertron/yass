@@ -1,0 +1,15 @@
+
+.positioned {
+  background-color: green;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+.ellipsis {
+  color: red;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: pre;
+  width: 100px;
+  font: 50px sans-serif;
+}

@@ -1,0 +1,12 @@
+
+  body {
+    background: lightblue;
+  }
+  div {
+    display: flex;
+    width: 100px;
+    height: 100px;
+  }
+  svg {
+    flex-grow: 1;
+  }

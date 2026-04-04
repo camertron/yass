@@ -1,0 +1,7 @@
+
+::marker {
+  content: "[m]";
+}
+.inside {
+  list-style-position: inside;
+}

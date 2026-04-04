@@ -1,0 +1,46 @@
+
+  .cb {
+    inline-size: 50px;
+    block-size: 40px;
+
+    /* This margin & border are purely cosmetic and don't impact the sizing
+     * calculations in this test: */
+    margin: 5px;
+    border: 2px solid black;
+
+    /* This padding only comes into play for the subtests with absolutely
+     * positioned children (where our padding-box forms the containing block
+     * for the abspos child). */
+    padding-inline: 5px;
+    padding-block: 3px;
+
+    /* We make each containing block an inline-level box, so we can display
+     * subtests in multiple rows, for easier visualization: */
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .test {
+    /* We have 2+3 = 5px of margin in the inline axis. This means the stretched
+     * children should all have a border-box size that's 5px less than the
+     * containing block's content-box size, i.e. 50 - 5 = 45px. */
+    margin-inline-start: 2px;
+    margin-inline-end: 3px;
+
+    /* We also have some border/padding that UAs will need to account for
+     * when computing the stretched children's content-box sizes; but these
+     * don't reduce our `data-expected-width` expectations, since those
+     * correspond to the border-box size. */
+    border: 3px solid blue;
+    padding: 2px;
+
+    /* We expect "max-inline-size:stretch" to cause the used value of
+     * "inline-size" to be clamped to the resolved "stretch" size. */
+    max-inline-size: stretch;
+    /* This is intentionally larger than our containing block's inline-size,
+     * and we expect it to be clamped by our max-inline-size specified above
+     * in nearly all of this test's subtests. */
+    inline-size: 55px;
+    block-size: 20px;
+    background: fuchsia;
+  }

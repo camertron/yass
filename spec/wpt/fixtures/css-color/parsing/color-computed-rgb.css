@@ -1,0 +1,9 @@
+
+  :root {
+    --high: 500;
+    --negative: -100;
+  }
+  #container {
+    container-type: inline-size;
+    color: rgb(255, 0, 0);
+  }

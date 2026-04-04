@@ -1,0 +1,11 @@
+
+    ::highlight(yellow-highlight) {
+        background-color: yellow;
+    }
+    ::highlight(green-highlight) {
+        background-color: green;
+    }
+    ::highlight(blue-highlight) {
+        background-color: blue;
+    }
+    

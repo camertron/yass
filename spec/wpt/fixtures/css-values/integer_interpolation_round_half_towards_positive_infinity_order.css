@@ -1,0 +1,19 @@
+
+
+#flex-container {
+    display: flex;
+    animation: anim-order 4s steps(4) forwards 1;
+    animation-delay: -1s;
+    animation-play-state: paused;
+}
+
+@keyframes anim-order {
+  from {
+    order: -2;
+  }
+
+  to {
+    order: 0;
+  }
+}
+

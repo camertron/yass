@@ -1,0 +1,11 @@
+
+#wrap, #ref {
+  font-size: 2em;
+  border: solid orange;
+  margin: 5px;
+  width: 30ch;
+}
+#test {
+  width: 0;
+  word-break: normal;
+}

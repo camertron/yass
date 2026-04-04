@@ -1,0 +1,25 @@
+
+div {
+  width: 100px;
+  height: 100px;
+  background: rgb(255, 191, 0);
+}
+div::before {
+  content: "";
+  background: rgb(184, 115, 51);
+  width: 100px;
+  height: 100px;
+  transition-property: transform;
+  transition-duration: 10000s;
+  /* This timing-function has zero-slope at progress = 0.5 preventing drift */
+  transition-timing-function: cubic-bezier(0, 1, 1, 0);
+  transform: ScaleX(0);
+  /* Make the pseudo element "transformable" as per
+   * https://www.w3.org/TR/css-transforms-1/#transformable-element.
+   */
+  display: block;
+}
+
+div.animated::before {
+  transform: scaleX(1);
+}

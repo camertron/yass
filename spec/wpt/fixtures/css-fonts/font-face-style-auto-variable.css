@@ -1,0 +1,22 @@
+
+    @font-face {
+        font-family: "Inter";
+        src: url('support/fonts/Inter-VF.subset.ttf') format('truetype');
+        font-display: swap;
+        font-style: auto;
+    }
+    .style10 {
+        font-family: "Inter";
+        font-size: 3em;
+        font-style: oblique 10deg;
+    }
+    .style5 {
+        font-family: "Inter";
+        font-size: 3em;
+        font-style: oblique 5deg;
+    }
+    .style0 {
+        font-family: "Inter";
+        font-size: 3em;
+        font-style: oblique 0deg;
+    }

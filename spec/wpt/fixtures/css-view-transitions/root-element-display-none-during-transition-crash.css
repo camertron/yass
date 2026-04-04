@@ -1,0 +1,7 @@
+
+.hidden {
+  display: none;
+}
+::view-transition-group(*) {
+  animation-duration: 500s
+}

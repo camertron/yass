@@ -1,0 +1,3 @@
+
+:first-child { content-visibility: hidden; }
+html,body,ol { -webkit-column-count: 2; }

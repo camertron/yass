@@ -1,0 +1,5 @@
+
+    #element {
+        transition: transform 2000ms;
+        transition-timing-function: linear;
+    }

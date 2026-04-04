@@ -1,0 +1,24 @@
+
+  main :not(#foo) { --t0:PASS; }
+  main :not(.foo) { --t0:FAIL; }
+
+  main :not(div#foo) { --t1:PASS; }
+  main :not(#foo) { --t1:FAIL; }
+
+  main :not(.bar, #foo) { --t2:FAIL; }
+  main :not(#foo, .bar) { --t2:PASS; }
+
+  main :not(.bar, #foo) { --t3:PASS; }
+  main :not(.foo, .bar) { --t3:FAIL; }
+
+  main :not(span + span) { --t4:PASS; }
+  main :not(span) { --t4:FAIL; }
+
+  main :not(span, li, #foo) { --t5:PASS; }
+  main :not(span, li, p) { --t5:FAIL; }
+
+  main :not(span, :not(:not(.a#foo)), p) { --t6:PASS; }
+  main :not(span, #foo, p) { --t6:FAIL; }
+
+  main :not(span, #foo, p) { --t7:PASS; }
+  main :not(span, :where(.a#foo), p) { --t7:FAIL; }

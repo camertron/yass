@@ -1,0 +1,11 @@
+
+#x {
+  background-origin: border-box;
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  border-width: 40px;
+  border-color: transparent;
+  background-image: repeating-linear-gradient(to bottom right, white, black, white 30px);
+}
+  

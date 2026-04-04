@@ -1,0 +1,8 @@
+
+div {
+  font-family: monospace;
+  width: 16ch;
+  white-space: pre;
+  overflow: scroll;
+  border: solid blue;
+}

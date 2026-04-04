@@ -1,0 +1,44 @@
+
+        body {
+            margin: 0;
+        }
+        #container {
+            position: absolute;
+            top: 50px;
+            left: 10px;
+            width: 180px;
+            height: 180px;
+            font-size: 20px;
+            font-family: Ahem;
+            line-height: 20px;
+            border: 10px solid green;
+            background-color: red;
+            color: green;
+        }
+        #test-shape {
+            float: left;
+            width: 160px;
+            height: 160px;
+            padding: 10px;
+            border: 10px solid transparent;
+            shape-outside: border-box polygon(0% 20%, 60% 20%, 60% 40%, 40% 40%, 40% 60%, 80% 60%, 80% 80%, 0% 80%);
+        }
+        .ref-shape {
+            position: absolute;
+            background-color: green;
+            left: 20px;
+            height: 40px;
+        }
+        #ref-1 {
+            top: 100px;
+            width: 120px;
+        }
+        #ref-2 {
+            top: 140px;
+            width: 80px;
+        }
+        #ref-3 {
+            top: 180px;
+            width: 160px;
+        }
+    

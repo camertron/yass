@@ -1,0 +1,11 @@
+
+  #container {
+    container-type: inline-size;
+    width: 200px;
+  }
+  #container.narrow {
+    width: 100px;
+  }
+  @container (width = 100px) {
+    #inner.hide { visibility: hidden; }
+  }

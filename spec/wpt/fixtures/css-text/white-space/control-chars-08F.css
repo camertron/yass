@@ -1,0 +1,5 @@
+
+div {
+  font-size: 4em;
+}
+div::after { content: "\008F" } /* Injecting via CSS, to avoid any mangling by the html parser */

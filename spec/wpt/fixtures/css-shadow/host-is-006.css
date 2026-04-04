@@ -1,0 +1,12 @@
+
+    #foo {
+      width: 100px;
+      height: 100px;
+      background: red;
+    }
+    :host, :root {
+      #foo {
+        background: green;
+      }
+    }
+    

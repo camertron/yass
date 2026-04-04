@@ -1,0 +1,9 @@
+
+div {
+	background: black;
+	margin: 1em;
+	height: 4em;
+
+	display: flex;
+	justify-content: space-around;
+}

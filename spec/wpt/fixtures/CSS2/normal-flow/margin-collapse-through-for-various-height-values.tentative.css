@@ -1,0 +1,11 @@
+
+.before, .after {
+  overflow: hidden;
+}
+.wrapper {
+  border: 1px solid;
+  margin-bottom: 2em;
+}
+.test {
+  margin: 50px;
+}

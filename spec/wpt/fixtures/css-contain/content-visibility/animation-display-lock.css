@@ -1,0 +1,21 @@
+
+  #container {
+    content-visibility: visible;
+    contain: style layout paint;
+    contain-intrinsic-size: 0 100px;
+  }
+  @keyframes fade {
+    from { opacity: 1; }
+    to { opacity: 0;  }
+  }
+  #target {
+    background: 'green';
+    height: 100px;
+    width: 100px;
+  }
+  .animate {
+    animation: fade 10s linear 2 alternate;
+  }
+  .transition {
+    transition: opacity 10s linear;
+  }

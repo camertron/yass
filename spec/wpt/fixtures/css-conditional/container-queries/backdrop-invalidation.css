@@ -1,0 +1,20 @@
+
+  :root {
+    color: black;
+  }
+
+  #container {
+    container-type: size;
+    width: 200px;
+    height: 40px;
+  }
+
+  ::backdrop {
+    background-color: black;
+  }
+
+  @container (min-width: 300px) {
+    ::backdrop {
+      background-color: green;
+    }
+  }

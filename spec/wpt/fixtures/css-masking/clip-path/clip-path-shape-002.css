@@ -1,0 +1,9 @@
+
+  #rect {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    clip-path: shape(evenodd from 10px 10px,
+                     hline by 80px, vline by 80%, hline by -80px, close,
+                     move to 25% 25px, hline by 50px, vline by 50px, hline by -50%);
+  }

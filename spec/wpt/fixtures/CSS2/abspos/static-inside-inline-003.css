@@ -1,0 +1,23 @@
+
+#wrapper {
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+}
+#inline {
+  line-height: 100px;
+  color: transparent;
+  border-right: 100px solid transparent;
+}
+#abspos {
+  position: absolute;
+  background-color: green;
+  width: 100px;
+  height: 100px;
+}
+#red {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: red;
+}

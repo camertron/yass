@@ -1,0 +1,7 @@
+
+.clamp {
+  line-clamp: 6;
+  font: 16px / 32px serif;
+  white-space: pre;
+  background-color: yellow;
+}

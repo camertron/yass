@@ -1,0 +1,12 @@
+
+    div {
+        width: 136px;
+        height: 136px;
+        margin: 20px;
+        background-color: silver;
+        border-image-source: linear-gradient(blue, orange);
+        border-image-slice: 32;
+        border-image-repeat: repeat;
+        border-style: solid;
+        border-width: 32px;
+    }

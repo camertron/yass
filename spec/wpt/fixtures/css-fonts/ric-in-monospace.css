@@ -1,0 +1,8 @@
+
+  @font-face {
+    font-family: IcTestFullWidth;
+    src: url(../css-values/resources/IcTestFullWidth.woff2);
+  }
+  :root {
+    font-family: IcTestFullWidth;
+  }

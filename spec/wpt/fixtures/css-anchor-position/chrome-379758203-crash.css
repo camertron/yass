@@ -1,0 +1,10 @@
+
+  .spacer { height: 2000px; }
+  .anchor { anchor-name: --a; }
+  #popover {
+    transition: bottom 1s allow-discrete;
+    position-anchor: --a;
+    position-try-fallbacks: flip-block;
+    top: anchor(bottom);
+    bottom: auto;
+  }

@@ -1,0 +1,10 @@
+
+div {
+  white-space: break-spaces;
+  overflow-wrap: break-word;
+  font-family: monospace;
+  width: 5ch;
+  line-height: 1;
+  overflow: hidden;
+  height: 1em;
+}

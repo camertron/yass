@@ -1,0 +1,10 @@
+
+@font-face {
+    font-family: "foo bar";
+    src: url("resources/COLR-palettes-test-font.ttf") format("truetype");
+}
+
+@font-palette-values --MyPalette {
+    font-family: "foo bar";
+    base-palette: 1;
+}

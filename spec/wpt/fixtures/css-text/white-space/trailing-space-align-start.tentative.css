@@ -1,0 +1,9 @@
+
+div {
+  font-family: monospace;
+  font-size: 30px;
+  width: 3ch;
+  overflow: auto;
+}
+.pre { white-space: pre; }
+.pre-wrap { white-space: pre-wrap; }

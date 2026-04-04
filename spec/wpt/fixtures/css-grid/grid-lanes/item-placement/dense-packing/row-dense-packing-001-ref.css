@@ -1,0 +1,14 @@
+
+.grid {
+    display: grid;
+    background: gray;
+    position: relative;
+    grid-template-rows: repeat(3, 50px);
+    width: 170px;
+    grid-auto-flow: dense;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}

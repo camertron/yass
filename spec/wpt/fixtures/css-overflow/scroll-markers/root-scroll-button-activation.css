@@ -1,0 +1,19 @@
+
+  body {
+    margin: 0;
+  }
+
+  :root::scroll-button(block-end) {
+    content: "down";
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 30px;;
+  }
+
+  div {
+    width: 600px;
+    height: 300px;
+    margin-bottom: 20px;
+    background: green;
+  }

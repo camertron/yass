@@ -1,0 +1,44 @@
+
+  body {
+    margin: 0px;
+    line-height: 1;
+  }
+
+  .container {
+    width: 300px;
+    height: 100px;
+    background: lightgray;
+  }
+
+  .too-wide {
+    display: inline-block;
+    width: 250px;
+    height: 20px;
+    background: lightblue;
+    clear: left;
+  }
+
+  .shape {
+    background: black;
+    width: 100px;
+    height: 100px;
+    float: left;
+  }
+
+  .spacer {
+    clear: left;
+    height: 30px;
+  }
+
+  .inset {
+    background: orange;
+  }
+
+  .polygon {
+    background: pink;
+  }
+
+  .image {
+    background: brown;
+  }
+

@@ -1,0 +1,3 @@
+
+tr { background-color: rgb(255, 0, 0); }
+td:not(#remove) { background-color: green; }

@@ -1,0 +1,13 @@
+
+  #outer {
+    width: 15px;
+    height: 15px;
+    transform: scale(10);
+    transform-origin: 0 0;
+  }
+  #inner {
+    filter: url(#blur);
+    width: 15px;
+    height: 15px;
+    background: green;
+  }

@@ -1,0 +1,12 @@
+
+  /* Should see a 10px border of the initial color */
+  #outer {
+    color: transparent;
+    border: 10px solid;
+  }
+
+  #inner {
+    color: var(--unknown, initial);
+    border-width: 10px;
+    border-style: var(--unknown, inherit);
+  }

@@ -1,0 +1,9 @@
+
+  @font-face {
+    font-family: "Roboto";
+    src: url('support/fonts/RobotoExtremo-VF.subset.ttf') format('truetype');
+  }
+  .test1 {
+    font-family: "Roboto";
+    font-variation-settings: 'wdth' 125, 'wght' 400, 'opsz' 144;
+  }

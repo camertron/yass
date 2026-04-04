@@ -1,0 +1,8 @@
+
+.container {
+  width: 200px;
+  height: 200px;
+}
+#foo {
+  background: paint(foo) top left/50% 50% repeat-x;
+}

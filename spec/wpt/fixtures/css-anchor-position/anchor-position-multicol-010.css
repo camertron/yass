@@ -1,0 +1,14 @@
+
+  .anchor {
+    anchor-name: --tjor;
+    inline-size: 50px;
+    background: green;
+  }
+  .pos {
+    position: absolute;
+    position-anchor: --tjor;
+    inset-inline-start: anchor(outside);
+    inset-block-start: anchor(start);
+    inline-size: 50px;
+    background: green;
+  }

@@ -1,0 +1,8 @@
+
+  .default {
+    width: 25px;
+    height: 50px;
+    object-fit: none;
+    object-position: 0% 0%;
+    overflow: visible;
+  }

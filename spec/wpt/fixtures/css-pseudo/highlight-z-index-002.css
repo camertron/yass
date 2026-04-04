@@ -1,0 +1,20 @@
+
+  div
+    {
+      font-size: 48px;
+      line-height: 1.25; /* computes to 60px */
+    }
+
+  div#abs-positioned-sibling
+    {
+      background-color: yellow;
+      color: green;
+      position: absolute;
+    }
+
+  div#test::selection
+    {
+      background-color: red;
+      color: yellow;
+    }
+  

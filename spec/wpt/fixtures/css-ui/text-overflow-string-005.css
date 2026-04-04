@@ -1,0 +1,11 @@
+
+  div {
+    font-family: monospace;
+    font-size: 20px;
+    white-space: pre;
+    width: 9ch;
+    overflow: hidden;
+  }
+  div.test {
+    text-overflow: "-";
+  }

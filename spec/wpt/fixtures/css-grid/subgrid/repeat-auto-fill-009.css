@@ -1,0 +1,27 @@
+
+html,body {
+  color:black; background-color:white; font:10px/1 monospace; padding:0; margin:0;
+}
+
+.wrapper {
+  display: inline-block;
+  width: 110px;
+  border: 1px solid;
+}
+
+.grid {
+  display: grid;
+  grid-auto-rows: 8px;
+  background: grey;
+}
+
+.fill-0a  { grid-template-columns: subgrid repeat(auto-fill, [y]) [z] }
+.fill-0b  { grid-template-columns: subgrid [x] repeat(auto-fill, [y]) [z] }
+.fill-0c  { grid-template-columns: subgrid [x] [y] repeat(auto-fill, [z]) }
+.fill-0d  { grid-template-columns: subgrid repeat(auto-fill, [x]) }
+.fill-0e  { grid-template-columns: subgrid [x] }
+
+.grid > :nth-child(2n)   {  background: black; }
+.grid > :nth-child(2n+1) {  background: pink; }
+
+    

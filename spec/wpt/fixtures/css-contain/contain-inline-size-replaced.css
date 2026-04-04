@@ -1,0 +1,7 @@
+
+  .inline-contained {
+    contain: inline-size;
+    width: auto;
+    height: auto;
+    border: none;
+  }

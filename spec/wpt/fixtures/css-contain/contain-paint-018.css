@@ -1,0 +1,8 @@
+
+div {
+  display: table-row;
+  contain: paint;
+}
+span {
+  position: absolute;
+}

@@ -1,0 +1,14 @@
+
+  body {
+    direction: rtl;
+  }
+  section {
+    background-color: green;
+    block-size: 100px;
+    display: inline-flex;
+    gap: 20px;
+  }
+  section > div{
+    background-color: grey;
+    color: white;
+  }

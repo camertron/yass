@@ -1,0 +1,10 @@
+
+        .testcases > *
+        {
+            border: none;
+            --w: 10px;
+            --h: 10px;
+            width: calc(var(--w) + 20px);
+            height: calc(var(--h) + 20px);
+        }
+    

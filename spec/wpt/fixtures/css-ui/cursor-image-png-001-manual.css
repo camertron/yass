@@ -1,0 +1,4 @@
+
+	div.test{background: #AAA; border: 2px solid #555;
+	cursor:url(support/PTS/basn0g01.png), help; width: 128px; height: 64px}
+	div.test:before {content: url(support/PTS/basn0g01.png)

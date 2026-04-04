@@ -1,0 +1,14 @@
+
+  #scroller {
+    width: 200px;
+    height: 200px;
+    padding-top: 200px;
+    padding-left: 200px;
+    background: purple;
+    overflow: hidden;
+  }
+  #child {
+    width: 400px;
+    height: 400px;
+    background: green;
+  }

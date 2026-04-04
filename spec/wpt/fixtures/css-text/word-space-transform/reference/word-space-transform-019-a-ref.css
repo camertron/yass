@@ -1,0 +1,16 @@
+
+div {
+  font-size: 2em;
+  border: solid black;
+  margin: 5px;
+  width: 30ch;
+}
+#ref1 {
+  border-color: blue;
+}
+#ref2 {
+  border-color: orange;
+}
+u {  background: silver; }
+b {  background: green; }
+em { background: gray; }

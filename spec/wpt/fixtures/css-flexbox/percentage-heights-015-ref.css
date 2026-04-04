@@ -1,0 +1,21 @@
+
+  .container {
+    display: inline-block;
+    width: 100px;
+    vertical-align: top;
+  }
+
+  .item {
+    height: 200px;
+    background: red;
+    width: 100px;
+  }
+
+  .child {
+    background: green
+  }
+
+  .tall {
+    height: 250px;
+  }
+  

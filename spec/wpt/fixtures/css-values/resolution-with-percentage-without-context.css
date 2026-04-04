@@ -1,0 +1,18 @@
+
+div {
+  background-color: green;
+  width: 100px;
+  height: 100px;
+}
+
+@media (resolution <= calc(sign(50%) * 1dpi)) {
+  div {
+    background-color: red;
+  }
+}
+
+@media (resolution >= calc(sign(50%) * 1dpi)) {
+  div {
+    background-color: red;
+  }
+}

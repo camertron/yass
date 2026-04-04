@@ -1,0 +1,30 @@
+
+  :root {
+    scroll-snap-type: block proximity;
+  }
+  body {
+    margin: 0;
+  }
+  #filler-before {
+    height: 10px;
+  }
+  #filler-after {
+    height: 10000px;
+  }
+  #snapped {
+    position: relative;
+    top: 3000px; /* Should be enough to not snap for proximity */
+    container-type: scroll-state inline-size;
+    scroll-snap-align: start;
+    --before: no;
+    --after: no;
+    @container scroll-state(snapped) {
+      &::before {
+        --before: yes;
+        content: " ";
+      }
+      &::after {
+        --after: yes;
+      }
+    }
+  }

@@ -1,0 +1,17 @@
+
+
+    @media print {
+        @page {
+            margin: 3cm;
+        }
+        @page :first {
+            margin-top: 6cm;
+        }
+        @page :left {
+            color: red;
+        }
+        @page :right {
+            color: blue;
+        }
+    }
+

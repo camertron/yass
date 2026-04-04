@@ -1,0 +1,10 @@
+
+#test {
+  color: rgb(255, 0, 0);
+}
+span::-webkit-something-invalid, #test, ::-WeBkIt-sOmEtHiNg-NoNeXiSt123, ::-webkit-\ escaped {
+  color: rgb(0, 255, 0);
+}
+::-webkitfoo, #test {
+  color: rgb(255, 0, 0);
+}

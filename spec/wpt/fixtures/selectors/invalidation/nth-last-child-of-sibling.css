@@ -1,0 +1,4 @@
+
+  p:nth-last-child(even of .a + .b) {
+    color: green;
+  }

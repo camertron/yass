@@ -1,0 +1,13 @@
+
+
+.animated-div {
+  margin-left: 10px;
+  /* Make it easier to calculate expected values: */
+  animation-timing-function: linear ! important;
+}
+
+@keyframes anim {
+  from { margin-left: 100px; }
+  to { margin-left: 200px; }
+}
+

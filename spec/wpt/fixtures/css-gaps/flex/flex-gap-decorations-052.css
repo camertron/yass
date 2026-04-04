@@ -1,0 +1,23 @@
+
+    body {
+        margin: 0px;
+    }
+    #flexbox {
+        width: 340px;
+        border: 2px solid #333;
+        background-color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        row-gap: 10px;
+        column-rule: 5px solid gold;
+        row-rule: 5px red solid;
+        row-rule-break: intersection;
+    }
+    .item {
+        width: 70px;
+        height: 50px;
+        background-color: #007bff;
+        color: white;
+        display: flex;
+    }

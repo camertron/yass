@@ -1,0 +1,34 @@
+
+  .scrollable {
+    container-type: scroll-state;
+    width: 100px;
+    height: 100px;
+    overflow: auto;
+    &::before {
+      display: block;
+      content: " "
+    }
+    &.h::before {
+      width: 200px;
+      height: 10px;
+    }
+    &.v::before {
+      width: 10px;
+      height: 200px;
+    }
+  }
+  .target {
+    @container scroll-state(scrollable: block-start) { --block-start: yes }
+    @container scroll-state(scrollable: block-end) { --block-end: yes }
+    @container scroll-state(scrollable: inline-start) { --inline-start: yes }
+    @container scroll-state(scrollable: inline-end) { --inline-end: yes }
+    @container scroll-state(scrollable: top) { --top: yes }
+    @container scroll-state(scrollable: left) { --left: yes }
+    @container scroll-state(scrollable: bottom) { --bottom: yes }
+    @container scroll-state(scrollable: right) { --right: yes }
+  }
+  .ltr { direction: ltr; }
+  .rtl { direction: rtl; }
+  .htb { writing-mode: horizontal-tb; }
+  .vlr { writing-mode: vertical-lr; }
+  .vrl { writing-mode: vertical-rl; }

@@ -1,0 +1,10 @@
+
+
+div {
+  height: 200px; width: 200px;
+  font-size: 50px;
+}
+
+/* work around potential font overflow */
+span { margin-left: 5px }
+

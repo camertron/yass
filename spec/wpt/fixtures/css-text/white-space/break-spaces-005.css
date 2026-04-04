@@ -1,0 +1,17 @@
+
+div {
+  font: 10px/1 Ahem;
+}
+.fail {
+  position: absolute;
+  color: red;
+  z-index: -1;
+}
+span { color: green; }
+.test {
+  color: green;
+  width: 100px;
+
+  white-space: break-spaces;
+}
+

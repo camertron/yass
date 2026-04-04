@@ -1,0 +1,4 @@
+
+    .test { background-color: red; width: 12em; height: 6em; margin-top: 0; }
+    .ref { background-color: lab(87.8185% -79.271 80.9946); width: 12em; height: 6em; margin-bottom: 0; } /* color(srgb-linear 0 1 0) converted to Lab */
+    .test { background-color: color(srgb-linear 0 1 0); }

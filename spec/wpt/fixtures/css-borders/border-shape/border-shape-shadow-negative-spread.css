@@ -1,0 +1,12 @@
+
+body {
+    margin: 0;
+}
+#target {
+    width: 100px;
+    height: 100px;
+    border-shape: inset(0px);
+    background: blue;
+    box-shadow: 20px 20px 0 -10px red;
+    margin: 40px;
+}

@@ -1,0 +1,24 @@
+
+body {
+  position: relative;
+  width: 120px;
+}
+
+.test {
+  writing-mode: vertical-rl;
+  background: red;
+  position: absolute;
+  left: 0px;
+  right: 20px;
+  --expected-block-size: 100;
+}
+
+.child {
+  background: green;
+}
+
+@supports (display: layout(test)) {
+  .test {
+    display: layout(test);
+  }
+}

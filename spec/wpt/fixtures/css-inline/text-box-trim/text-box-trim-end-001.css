@@ -1,0 +1,18 @@
+
+@import "support/MetricsTestFont.css";
+
+.spacer {
+  background: lightgray;
+  block-size: 100px;
+}
+.target {
+  font: 100px/2 MetricsTestFont;
+  text-box-trim: trim-end;
+}
+.vrl { writing-mode: vertical-rl; }
+.vlr { writing-mode: vertical-lr; }
+.auto       .target { text-box-edge: auto; }
+.text       .target { text-box-edge: text; }
+.alphabetic .target { text-box-edge: text alphabetic; }
+.cap        .target { text-box-edge: cap text; }
+.ex         .target { text-box-edge: ex text; }

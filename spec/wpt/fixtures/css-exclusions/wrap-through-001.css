@@ -1,0 +1,23 @@
+
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+            .exclusion {
+                wrap-flow: both;
+                position: absolute;
+                top: 15px;
+                left: 70px;
+                width: 60px;
+                height: 36px;
+                background: blue;
+            }
+            #content1, #content2 {
+                width: 400px;
+                line-height: 12px;
+                font: 12px Ahem;
+            }
+            #content2 {
+                wrap-through: none;
+            }
+        

@@ -1,0 +1,7 @@
+
+  div {
+    border: 1px solid blue;
+    text-align: right;
+    text-align-last: left;
+    width: 200px;
+  }

@@ -1,0 +1,6 @@
+
+@layer {
+  .revert-all {
+    all: revert-layer;
+  }
+}

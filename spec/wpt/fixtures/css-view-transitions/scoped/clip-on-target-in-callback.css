@@ -1,0 +1,28 @@
+
+#container {
+  width: 200px;
+  height: 200px;
+  background: blue;
+  border: 5px solid black;
+  view-transition-group: normal;
+}
+#container.after {
+  overflow: clip;
+}
+
+#target {
+  margin-top: 150px;
+  width: 100px;
+  height: 100px;
+  background: green;
+  view-transition-name: target;
+}
+
+::view-transition-group(*),
+::view-transition-image-pair(*),
+::view-transition-old(*),
+::view-transition-new(*) {
+  /* freeze all animations at start */
+  animation-duration: 100000s;
+  animation-timing-function: steps(1, jump-end);
+}

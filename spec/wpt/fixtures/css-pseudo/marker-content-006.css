@@ -1,0 +1,14 @@
+
+li {
+  list-style-position: inside;
+}
+li::marker {
+  content: "a" "b";
+}
+li::before {
+  content: "c";
+}
+li::after {
+  content: "d";
+}
+span { font-size: 32pt; }

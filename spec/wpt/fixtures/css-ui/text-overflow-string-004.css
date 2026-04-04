@@ -1,0 +1,12 @@
+
+  div {
+    font-size: 10px;
+    overflow: hidden;
+    text-overflow: "123";
+    text-emphasis: dot;
+    width: 150px;
+  }
+  span {
+    font-family: Ahem;
+    font-size: 30px;
+  }

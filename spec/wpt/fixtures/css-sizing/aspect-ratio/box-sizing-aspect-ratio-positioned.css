@@ -1,0 +1,14 @@
+
+* {
+    box-sizing: border-box;
+}
+
+#box {
+    position: absolute;
+    background-color: green;
+    top: 0;
+    left: 0;
+    border: 15px solid blue;
+    height: 100px;
+    aspect-ratio: 1;
+}

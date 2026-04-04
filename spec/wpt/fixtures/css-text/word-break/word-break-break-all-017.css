@@ -1,0 +1,17 @@
+
+div {
+  font: 25px/1 Ahem;
+  width: 4ch;
+}
+.red {
+  position: absolute;
+  white-space: pre;
+  color: red;
+  background: green;
+  z-index: -1;
+}
+.test {
+  white-space: break-spaces;
+  word-break: break-all;
+  color: green;
+}

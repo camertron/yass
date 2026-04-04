@@ -1,0 +1,19 @@
+
+      #outer {
+        border: 1px solid black;
+        width: 64px;
+        height: 128px;
+      }
+
+      #inner {
+        border: 20px solid white;
+        width: 24px;
+        height: 88px;
+      }
+
+      #innermost {
+        width: 24px;
+        height: 24px;
+        background-color: purple;
+      }
+    

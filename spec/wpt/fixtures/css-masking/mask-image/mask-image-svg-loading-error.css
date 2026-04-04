@@ -1,0 +1,4 @@
+
+  svg > rect {
+    mask-image: image-set(url("support/green-100x100.png?pipe=slice(1,200)"));
+  }

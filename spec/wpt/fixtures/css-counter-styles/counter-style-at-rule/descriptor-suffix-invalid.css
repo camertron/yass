@@ -1,0 +1,8 @@
+
+  @counter-style a {
+    system: extends decimal;
+    suffix: ',';
+    suffix: *;
+    suffix: 0;
+    suffix: '$' '$';
+  }

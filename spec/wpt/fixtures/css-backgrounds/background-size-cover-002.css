@@ -1,0 +1,27 @@
+
+        div#ref-overlapped-red
+        {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+        }
+
+        div#test-overlapping-green
+        {
+            background-image: url("support/50x50-green.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-right: transparent solid 50px;
+            bottom: 100px;
+            height: 50px;
+            padding: 25px;
+            position: relative;
+            width: 0px;
+
+            /*
+            Background positioning area to cover in this
+            test is 50px wide by 100px tall.
+            So, the image should be scaled to 100px by 100px.
+            */
+        }
+    

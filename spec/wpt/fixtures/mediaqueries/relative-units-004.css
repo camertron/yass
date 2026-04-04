@@ -1,0 +1,18 @@
+
+:root {
+  font-size: 100000px;/* ~87ft */
+}
+body {
+  background: red;
+}
+p {
+  font-size: 24px;
+}
+  
+
+    @media (min-width: 1ch) {
+      body {
+        background: green;
+      }
+    }
+  

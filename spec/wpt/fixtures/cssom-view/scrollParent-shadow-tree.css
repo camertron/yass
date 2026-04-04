@@ -1,0 +1,17 @@
+
+  .scroller {
+    overflow: scroll;
+    border: 1px solid blue;
+  }
+  .scroller {
+    height: 150px;
+  }
+  .target {
+    background: repeating-linear-gradient(30deg, white 0px, white 30px, green 30px, green 60px);
+    height: 1000px;
+  }
+  .spacer {
+    background: repeating-linear-gradient(-30deg, white 0px, white 30px, blue 30px, blue 60px);
+    height: 1000px;
+  }
+

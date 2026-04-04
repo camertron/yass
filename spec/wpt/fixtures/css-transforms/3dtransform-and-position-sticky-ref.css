@@ -1,0 +1,26 @@
+
+
+div, img {
+  height: 100px;
+  width: 100px;
+}
+
+#outer {
+  transform-style: preserve-3d;
+  perspective: 300px;
+}
+
+#middle {
+  transform-style: preserve-3d;
+  position: relative;
+  background: aqua;
+}
+
+#inner2 {
+  background: olive;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateX(30deg);
+}
+

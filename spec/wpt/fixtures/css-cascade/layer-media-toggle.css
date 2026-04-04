@@ -1,0 +1,14 @@
+
+@layer foo, bar;
+@layer bar {
+  #target { background-color: green; }
+}
+@layer foo {
+  #target { background-color: red; }
+}
+
+
+#target {
+  width: 100px;
+  height: 100px;
+}

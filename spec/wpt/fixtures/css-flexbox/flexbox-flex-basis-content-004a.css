@@ -1,0 +1,51 @@
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* flex container has an extremely-constrained height (and items will
+       overflow vertically). This is intentional, as part of stress-testing
+       item sizing. We add a large margin-bottom so that overflowing
+       items don't overlap between examples. */
+    height: 1px;
+    margin-bottom: 49px;
+  }
+
+  .item {
+    /* We give all flex items "flex-basis: content".
+       We also give them zero flex-grow, flex-shrink, and min-main-size, so
+       that the flex base size entirely determines the flex item's size. */
+    flex: 0 0 content;
+    min-height: 0;
+    border: 2px solid teal;
+  }
+  ib {
+    display: inline-block;
+    background: blue;
+    border: 1px solid gray;
+    width: 15px;
+    height: 10px;
+  }
+  float {
+    float: left;
+    background: fuchsia;
+    border: 1px solid gray;
+    width: 15px;
+    height: 10px;
+  }
+  canvas {
+    background: brown;
+    border: 1px solid gray;
+  }
+  .innerFlex {
+    display: flex;
+    flex-direction: column;
+  }
+  innerItem {
+    background: salmon;
+    border: 1px solid gray;
+    height: 10px;
+    width: 15px;
+    flex: none;
+  }
+  

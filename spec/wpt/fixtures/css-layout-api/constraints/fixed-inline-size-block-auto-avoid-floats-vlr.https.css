@@ -1,0 +1,22 @@
+
+body {
+  height: 200px;
+  writing-mode: vertical-lr;
+}
+
+.float {
+  float: right;
+  width: 20px;
+  height: 100px;
+}
+
+.test {
+  background: red;
+}
+
+@supports (display: layout(test)) {
+  .test {
+    background: green;
+    display: layout(test);
+  }
+}

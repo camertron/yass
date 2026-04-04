@@ -1,0 +1,10 @@
+
+    div {
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        width: auto;
+        height: auto;
+    }

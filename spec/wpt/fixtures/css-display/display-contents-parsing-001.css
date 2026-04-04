@@ -1,0 +1,13 @@
+
+  .contents {
+    display: contents;
+  }
+
+  .contents-then-block {
+    display: contents;
+    display: block;
+  }
+
+  .content {
+    display: content;
+  }

@@ -1,0 +1,9 @@
+
+  ::target-text {
+    color: green;
+    text-decoration: overline;
+    background-color: transparent;
+  }
+  #target {
+    font-size: 50px;
+  }

@@ -1,0 +1,6 @@
+
+div {
+  display: table-caption;
+  contain: size;
+  overflow: hidden;
+}

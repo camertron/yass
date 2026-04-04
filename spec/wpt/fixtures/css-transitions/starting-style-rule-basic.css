@@ -1,0 +1,16 @@
+
+  #target {
+    transition-property: background-color, color;
+    transition-duration: 100s;
+    transition-timing-function: steps(2, start);
+    color: green;
+    background-color: white;
+  }
+  @starting-style {
+    #target {
+      background-color: black;
+    }
+  }
+  #target.red {
+    background-color: red;
+  }

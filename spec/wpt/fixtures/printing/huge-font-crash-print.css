@@ -1,0 +1,8 @@
+
+* {
+  position: absolute;
+  transform: scale(50);
+  border-style: solid dashed;
+  border-right: none;
+  mix-blend-mode: screen;
+}

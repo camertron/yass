@@ -1,0 +1,27 @@
+
+  html
+    {
+      writing-mode: vertical-rl;
+    }
+
+  body
+    {
+      margin: 0px;
+    }
+
+  p
+    {
+      text-orientation: upright;
+    }
+
+  img
+    {
+      padding-top: 8px;
+    }
+
+  img#blue
+    {
+      padding-left: 16px;
+      padding-right: 8px;
+    }
+  

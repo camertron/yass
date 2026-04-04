@@ -1,0 +1,4 @@
+
+  p:nth-child(odd of .c) span {
+    color: green;
+  }

@@ -1,0 +1,9 @@
+
+  .outer {
+    margin-bottom: 2px;
+    height: 60px;
+  }
+  .inner {
+    background: lime;
+    height: 100%;
+  }

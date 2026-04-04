@@ -1,0 +1,5 @@
+
+div::first-letter {
+  float: right;
+}
+::highlight(test) { background-color: purple; }

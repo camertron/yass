@@ -1,0 +1,34 @@
+
+  #flex {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    counter-reset: my-count 0;
+  }
+  /* #item1 grows to use remaining space given #item2's content */
+  #item1 {
+    flex-grow: 1;
+    height: 100px;
+  }
+  #container {
+    container-type: size;
+  }
+  #item2 {
+    flex-grow: 0;
+    font: 50px/1 Ahem;
+  }
+  /* #item2 size depends on generated content which depends on my-count
+     counter. */
+  #item2::before {
+    display: inline-block;
+    content: counter(my-count);
+  }
+  /* The counter-increment inside the container should not affect the size of
+     #item2 because of style containment. Otherwise we would have a
+     circularity. */
+  @container (min-width: 125px) {
+    #inner {
+      counter-increment: my-count 10;
+      background-color: green;
+    }
+  }

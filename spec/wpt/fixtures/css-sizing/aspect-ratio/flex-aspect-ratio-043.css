@@ -1,0 +1,12 @@
+
+#container {
+  display: flex;
+  inline-size: 100px;
+  aspect-ratio: 2 / 1;
+  background: green;
+  max-block-size: 100px;
+}
+#item {
+  flex: 1;
+  block-size: 200px;
+}

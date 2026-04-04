@@ -1,0 +1,9 @@
+
+  @property --bg {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: green;
+  }
+  div::selection {
+    background-color: var(--bg, red);
+  }

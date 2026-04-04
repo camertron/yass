@@ -1,0 +1,12 @@
+
+html, body { margin: 0; padding: 0; }
+.container {
+  width: 200px;
+  height: 200px;
+  border: 36px solid orange;
+  border-image: paint(foo)               /* source */
+                1 /                      /* slice */
+                36px 36px 36px 36px /    /* width */
+                18px 18px 18px 18px      /* outset */
+                round;
+}

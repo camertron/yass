@@ -1,0 +1,15 @@
+
+aside {
+  float: left;
+  white-space: pre-wrap;
+  background: green;
+}
+aside:last-of-type { overflow-wrap: break-word; }
+div {
+  background: red;
+  color: transparent;
+  font-family: monospace;
+  font-size: 50px;
+  width: 3ch;
+  line-height: 1;
+}

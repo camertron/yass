@@ -1,0 +1,17 @@
+
+    div.flexbox {
+      display: flex;
+      flex-wrap: wrap;
+      border: 1px dashed black;
+      min-width: 100px;
+      height: 12px;
+      float: left;
+      clear: both;
+      margin-bottom: 2px;
+    }
+    div.smallItem {
+      width: 30px;
+      border: 1px solid blue;
+      background: lightblue;
+    }
+  

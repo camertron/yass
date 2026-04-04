@@ -1,0 +1,15 @@
+
+    @font-face {
+    font-family: variabletest_box;
+    src: url(resources/variabletest_box.ttf);
+    }
+
+    body {
+    font-family: variabletest_box, sans-serif;
+    font-optical-sizing: none;
+    }
+
+    div {
+    line-height: 64px;
+    }
+

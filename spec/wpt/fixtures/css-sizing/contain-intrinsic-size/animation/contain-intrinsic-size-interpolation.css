@@ -1,0 +1,5 @@
+
+.target {
+  contain: strict;
+  contain-intrinsic-size: 50px 60px;
+}

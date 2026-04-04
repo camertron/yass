@@ -1,0 +1,17 @@
+
+
+div {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    animation: anim 10s linear forwards;
+}
+
+@keyframes anim {
+    0.000000001%, to {
+        width: 200px;
+        height: 200px;
+        translate: 50%, 50%;
+    }
+}
+

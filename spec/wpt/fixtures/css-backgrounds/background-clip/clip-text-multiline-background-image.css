@@ -1,0 +1,13 @@
+
+.target {
+  font-size: 100px;
+  background-image: url("../support/bgimg1x50.png");
+  background-clip: text;
+  color: transparent;
+}
+.container {
+  width: 400px;
+  line-height: 1;
+  word-wrap: break-word;
+  background-color: blue;
+}

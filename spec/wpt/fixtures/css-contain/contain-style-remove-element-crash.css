@@ -1,0 +1,5 @@
+
+* {
+  counter-reset: reversed(counter_3) reversed(counter_4) 64 reversed(counter_5) -8772;
+  contain: layout paint style inline-size !important;
+}

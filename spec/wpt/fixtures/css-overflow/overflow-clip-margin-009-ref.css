@@ -1,0 +1,12 @@
+
+.container {
+  width: 100px;
+  height: 100px;
+  overflow-clip-margin: 20px;
+  overflow: clip;
+}
+.child {
+  width: 200px;
+  height: 200px;
+  background: lightblue;
+}

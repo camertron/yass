@@ -1,0 +1,19 @@
+
+th {
+    border: 0px solid red;
+    background: green;
+}
+td {
+    border: 50px solid red;
+    padding: 6px 12px;
+    text-align: left;
+    vertical-align: top;
+}
+.table {
+    overflow-x: auto;
+    max-width: 810px;
+}
+table {
+    border-collapse: collapse;
+    border: none;
+}

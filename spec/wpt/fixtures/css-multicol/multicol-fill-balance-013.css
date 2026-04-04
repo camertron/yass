@@ -1,0 +1,7 @@
+
+  #container {
+      columns: 10;
+      width: 100px;
+      column-gap: 0;
+      background: green;
+  }

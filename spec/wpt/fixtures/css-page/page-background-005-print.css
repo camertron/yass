@@ -1,0 +1,30 @@
+
+  @page {
+    size: 600px 300px;
+    margin: 20px;
+    border: 20px solid blue;
+    padding: 20px;
+    background-image: url(support/cat.png);
+    background-repeat: no-repeat;
+  }
+  @page border {
+    background-origin: border-box;
+  }
+  @page padding {
+    background-origin: padding-box;
+  }
+  @page content {
+    background-origin: content-box;
+  }
+  :root {
+    print-color-adjust: exact;
+  }
+  body {
+    margin: 0;
+  }
+  .text {
+    /* Add some padding to leave some room for glyph overflow.
+       The page area may clip overflow, although the ref doesn't. */
+    padding: 0 5px;
+    background: #ddd;
+  }

@@ -1,0 +1,13 @@
+
+  article {
+    column-fill: auto;
+    column-count: 2;
+    width: 200px;
+    /* Test max-height imposes constraint on column boxes' height. */
+    max-height: 200px;
+  }
+  div {
+    height: 400px;
+    background-color: lightgreen;
+  }
+  

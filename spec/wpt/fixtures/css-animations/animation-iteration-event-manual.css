@@ -1,0 +1,25 @@
+
+  div {
+    animation-name: sample;
+    animation-duration: 10s;
+    animation-iteration-count: 3;
+
+    color: yellow;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-align: center;
+
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    position: relative;
+  }
+
+  @keyframes sample {
+    from {
+      left: 150px;
+    }
+    to {
+      left: 0px;
+    }
+  }

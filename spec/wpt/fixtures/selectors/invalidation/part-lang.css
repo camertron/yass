@@ -1,0 +1,13 @@
+
+  my-element::part(inner) {
+    background-color: #ff0000;
+  }
+  my-element::part(inner):lang(en) {
+    background-color: #00ffff;
+  }
+  my-element::part(inner):lang(en-GB) {
+    background-color: #00ff00;
+  }
+  my-element::part(inner):lang(fr) {
+    background-color: #0000ff;
+  }

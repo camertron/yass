@@ -1,0 +1,150 @@
+
+  #parent {
+    list-style-image: url(parent);
+  }
+
+
+    @function --f() {
+      result: url(img.png);
+    }
+    #actual { list-style-image: --f(); }
+    #expected { list-style-image: url(img.png); }
+  
+
+    @function --f() {
+      result: url("img.png");
+    }
+    #actual { list-style-image: --f(); }
+    #expected { list-style-image: url("img.png"); }
+  
+
+    @function --f() returns <url> {
+      result: url(img.png);
+    }
+    #actual { list-style-image: --f(); }
+    #expected { list-style-image: url(img.png); }
+  
+
+    @function --f() returns <url> {
+      result: url("img.png");
+    }
+    #actual { list-style-image: --f(); }
+    #expected { list-style-image: url("img.png"); }
+  
+
+    @function --f() {
+      result: attr(data-42 type(<length>));
+    }
+    #actual { width: --f(); }
+    #expected { width: 42px; }
+  
+
+    @function --f() returns <length> {
+      result: attr(data-42 type(<length>));
+    }
+    #actual { width: --f(); }
+    #expected { width: 42px; }
+  
+
+    @function --f() returns <length> {
+      result: attr(data-42 type(*));
+    }
+    #actual { width: --f(); }
+    #expected { width: 42px; }
+  
+
+    @function --f() {
+      result: attr(data-42 type(*));
+    }
+    #actual { width: --f(); }
+    #expected { width: 42px; }
+  
+
+    @function --f(--a : attr(data-42 type(*))) {
+      result: var(--a);
+    }
+    #actual { width: --f(); }
+    #expected { width: 42px; }
+  
+
+    @function --f() {
+      --l: attr(data-42 type(*));
+      result: var(--l);
+    }
+    #actual { width: --f(); }
+    #expected { width: 42px; }
+  
+
+    @function --f() {
+      result: attr(data-cat type(*));
+    }
+    #actual { list-style-image: --f(); }
+    #expected { list-style-image: url(parent); }
+  
+
+    @function --f() {
+      result: attr(data-cat type(<url>));
+    }
+    #actual { list-style-image: --f(); }
+    #expected { list-style-image: url(parent); }
+  
+
+    @function --f() returns <url> {
+      result: attr(data-cat type(*));
+    }
+    #actual { list-style-image: --f(); }
+    #expected { list-style-image: url(parent); }
+  
+
+    @function --f() returns <url> {
+      --local: attr(data-cat type(*));
+      result: var(--local);
+    }
+    #actual { list-style-image: --f(); }
+    #expected { list-style-image: url(parent); }
+  
+
+    @function --f(--arg) returns <url> {
+      result: var(--arg);
+    }
+    #actual { list-style-image: --f(attr(data-cat type(*))); }
+    #expected { list-style-image: url(parent); }
+  
+
+    @function --f(--arg: attr(data-cat type(*))) {
+      result: var(--arg);
+    }
+    #actual { list-style-image: --f(); }
+    #expected { list-style-image: url(parent); }
+  
+
+    @function --f() {
+      --x: attr(data-cat type(*));
+      result: --g();
+    }
+    @function --g() {
+      result: var(--x);
+    }
+    #actual { list-style-image: --f(); }
+    #expected { list-style-image: url(parent); }
+  
+
+    @function --f(--x: attr(data-cat type(*))) {
+      --x: initial;
+      result: --g();
+    }
+    #actual { list-style-image: --f(); }
+    #expected { list-style-image: url(parent); }
+  
+
+    @function --f() {
+      --x: attr(data-cat type(*));
+      result: --g();
+    }
+    @function --g() {
+      --x: inherit;
+      result: var(--x);
+    }
+    #actual { list-style-image: --f(); }
+    #expected { list-style-image: url(parent); }
+  

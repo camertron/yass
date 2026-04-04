@@ -1,0 +1,19 @@
+
+.view_box_subset {
+  width: 50px;
+  height: 100px;
+  object-view-box: inset(50px 0px 0px 0px);
+  object-fit: none;
+  background-color: grey;
+  margin: 5px;
+}
+
+.view_box_subset_with_position {
+  width: 50px;
+  height: 100px;
+  object-view-box: inset(50px 0px 0px 0px);
+  object-fit: none;
+  background-color: grey;
+  margin: 5px;
+  object-position: 10px 10px;
+}

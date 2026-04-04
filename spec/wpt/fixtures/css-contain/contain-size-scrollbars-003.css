@@ -1,0 +1,7 @@
+
+div {
+  contain: size;
+  display: inline-grid;
+  border: solid thick;
+  overflow: scroll;
+}

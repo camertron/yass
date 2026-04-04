@@ -1,0 +1,11 @@
+
+      #target {
+        position: absolute;
+        width: 100px;
+        height: 40px;
+        background-color: lime;
+        transform-origin: 0% 0%;
+        offset-path: path('m 0 0 h 200 v 150 z');
+        offset-distance: 120%;
+      }
+    

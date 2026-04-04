@@ -1,0 +1,7 @@
+
+#test {
+  border: 1px solid gray;
+  font: 15px monospace;
+  width: 20ch;
+  text-wrap: balance;
+}

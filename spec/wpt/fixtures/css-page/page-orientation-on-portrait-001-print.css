@@ -1,0 +1,23 @@
+
+
+@page second-page {
+  size: portrait;
+  page-orientation: rotate-right;
+}
+div:nth-of-type(2) {
+  page: second-page;
+  break-before: page;
+
+  box-sizing: border-box;
+  width: 2in;
+  height: 4in;
+  border-top: 15px solid orange;
+  border-right: none;
+  border-bottom: 15px solid blue;
+  border-left: none;
+}
+body {
+  margin: 0;
+}
+
+  

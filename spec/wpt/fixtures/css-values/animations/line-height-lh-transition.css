@@ -1,0 +1,9 @@
+
+  #target {
+    width: 20lh;
+    line-height: 10px;
+    transition: line-height 1s;
+  }
+  #target.lh {
+    line-height: 20px;
+  }

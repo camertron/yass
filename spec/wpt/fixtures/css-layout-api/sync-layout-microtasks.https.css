@@ -1,0 +1,9 @@
+
+#test {
+  display: layout(child-layout);
+  width: 100px;
+}
+
+#test > div {
+  height: 100px;
+}

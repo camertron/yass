@@ -1,0 +1,8 @@
+
+  #reference {
+    column-rule-style: dotted;
+    column-rule-width: medium;
+  }
+  #target {
+    color: lime;
+  }

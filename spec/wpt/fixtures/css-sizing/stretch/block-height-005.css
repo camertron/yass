@@ -1,0 +1,14 @@
+
+  .outer {
+    width: 100px;
+    height: 100px;
+    outline: solid;
+    position: relative;
+  }
+
+  .float {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: skyblue;
+  }

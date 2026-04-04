@@ -1,0 +1,29 @@
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid grey;
+    border-radius: 2px;
+    background: lightgray;
+}
+
+label {
+    overflow-y: auto;
+    max-width: 250px;
+    max-height: 40px;
+    font-size: 10px;
+}
+
+iframe {
+    overflow: clip;
+    width: 500px;
+    height: 300px;
+    border: none;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}

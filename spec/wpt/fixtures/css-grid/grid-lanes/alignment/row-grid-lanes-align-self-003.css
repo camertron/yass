@@ -1,0 +1,61 @@
+
+    .grid-lanes {
+      display: grid-lanes;
+      width: 100px;
+      height: 250px;
+      grid-template-rows: repeat(4, 1fr);
+      gap: 5px;
+      border: 1px solid black;
+      margin-bottom: 20px;
+    }
+
+    .item {
+      background-color: #444;
+      color: #fff;
+      padding: 2px;
+      width: 50px;
+    }
+
+    .img-placeholder {
+      width: 48px;
+      height: 30px;
+      background: linear-gradient(45deg, #666, #999);
+      display: inline-block;
+    }
+
+    input[type="text"] {
+      background-color: #f0f0f0;
+      border: 1px solid #999;
+      padding: 2px;
+      height: 20px;
+      width: auto;
+    }
+
+    button {
+      background-color: #ddd;
+      border: 1px solid #999;
+      padding: 2px 4px;
+      cursor: pointer;
+      width: auto;
+    }
+
+    .start {
+      align-self: start;
+      background-color: red;
+    }
+
+    .end {
+      align-self: end;
+      background-color: blue;
+    }
+
+    .center {
+      align-self: center;
+      background-color: green;
+    }
+
+    .stretch {
+      align-self: stretch;
+      background-color: orange;
+    }
+  

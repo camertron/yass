@@ -1,0 +1,38 @@
+
+
+:root {
+  view-transition-name: none;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.item1 {
+  view-transition-name: auto;
+}
+
+.item2 {
+  view-transition-name: match-element;
+}
+
+main.switch .item1 {
+  order: 2;
+}
+
+.item1 {
+  background: green;
+}
+
+.item2 {
+  background: yellow;
+  position: relative;
+  left: 100px;
+}
+

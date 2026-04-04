@@ -1,0 +1,25 @@
+
+  text
+    {
+      background-color: transparent;
+      /*
+      color suppresses UA default background-color,
+      but fill and stroke do not, so set explicitly
+      */
+      fill: green;
+      /*
+      fill is the shorthand form for fill-color,
+      fill-image, fill-origin, fill-position, fill-size
+      and fill-repeat
+      https://www.w3.org/TR/fill-stroke-3/#fill-shorthand
+      */
+      stroke: yellow;
+      /*
+      stroke is the shorthand form for stroke-color,
+      stroke-image, stroke-origin, stroke-position,
+      stroke-size, and stroke-repeat
+      https://www.w3.org/TR/fill-stroke-3/#stroke-shorthand
+      */
+      stroke-width: 2px;
+    }
+  

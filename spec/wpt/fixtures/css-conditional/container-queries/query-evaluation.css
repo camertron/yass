@@ -1,0 +1,7 @@
+
+  #container {
+    width: 1px;
+    height: 0px;
+    container-type: size;
+    --applied:false;
+  }

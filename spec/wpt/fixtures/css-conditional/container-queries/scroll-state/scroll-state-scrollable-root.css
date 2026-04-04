@@ -1,0 +1,15 @@
+
+  :root {
+    container-type: scroll-state;
+  }
+  #target {
+    height: 5000px;
+    --top: no;
+    --bottom: no;
+    @container scroll-state(scrollable: top) {
+      --top: yes;
+    }
+    @container scroll-state(scrollable: bottom) {
+      --bottom: yes;
+    }
+  }

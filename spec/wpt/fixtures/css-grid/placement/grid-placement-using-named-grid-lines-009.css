@@ -1,0 +1,18 @@
+
+.wrapper {
+  grid-template-areas: "area";
+}
+.grid {
+  display: grid;
+  width: 100px;
+  height: 100px;
+  grid-auto-columns: 0px 100%;
+  grid-auto-rows: 0px 100%;
+  grid-template-columns: inherit;
+  grid-template-rows: inherit;
+  background: red;
+}
+.item {
+  grid-area: area;
+  background: green;
+}

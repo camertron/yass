@@ -1,0 +1,7 @@
+
+    @media not layer {
+        body { background-color: red; }
+    }
+    @media layer {
+        body { background-color: red; }
+    }

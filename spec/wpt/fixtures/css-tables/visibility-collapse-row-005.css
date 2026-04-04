@@ -1,0 +1,10 @@
+
+  main table {
+    border-spacing: 0;
+  }
+  main td {
+    width: 50px;
+    height: 50px;
+    background: gray;
+    padding: 0;
+  }

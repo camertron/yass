@@ -1,0 +1,13 @@
+
+  #container.contents {
+    --foo: bar;
+    display: contents;
+  }
+  #target {
+    color: red;
+  }
+  @container style(--foo: bar) {
+    #target {
+      color: green;
+    }
+  }

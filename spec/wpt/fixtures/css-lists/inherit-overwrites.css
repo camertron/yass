@@ -1,0 +1,11 @@
+
+  #container {
+    counter-reset: first 1;
+    counter-increment: second 2;
+    counter-set: third 3;
+  }
+  .target {
+    counter-reset: fourth 4;
+    counter-increment: fifth 5;
+    counter-set: sixth 6;
+  }

@@ -1,0 +1,7 @@
+
+  #test {
+    border: 2px solid blue;
+    height: 100px;
+    resize: both;
+    width: 100px;
+  }

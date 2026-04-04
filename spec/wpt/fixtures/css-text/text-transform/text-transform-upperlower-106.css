@@ -1,0 +1,9 @@
+
+#target {
+  text-transform: uppercase;
+  color: white;
+  background: red;
+}
+#target::selection {
+  background: green;
+}

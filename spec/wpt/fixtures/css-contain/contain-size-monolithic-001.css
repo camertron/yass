@@ -1,0 +1,18 @@
+
+  div#multi-column
+    {
+      column-count: 2;
+      column-fill: balance; /* balance is the initial column-fill value */
+      column-gap: 4ch;
+      column-rule: red solid 4ch;
+      column-width: 2ch;
+      font-family: monospace;
+      font-size: 20px;
+      width: 8ch;
+    }
+
+  div#size-contain
+    {
+      contain: size;
+    }
+  

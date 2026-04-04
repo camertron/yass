@@ -1,0 +1,17 @@
+
+  @font-face {
+    font-family: IMPACT;
+    src: url(support/fonts/LigatureSymbolsWithSpaces.woff);
+    unicode-range: U+0041-0044;
+  }
+  @font-face {
+    font-family: NOIMPACT;
+    src: url(support/fonts/LigatureSymbolsWithSpaces.woff);
+    unicode-range: U+0061-0064;
+  }
+  .impact {
+    font-family: IMPACT;
+  }
+  .noimpact {
+    font-family: NOIMPACT;
+  }

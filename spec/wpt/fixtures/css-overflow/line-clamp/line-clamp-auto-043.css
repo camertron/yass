@@ -1,0 +1,11 @@
+
+.clamp {
+  line-clamp: auto;
+  max-height: 2lh;
+  width: 500px;
+  background-color: yellow;
+}
+.max-height {
+  max-height: 1lh;
+  text-align: right;
+}

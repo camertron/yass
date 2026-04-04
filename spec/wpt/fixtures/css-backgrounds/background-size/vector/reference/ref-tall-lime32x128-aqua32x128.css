@@ -1,0 +1,17 @@
+
+div
+{
+  width: 256px; height: 768px;
+}
+#outer
+{
+  border: 1px solid black;
+}
+#inner
+{
+  width: 32px; height: 256px;
+}
+#inner > div { width: 32px; height: 128px; }
+#top { background-color: lime; }
+#bottom { background-color: aqua; }
+  

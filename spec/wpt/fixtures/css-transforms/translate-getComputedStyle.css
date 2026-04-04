@@ -1,0 +1,18 @@
+
+    #container {
+      transform-style: preserve-3d;;
+    }
+    #first {
+      font-size: 10px;
+      translate: 10px 2em;
+    }
+    #second {
+      translate: 30% 40% 50px;
+    }
+    #third {
+      font-size: 10px;
+      width: 98px;
+      height: 76px;
+      translate: calc(7em + 80%) -9em;
+    }
+  

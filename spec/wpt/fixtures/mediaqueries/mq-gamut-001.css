@@ -1,0 +1,12 @@
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+@media (color-gamut: srgb),
+       not (color-gamut: srgb)
+{
+    div { background-color: green; }
+}

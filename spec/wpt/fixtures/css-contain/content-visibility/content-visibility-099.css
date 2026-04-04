@@ -1,0 +1,14 @@
+
+.spacer {
+  height: 10000px;
+}
+#child {
+  width: 100px;
+  height: 100px;
+  background: green;
+  position: relative
+}
+#target {
+  width: 10px;
+  height: 10px;
+}

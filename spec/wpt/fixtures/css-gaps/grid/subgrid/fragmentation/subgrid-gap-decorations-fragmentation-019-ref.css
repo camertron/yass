@@ -1,0 +1,56 @@
+
+  body {
+    margin: 0px;
+  }
+  .multicol {
+    position: relative;
+    columns: 2;
+    column-fill: auto;
+    width: 280px;
+    height: 80px;
+    background: yellow;
+    column-gap: 0px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 20px 10px 20px 3px 5px 2px 20px 3px 5px 22px 10px 20px;
+    background: lightgray;
+    column-gap: 10px;
+  }
+  .subgrid {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+    background: orange;
+    grid-column: 2 / -2;
+    grid-row: 3 / 11;
+  }
+  .item {
+    background: purple;
+  }
+  .col-gap-group {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    display: flex;
+    gap: 20px;
+    height: 80px;
+  }
+  .col-gap {
+    width: 10px;
+    background: skyblue;
+  }
+  .row-gap-group {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 140px;
+  }
+  .row-gap {
+    background: cornflowerblue;
+    height: 10px;
+  }

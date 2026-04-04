@@ -1,0 +1,14 @@
+
+.parent {
+  width: 100px;
+  overflow: visible;
+}
+.target {
+  font-size: 16px;
+  background-color: black;
+  width: 10px;
+  height: 10px;
+}
+.expected {
+  background-color: green;
+}

@@ -1,0 +1,6 @@
+
+@starting-style {
+  div::first-letter {
+    color: red;
+  }
+}

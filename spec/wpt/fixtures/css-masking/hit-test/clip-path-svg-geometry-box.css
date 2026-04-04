@@ -1,0 +1,11 @@
+
+body {
+  margin: 0;
+}
+rect {
+  width: 100px;
+  height: 100px;
+  stroke-width: 50px;
+  stroke: rgba(0, 0, 255, 0.5);
+  fill: lightblue;
+}

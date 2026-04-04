@@ -1,0 +1,27 @@
+
+  #c1 {
+    --theme: green;
+  }
+  @container style(--theme: green) {
+    #c1::before {
+      content: "";
+      color: green;
+      display: block;
+      height: 100px;
+    }
+  }
+
+
+  #c2 {
+    --theme: red;
+  }
+  #c2::before { color: red }
+  #c2.green {
+    --theme: green;
+  }
+  @container style(--theme: green) {
+    #c2::before {
+      content: "";
+      color: green;
+    }
+  }

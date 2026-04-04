@@ -1,0 +1,17 @@
+
+  #tabletest {
+    border-collapse: collapse;
+    writing-mode: horizontal-tb;
+  }
+  #tabletest td {
+    padding: 20px 50px;
+  }
+  #tabletest #top {
+    writing-mode: vertical-rl;
+    border: 2px solid blue;
+    border-left: 10px solid blue;
+  }
+  #tabletest #bottom {
+    border: 2px solid blue;
+    border-top: 3px solid green;
+  }

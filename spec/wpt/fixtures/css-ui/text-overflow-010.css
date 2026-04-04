@@ -1,0 +1,23 @@
+
+.green {
+  position: absolute;
+  z-index: -1;
+  background: green;
+  width: 100px;
+  height: 100px;
+}
+.test {
+  white-space: pre;
+  font-family: Ahem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 5.2em; /* making this 5.2em rather than 5em, to ensure that the atomic inline gets entirely hidden even if it is only partially obstructing */
+  color: green;
+}
+span {
+  color: red;
+}
+.ib {
+  display: inline-block;
+  background: red; /* in case the text gets disapeared but the box is still there. */
+}

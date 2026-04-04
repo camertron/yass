@@ -1,0 +1,24 @@
+
+    body {
+      margin: 0;
+    }
+    #mc {
+      overflow: hidden;
+      scroll-marker-group: before;
+      columns: 1;
+      column-fill: auto;
+      width: 400px;
+      height: 100px;
+    }
+    #mc::scroll-marker-group {
+      display: flex;
+      height: 20px;
+    }
+    #mc::column::scroll-marker {
+      width: 20px;
+      content: "X";
+    }
+    #mc:hover::column {
+      display: none;
+    }
+  

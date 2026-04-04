@@ -1,0 +1,13 @@
+
+div {
+  width: 100px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  border: 1px solid blue;
+}
+.atomic {
+  display: inline-block;
+  width: 99px;
+  height: 1em;
+  background: orange;
+}

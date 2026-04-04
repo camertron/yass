@@ -1,0 +1,3 @@
+
+body { animation: foo 1s; }
+@keyframes foo { to { scale: calc(100% * 1); } }

@@ -1,0 +1,17 @@
+
+    @keyframes font_size_animation {
+        from {
+            font-size: 10px;
+            width: 10em;
+            --length: 10em;
+        }
+        to {
+            font-size: 20px;
+            width: 20em;
+            --length: 20em;
+        }
+    }
+    #target1 {
+        font-size: 1px;
+        animation: font_size_animation 10s -5s linear paused;
+    }

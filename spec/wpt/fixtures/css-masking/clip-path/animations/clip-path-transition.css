@@ -1,0 +1,11 @@
+
+  .container {
+    width: 100px;
+    height: 100px;
+    clip-path: circle(50% at 50% 50%);
+    background-color: green;
+    transition-property: clip-path;
+    transition-duration: 20s;
+    transition-timing-function: steps(2, jump-end);
+    transition-delay: -9.999s;
+  }

@@ -1,0 +1,47 @@
+
+html { view-transition-name: none; }
+
+body { margin: 0; }
+
+#target {
+  width: 100px;
+  height: 100vh;
+  view-transition-name: target;
+}
+
+::view-transition {
+  background-color: green;
+}
+
+::view-transition,
+::view-transition-group(target),
+::view-transition-image-pair(target) {
+  height: 100%;
+  padding-left: 100px;
+}
+
+::view-transition-group(target) {
+  animation-duration: 30s;
+  background-color: lightgreen;
+}
+
+::view-transition-image-pair(target) {
+  height: 100%;
+  background-color: skyblue;
+  animation: none;
+  margin-left: 100px;
+}
+
+::view-transition-old(target) {
+  height: 100%;
+  width: 100px;
+  animation: none;
+  background-color: navy;
+}
+::view-transition-new(target) {
+  height: 100%;
+  width: 100px;
+  margin-left: 100px;
+  animation: none;
+  background-color: purple;
+}

@@ -1,0 +1,9 @@
+
+  @property --color {
+    inherits: false;
+    initial-value: black;
+    syntax: "<color>";
+  }
+  #target {
+    --color: color(srgb 0 sibling-index() 0);
+  }

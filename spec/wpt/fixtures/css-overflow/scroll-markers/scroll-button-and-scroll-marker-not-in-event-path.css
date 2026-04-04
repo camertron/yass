@@ -1,0 +1,33 @@
+
+  body {
+    margin: 0;
+  }
+
+  #scroller {
+    height: 100px;
+    width: 100px;
+    overflow: scroll;
+    scroll-marker-group: before;
+  }
+
+  #scroller::scroll-marker-group {
+    height: 10px;
+  }
+
+  #target {
+    height: 100px;
+    width: 200px;
+  }
+
+  #scroller::scroll-button(right) {
+    content: "";
+    height: 10px;
+    width: 10px;
+  }
+
+  #target::scroll-marker {
+    content: "";
+    height: 10px;
+    width: 10px;
+    display: block;
+  }

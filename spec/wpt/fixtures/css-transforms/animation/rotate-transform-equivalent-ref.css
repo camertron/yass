@@ -1,0 +1,14 @@
+
+  .block {
+    border: 2px solid white; /* Avoid anti-aliasing artifacts */
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+  }
+
+  .overlay {
+    background: green;
+    z-index: 2;
+  }

@@ -1,0 +1,32 @@
+
+:root {
+  /* Ensure clicks during the transition fall through the pseudo tree root to
+   * real DOM */
+  view-transition-name: none;
+}
+
+::view-transition {
+  /* Ensure clicks during the transition fall through the pseudo tree root to
+   * real DOM */
+  pointer-events: none;
+  width: 0;
+  height: 0;
+}
+
+::view-transition-group(*) {
+  animation-duration: 30s;
+}
+
+#clicktarget {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+#transition {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  contain: paint;
+  view-transition-name: transitionElement;
+}

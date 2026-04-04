@@ -1,0 +1,6 @@
+
+div {
+  width: 2.5em;
+  white-space: pre-line;
+}
+span { background: blue; } /* If the space is removed instead of hanging, there will be no blue box*/

@@ -1,0 +1,13 @@
+
+.grid-lanes {
+    display: grid-lanes;
+    flow-tolerance: 0;
+    grid-template-rows: repeat(auto-fit, 100px) repeat(5, 100px);
+    width: 200px;
+    height: 1000px;
+}
+
+.grid-lanes > div {
+    height: 100%;
+    width: 100px;
+}

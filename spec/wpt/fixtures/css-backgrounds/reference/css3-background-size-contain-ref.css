@@ -1,0 +1,13 @@
+
+    div {
+      width: 200px;
+      height: 250px;
+      border: 5px dashed black;
+      overflow: hidden;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  

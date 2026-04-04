@@ -1,0 +1,15 @@
+
+#container {
+  border: 5px solid green;
+  width: 110px;
+  height: 40px;
+  position: relative;
+  top: -5px;
+  left: -5px;
+}
+
+#target {
+  border: 5px solid blue;
+  position: relative;
+  top: 5px;
+}

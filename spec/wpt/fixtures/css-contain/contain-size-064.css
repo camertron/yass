@@ -1,0 +1,10 @@
+
+div { font-size: 50px; }
+.red { background: red; }
+.green { background: green; }
+.grid {
+    display: grid;
+    grid-template-columns: min-content max-content;
+}
+#test { contain: size; }
+#test::after { content: "\a0" ; }

@@ -1,0 +1,9 @@
+
+  @keyframes my-animation {
+    from { color: green; }
+    to { color: green; }
+  }
+  div {
+    color: red;
+    animation: my-animation 1s infinite linear paused;
+  }

@@ -1,0 +1,5 @@
+
+.default {
+  object-view-box: xywh(50% 50% 50% 50%);
+  object-fit: fill;
+}

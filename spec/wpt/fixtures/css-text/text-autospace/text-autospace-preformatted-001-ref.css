@@ -1,0 +1,11 @@
+
+    .container {
+        font: 40px sans-serif;
+        text-autospace: none;
+    }
+    .mono {
+        font-family: monospace;
+    }
+    .space {
+        margin-left: 0.125ic;
+    }

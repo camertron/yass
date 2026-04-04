@@ -1,0 +1,18 @@
+
+  html {
+      container-type: scroll-state;
+  }
+
+  body {
+      min-height: 200vh;
+  }
+
+  div {
+    --y: no;
+  }
+
+  @container scroll-state(scrolled: y) {
+    div {
+      --y: yes;
+    }
+  }

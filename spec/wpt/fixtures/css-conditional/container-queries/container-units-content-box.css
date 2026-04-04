@@ -1,0 +1,11 @@
+
+.size {
+  container-type: size;
+  width:100px;
+  height:50px;
+  border: 10px solid green;
+  padding: 10px;
+}
+.border-box {
+  box-sizing: border-box;
+}

@@ -1,0 +1,7 @@
+
+  html {
+    --x: 3;
+  }
+  #test {
+    --prop: if(style(--x: 3): true_value; else: false_value;);
+  }

@@ -1,0 +1,10 @@
+
+div {
+  font: 16px / 32px serif;
+  white-space: pre;
+  padding: 0 4px;
+}
+.clamp {
+  height: 3lh;
+  background-color: yellow;
+}

@@ -1,0 +1,16 @@
+
+.grid-lanes {
+  display: inline grid-lanes;
+  border: 1px solid black;
+  grid-template-columns: [u] repeat(auto-fill, [v] 10px [w] 10px [x] 10px [y]) [z];
+  grid-column-gap: 3px;
+  /* Does not fit a whole-number of repetitions */
+  width: 94px;
+  background: pink;
+  vertical-align: top;
+}
+div > div {
+  background: blue;
+  width: 100%;
+  height: 25px;
+}

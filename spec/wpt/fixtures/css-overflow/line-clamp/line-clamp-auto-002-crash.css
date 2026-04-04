@@ -1,0 +1,13 @@
+
+  .parent {
+    line-height: 1.2em;
+    line-clamp: auto;
+    max-height: 3lh;
+  }
+  .float {
+    float: left;
+  }
+  .margins {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+  }

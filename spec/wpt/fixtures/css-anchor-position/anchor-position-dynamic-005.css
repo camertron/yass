@@ -1,0 +1,28 @@
+
+  #cb {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    overflow: clip;
+  }
+  #anchor {
+    position: absolute;
+    inset: 0;
+    background: green;
+    width: 100px;
+    height: 100px;
+    anchor-name: --a;
+  }
+  #bug {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: red;
+    left: anchor(right);
+    top: anchor(top);
+    position-anchor: --a;
+  }
+  #target {
+    position: absolute;
+    top: anchor(top);
+  }

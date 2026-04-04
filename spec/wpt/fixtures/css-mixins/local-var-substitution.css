@@ -1,0 +1,43 @@
+
+    @function --f() {
+      result: var(--unknown, PASS);
+    }
+    #target {
+      --actual: --f();
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      --x: var(--unknown);
+      result: var(--x, PASS);
+    }
+    #target {
+      --actual: --f();
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      --x: PASS;
+      result: var(--unknown, var(--x));
+    }
+    #target {
+      --x: FAIL;
+      --actual: --f();
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      --y: PASS;
+      --x: var(--unknown, var(--y));
+      result: var(--x);
+    }
+    #target {
+      --x: FAIL1;
+      --Y: FAIL2;
+      --actual: --f();
+      --expected: PASS;
+    }
+  

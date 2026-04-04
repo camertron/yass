@@ -1,0 +1,20 @@
+
+
+body { margin: 0; }
+#scroller {
+  overflow: scroll;
+  height: 100px;
+}
+#multicol {
+  margin-top: 20px;
+  height: 200px;
+  columns: 2;
+  column-fill: auto;
+}
+#before {
+  margin-top: 100px;
+  height: 100px;
+}
+#content {
+  height: 10px;
+}

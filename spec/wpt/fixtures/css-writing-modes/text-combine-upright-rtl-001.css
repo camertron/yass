@@ -1,0 +1,15 @@
+
+div {
+  writing-mode: vertical-rl;
+  font: 32px serif;
+  margin: 1em;
+  padding: .25em;
+  border: 1px solid gray;
+}
+span {
+  text-combine-upright: all;
+}
+#test span {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}

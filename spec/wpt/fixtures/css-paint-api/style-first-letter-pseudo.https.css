@@ -1,0 +1,12 @@
+
+div {
+    color: rgb(0, 255, 0);
+    line-height: 1px;
+    height: 10px;
+}
+
+div::first-letter {
+    background-image: paint(geometry);
+    color: rgb(255, 0, 0);
+    line-height: 2px;
+}

@@ -1,0 +1,17 @@
+
+.test {
+  background: red;
+  border: solid 2px;
+  width: 100px;
+}
+
+.child {
+  height: 100px;
+}
+
+@supports (display: layout(unresolved-promise)) {
+  .test {
+    display: layout(unresolved-promise);
+    background: green;
+  }
+}

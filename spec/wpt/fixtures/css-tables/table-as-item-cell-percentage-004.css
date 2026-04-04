@@ -1,0 +1,15 @@
+
+.grid {
+  display: grid;
+}
+table {
+  border-spacing: 0;
+  width: 100px;
+  background: green;
+}
+tr {
+  height: 50px;
+}
+td {
+  height: 100%;
+}

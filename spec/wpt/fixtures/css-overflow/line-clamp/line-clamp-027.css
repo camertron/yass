@@ -1,0 +1,13 @@
+
+.clamp {
+  line-clamp: 3;
+  font-size: 16px / 16px serif;
+  white-space: pre-wrap;
+  background-color: yellow;
+}
+ruby.under {
+  ruby-position: under;
+}
+.large {
+  font-size: 3em;
+}

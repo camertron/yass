@@ -1,0 +1,16 @@
+
+  #multicol {
+    width: 300px;
+    column-count: 3;
+  }
+  #container {
+    position: relative;
+  }
+  #abs-size-contain {
+    position: absolute;
+    contain: size;
+    width: 100px;
+    height: 100px;
+    background: green;
+  }
+  

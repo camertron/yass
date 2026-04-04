@@ -1,0 +1,10 @@
+
+        div { width: 100px; height: 20px; }
+        .lang div:lang(en) { background: green; }
+        .lang div:lang(fr) { background: red; }
+        .lang div:lang(ja) { background: red; }
+        div:has(.lang :lang(zh)) { background: red; }
+        div:has(.lang :lang(en)) { background: green; }
+        .lang:lang(kr) { background: red; }
+        .lang div:lang(kr) { background: green; }
+    

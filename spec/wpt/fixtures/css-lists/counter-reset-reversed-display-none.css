@@ -1,0 +1,13 @@
+
+.counter-use {
+  counter-increment: foo -1;
+}
+.counter-use::before {
+  content: counter(foo);
+}
+.none {
+  display: none;
+}
+.hidden {
+  visibility: hidden;
+}

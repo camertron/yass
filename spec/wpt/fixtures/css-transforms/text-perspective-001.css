@@ -1,0 +1,14 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  perspective: 1px;
+}
+.heading {
+  transform: translateZ(-9px) scale(10);
+}
+h1 {
+  font-size: 100px;
+}

@@ -1,0 +1,16 @@
+
+        #target
+        {
+            transition-property: all;
+            transition-duration: 1s;
+        }
+        #target
+        {
+            --value: blue;
+            color: var(--value);
+        }
+        #target.changed
+        {
+            --value: green;
+        }
+    

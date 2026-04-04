@@ -1,0 +1,17 @@
+
+html, body {
+  margin: 0;
+}
+svg {
+  display: block;
+}
+.dash {
+  stroke-width: 6px;
+  stroke-dasharray: 10px;
+  stroke-dashoffset: 7px;
+  stroke: hotpink;
+  fill: none;
+}
+.zoom {
+  zoom: 2;
+}

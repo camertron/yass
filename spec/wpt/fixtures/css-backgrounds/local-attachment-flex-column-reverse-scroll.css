@@ -1,0 +1,19 @@
+
+.container {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column-reverse;
+  overflow-y: auto;
+  scrollbar-width: none;
+  /* This is a multi-layered background for testing. */
+  background:
+    local linear-gradient(to bottom, yellow 50%, blue 50%) 0 0 / 100% 100% no-repeat,
+    radial-gradient(farthest-side at 0 50%, rgba(0,0,0,0.2), transparent) 0 0 / 20px 100% no-repeat,
+    radial-gradient(farthest-side at 100% 50%, rgba(0,0,0,0.2), transparent) 100% 0 / 20px 100% no-repeat;
+}
+.content {
+  width: 20px;
+  height: 100px;
+  flex-shrink: 0;
+}

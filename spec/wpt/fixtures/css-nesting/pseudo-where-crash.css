@@ -1,0 +1,6 @@
+
+  .foo {
+    ::before:where(&) {
+      color: red;
+    }
+  }

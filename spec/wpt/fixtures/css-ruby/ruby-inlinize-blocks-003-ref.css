@@ -1,0 +1,9 @@
+
+    div { border-collapse: collapse; }
+    .table { display: inline-table; }
+    .cell {
+      display: table-cell;
+      background-color: yellow;
+      border: 3px solid blue;
+    }
+  

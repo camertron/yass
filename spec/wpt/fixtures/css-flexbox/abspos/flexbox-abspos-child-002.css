@@ -1,0 +1,22 @@
+
+    .flex {
+      display: flex;
+      height: 10px;
+      width: 10px;
+      background: purple;
+      margin-bottom: 5px;
+      position: relative;
+    }
+    .flex > * {
+      position: absolute;
+      background: teal;
+      height: 10px;
+    }
+    .sized {
+      width: 10px;
+    }
+    .implied {
+      left: 0;
+      right: 0;
+    }
+  

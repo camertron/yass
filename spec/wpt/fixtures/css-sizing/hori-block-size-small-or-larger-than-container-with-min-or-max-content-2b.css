@@ -1,0 +1,28 @@
+
+    html,body {
+      margin: 0;
+    }
+
+    .outer * {
+      border: 2px solid lime;
+    }
+
+    .container {
+      width: 80px;
+      border-color: blue;
+      display: inline-block;
+      vertical-align: top;
+
+      font-family: Ahem;
+      font-size: 8px;
+      line-height: 13px;
+    }
+
+    .too-small {
+      block-size: 10px;
+    }
+
+    .too-big {
+      block-size: 100px;
+    }
+  

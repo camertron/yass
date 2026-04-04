@@ -1,0 +1,10 @@
+
+#header {
+  height: 100px;
+  border: 1px solid black;
+  overflow-anchor: none;
+}
+#content {
+  height: 200vh;
+  width: 200vw;
+}

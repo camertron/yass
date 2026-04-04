@@ -1,0 +1,11 @@
+
+.default {
+  /* Paint the yellow box at the bottom right corner. The box should be sized
+     based on |contain-intrinsic-size| but the painted content is based on the
+     view box. */
+  object-view-box: inset(50px 0px 0px 25px);
+  object-fit: fill;
+  contain: size;
+  contain-intrinsic-size: 50px 100px;
+  clip-path: inset(1px 0px 0px 1px);
+}

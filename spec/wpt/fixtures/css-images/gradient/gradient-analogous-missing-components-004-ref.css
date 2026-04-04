@@ -1,0 +1,10 @@
+
+        div {
+            display: flex;
+            align-items: center;
+            width: 200px;
+            height: 50px;
+            /* lime to red  */
+            background: linear-gradient(to right in oklab, rgb(0, 255, 0), rgb(255, 0, 0));
+        }
+    

@@ -1,0 +1,14 @@
+
+  g {
+    display: block;
+    width: 100px;
+    height: 100px;
+    container-type: size;
+  }
+
+  @supports not (container-type: size) {
+    text { fill: red; }
+  }
+  @container (width = 100px) {
+    text { fill: red; }
+  }

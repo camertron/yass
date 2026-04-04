@@ -1,0 +1,6 @@
+
+div {
+  background-color: Canvas;
+  color: CanvasText;
+  border: 2px solid light-dark(blue, purple);
+}

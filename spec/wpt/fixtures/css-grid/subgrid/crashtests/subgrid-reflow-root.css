@@ -1,0 +1,9 @@
+
+* {
+  grid-template-rows: subgrid;
+  display: inline-grid;
+}
+
+html {
+  contain: strict;
+}

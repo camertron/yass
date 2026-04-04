@@ -1,0 +1,25 @@
+
+  body {
+    margin: 0px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5, 100px);
+    height: 540px;
+    width: 540px;
+
+    column-rule-color: blue;
+    column-rule-style: solid, dotted, double;
+    column-rule-width: 5px;
+
+    row-rule-color: red;
+    row-rule-style: dashed, groove, ridge;
+    row-rule-width: 5px;
+  }
+
+  .item {
+    background: gray;
+    opacity: 0.5;
+  }

@@ -1,0 +1,2 @@
+#c-e::part(partp)::before { color: red; }
+span::before { content: ""; color: green; }

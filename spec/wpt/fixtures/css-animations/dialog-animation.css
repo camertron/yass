@@ -1,0 +1,10 @@
+
+
+dialog[open] {
+    animation: dialog-open-animation 1ms;
+}
+
+@keyframes dialog-open-animation {
+    from { opacity: 0 }
+}
+

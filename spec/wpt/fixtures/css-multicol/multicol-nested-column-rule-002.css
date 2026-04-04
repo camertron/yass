@@ -1,0 +1,7 @@
+
+  .multicol {
+      column-fill: auto;
+      column-gap: 4px;
+      column-rule:4px solid green;
+      background:red;
+  }

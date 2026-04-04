@@ -1,0 +1,9 @@
+
+body {
+  height: 600px;
+}
+#target {
+  position: absolute;
+  top: 400px;
+  height: 200px;
+}

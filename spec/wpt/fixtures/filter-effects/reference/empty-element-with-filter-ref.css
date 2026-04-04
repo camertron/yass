@@ -1,0 +1,11 @@
+
+  .turbulent {
+    width: 160px;
+    height: 90px;
+    margin: 10px;
+    filter: url(#turbulence);
+  }
+
+  .visibleContent {
+    background-color: red;
+  }

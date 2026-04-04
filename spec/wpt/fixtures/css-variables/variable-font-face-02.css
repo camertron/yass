@@ -1,0 +1,18 @@
+
+:root {
+  --a: MyTestFontName;
+}
+@font-face {
+  font-family: var(--a);
+  src: url(/fonts/Ahem.ttf);
+}
+@font-face {
+  font-family: MyTestFontName2;
+  src: url(/fonts/Ahem.ttf);
+}
+#a {
+  font-family: MyTestFontName, serif;
+}
+#b {
+  font-family: MyTestFontName2, serif;
+}

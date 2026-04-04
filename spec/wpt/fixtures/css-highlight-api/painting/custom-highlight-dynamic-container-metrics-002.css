@@ -1,0 +1,16 @@
+
+    .wrapper {
+      container: wrapper / size;
+      width: 400px;
+      height: 200px;
+    }
+    .resize {
+      width: 200px;
+      height: 100px;
+    }
+    ::highlight(highlight1) {
+      text-underline-offset: 2cqw;
+      text-decoration-line: underline;
+      text-decoration-color: green;
+      text-decoration-thickness: 4cqh;
+    }

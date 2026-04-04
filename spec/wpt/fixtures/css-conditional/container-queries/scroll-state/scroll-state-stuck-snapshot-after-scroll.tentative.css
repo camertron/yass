@@ -1,0 +1,35 @@
+
+  #scroller {
+    overflow-y: scroll;
+    height: 300px;
+  }
+  #filler {
+    height: 300px;
+  }
+  #stuck {
+    container-type: scroll-state;
+    position: sticky;
+    top: 0;
+    height: 100px;
+    background-color: teal;
+  }
+  #target {
+    --stuck: no;
+    @container scroll-state(stuck: top) {
+      --stuck: yes;
+    }
+  }
+  #resizeTrigger, #intersectionTrigger {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 10px;
+  }
+  #resizeTrigger.flip {
+    width: 20px;
+    height: 20px;
+  }
+  #intersectionTrigger.flip {
+    top: -1000px;
+  }

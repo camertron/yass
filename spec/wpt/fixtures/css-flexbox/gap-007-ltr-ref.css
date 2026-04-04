@@ -1,0 +1,20 @@
+
+  section {
+    background-color: green;
+    block-size: 100px;
+    inline-size: 200px;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 18px;
+  }
+  section > div{
+    background-color: grey;
+    color: white;
+  }
+  section > div:nth-child(2) {
+    margin-block: 20px;
+  }
+  section > div:not(:last-of-type) {
+    margin-inline-end: 20px;
+  }

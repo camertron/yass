@@ -1,0 +1,15 @@
+
+			div {
+				width: 100px;
+				height: 100px;
+			}
+			@media all {
+				div { background-color: green; }
+			}
+			@media not only {
+				div { background-color: red; }
+			}
+			@media only {
+				div { background-color: red; }
+			}
+	

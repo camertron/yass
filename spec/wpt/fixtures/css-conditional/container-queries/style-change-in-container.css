@@ -1,0 +1,5 @@
+
+  #container { container-type: size; }
+  @container (min-width: 1px) {
+    #content { color: green; }
+  }

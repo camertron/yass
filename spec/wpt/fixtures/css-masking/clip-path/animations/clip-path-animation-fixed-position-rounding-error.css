@@ -1,0 +1,18 @@
+
+  .container {
+    background-color: green;
+    animation: clippath 20s steps(2, jump-end) -9.999s;
+    position: fixed;
+    width: 70px;
+    height: 126px;
+  }
+
+  @keyframes clippath {
+    0% {
+      clip-path: inset(0% 0%);
+    }
+
+    100% {
+      clip-path: inset(10% 10%);
+    }
+  }

@@ -1,0 +1,36 @@
+
+  body
+    {
+      height: 568px;
+      overflow-y: hidden;
+      width: 584px;
+    }
+
+  div
+    {
+      display: inline-block;
+      position: relative;
+      vertical-align: bottom;
+    }
+
+  div.image
+    {
+      height: 288px;
+      width: 514px;
+    }
+
+  img
+    {
+      left: 17px;
+      position: absolute;
+      top: 17px;
+    }
+
+  div.light-blue-border
+    {
+      bottom: 288px;
+      border: 16px solid rgba(60, 150, 255, 0.4);
+      height: 256px;
+      width: 482px;
+    }
+  

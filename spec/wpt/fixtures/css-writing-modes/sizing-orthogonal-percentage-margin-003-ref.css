@@ -1,0 +1,15 @@
+
+.container {
+  background: cyan;
+  border: solid thick;
+  height: 200px;
+  width: 500px;
+  writing-mode: vertical-lr;
+}
+.element {
+  background: magenta;
+  font: 50px/1 Ahem;
+  margin: 20px;
+  width: 460px;
+  writing-mode: horizontal-tb;
+}

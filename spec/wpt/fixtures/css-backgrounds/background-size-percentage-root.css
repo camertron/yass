@@ -1,0 +1,9 @@
+
+  :root {
+    position: fixed;
+    width: 100px;
+    height: 50px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url('/images/green-100x50.png');
+  }

@@ -1,0 +1,18 @@
+
+@keyframes kf {
+  0% {
+    transform: translateX(0px);
+    animation-timing-function: var(--kf_ease);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+#target {
+  width: 40px;
+  height: 40px;
+  background: #4a90e2;
+  animation: kf 1s linear 1;
+  will-change: transform;
+}

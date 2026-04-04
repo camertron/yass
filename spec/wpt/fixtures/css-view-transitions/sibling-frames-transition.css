@@ -1,0 +1,41 @@
+
+#first {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  height: 50vh;
+  view-transition-name: first;
+}
+
+#second {
+  position: fixed;
+  top: 50vh;
+  left: 0;
+  width: 50vw;
+  height: 50vh;
+  view-transition-name: second;
+}
+
+/* The main frame is showing the old screenshot for the root*/
+::view-transition-group(root) {
+  animation-duration: 300s;
+}
+::view-transition-new(root) {
+  animation: unset;
+  opacity: 0;
+}
+::view-transition-old(root) {
+  animation: unset;
+  opacity: 1;
+}
+
+/* For the iframes, show the new screenshot */
+::view-transition-new(first), ::view-transition-new(second) {
+  animation: unset;
+  opacity: 1;
+}
+::view-transition-old(first), ::view-transition-old(second) {
+  animation: unset;
+  opacity: 0;
+}

@@ -1,0 +1,29 @@
+
+html,body {
+  color:black; background-color:white; font:16px/1 monospace;
+}
+
+input { margin: 2px; }
+
+input.b {
+  min-height: 0;
+  background: lime;
+}
+
+input.mb {
+  min-height: 0;
+  max-height: 100%;
+  background: lime;
+}
+
+div {
+  display: inline-block;
+  border:1px solid;
+}
+
+.grid {
+  display: inline-grid;
+  grid: auto / min-content;
+  place-items: start;
+}
+

@@ -1,0 +1,26 @@
+
+  .anchor { background-color: white; }
+
+  .ancestor .descendant {
+    .anchor:has(&) { background-color: blue; }
+  }
+
+  .ancestor .child {
+    .anchor:has(> &) { background-color: lightblue; }
+  }
+
+  .ancestor_prev ~ div .descendant {
+    .anchor:has(&) { background-color: yellow; }
+  }
+
+  .ancestor_prev ~ div.ancestor .descendant {
+    .anchor:has(&) { background-color: yellowgreen; }
+  }
+
+  .prev ~ .indirect_next {
+    .anchor:has(~ &) { background-color: green; }
+  }
+
+  .prev ~ .direct_next {
+    .anchor:has(+ &) { background-color: lightgreen; }
+  }

@@ -1,0 +1,8 @@
+
+  @font-face {
+    font-family: fwf;
+    src: url(support/fonts/FontWithFancyFeatures.otf);
+  }
+  .test {
+     font: 2em/1 fwf;
+  }

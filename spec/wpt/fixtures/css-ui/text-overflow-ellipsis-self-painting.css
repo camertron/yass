@@ -1,0 +1,16 @@
+
+.test {
+  width: 5ch;
+  white-space: nowrap;
+}
+.ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: red;
+  opacity: 0.3;
+}

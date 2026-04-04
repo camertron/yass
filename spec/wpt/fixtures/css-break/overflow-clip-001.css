@@ -1,0 +1,33 @@
+
+  #multicol {
+      writing-mode: vertical-lr;
+      columns: 4;
+      column-fill: auto;
+      column-gap: 0;
+      inline-size: 100px;
+      block-size: 200px;
+  }
+  #clipper {
+      /* Take up all of the first three columns and the half of the last one. */
+      block-size: 700px;
+      overflow: clip;
+  }
+  .filler {
+      /* Take us from one fragmentainer and 50px into the next. */
+      block-size: 150px;
+  }
+  .visible {
+      block-size: 100px;
+      background: green;
+  }
+  .before-fragmentainer-start {
+      /* This is before the block-start of a fragmentainer, and should therefore
+         be clipped by #clipper. */
+      margin-block-start: -100px;
+      block-size: 50px;
+      background: red;
+  }
+  .after-container-end {
+      block-size: 100px;
+      background: red;
+  }

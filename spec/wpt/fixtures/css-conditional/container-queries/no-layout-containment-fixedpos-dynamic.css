@@ -1,0 +1,8 @@
+
+@container (width = 100px) {
+  #test {
+    position: fixed;
+    inset: 0;
+    background: green;
+  }
+}

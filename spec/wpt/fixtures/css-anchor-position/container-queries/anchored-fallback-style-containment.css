@@ -1,0 +1,2 @@
+
+  #generate::before { content: counter(c); }

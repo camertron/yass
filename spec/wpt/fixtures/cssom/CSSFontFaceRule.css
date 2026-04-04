@@ -1,0 +1,6 @@
+
+  @font-face {
+    src: local("foo");
+    font-family: foo;
+    font-weight: bold;
+  }

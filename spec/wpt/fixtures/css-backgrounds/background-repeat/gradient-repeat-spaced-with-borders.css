@@ -1,0 +1,9 @@
+
+    #foo {
+        width: 65px;
+        height: 65px;
+        border: solid 35px transparent;
+        background: radial-gradient(transparent 50%, #36c 50%);
+        background-size: 30px 30px;
+        background-repeat: space;
+    }

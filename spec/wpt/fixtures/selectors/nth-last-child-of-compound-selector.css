@@ -1,0 +1,4 @@
+
+p:nth-last-child(3n+1 of p.foobar:not([class=foobar])) {
+    background-color: lime;
+}

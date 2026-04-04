@@ -1,0 +1,9 @@
+
+  div {
+    background-color: green;
+    width: max-content;
+  }
+  span {
+    margin-left: calc(0% + 30px);
+    padding-left: calc(0% + 50px);
+  }

@@ -1,0 +1,17 @@
+
+  #container {
+    background-color: red;
+    display: flex;
+    height: 100px;
+    width: 100px;
+  }
+  #container div{
+    background-color: green;
+    height: 100px;
+  }
+  #test {
+    flex-basis: 60px;
+  }
+  #ref {
+    width: 40px;
+  }

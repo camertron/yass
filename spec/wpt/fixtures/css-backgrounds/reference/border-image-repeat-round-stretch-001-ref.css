@@ -1,0 +1,22 @@
+
+  div#first-subtest
+    {
+      background-color: black;
+      display: inline-table;
+      margin-right: 1em;
+      table-layout: fixed;
+
+      height: 320px;
+      width: 224px;
+    }
+
+  div#second-subtest
+    {
+      background-color: black;
+      display: inline-table;
+      table-layout: fixed;
+
+      height: 256px;
+      width: 208px;
+    }
+  

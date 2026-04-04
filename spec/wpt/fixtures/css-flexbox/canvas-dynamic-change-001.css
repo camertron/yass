@@ -1,0 +1,9 @@
+
+.red {
+  width: 600px;
+  height: 400px;
+  background: red;
+}
+canvas {
+  background: green;
+}

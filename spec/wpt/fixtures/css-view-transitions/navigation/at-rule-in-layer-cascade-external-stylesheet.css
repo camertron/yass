@@ -1,0 +1,11 @@
+
+  @layer inertA, inertB, active;
+
+
+  @import "resources/opt-out-style.css" layer(inertA);
+
+
+  @import "resources/opt-in-style.css" layer(active);
+
+
+  @import "resources/opt-out-style.css" layer(inertB);

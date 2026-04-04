@@ -1,0 +1,15 @@
+
+    .grid {
+        width:200px;
+        height: 180px;
+        background-color: green;
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    .grid > div {
+        background-color: silver;
+        width: 90px;
+        height: 90px;
+        position: absolute;
+    }

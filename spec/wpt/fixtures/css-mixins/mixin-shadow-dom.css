@@ -1,0 +1,47 @@
+
+      @mixin --exists-only-outside-shadow() {
+        @result {
+          color: green;
+        }
+      }
+    
+
+          #e1 {
+            color: red;
+            @apply --exists-only-outside-shadow;
+          }
+        
+
+          #e2 {
+            color: red;
+            @apply --m1;
+          }
+        
+
+          @mixin --m1() {
+            @result {
+              color: green;
+            }
+          }
+        
+
+    
+
+          #e3 {
+            color: red;
+            @apply --exists-only-in-adopted;
+          }
+        
+
+          @mixin --in-shadow() {
+            @result {
+              color: red;
+            }
+          }
+        
+
+      #e4 {
+        color: green;
+        @apply --in-shadow;
+      }
+    

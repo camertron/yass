@@ -1,0 +1,11 @@
+
+  @property --length {
+    syntax: "<length>";
+    initial-value: 30px;
+    inherits: true;
+  }
+  #container { container-name: --container; }
+  #target { color: lime; }
+  @container --container style(--length: 30px) {
+    #target { color: green; }
+  }

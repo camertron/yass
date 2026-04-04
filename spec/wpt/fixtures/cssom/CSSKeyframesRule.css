@@ -1,0 +1,11 @@
+
+        @keyframes foo {
+            0% { top: 0px; }
+            100% { top: 200px; }
+        }
+        @keyframes empty {}
+        @keyframes indexed-access {
+            0% { top: 0px; }
+            100% { top: 200px; }
+        }
+    

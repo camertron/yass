@@ -1,0 +1,14 @@
+
+section {
+  width: 20ch;
+}
+div {
+  width: 10ch;
+  background: orange;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}

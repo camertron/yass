@@ -1,0 +1,34 @@
+
+  #cb {
+    display: inline-block;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+  }
+  #anchor1, #anchor2 {
+    width: 100px;
+  }
+  #anchor1 {
+    background: wheat;
+    height: 50px;
+  }
+  #anchor2 {
+    background: tomato;
+    height: 90px;
+  }
+  .anchor-name {
+    anchor-name: --a;
+  }
+  #anchored {
+    position: absolute;
+    width: anchor-size(width);
+    height: anchor-size(height);
+    position-anchor: --a;
+    top: anchor(top);
+    left: anchor(right);
+    transition-duration: 1000s;
+    transition-timing-function: steps(2, start);
+    transition-property: top, height;
+    background-color: skyblue;
+  }

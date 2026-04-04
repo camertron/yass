@@ -1,0 +1,17 @@
+
+  #outer {
+    top: 100px;
+    left: 100px;
+    position: relative;
+    width: 600px;
+    height: 400px;
+  }
+  #box {
+    background-color: green;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    transform: translate(150px, -150px);
+    width: 100px;
+    height: 100px;
+  }

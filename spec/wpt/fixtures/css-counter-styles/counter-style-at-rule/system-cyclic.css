@@ -1,0 +1,16 @@
+
+  @counter-style a {
+    system: cyclic;
+    symbols: \2023;
+    suffix: "";
+  }
+  @counter-style b {
+    system: cyclic;
+    symbols: \2020  \2021;
+    suffix: "";
+  }
+  @counter-style c {
+    system: cyclic;
+    symbols: \2021  \2022  \2023;
+    suffix: "";
+  }

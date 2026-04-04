@@ -1,0 +1,13 @@
+
+@font-face {
+    font-family: 'webfont';
+    src: url('/fonts/noto/NotoSansMongolian-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+	}
+.test { font-family: webfont, serif; font-size: 24px; height: 250px; width: 250px; }
+.test span { background-color:orange; color:orange;  }
+.test span#end { background-color:blue; color:blue;  }
+
+
+.test { writing-mode: vertical-lr; }

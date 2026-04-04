@@ -1,0 +1,24 @@
+
+.test {
+  writing-mode: vertical-rl;
+  background: red;
+  height: 100px;
+}
+
+.child {
+  writing-mode: vertical-rl;
+  visibility: hidden;
+
+  --available-inline-size: 20;
+  --available-block-size: 50;
+
+  --inline-size-expected: 10px;
+  --block-size-expected: 10px;
+}
+
+@supports (display: layout(test)) {
+  .test {
+    background: green;
+    display: layout(test);
+  }
+}

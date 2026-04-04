@@ -1,0 +1,7 @@
+
+    .square { border: 1px solid black; width: 200px; height: 200px; }
+    .test { background-color: red; height: 100px; }
+    /* Non-zero a/b is used to show if the result is white or not, but the
+     * test passes as long as it's the same color. */
+    .ref { background-color: oklab(1 0.15 0.15); height: 100px; }
+    .test { background-color: oklab(99.9999% 0.15 0.15); }

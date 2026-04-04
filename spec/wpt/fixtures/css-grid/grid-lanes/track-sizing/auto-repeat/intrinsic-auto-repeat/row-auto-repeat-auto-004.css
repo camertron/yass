@@ -1,0 +1,14 @@
+
+.grid-lanes {
+    display: grid-lanes;
+    background: gray;
+    flow-tolerance: 0;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 20px;
+    width: 260px;
+    height: 400px;
+}
+
+.grid-lanes > div {
+    width: 50px;
+}

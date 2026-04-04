@@ -1,0 +1,30 @@
+
+  @import "/fonts/ahem.css";
+  html { font: 10px/1 Ahem; max-width: 800px;  }
+  .label { display: none; }
+
+
+  html, body { margin: 0; padding: 0; }
+
+  .test { height: 5em; margin: 0.5em 2em;
+          /* show bounds of test box without interfering with margin-collapsing */
+          background: black; padding-right: 2px;
+          /* ensure bullet follows first line */
+          display: list-item; }
+  /* ensure margin is contained */
+    .in-flow { margin: 1em 0 0.4em; background: orange }
+  /* ensure relpos is ignored */
+    .relpos { position: relative; top: -1.5em; }
+  /* ensure abspos static position follows alignment */
+    .wrapper { position: relative; }
+    .abspos { position: absolute; right: 0; margin-top: -1.5em; }
+  /* ensure overflow is not counted */
+    .overflow { height: 0; }
+
+  /* cram into 800x600 */
+  html { max-height: 600px; columns: 3 }
+  .wrapper { break-inside: avoid; border: solid 2px gray; }
+
+  /* readability */
+  .test > * { color: #8888; }
+  .label { color: black; font-weight: bold; }

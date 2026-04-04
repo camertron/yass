@@ -1,0 +1,10 @@
+
+rbc {
+  contain: paint;
+  display: ruby-base-container;
+  width: 0; /* Because if the test fails, this may get blockified, and which could make wide enough to hold the PASS */
+}
+rbc::after {
+  content: "PASS";
+  position: absolute;
+}

@@ -1,0 +1,14 @@
+
+@font-face {
+  font-family: remote-font;
+  src: url("/fonts/Revalia.woff?pipe=trickle(d1)") format(woff);
+}
+
+@font-face {
+  font-family: local-font;
+  src: local(Ahem);
+}
+
+#target {
+  font: 25px/1 remote-font, local-font, monospace;
+}

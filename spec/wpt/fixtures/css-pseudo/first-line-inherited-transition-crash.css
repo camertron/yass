@@ -1,0 +1,3 @@
+
+  div::first-line { color: red }
+  span { transition: color 100s; }

@@ -1,0 +1,15 @@
+
+body { overflow: hidden; }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.margin-center {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.i1 { background: magenta;  }
+.i2 { background: cyan; }
+.i3 { background: yellow; }
+.i4 { background: lime; }

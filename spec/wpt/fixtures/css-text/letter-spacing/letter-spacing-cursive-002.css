@@ -1,0 +1,18 @@
+
+div {
+  margin: 1em;
+  font: 24px serif;
+}
+
+.letterspace {
+  letter-spacing: 1em; /* Does not affect Arabic text, but does affect the space */
+}
+
+.ws {
+  white-space: pre;
+}
+.ws::after { /* Fake letter-spacing for the space only */
+  content: ' ';
+  display: inline-block;
+  width: 1em;
+}

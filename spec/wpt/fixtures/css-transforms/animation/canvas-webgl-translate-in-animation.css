@@ -1,0 +1,12 @@
+
+@keyframes move {
+  to { transform: translate(300px); }
+}
+
+canvas {
+  will-change: transform;
+  animation: move;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+}

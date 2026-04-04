@@ -1,0 +1,18 @@
+
+.grid {
+    grid-auto-flow: row dense;
+}
+#firstGridItem {
+    grid-row: auto;
+    grid-column: column;
+}
+
+#secondGridItem {
+    grid-row: row;
+    grid-column: auto;
+}
+
+#thirdGridItem {
+    grid-row: auto;
+    grid-column: auto;
+}

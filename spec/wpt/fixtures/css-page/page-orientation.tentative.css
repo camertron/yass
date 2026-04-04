@@ -1,0 +1,41 @@
+
+  @page {
+      page-orientation: rotate-right;
+  }
+  @page :left {
+      page-orientation: rotate-left;
+  }
+  @page :right {
+      page-orientation: rotate-right;
+  }
+  @page :first {
+      page-orientation: rotate-left;
+  }
+  @page named1 {
+      page-orientation: upright;
+  }
+  @page named2 {
+      page-orientation: hotpink;
+  }
+  @page named3 {
+      page-orientation: rotate-right;
+  }
+  @page named4 {
+      page-orientation: rotate-right;
+      page-orientation: rotate-left;
+  }
+  @page named5 {
+      page-orientation: hotpink;
+      page-orientation: rotate-right;
+  }
+  @page named6 {
+      page-orientation: rotate-right;
+      page-orientation: inherit;
+      page-orientation: initial;
+      page-orientation: none;
+      page-orientation: hotpink;
+  }
+  h5 {
+      page-orientation: rotate-right;
+      display: block;
+  }

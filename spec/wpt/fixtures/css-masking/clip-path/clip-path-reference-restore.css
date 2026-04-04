@@ -1,0 +1,13 @@
+
+.error {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: absolute;
+}
+.test {
+  width: 200px;
+  height: 50px;
+  background-color: green;
+  clip-path: url(#c);
+}

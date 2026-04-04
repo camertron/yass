@@ -1,0 +1,9 @@
+
+  @keyframes test {
+    from { margin-top: revert; }
+    to { margin-top: 100px; }
+  }
+  .anim {
+    margin-top: 0px;
+    animation: test linear 1s paused;
+  }

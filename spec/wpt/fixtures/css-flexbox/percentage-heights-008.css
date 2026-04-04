@@ -1,0 +1,16 @@
+
+.column-flexbox {
+  display: flex;
+  flex-direction: column;
+}
+
+#percent-height-item {
+  height: 50%;
+  background: red;
+}
+
+#fixed-height-item {
+  height: 100px;
+  width: 100px;
+  background: green;
+}

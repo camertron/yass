@@ -1,0 +1,20 @@
+
+  .basic {
+    display: flex;
+    border: 1em solid green;
+  }
+  .height-ref {
+    height: 40px;
+    background: lightblue;
+  }
+  .width-ref {
+    width: 40px;
+  }
+  .floatLBasic-ref {
+    float: left;
+  }
+  .floatLWidth-ref {
+    float: left;
+    width: 40px;
+  }
+  

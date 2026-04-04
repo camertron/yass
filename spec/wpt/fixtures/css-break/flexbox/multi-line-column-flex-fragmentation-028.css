@@ -1,0 +1,25 @@
+
+  .multicol {
+    column-count: 2;
+    column-fill: auto;
+    column-gap: 0px;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    background: red;
+  }
+  .abs {
+    position: absolute;
+    width: 50px;
+    background: white;
+  }
+  #flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 200px;
+  }
+  #flex > div {
+    background: green;
+    width: 25px;
+  }

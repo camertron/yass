@@ -1,0 +1,8 @@
+
+  #popover {
+    transition: overlay 60s step-end;
+    display: block;
+  }
+  #popover::backdrop {
+    background: rgba(0, 0, 0, 0.2);
+  }

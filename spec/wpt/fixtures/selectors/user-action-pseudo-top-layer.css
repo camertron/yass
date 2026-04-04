@@ -1,0 +1,17 @@
+
+/* Make elements large enough to click and separate them to prevent overlap */
+#container * {
+  min-width: 50px;
+  min-height: 50px;
+}
+/* Ensure top layer elements do not overlap with body or container when clicked */
+dialog,
+[popover] {
+  top: 100px;
+  left: 100px;
+  margin: 0;
+}
+select,
+::picker(select) {
+  appearance: base-select;
+}

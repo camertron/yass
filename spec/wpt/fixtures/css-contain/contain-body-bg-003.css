@@ -1,0 +1,13 @@
+
+html, body, p {
+    margin: 0;
+    width: 300px;
+    height: 200px;
+}
+p {
+    background: white;
+}
+body {
+    background: red;
+    contain: size;
+}

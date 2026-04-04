@@ -1,0 +1,13 @@
+
+  .green {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+
+    clip-path: inset(45%);
+    transition-property: clip-path;
+    transition-duration: 10000000s;
+    transition-timing-function: cubic-bezier(0, 9, 1, 9);
+    transition-delay: -5220715s;
+  }
+

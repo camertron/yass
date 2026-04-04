@@ -1,0 +1,12 @@
+
+div {
+    font-family: monospace;
+    white-space: pre;
+    tab-size: 10;
+    font-size: 2em;
+}
+span {
+    tab-size: 4;
+}
+.wrong { color: orange; }
+.right { color: blue; }

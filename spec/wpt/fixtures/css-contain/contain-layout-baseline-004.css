@@ -1,0 +1,18 @@
+
+#table {
+  display: table;
+  font: 100px/1 Ahem;
+}
+
+#table > * {
+  display: table-cell;
+}
+
+#first {
+  color: blue;
+}
+
+#second {
+  color: green;
+  contain: layout;
+}

@@ -1,0 +1,8 @@
+
+  .zoomed {
+    background: coral;
+    width: 200px;
+    height: 200px;
+    border: 10px solid black;
+    border-radius: 40px;
+  }

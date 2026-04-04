@@ -1,0 +1,11 @@
+
+@property --registered {
+    syntax: '*';
+    initial-value: ;
+    inherits: false;
+}
+#target {
+    --test-bg: var(--registered) green;
+    --test-fallback: var(--registered, red);
+    background-color: var(--test-bg, var(--test-fallback));
+}

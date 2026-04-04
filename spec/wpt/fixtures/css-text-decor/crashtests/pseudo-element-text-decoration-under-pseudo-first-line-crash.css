@@ -1,0 +1,10 @@
+
+li {
+  text-decoration: overline;
+}
+li::marker {
+  content: 'm';
+}
+li:first-line {
+  text-decoration: underline;
+}

@@ -1,0 +1,12 @@
+
+  #flex {
+    display: flex;
+    block-size: 200px;
+    position: relative;
+    align-items: flex-end;
+  }
+  #flex > div {
+    inline-size: 100px;
+    block-size: 100px;
+    flex: none;
+  }

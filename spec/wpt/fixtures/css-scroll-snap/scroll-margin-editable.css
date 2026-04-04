@@ -1,0 +1,11 @@
+
+    html {
+      padding: 10rem;
+      border-bottom: solid silver 150vh;
+    }
+    .target {
+      scroll-margin-top: 8rem;
+      font-size: 2rem;
+      border: solid grey 1px;
+    }
+  

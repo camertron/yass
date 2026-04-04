@@ -1,0 +1,46 @@
+
+  body > div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    vertical-align:top;
+  }
+
+
+  @scope (#before_test > main) {
+    :scope {
+      background-color: skyblue;
+    }
+    :scope::before {
+      content: "B";
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      background-color: tomato;
+    }
+  }
+
+
+  @scope (#after_test > main) {
+    :scope {
+      background-color: skyblue;
+    }
+    :scope::after {
+      content: "A";
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      background-color: tomato;
+    }
+  }
+
+
+  @scope (#marker_test li) {
+    :scope {
+      background-color: skyblue;
+    }
+    :scope::marker {
+      content: "M";
+    }
+  }

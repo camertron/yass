@@ -1,0 +1,8 @@
+
+    @font-face {
+    font-family: variable_axes;
+    src: url("resources/variabletest_matching.ttf");
+    font-stretch: 200% 50%;
+    font-style: oblique 90deg -90deg;
+    font-weight: 900 100;
+    }

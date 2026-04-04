@@ -1,0 +1,56 @@
+
+  div#wrapper
+    {
+      color: transparent;
+      /*
+      so that background colors can
+      shine through the A, G, M, Z glyphs
+      */
+      font-family: Ahem;
+      font-size: 25px;
+      line-height: 1;
+      width: 7em;
+      /*
+      'width: 7em' gives more inline-size
+      than needed or required by each
+      overlapping-test-green <div>s.
+      If an implementation goes wrong
+      and makes one of
+      overlapping-test-green <div>s
+      wider than 4em, then we will see
+      red.
+      */
+    }
+
+  div#overlapped-reference-red
+    {
+      background-color: red;
+      height: 4em;
+      position: absolute;
+      width: 4em;
+      z-index: -1;
+    }
+
+  div.overlapping-test-green
+    {
+      background: linear-gradient(to right, green 4em, red 3em);
+      /*
+      If one of the overlapping-test-green <div>s become wider
+      than 4em, then we will see the part beyond 4em of this
+      linear-gradient background which is red.
+      https://www.w3.org/TR/css-images-3/#linear-gradients
+      */
+      float: left;
+      /*
+      [
+      max-content inline size:
+      The box's "ideal" size in the inline axis. Usually
+      the narrowest inline size it could take while fitting
+      around its contents if none of the soft wrap
+      opportunities within the box were taken.
+      ]
+      https://www.w3.org/TR/css-sizing-3/#max-content-inline-size
+      */
+      white-space: pre-wrap;
+    }
+  

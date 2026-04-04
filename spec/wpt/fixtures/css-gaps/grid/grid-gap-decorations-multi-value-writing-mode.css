@@ -1,0 +1,21 @@
+
+    body {
+        margin: 0px;
+    }
+    .grid {
+        display: grid;
+        grid-template: repeat(3, 50px) / repeat(4, 50px);
+        gap: 10px;
+        column-rule-color: red, green, blue;
+        column-rule-style: solid;
+        column-rule-width: 10px;
+        row-rule-color: orange, purple;
+        row-rule-style: solid;
+        row-rule-width: 10px;
+        width: 170px;
+        height: 230px;
+        margin-bottom: 20px;
+    }
+    .item {
+        background: lightgray;
+    }

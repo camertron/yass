@@ -1,0 +1,28 @@
+
+.clamp {
+  line-clamp: 2;
+  font: 25px/25px Ahem;
+  width: 100px;
+  tab-size: 4;
+}
+.test1 {
+  background-color: red;
+  color: red;
+}
+.test2 {
+  color: transparent;
+  background:
+    linear-gradient(green, green) 25px 25px / 75px 25px no-repeat,
+    red;
+}
+.green {
+  color: green;
+  background-color: green;
+}
+.red {
+  color: red;
+  background-color: red;
+}
+.tab {
+  white-space: pre;
+}

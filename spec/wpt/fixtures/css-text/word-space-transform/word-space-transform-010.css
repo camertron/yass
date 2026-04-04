@@ -1,0 +1,16 @@
+
+div {
+  font-size: 2em;
+  border: solid blue;
+  float: left;
+  margin: 1px;
+}
+.pad { padding: 0 1em; }
+.spad { padding: 0 0.5em; }
+.margin { margin: 0 1em; }
+.smargin { margin: 0 0.5em; }
+.border {  border: solid transparent; border-width: 0 1em; }
+.sborder { border: solid transparent; border-width: 0 0.5em; }
+.test {
+  word-space-transform: ideographic-space;
+}

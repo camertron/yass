@@ -1,0 +1,5 @@
+
+.clamp {
+  line-clamp: auto;
+  max-height: 1.5lh;
+}

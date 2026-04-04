@@ -1,0 +1,16 @@
+
+  #t {
+    position: relative;
+    left: -100px;
+    width: 100px;
+    height: 100px;
+    animation: --anim 2000s steps(2, start) both;
+  }
+  @keyframes --anim {
+    from {
+      box-shadow: contrast-color(white) 100px 0px;
+    }
+    to {
+      box-shadow: lime 100px 0px;
+    }
+  }

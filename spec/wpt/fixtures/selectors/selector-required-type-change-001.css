@@ -1,0 +1,4 @@
+
+      span { color: green; }
+      :required + span { color: red }
+    

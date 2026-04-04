@@ -1,0 +1,10 @@
+
+@font-face {
+    font-family: "";
+    src: url("resources/COLR-palettes-test-font.ttf") format("truetype");
+}
+
+@font-palette-values --MyPalette {
+    font-family: "";
+    base-palette: 1;
+}

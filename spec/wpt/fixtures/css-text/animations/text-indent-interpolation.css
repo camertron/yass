@@ -1,0 +1,12 @@
+
+.parent {
+  text-indent: 70px;
+}
+.target {
+  font: 10px sans-serif;
+  text-indent: 10px;
+  margin-left: 20px;
+}
+.expected {
+  color: green;
+}

@@ -1,0 +1,15 @@
+
+  @page {
+    size: 600px 400px;
+    margin: 0;
+    margin-inline-start: 50px;
+  }
+  @page :first {
+    margin-inline-start: 0;
+    margin-block-start: 50px;
+  }
+  :root {
+    print-color-adjust: exact;
+    writing-mode: vertical-rl;
+  }
+  body { margin: 0; }

@@ -1,0 +1,12 @@
+
+  #justify {
+    text-align-last: justify;
+    margin-bottom: 5px;
+  }
+  #justify > span, #reference > span {
+    padding: 1px;
+    background: black;
+  }
+  #reference {
+    text-align: center;
+  }

@@ -1,0 +1,9 @@
+
+/* Suppress things that cannot be reproduced in the reference file */
+:focus {
+  outline: none;
+}
+
+div:focus-within {
+  border: solid 15px green;
+}

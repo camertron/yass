@@ -1,0 +1,12 @@
+
+  section {
+    background-color: green;
+    block-size: 100px;
+    display: flex;
+    gap: calc(10% - 1rem / 2);
+    flex-wrap: wrap;
+  }
+  section > div{
+    background-color: grey;
+    flex: 1 1 auto;
+  }

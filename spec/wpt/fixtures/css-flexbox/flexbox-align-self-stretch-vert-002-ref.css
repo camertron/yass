@@ -1,0 +1,13 @@
+
+    div.container {
+      width: 100px;
+      height: 20px;
+      border: 2px solid black;
+    }
+    div.item {
+      width:  48px;
+      height: 15px;
+      float: left;
+      border: 1px dotted blue;
+    }
+  

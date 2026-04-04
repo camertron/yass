@@ -1,0 +1,13 @@
+
+#scroll-container {
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+#sticky {
+  position: sticky;
+  bottom: 0;
+  height: 100px;
+  background: green;
+}

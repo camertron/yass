@@ -1,0 +1,17 @@
+
+  #outer {
+    view-transition-name: outer;
+  }
+
+  #inner {
+    view-transition-name: inner;
+  }
+
+  .scoped {
+    view-transition-scope: all;
+  }
+
+  .display-contents {
+    display: contents;
+  }
+

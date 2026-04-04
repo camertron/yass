@@ -1,0 +1,46 @@
+
+/* 0 */
+@font-face {
+    font-family: "A";
+    src: local("B");
+}
+/* 1 */
+@font-face {
+    font-family: "C";
+    src: url("D") format("opentype");
+}
+/* 2 */
+@font-face {
+    font-family: "E";
+    src: url("F") format("opentype");
+}
+/* 3 */
+@font-face {
+    font-family: "M";
+    src: url("N\"O") format("opentype");
+}
+/* 4 */
+@font-face {
+    font-family: "P";
+    src: url("Q\A R") format("opentype");
+}
+/* 5 */
+@font-face {
+    font-family: "S";
+    src: url("T\\U") format("opentype");
+}
+/* 6 */
+@font-face {
+    font-family: "V";
+    src: local("W\"X");
+}
+/* 7 */
+@font-face {
+    font-family: "Y";
+    src: local("Z\A A");
+}
+/* 8 */
+@font-face {
+    font-family: "B";
+    src: local("C\\D");
+}

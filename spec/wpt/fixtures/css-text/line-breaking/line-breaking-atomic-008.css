@@ -1,0 +1,17 @@
+
+div {
+  font: 50px/1 Ahem;
+}
+.red {
+  position: absolute;
+  z-index: -1;
+  color: red;
+}
+.test {
+  width: 0;
+  color: green;
+  word-break: keep-all;
+}
+span {
+  display: inline-block;
+}

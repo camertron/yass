@@ -1,0 +1,25 @@
+
+  #wrapper {
+    position: fixed;
+  }
+
+  #scroller {
+    overflow: auto;
+    height: 130px;
+    width: 100px;
+  }
+
+  .item {
+    width: 100px;
+    height: 300px;
+    background-color: blue;
+    margin: 5px;
+  }
+
+  a {
+    color: red;
+  }
+
+  #targetCurrent {
+    color: green;
+  }

@@ -1,0 +1,10 @@
+
+    #target {
+      column-rule-width: 10px;
+      column-rule-style: solid;
+      animation: width-anim 2s linear paused;
+    }
+    @keyframes width-anim {
+      from { column-rule-width: 0px; }
+    }
+  

@@ -1,0 +1,12 @@
+
+@font-face {
+  font-family: IcTestFullWidth;
+  src: url(../css-values/resources/IcTestFullWidth.woff2);
+}
+div {
+  font-family: IcTestFullWidth;
+  font-size: 40px;
+  font-size-adjust: ic-width 1.0;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}

@@ -1,0 +1,16 @@
+
+.clamp {
+  line-clamp: auto;
+  max-height: 5lh;
+  font: 16px / 32px serif;
+  white-space: pre;
+  background-color: yellow;
+  padding: 0 4px;
+}
+ruby {
+  ruby-position: under;
+}
+rt {
+  font: 32px / 32px Ahem;
+  color: blue;
+}

@@ -1,0 +1,12 @@
+
+  div
+  {
+  background-image: url("support/nonpercent-width-nonpercent-height-viewbox.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* XXX image-rendering: -moz-crisp-edges; */
+  border: black solid 1px;
+  height: 768px;
+  width: 256px;
+  }
+  

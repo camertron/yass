@@ -1,0 +1,7 @@
+
+.some-hidden > :not(.never-matches:not(:first-of-type)) {
+  display: none;
+}
+.to-hide {
+  color: red;
+}

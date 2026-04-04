@@ -1,0 +1,9 @@
+
+body {
+    margin: 0;
+}
+svg {
+    display: block;
+    width: 240px;
+    height: 250px;
+}

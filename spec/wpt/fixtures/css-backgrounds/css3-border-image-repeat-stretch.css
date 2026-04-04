@@ -1,0 +1,10 @@
+
+            div {
+                border: red solid 27px;
+                border-image-repeat: stretch;
+                border-image-source: url("support/blue-and-red-diamonds-81x81.png");
+                border-image-slice: 27;
+                height: 100px;
+                width: 100px;
+            }
+    

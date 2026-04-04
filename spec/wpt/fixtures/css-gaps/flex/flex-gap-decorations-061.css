@@ -1,0 +1,29 @@
+
+body {
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 130px;
+  column-gap: 10px;
+  row-gap: 10px;
+  background: green;
+  column-rule: 10px solid gold;
+  row-rule: 10px solid blue;
+}
+
+.item {
+  width: 60px;
+}
+
+.tall {
+  height: 50px;
+  background: lightblue;
+}
+
+.zero {
+  height: 0;
+  background: red;
+}

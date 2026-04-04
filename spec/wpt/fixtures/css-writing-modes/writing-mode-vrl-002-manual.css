@@ -1,0 +1,13 @@
+
+@font-face {
+    font-family: "webfont";
+    src: url("/fonts/mplus-1p-regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    }
+.test, .ref { font-family: webfont, serif; font-size: 24px; height: 300px; width: 300px; }
+.test span { background-color:orange; color:orange;  }
+.test span#end { background-color:blue; color:blue;  }
+
+
+.test { writing-mode: vertical-rl; }

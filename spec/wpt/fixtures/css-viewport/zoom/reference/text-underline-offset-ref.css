@@ -1,0 +1,12 @@
+
+body {
+  --scale: 1;
+}
+div {
+  font-size: calc(1rem * var(--scale));
+  text-decoration: underline hotpink;
+  text-underline-offset: calc(5px * var(--scale));
+}
+.zoom {
+  --scale: 2;
+}

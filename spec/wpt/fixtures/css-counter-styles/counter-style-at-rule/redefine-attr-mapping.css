@@ -1,0 +1,25 @@
+
+  @counter-style triangle {
+    system: cyclic;
+    symbols: \2023;
+    suffix: "";
+  }
+  @counter-style circle {
+    system: extends triangle;
+  }
+  @counter-style square {
+    system: extends triangle;
+  }
+  @counter-style lower-roman {
+    system: extends hiragana;
+  }
+  @counter-style upper-roman {
+    system: extends katakana;
+  }
+  @counter-style lower-alpha {
+    system: extends hiragana-iroha;
+  }
+  @counter-style upper-alpha {
+    system: extends katakana-iroha;
+  }
+  ::marker { font-family: inherit; }

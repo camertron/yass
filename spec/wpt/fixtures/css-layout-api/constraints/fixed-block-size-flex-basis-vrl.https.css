@@ -1,0 +1,21 @@
+
+body {
+  display: flex;
+}
+
+.test {
+  writing-mode: vertical-rl;
+  background: red;
+  --expected-block-size: 100;
+  flex-basis: 100px;
+}
+
+.child {
+  background: green;
+}
+
+@supports (display: layout(test)) {
+  .test {
+    display: layout(test);
+  }
+}

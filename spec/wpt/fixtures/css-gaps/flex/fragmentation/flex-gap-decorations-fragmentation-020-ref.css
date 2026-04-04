@@ -1,0 +1,33 @@
+
+  body {
+    margin: 0;
+  }
+  .multicol {
+    column-count: 5;
+    width: 600px;
+    column-gap: 1px;
+    height: 101px;
+  }
+  #flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 500px;
+    border: 1px solid black;
+    column-gap: 3px;
+    row-gap: 3px;
+  }
+
+  #flex > div {
+    background: lightblue;
+  }
+
+  .row-decoration {
+    background: gold;
+    position: absolute;
+  }
+
+  .column-decoration {
+    background: green;
+    position: absolute;
+  }

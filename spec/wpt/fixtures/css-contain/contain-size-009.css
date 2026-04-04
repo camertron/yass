@@ -1,0 +1,8 @@
+
+div {
+  display: table-footer-group;
+  contain: size;
+}
+section {
+  overflow: hidden;
+}

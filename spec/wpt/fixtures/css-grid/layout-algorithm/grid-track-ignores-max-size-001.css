@@ -1,0 +1,14 @@
+
+.grid {
+  display: grid;
+  inline-size: 100px;
+  block-size: auto;
+  max-block-size: 10px;
+}
+
+.item {
+  background: green;
+  min-height: 0;
+  font: 100px/1 Ahem;
+  color: rgba(255, 255, 255, 0);
+}

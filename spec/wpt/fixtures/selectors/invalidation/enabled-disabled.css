@@ -1,0 +1,15 @@
+
+      input {
+        position: absolute;
+        left: 200px;
+        top: 300px;
+      }
+
+      :enabled {
+        left: 100px;
+      }
+
+      :disabled {
+        top: 400px;
+      }
+    

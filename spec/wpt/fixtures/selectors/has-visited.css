@@ -1,0 +1,10 @@
+
+  #parent1:has(:link) {
+    color: green;
+  }
+  #parent2:has(:visited) {
+    color: yellow;
+  }
+  #parent3:has(:any-link) {
+    color: yellowgreen;
+  }

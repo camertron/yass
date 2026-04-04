@@ -1,0 +1,4 @@
+
+div.test { color: red; }
+:lang("x") { color: green; } /* not a well-formed lang tag, but matches per
+                                the Extended Filtering algorithm */

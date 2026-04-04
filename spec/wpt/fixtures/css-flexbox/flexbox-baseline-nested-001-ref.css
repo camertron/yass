@@ -1,0 +1,9 @@
+
+      .ib {
+        display: inline-block;
+      }
+      .innerFlex {
+        display: flex;
+        height: 200px;
+      }
+    

@@ -1,0 +1,8 @@
+
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  outline: solid 50px green;
+  outline-offset: -50px;
+}

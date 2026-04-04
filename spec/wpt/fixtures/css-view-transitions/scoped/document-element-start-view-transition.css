@@ -1,0 +1,17 @@
+
+  :root {
+    view-transition-name: none;
+  }
+  #target {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    contain: paint;
+    view-transition-name: target;
+  }
+  #target.update-1 {
+    height: 150px;
+  }
+  #target.update-2 {
+    height: 200px;
+  }

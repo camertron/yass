@@ -1,0 +1,13 @@
+
+  #flex {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+    width: 50px;
+  }
+  #flex > div {
+    width: 50px;
+    background: green;
+    flex: none;
+  }

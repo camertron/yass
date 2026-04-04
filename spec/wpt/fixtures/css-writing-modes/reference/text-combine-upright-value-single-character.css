@@ -1,0 +1,15 @@
+
+@font-face {
+  font-family: tcu-font;
+  src: url("/fonts/tcu-font.woff");
+}
+
+.test {
+  writing-mode: vertical-rl;
+  font-size: 5em;
+  font-family: tcu-font;
+}
+
+.tcy {
+  text-combine-upright: all;
+}

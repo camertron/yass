@@ -1,0 +1,9 @@
+
+      .test_content div {
+        width: 64px;
+        height: 64px;
+        background-color: cyan;
+      }
+      .test_content div.x4_zoom {
+        zoom: 4.0;
+      }

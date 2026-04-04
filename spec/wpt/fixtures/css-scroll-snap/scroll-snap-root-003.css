@@ -1,0 +1,18 @@
+
+:root {
+  overflow: hidden; /* hide scrollbars for reftest analysis */
+}
+
+body {
+  scroll-snap-type: block mandatory;
+}
+
+#pass {
+  height: 120vh;
+}
+
+#target {
+  scroll-snap-align: start;
+  height: 100vh;
+  background: red;
+}

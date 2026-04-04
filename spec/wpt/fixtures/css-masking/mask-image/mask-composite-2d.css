@@ -1,0 +1,34 @@
+
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  rect {
+    fill: blue;
+    width: 100px;
+    height: 100px;
+    y: 10px;
+    mask-image: url(support/blue-100x50-transparent-100x50.svg),
+                url(support/transparent-100x50-blue-100x50.svg);
+  }
+
+  rect.add {
+    x: 10px;
+    mask-composite: add;
+  }
+
+  rect.subtract {
+    x: 120px;
+    mask-composite: subtract;
+  }
+
+  rect.intersect {
+    x: 230px;
+    mask-composite: intersect;
+  }
+
+  rect.exclude {
+    x: 340px;
+    mask-composite: exclude;
+  }

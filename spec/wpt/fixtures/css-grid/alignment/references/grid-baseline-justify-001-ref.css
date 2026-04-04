@@ -1,0 +1,48 @@
+
+  @import "/fonts/ahem.css";
+  .grid {
+    border: solid silver;
+    margin: 1em 2px;
+    font: 20px/1 Ahem;
+
+    display: inline-block;
+    vertical-align: top;
+  }
+  .grid > div {
+    border: black 10px;
+    border-style: none solid;
+    color: orange;
+    writing-mode: vertical-rl;
+  }
+  div + div {
+    font-size: 2em;
+  }
+  div + div + div {
+    font-size: 50%;
+  }
+
+  .ref {
+    position: relative;
+    width: 96px;
+    height: 80px;
+  }
+  .ref > div {
+    position: absolute;
+  }
+  .ref1 { right:  16px; }
+  .ref2 { top:    20px;
+          right:   0px; }
+  .ref3 { right:  24px;
+          top:    60px; }
+  .ref4 { bottom:  0px;
+          right:   0px;
+          left:    0px;
+          height: 10px; }
+
+  .ref.content > div:not(.stripe) {
+    border-color: transparent;
+  }
+  .stripe {
+    width: 76px;
+    height: 80px;
+  }

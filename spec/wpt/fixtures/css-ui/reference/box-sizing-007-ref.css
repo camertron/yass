@@ -1,0 +1,12 @@
+
+div {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background: green;
+	margin: 10px;
+}
+
+body {
+	max-width: 700px;
+}

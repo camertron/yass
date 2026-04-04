@@ -1,0 +1,7 @@
+
+@font-face {
+  font-family: test;
+  src: url("/fonts/noto/NotoSansDevanagari-Regular.ttf");
+}
+p { font: 16px test, sans-serif; }
+.fl { color: green; font-size: 2em; }

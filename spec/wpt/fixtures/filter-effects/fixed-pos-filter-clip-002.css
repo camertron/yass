@@ -1,0 +1,11 @@
+
+  :root { overflow: hidden }
+  div {
+    width: calc(100vw + 100px);
+    height: calc(100vh + 100px);
+    background:green;
+    filter: blur(10px);
+    position: fixed;
+    top: -50px;
+    left: -50px;
+  }

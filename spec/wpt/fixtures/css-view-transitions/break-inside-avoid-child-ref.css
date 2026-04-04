@@ -1,0 +1,16 @@
+
+.columns {
+  columns: 2;
+  contain: layout;
+  border: 1px solid black;
+}
+
+.inner {
+  break-inside: avoid;
+  position: relative;
+  top: 300px;
+  left: 0;
+  background: lightblue;
+  width: 300px;
+  height: 300px;
+}

@@ -1,0 +1,14 @@
+
+:root { view-transition-name: none }
+#item {
+  view-transition-name: item;
+  width: 10px;
+  height: 10px;
+  position: relative;
+}
+.shifted {
+  left: 20px;
+}
+::view-transition-group(*) {
+  animation-play-state: paused;
+}

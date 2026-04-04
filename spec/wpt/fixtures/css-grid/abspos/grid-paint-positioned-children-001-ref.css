@@ -1,0 +1,18 @@
+
+.grid {
+  border: 2px solid black;
+  width: 100px;
+  height: 40px;
+  background: gray;
+}
+
+.abs {
+  height: 5px;
+  float: left;
+}
+
+#item {
+  width: 90px;
+  height: 30px;
+  margin-top: 10px;
+}

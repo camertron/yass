@@ -1,0 +1,22 @@
+
+  #container {
+    position: relative;
+    width: 400px;
+    height: 150px;
+  }
+
+  .anchor {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    display: inline-block;
+  }
+
+  .target {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: green;
+    top: 50px;
+    left: 0;
+  }

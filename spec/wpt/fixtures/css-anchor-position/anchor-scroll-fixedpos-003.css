@@ -1,0 +1,25 @@
+
+  body {
+    margin: 0;
+  }
+
+  div {
+    width: 100px;
+    height: 100px;
+    font-size: 16px;
+  }
+
+  #anchor {
+    anchor-name: --a1;
+    margin-top: 105vh;
+    background: orange;
+  }
+
+  #anchored {
+    position: fixed;
+    position-anchor: --a1;
+    left: anchor(left);
+    bottom: anchor(top);
+    background: green;
+    color: white;
+  }

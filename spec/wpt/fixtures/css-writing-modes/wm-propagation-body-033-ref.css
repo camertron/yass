@@ -1,0 +1,11 @@
+
+  img
+    {
+      vertical-align: top;
+    }
+
+  img + img
+    {
+      padding-left: 1em;
+    }
+  

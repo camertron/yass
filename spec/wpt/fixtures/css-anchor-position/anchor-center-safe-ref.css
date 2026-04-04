@@ -1,0 +1,36 @@
+
+.anchor {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  height: 30px;
+  color: white;
+  background-color: green;
+}
+.infobox {
+  color: darkblue;
+  background-color: azure;
+  border: 1px solid #ddd;
+  padding: 10px;
+  position: fixed;
+  top: 35px;
+  left: 0px;
+}
+.anchor2 {
+  position: fixed;
+  left: 340px;
+  top: 0px;
+  height: 30px;
+  width: 100px;
+  color: white;
+  background-color: green;
+}
+.infobox2 {
+  color: darkblue;
+  background-color: azure;
+  border: 1px solid #ddd;
+  padding: 10px;
+  position: fixed;
+  top: 0px;
+  left: 445px; /* This value is calculated from the left position value of .anchor2 plus its width, plus an additional 5 px of padding */
+}

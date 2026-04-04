@@ -1,0 +1,28 @@
+
+  #container {
+    overflow: hidden;
+    columns: 3;
+    column-fill: auto;
+    gap: 0;
+    height: 100px;
+    margin: 0;
+    border: 15px solid;
+    padding: 0;
+    scroll-marker-group: before;
+    background: yellow;
+  }
+  #container::scroll-marker-group {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background: cyan;
+  }
+  #container::column::scroll-marker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: hotpink;
+    content: "*";
+  }

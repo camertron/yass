@@ -1,0 +1,16 @@
+
+  iframe {
+    display: block;
+    background: red;
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+    border: none;
+    box-sizing: border-box;
+  }
+  #negative-margin {
+    width: 100px;
+    height: 100px;
+    background: lime;
+    margin-top: -100px;
+  }

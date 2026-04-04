@@ -1,0 +1,5 @@
+
+@layer bar, baz;
+@import url('data:text/css,') layer(qux);
+@layer foo { }
+@scope (div) to (span) { }

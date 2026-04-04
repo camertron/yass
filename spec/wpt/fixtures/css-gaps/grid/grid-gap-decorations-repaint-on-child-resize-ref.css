@@ -1,0 +1,25 @@
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto;
+      column-gap: 20px;
+      width: 160px;
+      height: 50px;
+      background: red;
+      column-rule: 20px solid green;
+    }
+
+    .grid-item {
+      background: green;
+      height: 50px;
+    }
+
+    #item1 {
+      /* Final width after change */
+      width: 90px;
+    }
+
+    #item2 {
+      width: 50px;
+    }
+  

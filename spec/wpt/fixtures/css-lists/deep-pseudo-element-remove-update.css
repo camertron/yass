@@ -1,0 +1,9 @@
+
+  .container {
+    counter-reset: plm-table 0;
+  }
+
+  .numbered span::after {
+    content: counter(plm-table);
+    counter-increment: plm-table;
+  }

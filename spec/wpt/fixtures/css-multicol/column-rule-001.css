@@ -1,0 +1,11 @@
+
+  body {
+    margin: 0;
+  }
+  .mc {
+    columns: 2;
+    column-gap: 110px;
+    column-rule: 100px solid;
+    height: 100px;
+    overflow: hidden;
+  }

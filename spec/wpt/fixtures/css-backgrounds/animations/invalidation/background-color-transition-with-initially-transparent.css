@@ -1,0 +1,6 @@
+
+.container {
+  width: 100px;
+  height: 100px;
+  transition: background-color 200000ms steps(2) -99999.9ms;
+}

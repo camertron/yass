@@ -1,0 +1,26 @@
+
+body {
+  margin: 0;
+  height: 2000px;
+}
+
+div {
+  width: 100px;
+  height: 100px;
+}
+
+#anchor {
+  position: fixed;
+  anchor-name: --a1;
+  margin: 300px;
+  background: orange;
+}
+
+#anchored {
+  position: fixed;
+  position-anchor: --a1;
+  left: anchor(right);
+  top: anchor(top);
+  background: green;
+}
+

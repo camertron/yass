@@ -1,0 +1,14 @@
+
+  #container {
+    container-type: size;
+    width: 200px;
+    --query: 100px;
+    --invalid-value: initial;
+  }
+
+  @container (width > var(--invalid-value, var(--query, 500px))) {
+    #target {
+      height: 50px;
+      background-color: green;
+    }
+  }

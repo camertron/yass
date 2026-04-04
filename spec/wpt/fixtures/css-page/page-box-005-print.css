@@ -1,0 +1,26 @@
+
+  @page {
+    size: 400px;
+    margin: 50px;
+    color: hotpink;
+    border: 10px dotted;
+    padding: 20px;
+    background: yellow;
+  }
+  @page :first {
+    color: orange;
+    background: white;
+  }
+  @page :right {
+    /* The first page in a horizontal writing mode LTR document is a right
+       page. :first has higher specificity than :right, so these declarations
+       are only for the third page. */
+    color: black;
+    background: cyan;
+  }
+  :root {
+    print-color-adjust: exact;
+  }
+  body {
+    margin: 0;
+  }

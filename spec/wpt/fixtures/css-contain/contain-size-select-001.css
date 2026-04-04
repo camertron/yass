@@ -1,0 +1,6 @@
+
+select {
+  color: transparent;
+  background: white;
+  contain: size;
+}

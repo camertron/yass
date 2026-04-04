@@ -1,0 +1,7 @@
+
+.parent {
+  column-rule-width: 30px;
+}
+.target {
+  column-rule-width: 10px;
+}

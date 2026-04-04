@@ -1,0 +1,7 @@
+
+.green {
+  background-image: linear-gradient(green, green);
+  background-position: 100px 0px;
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+}

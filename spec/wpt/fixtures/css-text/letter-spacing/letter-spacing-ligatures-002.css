@@ -1,0 +1,20 @@
+
+@font-face {
+    font-family: 'mplus';
+    src: url('/fonts/mplus-1p-regular.woff');
+}
+div {
+    font-size: 2em;
+    font-family: mplus;
+    width: 12ch;
+    letter-spacing: 20px;
+    font-kerning: none;
+}
+i {
+    padding-left: 20px;
+}
+.ref {
+    color: blue;
+    letter-spacing: 0;
+    font-variant-ligatures: none;
+}

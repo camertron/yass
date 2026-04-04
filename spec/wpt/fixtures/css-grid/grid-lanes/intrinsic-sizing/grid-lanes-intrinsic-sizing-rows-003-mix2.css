@@ -1,0 +1,20 @@
+
+
+@import "support/grid-lanes-intrinsic-sizing-visual.css";
+
+grid {
+  display: inline grid-lanes;
+  gap: 1px 2px;
+  /* keep fixed values small enough for spanners to have an effect */
+  grid-template-rows: 1.1ch auto 1.4ch 1fr;
+  border: 1px solid;
+  padding: 1px 0 2px 0;
+  vertical-align: top;
+  height: min-content;
+}
+
+item {
+  /* allow for differing min-content and max-content sizes */
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+}

@@ -1,0 +1,11 @@
+
+.test {
+  writing-mode: vertical-rl;
+  font-size: 5em;
+  line-height: 1;
+  font-family: Ahem;
+}
+
+.tcy {
+  text-combine-upright: none;
+}

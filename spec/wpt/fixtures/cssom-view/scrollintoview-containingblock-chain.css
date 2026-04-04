@@ -1,0 +1,23 @@
+
+    .scroller {
+        width: 300px;
+        height: 300px;
+        overflow: scroll;
+    }
+
+    .contents {
+        width: 200%;
+        height: 300%;
+    }
+
+    #inner.scroller {
+        position: absolute;
+        margin-top: 250px;
+        margin-left: 100px;
+        width: 400px
+    }
+
+    #reveal {
+        margin-top: 400px;
+        background-color: blue;
+    }

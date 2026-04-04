@@ -1,0 +1,13 @@
+
+  .box {
+      height: 80px;
+      margin-bottom: 10px;
+      border: 10px solid hotpink;
+      background: yellow;
+  }
+  .skip-start {
+      border-left: none;
+  }
+  .skip-end {
+      border-right: none;
+  }

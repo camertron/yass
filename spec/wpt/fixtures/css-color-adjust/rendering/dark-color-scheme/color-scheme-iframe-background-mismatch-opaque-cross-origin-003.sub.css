@@ -1,0 +1,14 @@
+
+  html {
+    color-scheme: dark;
+  }
+
+  iframe {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 200px;
+    height: 200px;
+    display: block;
+    color-scheme: light;
+  }

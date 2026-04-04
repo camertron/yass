@@ -1,0 +1,11 @@
+
+table {
+  width: 160px;
+}
+td {
+  animation: bgcolor 100s;
+}
+@keyframes bgcolor {
+  0% { background-color: rgba(0, 200, 0, 0); }
+  100% { background-color: rgba(200, 0, 0, 0); }
+}

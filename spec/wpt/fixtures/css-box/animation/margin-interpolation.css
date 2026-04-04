@@ -1,0 +1,19 @@
+
+.parent {
+  margin: 10px;
+  border: solid;
+  display: inline-block;
+}
+
+.target {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  display: inline-block;
+  margin: 30px;
+  opacity: 0.5;
+}
+
+.expected {
+  background-color: green;
+}

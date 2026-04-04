@@ -1,0 +1,12 @@
+
+    .test {
+        width: 200px;
+        height: 100px;
+        margin-left: 90px;
+    }
+    #gradient1 {
+        background-image: linear-gradient(to left, blue 0%, blue 20%, transparent);
+    }
+    #gradient2 {
+        background-image: linear-gradient(to left, blue 0%, blue 20%, rgba(0,0,0,0));
+    }

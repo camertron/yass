@@ -1,0 +1,12 @@
+
+table {
+  width: 100px;
+  height: 100px;
+  border-spacing: 0;
+}
+.green {
+  background: green;
+}
+.red {
+  background: red;
+}

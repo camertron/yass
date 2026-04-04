@@ -1,0 +1,13 @@
+
+  div
+    {
+      background-color: white;
+      color: white;
+      font-size: 300%;
+    }
+
+  div::selection
+    {
+      color: green;
+    }
+  

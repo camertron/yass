@@ -1,0 +1,14 @@
+
+body { margin-left: 100px; }
+li {
+  list-style-type: 'FAIL';
+  background: grey;
+}
+li::marker {
+  content: "X";
+  display: block;
+  width: 100px;
+  text-align: start;
+  background: lime;
+}
+span { font-size: 32pt; }

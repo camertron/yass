@@ -1,0 +1,8 @@
+
+
+dialog:open + #afterdialog,
+details:open + #afterdetails,
+select:open + #afterselect {
+  will-change: text-decoration;
+}
+

@@ -1,0 +1,3 @@
+
+      .test { background-image: -webkit-cross-fade(none, none, calc(13% + 1% * sign(1em - 1px))); }
+    

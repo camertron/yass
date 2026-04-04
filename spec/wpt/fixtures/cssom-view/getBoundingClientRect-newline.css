@@ -1,0 +1,6 @@
+
+div[contenteditable] {
+  white-space: pre;
+  font: 10px/1 Ahem;
+  width: 10ch;
+}

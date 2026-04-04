@@ -1,0 +1,10 @@
+
+  #grid {
+    display: grid;
+    container-type: inline-size;
+    width: 400px;
+    grid-template-columns: 1fr 1fr;
+  }
+  @container (width = 400px) {
+    #grid div { color: green }
+  }

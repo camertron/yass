@@ -1,0 +1,16 @@
+
+:root  { background: rebeccapurple; }
+.target {
+  width: 200px;
+  height: 200px;
+  contain: paint;
+  view-transition-name: target;
+  padding: 20px;
+}
+
+.child {
+  width: 100px;
+  height: 200px;
+  position: relative;
+  background: green;
+}

@@ -1,0 +1,13 @@
+
+
+h1 {
+  position: sticky;
+  background: #ddd;
+  border: 1px solid black;
+  top: 0px;
+  bottom: 0px;
+}
+
+section {
+  height: 100vh;
+}

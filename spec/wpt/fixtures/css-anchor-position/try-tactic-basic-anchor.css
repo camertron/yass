@@ -1,0 +1,49 @@
+
+  #cb {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+  }
+  #anchor {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    width: 50px;
+    height: 50px;
+    background-color:red;
+    anchor-name: --anchor;
+  }
+  #target1 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    /* Does not fit ... */
+    left: anchor(--anchor left);
+    top: anchor(--anchor bottom);
+    /* flip-block fits */
+    position-try-fallbacks: flip-block, flip-inline, flip-block flip-inline;
+    background-color: coral;
+  }
+  #target2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    /* Does not fit ... */
+    left: anchor(--anchor right);
+    top: anchor(--anchor top);
+    /* flip-inline fits */
+    position-try-fallbacks: flip-block, flip-inline, flip-block flip-inline;
+    background-color: blue;
+  }
+  #target3 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    /* Does not fit ... */
+    left: anchor(--anchor right);
+    top: anchor(--anchor bottom);
+    /* flip-block flip-inline fits */
+    position-try-fallbacks: flip-block, flip-inline, flip-block flip-inline;
+    background-color: green;
+  }

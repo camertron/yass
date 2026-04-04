@@ -1,0 +1,12 @@
+
+body {
+  margin: 0;
+}
+
+.reference {
+  background: blue;
+  width: 100px;
+  height: 100px;
+  transform-origin: 0 0;
+  transform: translate(50px, 100px) perspective(1000px) rotateX(30deg) translateY(50px) translateZ(100px);
+}

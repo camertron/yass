@@ -1,0 +1,20 @@
+
+body {
+  position: relative;
+}
+
+.test {
+  background: red;
+  position: absolute;
+  --expected-block-size: null;
+}
+
+.child {
+  background: green;
+}
+
+@supports (display: layout(test)) {
+  .test {
+    display: layout(test);
+  }
+}

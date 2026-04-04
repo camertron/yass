@@ -1,0 +1,4 @@
+
+::before:where(.foo) {
+  color: red;
+}

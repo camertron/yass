@@ -1,0 +1,8 @@
+
+div {
+	margin-top: 66px;
+	margin-left: 50px;
+	outline: blue solid 50px;
+	cursor: url("support/cursors/fail.png"), url("support/cursors/fail.cur"), help;
+	width: 0px;
+}

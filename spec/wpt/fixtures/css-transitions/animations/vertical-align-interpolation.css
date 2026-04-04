@@ -1,0 +1,14 @@
+
+.parent {
+  vertical-align: 100px;
+}
+.target {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  display: inline-block;
+  vertical-align: 10px;
+}
+.expected {
+  background-color: green;
+}

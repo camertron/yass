@@ -1,0 +1,19 @@
+
+@font-face {
+  font-family: test;
+  src: url(/fonts/Ahem.ttf);
+  ascent-override: 80%;
+  descent-override: 20%;
+}
+@font-face {
+  font-family: fallback;
+  src: url(/fonts/GentiumPlus-R.woff);
+  ascent-override: 80%;
+  descent-override: 20%;
+}
+#test, #ref {
+  font: 24px/2 fallback, serif;
+}
+span {
+  font-family: test;
+}

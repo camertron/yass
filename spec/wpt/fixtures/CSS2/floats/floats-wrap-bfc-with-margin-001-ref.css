@@ -1,0 +1,33 @@
+
+.group {
+  width: 500px;
+  border: 1px solid black;
+}
+.container {
+  display: inline-flex;
+  align-content: start;
+  vertical-align: top;
+  width: 30px;
+  height: 40px;
+  /* This border and margin are just cosmetic, to avoid overlap between
+   * adjacent containers within a row. */
+  border: 1px solid gray;
+  margin-left: 30px;
+}
+
+.float {
+  width: 7px;
+  height: 8px;
+  background: fuchsia;
+  border: 1px solid purple;
+  margin: 1px 3px 1px 2px;
+}
+.bfc {
+  display: flow-root;
+  background: aqua;
+  height: 15px;
+  border: 1px solid blue;
+  /* We use "flex: 1" (on a flex item) to mock up the fill-available-space
+   * block-layout behavior in the testcase. */
+  flex: 1 auto;
+}

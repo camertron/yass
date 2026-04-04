@@ -1,0 +1,13 @@
+
+div {
+  font: 15px Ahem;
+  width: 35ch;
+  margin: 1em;
+}
+.test {
+  text-wrap: balance;
+  color: green;
+}
+.ref {
+  color: blue;
+}

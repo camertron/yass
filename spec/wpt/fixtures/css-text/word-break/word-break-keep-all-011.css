@@ -1,0 +1,14 @@
+
+p {
+  width: min-content;
+  border: 1px solid #000000;
+}
+
+.normal {
+  word-break: normal;
+}
+
+.keep-all {
+  word-break: keep-all;
+}
+

@@ -1,0 +1,14 @@
+
+.grid {
+    display: grid;
+    grid-template-rows: repeat(5, 30px);
+    grid-template-columns: 100px;
+    background: gray;
+    width: 200px;
+    height: 360px;
+    font: 15px/1 Ahem;
+}
+
+.grid > div {
+    height: 25%;
+}

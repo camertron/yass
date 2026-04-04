@@ -1,0 +1,8 @@
+
+    body { border-collapse: collapse; }
+    .cell {
+      display: table-cell;
+      background-color: yellow;
+      border: 3px solid blue;
+    }
+  

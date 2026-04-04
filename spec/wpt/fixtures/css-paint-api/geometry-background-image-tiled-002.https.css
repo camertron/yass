@@ -1,0 +1,11 @@
+
+html, body { margin: 0; padding: 0; }
+.container {
+  width: 100px;
+  height: 100px;
+  background: paint(geometry) center right/50% 20% no-repeat;
+}
+
+#canvas-geometry {
+  background-image: paint(geometry);
+}

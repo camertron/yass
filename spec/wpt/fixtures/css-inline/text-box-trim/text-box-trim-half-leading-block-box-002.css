@@ -1,0 +1,8 @@
+
+.div-parent {
+  outline: 1px solid orange;
+  font: 20px/3 Ahem;
+  writing-mode: vertical-lr;
+  text-box-trim: trim-start;
+  text-box-edge: text;
+}

@@ -1,0 +1,22 @@
+
+        my-host {
+            display: block;
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+        my-host::before {
+            display: block;
+            content: "";
+            width: 100px;
+            height: 25px;
+            background: green;
+        }
+        my-host::after {
+            display: block;
+            content: "";
+            width: 100px;
+            height: 25px;
+            background: green;
+        }
+    

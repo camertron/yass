@@ -1,0 +1,20 @@
+
+  @font-face {
+    font-family: fwf;
+    src: url(support/fonts/FontWithFancyFeatures.otf);
+  }
+  .test {
+	  font-family: fwf;
+	  font-size: 2.4em;
+	  line-height: 1.1;
+    color: purple;
+  }
+  .inner {
+	  font-variant: normal;
+  }
+  .outer {
+    font-feature-settings: "liga" on, "clig" on, "calt" on, "hlig" on, "dlig" on, "onum" on, "smcp" on, "jp90" on;
+  }
+  .child {
+    color: green;
+  }

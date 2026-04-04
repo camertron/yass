@@ -1,0 +1,10 @@
+
+div {
+    width: 300px;
+    height: 300px;
+    top: -1000px;
+    left: -1000px;
+    background-color: red;
+    position: relative;
+    filter: drop-shadow(1000px 1000px 0 green);
+}

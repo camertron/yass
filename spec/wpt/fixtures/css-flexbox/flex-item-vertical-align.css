@@ -1,0 +1,10 @@
+
+.flexbox {
+  background-color: lightgrey;
+}
+#item1 {
+  vertical-align: 10px;
+}
+#item3 {
+  vertical-align: 30px;
+}

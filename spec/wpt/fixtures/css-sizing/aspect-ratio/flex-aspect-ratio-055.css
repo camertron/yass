@@ -1,0 +1,10 @@
+
+.flex {
+  display: inline-flex;
+  border: solid 25px green;
+}
+.flex img {
+  height: 50px;
+  flex: 0 0 0px;
+  aspect-ratio: 1 / 1;
+}

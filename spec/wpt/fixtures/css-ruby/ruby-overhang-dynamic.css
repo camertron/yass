@@ -1,0 +1,10 @@
+
+  .reftest-wait .overhangNone {
+    ruby-overhang: none;
+  }
+  div {
+    font: 16px/5 Ahem;
+  }
+  ruby, rt {
+    color: transparent;
+  }

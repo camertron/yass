@@ -1,0 +1,7 @@
+
+  .halfsquare {
+    margin: -10px; /* Cover the border-spacing. */
+    width: 50px;
+    height: 100px;
+    background: green;
+  }

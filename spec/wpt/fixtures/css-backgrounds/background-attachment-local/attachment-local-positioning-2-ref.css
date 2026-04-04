@@ -1,0 +1,16 @@
+
+#outer {
+  border: solid;
+  background: url(aqua-yellow-32x32.png) local no-repeat 178px 278px;
+  overflow: hidden;
+  width: 200px;
+  height: 300px;
+}
+div div {
+  width: 250px;
+  height: 370px;
+}
+p {
+  margin: 0 0 0 -40px;
+  padding-top: 40px;
+}

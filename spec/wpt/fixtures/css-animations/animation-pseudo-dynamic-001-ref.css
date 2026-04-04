@@ -1,0 +1,11 @@
+
+.test {
+  display: flex;
+}
+.test::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}

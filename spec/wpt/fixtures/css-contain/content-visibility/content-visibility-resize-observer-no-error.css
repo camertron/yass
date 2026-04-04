@@ -1,0 +1,7 @@
+
+div {
+  contain-intrinsic-size: auto 200px;
+  content-visibility: auto;
+  min-height: 50px;
+  background: blue;
+}

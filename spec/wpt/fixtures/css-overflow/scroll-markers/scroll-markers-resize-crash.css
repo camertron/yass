@@ -1,0 +1,19 @@
+
+  .carousel {
+    overflow: auto;
+    width: 501px;
+    scroll-marker-group: after;
+
+    &::scroll-marker-group {
+      display: block;
+    }
+  }
+
+  .item {
+    width: 1000px;
+    height: 285px;
+
+    &::scroll-marker {
+      content: "x";
+    }
+  }

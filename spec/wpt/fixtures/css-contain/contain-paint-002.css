@@ -1,0 +1,9 @@
+
+span {
+  contain: paint;
+  width: 0; /* Because if the test fails, the span may get blockified, and which would make wide enough to hold the PASS */
+}
+span::after {
+  content: "PASS";
+  position: absolute;
+}

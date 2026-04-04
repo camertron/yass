@@ -1,0 +1,24 @@
+
+      ::slotted(.outer_anchored), .inner_anchored {
+        background: coral;
+        position: absolute;
+        top: anchor(bottom, 1px);
+        position-anchor: --a;
+        width: 5px;
+        height: 5px;
+      }
+      .anchor {
+        background: skyblue;
+        height: 10px;
+        anchor-name: --a;
+      }
+      .cb {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+      }
+      .scope {
+        anchor-scope: --a;
+      }
+    

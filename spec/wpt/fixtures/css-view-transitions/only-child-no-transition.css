@@ -1,0 +1,8 @@
+
+::view-transition:only-child,
+::view-transition-group(*):only-child,
+::view-transition-image-pair(*):only-child,
+::view-transition-old(*):only-child,
+::view-transition-new(*):only-child {
+  background-color: blue;
+}

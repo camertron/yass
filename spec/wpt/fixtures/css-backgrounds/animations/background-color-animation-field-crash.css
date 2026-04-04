@@ -1,0 +1,10 @@
+
+@keyframes bgcolor {
+  0% { background: Field; }
+  100% { background: green; }
+}
+.target {
+  animation: bgcolor 50ms;
+  width: 100px;
+  height: 100px;
+}

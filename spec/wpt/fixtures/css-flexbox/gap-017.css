@@ -1,0 +1,22 @@
+
+.button {
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  padding: 0;
+  background: green;
+  width: 100px;
+  row-gap: 20px;
+}
+
+.item {
+  height: 40px;
+}
+
+#reference-overlapped-red {
+  position: absolute;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  z-index: -1;
+}

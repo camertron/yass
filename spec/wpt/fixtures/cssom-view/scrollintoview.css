@@ -1,0 +1,7 @@
+
+body.running { margin: 0; padding: 4000px; overflow: hidden }
+body.running #testDiv {
+  width: 200px;
+  height: 200px;
+  background-color: lightgreen;
+}

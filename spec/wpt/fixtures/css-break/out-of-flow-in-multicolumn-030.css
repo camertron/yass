@@ -1,0 +1,24 @@
+
+  .multicol {
+    column-count: 2;
+    column-fill: auto;
+    column-gap: 0px;
+    height: 100px;
+    width: 100px;
+    margin-left: -200px;
+  }
+  .rel {
+    position: relative;
+  }
+  .abs {
+    position: absolute;
+    width: 50px;
+    height: 200px;
+    background: red;
+  }
+  .fixed {
+    position: fixed;
+    width: 50px;
+    height: 200px;
+    background: green;
+  }

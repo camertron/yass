@@ -1,0 +1,17 @@
+
+.cb {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  outline: 1px dashed black;
+}
+
+.target {
+  writing-mode: vertical-lr;
+  position: absolute;
+  background: green;
+  width: calc(100% - 100px);
+  height: calc(100% - 100px);
+  inset: 100px;
+  margin: auto;
+}

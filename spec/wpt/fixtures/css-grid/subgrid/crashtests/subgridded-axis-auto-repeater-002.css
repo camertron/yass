@@ -1,0 +1,7 @@
+
+    #grid {
+      display: grid;
+      position: relative;
+      grid-template-columns: subgrid repeat(auto-fill, [b]);
+    }
+  

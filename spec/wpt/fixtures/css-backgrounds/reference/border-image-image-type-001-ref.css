@@ -1,0 +1,10 @@
+
+  div
+    {
+      border: 50px double red;
+      border-image-slice: 20 15 10 5;
+      border-image-source: url("../support/9-colored-areas-40-30-20-10.png");
+      height: 100px;
+      width: 100px;
+    }
+  

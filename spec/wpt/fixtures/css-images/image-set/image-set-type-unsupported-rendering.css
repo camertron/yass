@@ -1,0 +1,7 @@
+
+  #test {
+    background-image: url("/images/red.png");
+    background-image: image-set(url("/images/green.png") 1x type('image/unsupported'));
+    width: 100px;
+    height: 100px;
+  }

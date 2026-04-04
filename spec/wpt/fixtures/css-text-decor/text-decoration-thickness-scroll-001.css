@@ -1,0 +1,24 @@
+
+        #box{
+            font: 20px/1 Ahem;
+            border: black solid;
+            overflow-y: auto;
+            height: 5em;
+            width: 7em;
+            background-color: red;
+        }
+        /*
+         * Testing to make sure that increasing the width of
+         * of the text decoration does not create scrollable
+         * overflow
+         */
+        #text{
+            position: relative;
+            bottom: 1em;
+            color: transparent;
+            text-decoration: green underline;
+            text-decoration-skip-ink: none;
+            text-decoration-thickness: 8em;
+            text-underline-position: from-font;
+        }
+    

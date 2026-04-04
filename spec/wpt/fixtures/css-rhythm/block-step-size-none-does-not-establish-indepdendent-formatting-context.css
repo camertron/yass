@@ -1,0 +1,15 @@
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+.floating {
+    position: relative;
+    z-index: -1;
+    float: left;
+    background-color: red;
+}
+.block-step-size {
+    block-step-size: none;
+}

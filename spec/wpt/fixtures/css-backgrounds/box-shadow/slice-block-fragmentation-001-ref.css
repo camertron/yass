@@ -1,0 +1,13 @@
+
+  .piece {
+    position: absolute;
+    left: 5px;
+    top: 0;
+    width: 95px;
+    height: 100px;
+    border: solid;
+  }
+  .start {
+    top: 5px;
+    height: 95px;
+  }

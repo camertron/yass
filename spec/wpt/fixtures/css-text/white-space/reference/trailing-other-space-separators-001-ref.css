@@ -1,0 +1,9 @@
+
+div {
+  line-height: 1;
+  color: transparent;
+  background: green;
+  float: left;
+  clear: left;
+  white-space: pre;
+}

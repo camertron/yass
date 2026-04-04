@@ -1,0 +1,16 @@
+
+div {
+  /* This is not a conditional rule, and thus cannot be in nesting context. */
+  @font-face {
+    &.a { font-size: 10px; }
+  }
+
+  @media screen {
+    &.a { color: red; }
+
+    /* Same. */
+    @font-face {
+      &.a { font-size: 10px; }
+    }
+  }
+}

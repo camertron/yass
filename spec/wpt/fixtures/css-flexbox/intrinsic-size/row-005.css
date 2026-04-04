@@ -1,0 +1,29 @@
+
+  .zero-width {
+    width: 0px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+
+  .floating-flexbox {
+    display: flex;
+    outline: 5px solid blue;
+    height: 100px;
+    float: left;
+  }
+
+  .floating-flexbox>div:nth-child(1) {
+    background: yellow;
+  }
+
+  .floating-flexbox>div:nth-child(2) {
+    background: orange;
+  }
+
+  .floating-flexbox>div:nth-child(3) {
+    background: lightblue;
+  }
+
+  .floating-flexbox>div>div {
+    width: 100px;
+  }

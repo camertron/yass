@@ -1,0 +1,10 @@
+
+  #parent1 { color: grey; }
+  #parent1:has(:target) { color: green; }
+
+  #parent2 { color: blue; }
+  #parent2:has(:not(:target)) { color: grey; }
+  #parent2:has(:target) { color: green; }
+
+  #parent3 { color: green; }
+  #parent3:not(:has(:target)) { color: grey; }

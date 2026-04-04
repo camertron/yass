@@ -1,0 +1,29 @@
+
+        #container {
+            position: relative;
+            margin-left: 25px;
+        }
+        #test-container {
+            width: 200px;
+            height: 200px;
+            font: 25px/1 Ahem;
+            background-color: red;
+            color: green;
+            text-align: right;
+        }
+        #test-shape {
+            float: right;
+            width: 200px;
+            height: 200px;
+            shape-margin: 10px;
+            shape-outside: inset(60px 10px 60px 110px round 70px 0px 0px 10px / 10px 0px 0px 20px);
+        }
+        #static-shape {
+            position: absolute;
+            left: 100px;
+            width: 100px;
+            height: 100px;
+            top: 50px;
+            background-color: green;
+        }
+    

@@ -1,0 +1,29 @@
+
+  @page {
+    font-family:monospace;
+    font-size: 0.7em;
+
+    /* This results in a page border box size that's divisible by 3, so that the
+       three boxes at a page edge get the exact same size. */
+    size: 550px 400px;
+
+    margin: 50px;
+    color: blue;
+
+    @top-left-corner { content: "A"; }
+    @top-left { content: "B"; }
+    @top-center { content: "C"; }
+    @top-right { content: "D"; }
+    @top-right-corner { content: "E"; }
+    @right-top { content: "F"; }
+    @right-middle { content: "G"; }
+    @right-bottom { content: "H"; }
+    @bottom-right-corner { content: "I"; }
+    @bottom-right { content: "J"; }
+    @bottom-center { content: "K"; }
+    @bottom-left { content: "L"; }
+    @bottom-left-corner { content: "M"; }
+    @left-bottom { content: "N"; }
+    @left-middle { content: "O"; }
+    @left-top { content: "P"; }
+  }

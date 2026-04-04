@@ -1,0 +1,7 @@
+
+  #test {
+    font-weight: 100;
+    transition-duration: 2s;
+    transition-property: font-weight;
+    transition-timing-function: linear;
+  }

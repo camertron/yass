@@ -1,0 +1,8 @@
+
+        .container {
+            border: double red 1em;
+            border-image: url("support/border.png") 27 round stretch;
+            height:77px;
+            width:192px;
+        }
+    

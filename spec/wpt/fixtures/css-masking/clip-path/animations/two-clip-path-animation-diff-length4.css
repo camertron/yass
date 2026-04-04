@@ -1,0 +1,21 @@
+
+  #container {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation: clippath2 0.5s;
+  }
+
+  @keyframes clippath2 {
+    0% {
+      clip-path: inset(10px 10px);
+    }
+
+    1% {
+      clip-path: inset(10px 10px);
+    }
+
+    100% {
+      clip-path: inset(40px 40px);
+    }
+  }

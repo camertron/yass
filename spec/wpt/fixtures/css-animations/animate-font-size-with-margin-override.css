@@ -1,0 +1,10 @@
+
+@keyframes anim {
+    from, to { font-size: 30px; }
+}
+h2 {
+    margin: 0;
+    background-color: lightblue;
+    animation: anim both;
+}
+div { border: 2px solid green; }

@@ -1,0 +1,7 @@
+
+div {
+  text-autospace: normal;
+  font-size: 22px;
+  font-family: sans-serif;
+  text-orientation: upright; /* should NOT affect auto-spacing in horizontal mode */
+}

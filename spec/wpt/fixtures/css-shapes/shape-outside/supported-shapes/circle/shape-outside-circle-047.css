@@ -1,0 +1,25 @@
+
+  .container {
+    direction: rtl;
+    width: 200px;
+    line-height: 0;
+  }
+
+  .shape {
+    float: right;
+    shape-outside: circle(100%);
+    clip-path: circle(100%); /* Rendered as a rectangle */
+    box-sizing: content-box;
+    height: 40px;
+    width: 40px;
+    padding: 20px;
+    border: 20px solid lightgreen;
+    background-color: orange;
+  }
+
+  .box {
+    display: inline-block;
+    width: 60px;
+    background-color: blue;
+  }
+  

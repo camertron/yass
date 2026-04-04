@@ -1,0 +1,11 @@
+
+    .group {
+      display: flex;
+      margin-bottom: 2px;
+      gap: 1em;
+    }
+    .group > div {
+      height: 1em;
+      width: 50%;
+    }
+  

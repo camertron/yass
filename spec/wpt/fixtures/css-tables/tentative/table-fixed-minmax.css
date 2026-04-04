@@ -1,0 +1,10 @@
+
+  main table {
+   table-layout:fixed;
+   width: 100%;
+   background: #ddd;
+   border-spacing: 0;
+  }
+  main td {
+    padding: 0;
+  }

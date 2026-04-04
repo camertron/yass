@@ -1,0 +1,8 @@
+
+div {
+  text-decoration: underline;
+  text-decoration-thickness: 10px;
+}
+span {
+  text-decoration-thickness: 1px;
+}

@@ -1,0 +1,6 @@
+
+  .target {
+    transition: --foo 10s step-end;
+    transition-behavior: allow-discrete;
+    --foo: bar;
+  }

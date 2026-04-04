@@ -1,0 +1,4 @@
+
+  #t1::before { content: "F" }
+  #t2::before { content: "First-letter" }
+  div::first-letter { color: green; }

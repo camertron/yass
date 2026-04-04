@@ -1,0 +1,7 @@
+
+#target {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  background-image: conic-gradient(green 0% 180deg, blue 180deg);
+}

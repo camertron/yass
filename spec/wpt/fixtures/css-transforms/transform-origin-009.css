@@ -1,0 +1,25 @@
+
+  .div1 {
+    height: 150px;
+    position: absolute;
+    width: 150px;
+  }
+  .div2 {
+    background-color: gray;
+  }
+  #test {
+    background-color: red;
+    height: 50px;
+    margin: 50px 0px 50px 100px;
+    transform: rotate(180deg);
+    transform-origin: 0% center;
+    width: 50px;
+  }
+  #ref {
+    background-color: green;
+    height: 50px;
+    margin: 50px 0px 50px 100px;
+    transform: rotate(180deg);
+    transform-origin: 0% 50%;
+    width: 50px;
+  }

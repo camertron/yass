@@ -1,0 +1,4 @@
+
+  #root { quotes: "A" "B"; }
+  #root.xy-quotes { quotes: "'X" "'Y"; }
+  #root::first-letter { color: green; }

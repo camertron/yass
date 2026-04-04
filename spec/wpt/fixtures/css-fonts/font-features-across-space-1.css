@@ -1,0 +1,15 @@
+
+@font-face {
+  font-family: ligsym;
+  src: url(support/fonts/LigatureSymbolsWithSpaces.woff);
+}
+
+td {
+  padding: 10px 5px;
+}
+
+.test {
+  font-family: ligsym;
+  font-size: 150%;
+  font-feature-settings: "liga" on;
+}

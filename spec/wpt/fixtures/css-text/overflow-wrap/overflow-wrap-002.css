@@ -1,0 +1,14 @@
+
+  #ref {
+    border: 5px solid orange;
+    font: 20px/1 Ahem;
+    overflow-wrap: break-word;
+    width: 200px;
+  }
+  #test {
+    border: 5px solid blue;
+    font: 20px/1 Ahem;
+    overflow-wrap: break-word;
+    white-space: nowrap;
+    width: 200px;
+  }

@@ -1,0 +1,20 @@
+
+  #anchor {
+    anchor-name: --anchor;
+    background: green;
+    width: 100px;
+    height: 100vh;
+  }
+  #anchored {
+    background: green;
+    top: anchor(--anchor bottom);
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    position-try: --bottom;
+  }
+
+  @position-try --bottom {
+    top: auto;
+    bottom: 0px;
+  }

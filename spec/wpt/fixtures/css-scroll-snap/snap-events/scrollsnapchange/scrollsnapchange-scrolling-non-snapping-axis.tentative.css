@@ -1,0 +1,24 @@
+
+      .scroller {
+        overflow: scroll;
+        width: 200px;
+        height: 200px;
+        border: solid 1px black;
+        scroll-snap-type: y mandatory;
+        position: absolute;
+        resize: both;
+      }
+      .snaparea {
+        scroll-snap-align: start;
+        height: 50px;
+        width: 50px;
+        color: white;
+        margin-top: 100px;
+        background-color: purple;
+      }
+      .space {
+        height: 300vh;
+        width: 300vw;
+        position: absolute;
+      }
+    

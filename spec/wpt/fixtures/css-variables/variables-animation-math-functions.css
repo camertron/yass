@@ -1,0 +1,10 @@
+
+    :root {
+      font-size: 10px;
+    }
+    @property --my-angle {
+      syntax: "<angle>";
+      initial-value: 0deg;
+      inherits: false;
+    }
+  

@@ -1,0 +1,15 @@
+
+
+.container {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(0, 255, 0);
+}
+
+.container:empty {
+  background-color: rgb(255, 0, 0);
+  animation: anim 1s;
+}
+
+@keyframes anim { }
+

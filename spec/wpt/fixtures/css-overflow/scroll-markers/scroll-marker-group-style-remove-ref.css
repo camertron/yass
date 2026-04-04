@@ -1,0 +1,11 @@
+
+  #scroller {
+    overflow: hidden;
+    height: 100px;
+    width: 100px;
+  }
+
+  .item {
+    height: 100px;
+    width: 100px;
+  }

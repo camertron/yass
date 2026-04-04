@@ -1,0 +1,18 @@
+
+  @keyframes anim {
+    from { width: 200px; }
+    to { width: 100px; }
+  }
+  #container {
+    container-type: inline-size;
+    animation: anim 1s linear paused;
+  }
+  #target {
+    background-color: green;
+  }
+
+  @container (width: 200px) {
+    #target {
+      background-color: blue;
+    }
+  }

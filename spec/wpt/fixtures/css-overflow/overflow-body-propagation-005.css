@@ -1,0 +1,8 @@
+
+  :root {
+    overscroll-behavior-y: contain;
+  }
+  body {
+    overflow: scroll;
+    margin-top: 100px;
+  }

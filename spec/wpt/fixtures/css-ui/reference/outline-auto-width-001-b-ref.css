@@ -1,0 +1,11 @@
+
+div {
+    outline-style: solid;
+    outline-width: 1em;
+    width: 100px;
+    height: 100px;
+    margin: 2em;
+}
+div + div {
+    outline-style: none;
+}

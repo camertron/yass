@@ -1,0 +1,4 @@
+
+body { margin: 0 }
+body > div { float: left; height: 100px; width: 3px; }
+div[style] { background: blue; position: relative; height: 10px; }

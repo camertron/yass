@@ -1,0 +1,19 @@
+
+#table-cell {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+#target {
+  position: absolute;
+  translate: 0 -50px;
+
+  width: 100px;
+  height: 100px;
+  background: green;
+}

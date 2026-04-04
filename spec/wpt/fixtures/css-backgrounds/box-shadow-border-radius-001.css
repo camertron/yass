@@ -1,0 +1,23 @@
+
+  div
+    {
+      background-color: black;
+      border-radius: 50%;
+      box-shadow: black 0 0 0 149px;
+      height: 2px;
+      margin: 157px 149px 0px;
+      width: 2px;
+    }
+
+  /*
+
+      149px
+    +
+        2px
+    +
+      149px
+    ========
+      300px
+
+  */
+  

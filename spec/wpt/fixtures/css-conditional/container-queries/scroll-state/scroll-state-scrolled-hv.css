@@ -1,0 +1,33 @@
+
+  #scroller {
+    width: 200px;
+    height: 200px;
+    container-type: scroll-state;
+    overflow: scroll;
+  }
+  #filler {
+    height: 600px;
+    width: 600px;
+  }
+  #target {
+    --top: no;
+    --bottom: no;
+    --left: no;
+    --right: no;
+    --none: no;
+    @container scroll-state(scrolled: top) {
+      --top: yes;
+    }
+    @container scroll-state(scrolled: bottom) {
+      --bottom: yes;
+    }
+    @container scroll-state(scrolled: left) {
+      --left: yes;
+    }
+    @container scroll-state(scrolled: right) {
+      --right: yes;
+    }
+    @container scroll-state(scrolled: none) {
+      --none: yes;
+    }
+  }

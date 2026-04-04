@@ -1,0 +1,14 @@
+
+  #background {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+  }
+  #rect {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    clip-path: rect(50px 0 0 50px);
+  }

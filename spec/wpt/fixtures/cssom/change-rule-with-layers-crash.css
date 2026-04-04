@@ -1,0 +1,8 @@
+
+.x {
+  transition: color 0.5s;
+  @layer warning {
+    :first-child { }
+    :last-child { }
+  }
+}

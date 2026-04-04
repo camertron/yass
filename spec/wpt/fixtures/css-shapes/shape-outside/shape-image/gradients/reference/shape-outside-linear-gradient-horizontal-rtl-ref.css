@@ -1,0 +1,17 @@
+
+        body {
+            overflow: hidden;
+        }
+        div {
+            width: 50px;
+            height: 200px;
+            position: relative;
+        }
+        .non-gradient-box {
+            background-color: green;
+        }
+        .gradient-box {
+            width: 100px;
+            background: linear-gradient(to right, green 50%, transparent 50%);
+        }
+    

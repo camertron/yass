@@ -1,0 +1,14 @@
+
+      .parent {
+        translate: 100px 200px 300px;
+      }
+      .target {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        translate: 10px;
+      }
+      .expected {
+        background-color: green;
+      }
+    

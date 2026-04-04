@@ -1,0 +1,8 @@
+
+  svg {
+    width: 100px;
+    height: 100px;
+    overflow: visible;
+    contain: paint;
+    overflow-clip-margin: 10px;
+  }

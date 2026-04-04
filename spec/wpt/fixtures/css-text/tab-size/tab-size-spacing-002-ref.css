@@ -1,0 +1,5 @@
+
+div {
+  font-family: monospace; /* so we can compare tab with a count of preserved spaces */
+  white-space: pre;
+}

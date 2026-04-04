@@ -1,0 +1,8 @@
+
+      @import 'resources/imported-sheet-with-mixin.css' (width < 10000px);
+      @import 'resources/imported-sheet-with-red-mixin.css' (width > 10000px);
+      div {
+        color: red;
+        @apply --m1;
+      }
+    

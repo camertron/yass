@@ -1,0 +1,17 @@
+
+scroller {
+  display: inline-block;
+  overflow: auto;
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  line-height: 1;
+}
+.vlr { writing-mode: vertical-lr; }
+.vrl { writing-mode: vertical-rl; }
+.htb > .block-start { padding-top: 200px; }
+.htb > .block-end { padding-bottom: 200px; }
+.vlr > .block-start { padding-left: 200px; }
+.vlr > .block-end { padding-right: 200px; }
+.vrl > .block-start { padding-right: 200px; }
+.vrl > .block-end { padding-left: 200px; }

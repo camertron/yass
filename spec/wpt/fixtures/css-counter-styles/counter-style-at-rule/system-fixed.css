@@ -1,0 +1,11 @@
+
+  @counter-style a {
+    system: fixed;
+    symbols: \25F0  \25F1  \25F2  \25F3;
+    suffix: ':';
+  }
+  @counter-style b {
+    system: fixed -1;
+    symbols: \25F4  \25F5  \25F6  \25F7;
+    suffix: ':';
+  }

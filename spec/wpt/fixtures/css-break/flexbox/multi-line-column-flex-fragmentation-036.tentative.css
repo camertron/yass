@@ -1,0 +1,10 @@
+
+  #flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 75px;
+  }
+  #flex > div {
+    width: 50%;
+  }

@@ -1,0 +1,15 @@
+
+  article {
+    width: max-content;
+    border: 1px solid black;
+    column-gap: 10px;
+  }
+  .block {
+    width: 100px;
+    background-color: yellow;
+  }
+  .spanner {
+    column-span: all;
+    background-color: lime;
+  }
+  

@@ -1,0 +1,16 @@
+
+  :root {
+    print-color-adjust: exact;
+  }
+  body {
+    margin: 0;
+  }
+  @page {
+    size: 400px 300px;
+    margin: 0;
+  }
+  .borders {
+    border: solid black;
+    border-width: 10px 0;
+    border-bottom-color: gray;
+  }

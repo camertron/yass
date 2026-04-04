@@ -1,0 +1,8 @@
+
+div {
+  font-family: monospace;
+  width: 10ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: pre;
+}

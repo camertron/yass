@@ -1,0 +1,23 @@
+
+#cb {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+}
+#test {
+	position:absolute;
+	box-sizing: border-box;
+	margin-right: 5px;
+	margin-left: 25px;
+	margin-bottom: 5px;
+	margin-top: auto; /* should resolve to 25px, but would resolve to -25px if the wrong interpretation of width is used in CSS2.1 10.6.4 */
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	width: 70px;
+	height: 70px;
+	background:green;
+}

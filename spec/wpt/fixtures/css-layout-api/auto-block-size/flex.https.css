@@ -1,0 +1,26 @@
+
+.flex {
+  width: 300px;
+  display: flex;
+  border: solid 2px;
+}
+
+.custom {
+  background: red;
+  box-sizing: border-box;
+  border: solid 2px;
+  height: 100px;
+  writing-mode: vertical-rl;
+}
+
+@supports (display: layout(block-size-100)) {
+  .custom-100 {
+    display: layout(block-size-100);
+    background: green;
+  }
+  .custom-50 {
+    display: layout(block-size-50);
+    background: green;
+    flex: 1;
+  }
+}

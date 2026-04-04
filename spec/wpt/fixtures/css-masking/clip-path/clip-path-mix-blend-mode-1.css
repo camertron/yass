@@ -1,0 +1,18 @@
+
+      div {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+      }
+
+      div.foreground {
+        background-color: rgb(255,0,255);
+        clip-path: url(#top_left);
+        z-index: 100;
+        mix-blend-mode: multiply;
+      }
+
+      div.background {
+        background-color: rgb(0,255,255);
+      }
+    

@@ -1,0 +1,14 @@
+
+    html
+      {
+        background-image: url("swatch-green.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        writing-mode: vertical-rl;
+
+        border-left: white solid 20px;
+        margin-right: 50px;
+        padding-right: 50px;
+        width: 50px;
+      }
+  

@@ -1,0 +1,31 @@
+
+section.test {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: Arial;
+  font-family: Ahem;
+}
+section.test > div {
+  background: blue;
+  margin-bottom: 1em;
+}
+.filler {
+  display: inline-block;
+  background: cyan;
+  height: 3em;
+  width: 1em;
+}
+.target {
+  display: inline-block;
+  background: orange;
+  width: 1em;
+  height: 1em;
+}
+div.top, section.top .target { vertical-align: top; }
+div.text-top, section.text-top .target { vertical-align: text-top; }
+div.text-bottom, section.text-bottom .target { vertical-align: text-bottom; }
+div.bottom, section.bottom .target { vertical-align: bottom; }
+.test .fail {
+  outline: red solid 5px;
+}

@@ -1,0 +1,16 @@
+
+    .circle {
+        float: left;
+        width: 100px;
+        height: 100px;
+    }
+    #circle1 {
+        shape-outside: circle(auto);
+    }
+    #circle2 {
+        shape-outside: circle(inherit);
+    }
+    #circle3 {
+        shape-outside: circle(#FFFFFF);
+    }
+    

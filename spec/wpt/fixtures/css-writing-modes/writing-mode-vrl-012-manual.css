@@ -1,0 +1,6 @@
+
+.test, .ref { font-size: 24px; float: left; margin-right: 30px; height: 200px; color: #ccc; }
+span[lang=en] { color: black; }
+
+
+.test { writing-mode: vertical-rl; }

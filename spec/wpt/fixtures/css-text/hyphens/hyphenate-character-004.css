@@ -1,0 +1,7 @@
+
+div {
+  font: 16px monospace;
+  width: 6.5ch;  /* wide enough that the last potential break in "im-ple-men-ta-tion" should NOT be used */
+  hyphens: manual;
+  hyphenate-character: "/-/";
+}

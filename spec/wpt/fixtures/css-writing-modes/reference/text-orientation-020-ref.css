@@ -1,0 +1,14 @@
+
+.ref ol {
+  text-orientation: upright;
+}
+.ref span {
+  text-orientation: mixed;
+}
+figure {
+  writing-mode: vertical-rl;
+  border: solid 1px black;
+  padding: 1em 0 1ch;
+  margin: 0 1ch;
+  float: left;
+}

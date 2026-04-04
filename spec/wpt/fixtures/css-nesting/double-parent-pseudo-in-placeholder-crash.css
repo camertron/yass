@@ -1,0 +1,6 @@
+
+::placeholder { & { & {} } }
+::placeholder, .a { & { & {} } }
+.a, ::placeholder { & { & {} } }
+.a, ::placeholder { &, .b { & {} } }
+.a, ::placeholder { .b, & { & {} } }

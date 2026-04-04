@@ -1,0 +1,16 @@
+
+  div
+    {
+      color: green;
+      contain: paint;
+      font-family: monospace;
+      font-size: 100px;
+      width: 4ch;
+    }
+
+  span
+    {
+      background-color: red;
+      color: yellow;
+    }
+  

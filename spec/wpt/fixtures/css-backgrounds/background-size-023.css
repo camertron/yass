@@ -1,0 +1,27 @@
+
+        #ref-overlapped-red {
+            background-color: red;
+            left: 5px;
+            height: 150px;
+            position: relative;
+            top: 5px;
+            width: 150px;
+        }
+        #test-overlapping-img {
+            background-clip: padding-box;
+            background-image: url(support/100x100-blue-and-orange.png);
+            background-size: 50% auto;
+            border: transparent dotted 5px;
+            bottom: 150px;
+            height: 100px;
+            padding: 25px;
+            position: relative;
+            width: 100px;
+
+            /*
+            Background painting area is 150px wide by 150px tall.
+            So, the image should be scaled to 75px by 75px (near),
+            and repeated once in both horizontally and vertically.
+            */
+        }
+    

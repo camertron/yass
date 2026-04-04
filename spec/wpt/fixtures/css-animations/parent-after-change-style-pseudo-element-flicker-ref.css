@@ -1,0 +1,14 @@
+
+div {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.child:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: black;
+}
+

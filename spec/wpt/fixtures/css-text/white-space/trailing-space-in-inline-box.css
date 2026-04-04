@@ -1,0 +1,12 @@
+
+.target {
+  font-family: Consolas, 'Courier New', Courier, monospace;
+  font-size: 20px;
+  width: 5ch;
+  white-space: pre-wrap;
+  overflow: auto visible;
+  border: 1px solid blue;
+}
+.not-culled span {
+  background: orange;
+}

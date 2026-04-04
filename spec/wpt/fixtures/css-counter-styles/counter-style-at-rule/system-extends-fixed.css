@@ -1,0 +1,8 @@
+
+  @counter-style a {
+      system: fixed 3;
+      symbols: "Y" "E" "S";
+  }
+  @counter-style b {
+      system: extends a;
+  }

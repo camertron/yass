@@ -1,0 +1,15 @@
+
+#scroll {
+  display: grid;
+  width: 200px;
+  height: 100px;
+  overflow: auto;
+  background: red;
+}
+.sticky {
+  position: sticky;
+  width: 100px;
+  height: 100px;
+  left: 100%;
+  background: green;
+}

@@ -1,0 +1,21 @@
+
+  .scroller {
+    overflow: auto;
+    height: 130px;
+    width: 100px;
+  }
+
+  .scroller div {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin: 5px;
+  }
+
+  a {
+    color: red;
+  }
+
+  #target-current {
+    color: green;
+  }

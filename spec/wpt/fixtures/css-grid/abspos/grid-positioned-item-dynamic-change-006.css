@@ -1,0 +1,11 @@
+
+.absolute {
+  background: green;
+  position: absolute;
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}

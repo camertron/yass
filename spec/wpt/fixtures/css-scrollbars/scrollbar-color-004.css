@@ -1,0 +1,24 @@
+
+  .container {
+    overflow: auto;
+    height: 200px;
+    width: 200px;
+    margin: 1px;
+    padding: 0px;
+    border: none;
+    background: deepskyblue;
+  }
+
+  .content {
+    height: 300px;
+    width: 100%;
+    background: lightsalmon;
+  }
+
+  body {
+    scrollbar-color: yellow blue;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }

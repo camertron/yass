@@ -1,0 +1,7 @@
+
+
+body { height: 2000px; margin: 0 10px; }
+#before, #after { height: 100px; }
+#before { margin-bottom: 100px; }
+#container { line-height: 100px; vertical-align: top; }
+

@@ -1,0 +1,17 @@
+
+.parent {
+  text-shadow: 30px 10px 30px orange;
+}
+
+.target {
+  display: inline-block;
+  font-size: 60pt;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  color: green;
+  text-shadow: 10px 30px 10px orange;
+}
+
+.expected {
+  margin-right: 40px;
+}

@@ -1,0 +1,22 @@
+
+	@supports (padding: 0) {
+		dfn { width:0; }
+		@supports (width: 0) {
+			br { height:0; }
+		}
+		ol { display:none; }
+	}
+	@media all {
+		@supports (padding: 0) {
+			@keyframes foo {
+				0% { top: 0; left: 0; }
+				100% { top: 100px; left: 100px; }
+			}
+		}
+	}
+	@supports (border: black) and (padding: 0) and (width: 0) {
+		dfn { width:0; }
+	}
+	@supports (border: black) or (padding: 0) or (width: 0) {
+		dfn { width:0; }
+	}

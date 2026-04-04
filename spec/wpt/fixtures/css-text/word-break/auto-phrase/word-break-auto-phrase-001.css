@@ -1,0 +1,15 @@
+
+div {
+  font-size: 2em;
+  border: solid black;
+  margin: 5px;
+  width: min-content; /*not 0, to avoid falling into overflow fallback behavior */
+  word-break: normal
+}
+#test {
+  word-break: auto-phrase;
+}
+#ref {
+  border-color: blue;
+  word-break: keep-all;
+}

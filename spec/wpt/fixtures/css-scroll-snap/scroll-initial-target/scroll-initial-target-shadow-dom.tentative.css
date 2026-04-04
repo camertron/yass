@@ -1,0 +1,44 @@
+
+      .space {
+        width: 50px;
+        height: 500px;
+      }
+      .scroller {
+        width: 100px;
+        height: 100px;
+        overflow: scroll;
+        border: solid 2px;
+      }
+      .purpleborder {
+        border: solid 2px purple;
+      }
+      .target {
+        scroll-initial-target: nearest;
+        width: 50px;
+        height: 50px;
+        background-color: green
+      }
+      #wrapper {
+        /* Hide everything initially to ensure that the test sees the scroll */
+        /* events from the scrolls to the scroll-initial-targets.            */
+        display: none;
+      }
+    
+
+            .space {
+              width: 50px;
+              height: 500px;
+            }
+            .scroller {
+              width: 100px;
+              height: 100px;
+              overflow: scroll;
+              border: solid 2px red;
+            }
+            .target {
+              scroll-initial-target: nearest;
+              width: 50px;
+              height: 50px;
+              background-color: green
+            }
+          

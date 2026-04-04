@@ -1,0 +1,16 @@
+
+  @page {
+    size: 293px;
+    margin: 5px;
+  }
+  :root {
+    print-color-adjust: exact;
+  }
+  body {
+    margin: 0;
+    background: yellow;
+  }
+  div {
+    min-height: 10px;
+    break-after: page;
+  }

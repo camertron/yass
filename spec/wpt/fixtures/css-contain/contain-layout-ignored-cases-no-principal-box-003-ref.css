@@ -1,0 +1,17 @@
+
+  #a {
+    display: contents;
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 50px;
+  }
+  #b {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: green;
+  }
+  

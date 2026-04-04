@@ -1,0 +1,25 @@
+
+  #target {
+    background-color: teal;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    view-transition-name: target;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  ::view-transition-group(*) {
+    animation: unset;
+  }
+
+  ::view-transition-old(target) {
+    animation: -ua-view-transition-fade-out 300s;
+  }
+
+  ::view-transition-new(target) {
+    animation: -ua-view-transition-fade-in 300s;
+  }
+

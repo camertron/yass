@@ -1,0 +1,40 @@
+
+.grid {
+    display: grid;
+    background: gray;
+    grid-template-columns: 100px 100px 100px;
+    width: 340px;
+    gap: 20px;
+    padding: 20px;
+    align-items: start;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.grid-auto-item-1 {
+    background: lightskyblue;
+    padding: 10px;
+}
+
+.grid-auto-item-2 {
+    background: lightcoral;
+    padding: 10px;
+}
+
+.grid-auto-item-3 {
+    background: lightgreen;
+    padding: 10px;
+}
+
+.grid-auto-item-4 {
+    background: lightpink;
+    padding: 10px;
+    width: 200%;
+    transform: translateX(-120px);
+}

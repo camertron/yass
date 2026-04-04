@@ -1,0 +1,12 @@
+
+  #column {
+    column-count: 3;
+    column-rule: 6px solid;
+    width: 400px;
+    outline: 1px solid black;
+  }
+  div {
+    height: 300px;
+    background-color: yellow;
+  }
+  

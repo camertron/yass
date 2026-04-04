@@ -1,0 +1,17 @@
+
+.test {
+  background: red;
+  --expected-block-size: null; /* Percentage which we are resolving height against is indefinite. */
+  width: 100px;
+  height: 50%;
+}
+
+.child {
+  background: green;
+}
+
+@supports (display: layout(test)) {
+  .test {
+    display: layout(test);
+  }
+}

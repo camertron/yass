@@ -1,0 +1,12 @@
+
+  .parent {
+    background: coral;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+  }
+  .inner {
+    background: green;
+    width: 100%;
+    height: 100%;
+  }

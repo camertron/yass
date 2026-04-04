@@ -1,0 +1,15 @@
+
+    .auto         .line > * { alignment-baseline: baseline; }
+    .text-bottom  .line > * { alignment-baseline: text-bottom; }
+    .alphabetic   .line > * { alignment-baseline: alphabetic; }
+    .ideographic  .line > * { alignment-baseline: ideographic; }
+    .middle       .line > * { alignment-baseline: middle; }
+    .central      .line > * { alignment-baseline: central; }
+    .mathematical .line > * { alignment-baseline: mathematical; }
+    .hanging      .line > * { alignment-baseline: hanging; }
+    .text-top     .line > * { alignment-baseline: text-top; }
+
+    .line {
+      font: 150px/1 BaselineDiagnosticAlphabeticZero;
+    }
+  

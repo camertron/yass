@@ -1,0 +1,5 @@
+
+  .li { display: list-item; }
+  .reset-reversed { counter-reset: reversed(list-item) }
+  .result::before { content: counter(list-item) }
+  ::marker { content: none; }

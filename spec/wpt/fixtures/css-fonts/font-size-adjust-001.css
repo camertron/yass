@@ -1,0 +1,10 @@
+
+  div {
+    position: absolute;
+    font: 40px/40px Ahem;
+    color: orange;
+  }
+  #test {
+    color: blue;
+    font-size-adjust: 0.9;
+  }

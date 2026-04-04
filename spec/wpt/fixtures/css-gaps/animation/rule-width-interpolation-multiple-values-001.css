@@ -1,0 +1,18 @@
+
+    .parent {
+      row-rule-style: solid;
+      row-rule-width: 90px;
+    }
+
+    .target {
+      display: flex;
+      row-gap: 10px;
+      row-rule-width: 10px, 10px, 10px;
+      row-rule-style: solid;
+      row-rule-color: black;
+      flex-wrap: wrap;
+      column-rule-width: 10px, 15px, 20px;
+      column-rule-style: solid;
+      column-rule-color: black;
+    }
+  

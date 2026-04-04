@@ -1,0 +1,12 @@
+
+div {
+    font-family: monospace;
+    white-space: pre;
+    tab-size: 2;
+}
+.t5 {
+    tab-size: 5;
+}
+.t10 {
+    tab-size: 10;
+}

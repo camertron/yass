@@ -1,0 +1,7 @@
+
+  body { font-size: 10px; }
+  fieldset {
+    border:1px solid;
+    padding: 1px 0;
+  }
+  #test10 { padding: 0; }

@@ -1,0 +1,8 @@
+
+div {
+  display: inline-flex;
+  border: 5px solid green;
+  width: 111px;
+  height: 222px;
+  box-sizing: content-box;
+}

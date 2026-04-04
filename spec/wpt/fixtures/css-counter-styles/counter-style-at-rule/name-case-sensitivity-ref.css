@@ -1,0 +1,39 @@
+
+  ol, div, p {
+    padding: 0; margin: 0;
+    line-height: 150%;
+  }
+  ol {
+    list-style-position: inside;
+  }
+  li, div, p {
+    float: left;
+  }
+  @counter-style decimal-leading-zero {
+    system: extends decimal;
+    pad: 3 '0';
+  }
+  @counter-style custom-style {
+    system: cyclic;
+    symbols: \2023;
+  }
+
+
+  #counter { counter-reset: a 1; }
+  #counter-a::before { content: counter(a, hiragana); }
+  #counter-b::before { content: counter(a, decimal-leading-zero); }
+  #counter-c::before { content: counter(a, custom-style); }
+  #counter-d::before { content: counter(a, decimal); }
+
+
+  #counters { counter-reset: a 1; }
+  #counters-a::before { content: counters(a, '', hiragana); }
+  #counters-b::before { content: counters(a, '', decimal-leading-zero); }
+  #counters-c::before { content: counters(a, '', custom-style); }
+  #counters-d::before { content: counters(a, '', decimal); }
+
+
+  @counter-style a { system: extends hiragana; }
+  @counter-style b { system: extends decimal-leading-zero; }
+  @counter-style c { system: extends custom-style; }
+  @counter-style d { system: extends decimal; }

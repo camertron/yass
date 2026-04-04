@@ -1,0 +1,14 @@
+
+      body {
+        margin: 0;
+      }
+      div {
+        background: url(support/transform-triangle-left.svg) fixed;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        left: 50px;
+        top: 50px;
+        transform: translate(0);
+      }
+    

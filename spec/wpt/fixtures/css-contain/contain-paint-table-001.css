@@ -1,0 +1,22 @@
+
+  div#table
+    {
+      display: table;
+      font-family: monospace;
+      font-size: 100px;
+      table-layout: fixed;
+      width: 4ch;
+      contain: paint;
+    }
+
+  div.cell
+    {
+      display: table-cell;
+      color: green;
+    }
+  span
+    {
+      background-color: red;
+      color: yellow;
+    }
+  

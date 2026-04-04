@@ -1,0 +1,18 @@
+
+            body {
+                background: lightgray;
+            }
+            .parent {
+                position: absolute;
+                z-index: 1;
+                width: 100px;
+                height: 100px;
+                background: #FF0;
+            }
+            .blended {
+                background: #0F0;
+                width: 100px;
+                height: 100px;
+                border-radius: 50px;
+            }
+        

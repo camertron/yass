@@ -1,0 +1,22 @@
+
+    .grid-container {
+      display: grid;
+      grid-template: repeat(2, 50px) / repeat(2, 50px);
+      gap: 20px;
+      column-rule: 20px solid green;
+      row-rule: 20px solid green;
+      rule-break: intersection;
+      rule-interior-inset: -20px;
+      rule-visibility-items: around;
+    }
+
+    .grid-item {
+      background: green;
+    }
+
+    #walking-item {
+      /* Start at row 1, col 1; will move to row 2, col 2 */
+      grid-row: 1;
+      grid-column: 1;
+    }
+  

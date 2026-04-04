@@ -1,0 +1,12 @@
+
+.grid {
+  display: inline-grid;
+  grid-template: minmax(auto, 100px) / 100px;
+}
+.subgrid {
+  height: 100%;
+  display: grid;
+  background: green;
+  grid-template-columns: subgrid;
+}
+.h200 { height: 200px }

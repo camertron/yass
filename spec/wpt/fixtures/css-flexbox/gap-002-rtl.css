@@ -1,0 +1,16 @@
+
+  body {
+    direction: rtl;
+  }
+
+  section {
+    background-color: green;
+    block-size: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  section > div{
+    background-color: grey;
+    flex: 1 1 auto;
+  }

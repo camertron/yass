@@ -1,0 +1,16 @@
+
+  #scroller {
+    overflow: hidden;
+    scroll-marker-group: before;
+    container-type: size;
+  }
+
+  #scroller>div::scroll-marker {
+    content: ".";
+  }
+
+  @container (width) {
+    #scroller::scroll-marker-group {
+      display: block;
+    }
+  }

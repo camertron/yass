@@ -1,0 +1,9 @@
+
+div {
+  display: inline-grid;
+  border: 5px solid green;
+  color: transparent;
+  width: 0;
+  height: 0;
+  font-size: 2em;
+}

@@ -1,0 +1,8 @@
+
+    div {
+      --background-color: red;
+    }
+    ::selection {
+      background-color: var(--background-color, red);
+    }
+  

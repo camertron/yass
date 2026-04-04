@@ -1,0 +1,28 @@
+
+      body {
+        font-family: "Ahem";
+        font-size: 12px;
+        width: 500px;
+      }
+      .spacing-10 {
+        word-spacing: 10px;
+      }
+      .spacing-30 {
+        word-spacing: 30px;
+      }
+      .balance-first-line-spacing-30::first-line {
+        word-spacing: 30px;
+      }
+      .img1 {
+        background-color: green;
+        width: 20px;
+        height: 10px;
+      }
+      .img2 {
+        background-color: green;
+        width: 20px;
+        height: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+    

@@ -1,0 +1,9 @@
+
+        .test {
+            margin: 50px;
+            width: 200px;
+            height: 50px;
+            border: 1px solid black;
+            background: linear-gradient(90deg in srgb, hsl(0deg 0% 50%), yellow);
+        }
+    

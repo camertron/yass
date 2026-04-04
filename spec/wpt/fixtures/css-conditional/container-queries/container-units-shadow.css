@@ -1,0 +1,24 @@
+
+  #outer {
+    container-type: size;
+    width: 200px;
+    height: 200px;
+  }
+  #direct {
+    container-type: inline-size;
+    width: 50cqw;
+    height: 50cqh;
+  }
+  #nondirect {
+    width: 10cqw;
+    height: 10cqh;
+    background: green;
+  }
+
+
+        #inner {
+          container-type: size;
+          width: 30px;
+          height: 30px;
+        }
+      

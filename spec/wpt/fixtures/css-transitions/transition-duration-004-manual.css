@@ -1,0 +1,15 @@
+
+  div {
+    height: 100px;
+    transition-property: width;
+    transition-timing-function: linear;
+    width: 100px;
+  }
+  #ref {
+    background-color: yellow;
+    transition-duration: 2s;
+  }
+  #test {
+    background-color: blue;
+    transition-duration: -2s;
+  }

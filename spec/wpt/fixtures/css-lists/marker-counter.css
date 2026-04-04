@@ -1,0 +1,19 @@
+
+ol {
+  counter-reset: my-counter;
+  padding-left: 5em;
+}
+::marker {
+  counter-increment: my-counter;
+  content: "[" counters(my-counter, ":") "] ";
+}
+.set::marker {
+  counter-set: my-counter 10;
+}
+.reset::marker {
+  counter-reset: my-counter;
+}
+.reset::after {
+  counter-increment: my-counter;
+  content: " (" counters(my-counter, ":") ")";
+}

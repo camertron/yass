@@ -1,0 +1,29 @@
+
+.anchor, .anchored {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.anchor {
+    left: 300px;
+    top: 200px;
+    anchor-name: --a;
+    background: blue;
+}
+.anchored {
+    position-anchor: --a;
+    right: anchor(left);
+    bottom: anchor(top);
+    background: green;
+    content:'';
+}
+.container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 2px solid red;
+}
+.resize {
+    width: 400px;
+    height: 400px;
+}

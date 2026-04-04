@@ -1,0 +1,25 @@
+
+div {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  view-transition-class: cls some-div;
+}
+
+#target {
+  background: green;
+  view-transition-name: target;
+}
+
+::view-transition-group(*),
+::view-transition-image-pair(*),
+::view-transition-old(*),
+::view-transition-new(*) {
+  animation-play-state: paused;
+}
+
+::view-transition-new(target.cls.some-div),
+::view-transition-old(target.cls.some-div) {
+  left: 100px;
+}
+

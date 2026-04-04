@@ -1,0 +1,13 @@
+
+@page :first {
+    margin: 1cm;
+}
+@page a {
+    margin: 0;
+}
+div {
+    width: 1cm;
+    height: 1cm;
+    border: 2px solid red;
+}
+  

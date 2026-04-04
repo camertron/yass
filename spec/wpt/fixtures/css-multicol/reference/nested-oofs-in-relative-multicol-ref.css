@@ -1,0 +1,8 @@
+
+.outer {
+  position: relative;
+  margin-left: 100px;
+  width: 400px;
+  height: 400px;
+  background: green;
+}

@@ -1,0 +1,12 @@
+
+body {
+  --scale: 1;
+}
+div {
+  font-size: calc(1rem * var(--scale));
+  text-shadow: calc(5px * var(--scale)) calc(5px * var(--scale)) hotpink;
+}
+.zoom {
+  --scale: 2;
+}
+

@@ -1,0 +1,18 @@
+
+html { writing-mode: vertical-lr; }
+ol {
+  padding: 0;
+  margin: 0;
+}
+li { list-style-type: none; }
+m {
+  text-align: end;
+  text-transform: none;
+  unicode-bidi: isolate;
+  font-variant-numeric: tabular-nums;
+  white-space: pre;
+}
+.sz1 { font-size: 40px; }
+.sz1 > m { font-size: 20px; }
+.sz2 { font-size: 20px; }
+.sz2 > m { font-size: 40px; }

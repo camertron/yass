@@ -1,0 +1,12 @@
+
+table, td {
+  padding: 0;
+  border-spacing: 0;
+}
+td {
+  max-height: 100px;
+  font: 50px / 50px ahem;
+  color: green;
+  writing-mode: vertical-rl;
+  background: red;
+}

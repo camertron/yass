@@ -1,0 +1,25 @@
+
+  table {
+    font-size: 3em;
+    border-spacing: 0 3px;
+  }
+  td {
+    padding: 0 0.5ch;
+    line-height: 1;
+    border: 1px solid;
+  }
+  @font-face {
+    font-family: 'joiners';
+    src: url('/fonts/noto/noto-sans-v8-latin-regular.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'csstest_noto';
+    src: url('/fonts/noto/NotoNaskhArabic-regular.woff2') format('woff2');
+  }
+  span {
+    font-family: 'joiners';
+    line-height: 0;
+  }
+  table {
+    font-family: 'csstest_noto';
+  }

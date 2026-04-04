@@ -1,0 +1,6 @@
+
+  :visited {
+     & {
+        color: green;
+     }
+  }

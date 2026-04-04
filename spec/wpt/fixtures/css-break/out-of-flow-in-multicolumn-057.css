@@ -1,0 +1,17 @@
+
+  .multicol {
+    column-count: 2;
+    column-fill: auto;
+    column-gap: 0px;
+    height: 100px;
+    width: 100px;
+    font: 20px/1 Ahem;
+    color: white;
+  }
+  .abs {
+    position: absolute;
+    background-color: green;
+    height: 200px;
+    width: 25px;
+    top: -60px;
+  }

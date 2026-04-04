@@ -1,0 +1,17 @@
+
+        #column-rule-color-currentcolor {
+          columns: 2;
+          column-rule-style: solid;
+          column-rule-width: 10px;
+          height: 1em;
+          column-rule-color: currentcolor;
+        }
+
+        #column-rule-color-color-mix-currentcolor {
+            columns: 2;
+            column-rule-style: solid;
+            column-rule-width: 10px;
+            height: 1em;
+            column-rule-color: color-mix(in hsl, currentcolor 50%, white);
+        }
+    

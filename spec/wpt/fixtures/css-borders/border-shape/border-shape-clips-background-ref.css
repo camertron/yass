@@ -1,0 +1,13 @@
+
+svg {
+    width: 100px;
+    height: 100px;
+    overflow: visible;
+    border: 10px solid transparent;
+}
+
+circle {
+    stroke: purple;
+    stroke-width: 10px;
+    fill: green;
+}

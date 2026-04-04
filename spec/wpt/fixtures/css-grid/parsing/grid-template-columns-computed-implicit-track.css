@@ -1,0 +1,10 @@
+
+#target {
+  display: grid;
+  width: 1px;
+  font-size: 1px;
+}
+#item {
+  grid-column: auto / 1;
+  width: 10px;
+}

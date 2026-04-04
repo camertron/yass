@@ -1,0 +1,6 @@
+
+            ::slotted(div) {
+                color: red;
+                color: attr(data-color type(<color>), yellow);
+            }
+        

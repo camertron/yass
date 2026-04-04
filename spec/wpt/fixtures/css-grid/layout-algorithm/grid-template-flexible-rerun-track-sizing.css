@@ -1,0 +1,21 @@
+
+.grid {
+  display: inline-grid;
+  position: relative;
+  grid-template-columns: minmax(0, .5fr);
+  grid-template-rows: minmax(0, .5fr);
+}
+.item {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(green, green) no-repeat;
+  background-size: 100px 100px;
+}
+.abspos {
+  grid-area: 1 / 1 / 2 / 2;
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: red;
+  z-index: -1;
+}

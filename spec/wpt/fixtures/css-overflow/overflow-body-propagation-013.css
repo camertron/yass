@@ -1,0 +1,8 @@
+
+:root {
+  display: none;
+  scrollbar-color: red red;
+}
+body {
+  overflow: scroll;
+}

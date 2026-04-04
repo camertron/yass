@@ -1,0 +1,10 @@
+
+body > div {
+  font-family: monospace; /* to be able to reliably measure things in ch*/
+  font-size: 20px;
+  color: transparent;
+  writing-mode: vertical-rl;
+  background: green;
+  border-top: 1ch solid white;
+  height: 1ch;
+}

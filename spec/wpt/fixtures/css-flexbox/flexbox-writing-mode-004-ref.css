@@ -1,0 +1,28 @@
+
+    .flexContainer {
+      width: 40px;
+      height: 30px;
+      border: 1px solid gray;
+      margin-bottom: 5px;
+      /* Testcase has direction: rtl; */
+      /* Testcase has writing-mode: horizontal-tb; */
+    }
+    .flexContainer > * {
+      width: 20px;
+      height: 15px;
+      float: left;
+    }
+    .item1 {
+      /* Note: flex items are ordered as "CMYK": cyan, magenta, yellow, black */
+      background: cyan;
+    }
+    .item2 {
+      background: magenta;
+    }
+    .item3 {
+      background: yellow;
+    }
+    .item4 {
+      background: black;
+    }
+  

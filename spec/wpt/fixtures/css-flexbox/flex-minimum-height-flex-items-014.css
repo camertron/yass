@@ -1,0 +1,31 @@
+
+.overlapped-green {
+  position: absolute;
+  background-color: green;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+}
+
+.outer {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 100px;
+  background: green;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  background-color: red;
+}
+
+.spacer {
+  height: 30px;
+  width: 100px;
+  background: red;
+  flex: none;
+}

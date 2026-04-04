@@ -1,0 +1,33 @@
+
+  body { margin: 0; }
+  #outer, #inner {
+    transition: 2s steps(2, start);
+    transition-property: color, width;
+  }
+  #outer {
+    anchor-name: --anchor;
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+  }
+  #inner.wide {
+    width: 300px !important;
+  }
+  #inner {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    position-anchor: --anchor;
+    position-area: left center;
+    position-try-fallbacks: --fallback;
+    background-color: teal;
+  }
+  @position-try --fallback {
+    position-area: right center;
+    width: 200px;
+  }
+
+  #outer { color: red; }
+  #inner { color: black; }
+  #outer.green { color: lime; }
+  #outer.green #inner { color: unset; }

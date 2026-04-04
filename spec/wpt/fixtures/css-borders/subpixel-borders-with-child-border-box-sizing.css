@@ -1,0 +1,25 @@
+
+    body {    }
+    .outer {
+        border: solid .5px black;
+        background: red;
+        width: 101px;
+        height: 101px;
+        margin: 5px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .inner {
+        background: lightgreen;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    #inner1 {
+        width: 99px;
+        height: 99px;
+    }
+    #inner2 {
+        width: 100%;
+        height: 100%;
+    }
+  

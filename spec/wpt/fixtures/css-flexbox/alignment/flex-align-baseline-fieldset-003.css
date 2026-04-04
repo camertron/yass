@@ -1,0 +1,24 @@
+
+.target {
+  display: flex;
+  position: relative;
+  line-height: 0;
+  writing-mode: vertical-lr;
+}
+.target > div {
+  background: hotpink;
+  font-size: 30px;
+}
+fieldset {
+  padding: 10px;
+  border: solid 10px;
+  margin: 0;
+  font-size: 20px;
+}
+span {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  outline: solid cyan 3px;
+  outline-offset: -3px;
+}

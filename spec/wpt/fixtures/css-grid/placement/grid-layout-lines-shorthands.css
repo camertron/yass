@@ -1,0 +1,24 @@
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #caseTitle {
+        margin: 10px;
+        height: 40px;
+      }
+      #grid {
+        width: 150px;
+        background: #eee;
+        display: grid;
+        grid-template-columns: [left] 100px [center] 50px [right];
+      }
+      .a {
+        background: blue;
+        grid-column: left / center;
+      }
+      .b {
+        background: yellow;
+        grid-column: center / right;
+      }
+    

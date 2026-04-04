@@ -1,0 +1,14 @@
+
+#parent {
+  width: 100px;
+  height: 100px;
+  isolation: isolate;
+  background: red;
+}
+#child {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  z-index: -1;
+  background: green;
+}

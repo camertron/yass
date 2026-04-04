@@ -1,0 +1,13 @@
+
+  section {
+    background-color: green;
+    block-size: 100px;
+    display: inline-flex;
+  }
+  section > div{
+    background-color: grey;
+    color: white;
+  }
+  section > div:not(:last-of-type) {
+    margin-inline-end: 20px;
+  }

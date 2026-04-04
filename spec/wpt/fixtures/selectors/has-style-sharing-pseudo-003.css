@@ -1,0 +1,10 @@
+
+div {
+  width: 20px;
+  height: 20px;
+}
+
+:has(> .a) .b::after {
+  font: 15px/1 ahem;
+  content: 'x';
+}

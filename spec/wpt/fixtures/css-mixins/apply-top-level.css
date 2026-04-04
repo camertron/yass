@@ -1,0 +1,13 @@
+
+      .cls {
+        color: green;
+      }
+      @mixin --m1() {
+        @result {
+          .cls {
+            color: red;
+          }
+        }
+      }
+      @apply --m1;
+    

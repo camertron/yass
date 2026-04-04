@@ -1,0 +1,34 @@
+
+
+.outer {
+  height: 125px;
+  width: 800px;
+  background: rgba(0, 0, 255, 0.3);
+  position: relative;
+}
+
+.inner {
+  height: 100px;
+  width: 86px;
+  font: 16px/1.25 sans-serif;
+  position: absolute;
+  top: 0;
+}
+
+.border-bottom {
+  height: 25px;
+  width: 188px;
+  background: green;
+  position: absolute;
+  top: 100px;
+}
+
+.lefthalf {
+  border-right: 2px solid fuchsia;
+  padding-right: 7px;
+}
+
+.righthalf {
+  padding-left: 7px;
+}
+

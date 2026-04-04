@@ -1,0 +1,11 @@
+
+  div
+  {
+  background-image: url("support/nonpercent-width-omitted-height.svg");
+  background-repeat: no-repeat;
+  background-size: auto 32px;
+  border: black solid 1px;
+  height: 768px;
+  width: 256px;
+  }
+  

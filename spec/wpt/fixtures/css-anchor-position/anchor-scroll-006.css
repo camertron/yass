@@ -1,0 +1,62 @@
+
+body {
+  margin: 0;
+}
+
+.scroller {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 50px;
+  overflow: scroll;
+  position: relative;
+}
+
+.spacer {
+  width: 400px;
+  height: 400px;
+}
+
+.anchor {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 50px;
+  left: 50px;
+  background: orange;
+}
+
+.target {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: lime;
+}
+
+#scroller1 { anchor-name: --scroller1; }
+#scroller2 { anchor-name: --scroller2; }
+#scroller3 { anchor-name: --scroller3; }
+
+#anchor1 { anchor-name: --a1; }
+#anchor2 { anchor-name: --a2; }
+#anchor3 { anchor-name: --a3; }
+
+/* Needs scroll adjustment in x axis only */
+#target1 {
+  position-anchor: --a1;
+  left: anchor(left);
+  top: anchor(--scroller1 bottom);
+}
+
+/* Needs scroll adjustment in y axis only */
+#target2 {
+  position-anchor: --a2;
+  top: anchor(top);
+  left: anchor(--scroller2 right);
+}
+
+/* No scroll adjustment needed */
+#target3 {
+  position-anchor: --a3;
+  top: anchor(--scroller3 bottom);
+  left: anchor(--scroller3 right);
+}

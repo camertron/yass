@@ -1,0 +1,35 @@
+
+body {
+  margin: 0;
+}
+
+.container {
+  writing-mode: vertical-lr;
+  direction: ltr;
+  display: inline-block;
+  position: relative;
+  margin: 20px;
+  border: solid 4px;
+  width: 40px;
+  height: 40px;
+}
+
+.item {
+  position: absolute;
+  background: green;
+  inset: 5px;
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.safe {
+  align-self: safe end;
+}
+.unsafe {
+  align-self: unsafe end;
+}
+
+.rtl {
+  direction: rtl;
+}

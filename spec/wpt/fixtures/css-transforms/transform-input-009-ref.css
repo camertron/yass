@@ -1,0 +1,19 @@
+
+      input {
+        font: 25px/1 Ahem;
+        margin: 10px;
+        position: relative;
+      }
+      p + input + input {
+        left: -10px;
+      }
+      p + input + input + input {
+        left: 10px;
+      }
+      p + input + input + input + input {
+        top: -10px;
+      }
+      p + input + input + input + input + input {
+        top: 10px;
+      }
+    

@@ -1,0 +1,16 @@
+
+  body
+    {
+      margin-bottom: 0;
+    }
+  img#orange-square
+    {
+      padding-right: 16px;
+      vertical-align: top;
+    }
+  div
+    {
+      margin-left: -8px;
+      writing-mode: vertical-rl;
+    }
+  

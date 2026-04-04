@@ -1,0 +1,13 @@
+
+div {
+  position: absolute;
+}
+#red {
+  background: red;
+}
+#target {
+  margin: 50px;
+}
+#target.outline {
+  outline: solid 50px green;
+}

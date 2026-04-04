@@ -1,0 +1,48 @@
+
+		.multicol-wrapper>*{
+			font: 20px/1 Ahem;
+		}
+
+		div.multicol-wrapper{
+			border: thin solid black;
+			display: inline-block;
+			margin: 1em auto;
+			width: 360px;
+		}
+
+		.multicol-basic-ref{
+			background: yellow;
+			width: 360px;
+			border-spacing: 0;
+			border-collapse: collapse;
+			padding: 0;
+		}
+
+		.multicol-basic-ref td{
+			padding: 0;
+		}
+		.multicol-basic-ref-item{
+			padding: 0;
+			width: 120px;
+			background: #000;
+			border-spacing: 0;
+			border-collapse: collapse;
+			display: inline;
+			border: none;
+		}
+
+		.item-1{
+			background: purple;
+			color: purple;
+		}
+
+		.item-2{
+			background: orange;
+			color: orange;
+		}
+
+		.item-3{
+			background: blue;
+			color: blue;
+		}
+	

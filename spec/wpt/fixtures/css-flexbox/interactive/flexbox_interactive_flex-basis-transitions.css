@@ -1,0 +1,32 @@
+
+div {
+	width: 20em;
+	height: 8em;
+
+	display: flex;
+}
+span {
+	background: yellow;
+	width: 8em;
+	flex: 1 1 0%;
+}
+#test, p+div {
+	background: #3366cc;
+}
+div:hover #test {
+	transition: flex-basis 4s;
+	flex-basis: 100%;
+}
+p~div {
+	margin-right: 1em;
+	float: left;
+	display: block;
+}
+p~div span {
+	width: auto;
+	height: 8em;
+	float: left;
+}
+p~div~div span {
+	width: 5em;
+}

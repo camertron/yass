@@ -1,0 +1,10 @@
+
+  #container {
+    overflow: hidden;
+    width: 10px;
+    column-count: 1;
+    scroll-marker-group: before;
+  }
+  #container::column::scroll-marker {
+    display: inline;
+  }

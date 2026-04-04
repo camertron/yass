@@ -1,0 +1,8 @@
+
+    ::highlight(highlight-1) {
+        background-color: blue;
+        color: white;
+    }
+    ::highlight(highlight-2) {
+        background-color: yellow;
+    }

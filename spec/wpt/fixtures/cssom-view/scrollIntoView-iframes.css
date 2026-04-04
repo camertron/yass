@@ -1,0 +1,20 @@
+
+.scroller {
+  overflow: hidden;
+  height: 500px;
+  border: solid;
+}
+.scroller::before {
+  content: "";
+  display: block;
+  height: 500px;
+}
+.scroller::after {
+  content: "";
+  display: block;
+  height: 300px;
+}
+iframe {
+  height: 1000px;
+  border: none;
+}

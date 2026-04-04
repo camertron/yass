@@ -1,0 +1,20 @@
+
+#first {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  contain: paint;
+  view-transition-name: target;
+}
+#second {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  view-transition-name: unset;
+}
+#third {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  view-transition-name: initial;
+}

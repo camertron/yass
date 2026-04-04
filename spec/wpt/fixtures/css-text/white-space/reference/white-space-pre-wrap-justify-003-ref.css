@@ -1,0 +1,11 @@
+
+div {
+  border: 1px solid gray;
+  font: 22px monospace;
+  width: 22ch;
+  margin: 1em;
+}
+.ref {
+  white-space: normal;
+  text-align: justify;
+}

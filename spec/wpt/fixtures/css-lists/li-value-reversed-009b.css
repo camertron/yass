@@ -1,0 +1,14 @@
+
+:root {
+  color:black; background-color:white; font:10px/1 monospace;
+}
+ol::before, li::before {
+  content: counters(list-item,".");
+}
+div, span {
+  counter-increment: list-item 0;
+}
+.pure-set {
+  counter-increment: list-item 0;
+  counter-set: list-item 5;
+}

@@ -1,0 +1,15 @@
+
+div {
+	background: blue;
+
+	display: flex;
+	justify-content: space-around;
+}
+p {
+	font-family: monospace;
+	background: yellow;
+	column-rule: 1em solid lime;
+	columns: 2;
+	width: 200px;
+	margin: 0;
+}

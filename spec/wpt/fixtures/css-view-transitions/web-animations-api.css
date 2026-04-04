@@ -1,0 +1,26 @@
+
+#first {
+  background: blue;
+  width: 100px;
+  height: 100px;
+  contain:  paint;
+}
+#second {
+  background: green;
+  width: 100px;
+  height: 100px;
+  contain: paint;
+}
+
+/* Unset all animations since the test drives it using WA-API */
+html::view-transition-group(*),
+html::view-transition-image-pair(*),
+html::view-transition-new(*),
+html::view-transition-old(*) {
+  animation: unset;
+}
+
+html::view-transition-group(root){
+  opacity: 0;
+}
+

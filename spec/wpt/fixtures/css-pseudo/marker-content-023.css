@@ -1,0 +1,25 @@
+
+li {
+  text-indent: 100px; /* Should not be inherited by ::marker */
+}
+::marker {
+  text-indent: 100px; /* Should have no effect */
+}
+li > div {
+  text-indent: 0;
+}
+.disc {
+  list-style-type: disc;
+}
+.decimal {
+  list-style-type: decimal;
+}
+.string {
+  list-style-type: "3. ";
+}
+.content::marker {
+  content: "4. ";
+}
+.rtl-marker ::marker {
+  direction: rtl;
+}

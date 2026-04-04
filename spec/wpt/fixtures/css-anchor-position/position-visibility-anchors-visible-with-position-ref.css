@@ -1,0 +1,18 @@
+
+  #scroll-container {
+    overflow: hidden scroll;
+    width: 300px;
+    height: 100px;
+  }
+
+  #spacer {
+    height: 100px;
+  }
+
+  #target {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 100px;
+    background: green;
+  }

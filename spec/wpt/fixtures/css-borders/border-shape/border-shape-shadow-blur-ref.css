@@ -1,0 +1,13 @@
+
+  body {
+    margin: 0;
+    padding: 50px;
+  }
+  #target {
+    width: 100px;
+    height: 100px;
+    background: green;
+    /* Use border-radius as the canonical circle reference */
+    border-radius: 50px;
+    box-shadow: 0 0 10px 0 black;
+  }

@@ -1,0 +1,21 @@
+
+  .line {
+    display: flex;
+  }
+
+  .container {
+    writing-mode: vertical-lr;
+
+    block-size: 200px;
+    inline-size: 200px;
+    margin: 10px;
+    background: deepskyblue;
+    resize: both;
+  }
+
+  .content {
+    inline-size: 100%;
+    block-size: 200%;
+    background: lightsalmon;
+  }
+  

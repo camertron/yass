@@ -1,0 +1,9 @@
+
+  body { margin: 0; }
+  @page {
+    size: 400px 123.9px;
+    margin: 0;
+  }
+  :root {
+    print-color-adjust: exact;
+  }

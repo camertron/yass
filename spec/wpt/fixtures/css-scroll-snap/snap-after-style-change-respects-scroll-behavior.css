@@ -1,0 +1,20 @@
+
+#scroller {
+  width: 300px;
+  height: 100px;
+  overflow: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.child {
+  display: inline-block;
+  width: 300px;
+  height: 100px;
+  scroll-snap-align: start;
+}
+#child1 {
+  background-color: blue;
+}
+#child2 {
+  background-color: green;
+}

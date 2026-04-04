@@ -1,0 +1,73 @@
+
+:root {
+  view-transition-name: none;
+  background-color: red;
+}
+
+div {
+  position: absolute;
+  left: 0px;
+  top: 600px;
+  width: 100px;
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  background: darkseagreen;
+}
+
+::view-transition-group(*),
+::view-transition-image-pair(*),
+::view-transition-old(*),
+::view-transition-new(*) {
+  animation-play-state: paused;
+}
+
+::view-transition {
+  background-color: limegreen;
+}
+
+::view-transition-new(new) {
+  animation: none;
+  opacity: 1;
+}
+::view-transition-old(new) {
+  animation: none;
+  opacity: 0;
+}
+
+::view-transition-new(old) {
+  animation: none;
+  opacity: 0;
+}
+::view-transition-old(old) {
+  animation: none;
+  opacity: 1;
+}
+
+.invalidateRoot::view-transition {
+  /* Making view-transition `display: none` will abort the transition. Changing
+     it to position: static (at least in Chrome) will cause it to rebuild its
+     layout tree. */
+  position: static;
+}
+
+.invalidateGroup::view-transition-group(group) {
+  display: none;
+}
+
+.invalidateImagePair::view-transition-image-pair(imagepair) {
+  display: none;
+}
+
+.invalidateNew::view-transition-new(new) {
+  display: none;
+}
+
+.invalidateOld::view-transition-old(old) {
+  display: none;
+}
+

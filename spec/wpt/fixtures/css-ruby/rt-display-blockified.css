@@ -1,0 +1,17 @@
+
+ruby {
+  font-size: 60px;
+  line-height: 1;
+}
+
+rt.abspos {
+  position: absolute;
+  font-size: inherit;
+  line-height: 1;
+}
+
+rt.float {
+  float: left;
+  font-size: inherit;
+  line-height: 1;
+}

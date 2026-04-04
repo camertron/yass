@@ -1,0 +1,11 @@
+
+@font-face {
+  font-family: large-font;
+  src: local(Ahem), url(/fonts/Ahem.ttf);
+  size-adjust: 1000%;
+  unicode-range: U+0020;
+}
+
+.test {
+  font-family: large-font;
+}

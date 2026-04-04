@@ -1,0 +1,11 @@
+
+html {
+  column-count:2;
+}
+body {
+  transform: scale(1);
+}
+div#test {
+  column-count:2;
+  position:absolute;
+}

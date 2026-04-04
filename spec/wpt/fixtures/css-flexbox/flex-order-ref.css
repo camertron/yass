@@ -1,0 +1,15 @@
+
+    #container { display: flex; }
+    #highOrdinal {
+      background: lime;
+      height: 100px; width: 100px;
+    }
+    #middleOrdinal {
+      background: orange;
+      height: 100px; width: 100px;
+    }
+    #lowOrdinal {
+      background: red;
+      height: 100px; width: 100px;
+    }
+  

@@ -1,0 +1,23 @@
+
+table {
+	width: 600px;
+	table-layout: fixed;
+	border-spacing: 0;
+}
+td {
+	background: blue;
+	padding: 0;
+	overflow: hidden;
+}
+div {
+	background: white;
+	width: 300px;
+	height: 8em;
+
+	display: flex;
+}
+p {
+	color: white;
+	margin: 1em;
+	width: 200px;
+}

@@ -1,0 +1,15 @@
+
+  #anchor {
+    anchor-name: --a;
+  }
+
+  #anchored {
+    position: absolute;
+    position-anchor: --a;
+    position-area: left; /* No room on the left. */
+    position-try-fallbacks: --fits, --bogus;
+  }
+
+  @position-try --fits {
+    position-area: right;
+  }

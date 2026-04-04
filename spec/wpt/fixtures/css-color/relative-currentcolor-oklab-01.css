@@ -1,0 +1,12 @@
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: red;
+  background-color: oklab(from currentColor l a b);
+}
+div div {
+  color: green;
+  background-color: inherit;
+}

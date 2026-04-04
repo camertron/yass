@@ -1,0 +1,9 @@
+
+  #target::first-line {
+    color: red;
+  }
+  #target::before {
+    content: "green";
+    color: green;
+    display: inline-block;
+  }

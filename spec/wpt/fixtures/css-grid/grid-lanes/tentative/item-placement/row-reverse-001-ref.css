@@ -1,0 +1,8 @@
+
+.grid {
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+    grid-template-columns: repeat(4, 20px) min-content min-content;
+    gap: 10px;
+    grid-auto-flow: column;
+}

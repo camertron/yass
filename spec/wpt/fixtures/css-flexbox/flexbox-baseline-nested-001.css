@@ -1,0 +1,12 @@
+
+      .ib {
+        display: inline-block;
+      }
+      .outerFlex {
+        display: flex;
+      }
+      .innerFlex {
+        display: flex;
+        height: 200px;
+      }
+    

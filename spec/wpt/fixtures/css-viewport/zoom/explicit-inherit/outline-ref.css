@@ -1,0 +1,11 @@
+
+  .zoomed {
+    background: coral;
+    width: 100px;
+    height: 100px;
+    margin: 100px;
+    outline-width: 20px;
+    outline-offset: 10px;
+    outline-style: solid;
+    outline-color: black;
+  }

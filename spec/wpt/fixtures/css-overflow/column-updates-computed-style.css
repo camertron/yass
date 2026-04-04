@@ -1,0 +1,3 @@
+
+.green-column::column { color: red; }
+.red-column::column { color: green; }

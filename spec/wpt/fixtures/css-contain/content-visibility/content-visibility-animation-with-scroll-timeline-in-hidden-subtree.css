@@ -1,0 +1,29 @@
+
+#container {
+  content-visibility: visible;
+}
+
+#scrollContainer {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-timeline-name: --targetTimeline;
+}
+#innerspacer {
+    height: 300vh;
+}
+@keyframes fade {
+  from { opacity: 1; }
+  to { opacity: 0;  }
+}
+#target {
+  background: green;
+  height: 100px;
+  width: 100px;
+}
+.animate {
+  animation-name: fade;
+  animation-duration: 1ms;
+  animation-direction: alternate;
+  animation-timeline: --targetTimeline;
+}
+

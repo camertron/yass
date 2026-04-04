@@ -1,0 +1,6 @@
+
+p {
+  color: red;
+  --0: green;
+  color: var(--\30);
+}

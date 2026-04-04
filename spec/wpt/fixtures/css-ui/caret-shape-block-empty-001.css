@@ -1,0 +1,12 @@
+
+  #target {
+    font: 100px/1 Ahem;
+    caret-color: green;
+    caret-shape: block;
+    caret-animation: manual;
+    width: 1ch;
+    background: red;
+  }
+  #target:focus {
+    outline: none;
+  }

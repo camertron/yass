@@ -1,0 +1,18 @@
+
+.grid {
+    display: inline-grid;
+    grid-template-columns: 4px;
+    grid-template-rows: 4px;
+    border: 5px solid goldenrod;
+}
+.spacer{
+    height: 10px;
+}
+.img{
+    background-image: url("support/100x100-green.png");
+    width: 100px;
+    height: 100px;
+}
+.img, .empty{
+    border: 2px solid indigo;
+}

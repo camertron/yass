@@ -1,0 +1,10 @@
+
+  #inner::before {
+    content: "This text should transition from red to green.";
+    height: 100px;
+    transition: height steps(2, start) 1s;
+  }
+  .flex #inner::before {
+    height: 300px;
+  }
+  .flex { display: flex }

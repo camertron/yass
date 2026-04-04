@@ -1,0 +1,24 @@
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 60px;
+}
+
+.test {
+  background: red;
+  --expected-block-size: 50;
+  margin-bottom: 10px;
+  flex-grow: 1;
+}
+
+.child {
+  background: green;
+}
+
+@supports (display: layout(test)) {
+  .test {
+    display: layout(test);
+  }
+}

@@ -1,0 +1,17 @@
+
+div {
+  position: relative;
+  font: 25px / 1 Ahem;
+}
+.red {
+  position: absolute;
+  background: green;
+  color: red;
+  height: 100px;
+  z-index: -1;
+}
+.test {
+  color: transparent;
+  width: 4ch;
+  overflow-wrap: anywhere;
+}

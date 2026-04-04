@@ -1,0 +1,17 @@
+
+.test {
+  background: red;
+  margin: 10px;
+  width: 100px;
+
+  /* Properties under test. */
+  --foo:bar;
+  margin-left: 2px;
+}
+
+@supports (display: layout(test)) {
+  .test {
+    background: green;
+    display: layout(test);
+  }
+}

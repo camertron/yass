@@ -1,0 +1,5 @@
+
+  /* Set non-auto overflow on the viewport, so that the UA is more likely to get
+     the size right the first time. Otherwise, a re-layout might hide the bug
+     that we're trying to test. */
+  body { overflow:hidden; }

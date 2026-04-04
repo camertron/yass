@@ -1,0 +1,10 @@
+
+   div
+   {
+    background-clip: border-box;
+    background-color: black;
+    border: transparent solid 48px;
+    height: auto;
+    width: 0px;
+   }
+  

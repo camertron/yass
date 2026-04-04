@@ -1,0 +1,11 @@
+
+  .root {
+    overflow-x: scroll;
+    overflow-y: scroll;
+    width: 100px;
+    height: 100px;
+    background: green;
+    margin: 25px;
+    padding: 25px;
+  }
+  

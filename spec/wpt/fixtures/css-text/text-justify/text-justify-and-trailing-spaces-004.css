@@ -1,0 +1,15 @@
+
+.test {
+  width: 7ch;
+  font: 20px monospace;
+  background: blue;
+  margin-left: 20px;
+
+  direction: rtl;
+
+  white-space: pre-wrap;
+  text-align: justify;
+}
+.test > span {
+  background: green;;
+}

@@ -1,0 +1,17 @@
+
+    div {
+      margin: 40px;
+      font-size: 20px;
+    }
+    ::highlight(highlight1) {
+      text-underline-offset: 0.5em;
+      text-decoration-line: underline;
+      text-decoration-color: green;
+      text-decoration-thickness: 0.25rem;
+    }
+    ::highlight(highlight2) {
+      text-decoration-line: overline;
+      text-decoration-color: green;
+      text-decoration-thickness: 4px;
+    }
+  

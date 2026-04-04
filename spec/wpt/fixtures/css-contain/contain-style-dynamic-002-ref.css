@@ -1,0 +1,24 @@
+
+ol {
+  list-style: inside decimal;
+  padding-inline-start: 1em;
+  counter-reset: c 0;
+}
+li {
+  counter-increment: c 1;
+}
+div {
+  contain: style;
+}
+:is(ol, li, div) {
+  padding-left: 1em;
+}
+:is(ol, li, div)::before {
+  content: "[::before=" counters(c, ".") "]";
+}
+:is(ol, li, div)::after {
+  content: "[::after=" counters(c, ".") "]";
+}
+div::before {
+  color: red;
+}

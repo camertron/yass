@@ -1,0 +1,16 @@
+
+.containing-block {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 100px;
+}
+
+.abspos {
+  position: absolute;
+  background: rgba(0, 255, 0, 0.5);
+  width: 10px;
+  height: 10px;
+  left: 0;
+  top: 0;
+}

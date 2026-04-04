@@ -1,0 +1,14 @@
+
+
+body {
+  margin: 0;
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600px;
+  height: 220px;
+}
+

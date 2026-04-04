@@ -1,0 +1,7 @@
+
+  p {
+    color: green;
+  }
+  ::x-something-nobody-would-think-of, p {
+    color: red;
+  }

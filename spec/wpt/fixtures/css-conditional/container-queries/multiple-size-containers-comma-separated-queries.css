@@ -1,0 +1,16 @@
+
+  #outer {
+    container: --container / inline-size;
+    width: 500px;
+  }
+  #inner {
+    container-type: inline-size;
+    width: 300px;
+  }
+  #target { --match: no; }
+  @container (width > 400px), --container (width > 400px) {
+    #target { --match: yes; }
+  }
+  @container (width > 400px) {
+    #target { --match: no-way; }
+  }

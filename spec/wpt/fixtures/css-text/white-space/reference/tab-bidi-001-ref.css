@@ -1,0 +1,14 @@
+
+body > div {
+  border: solid blue;
+  margin: 1em;
+}
+div > div {
+  white-space: pre;
+  font: 20px/1 monospace;
+  text-align: left;
+}
+div > span { /* measure bounds */
+  border: orange;
+  border-style: none solid;
+}

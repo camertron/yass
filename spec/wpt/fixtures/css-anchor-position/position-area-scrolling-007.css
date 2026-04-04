@@ -1,0 +1,20 @@
+
+  #anchor {
+    anchor-name: --a;
+    margin-top: 200px;
+    margin-left: 100px;
+    width: 150px;
+    height: 50px;
+    background: blue;
+  }
+  #anchored {
+    position: absolute;
+    position-anchor: --a;
+    position-area: top left;
+    position-try-fallbacks: flip-inline, flip-block, flip-block flip-inline;
+    width: 100%;
+    height: 100%;
+    min-width: 60px;
+    min-height: 60px;
+    background: hotpink;
+  }

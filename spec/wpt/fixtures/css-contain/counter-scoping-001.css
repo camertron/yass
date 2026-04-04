@@ -1,0 +1,11 @@
+
+div {
+  contain: style;
+  counter-increment: n;
+}
+div::before, div::after {
+  content: counters(n, '.') " ";
+}
+div::after {
+  counter-increment: n 2;
+}

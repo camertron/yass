@@ -1,0 +1,7 @@
+
+@namespace url("http://www.w3.org/2000/svg");
+
+/* No type selector, so selector should match and hide the <input> */
+*|*:is(:disabled) {
+  display: none;
+}

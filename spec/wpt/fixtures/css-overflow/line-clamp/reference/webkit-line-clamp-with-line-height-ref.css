@@ -1,0 +1,12 @@
+
+#test {
+  width: 100px;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+  border: solid thin grey;
+  font: 20px 'Ahem';
+  line-height: 40px;
+}

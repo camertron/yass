@@ -1,0 +1,21 @@
+
+.flexbox {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  align-items: baseline;
+  flex-direction: column;
+  writing-mode: vertical-rl;
+  direction: rtl;
+  flex-wrap: wrap-reverse;
+  position: relative;
+}
+.item {
+  width: 100px;
+  height: 50px;
+  background-color: green;
+}
+.abspos {
+  position: absolute;
+  bottom: 50px;
+}

@@ -1,0 +1,16 @@
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    height: 100px;
+    width: 100px;
+    background: red;
+    rule-color: green;
+    rule-width: 10px;
+    rule-style: solid;
+  }
+
+  .grid-item {
+    background: green;
+  }

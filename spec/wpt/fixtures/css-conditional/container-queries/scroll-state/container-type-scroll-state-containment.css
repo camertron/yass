@@ -1,0 +1,12 @@
+
+  body { margin: 0; }
+  #container {
+    margin-top: 100px;
+    container-type: scroll-state;
+    width: fit-content;
+  }
+  #child {
+    margin-top: 100px;
+    width: 100px;
+    height: 100px;
+  }

@@ -1,0 +1,13 @@
+
+.container {
+  display: inline-block;
+  border: 2px solid black;
+}
+.parent {
+  mask-position: 30px 10px;
+}
+.target {
+  width: 120px;
+  height: 120px;
+  mask-position: 10px 30px;
+}

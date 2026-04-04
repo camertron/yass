@@ -1,0 +1,30 @@
+
+grid {
+    display: grid;
+    width: min-content;
+    border: 1px solid black;
+    grid-template-columns: auto auto;
+    margin-trim: block-start;
+}
+item {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+}
+.locked-location {
+    grid-row: 1;
+    grid-column: 2;
+}
+item:nth-child(1) {
+    margin-block-start: 50%;
+}
+item:nth-child(2) {
+    margin-block-start: -30px;
+}
+item:nth-child(3) {
+    margin-block-start: 10px;
+}
+item:nth-child(4) {
+    margin-block-start: 10px;
+}

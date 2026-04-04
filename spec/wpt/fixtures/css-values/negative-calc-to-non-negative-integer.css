@@ -1,0 +1,6 @@
+
+@counter-style foo {
+  system: additive;
+  additive-symbols: 1 'I', calc(-1) 'X';
+  range: infinite infinite;
+}

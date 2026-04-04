@@ -1,0 +1,12 @@
+
+.parent {
+  accent-color: blue;
+}
+.target {
+  display: inline-block;
+  font-size: 60pt;
+  accent-color: yellow;
+}
+.expected {
+  margin-right: 15px;
+}

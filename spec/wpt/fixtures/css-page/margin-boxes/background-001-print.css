@@ -1,0 +1,15 @@
+
+  @page {
+    margin: 4em;
+
+    @top-center {
+      content: "";
+      background: url(/images/green.png);
+    }
+  }
+  :root {
+    print-color-adjust: exact;
+  }
+  body {
+    margin: 0;
+  }

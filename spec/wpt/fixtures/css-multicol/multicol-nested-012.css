@@ -1,0 +1,13 @@
+
+  .mc {
+    columns: 2;
+    column-gap: 0;
+  }
+  .outer {
+    position: relative;
+    column-fill: auto;
+    width: 64px;
+    height: 40px;
+    font: 16px/32px monospace;
+    text-align: right;
+  }

@@ -1,0 +1,24 @@
+
+      .outer {
+        display:block;
+        width: 500px;
+        height: 500px;
+        padding: 50px;
+        background: linear-gradient(90deg, red, green);
+      }
+      .inner {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: white;
+        /* NOTE: The same gradient several times, so that we can easily simulate this using opacity. */
+        background: cross-fade(
+          10% linear-gradient(#e66465, #9198e5),
+          10% linear-gradient(#e66465, #9198e5),
+          10% linear-gradient(#e66465, #9198e5),
+          10% linear-gradient(#e66465, #9198e5),
+          10% linear-gradient(#e66465, #9198e5),
+          10% linear-gradient(#e66465, #9198e5)
+        );
+      }
+    

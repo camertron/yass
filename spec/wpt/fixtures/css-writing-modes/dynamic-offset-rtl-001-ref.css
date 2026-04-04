@@ -1,0 +1,21 @@
+
+
+body {
+  margin: 0;
+}
+
+#container {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: yellow;
+}
+
+#abspos {
+  margin-top: 10px;
+  margin-left: 70px;
+  width: 10px;
+  height: 10px;
+  background: fuchsia;
+}
+

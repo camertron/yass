@@ -1,0 +1,8 @@
+
+        :nth-last-child(odd) {
+            color: red;
+        }
+        :nth-last-child(even) {
+            color: green;
+        }
+        

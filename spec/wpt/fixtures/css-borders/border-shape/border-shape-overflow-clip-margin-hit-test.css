@@ -1,0 +1,19 @@
+
+  body { margin: 100px; }
+  #outer {
+    width: 100px;
+    height: 100px;
+    background: grey;
+    overflow: clip;
+    overflow-clip-margin: 20px;
+    border-shape: circle(50% at 50% 50%);
+    border: 10px solid purple;
+  }
+  #target {
+    width: 200px;
+    height: 200px;
+    background: rgba(0, 255, 0, 0.5);
+    position: relative;
+    left: -50px;
+    top: -50px;
+  }

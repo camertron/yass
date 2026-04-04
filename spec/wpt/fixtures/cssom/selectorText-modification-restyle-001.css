@@ -1,0 +1,6 @@
+
+@namespace bogus url(http://example.com/bogus);
+
+bogus|div {
+  color: green;
+}

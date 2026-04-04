@@ -1,0 +1,12 @@
+
+      #target {
+        position: absolute;
+        left: 50px;
+        top: 80px;
+        width: 200px;
+        height: 300px;
+        background-color: lime;
+        transform-origin: 0px 0px;
+        offset-path: path('M 50 40');
+      }
+    

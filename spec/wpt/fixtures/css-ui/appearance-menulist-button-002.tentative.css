@@ -1,0 +1,3 @@
+
+ #container { width: 500px; }
+ #container > #drop-down-select { appearance: none; appearance: menulist-button; }

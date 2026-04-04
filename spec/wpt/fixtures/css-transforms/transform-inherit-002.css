@@ -1,0 +1,13 @@
+
+      body {
+        height: 400px;
+        width: 400px;
+        transform: translate(10%, 10%);
+      }
+      div {
+        height: 100px;
+        width: 100px;
+        transform: inherit;
+        background: blue;
+      }
+    

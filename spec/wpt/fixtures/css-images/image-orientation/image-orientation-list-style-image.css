@@ -1,0 +1,3 @@
+
+ul { margin-left: 100px; list-style-image: url(support/exif-orientation-2-ur.jpg); }
+.no-orient { image-orientation: none; }

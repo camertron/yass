@@ -1,0 +1,12 @@
+
+      div {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        margin: 50px;
+        clip-path: polygon(0% 75%, 50% 25%, 100% 75%) margin-box;
+      }
+    

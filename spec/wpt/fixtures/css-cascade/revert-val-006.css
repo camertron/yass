@@ -1,0 +1,10 @@
+
+  @keyframes test {
+    from { margin-top: 0px; }
+    50% { margin-top: revert; }
+    to { margin-top: 0px; }
+  }
+  #h1 {
+    margin-top: 0px;
+    animation: test linear 1000s -500s paused;
+  }

@@ -1,0 +1,21 @@
+
+.clamp {
+  /* Image blocks don't contain lines, and the range between the end of the
+   * first <img class="block"> and the start of the second is an empty line,
+   * which doesn't count as far as line-clamp is concerned. Therefore, the text
+   * "Hidden clamp line" is on the third line. */
+  line-clamp: 3;
+  width: 150px;
+  line-height: 0;
+  color: transparent;
+}
+img {
+  height: 25px;
+  width: 100px;
+}
+.atomic {
+  display: inline-block;
+}
+.block {
+  display: block;
+}

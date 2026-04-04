@@ -1,0 +1,16 @@
+
+  @font-face {
+    font-family: fwf;
+    src: url(support/fonts/FontWithFancyFeatures.otf);
+  }
+  .test {
+	  font-family: fwf;
+	  font-size: 3em;
+	  line-height: 1.1;
+  }
+  .high {
+	font-variant-ligatures: normal;
+  }
+  .low {
+	font-feature-settings: "liga" on, "clig" on, "calt" on, "hlig" off, "dlig" off;
+  }

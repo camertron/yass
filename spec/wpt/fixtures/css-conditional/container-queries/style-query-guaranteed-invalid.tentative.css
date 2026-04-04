@@ -1,0 +1,5 @@
+
+  #target { background-color: green; }
+  @container --root style(--prop: var(--unknown)) {
+    #target { background-color: red; }
+  }

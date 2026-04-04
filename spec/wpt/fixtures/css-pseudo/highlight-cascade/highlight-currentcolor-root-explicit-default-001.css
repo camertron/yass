@@ -1,0 +1,65 @@
+
+div {
+  color: lime;
+  background: green;
+  margin: 10px;
+}
+::highlight(empty) {
+}
+::highlight(color-currentcolor) {
+  color: currentcolor;
+}
+::highlight(color-initial) {
+  color: initial;
+}
+::highlight(color-inherit) {
+  color: inherit;
+}
+::highlight(color-unset) {
+  color: unset;
+}
+::highlight(color-cyan) {
+  color: cyan;
+}
+::highlight(backgroundcolor-currentcolor) {
+  background-color: currentcolor;
+}
+::highlight(color-currentcolor-backgroundcolor-currentcolor) {
+  color: currentcolor;
+  background-color: currentcolor;
+}
+::highlight(color-initial-backgroundcolor-currentcolor) {
+  color: initial;
+  background-color: currentcolor;
+}
+::highlight(color-inherit-backgroundcolor-currentcolor) {
+  color: inherit;
+  background-color: currentcolor;
+}
+::highlight(color-unset-backgroundcolor-currentcolor) {
+  color: unset;
+  background-color: currentcolor;
+}
+::highlight(color-cyan-backgroundcolor-currentcolor) {
+  color: cyan;
+  background-color: currentcolor;
+}
+::highlight(backgroundcolor-blue) {
+  background-color: blue;
+}
+::highlight(color-currentcolor-backgroundcolor-blue) {
+  color: currentcolor;
+  background-color: blue;
+}
+::highlight(color-initial-backgroundcolor-blue) {
+  color: initial;
+  background-color: blue;
+}
+::highlight(color-inherit-backgroundcolor-blue) {
+  color: inherit;
+  background-color: blue;
+}
+::highlight(color-unset-backgroundcolor-blue) {
+  color: unset;
+  background-color: blue;
+}

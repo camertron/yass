@@ -1,0 +1,31 @@
+
+.filterbox {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 150px;
+  left: 0px;
+  border: 1px solid blue;
+
+
+}
+.greenbox {
+  position:absolute;
+  width: 150px;
+  height: 50px;
+  background: green;
+}
+.top {
+  top:100px;
+  left: 10px;
+}
+.right {
+  top:130px;
+  left: 102px;
+  width: 58px;
+  height: 150px;
+}
+.bottom {
+  top:252px;
+  left: 10px;
+}

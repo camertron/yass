@@ -1,0 +1,9 @@
+
+.colorbox {
+    position: absolute;
+    background: green;
+    width: 100px;
+    height: 100px;
+    left: 10px;
+    top: 100px;
+}

@@ -1,0 +1,8 @@
+
+        /* Specify a value in a rule hitting keyword targets so that the keywords
+           have something to override in the cascade. */
+        div > div
+        {
+            --var: 10px;
+        }
+    

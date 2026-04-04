@@ -1,0 +1,6 @@
+
+.test {
+  width: 1em;
+  hyphens: auto;
+  word-break: break-all;
+}

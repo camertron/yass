@@ -1,0 +1,13 @@
+
+  #target {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    view-transition-name: target;
+    z-index: 1;
+  }
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation-fill-mode: forwards;
+  }

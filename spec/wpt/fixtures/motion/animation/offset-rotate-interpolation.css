@@ -1,0 +1,17 @@
+
+    .parent {
+      offset-rotate: 30deg;
+    }
+    .target {
+      width: 80px;
+      height: 80px;
+      display: inline-block;
+      background-color: black;
+      margin-right: 5px;
+      offset-rotate: 10deg;
+    }
+    .expected {
+      background-color: green;
+      margin-right: 15px;
+    }
+  

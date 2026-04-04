@@ -1,0 +1,11 @@
+
+  #scroller {
+    overflow: auto;
+    scroll-marker-group: after;
+
+    .item {
+      &::scroll-marker {
+        content: "";
+      }
+    }
+  }

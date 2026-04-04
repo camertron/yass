@@ -1,0 +1,7 @@
+
+  @position-try --foo { left: 0; }
+  #t {
+    position: absolute;
+    left: 999999px; /* force fallback */
+    position-try-fallbacks: --foo;
+  }

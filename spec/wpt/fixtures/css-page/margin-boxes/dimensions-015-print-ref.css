@@ -1,0 +1,12 @@
+
+  @page {
+    width: 7.5in;
+    height: 8in;
+    margin: 0;
+  }
+  :root {
+    print-color-adjust: exact;
+  }
+  body {
+    margin: 0;
+  }

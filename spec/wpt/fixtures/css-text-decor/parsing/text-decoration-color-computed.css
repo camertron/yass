@@ -1,0 +1,8 @@
+
+  #container {
+    color: rgb(255, 0, 0);
+    text-decoration-color: currentcolor;
+  }
+  #target {
+    color: rgb(0, 255, 0);
+  }

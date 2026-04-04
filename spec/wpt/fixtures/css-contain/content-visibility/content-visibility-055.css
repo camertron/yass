@@ -1,0 +1,17 @@
+
+.spacer {
+  width: 150px;
+  height: 300vh;
+  background: lightblue;
+}
+#container {
+  width: 150px;
+  height: 150px;
+  background: green;
+  content-visibility: auto;
+}
+
+#target {
+  width: 150px;
+  height: 100px;
+}

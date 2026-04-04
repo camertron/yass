@@ -1,0 +1,9 @@
+
+div {
+  font-size: 10px;
+  line-height: 1;
+  width: 5ch;
+}
+span {
+  word-wrap: anywhere;
+}

@@ -1,0 +1,9 @@
+
+  html {
+    text-align: match-parent;
+    direction: rtl;
+  }
+  #log {
+    direction: ltr;
+    text-align: start;
+  }

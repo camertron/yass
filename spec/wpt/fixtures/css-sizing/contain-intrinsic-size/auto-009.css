@@ -1,0 +1,29 @@
+
+#target {
+  width: max-content;
+  height: max-content;
+  border: 1px solid;
+}
+#target::before {
+  content: "";
+  display: block;
+}
+.content-100-50::before {
+  width: 100px;
+  height: 50px;
+}
+.content-skip {
+  content-visibility: hidden;
+}
+.ciw-auto-2 {
+  contain-intrinsic-width: auto 2px;
+}
+.ciw-auto-20 {
+  contain-intrinsic-width: auto 20px;
+}
+.cih-auto-1 {
+  contain-intrinsic-height: auto 1px;
+}
+.cih-auto-10 {
+  contain-intrinsic-height: auto 10px;
+}

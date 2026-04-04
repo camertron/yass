@@ -1,0 +1,8 @@
+
+.a {
+  float: left;
+}
+:not(tfoot) {
+  column-width: 0;
+  border-top: 41px dashed -moz-activehyperlinktext;
+}

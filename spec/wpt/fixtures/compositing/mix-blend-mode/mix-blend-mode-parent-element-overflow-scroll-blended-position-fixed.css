@@ -1,0 +1,23 @@
+
+            .parent {
+                background: aqua;/*rgb(0,255,255);*/
+                width: 150px;
+                height: 150px;
+                position: relative;
+                z-index: 1;
+                overflow:scroll;
+            }
+
+            .blended {
+                background: fuchsia;/*rgb(255,0,255);*/
+                width: 100px;
+                height: 100px;
+                mix-blend-mode: multiply;
+                position: fixed;
+            }
+
+            .scrollableContent {
+                width: 200px;
+                height: 200px;
+            }
+        

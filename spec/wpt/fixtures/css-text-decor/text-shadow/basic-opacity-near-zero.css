@@ -1,0 +1,7 @@
+
+  #target {
+    font-size: 100px;
+    color: rgba(0 255 0 / 0.5);
+    text-shadow: 0 2px 0 rgba(0 0 255 / 0.0001);
+    text-decoration: line-through;
+  }

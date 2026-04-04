@@ -1,0 +1,7 @@
+
+  html {
+    --foo: bar;
+  }
+  @container style(--foo: bar) {
+     body { color: green; }
+  }

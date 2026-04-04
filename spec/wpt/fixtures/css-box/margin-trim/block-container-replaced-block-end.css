@@ -1,0 +1,16 @@
+
+.container {
+   width: min-content;
+   margin-trim: block-end;
+}
+.outer {
+    background-color: green;
+    width: 100px;
+    height: 40px;
+}
+.child {
+    display: block;
+    margin-bottom: 50px;
+    background-color: green;
+    padding-right: 40px;
+}

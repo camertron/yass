@@ -1,0 +1,13 @@
+
+    main {
+        font-size: 7em;
+        margin: 0.5em;
+    }
+    main::selection {
+        /*
+            Used values for color and background-color should be the
+            UA defaults, usually like black on blue or white on blue,
+            *not* initial on initial (like unhighlighted content).
+        */
+        text-decoration: none;
+    }

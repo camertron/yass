@@ -1,0 +1,14 @@
+
+
+div {
+  quotes: "A" "Z" "1" "9";
+}
+div::before {
+  content: open-quote;
+}
+div::after, span::after {
+  content: close-quote;
+}
+span {
+  contain: style;
+}

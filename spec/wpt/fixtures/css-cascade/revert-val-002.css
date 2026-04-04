@@ -1,0 +1,16 @@
+
+#outer {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+#inner {
+  /* This should win over `revert` */
+  display: block !important;
+}
+#inner {
+  color: green;
+  background-color: green;
+  display: revert;
+}

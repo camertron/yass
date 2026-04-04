@@ -1,0 +1,7 @@
+
+  input {
+    all: initial;
+    width: 100px;
+    text-overflow: ellipsis;
+    caret-color: transparent;
+  }

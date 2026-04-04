@@ -1,0 +1,4 @@
+
+    .hang { white-space: pre; }
+    .not-hang { white-space: pre; }
+    .frame { width: 65px; font-family: ahem; border: solid 3px cyan; }

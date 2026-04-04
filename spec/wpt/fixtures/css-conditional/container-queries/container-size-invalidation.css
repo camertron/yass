@@ -1,0 +1,10 @@
+
+  #container {
+    container-type: size;
+    width: 200px;
+    height: 50px;
+  }
+  div { color: red; }
+  @container (min-width: 300px) {
+    div { color: green; }
+  }

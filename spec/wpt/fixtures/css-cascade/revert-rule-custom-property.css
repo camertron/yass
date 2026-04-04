@@ -1,0 +1,13 @@
+
+#test1 {
+  --a: red;
+  --b: green;
+}
+#test1 {
+  --a: green;
+  --b: revert-rule;
+}
+#test1 {
+  --a: revert-rule;
+  --b: revert-rule;
+}

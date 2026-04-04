@@ -1,0 +1,23 @@
+
+.grid {
+  position: relative;
+  display: grid;
+  grid-gap: 10px 20px;
+  font: 10px/1 Ahem;
+  margin: 50px;
+}
+
+.fixedSize {
+  width: 200px;
+  height: 100px;
+}
+
+.contentBasedSize {
+  float: left;
+  height: auto;
+}
+
+.grid div:nth-child(1) { background: magenta; }
+.grid div:nth-child(2) { background: cyan; }
+.grid div:nth-child(3) { background: yellow; }
+.grid div:nth-child(4) { background: lime; }

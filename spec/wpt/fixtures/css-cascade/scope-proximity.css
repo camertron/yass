@@ -1,0 +1,48 @@
+
+  main * {
+    background-color: black;
+  }
+
+
+    .item {
+      padding: 0px;
+      border: 5px solid red;
+    }
+
+    @scope (.light) {
+      [id] { border-color: rgb(100, 100, 100); }
+    }
+
+    @scope (.dark) {
+      [id] { border-color: rgb(200, 200, 200); }
+    }
+  
+
+    @scope (.b) {
+      [id] { border-color:green; }
+    }
+    @scope (.a) {
+      [id] { border-color:red; }
+    }
+  
+
+    @scope (.a) {
+      span[id] { border-color:green; }
+    }
+    @scope (.b) {
+      [id] { border-color:red; }
+    }
+  
+
+    @scope (.foo) {
+      .bar span[id] { border-color:green; }
+    }
+  
+
+    @scope (.scope) {
+      :where(&) { border-color:green; }
+    }
+    @scope (#outer) {
+      :where(:scope) :where(#inner) { border-color:red; }
+    }
+  

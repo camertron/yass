@@ -1,0 +1,8 @@
+
+.grid-lanes {
+    display: grid-lanes;
+    background: gray;
+    flow-tolerance: 0;
+    grid-template-columns: repeat(3, 50px);
+    width: 170px;
+}

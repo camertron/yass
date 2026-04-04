@@ -1,0 +1,5 @@
+
+      div:nth-child(even of .foo) {
+        color: green;
+      }
+    

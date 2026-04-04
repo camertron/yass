@@ -1,0 +1,20 @@
+
+html,body {
+  color:black; background-color:white; font:16px/1 Ahem; padding:0; margin:0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  max-width: 100px;
+  place-items: baseline start;
+}
+
+.first {
+  font-size: 3em;
+}
+
+.second {
+  font-size: 2em;
+}
+  

@@ -1,0 +1,4 @@
+
+div:nth-child(odd of .b)::before {
+  content: "x";
+}

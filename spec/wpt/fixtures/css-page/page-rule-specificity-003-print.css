@@ -1,0 +1,16 @@
+
+
+@page :first {
+  size: landscape;
+}
+@page {
+  size: portrait;
+}
+div:first-of-type {
+  break-after: page;
+}
+body {
+  margin: 0;
+}
+
+  

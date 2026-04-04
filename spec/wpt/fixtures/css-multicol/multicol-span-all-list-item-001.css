@@ -1,0 +1,13 @@
+
+  li {
+    column-count: 1;
+    width: 300px;
+    outline: 1px solid black;
+    margin-bottom: 1em;
+  }
+  h3 {
+    column-span: all;
+    outline: 1px solid blue;
+    margin: 0;
+  }
+  

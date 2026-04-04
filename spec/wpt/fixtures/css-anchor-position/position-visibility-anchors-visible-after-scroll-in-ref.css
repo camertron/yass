@@ -1,0 +1,20 @@
+
+  #scroll-container {
+    overflow: hidden scroll;
+    scrollbar-width: none;
+    width: 300px;
+    height: 100px;
+  }
+
+  #anchor {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    margin-bottom: 100px;
+  }
+
+  #target {
+    width: 100px;
+    height: 100px;
+    background: green;
+  }

@@ -1,0 +1,16 @@
+
+  body {
+    margin: 0;
+    font: Ahem;
+  }
+
+  .col {
+      height: 100px;
+      column-count: auto;
+      column-rule: 5px solid gold;
+      border: 2px solid red;
+      column-width: 50px;
+      gap: 5px;
+      rule-break: none;
+      rule-visibility-items: all;
+  }

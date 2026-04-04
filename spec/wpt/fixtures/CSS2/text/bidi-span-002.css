@@ -1,0 +1,17 @@
+
+body {
+  text-align: left;
+  direction: rtl;
+}
+
+.c1:before {
+  content: '(';
+}
+
+.c1:after {
+  content: ')';
+}
+
+.c2:after {
+  content: '';
+}

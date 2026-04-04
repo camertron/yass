@@ -1,0 +1,12 @@
+
+        #main {
+            display: flex;
+        }
+        div span {
+            text-decoration: green underline;
+            text-decoration-skip-ink: none;
+            font: 20px/1 Ahem;
+            color: transparent;
+            padding-right: 1em;
+        }
+    

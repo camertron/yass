@@ -1,0 +1,24 @@
+
+.container {
+    width: 100px;
+}
+.child {
+    width: 80px;
+    height: 100px;
+    padding: 0px 10px;
+    background: red;
+}
+.ref {
+    position: absolute;
+    z-index: -1;
+    background: none;
+    height: 100px;
+}
+.grid {
+    background: none;
+    grid-template-rows: 100px;
+}
+#item {
+    padding: 0px 10%;
+    background: green;
+}

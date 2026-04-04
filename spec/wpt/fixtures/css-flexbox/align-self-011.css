@@ -1,0 +1,13 @@
+
+  #test {
+    align-items: stretch;
+    background-color: red;
+    display: flex;
+    height: 100px;
+    width: 100px;
+  }
+  #test div {
+    align-self: auto;
+    background-color: green;
+    width: 25px;
+  }

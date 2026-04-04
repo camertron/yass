@@ -1,0 +1,10 @@
+
+.multicol {
+  width: 500px;
+  height: 100px;
+  columns: 5;
+  column-fill: auto;
+  gap: 10px;
+  padding: 10px;
+  border: solid 3px;
+}

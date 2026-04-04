@@ -1,0 +1,9 @@
+
+  #outer {
+    color: red;
+  }
+  #inner {
+    width: 100px;
+    height: 100px;
+    background: conic-gradient(white, currentColor);
+  }

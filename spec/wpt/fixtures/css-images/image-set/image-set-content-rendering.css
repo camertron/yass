@@ -1,0 +1,6 @@
+
+  #test {
+    content: image-set(url("/images/green.png") 1x);
+    width: 100px;
+    height: 100px;
+  }

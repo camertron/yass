@@ -1,0 +1,7 @@
+
+.submenu {
+  display: none;
+}
+#container:has(:focus) > .submenu {
+  display: block;
+}

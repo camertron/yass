@@ -1,0 +1,14 @@
+
+  div {
+    height: 100px;
+    transition-property: background-color;
+    width: 100px;
+  }
+  #ref {
+    background-color: gray;
+    transition-delay: 3s;
+  }
+  #test {
+    background-color: blue;
+    transition-delay: 0s;
+  }

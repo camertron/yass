@@ -1,0 +1,12 @@
+
+  .carousel {
+    overflow: scroll;
+    scroll-marker-group: after;
+  }
+  .carousel::scroll-marker-group {
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  .carousel > *::scroll-marker {
+    content: "x";
+  }

@@ -1,0 +1,32 @@
+
+  table
+    {
+      border-spacing: 0px;
+      margin: 70px;
+      table-layout: fixed;
+    }
+
+  td
+    {
+      height: 40px;
+      padding: 0px;
+    }
+
+  td.corner
+    {
+      background-image: url("../support/new-red-diamond-27x27.png");
+      background-size: cover;
+    }
+
+  td#first-row-second-cell , td#third-row-second-cell , td.second-row
+    {
+      background-image: url("../support/blue-diamond-27x27.png");
+      background-size: 34px 40px;
+    }
+
+  td.second-row
+    {
+      background-size: 40px 34px;
+      height: 102px;
+    }
+  

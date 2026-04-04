@@ -1,0 +1,17 @@
+
+  .testContainer div {
+    /* Note: .testContainer is just here to prevent this rule from squishing
+       the dynamically-generated human-readable divs that show this test's
+       pass/fail results. */
+    width: 200px;
+    height: 200px;
+  }
+  .parent {
+    transform-style: preserve-3d;
+    transform: rotateY(45deg)
+  }
+
+  .child {
+    transform: rotateY(45deg);
+    background: lightblue
+  }

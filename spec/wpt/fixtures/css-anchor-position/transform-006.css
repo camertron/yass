@@ -1,0 +1,6 @@
+
+  .anchored {
+    position: absolute;
+    position-anchor: --a;
+    background: green;
+  }

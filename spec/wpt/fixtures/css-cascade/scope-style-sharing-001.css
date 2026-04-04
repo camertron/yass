@@ -1,0 +1,91 @@
+
+    @scope (.scope-start) to (.sibling + .sibling) {
+      .foo {
+        z-index: 1;
+      }
+    }
+  
+
+    @scope (.scope-start) to (.sibling:not(.sibling + div)) {
+      .foo {
+        z-index: 1;
+      }
+    }
+  
+
+    @scope (.sibling:not(.sibling + div)) {
+      :scope {
+        z-index: 1;
+      }
+    }
+  
+
+    @scope (.sibling + .sibling) {
+      :scope {
+        z-index: 1;
+      }
+    }
+  
+
+      @scope {
+        :scope {
+          z-index: 1;
+        }
+      }
+    
+
+      @scope {
+        :scope {
+          z-index: 1;
+        }
+      }
+    
+
+    @scope to (.sibling + .sibling) {
+      .foo {
+        z-index: 1;
+      }
+    }
+  
+
+    @scope to (.sibling:not(.sibling + div)) {
+      .foo {
+        z-index: 1;
+      }
+    }
+  
+
+    @scope (.sibling:has(> .foo)) {
+      :scope {
+        z-index: 1;
+      }
+    }
+  
+
+    @scope (.sibling:has(> .foo)) {
+      :scope {
+        z-index: 1;
+      }
+    }
+  
+
+    @scope (#first) {
+      :scope {
+        z-index: 1;
+      }
+    }
+  
+
+    @scope (#second) {
+      :scope {
+        z-index: 1;
+      }
+    }
+  
+
+    @scope (.root) {
+      > div:nth-of-type(2) {
+        z-index: 1;
+      }
+    }
+  

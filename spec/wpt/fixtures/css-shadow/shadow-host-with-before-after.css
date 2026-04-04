@@ -1,0 +1,16 @@
+
+.test {
+    width: 100px;
+    height: 25px;
+    background: red;
+    color: red;
+}
+#host1, #host2  {
+    color: green;
+}
+#host3 div, #host4 div {
+    width: 50%;
+    height: 100%;
+    background: green;
+    display: inline-block;
+}

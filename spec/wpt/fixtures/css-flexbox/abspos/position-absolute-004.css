@@ -1,0 +1,16 @@
+
+#flex {
+  display: flex;
+  position: relative;
+  background: red;
+  width: 500px;
+  height: 200px;
+}
+
+#item {
+  background: green;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}

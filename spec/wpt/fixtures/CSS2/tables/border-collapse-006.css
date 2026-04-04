@@ -1,0 +1,4 @@
+
+table { border-collapse: collapse; background: green }
+td { padding: 0; background: red; }
+td div { height: 25px; background: green; }

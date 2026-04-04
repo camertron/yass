@@ -1,0 +1,14 @@
+
+body {
+  margin: 0;
+}
+.container {
+  padding: 30px;
+}
+.target {
+  width: 100px;
+  height: 100px;
+  background: lightblue;
+  border-shape: circle(50px at 50px 50px);
+  outline: 9px double red;
+}

@@ -1,0 +1,21 @@
+
+.wrapper {
+  width: 0;
+}
+x-table {
+  table-layout: fixed;
+  border-spacing: 0px;
+}
+x-td:first-child {
+  padding: 0;
+  background: cyan;
+  width: 50px;
+  height: 50px;
+}
+x-td + x-td {
+  padding: 0;
+  height: 50px;
+}
+x-td > div {
+  width: 100px;
+}

@@ -1,0 +1,15 @@
+
+  @import "/fonts/ahem.css";
+  .contain {
+    font: 20px/1 Ahem;
+    width: 5em;
+    border: solid blue;
+    margin: 1em;
+    float: left; }
+  span, .test {
+    letter-spacing: 1em;
+  }
+  .pre, .control p {
+    white-space: pre-wrap;
+  }
+  p { margin: 0; }

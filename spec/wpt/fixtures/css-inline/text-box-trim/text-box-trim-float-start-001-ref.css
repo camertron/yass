@@ -1,0 +1,11 @@
+
+.float {
+  float: left;
+  width: 100px;
+  height: 50px;
+  background: yellow;
+}
+.text {
+  margin-top: 100px;
+  font: 50px/1 Ahem;
+}

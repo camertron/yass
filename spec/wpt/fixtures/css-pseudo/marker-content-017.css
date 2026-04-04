@@ -1,0 +1,10 @@
+
+img {
+  display: list-item;
+}
+img.inside {
+  list-style-position: inside;
+}
+img::marker {
+  content: '[marker]';
+}

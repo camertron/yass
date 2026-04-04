@@ -1,0 +1,9 @@
+
+  #parent {
+    color: red;
+    background-color: color-mix(in lch, color-mix(in lch, black, currentColor), black);
+  }
+  #child {
+    color: black;
+    background-color: inherit;
+  }

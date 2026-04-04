@@ -1,0 +1,29 @@
+
+  div
+    {
+      color: green;
+      font-size: 300%;
+    }
+
+  span
+    {
+      color: red;
+    }
+
+  div::selection
+    {
+      background-color: white;
+    }
+  /*
+  This div::selection rule is necessary. Without it,
+  "Selected Text" would be using the OS-default
+  highlight colors for ::selection
+  because neither color nor background-color would have
+  been specified by the author.
+  */
+
+  span::selection
+    {
+      color: white;
+    }
+  

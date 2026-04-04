@@ -1,0 +1,12 @@
+
+#undisplayed {
+  display: none;
+  color: red;
+}
+.sibling + #undisplayed {
+  color: green;
+}
+
+.sibling + #undisplayed > div {
+  color: yellow;
+}

@@ -1,0 +1,6 @@
+
+  :root {
+    overflow: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: green green;
+  }

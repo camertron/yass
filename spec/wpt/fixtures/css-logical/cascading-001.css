@@ -1,0 +1,39 @@
+
+    div {
+      writing-mode: horizontal-tb;
+      direction: ltr;
+      background-color: blue;
+    }
+    .horizontal-logical {
+      inline-size: 100px;
+      block-size: 10px;
+    }
+    #horizontal-logical {
+      inline-size: 100px;
+      block-size: 10px;
+    }
+    .horizontal-physical {
+      width: 100px;
+      height: 10px;
+    }
+    #horizontal-physical {
+      width: 100px;
+      height: 10px;
+    }
+    .vertical-logical {
+      inline-size: 10px;
+      block-size: 100px;
+    }
+    #vertical-logical {
+      inline-size: 10px;
+      block-size: 100px;
+    }
+    .vertical-physical {
+      width: 10px;
+      height: 100px;
+    }
+    #vertical-physical {
+      width: 10px;
+      height: 100px;
+    }
+  

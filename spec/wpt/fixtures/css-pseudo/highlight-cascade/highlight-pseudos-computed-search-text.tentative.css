@@ -1,0 +1,12 @@
+
+  #target::search-text {
+    background-color: blue;
+    color: lime;
+  }
+  #target::search-text:not(:current) {
+    background-color: green;
+  }
+  #target::search-text:current {
+    /* FAIL if this matches */
+    background-color: red;
+  }

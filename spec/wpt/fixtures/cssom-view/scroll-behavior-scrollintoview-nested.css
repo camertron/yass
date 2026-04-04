@@ -1,0 +1,11 @@
+
+  .scrollable {
+    overflow: auto;
+    height: 200px;
+  }
+  .smoothBehavior {
+    scroll-behavior: smooth;
+  }
+  .gradient {
+    background: linear-gradient(135deg, red, green);
+  }

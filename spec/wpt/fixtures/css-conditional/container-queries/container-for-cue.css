@@ -1,0 +1,11 @@
+
+    video {
+      container-type: size;
+      width: 200px;
+      height: 200px;
+    }
+    @container (width = 200px) {
+      video::cue { background-color: green }
+      video::cue(b) { color: lime }
+    }
+  

@@ -1,0 +1,10 @@
+
+@view-transition {
+  navigation: auto;
+}
+.left {
+  view-transition-name: target;
+  width: 100px;
+  height: 100px;
+  background: red;
+}

@@ -1,0 +1,10 @@
+
+  #target {
+    animation: anim 1s paused;
+  }
+
+  @keyframes anim {
+    from {
+      column-rule-color: green;
+    }
+  }

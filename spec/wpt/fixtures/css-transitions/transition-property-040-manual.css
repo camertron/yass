@@ -1,0 +1,6 @@
+
+  #test {
+    transition-duration: 2s;
+    transition-property: text-shadow;
+    transition-timing-function: linear;
+  }

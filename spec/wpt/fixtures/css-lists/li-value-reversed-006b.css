@@ -1,0 +1,10 @@
+
+:root {
+  color:black; background-color:white; font:10px/1 monospace;
+}
+ol {
+  counter-reset: reversed(list-item);
+}
+ol::before, li::before {
+  content: counters(list-item,".");
+}

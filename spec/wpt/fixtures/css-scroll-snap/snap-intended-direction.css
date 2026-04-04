@@ -1,0 +1,15 @@
+
+div {
+  position: absolute;
+  margin: 0px;
+}
+#scroller {
+  width: 200px;
+  height: 100px;
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+}
+.snap {
+  scroll-snap-align: start;
+  background: green;
+}

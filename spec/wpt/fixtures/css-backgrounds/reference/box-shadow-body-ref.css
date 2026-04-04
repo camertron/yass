@@ -1,0 +1,12 @@
+
+    html {
+        background-color: white;
+    }
+    body {
+        position: relative;
+        box-shadow: 0 0 0 4px red;
+        height: 300px;
+        width: 600px;
+        margin: 20px auto;
+    }
+    

@@ -1,0 +1,18 @@
+
+.flex-container {
+  display: flex;
+  height: 100px;
+  width: 200px;
+  background-color: pink;
+  flex-wrap: wrap;
+}
+.flex-item1 {
+  width: 100%;
+  background-color: blue;
+  border: 1px solid;
+  border-color: red;
+}
+.flex-item2 {
+  width: 100%;
+  background-color: blue;
+}

@@ -1,0 +1,14 @@
+
+         /*
+            This test ensures that the underline offset is taken into account
+            when calculating the skip-ink. The underline should skip all
+            characters except the third.
+          */
+         div{
+             font: 20px/1 Ahem;
+             color: rgba(255,255,0,0.25);
+             text-decoration: green underline;
+             text-decoration-skip-ink: auto;
+             text-underline-offset: -.3em;
+         }
+        

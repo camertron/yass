@@ -1,0 +1,17 @@
+
+@import "support/MetricsTestFont.css";
+
+.spacer {
+  background: lightgray;
+  block-size: 100px;
+}
+.target {
+  font: 100px/2 MetricsTestFont;
+  position: relative;
+  top: -50px;
+  height: 100px;
+}
+.atomic {
+  display: inline-block;
+  background: lime;
+}

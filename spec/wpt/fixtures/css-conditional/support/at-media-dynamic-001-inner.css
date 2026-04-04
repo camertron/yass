@@ -1,0 +1,5 @@
+
+  html { background: red; overflow: hidden; }
+  @media (max-width: 100px) {
+    html { background: green; }
+  }

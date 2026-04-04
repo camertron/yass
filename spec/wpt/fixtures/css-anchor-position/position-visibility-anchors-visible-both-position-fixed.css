@@ -1,0 +1,26 @@
+
+  #anchor {
+    anchor-name: --a1;
+    position: fixed;
+    top: -100px;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: orange;
+  }
+
+  #target {
+    position-anchor: --a1;
+    position-visibility: anchors-visible;
+    position-area: bottom right;
+    width: 100px;
+    height: 100px;
+    background: green;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  #spacer {
+    height: 200vh;
+  }

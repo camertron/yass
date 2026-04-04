@@ -1,0 +1,12 @@
+
+@keyframes bgcolor {
+
+  0% { background: blue; }
+  100% { background: none; }
+}
+.target {
+  animation: bgcolor 50ms;
+  opacity: 0.9;
+  height: 0.4px;
+  margin: 21.6px;
+}

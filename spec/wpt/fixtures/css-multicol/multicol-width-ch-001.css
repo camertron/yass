@@ -1,0 +1,8 @@
+
+  .multicol {
+    font: 10px ahem;
+    width: 69ch;
+    column-width: 13ch;
+    column-gap: 1ch;
+    background: yellow;
+  }

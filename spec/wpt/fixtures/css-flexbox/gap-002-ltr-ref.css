@@ -1,0 +1,14 @@
+
+  section {
+    background-color: green;
+    block-size: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+  section > div{
+    background-color: grey;
+    flex: 1 1 auto;
+  }
+  section > div:not(:first-child) {
+    margin-block-start: 20px;
+  }

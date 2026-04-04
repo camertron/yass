@@ -1,0 +1,13 @@
+
+@property --my-url {
+  syntax: "<url> | none";
+  inherits: true;
+  initial-value: none;
+}
+:root {
+  --my-url: url(blah);
+}
+
+* {
+  --foo: var(--my-url);
+}

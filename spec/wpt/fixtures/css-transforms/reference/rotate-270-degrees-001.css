@@ -1,0 +1,15 @@
+
+        #greenBottomDiv {
+            position: absolute;
+            background: green;
+            border-left: transparent;
+            border-bottom-color: transparent;
+            border-right-color: black;
+            border-top-color: transparent;
+            border-width: 5px;
+            border-style: solid;
+            height: 100px;
+            width: 100px;
+         }
+
+    

@@ -1,0 +1,39 @@
+
+  #target1 {
+    transition: font-size steps(2, start) 1000s;
+    font-size: 10px;
+    width: 1em;
+  }
+  #target1.change {
+    font-size: 20px;
+  }
+  #ref1 {
+    width: 15px;
+  }
+
+  #target2 {
+    transition: font-size steps(2, start) 1000s;
+    font-size: 10px;
+    width: 1ex;
+  }
+  #target2.change {
+    font-size: 20px;
+  }
+  #ref2 {
+    font-size: 15px;
+    width: 1ex;
+  }
+
+  #target3 {
+    transition: --x steps(2, start) 1000s;
+    --x: 10px;
+    width: var(--x);
+  }
+  #target3.change {
+    --x: 20px;
+    font-size: 20px;
+  }
+  #ref3 {
+    width: 20px;
+  }
+

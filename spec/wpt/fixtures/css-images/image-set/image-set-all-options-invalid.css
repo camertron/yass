@@ -1,0 +1,9 @@
+
+  #target {
+      width: 100px;
+      height: 100px;
+      box-sizing: border-box;
+      background-color: red;
+      border: 50px solid green;
+      border-image: 1 / 10px image-set(url('data:image/png;base64,') type('image/unknown'));
+  }

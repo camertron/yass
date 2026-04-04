@@ -1,0 +1,11 @@
+
+.parent {
+  word-spacing: 30px;
+}
+.target {
+  font: 10px sans-serif;
+  word-spacing: 10px;
+}
+.expected {
+  color: green;
+}

@@ -1,0 +1,5 @@
+
+ html { overflow:hidden; display:table; border-spacing:0; background:white; margin:40px 8px 8px }
+ head { display:caption; margin-bottom:10px }
+ body { display:table-cell; width:20px; height:20px; margin-top:-15px; background:black }
+ p { position:absolute; top:0 }

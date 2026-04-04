@@ -1,0 +1,14 @@
+
+html, body { margin: 0; padding: 0; }
+
+:root {
+  overflow: hidden; /* hide scrollbars for reftest analysis */
+}
+
+#target {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  margin: 25vh 0;
+  border-top: solid blue;
+}

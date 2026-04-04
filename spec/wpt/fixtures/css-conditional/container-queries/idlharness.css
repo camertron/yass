@@ -1,0 +1,7 @@
+
+  @container cont (width = 100px) {
+    @container (inline-size > 200em) {
+      #id { color: lime }
+    }
+    #id { color: green }
+  }

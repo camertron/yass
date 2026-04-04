@@ -1,0 +1,13 @@
+
+body {
+  overflow: hidden;
+}
+div {
+  will-change: transform;
+  transform: scale(0.005);
+  transform-origin: 0 0;
+  width: 40000px;
+  height: 40000px;
+  background: green;
+  border: 2000px solid blue;
+}

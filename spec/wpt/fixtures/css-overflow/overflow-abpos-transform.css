@@ -1,0 +1,15 @@
+
+  #container {
+    position: relative;
+    overflow: auto;
+    width: 200px;
+    height: 200px;
+  }
+  #target {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-left: 100px;
+    transform: translateX(-100px);
+    background: green;
+  }

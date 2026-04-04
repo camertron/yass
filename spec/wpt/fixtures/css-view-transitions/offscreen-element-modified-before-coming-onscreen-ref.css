@@ -1,0 +1,10 @@
+
+#target {
+  width: 100px;
+  height: 100px;
+  view-transition-name: target;
+  position: fixed;
+  background: blue;
+  left: 0;
+  top: 0;
+}

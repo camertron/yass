@@ -1,0 +1,15 @@
+
+body {
+  font: 16px/1 Ahem;
+  padding: 32px 0;
+}
+p {
+  margin: 0;
+  border: 5px solid blue;
+}
+ruby {
+  ruby-align: center;
+}
+.a {
+  font-size: 32px;
+}

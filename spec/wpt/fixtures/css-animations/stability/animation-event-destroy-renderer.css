@@ -1,0 +1,23 @@
+
+    .box {
+      height: 100px;
+      width: 100px;
+      margin: 10px;
+      background-color: blue;
+      /* Use a long duration and delay for precise control over when animation
+         events are triggered. With short animations, the animation-iteration
+         event could be dropped if the animation finishes too son. An
+         animation-iteration event does not fire when completing the last
+         iteration.
+      */
+      animation-name: move;
+      animation-duration: 10000s;
+      animation-delay: 5000s;
+      animation-iteration-count: 2;
+    }
+
+    @keyframes move {
+      from { transform: translate(0px, 0px); }
+      to { transform: translate(100px, 0px); }
+    }
+  

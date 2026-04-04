@@ -1,0 +1,13 @@
+
+html {
+  background: pink;
+}
+#box {
+  will-change: opacity;
+  background: blue;
+}
+
+div {
+  padding-left: 8px;
+  padding-top: 8px;
+}

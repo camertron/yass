@@ -1,0 +1,22 @@
+
+    .target {
+        width: 200px;
+        height: 200px;
+        corner-shape: superellipse(1.8) scoop superellipse(-5) bevel;
+        border-radius: 25%;
+        position: relative;
+    }
+
+    .backdrop {
+        background: rgba(0 128 0 / 50%);
+        backdrop-filter: brightness(0);
+    }
+
+    .overflow {
+        position: absolute;
+        left: 100px;
+        top: 100px;
+        width: 200px;
+        height: 200px;
+        background: rebeccapurple;
+    }

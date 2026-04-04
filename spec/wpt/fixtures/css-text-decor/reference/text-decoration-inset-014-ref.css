@@ -1,0 +1,16 @@
+
+body {
+  background: white;
+  color: black;
+}
+div {
+  position: relative;
+}
+h1 {
+  position: absolute;
+  font-family: monospace;
+  width: 16ch;
+}
+u {
+  text-decoration-color: black;
+}

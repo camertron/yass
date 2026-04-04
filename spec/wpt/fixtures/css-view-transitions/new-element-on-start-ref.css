@@ -1,0 +1,12 @@
+
+div {
+  width: 100px;
+  height: 100px;
+  contain: paint;
+  position: absolute;
+  top: 50px;
+  background: black;
+  left: 200px;
+  filter: invert(1);
+}
+body { background: lightpink; }

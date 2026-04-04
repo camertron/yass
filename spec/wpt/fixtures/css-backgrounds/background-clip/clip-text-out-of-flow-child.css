@@ -1,0 +1,19 @@
+
+  .box {
+    font: 10px/1 Ahem;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    color: transparent;
+    background-clip: text;
+    position: relative;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      background-color: blueviolet;
+      content: '_';
+      position: absolute;
+      z-index: -1;
+    }
+  }

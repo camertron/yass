@@ -1,0 +1,11 @@
+
+  .clamp {
+    display: block;
+    padding: 10px;
+    border: solid 3px;
+    width: 100px;
+  }
+  .clamp div {
+    border: medium solid green;
+    padding: 15px;
+  }

@@ -1,0 +1,10 @@
+
+  .nullDims {
+    width: 0;
+    height: 0;
+  }
+
+  .nullDims > div {
+    position: absolute;
+    left: 10px;
+  }

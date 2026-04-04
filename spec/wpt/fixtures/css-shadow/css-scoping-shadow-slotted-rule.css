@@ -1,0 +1,14 @@
+
+        my-host {
+            display: block;
+            width: 100px;
+            height: 100px;
+            color: red;
+            background: green;
+        }
+        my-host > div, nested-host {
+            display: block;
+            width: 100px;
+            height: 25px;
+        }
+    

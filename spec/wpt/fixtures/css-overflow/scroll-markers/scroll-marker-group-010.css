@@ -1,0 +1,11 @@
+
+  div {
+    scroll-marker-group: after;
+  }
+
+  div::scroll-marker-group {
+    background-color: red;
+    display: flex;
+    height: 100px;
+    width: 100px;
+  }

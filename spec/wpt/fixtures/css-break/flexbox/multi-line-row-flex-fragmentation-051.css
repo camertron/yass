@@ -1,0 +1,15 @@
+
+  #flex {
+    display: flex;
+    flex-wrap: wrap;
+    height: 190px;
+    position: relative;
+    align-items: center;
+    padding-top: 10px;
+  }
+  #flex > div {
+    width: 50px;
+    height: 100px;
+    background: green;
+    flex: none;
+  }

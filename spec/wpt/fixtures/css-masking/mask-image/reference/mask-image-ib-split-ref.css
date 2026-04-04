@@ -1,0 +1,5 @@
+
+  body { column-width: 40px; column-gap: 0; }
+  div { padding-inline-start: 40px; margin: 1em 0; border-bottom-style: solid; }
+  span { margin-inline-end: -2px; }
+  div { mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGDwAQAAUQBNt+pgmgAAAABJRU5ErkJggg==); }

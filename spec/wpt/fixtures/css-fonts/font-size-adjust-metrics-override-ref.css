@@ -1,0 +1,41 @@
+
+@font-face {
+  font-family: Ahem;
+  src: local(Ahem), url(/fonts/Ahem.ttf);
+}
+
+.reference {
+  font: 20px Ahem;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.overridden-ascent-ref {
+  display: inline-block;
+  background-color: green;
+  width: 1em;
+  height: 1em; /* Scale a reference block to match the overridden ascent of 100%. */
+}
+
+.character {
+  display: inline-block;
+  background-color: green;
+  width: 2em;  /* Double-size of an 'X' in Ahem */
+  height: 2em; /* Double-size of an 'X' in Ahem */
+  position: absolute;
+  /* Two times of difference between the overridden ascent and the original ascent */
+  top: 0.4em;
+  left: 1em;
+}
+
+.overridden-descent-ref {
+  display: inline-block;
+  background-color: green;
+  width: 1em;
+  height: 0.5em; /* Scale a reference block to match the overridden descen of 50%. */
+  position: absolute;
+  top: 2.5em;
+  left: 3em;
+}
+

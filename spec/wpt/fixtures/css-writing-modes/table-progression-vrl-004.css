@@ -1,0 +1,24 @@
+
+  .test {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+  [dir=rtl] {
+    direction: rtl;
+  }
+
+  table {
+    border-spacing: 0;
+    border: solid gray;
+    margin: 1em;
+    float: left;
+  }
+  td {
+    width: 1em;
+    height: 1em;
+  }
+
+  .navy { background: navy}
+  .blue { background: blue }
+  .aqua { background: aqua }
+  .teal { background: teal }

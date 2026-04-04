@@ -1,0 +1,22 @@
+
+        outer-host {
+            display: block;
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+        outer-host > * {
+            display: block;
+            width: 100px;
+            height: 25px;
+        }
+    
+
+                ::slotted([slot=outer]) { background: green; color: green; }
+                ::slotted([slot=both]) { background: green; }
+                span { display: block; width: 100px; height: 25px; }
+            
+
+            ::slotted([slot=inner]) { background: green; color: green; }
+            ::slotted([slot=both]) { color: green; }
+        

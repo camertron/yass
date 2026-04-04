@@ -1,0 +1,12 @@
+
+  :root {
+    scrollbar-color: yellow blue;
+  }
+
+  body {
+    overflow: scroll;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background-color: purple;
+  }

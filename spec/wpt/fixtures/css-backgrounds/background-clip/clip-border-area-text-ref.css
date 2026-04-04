@@ -1,0 +1,15 @@
+
+    .test {
+        display: inline-block;
+        margin: 20px;
+        width: 300px;
+        height: 150px;
+        box-sizing: border-box;
+        border: 30px solid blue;
+        font: bold 60px/90px monospace;
+        color: blue;
+    }
+
+    .rounded {
+        border-radius: 20px;
+    }

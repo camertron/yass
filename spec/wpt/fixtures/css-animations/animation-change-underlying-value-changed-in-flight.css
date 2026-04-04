@@ -1,0 +1,10 @@
+
+
+@keyframes implicit-from {
+  to { margin-left: 100px }
+}
+
+@keyframes implicit-to {
+  from { margin-left: 100px }
+}
+

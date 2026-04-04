@@ -1,0 +1,15 @@
+
+.grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(auto-fill, 100px);
+    height: 400px;
+    width: 150px;
+    gap: 10px;
+}
+
+img {
+  height: 100%;
+  width: auto;
+  display: block;
+}

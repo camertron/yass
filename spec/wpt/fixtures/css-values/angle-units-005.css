@@ -1,0 +1,21 @@
+
+  div
+    {
+      height: 100px;
+      width: 100px;
+    }
+
+  div#test-overlapping-green
+    {
+      background-color: red;
+      background-image: linear-gradient(0.25tUrN, green, green);
+    }
+
+  div#reference-overlapped-red
+    {
+      background-color: red;
+      bottom: 100px;
+      position: relative;
+      z-index: -1;
+    }
+  

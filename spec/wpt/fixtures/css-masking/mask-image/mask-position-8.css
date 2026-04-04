@@ -1,0 +1,4 @@
+
+  .mask {
+    mask: linear-gradient(90deg, transparent 25%, black 25%, black 50%, transparent 50%) 50% / 200% 100%;
+  }

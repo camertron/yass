@@ -1,0 +1,4 @@
+
+  /* The combination of button, grid, nested inlines, and ::first-letter crashes Blink */
+  button { display: grid }
+  button::first-letter { color: red }

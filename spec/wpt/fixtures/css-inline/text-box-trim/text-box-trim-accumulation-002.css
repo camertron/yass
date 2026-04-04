@@ -1,0 +1,20 @@
+
+@import "support/MetricsTestFont.css";
+
+.spacer {
+  block-size: 100px;
+  background: lightgray;
+}
+
+.outer {
+  text-box-trim: trim-start;
+}
+
+.middle {
+  text-box-trim: trim-end;
+  text-box-edge: ex alphabetic;
+}
+
+.inner {
+  font: 100px/1 MetricsTestFont;
+}

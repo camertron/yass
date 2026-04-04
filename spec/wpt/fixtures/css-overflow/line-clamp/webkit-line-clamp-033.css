@@ -1,0 +1,11 @@
+
+.clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  font: 16px / 32px serif;
+  white-space: pre;
+  background-color: yellow;
+  padding: 0 4px;
+  overflow: hidden; /* can be removed once implementations update their old -webkit-line-clamp implementations */
+}

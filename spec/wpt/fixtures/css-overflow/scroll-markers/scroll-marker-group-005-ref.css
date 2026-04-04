@@ -1,0 +1,21 @@
+
+  div.red {
+    background: red;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+  }
+
+  div.yellow {
+    background: yellow;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+  }
+
+  div.green {
+    background: green;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+  }

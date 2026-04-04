@@ -1,0 +1,10 @@
+
+* {
+  max-height: 10vh;
+  border-top-style: dotted;
+  word-break: break-all;
+  columns: 1 0px;
+}
+.a {
+  float: right;
+}

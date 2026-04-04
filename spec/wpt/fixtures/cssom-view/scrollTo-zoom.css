@@ -1,0 +1,17 @@
+
+  .container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    overflow: scroll;
+    background: red;
+    scrollbar-width: none;
+  }
+  .container > div {
+    position: absolute;
+    left: 13px;
+    top: 27px;
+    width: 100px;
+    height: 100px;
+    background: white;
+  }

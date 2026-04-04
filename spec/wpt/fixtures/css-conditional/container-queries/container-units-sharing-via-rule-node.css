@@ -1,0 +1,27 @@
+
+.test {
+  position: relative;
+  z-index: 0;
+  border: 1px solid;
+  max-width: max-content;
+}
+
+.container {
+  position: absolute;
+  container-type: size;
+  inset: 0;
+}
+
+.container-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100cqi;
+  height: 100cqb;
+  background-color: green;
+}
+
+span {
+  display: block;
+  background-color: red;
+}

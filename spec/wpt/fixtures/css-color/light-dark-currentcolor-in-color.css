@@ -1,0 +1,6 @@
+
+  #parent { color: green; }
+  #child {
+    color-scheme: dark;
+    color: light-dark(red, currentColor);
+  }

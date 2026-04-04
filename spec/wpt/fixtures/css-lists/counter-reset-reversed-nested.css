@@ -1,0 +1,5 @@
+
+  ol { counter-reset: reversed(foo); }
+  li { display: block }
+  li::before { counter-increment: foo -1; content: counter(foo) ". " }
+  .set { counter-set: foo 10; }

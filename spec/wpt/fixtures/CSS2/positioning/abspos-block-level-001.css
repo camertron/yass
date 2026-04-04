@@ -1,0 +1,15 @@
+
+.rtl {
+  direction: rtl
+}
+.absolute {
+  position: absolute;
+}
+.red {
+  color: red;
+  padding: 0 1ch;
+}
+.green {
+  background-color: lime;
+  padding: 0 1ch;
+}

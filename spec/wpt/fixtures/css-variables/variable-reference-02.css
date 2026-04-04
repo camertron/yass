@@ -1,0 +1,12 @@
+
+:root {
+  --a: crimson;
+  color: red;
+}
+body {
+  color: green;
+}
+p {
+  color: orange;
+  color: var(--a) var(--b);
+}

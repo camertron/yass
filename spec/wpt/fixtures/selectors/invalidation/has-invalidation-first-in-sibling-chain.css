@@ -1,0 +1,6 @@
+
+div, main { color: grey }
+#subject1:has(.item ~ .item + .item) { color: red; }
+#subject2:has(.item + .item + .item) { color: orangered; }
+#subject3:has(.item .item ~ .item + .item) { color: green; }
+#subject4:has(.item .item + .item + .item) { color: lightgreen; }

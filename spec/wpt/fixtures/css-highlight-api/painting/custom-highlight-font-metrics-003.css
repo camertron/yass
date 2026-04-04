@@ -1,0 +1,21 @@
+
+    :root {
+      font-size: 16px;
+    }
+    div {
+      margin: 40px;
+      font-size: 20px;
+    }
+    ::selection {
+      background-color: transparent;
+      text-underline-offset: 0.5em;
+      text-decoration-line: underline;
+      text-decoration-color: green;
+      text-decoration-thickness: 0.25rem;
+    }
+    ::highlight(highlight1) {
+      text-decoration-line: overline;
+      text-decoration-color: green;
+      text-decoration-thickness: 4px;
+    }
+  

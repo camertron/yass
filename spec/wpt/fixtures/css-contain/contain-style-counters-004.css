@@ -1,0 +1,14 @@
+
+body {
+  counter-reset: counter-of-span 13;
+  contain: style;
+}
+body span {
+  counter-increment: counter-of-span 5;
+}
+div {
+  font-size: 3em;
+}
+div::after {
+  content: counter(counter-of-span);
+}

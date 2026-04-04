@@ -1,0 +1,9 @@
+
+        @font-face {
+            font-family: halt-font;
+            src: url('/fonts/noto/cjk/NotoSansCJKjp-Regular-subset-halt-min.otf');
+        }
+        body { writing-mode: vertical-rl; font-family: Arial; }
+        .underline { text-decoration: underline; font-family: halt-font; font-language-override: "JAN"; }
+        .overline { text-decoration: overline; font-family: halt-font; font-language-override: "JAN"; }
+    

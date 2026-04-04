@@ -1,0 +1,7 @@
+
+div {
+  font: 20px/1 Ahem;
+  width: 4ch;
+  white-space: pre-wrap;
+}
+span { background: blue; } /* If the space is removed instead of hanging, there will be no blue box*/

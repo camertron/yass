@@ -1,0 +1,24 @@
+
+  @font-face {
+    font-family: "slnt test font";
+    src: url('resources/FontStyleTest-slnt_backslant-VF.woff2');
+    font-style: oblique -15deg 15deg;
+  }
+
+  .test {
+    font-family: "slnt test font";
+    font-size: 3em;
+  }
+
+  .backslant {
+    font-style: oblique -14deg;
+  }
+
+  .oblique {
+    font-style: oblique;
+  }
+
+  .italic {
+    font-style: italic;
+  }
+

@@ -1,0 +1,9 @@
+
+  div#test {
+      font: 20px/1 Ahem;
+      margin-left: 20px;
+      background: green;
+
+      width: 4ch;
+      white-space: pre;
+  }

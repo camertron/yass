@@ -1,0 +1,30 @@
+
+    @mixin --m1() {
+      @result {
+        @contents;
+      }
+    }
+    #e1::after {
+      content: "AFTER";
+      @apply --m1 {
+        color: green;
+      }
+    }
+  
+
+    @mixin --m2() {
+      @result {
+        @contents;
+      }
+    }
+    /* Should match <div id=e2> with the specificity of :where(#e2) (zero),
+       not with the specificity of :is(:where(#e2), #u1). */
+    :where(#e2), #u1 {
+      @apply --m2 {
+        color: red;
+      }
+    }
+    :where(#e2) {
+      color: green; /* Wins. */
+    }
+  

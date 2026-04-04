@@ -1,0 +1,5 @@
+
+:root { background-color: blue }
+@media (prefers-color-scheme: dark) {
+  :root { background-color: purple }
+}

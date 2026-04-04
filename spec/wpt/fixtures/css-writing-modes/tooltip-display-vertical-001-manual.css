@@ -1,0 +1,13 @@
+
+  h3#vrl
+    {
+      float: right;
+      writing-mode: vertical-rl;
+    }
+
+  h3#vlr
+    {
+      float: left;
+      writing-mode: vertical-lr;
+    }
+  

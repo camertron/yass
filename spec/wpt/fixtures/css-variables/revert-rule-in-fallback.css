@@ -1,0 +1,16 @@
+
+  #child {
+    --x:PASS;
+    margin: 1px;
+    padding-left: 1px;
+  }
+  #parent {
+    --x:FAIL;
+    margin: -1px;
+    padding-left: -1px;
+  }
+  #child {
+    --x: var(--unknown, revert-rule);
+    margin: var(--unknown, revert-rule);
+    padding-left: var(--unknown, revert-rule);
+  }

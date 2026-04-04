@@ -1,0 +1,13 @@
+
+.grid-lanes {
+    grid-template-rows: repeat(3, 20px);
+    display: grid-lanes;
+    background: gray;
+    position: relative;
+    flow-tolerance: 0;
+}
+
+.max-content-item {
+    width: max-content;
+    height: 20px;
+}

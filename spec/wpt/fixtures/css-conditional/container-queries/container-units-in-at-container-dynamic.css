@@ -1,0 +1,14 @@
+
+  #outer {
+     container-type: size;
+     width: 40px;
+     height: 40px;
+   }
+  #container {
+    container-type: size;
+    width: 16px;
+    height: 16px;
+  }
+
+  @container ((width = 16px) and (width = 50cqw)) { #child { --cqw:true;  } }
+

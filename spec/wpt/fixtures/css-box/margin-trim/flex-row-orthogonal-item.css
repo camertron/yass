@@ -1,0 +1,21 @@
+
+flexbox {
+    display: flex;
+    width: min-content;
+    margin-trim: inline
+}
+item {
+    display: block;
+    background-color: green;
+    width: 50px;
+    height: 100px;
+}
+.orthogonal {
+    writing-mode: vertical-rl;
+}
+item:first-child {
+    margin-block-end: 10px;
+}
+item:last-child {
+    margin-inline-end: 10px;
+}

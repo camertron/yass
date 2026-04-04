@@ -1,0 +1,10 @@
+
+div {
+  font-size: 2em;
+  border: solid blue;
+  margin: 5px;
+  width: min-content; /* not 0, otherwise it would trigger the overflow fallback behavior */
+}
+#test {
+  word-break: auto-phrase;
+}

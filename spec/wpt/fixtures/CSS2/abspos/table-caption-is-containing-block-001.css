@@ -1,0 +1,13 @@
+
+caption, div {
+  height:100px;
+  width:50px;
+  background:green;
+}
+#redSquare {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  position: absolute;
+  z-index: -1;
+}

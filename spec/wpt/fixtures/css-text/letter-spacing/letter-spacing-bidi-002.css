@@ -1,0 +1,9 @@
+
+div {
+  font-family: monospace;
+  font-size: 3em;
+  width: 0;
+}
+span {
+  letter-spacing: 1ch;
+}

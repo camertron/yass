@@ -1,0 +1,9 @@
+
+@keyframes margin-animation {
+  from {
+    margin-left: 0px;
+  }
+  to {
+    margin-left: 100px;
+  }
+}

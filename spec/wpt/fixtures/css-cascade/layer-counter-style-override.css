@@ -1,0 +1,19 @@
+
+#target, #reference {
+  font-family: monospace;
+  width: min-content;
+}
+
+#reference::before {
+  content: '0000';
+}
+
+@counter-style three {
+  system: cyclic;
+  symbols: '000';
+}
+
+@counter-style four {
+  system: cyclic;
+  symbols: '0000';
+}

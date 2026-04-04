@@ -1,0 +1,30 @@
+
+ol {
+  float: left;
+  width: 50px;
+  list-style-position: inside;
+  line-height: 2;
+}
+.text-emphasis-shorthand.explicit ::marker,
+.text-emphasis-shorthand.inherit {
+  -webkit-text-emphasis: circle green;
+  text-emphasis: circle green;
+}
+.text-emphasis-longhands.explicit ::marker,
+.text-emphasis-longhands.inherit {
+  -webkit-text-emphasis-style: circle;
+  -webkit-text-emphasis-color: green;
+  -webkit-text-emphasis-position: under right;
+  text-emphasis-style: circle;
+  text-emphasis-color: green;
+  text-emphasis-position: under right;
+}
+.marker-decimal {
+  list-style-type: decimal;
+}
+.marker-string {
+  list-style-type: "2. ";
+}
+.marker-content::marker {
+  content: "3. ";
+}

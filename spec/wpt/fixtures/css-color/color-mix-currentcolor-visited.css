@@ -1,0 +1,6 @@
+
+a:link { color: red; }
+a:visited { color: green; }
+span {
+    background-color: color-mix(in srgb, currentcolor, white 75%);
+}

@@ -1,0 +1,11 @@
+
+div {
+  contain: style;
+  counter-increment: c 123;
+}
+span {
+  counter-increment: c 1;
+}
+span::before {
+  content: counter(c);
+}

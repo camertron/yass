@@ -1,0 +1,15 @@
+
+.grid-lanes {
+    display: grid-lanes;
+    flow-tolerance: 0;
+    grid-template-rows: repeat(auto-fill, 100px);
+    height: 400px;
+    width: 200px;
+    gap: 10px;
+}
+
+img {
+  height: 100%;
+  width: auto;
+  display: block;
+}

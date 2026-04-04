@@ -1,0 +1,14 @@
+
+div, main { color: grey }
+div:has(.test) + #subject { color: red }
+div:has([test_attr]) + #subject { color: orangered }
+div:has(> .test) + #subject { color: green }
+div:has(> [test_attr]) + #subject { color: lightgreen }
+div:has(~ .test) + #subject { color: yellow }
+div:has(~ [test_attr]) + #subject { color: ivory }
+div:has(+ .test) + #subject { color: blue }
+div:has(+ [test_attr]) + #subject { color: skyblue }
+div:has(~ div .test) + #subject { color: purple }
+div:has(~ div [test_attr]) + #subject { color: violet }
+div:has(+ div .test) + #subject { color: pink }
+div:has(+ div [test_attr]) + #subject { color: lightpink }

@@ -1,0 +1,14 @@
+
+#target {
+    width: 100px;
+    height: 100px;
+    border-shape: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+#inner {
+    background: green;
+    position: absolute;
+    inset: 0;
+}

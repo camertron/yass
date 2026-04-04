@@ -1,0 +1,10 @@
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid {
+    display: grid;
+    flex-basis: 20px;
+    border: 1px solid;
+  }

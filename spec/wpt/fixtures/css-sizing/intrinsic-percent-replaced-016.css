@@ -1,0 +1,13 @@
+
+.outer {
+  width: 200px;
+  aspect-ratio: 2/1;
+}
+.inner {
+  width: max-content;
+  height: 100%;
+  background: red;
+}
+img {
+  height: 100%;
+}

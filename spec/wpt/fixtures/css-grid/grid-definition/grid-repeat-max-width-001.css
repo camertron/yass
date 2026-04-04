@@ -1,0 +1,17 @@
+
+.wrapper {
+    width: 190px;
+    display: grid;
+    justify-content: start;
+}
+.grid {
+    max-width: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 100px));
+    background: red;
+}
+.item {
+    background: green;
+    width: 100px;
+    height: 50px;
+}

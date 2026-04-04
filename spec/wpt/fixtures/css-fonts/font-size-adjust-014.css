@@ -1,0 +1,40 @@
+
+        @font-face {
+            font-family: ahem-ex-500;
+            src: url('./resources/ahem-ex-500.otf');
+            unicode-range: U+0020;
+        }
+        @font-face {
+            font-family: ahem-ex-250;
+            src: url('./resources/ahem-ex-250.otf');
+            unicode-range: U+0020;
+        }
+        .outer {
+            font: 50px/1 monospace;
+            height: 100px;
+        }
+        .ahem250 {
+            font-family: ahem-ex-250;
+        }
+        .ahem500 {
+            font-family: ahem-ex-500;
+        }
+        .test {
+            font-family: ahem-ex-500, serif;
+            /* font-size-adjust should be computed according to the ex-height of ahem-ex-500 */
+            font-size-adjust: from-font;
+        }
+        .ref {
+            font-family: serif;
+            font-size-adjust: 0.5;
+        }
+        .tall-inline-block {
+            display: inline-block;
+            height: 100px;
+        }
+        .description {
+            font-family: serif;
+            font-size: 16px;
+            font-size-adjust: from-font;
+        }
+    

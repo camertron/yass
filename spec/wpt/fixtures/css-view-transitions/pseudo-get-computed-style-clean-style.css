@@ -1,0 +1,10 @@
+
+#target {
+  width: 100px;
+  height: 100px;
+  view-transition-name: target;
+  mix-blend-mode: multiply;
+}
+::view-transition-image-pair(target) {
+  position: fixed;
+}

@@ -1,0 +1,10 @@
+
+div {
+  background: url(aqua-yellow-32x32.png) no-repeat 100px 100px;
+  overflow: hidden;
+  height: 200px;
+}
+p {
+  padding-top: 100px;
+  height: 500px;
+}

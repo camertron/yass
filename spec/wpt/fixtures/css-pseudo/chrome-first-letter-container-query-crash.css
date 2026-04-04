@@ -1,0 +1,12 @@
+
+  head, html, body, span { display: inline-block; }
+  html::first-letter, span::first-letter {
+    color: pink;
+  }
+  span {
+    container-type: inline-size;
+    float: right;
+  }
+  body {
+    writing-mode: vertical-rl;
+  }

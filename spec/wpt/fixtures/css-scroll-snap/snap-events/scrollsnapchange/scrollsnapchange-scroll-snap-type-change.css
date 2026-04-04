@@ -1,0 +1,11 @@
+
+  html {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+  }
+  #snapped {
+    scroll-snap-align: start;
+  }
+  #filler {
+    height: 10000px;
+  }

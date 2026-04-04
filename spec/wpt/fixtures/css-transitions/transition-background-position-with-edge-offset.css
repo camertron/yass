@@ -1,0 +1,10 @@
+
+  #test {
+    border: 1px solid;
+    background-image: url("support/cat.png");
+    background-repeat: no-repeat;
+    height: 200px;
+    transition-duration: 100s;
+    transition-property: background-position;
+    transition-timing-function: step-end;
+  }

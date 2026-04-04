@@ -1,0 +1,17 @@
+
+@keyframes anim {
+  50% { --width: initial; }
+  100% { --width: 100px; }
+}
+.test {
+  --width: 50px;
+  width: var(--width);
+  animation: anim 100s linear paused both;
+  animation-delay: calc(var(--at) * -1s);
+  border: solid;
+  box-sizing: border-box;
+}
+.test::before { /* Just informative, not really necessary for the test */
+  counter-reset: --at var(--at);
+  content: counter(--at) "%";
+}

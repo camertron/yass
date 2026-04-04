@@ -1,0 +1,12 @@
+
+.container {
+  font: 16px monospace;
+  margin: 1em;
+  width: 60ch;
+}
+
+.text1 {
+  text-wrap: balance;
+  margin-bottom: 1em;
+  outline: 1px dashed gray;
+}

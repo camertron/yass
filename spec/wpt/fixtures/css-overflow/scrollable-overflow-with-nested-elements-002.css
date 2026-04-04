@@ -1,0 +1,21 @@
+
+    .container {
+        width: 100px;
+        height: 100px;
+        background: silver;
+        scrollbar-width: none;
+    }
+
+    .list .item {
+        width: 10px;
+        height: 10px;
+        background: lime;
+        position: absolute;
+        margin: 0%;
+    }
+
+    .list {
+        position: relative;
+        background: grey;
+        scrollbar-width: none;
+    }

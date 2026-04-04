@@ -1,0 +1,22 @@
+
+  .scroller {
+      overflow: auto;
+      width: 100px;
+      height: 100px;
+      /* Avoids some fuzz on scrollbar corners */
+      scrollbar-color: blue blue;
+  }
+  .parent {
+      width: 100px;
+      height: 100px;
+      contain: paint;
+      overflow-clip-margin: 10px;
+  }
+  .child {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      top: -50px;
+      left: -50px;
+      background-color: green;
+  }

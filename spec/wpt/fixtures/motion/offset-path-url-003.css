@@ -1,0 +1,14 @@
+
+      #outer {
+        width: 400px;
+        height: 200px;
+      }
+      #target {
+        width: 50px;
+        height: 50px;
+        background-color: green;
+        offset-path: url(#svgCircle);
+        offset-distance: 25%;
+        border-radius: 50% 50% 0 0;
+      }
+    

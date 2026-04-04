@@ -1,0 +1,15 @@
+
+  #target::first-line {
+    font-size: 150%;
+  }
+  #target::before, #child2::before {
+    content: "red ";
+    color: red;
+  }
+  #child1, #child2 {
+    color: green;
+  }
+  #child1::after, #target::after {
+    content: " blue";
+    color: blue;
+  }

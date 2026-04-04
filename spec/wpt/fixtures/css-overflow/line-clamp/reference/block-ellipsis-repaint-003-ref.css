@@ -1,0 +1,13 @@
+
+.clamp {
+  border: 1px solid black;
+  padding: 4px;
+  background-color: yellow;
+  height: 3lh;
+  width: 400px;
+}
+#ellipsis {
+  display: inline-block;
+  width: 2em;
+  background-color: pink;
+}

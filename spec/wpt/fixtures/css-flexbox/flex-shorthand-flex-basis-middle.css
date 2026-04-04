@@ -1,0 +1,11 @@
+
+.flexbox {
+    width: 500px;
+    height: 100px;
+    background: green;
+}
+
+.flexbox > div {
+    width: 50px;
+    background: yellow;
+}

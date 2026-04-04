@@ -1,0 +1,12 @@
+
+.grid-box {
+  display: grid;
+  width: max-content;
+  grid-template-columns: min-content;
+  font: 20px/1 Ahem;
+  background-color: green;
+}
+.grid-item {
+  width: max-content;
+  color: green;
+}

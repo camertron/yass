@@ -1,0 +1,13 @@
+
+    nav::selection,
+    span::selection,
+    b::selection,
+    aside::selection {
+        background-color: green;
+        color: white;
+    }
+    main::selection,
+    i::selection {
+        background-color: green;
+        color: yellow;
+    }

@@ -1,0 +1,9 @@
+
+pre {
+  font-size: 12px;
+  float: left;
+  border: 1px solid black;
+  margin: 12px;
+  -moz-tab-size: 100px;
+  tab-size: 100px;
+}

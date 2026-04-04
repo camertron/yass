@@ -1,0 +1,8 @@
+
+        .square{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            background-image: image("1x1-green.svg", "support/1x1-green.png","support/1x1-green.gif");
+        }
+    

@@ -1,0 +1,15 @@
+
+@font-face {
+  font-family: test;
+  src: url(resources/LinLibertine_Re-4.7.5.woff);
+}
+body {
+  font: 36px test; /* use a font that includes ligatures for "fi" etc */
+}
+.a {
+  /* initial values for these properties should not interrupt shaping */
+  vertical-align: initial;
+  padding: initial;
+  margin: initial;
+  border: initial;
+}

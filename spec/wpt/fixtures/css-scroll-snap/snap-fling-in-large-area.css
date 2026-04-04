@@ -1,0 +1,16 @@
+
+    main {
+      scroll-snap-type: y;
+
+      overflow: auto;
+      height: 100vh;
+    }
+
+    div {
+      scroll-snap-align: start;
+      width: 80vw;
+      height: 800vh;
+      background: yellow;
+      border: solid black 3px;
+    }
+  

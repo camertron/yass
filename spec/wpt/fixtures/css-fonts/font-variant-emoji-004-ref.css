@@ -1,0 +1,13 @@
+
+  div {
+    height: 2em;
+    font: 24px/1.5 serif;
+  }
+
+  .color {
+    font-family: "ColorEmojiFont";
+  }
+
+  .mono {
+    font-family: "MonoEmojiFont";
+  }

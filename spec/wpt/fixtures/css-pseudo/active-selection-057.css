@@ -1,0 +1,29 @@
+
+  div#subtest1 , hr#subtest2
+    {
+      background-color: transparent; /* or initial or unset */
+      height: 100px;
+    }
+
+  hr#subtest2
+    {
+      border: none 0px;
+    }
+
+  div#subtest1::selection , hr#subtest2::selection
+    {
+      color: red;
+    }
+
+  div#subtest3
+    {
+      background-color: transparent; /* or initial or unset */
+      font-size: 100px;
+      white-space: pre; /* or pre-line or pre-wrap or break-spaces */
+    }
+
+  div#subtest3::selection
+    {
+      background-color: red;
+    }
+  

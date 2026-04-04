@@ -1,0 +1,11 @@
+
+.container {
+  width: 100px;
+  height: 100px;
+  margin-left: 2px;
+  --foo:bar;
+}
+
+#canvas-geometry {
+  background-image: paint(geometry);
+}

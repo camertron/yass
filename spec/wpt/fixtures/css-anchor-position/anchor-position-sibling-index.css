@@ -1,0 +1,15 @@
+
+  body { margin: 0; }
+  #anchor {
+    anchor-name: --a;
+    width: 100px;
+    height: 100px;
+  }
+  #abs {
+    position-anchor: --a;
+    position: absolute;
+    top: anchor(calc(25% * sibling-index()));
+    width: 100px;
+    height: 100px;
+    background: teal;
+  }

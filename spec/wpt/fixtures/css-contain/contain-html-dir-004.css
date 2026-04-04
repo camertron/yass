@@ -1,0 +1,21 @@
+
+html::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: orange;
+    display: block;
+}
+p {
+    margin: 0;
+    direction: ltr;
+}
+body {
+    margin: 0 auto 0 0;
+    width: 200px;
+    height: 200px;
+    direction: rtl;
+}
+html {
+    contain: style;
+}

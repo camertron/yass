@@ -1,0 +1,43 @@
+
+  a::selection {
+    color: lime;
+  }
+  a::target-text {
+    color: lime;
+  }
+  a::search-text {
+    color: lime;
+  }
+  a::search-text:current {
+    color: red;
+  }
+  a::spelling-error {
+    color: lime;
+  }
+  a::grammar-error {
+    color: lime;
+  }
+  a::highlight(foo) {
+    color: lime;
+  }
+  a:visited::selection {
+    color: yellow;
+  }
+  a:visited::target-text {
+    color: yellow;
+  }
+  a:visited::search-text {
+    color: yellow;
+  }
+  a:visited::search-text:current {
+    color: red;
+  }
+  a:visited::spelling-error {
+    color: yellow;
+  }
+  a:visited::grammar-error {
+    color: yellow;
+  }
+  a:visited::highlight(foo) {
+    color: yellow;
+  }

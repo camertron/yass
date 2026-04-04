@@ -1,0 +1,12 @@
+
+  div {
+    font-size: 10px;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+    width: 120px;
+  }
+  span {
+    font-family: Ahem;
+    font-size: 30px;
+  }

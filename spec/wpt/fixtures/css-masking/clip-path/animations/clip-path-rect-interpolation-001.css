@@ -1,0 +1,16 @@
+
+    @keyframes anim {
+      from {
+        clip-path: rect(0px 100px 100% 0px round 10px);
+      }
+      to {
+        clip-path: rect(20px 80px calc(20px + 60%) 20px round 20px);
+      }
+    }
+    #rect {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      animation: anim 10s -5s paused linear;
+    }
+  

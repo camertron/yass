@@ -1,0 +1,8 @@
+
+  div { display: block; }
+
+
+  @font-face {
+    font-family: fwf;
+    src: url(support/fonts/FontWithFancyFeatures.otf);
+  }

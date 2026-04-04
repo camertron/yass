@@ -1,0 +1,8 @@
+
+.grid {
+  position: relative;
+  font: 20px/1 Ahem;
+  margin: 10px;
+  display: inline-grid;
+  grid: 50% / 70%;
+}

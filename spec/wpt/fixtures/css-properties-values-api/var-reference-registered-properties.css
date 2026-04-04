@@ -1,0 +1,25 @@
+
+div {
+    --registered-length-1: 10px;
+    --registered-length-2: var(--registered-length-1);
+    --registered-length-3: var(--length-1);
+    --registered-length-4: calc(var(--length-1) + 40px);
+    --registered-length-5: var(--invalid, 70px);
+    --registered-length-6: calc(var(--registered-length-3)*4);
+    --registered-length-7: var(--123px, 6px);
+
+    --length-1: 20px;
+    --length-2: var(--registered-length-1);
+    --length-3: calc(var(--123px, 6px) + var(--123px));
+
+    --percentage: 10%;
+    --registered-length-invalid: var(--percentage);
+
+    --registered-token-stream-1:var(--invalid);
+    --registered-token-stream-2:var(--invalid,fallback);
+    --token-stream-1:var(--registered-token-stream-1,moo);
+
+    --registered-length-list-1: 1px, var(--registered-length-1), 2px;
+    --registered-length-list-2: 1px, var(--length-1), var(--registered-length-1), 2px;
+    --registered-length-list-3: var(--registered-length-list-1), var(--registered-length-list-2);
+}

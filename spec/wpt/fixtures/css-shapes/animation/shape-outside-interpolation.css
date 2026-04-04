@@ -1,0 +1,7 @@
+
+.parent {
+  shape-outside: circle(80% at 30% 10%);
+}
+.target {
+  shape-outside: circle(60% at 10% 30%);
+}

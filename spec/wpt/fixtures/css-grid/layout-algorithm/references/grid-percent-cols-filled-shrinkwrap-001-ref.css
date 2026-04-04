@@ -1,0 +1,20 @@
+
+    .grid {
+        display: grid;
+        float: left;
+        margin: 1em;
+        grid-template-columns: 40px 20px 40px;
+        align-content: center;
+        border: solid silver;
+        font: 20px/1 Ahem;
+        color: transparent;
+    }
+    .grid > div {
+        background: blue;
+    }
+    .b {
+        grid-column: 3;
+    }
+    .c {
+        grid-column: 2;
+    }

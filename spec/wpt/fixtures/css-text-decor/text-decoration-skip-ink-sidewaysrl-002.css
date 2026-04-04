@@ -1,0 +1,14 @@
+
+           /*
+            No underline should be rendered for Ahem text
+            with skip-ink enabled
+           */
+          div{
+                 font: 20px/1 Ahem;
+                 color: transparent;
+                 text-decoration-skip-ink: auto;
+                 text-decoration: green underline;
+                 text-underline-offset: -0.2em;
+                 writing-mode: sideways-rl;
+           }
+        

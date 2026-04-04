@@ -1,0 +1,14 @@
+
+html {
+  background: pink;
+}
+#container {
+  width: 500px;
+  height: 500px;
+  columns: 2;
+}
+#target {
+  height: 200px;
+  background: green;
+  column-span: all;
+}

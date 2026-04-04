@@ -1,0 +1,28 @@
+
+  div.inline-block
+    {
+      display: inline-block;
+    }
+
+  div#blue-test
+    {
+      background-color: blue;
+      color: transparent;
+      contain: size;
+      font-size: 50px;
+      line-height: 1;
+      padding: 50px;
+    }
+
+  span.block-descendant
+    {
+      display: block;
+    }
+
+  div#orange-reference
+    {
+      background-color: orange;
+      height: 100px;
+      width: 100px;
+    }
+  

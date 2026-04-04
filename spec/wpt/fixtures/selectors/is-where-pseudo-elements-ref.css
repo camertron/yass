@@ -1,0 +1,15 @@
+
+  #b::before, #d::before {
+    content: "before ";
+    color: green;
+  }
+  #e::after, #h::after {
+    content: " after";
+    color: green;
+  }
+  #a::first-letter, #b::first-letter {
+    color: blue;
+  }
+  #g::first-line, #l::first-line {
+    color: magenta;
+  }

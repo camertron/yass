@@ -1,0 +1,5 @@
+
+      #link { background-color: red }
+      #link:any-link { background-color: green }
+      #link + div { color: pink }
+    

@@ -1,0 +1,10 @@
+
+			div {
+				margin: 5px;
+				width: 130px;
+				height: 130px;
+				background: black;/*rgb(0,0,0);*/
+				display: block;
+				float: left;
+			}
+		

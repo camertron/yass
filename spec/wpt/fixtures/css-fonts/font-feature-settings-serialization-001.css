@@ -1,0 +1,10 @@
+
+    #test {
+        font-feature-settings: "vert" 1;
+    }
+    #test1 {
+        font-feature-settings: 'vert' 1;
+    }
+    #test2 {
+        font-feature-settings: "vert" off;
+    }

@@ -1,0 +1,23 @@
+
+.grid {
+    display: grid;
+    background: gray;
+    gap: 20px;
+    padding: 20px;
+    align-items: start;
+}
+
+.first-track {
+    background: lightskyblue;
+    grid-column-start: 1;
+}
+
+.second-track {
+    background: lightcoral;
+    grid-column-start: 2;
+}
+
+.third-track {
+    background: lightgreen;
+    grid-column-start: 3;
+}

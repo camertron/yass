@@ -1,0 +1,9 @@
+
+   html, body { background: red; color: white; }
+   html, body, p {
+     margin: 0; padding: 0; border: 0; height: 100%;
+   }
+   p {
+    background: green;
+   }
+  

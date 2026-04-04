@@ -1,0 +1,40 @@
+
+.anchor {
+  width: 100px;
+  height: 100px;
+  background: orange;
+  font: 20px/1 Ahem;
+}
+
+.target {
+  position: fixed;
+  background: lime;
+  position-try-fallbacks: --pf;
+  left: 999999px; /* force fallback */
+  font: 20px/1 Ahem;
+}
+
+@position-try --pf {
+  top: anchor(bottom, 0px);
+  left: anchor(left, 0px);
+  width: anchor-size(width, 0px);
+  height: anchor-size(height, 0px);
+}
+
+body {
+  margin: 0;
+}
+
+#fake-anchor {
+  anchor-name: --a;
+}
+
+#anchor1 {
+  margin-left: 100px;
+}
+
+#anchor2 {
+  margin-left: 300px;
+  margin-top: 100px;
+}
+

@@ -1,0 +1,12 @@
+
+.box {
+  margin: 15px;
+  background: green;
+  width: 100.125px;
+  height: 50.875px;
+}
+.shift {
+  position: relative;
+  left: 0.4px;
+}
+body { background: lightpink }

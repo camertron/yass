@@ -1,0 +1,33 @@
+
+    .container {
+      display: grid;
+      writing-mode: vertical-rl;
+      padding: 1px 2px;
+      border: 1px solid black;
+      background: yellow;
+      margin-bottom: 5px;
+      margin-right: 5px;
+      float: left; /* For testing in "rows" of containers */
+    }
+    br { clear: both }
+
+    .big > .container {
+      height: 30px;
+      width: 22px;
+      grid: 3px 14px 3px / 2px 20px 2px;
+    }
+    .small > .container {
+      grid: 3px 2px 3px / 0px 2px 0px;
+      height: 2px;
+      width: 4px;
+    }
+
+    .container > * {
+      position: absolute;
+      writing-mode: horizontal-tb;
+      grid-area: 2 / 2 / 3 / 3;
+      background: teal;
+      height: 6px;
+      width: 8px;
+    }
+  

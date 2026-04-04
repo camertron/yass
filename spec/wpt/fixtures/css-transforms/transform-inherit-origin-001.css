@@ -1,0 +1,14 @@
+
+      body {
+        font-size: 10px;
+        transform-origin: 5em 10em;
+      }
+      div {
+        height: 100px;
+        width: 100px;
+        font-size: 20px;
+        transform: rotate(180deg);
+        transform-origin: inherit;
+        background: blue;
+      }
+    

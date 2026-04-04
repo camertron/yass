@@ -1,0 +1,8 @@
+
+body {
+  width: 2147483648px;
+}
+div {
+  text-indent: 2147483648px;
+  width: 200%; /* Double the width in case CSS parser clamps the body width */
+}

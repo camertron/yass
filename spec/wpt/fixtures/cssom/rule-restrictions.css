@@ -1,0 +1,12 @@
+
+  @page {
+    margin-top: 10px;
+    transform: scale(1);
+  }
+
+  @keyframes foo {
+    from {
+      margin-top: 10px;
+      animation-name: none;
+    }
+  }

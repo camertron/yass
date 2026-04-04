@@ -1,0 +1,7 @@
+
+  @counter-style a {
+    system: extends upper-alpha;
+    fallback: decimal-leading-zero;
+    fallback: decimal cjk-decimal;
+    fallback: "*";
+  }

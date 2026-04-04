@@ -1,0 +1,17 @@
+
+    body {
+      margin: 0;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      row-rule: 10px solid gold;
+    }
+
+    .item {
+      background-color: teal;
+      height: 50px;
+      flex-basis: 100%;
+    }

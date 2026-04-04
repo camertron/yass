@@ -1,0 +1,12 @@
+
+  div {
+    font: 16px Ahem;
+  }
+  text {
+    fill: lightgreen;
+    stroke: red;
+  }
+  ::selection {
+    background-color: transparent; /* Avoid default background color. */
+    stroke: darkgreen;
+  }

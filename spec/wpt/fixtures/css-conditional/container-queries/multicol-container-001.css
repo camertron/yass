@@ -1,0 +1,11 @@
+
+  #multicol {
+    container-type: inline-size;
+    width: 400px;
+    column-count: 2;
+    column-gap: 0;
+  }
+  @container (width = 400px) {
+    #first-child { color: green; }
+    #second-child { color: green; }
+  }

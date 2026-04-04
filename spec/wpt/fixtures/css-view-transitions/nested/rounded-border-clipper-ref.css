@@ -1,0 +1,15 @@
+
+#clipper {
+  overflow: clip;
+  height: 200px;
+  width: 100px;
+  border-radius: 20px;
+}
+
+.item {
+  will-change: transform;
+  background: green;
+  position: relative;
+  height: 50px;
+  top: 50px;
+}

@@ -1,0 +1,21 @@
+
+@font-face {
+    font-family: "DotAppleSystemUIFontSerif";
+    src: local(".AppleSystemUIFontSerif");
+}
+@font-face {
+    font-family: "DotSFNSMono";
+    src: local(".SF NS Mono");
+}
+@font-face {
+    font-family: "DotSFUIMono";
+    src: local(".SF UI Mono");
+}
+@font-face {
+    font-family: "DotAppleSystemUIFontRounded";
+    src: local(".AppleSystemUIFontRounded");
+}
+@font-face {
+    font-family: "DotAppleSystemUIFont";
+    src: local(".AppleSystemUIFont");
+}

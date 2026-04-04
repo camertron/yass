@@ -1,0 +1,12 @@
+
+#target {
+  width: 100px;
+  height: 100px;
+  view-transition-name: target;
+}
+::view-transition-group(*) {
+  animation-duration: 0ms;
+}
+::view-transition-old(target) {
+  background-color: rgb(0, 255, 0);
+}

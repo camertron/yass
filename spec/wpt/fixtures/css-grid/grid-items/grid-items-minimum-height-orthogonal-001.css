@@ -1,0 +1,24 @@
+
+.grid {
+  display: inline-grid;
+  height: 100px;
+  border: solid thick;
+  grid: minmax(auto, 0px) / 10px 10px;
+}
+
+.grid > div:nth-child(1) { background: cyan; writing-mode: vertical-lr; }
+.grid > div:nth-child(2) { background: magenta; }
+
+.height60 { height: 60px; }
+.minHeight60 { min-height: 60px; }
+
+.marginTop5 { margin-top: 5px; }
+.marginBottom10 { margin-bottom: 10px; }
+.marginLeftAuto { margin-left: auto }
+
+.paddingTop6 { padding-top: 6px; }
+.paddingBottom3 { padding-bottom: 3px; }
+
+.borderTop2, .borderBottom4 { border: solid yellow 0px; }
+.borderTop2 { border-top-width: 2px; }
+.borderBottom4 { border-bottom-width: 4px; }

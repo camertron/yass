@@ -1,0 +1,12 @@
+
+			div
+			{
+				background-color: red;
+				height: 100px;
+				width: 100px;
+			}
+
+			@supports (margin: 0) { div {background-color: green;} }
+
+			@supports (margin: 0 or padding: 0) {	div {background-color: red;} }
+		

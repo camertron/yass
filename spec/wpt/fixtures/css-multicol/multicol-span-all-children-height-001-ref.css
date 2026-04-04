@@ -1,0 +1,14 @@
+
+  article {
+    width: 400px;
+    height: 200px;
+    outline: 1px solid black;
+  }
+  div {
+    height: 25%;
+  }
+  div.spanner {
+    outline: 1px solid blue;
+    height: 50%;
+  }
+  

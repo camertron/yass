@@ -1,0 +1,14 @@
+
+section {
+  display: flow-root;
+}
+.float {
+  float: left;
+  width: 200px;
+  height: 20px;
+  background: orange;
+}
+.normal {
+  height: 10px;
+  background: blue;
+}

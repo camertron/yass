@@ -1,0 +1,6 @@
+
+  #gradient {
+    width: 200px;
+    height: 200px;
+    background-image: conic-gradient(black 25%, white 0 50%, black 0 75%, white 0);
+  }

@@ -1,0 +1,9 @@
+
+  @font-face {
+    font-family: "wght";
+    src: url(variations/resources/Inter.var.subset.ttf);
+  }
+  .wghtHalf {
+    font-family: wght;
+    font-variation-settings: 'wght' 50;
+  }

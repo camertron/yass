@@ -1,0 +1,21 @@
+
+.post {
+  height: 1000px;
+  width: 300px;
+  border: 1px solid black;
+
+}
+.before {
+  height: 213px;
+  border-top: 0;
+}
+.scroller {
+  overflow-y: scroll;
+  width: 500px;
+  height: 500px;
+  will-change: transform;
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}

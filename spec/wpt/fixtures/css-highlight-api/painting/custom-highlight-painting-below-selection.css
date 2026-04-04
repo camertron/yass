@@ -1,0 +1,9 @@
+
+  ::highlight(foo) {
+    background: cyan;
+    color: blue;
+  }
+  ::selection {
+    background: blue;
+    color: cyan;
+  }

@@ -1,0 +1,11 @@
+
+  body {
+    font-size: 3em;
+    font-weight: bolder;
+  }
+  #affected1::highlight(highlight1) {
+    color: red;
+  }
+  #affected2::highlight(highlight2) {
+    color: green;
+  }

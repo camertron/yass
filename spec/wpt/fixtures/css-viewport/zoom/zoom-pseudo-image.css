@@ -1,0 +1,21 @@
+
+.icon {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.icon::before {
+  display: block;
+  content: url(/images/green.png);
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+}
+
+.zoom {
+  zoom: 2;
+}

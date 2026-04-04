@@ -1,0 +1,12 @@
+
+:is(input:not([type=submit], [type=reset]), textarea) {
+  border: 2px solid black;
+}
+
+:is(input:not([type=submit], [type=reset]), textarea):user-valid {
+  border-color: green;
+}
+
+:is(input:not([type=submit], [type=reset]), textarea):user-invalid {
+  border-color: red;
+}

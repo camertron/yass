@@ -1,0 +1,7 @@
+
+html, body { margin: 0 }
+h1 {
+  margin: 0;
+  transition: margin 10s;
+  transition-delay: -5s; /* So we can expect it to be half-way the transition when toggling the property */
+}

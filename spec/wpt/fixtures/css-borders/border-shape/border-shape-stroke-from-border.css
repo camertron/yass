@@ -1,0 +1,46 @@
+
+body {
+  margin: 0;
+}
+.container {
+  display: flex;
+  gap: 32px;
+  padding: 20px;
+}
+.target {
+  width: 120px;
+  height: 120px;
+}
+.single-shape {
+  border-shape: circle(45px at 60px 60px);
+}
+.double-shape {
+  border-shape: circle(100px at 60px 60px) circle(45px at 60px 60px);
+}
+.case1 {
+  border-top: 18px solid rgb(220, 0, 0);
+  border-left: 10px solid rgb(0, 140, 0);
+  border-bottom: 4px solid rgb(200, 200, 0);
+  border-right: 6px solid rgb(0, 0, 220);
+}
+.case2 {
+  writing-mode: vertical-rl;
+  border-top: 18px solid rgb(220, 0, 0);
+  border-left: 10px solid rgb(0, 140, 0);
+  border-bottom: 4px solid rgb(200, 200, 0);
+  border-right: 6px solid rgb(0, 0, 220);
+}
+.case3 {
+  writing-mode: vertical-rl;
+  border-top: 18px solid rgb(220, 0, 0);
+  border-left: 10px solid rgb(0, 140, 0);
+  border-bottom: 4px solid rgb(200, 200, 0);
+  border-right: none;
+}
+.case4 {
+  writing-mode: vertical-lr;
+  border-top: 18px solid rgb(220, 0, 0);
+  border-left: 10px solid rgb(0, 140, 0);
+  border-bottom: 4px solid rgb(200, 200, 0);
+  border-right: none;
+}

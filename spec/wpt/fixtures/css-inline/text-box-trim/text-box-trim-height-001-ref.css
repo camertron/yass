@@ -1,0 +1,17 @@
+
+.spacer {
+  background: lightgray;
+  block-size: 20px;
+}
+.target {
+  font: 100px/1 Ahem;
+}
+
+.height > .target,
+.min-height > .target {
+  height: 120px;
+}
+
+.max-height > .target {
+  height: 10px;
+}

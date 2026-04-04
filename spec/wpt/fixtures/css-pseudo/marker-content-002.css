@@ -1,0 +1,5 @@
+
+li::marker {
+  content: "a" counters(list-item, ".") "b";
+}
+span { font-size: 32pt; }

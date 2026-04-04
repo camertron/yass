@@ -1,0 +1,25 @@
+
+  body { margin: 0; }
+  #scroller {
+    width: 100px;
+    height: 100px;
+    overflow-y: scroll;
+    scroll-marker-group: before;
+  }
+  #scroller::scroll-marker-group {
+    interactivity: inert;
+    height: 100px;
+  }
+  .item {
+    height: 100px;
+    background-color: lime;
+  }
+  .item::scroll-marker {
+    content: "X";
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+  #filler {
+    height: 400px;
+  }

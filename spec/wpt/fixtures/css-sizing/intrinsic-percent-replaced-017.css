@@ -1,0 +1,15 @@
+
+.outer {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+}
+.inner {
+  max-height: 100%;
+  background: red;
+}
+img {
+  max-height: 100%;
+}

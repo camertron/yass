@@ -1,0 +1,16 @@
+
+.parent {
+  border-color: white;
+}
+.target {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  display: inline-block;
+  border: 12px solid;
+  border-color: darkblue;
+}
+.expected {
+  background-color: green;
+  margin-right: 2px;
+}

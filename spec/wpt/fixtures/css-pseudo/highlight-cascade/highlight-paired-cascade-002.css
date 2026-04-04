@@ -1,0 +1,12 @@
+
+    main {
+        font-size: 7em;
+        margin: 0.5em;
+    }
+    main::selection {
+        /*
+            Used value for color should be initial (black).
+            https://web-platform-tests.org/writing-tests/assumptions.html
+        */
+        background-color: black;
+    }

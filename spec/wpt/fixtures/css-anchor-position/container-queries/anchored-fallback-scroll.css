@@ -1,0 +1,23 @@
+
+  body { margin: 0; }
+  #anchor {
+    anchor-name: --a;
+    margin-top: 100px;
+    width: 100px;
+    height: 100px;
+  }
+  #anchored {
+    position: fixed;
+    position-anchor: --a;
+    position-area: top;
+    position-try-fallbacks: flip-block;
+    width: 100px;
+    height: 100px;
+    container-type: anchored;
+  }
+  @container anchored(fallback: none) {
+    #t1 { --fallback: no; }
+  }
+  @container anchored(fallback: flip-block) {
+    #t1 { --fallback: yes; }
+  }

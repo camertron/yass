@@ -1,0 +1,12 @@
+
+.grid {
+  display: inline-grid;
+  grid: 100px / 100px;
+  background-color: red;
+}
+
+#item {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}

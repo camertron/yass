@@ -1,0 +1,5 @@
+
+  body > section {
+    contain: strict;
+    width: 500px;
+  }

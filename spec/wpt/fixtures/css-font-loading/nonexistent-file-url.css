@@ -1,0 +1,5 @@
+
+@font-face {
+    font-family: "WebFont";
+    src: url("file://ThisIsNotARealFile.otf") format("opentype");
+}

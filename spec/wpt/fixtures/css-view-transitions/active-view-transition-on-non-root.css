@@ -1,0 +1,21 @@
+
+
+body { background: lightpink; }
+
+#target {
+  view-transition-name: target;
+  background: green;
+  width: 100px;
+  height: 100px;
+}
+
+main:active-view-transition #target {
+  background: red;
+}
+
+::view-transition-group(*),
+::view-transition-image-pair(*),
+::view-transition-old(*),
+::view-transition-new(*) {
+  animation-play-state: paused;
+}

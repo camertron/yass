@@ -1,0 +1,6 @@
+
+@counter-style foo {
+  system: fixed;
+  symbols: A B;
+  fallback: lower-roman;
+}

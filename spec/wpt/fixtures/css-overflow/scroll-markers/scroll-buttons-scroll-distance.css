@@ -1,0 +1,55 @@
+
+.container {
+  position: relative;
+  height: 150px;
+  /* Ensure width is sufficiently different than height to ensure that
+   * the directional scroll is using the scrollport size in the associated
+   * direction. */
+  width: 400px;
+  position: relative;
+}
+.scroller {
+  height: 100%;
+  overflow: auto;
+  position: relative;
+  counter-reset: page;
+}
+.scroller.right {
+  /* Flow content horizontally. */
+  white-space: nowrap;
+}
+.scroller::scroll-button(*) {
+  width: 100px;
+  height: 50px;
+  background: green;
+  position: absolute;
+  /* Center the button within the scroller so that the call to
+   * test_driver.click(scroller) hits the button. */
+  left: calc(50% - 50px);
+  top: calc(50% - 25px);
+}
+/* Create scroll buttons for test scrollers. */
+.scroller.test.down::scroll-button(down) {
+  content: "";
+}
+.scroller.test.right::scroll-button(right) {
+  content: "";
+}
+.page {
+  box-sizing: border-box;
+  height: 100%;
+}
+.scroller.right .page {
+  /* Flow horizontally in horizontal scroller */
+  display: inline-block;
+  width: 100%;
+}
+
+/* Make pages visible for manual testing. */
+.page:nth-child(2*n) {
+  background: lightgray;
+}
+.page::before {
+  counter-increment: page;
+  content: "Page " counter(page);
+}

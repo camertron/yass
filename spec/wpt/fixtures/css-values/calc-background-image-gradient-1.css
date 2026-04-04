@@ -1,0 +1,9 @@
+
+
+p {
+    height: 50px; width: 200px;
+    border: thin solid;
+}
+
+#one { background-image: radial-gradient(circle farthest-side at calc(50px + 50%) calc(100% - 30px), red, green); }
+

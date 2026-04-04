@@ -1,0 +1,37 @@
+
+::view-transition {
+  background-color: black;
+}
+html:only-child {
+  background-color: black;
+}
+:root:only-child {
+  background-color: black;
+}
+:only-child {
+  background-color: black;
+}
+.foo:only-child {
+  background-color: black;
+}
+
+::view-transition-new(root) {
+  background-color: blue;
+}
+::view-transition-new(target) {
+  background-color: blue;
+}
+::view-transition-new(*) {
+  color: blue;
+}
+
+::view-transition-new(root):only-child {
+  background-color: red;
+}
+::view-transition-new(target):only-child {
+  background-color: red;
+}
+::view-transition-new(*):only-child {
+  color: red;
+}
+

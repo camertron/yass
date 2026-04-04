@@ -1,0 +1,9 @@
+
+    .CLASS2 {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        direction: rtl;
+    }
+    .CLASS13 {
+        font-size: 32768em;
+    }

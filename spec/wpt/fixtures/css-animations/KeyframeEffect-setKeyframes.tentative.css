@@ -1,0 +1,5 @@
+
+@keyframes anim-simple {
+  from { left: 0px }
+  to   { left: 100px }
+}

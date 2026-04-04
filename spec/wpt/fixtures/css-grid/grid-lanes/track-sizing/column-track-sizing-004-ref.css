@@ -1,0 +1,7 @@
+
+.grid {
+    display: grid;
+    grid-template-columns: 20px 1fr 30%;
+    width: 100px;
+    height: 100px;
+}

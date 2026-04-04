@@ -1,0 +1,85 @@
+
+    @function --f() {
+      --x: FAIL2;
+      result: inherit(--x);
+    }
+    #parent {
+      --x: FAIL1;
+    }
+    #parent > #target {
+      --x: PASS;
+      --actual: --f();
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      --x: PASS;
+      result: --g();
+    }
+    @function --g() {
+      --x: FAIL3;
+      result: inherit(--x);
+    }
+    #parent {
+      --x: FAIL1;
+    }
+    #parent > #target {
+      --x: FAIL2;
+      --actual: --f();
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      --x: var(--noexist);
+      result: --g();
+    }
+    @function --g() {
+      --x: FAIL3;
+      result: inherit(--x, PASS);
+    }
+    #parent {
+      --x: FAIL1;
+    }
+    #parent > #target {
+      --x: FAIL2;
+      --actual: --f();
+      --expected: PASS;
+    }
+  
+
+    @function --f() {
+      --x: var(--x);
+      result: --g();
+    }
+    @function --g() {
+      --x: FAIL3;
+      result: inherit(--x, PASS);
+    }
+    #parent {
+      --x: FAIL1;
+    }
+    #parent > #target {
+      --x: FAIL2;
+      --actual: --f();
+      --expected: PASS;
+    }
+  
+
+    @function --f(--x <length>) {
+      result: --g();
+    }
+    @function --g() {
+      --x: 14px;
+      result: inherit(--x);
+    }
+    #parent {
+      --x: 12px;
+    }
+    #parent > #target {
+      --x: 13px;
+      --actual: --f(42.0px);
+      --expected: 42px;
+    }
+  

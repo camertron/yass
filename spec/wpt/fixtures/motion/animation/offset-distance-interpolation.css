@@ -1,0 +1,15 @@
+
+    .parent {
+      offset-distance: 30px;
+    }
+    .target {
+      width: 10px;
+      height: 10px;
+      background-color: black;
+      offset-path: path("M0 0H 400");
+      offset-distance: 10px;
+    }
+    .expected {
+      background-color: green;
+    }
+  

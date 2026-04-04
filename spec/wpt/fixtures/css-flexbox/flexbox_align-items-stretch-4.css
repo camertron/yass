@@ -1,0 +1,22 @@
+
+x-flexbox {
+  display: flex;
+  /* This makes auto margins prevent stretching without affecting position. Without
+     it the auto margins make the item move to the center of the window. */
+  width: 100px;
+}
+
+.item-with-auto-margin {
+  background: green;
+  margin: auto;
+}
+
+.pct-height-child {
+  height: 100%;
+  width: 100px;
+  background: red;
+}
+
+.second-child {
+  height: 100px;
+}

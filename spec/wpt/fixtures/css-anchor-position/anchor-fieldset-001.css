@@ -1,0 +1,16 @@
+
+fieldset::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: purple;
+  position: absolute;
+  position-anchor: auto;
+  position-area: bottom right;
+}
+
+fieldset {
+  width: 200px;
+  border: 10px solid blue;
+}

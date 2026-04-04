@@ -1,0 +1,16 @@
+
+.container { position: relative; }
+.grid {
+  position: relative;
+  text-orientation: sideways;
+  grid: 200px 100px / 100px 200px;
+  font-family: Ahem;
+  line-height: 1;
+}
+.bigFont  { font-size: 50px; }
+.height25 { height: 25px; }
+.width25  { width: 25px; }
+.width300 { width: 300px; }
+
+.paddingLeft { padding-left: 25px; }
+.paddingRight { padding-right: 25px; }

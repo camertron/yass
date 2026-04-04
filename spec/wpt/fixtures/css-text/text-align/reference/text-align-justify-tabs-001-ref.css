@@ -1,0 +1,10 @@
+
+div {
+  font: 25px Ahem, monospace;
+  width: 30ch;
+  white-space: pre-wrap;
+  tab-size: 8;
+  border: 1px solid gray;
+  padding: 2px;
+  margin: 2px;
+}

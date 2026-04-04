@@ -1,0 +1,3 @@
+#c-e-outer::part(partp) { color: green; }
+span { color: blue; }
+span { color: red; }

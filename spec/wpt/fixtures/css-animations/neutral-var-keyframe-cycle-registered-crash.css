@@ -1,0 +1,15 @@
+
+    @property --x {
+        syntax: "<number>";
+        initial-value: 0;
+        inherits: false;
+    }
+    #test {
+        animation: anim 1s;
+    }
+
+    @keyframes anim {
+        to {
+            --x: var(--x);
+        }
+    }

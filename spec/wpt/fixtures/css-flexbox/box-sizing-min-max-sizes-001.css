@@ -1,0 +1,7 @@
+
+.flexbox {
+    background-color: teal;
+}
+.flexbox > div {
+    box-sizing: border-box;
+}

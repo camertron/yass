@@ -1,0 +1,10 @@
+
+.a {
+   background: red;
+   height: 50px;
+   width: 100px;
+}
+
+.attr {
+  background: attr(foo|bar type(*), green);
+}

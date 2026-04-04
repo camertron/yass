@@ -1,0 +1,17 @@
+
+.post {
+  height: 1000px;
+  width: 300px;
+  border: 1px solid black;
+
+}
+.scroller {
+  overflow-y: scroll;
+  width: 500px;
+  height: 500px;
+  will-change: transform;
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}

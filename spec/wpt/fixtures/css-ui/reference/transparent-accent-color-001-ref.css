@@ -1,0 +1,13 @@
+
+
+.container {
+    border: solid orange;
+    padding: 1ch;
+    margin: 1ch;
+    float: left;
+}
+
+input, #extract-canvas { color-scheme: light; }
+#extract-canvas { background-color: canvas; }
+#t3 { background: orange; }
+

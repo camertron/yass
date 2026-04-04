@@ -1,0 +1,26 @@
+
+  div
+    {
+      height: 200px;
+    }
+
+  div#test
+    {
+      font-size: 100px;
+      /*
+      Setting a font-size of 100px is to influence the
+      margin on the P without setting it directly.
+      */
+      overflow: hidden;
+    }
+
+  div#red
+    {
+      background-color: red;
+    }
+
+  div#red > p
+    {
+      height: 1px;
+    }
+  

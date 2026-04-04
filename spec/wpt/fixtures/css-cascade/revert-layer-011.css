@@ -1,0 +1,19 @@
+
+#target {
+  width: var(--x);
+  --x: 150px;
+  height: 100px;
+  background-color: green;
+  animation: anim linear 2s -1s paused;
+}
+
+@property --x {
+  syntax: '<length>';
+  initial-value: 0px;
+  inherits: false;
+}
+
+@keyframes anim {
+  from { --x: 50px; }
+  to { --x: revert-layer; }
+}

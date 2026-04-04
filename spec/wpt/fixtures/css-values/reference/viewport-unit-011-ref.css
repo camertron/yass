@@ -1,0 +1,10 @@
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+div {
+    width: 60%;
+    height: 60%;
+    background-color: green;
+}

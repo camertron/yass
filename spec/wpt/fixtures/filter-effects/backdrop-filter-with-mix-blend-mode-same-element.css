@@ -1,0 +1,12 @@
+
+  .backdrop {
+    width: 100px;
+    height: 100px;
+    background: white;
+  }
+  .box {
+    width: 100px;
+    height: 100px;
+    backdrop-filter: invert(1);
+    mix-blend-mode: darken;
+  }

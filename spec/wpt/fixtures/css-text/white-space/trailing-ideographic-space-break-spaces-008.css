@@ -1,0 +1,18 @@
+
+div {
+    font: 25px/1 Ahem;
+    color: transparent;
+    height: 100px;
+}
+.test {
+    width: 3ch;
+    white-space: break-spaces;
+}
+.test > span { background: green; }
+.ref {
+    width: 100px;
+    background: green;
+    position: absolute;
+    z-index: -1;
+}
+.ref > span { color: red; }

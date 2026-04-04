@@ -1,0 +1,7 @@
+
+div {
+  white-space: pre;
+  font: 25px/1 Ahem;
+  text-emphasis-style: circle;
+  -webkit-text-emphasis-style: circle;
+}

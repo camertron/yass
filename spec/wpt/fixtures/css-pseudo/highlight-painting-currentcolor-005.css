@@ -1,0 +1,14 @@
+
+a {
+  color: green;
+  text-decoration: none;
+}
+a:visited {
+  color: blue;
+}
+a::highlight(example) {
+  color: currentcolor;
+}
+a:visited::highlight(example) {
+  color: currentcolor;
+}

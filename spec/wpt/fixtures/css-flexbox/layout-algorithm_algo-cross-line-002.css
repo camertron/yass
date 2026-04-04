@@ -1,0 +1,16 @@
+
+            .flex {
+                width: 200px;
+                height: 200px;
+                display: flex;
+                background: red;
+                flex-direction: column;
+            }
+
+            .flex>* {
+                background: green;
+                width: 200px;
+                height: 100px;
+                overflow: scroll;
+            }
+        

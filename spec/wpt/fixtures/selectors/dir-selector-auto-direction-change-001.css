@@ -1,0 +1,10 @@
+
+        #target {
+          width: 100px;
+          height: 100px;
+          background-color: red;
+        }
+        :dir(ltr) + #target {
+          background-color: green;
+        }
+    

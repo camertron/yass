@@ -1,0 +1,37 @@
+
+  .test {
+    writing-mode: sideways-lr;
+  }
+  [dir=rtl] {
+    direction: rtl;
+  }
+
+
+  table {
+    border-spacing: 0;
+    border: solid gray;
+    margin: 1em;
+    float: left;
+  }
+  td {
+    width: 1em;
+    height: 1em;
+  }
+
+  .navy { background: navy}
+  .blue { background: blue }
+  .aqua { background: aqua }
+  .teal { background: teal }
+
+  /* These declarations must have no effect. */
+  .test col,
+  .test colgroup {
+    writing-mode: horizontal-tb;
+    writing-mode: sideways-rl;
+    direction: rtl;
+  }
+  .test[dir=rtl] col,
+  .test[dir=rtl] colgroup {
+    writing-mode: horizontal-tb;
+    direction: ltr;
+  }

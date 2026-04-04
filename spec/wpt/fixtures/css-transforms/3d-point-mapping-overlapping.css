@@ -1,0 +1,37 @@
+
+  body {
+    margin: 0;
+  }
+
+  #box1 {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background-color: #DDD;
+  }
+
+  #box2 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    height: 200px;
+    width: 200px;
+    background-color: #AAA;
+    transform: translateZ(50px);
+  }
+
+  #box3 {
+    position: relative;
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    margin: 50px;
+  }
+
+  #overlay {
+    position: absolute;
+    height: 310px;
+    width: 150px;
+    background-color: rgba(0, 128, 0, 0.3);
+    transform: translateZ(100px);
+  }

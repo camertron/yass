@@ -1,0 +1,27 @@
+
+  div
+    {
+      height: 100px;
+      width: 100px;
+    }
+
+  div#overlapped-red
+    {
+      background-color: red;
+      position: absolute;
+    }
+
+  div#sticky
+    {
+      background: linear-gradient(to bottom, green 51%, red 49%);
+      position: sticky;
+    }
+
+  div#overlap-bottom-half-of-sticky
+    {
+      background-color: green;
+      bottom: 50px;
+      height: 50px;
+      position: relative;
+    }
+  

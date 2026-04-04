@@ -1,0 +1,17 @@
+
+.container {
+  width: 200px;
+}
+.grid {
+  position: relative;
+  grid: 10px / repeat(auto-fit, 30px);
+  grid-gap: 5px;
+}
+span {
+  background: blue;
+}
+.abs {
+  position: absolute;
+  top:0; right:0; bottom:0; left:0;
+  background: pink;
+}

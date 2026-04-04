@@ -1,0 +1,16 @@
+
+  @keyframes --anim {
+    from {
+      top: calc(100px * sibling-index());
+    }
+    to {
+      top: 0px;
+    }
+  }
+  #target {
+    animation: --anim 1000s step-end;
+    position: absolute;
+    top: 13px;
+    width: 100px;
+    height: 100px;
+  }

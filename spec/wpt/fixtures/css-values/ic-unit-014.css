@@ -1,0 +1,28 @@
+
+/* The following font contains the CJK water (U+6C34) glyph as a rectangle box,
+   with the width being exactly half of its height. */
+@font-face {
+  font-family: IcTestHalfWidth;
+  src: url(resources/IcTestHalfWidth.woff2);
+}
+
+.test {
+    font-family: IcTestHalfWidth;
+    font-size: 20px;
+    width: calc(100px + 10ic);
+    height: 20px;
+    background: green;
+    margin-bottom: 10px;
+}
+
+.ref {
+    /*
+    Each ic is equal to 10px, the width of a CJK water glyph.
+    (its height is 20px, and its width is half the height).
+    The width of .test is then:
+        100px + (10ic * 10px / ic) = 200px
+    */
+    width: 200px;
+    height: 20px;
+    background: green;
+}

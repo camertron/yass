@@ -1,0 +1,8 @@
+
+a {
+  border-inline-start: currentColor;
+}
+:link {
+  border-inline-start-color: #cba7;
+  writing-mode: sideways-lr;
+}

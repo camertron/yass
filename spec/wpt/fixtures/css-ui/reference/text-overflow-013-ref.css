@@ -1,0 +1,17 @@
+
+.test {
+  overflow: hidden;
+  white-space: pre;
+  font: 100px/1 Ahem;
+  width: 2em;
+}
+.green {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: green;
+  margin-left: 100px;
+}
+span {
+  vertical-align: sub;
+}

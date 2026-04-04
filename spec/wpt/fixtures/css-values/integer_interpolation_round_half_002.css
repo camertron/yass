@@ -1,0 +1,18 @@
+
+
+#anim-target {
+  animation: anim-z 4s steps(4) forwards 1;
+  animation-delay: -1s;
+  animation-play-state: paused;
+}
+
+@keyframes anim-z {
+  from {
+    z-index: -2;
+  }
+
+  to {
+    z-index: 0;
+  }
+}
+

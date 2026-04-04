@@ -1,0 +1,36 @@
+
+    .grid-lanes {
+      display: inline grid-lanes;
+      background-color: grey;
+      position: relative;
+      border: solid;
+      text-orientation: sideways;
+      font: 15px/1 Ahem;
+      align-items: baseline;
+    }
+
+    .min-content-rows { grid-template-rows: min-content; }
+    .max-content-rows { grid-template-rows: max-content; }
+
+    .height25  { height: 25px; }
+    .height50  { height: 50px; }
+    .height200Percent { height: 200%; }
+
+    .firstRowFirstItem {
+      background-color: blue;
+      grid-row: 1;
+      width: 100px;
+    }
+
+    .firstRowSecondItem {
+      background-color: lime;
+      grid-row: 1;
+      width: 100px;
+    }
+
+    .secondRowSpanning2 {
+      background-color: maroon;
+      width: 200px;
+      grid-row: 2;
+    }
+  

@@ -1,0 +1,13 @@
+
+div {
+  width: 10ch;
+  border: 1px blue solid;
+  overflow-wrap: break-word;
+}
+inline-block {
+  display: inline-block;
+  position: relative;
+  width: 3ch;
+  height: 1em;
+  background: orange;
+}

@@ -1,0 +1,10 @@
+
+#htmlvar00001 {
+  shape-outside: inset(-1px 8px 1px 1px);
+}
+
+* {
+  font-size: 1px;
+  float: right;
+  column-width: 7px;
+}

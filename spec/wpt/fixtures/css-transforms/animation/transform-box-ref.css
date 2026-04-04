@@ -1,0 +1,9 @@
+
+  .block {
+    position: absolute;
+    border: 20px solid green;
+    width: 100px;
+    height: 100px;
+    left: 100px;
+    top: 200px;
+  }

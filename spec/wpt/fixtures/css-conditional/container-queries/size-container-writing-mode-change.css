@@ -1,0 +1,14 @@
+
+  #container {
+    container-type: size;
+    width: 500px;
+    height: 300px;
+  }
+  #target {
+    @container (inline-size = 300px) {
+      color: green;
+    }
+    @container (inline-size = 500px) {
+      color: red;
+    }
+  }

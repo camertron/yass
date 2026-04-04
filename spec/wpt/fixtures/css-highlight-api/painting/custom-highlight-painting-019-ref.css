@@ -1,0 +1,11 @@
+
+  body {
+    text-decoration: 2px green underline;
+  }
+  .foo {
+    color:blue;
+    text-decoration: 2px blue underline;
+  }
+  .bar {
+    text-decoration: 2px currentColor underline;
+  }

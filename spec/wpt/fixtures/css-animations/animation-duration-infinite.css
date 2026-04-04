@@ -1,0 +1,15 @@
+
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+
+  animation-name: slide;
+  animation-duration: calc(infinity * 1s);
+}
+
+@keyframes slide {
+  to { margin-left: 100px }
+}
+

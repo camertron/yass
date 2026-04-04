@@ -1,0 +1,10 @@
+
+.clamp {
+  color: teal;
+}
+.inner {
+  color: purple;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.5em;
+}

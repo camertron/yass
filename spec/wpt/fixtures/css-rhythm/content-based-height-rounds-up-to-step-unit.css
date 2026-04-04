@@ -1,0 +1,11 @@
+
+.container {
+  display: flow-root;
+  width: 100px;
+  background-color: green;
+}
+.block-step {
+  width: min-content;
+  block-step-size: 100px;
+  color: green;
+}

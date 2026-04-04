@@ -1,0 +1,11 @@
+
+  .background {
+    width: 32px;
+    height: 32px;
+  }
+  #light { display: revert }
+  #dark { display: none }
+  @media (prefers-color-scheme: dark) {
+    #light { display: none }
+    #dark { display: revert }
+  }

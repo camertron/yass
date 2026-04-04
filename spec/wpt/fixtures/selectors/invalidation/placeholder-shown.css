@@ -1,0 +1,3 @@
+
+  #target { color: red; }
+  input:placeholder-shown + #target { color: green; }

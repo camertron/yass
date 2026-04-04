@@ -1,0 +1,23 @@
+
+.test {
+  writing-mode: horizontal-tb;
+  background: red;
+  box-sizing: border-box;
+  width: 100px;
+
+  --edges-inline-start-expected: 20;
+  --edges-inline-end-expected: 8;
+  --edges-block-start-expected: 10;
+  --edges-block-end-expected: 0;
+
+  font-size: 8px;
+
+  padding: 10px 1em 0 20px;
+}
+
+@supports (display: layout(test)) {
+  .test {
+    display: layout(test);
+    background: green;
+  }
+}

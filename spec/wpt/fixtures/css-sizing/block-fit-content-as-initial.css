@@ -1,0 +1,7 @@
+
+.parent {
+  height: fit-content;
+}
+.child {
+  max-height: 100%;
+}

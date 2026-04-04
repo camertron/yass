@@ -1,0 +1,17 @@
+
+  dialog {
+    container-type: size;
+    width: 20em;
+    height: 3em;
+  }
+
+  dialog::backdrop {
+    display: none;
+  }
+
+  @container (width > 1px) {
+    dialog::backdrop {
+      background: hotpink;
+    }
+  }
+

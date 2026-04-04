@@ -1,0 +1,9 @@
+
+p {
+  font: 20px/1 Ahem;
+  xtext-align: justify;
+  xtext-align-last: justify;
+  width: 12em;
+}
+ruby { color: blue; }
+rt { color: orange; }

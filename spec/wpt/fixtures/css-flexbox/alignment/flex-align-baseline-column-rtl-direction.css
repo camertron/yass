@@ -1,0 +1,19 @@
+
+.flexbox {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  align-items: baseline;
+  flex-direction: column;
+  direction: rtl;
+  position: relative;
+}
+.item {
+  width: 50px;
+  height: 100px;
+  background-color: green;
+}
+.abspos {
+  position: absolute;
+  right: 50px;
+}

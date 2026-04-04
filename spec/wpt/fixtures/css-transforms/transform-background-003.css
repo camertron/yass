@@ -1,0 +1,8 @@
+
+      div {
+        width: 200px;
+        height: 100px;
+        background: url(support/transform-triangle-down.svg);
+        transform: scale(-1);
+      }
+    

@@ -1,0 +1,15 @@
+
+body, html { padding: 0; margin: 0 }
+body {
+  background: yellow;
+}
+.background {
+  background: lightgreen;
+  width: 400px;
+  height: 300px;
+}
+.item {
+  background: blue;
+  width: 200px;
+  height: 200px;
+}

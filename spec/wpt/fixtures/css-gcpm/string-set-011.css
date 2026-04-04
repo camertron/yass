@@ -1,0 +1,14 @@
+
+  @page {
+   @top-center {
+   content: string(title);
+   }
+  }
+
+ h1 {
+ string-set: title content();
+ display: none;
+ }
+
+#d2 { page-break-before: always; }
+

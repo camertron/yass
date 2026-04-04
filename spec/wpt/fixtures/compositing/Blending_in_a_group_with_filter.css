@@ -1,0 +1,15 @@
+
+        #redSquare {
+			mix-blend-mode: lighten;
+        }
+        #svgMain {
+            top: 100px;
+            left: 100px;
+            width: 200px;
+            height: 200px;
+			background: blue;
+        }
+		#group{
+			filter: alpha(opacity=50,finishopacity=50,style=2);
+		}
+    

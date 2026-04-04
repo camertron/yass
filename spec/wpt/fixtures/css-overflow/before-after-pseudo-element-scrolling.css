@@ -1,0 +1,11 @@
+
+    #target::before, #target::after {
+      display: block;
+      content: url("/images/red.png") url("/images/green.png");
+      height: 50px;
+      width: 100px;
+      overflow: scroll;
+      scrollbar-width: none;
+      background: url("/images/green.png");
+    }
+    

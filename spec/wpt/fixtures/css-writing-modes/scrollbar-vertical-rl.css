@@ -1,0 +1,14 @@
+
+    #container {
+      width: 300px;
+      height: 200px;
+      border: 1px solid black;
+      writing-mode: vertical-rl;
+      overflow: scroll;
+      background: red;
+    }
+    #target {
+      width:500px;
+      background:blue;
+    }
+  

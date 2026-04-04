@@ -1,0 +1,35 @@
+
+  .container {
+    position: relative;
+    width: 100px;
+    height: 120px;
+    border: solid;
+    margin: 1em;
+    float: left;
+  }
+  .anchor {
+    border: solid blue 10px;
+    anchor-name: --foo;
+    inset: 0;
+    place-self: center;
+    position: absolute;
+  }
+  .test {
+    border: solid 5px;
+    position: absolute;
+    position-anchor: --foo;
+  }
+  .inset1 {
+    top: 0;
+    right: 0;
+    border-color: orange;
+  }
+  .inset2 {
+    bottom: 0;
+    left: 0;
+    border-color: teal;
+  }
+  .center {
+    place-self: center;
+    border-color: aqua;
+  }

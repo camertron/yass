@@ -1,0 +1,4 @@
+
+ul { margin-left: 100px; }
+.orient { list-style-image: url(../support/exif-orientation-2-ur-pre-rotated.jpg); }
+.no-orient { list-style-image: url(../support/exif-orientation-9-u.jpg); }

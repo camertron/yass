@@ -1,0 +1,6 @@
+
+span {
+  display: inline-block;
+  inline-size: 100px;
+  block-size: 50px;
+}

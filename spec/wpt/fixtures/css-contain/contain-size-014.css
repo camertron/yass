@@ -1,0 +1,18 @@
+
+  #outer {
+    position: relative;
+  }
+  #bottom {
+    container-type: size;
+    aspect-ratio: 1;
+    background-color: red;
+    width: 100px;
+  }
+  #top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: green;
+    width: 100px;
+    height: 100px;
+  }

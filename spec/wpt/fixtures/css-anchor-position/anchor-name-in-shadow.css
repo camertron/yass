@@ -1,0 +1,12 @@
+
+  body { margin-top: 0; }
+  #anchor {
+    anchor-name: --anchor;
+  }
+  #filler {
+    height: 100px;
+  }
+  #anchored {
+    position: absolute;
+    top: anchor(--anchor top);
+  }

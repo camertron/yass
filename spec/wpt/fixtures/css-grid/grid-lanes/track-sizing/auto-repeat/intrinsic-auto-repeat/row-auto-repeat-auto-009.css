@@ -1,0 +1,20 @@
+
+.grid-lanes {
+    position: relative;
+    display: grid-lanes;
+    grid-template-rows: repeat(auto-fill, auto);
+    min-width: 300px;
+    min-height: 200px;
+    float: left;
+    background: pink;
+}
+.border {
+  border: 10px solid;
+}
+.item {
+  background: lime;
+  /* Place item on the last row. */
+  grid-row: -2;
+  width: 300px;
+  height: 50px;
+}

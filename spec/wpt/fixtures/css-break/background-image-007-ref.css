@@ -1,0 +1,7 @@
+
+  .cat {
+    background: url(../support/cat.png) no-repeat;
+    background-size: 100px 100px;
+    width: 150px;
+    height: 100px;
+  }

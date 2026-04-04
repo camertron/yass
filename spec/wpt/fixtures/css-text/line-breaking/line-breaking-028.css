@@ -1,0 +1,7 @@
+
+.test > div {
+  font-family: monospace;
+  font-size: 25px;
+  width: 1ch;
+  line-height: 30px;
+}

@@ -1,0 +1,143 @@
+
+    #test_part {
+      .host::part(scope) {
+        /* This should have no effect, because --a is specified in a different
+           tree-scope than the --a inside the shadow. */
+        anchor-scope: --a;
+      }
+    }
+  
+
+        .anchored {
+          background: coral;
+          position: absolute;
+          top: anchor(bottom, 1px);
+          position-anchor: --a;
+          width: 5px;
+          height: 5px;
+        }
+        .anchor {
+          background: skyblue;
+          height: 10px;
+          anchor-name: --a;
+        }
+        .cb {
+          position: relative;
+          width: 50px;
+          height: 50px;
+          border: 1px solid black;
+        }
+        .scope {
+          anchor-scope: --a;
+        }
+      
+
+    #test_slot {
+      .anchor {
+        background: skyblue;
+        height: 10px;
+        anchor-name: --a;
+      }
+      .cb {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+      }
+      .anchored {
+        background: coral;
+        position: absolute;
+        top: anchor(bottom, 1px);
+        position-anchor: --a;
+        width: 5px;
+        height: 5px;
+      }
+    }
+  
+
+          .scope {
+            anchor-scope: --a;
+          }
+        
+
+    #test_slotted {
+      .anchor {
+        background: skyblue;
+        height: 10px;
+        anchor-name: --a;
+      }
+      .cb {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+      }
+      .anchored {
+        background: coral;
+        position: absolute;
+        top: anchor(bottom, 1px);
+        position-anchor: --a;
+        width: 5px;
+        height: 5px;
+      }
+    }
+  
+
+          ::slotted(div) {
+            anchor-scope: --a;
+          }
+        
+
+    #test_host {
+      .anchor {
+        background: skyblue;
+        height: 10px;
+        anchor-name: --a;
+      }
+      .cb {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+      }
+      .anchored {
+        background: coral;
+        position: absolute;
+        top: anchor(bottom, 1px);
+        position-anchor: --a;
+        width: 5px;
+        height: 5px;
+      }
+    }
+  
+
+          :host {
+            anchor-scope: --a;
+          }
+        
+
+    #test_part_slotted_in {
+      .host::part(scope) {
+        anchor-scope: --a;
+      }
+      .anchor {
+        background: skyblue;
+        height: 10px;
+        anchor-name: --a;
+      }
+      .cb {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+      }
+      .anchored {
+        background: coral;
+        position: absolute;
+        top: anchor(bottom, 1px);
+        position-anchor: --a;
+        width: 5px;
+        height: 5px;
+      }
+    }
+  

@@ -1,0 +1,16 @@
+
+div {
+  width: 200px;
+  height: 200px;
+  transform: rotateX(90deg);
+  transform-style: preserve-3d;
+}
+
+div::before {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  transform: rotateX(90deg);
+  content: '';
+  background-color: green;
+}

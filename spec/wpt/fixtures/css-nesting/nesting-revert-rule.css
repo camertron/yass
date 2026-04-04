@@ -1,0 +1,49 @@
+
+  :root {
+    #test1 {
+      color: green;
+    }
+    #test1 {
+      color: red;
+      color: revert-rule;
+    }
+  }
+
+
+  :root {
+    #test2 {
+      /* CSSNestedDeclarationsRule { */
+        color: green;
+      /* } */
+      & {
+        color: red;
+        color: revert-rule;
+      }
+    }
+  }
+
+
+  :root {
+    #test3 {
+      /* CSSNestedDeclarationsRule { */
+        color: green;
+      /* } */
+      .something {}
+      /* CSSNestedDeclarationsRule { */
+        color: red;
+        color: revert-rule;
+      /* } */
+    }
+  }
+
+
+  @scope (#test4) {
+    /* CSSNestedDeclarationsRule { */
+      color: green;
+    /* } */
+  }
+
+  #test4 {
+    color: red;
+    color: revert-rule;
+  }

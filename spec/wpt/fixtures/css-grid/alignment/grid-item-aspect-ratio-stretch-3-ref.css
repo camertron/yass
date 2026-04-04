@@ -1,0 +1,25 @@
+
+  body {
+    line-height: 0;
+  }
+
+  div {
+    display: inline-block;
+    height: 250px;
+    width: 350px;
+    background: grey;
+    margin: 10px;
+    vertical-align: top;
+  }
+
+  img {
+    display: block;
+    background: blue;
+  }
+
+  .justify {
+    width: 350px;
+  }
+  .align {
+    height: 250px;
+  }

@@ -1,0 +1,10 @@
+
+    iframe {
+      width: 200px;
+      height: 100px;
+    }
+
+    iframe.resize {
+      width: 400px;
+      height: 200px;
+    }

@@ -1,0 +1,45 @@
+
+    html,body {
+      color:black; background-color:white; font:10px/1 monospace; padding:0; margin:0;
+    }
+
+    .grid-lanes {
+      position: relative;
+      display: grid-lanes;
+      grid-template-columns: 100px 150px;
+      width: 300px;
+      height: 200px;
+      background: grey;
+      gap: 10px;
+      padding: 10px;
+      justify-items: start;
+    }
+
+    .grid-lanes > div {
+      position: absolute;
+    }
+
+    .grid-lanes > :nth-child(1) {
+      grid-column: 1 / 2;
+      align-self: start;
+      background: green;
+    }
+
+    .grid-lanes > :nth-child(2) {
+      grid-column: 2 / 3;
+      align-self: start;
+      background: blue;
+    }
+
+    .grid-lanes > :nth-child(3) {
+      grid-column: 1 / 2;
+      align-self: end;
+      background: yellow;
+    }
+
+    .grid-lanes > :nth-child(4) {
+      grid-column: 2 / 3;
+      align-self: end;
+      background: red;
+    }
+  

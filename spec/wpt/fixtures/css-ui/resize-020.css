@@ -1,0 +1,17 @@
+
+#test {
+  position: absolute;
+  background: orange;
+  min-height: 50px;
+  min-width: 50px;
+  height: 100px;
+  width: 100px;
+  overflow: auto;
+  resize: both;
+}
+#ref {
+  position: absolute;
+  background: red;
+  height: 50px;
+  width: 50px;
+}

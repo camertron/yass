@@ -1,0 +1,8 @@
+
+#t, #r {
+  font: 20px/1 monospace;
+  letter-spacing: 2ch;
+  overflow-wrap: anywhere;
+  outline: 1px solid black;
+  margin: 10px;
+}

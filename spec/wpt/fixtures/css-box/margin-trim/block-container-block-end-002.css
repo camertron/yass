@@ -1,0 +1,21 @@
+
+.container {
+    width: min-content;
+    margin-trim: block-end;
+    background-color: green;
+}
+.outer {
+    width: 100px;
+    height: 40px;
+    background-color: green;
+}
+.first {
+    width: 100px;
+    margin-bottom: 25px;
+    height: 25px;
+}
+.second {
+    margin-bottom: 100px;
+    width: 100px;
+    height: 10px;
+}

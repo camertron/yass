@@ -1,0 +1,24 @@
+
+  :root {
+    scroll-snap-type: both mandatory;
+  }
+  body {
+    margin: 0;
+  }
+  #filler {
+    width: 10000px;
+    height: 10000px;
+  }
+  #snapped {
+    margin-top: 200px;
+    margin-left: 200px;
+    width: 100px;
+    height: 100px;
+    container-type: scroll-state;
+    scroll-snap-align: start;
+    background: teal;
+  }
+
+  @container scroll-state(snapped: both) {
+    #target { --snapped: yes }
+  }

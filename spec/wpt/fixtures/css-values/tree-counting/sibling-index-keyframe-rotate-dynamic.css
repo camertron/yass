@@ -1,0 +1,12 @@
+
+  @keyframes --anim {
+    from {
+      rotate: x calc(10deg * sibling-index());
+    }
+    to {
+      rotate: x 90deg;
+    }
+  }
+  #target {
+    animation: --anim 1000s step-end;
+  }

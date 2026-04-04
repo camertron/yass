@@ -1,0 +1,3 @@
+
+  #subject:has(#dialog:modal) { color: green; }
+  #subject:has(#fullscreenTarget:modal) { color: blue; }

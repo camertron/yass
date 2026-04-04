@@ -1,0 +1,17 @@
+
+  @scope (.a) {
+    @starting-style {
+      :scope {
+        width: 100px;
+      }
+
+      .b {
+        width: 100px;
+      }
+    }
+  }
+
+  .a, .b {
+    transition: width 100s steps(2, start); /* 50% progress */
+    width: 200px;
+  }

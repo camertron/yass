@@ -1,0 +1,21 @@
+
+        #box{
+            font: 20px/1 Ahem;
+            overflow: hidden;
+            height: 1em;
+            width: 4em;
+            background-color: red;
+        }
+        /*
+         * This is testing to ensure that the underline
+         * "grows down" and covers the red in the box
+         */
+        #text{
+            color: transparent;
+            position: relative;
+            bottom: 3em;
+            text-decoration: green underline;
+            text-decoration-skip-ink: none;
+            text-decoration-thickness: 4em;
+        }
+    

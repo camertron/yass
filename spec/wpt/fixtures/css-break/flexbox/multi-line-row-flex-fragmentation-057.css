@@ -1,0 +1,15 @@
+
+  #flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #flex > div {
+    background: green;
+    inline-size: 10px;
+  }
+  .abs {
+    position: absolute;
+    inline-size: 10px;
+    block-size: 100px;
+    background: green;
+  }

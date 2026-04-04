@@ -1,0 +1,7 @@
+
+  video, audio, canvas, svg, img, embed, object, iframe {
+    border: 3px solid teal;
+    max-height: 0px;
+    max-width: 0px;
+    margin: 15px;
+  }

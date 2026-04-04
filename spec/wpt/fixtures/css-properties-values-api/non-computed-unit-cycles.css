@@ -1,0 +1,21 @@
+
+@property --registered-a {
+  syntax: "*";
+  inherits: false;
+}
+
+@property --registered-b {
+  syntax: "*";
+  inherits: false;
+}
+
+@property --registered-c {
+  syntax: "*";
+  inherits: false;
+}
+
+:root {
+  --font-size-em: 2em;
+  --line-height-lh: 2lh;
+}
+

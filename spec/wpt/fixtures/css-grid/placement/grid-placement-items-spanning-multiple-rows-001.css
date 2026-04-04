@@ -1,0 +1,11 @@
+
+.grid {
+  width: 100px;
+  display: grid;
+  background: red;
+  grid-auto-rows: 25px;
+  grid-template-columns: 50px 50px;
+}
+.grid > div {
+  background: green;
+}

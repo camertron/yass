@@ -1,0 +1,14 @@
+
+  #multicol {
+    column-count: 2;
+    column-fill: auto;
+    column-gap: 5px;
+    width: 200px;
+    height: 100px;
+  }
+  #container {
+    position: relative;
+    box-sizing: border-box;
+    width: 100px;
+    overflow: scroll;
+  }

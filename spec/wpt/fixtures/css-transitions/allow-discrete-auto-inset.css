@@ -1,0 +1,16 @@
+
+  #container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: green;
+  }
+  #abs {
+    position: absolute;
+    transition: top 1000s step-start allow-discrete;
+    inset: 0px;
+    background: red;
+  }
+  #abs.auto {
+    top: auto;
+  }

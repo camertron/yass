@@ -1,0 +1,10 @@
+
+			div {
+				background-color:red;
+				height:100px;
+				width:100px;
+			}
+			@supports (not (yadayada: x, calc( 2/3 ))) {
+				div { background-color:green; }
+			}
+		

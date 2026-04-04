@@ -1,0 +1,28 @@
+
+    body {
+      margin: 0;
+    }
+    .multi-column {
+        height: 47px;
+        column-width: 110px;
+        width: 350px;
+        column-gap: 10px;
+
+    }
+    #flexbox {
+        display: flex;
+        flex-wrap: wrap;
+        height: 110px;
+        column-rule: 10px solid gold;
+        column-gap: 10px;
+        width: 110px;
+        background: lightgreen;
+    }
+    #monolithic {
+       contain: size;
+    }
+
+    .items {
+      background: lightblue;
+      width: 50px;
+    }

@@ -1,0 +1,11 @@
+
+.grid {
+  display: grid;
+  grid-template-rows: 100px;
+}
+.subgrid {
+  display: grid;
+  width: min-content;
+  grid-template: subgrid / 20% 30%;
+}
+.w100 { width: 100px }

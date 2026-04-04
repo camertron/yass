@@ -1,0 +1,15 @@
+
+    grid {
+      display: inline grid-lanes;
+      grid-template-columns: auto min-content max-content;
+      border: 1px solid;
+      background: lightgrey;
+    }
+
+    subgrid {
+      display: grid;
+      grid-template-columns: subgrid;
+      grid-column: 2 / span 2;
+      background: lightblue;
+    }
+  

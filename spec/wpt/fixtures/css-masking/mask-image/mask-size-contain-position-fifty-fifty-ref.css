@@ -1,0 +1,18 @@
+
+      #outer {
+        border: 1px solid black;
+        width: 64px;
+        height: 128px;
+      }
+
+      #inner1 {
+        width: 64px;
+        height: 32px;
+      }
+
+      #inner2 {
+        width: 64px;
+        height: 64px;
+        background-color: purple;
+      }
+    

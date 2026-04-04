@@ -1,0 +1,15 @@
+
+#grid {
+  border: 3px solid black;
+  display: grid;
+  grid-template: 1fr 2fr / 3fr 4fr;
+  contain-intrinsic-size: 70px 80px;
+  contain: size;
+  width: max-content;
+  background: lightblue;
+  grid-gap: 5px;
+}
+.item {
+  background: lightgreen;
+  height: 100%;
+}

@@ -1,0 +1,4 @@
+
+:root { text-autospace: no-autospace; }
+p:lang(zh) { font: 16px/2 sans-serif; }
+.emph { text-emphasis: filled circle; }

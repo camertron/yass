@@ -1,0 +1,17 @@
+
+.test {
+  display: flow-root;
+  margin-bottom: 5px;
+  background: red;
+}
+.test > div {
+  height: 10px;
+  float: left;
+  background: green;
+}
+.x2 > div {
+  width: 50%;
+}
+.x4 > div {
+  width: 25%;
+}

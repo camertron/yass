@@ -1,0 +1,11 @@
+
+        div {color: white;}
+
+        div::first-line {
+            background-image: url(support/blue96x96.png);
+            background-repeat: repeat no-repeat;
+            background-size: 100% 50%;
+            color: black;
+            font-size: 80px;
+        }
+    

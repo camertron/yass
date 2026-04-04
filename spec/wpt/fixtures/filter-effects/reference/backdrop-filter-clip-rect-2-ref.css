@@ -1,0 +1,12 @@
+
+.box {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px 20px 30px 40px;
+  border-width: 10px;
+}
+.no-bf > .box {
+  background: black;
+}

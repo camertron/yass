@@ -1,0 +1,7 @@
+
+.flexbox {
+    background-color: grey;
+}
+.flexbox > * {
+    flex: 1;
+}

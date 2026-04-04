@@ -1,0 +1,8 @@
+
+:root { color: red; -webkit-text-fill-color: green }
+.c1::marker { content: counter(list-item, decimal) }
+.c2::marker { content: counter(list-item, disc) }
+.c3::marker { content: counter(list-item, square) }
+.c4::marker { content: counter(list-item, circle) }
+.c5::marker { content: counter(list-item, disclosure-open) }
+.c6::marker { content: counter(list-item, disclosure-closed) }

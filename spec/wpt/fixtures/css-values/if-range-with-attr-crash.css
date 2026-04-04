@@ -1,0 +1,7 @@
+
+  div {
+    color: if(
+      style(attr(data-foo <number>) = 3): green;
+      else: red;
+    );
+  }

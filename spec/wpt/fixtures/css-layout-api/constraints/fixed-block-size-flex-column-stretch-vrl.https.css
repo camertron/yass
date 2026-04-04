@@ -1,0 +1,23 @@
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+}
+
+.test {
+  writing-mode: vertical-rl;
+  background: red;
+  --expected-block-size: 90; /* flex-item should stretch to (100 - 10)px */
+  margin-left: 10px;
+}
+
+.child {
+  background: green;
+}
+
+@supports (display: layout(test)) {
+  .test {
+    display: layout(test);
+  }
+}

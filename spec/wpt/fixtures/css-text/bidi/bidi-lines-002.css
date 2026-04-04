@@ -1,0 +1,11 @@
+
+div {
+    direction: rtl;
+    unicode-bidi: plaintext;
+    text-align: start;
+    font-size: 2em;
+    width: 10em;
+    border: solid; padding: 0 0.5ch;
+}
+.l { color: blue; }
+.r { color: orange; }

@@ -1,0 +1,12 @@
+
+.spacer {
+  width: 150px;
+  height: 3000px;
+  background: lightblue;
+}
+#target {
+  width: 150px;
+  height: 150px;
+  background: lightgreen;
+  content-visibility: hidden;
+}

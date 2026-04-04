@@ -1,0 +1,36 @@
+
+
+.holder {
+  width: 300px;
+  height: 20px;
+  border-bottom: 2px solid #cfbfcf;
+}
+
+.grid-container {
+  display: grid;
+  /*
+    Defines the grid areas 'repeat', which covers the repeat only, and
+    'around-repeat' which covers the repeat and one track on either end.
+
+    Provides the line name 'all' in every track, the line names 'v' and 'u'
+    which alternates in every grid line.
+  */
+  grid-template-columns: [v] 10px [around-repeat-start a t-start w-start u all] 20px [repeat-start b] repeat(auto-fit, [all x v] 30px [all w-end y u] 40px [all t-end z]) [repeat-end c v] 50px [around-repeat-end all d u] 60px [e v];
+  grid-template-rows:
+    [w-start t-start around-repeat-start repeat-start]
+    repeat(auto-fit, 8px)
+    [w-end   t-end   around-repeat-end   repeat-end  ]
+    8px;
+  grid-row-gap: 2px;
+}
+
+.grid-container > :nth-child(3n)   {  background: sienna; }
+.grid-container > :nth-child(3n+1) {  background: gold; }
+.grid-container > :nth-child(3n+2) {  background: orange; }
+
+/* Alternate colors for some grid containers, where sometimes multiple grid
+ items would appear as one item or the actual ordering would be ambiguous
+ otherwise. */
+.alt-color > :nth-child(2n) { background: sienna; }
+.alt-color > :nth-child(2n+1) { background: orange; }
+

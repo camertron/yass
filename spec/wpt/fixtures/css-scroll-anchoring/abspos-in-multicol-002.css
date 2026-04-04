@@ -1,0 +1,21 @@
+
+html {
+  column-count: 1; /* Fragmentainer */
+}
+
+body {
+  position: relative; /* Containing block */
+  height: 4000px;
+}
+
+main {
+  height: 0px; /* Fully clipped */
+}
+
+div {
+  position: absolute; /* Abspos */
+  font-size: 100px;
+  width: 200px;
+  height: 100%;
+  line-height: 100px;
+}

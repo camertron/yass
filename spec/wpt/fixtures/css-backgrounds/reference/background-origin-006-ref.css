@@ -1,0 +1,12 @@
+
+  html {
+    padding-left: 170px;
+  }
+  div {
+    background-color: green;
+    height: 60px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 60px;
+  }

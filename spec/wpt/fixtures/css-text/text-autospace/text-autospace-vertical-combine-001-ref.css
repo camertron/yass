@@ -1,0 +1,11 @@
+
+#container {
+  writing-mode: vertical-rl;
+  font-size: 20px;
+}
+.tcy {
+  text-combine-upright: all;
+}
+.no-autospace {
+  text-autospace: no-autospace;
+}

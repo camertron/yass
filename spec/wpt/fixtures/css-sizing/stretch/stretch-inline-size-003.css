@@ -1,0 +1,55 @@
+
+  .cb {
+    inline-size: 60px;
+    block-size: 46px;
+
+    /* This margin & border are purely cosmetic and don't impact the sizing
+     * calculations in this test: */
+    margin: 5px;
+    border: 2px solid black;
+
+    /* We make each containing block an inline-level box, so we can display
+     * subtests in multiple rows, for easier visualization: */
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+  }
+
+  .cb > * {
+    /* This rule is targeting the DOM-tree-parents of the abspos elements.
+     * In the interests of simplicity and consistency, this style rule makes
+     * the matched elements fill *their* parent boxes (which are the abspos
+     * containing blocks).  Without this, there are a few edge cases where
+     * some of the matched elements would be zero-sized, which would then
+     * collapse away the space that we want to be available for stretching.
+     */
+    block-size: 100%;
+    inline-size: 100%;
+  }
+
+  .test {
+    position: absolute;
+    /* We have 2+3 = 5px of margin in the inline axis. This means the stretched
+     * children should all have a border-box inline-size that's 5px less than
+     * the containing block's padding-box size in the same axis. The dimension
+     * of the containing block's padding-box that we're filling will depend on
+     * whether our WM is orthogonal to it or not. If we're orthogonal, our
+     * expected stretch size is 46px - 5px = 41px.  If we're not orthogonal,
+     * our expected stretch size is 60px - 5px = 55px. */
+    margin-inline-start: 2px;
+    margin-inline-end: 3px;
+
+    /* We also have some border/padding that UAs will need to account for
+     * when computing the stretched children's content-box sizes; but these
+     * don't reduce our `data-expected-{width,height}` expectations, since
+     * those correspond to the border-box size. */
+    border: 3px solid blue;
+    padding: 2px;
+
+    inline-size: stretch;
+    block-size: 20px;
+    background: fuchsia;
+  }
+  .htb { writing-mode: horizontal-tb; }
+  .vlr { writing-mode: vertical-lr;   }
+  .vrl { writing-mode: vertical-rl;   }

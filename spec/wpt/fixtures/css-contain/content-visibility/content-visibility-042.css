@@ -1,0 +1,13 @@
+
+#container::before {
+  content: "This test ";
+  color: green;
+}
+.hasAfter::after {
+  content: "PASSES.";
+  background: green;
+  color: white;
+}
+.hidden {
+  content-visibility: hidden;
+}

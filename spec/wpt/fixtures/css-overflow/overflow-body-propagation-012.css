@@ -1,0 +1,17 @@
+
+  html {
+    overflow: hidden;
+    height: 500px;
+  }
+  body {
+    overflow: hidden;
+    width: 0px;
+    height: 0px;
+    border: solid 200px green;
+  }
+
+  div {
+    background: red;
+    height: 200px;
+    width: 200px;
+  }

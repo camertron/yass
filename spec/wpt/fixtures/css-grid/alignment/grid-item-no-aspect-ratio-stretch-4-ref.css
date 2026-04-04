@@ -1,0 +1,26 @@
+
+  body {
+    line-height: 0;
+  }
+
+  div {
+    display: inline-block;
+    height: 250px;
+    width: 350px;
+    background: grey;
+    margin: 10px;
+    vertical-align: top;
+  }
+
+  img {
+    display: block;
+    width: 0px;
+    height: 20px;
+  }
+
+  .justify {
+    width: 350px;
+  }
+  .align {
+    height: 250px;
+  }

@@ -1,0 +1,17 @@
+
+#ref {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	background: green;
+}
+
+img {
+	box-sizing: border-box;
+	width: auto;
+	height: auto;
+	background: white;
+	max-height: 100px;
+	max-width: 70px;
+}
+

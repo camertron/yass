@@ -1,0 +1,14 @@
+
+.flexbox {
+    height: 100px;
+    overflow: scroll;
+}
+.flexbox > div {
+    flex: none;
+}
+.flexbox > :nth-child(1) {
+    background-color: lightgreen;
+}
+.flexbox > :nth-child(2) {
+    background-color: lightblue;
+}

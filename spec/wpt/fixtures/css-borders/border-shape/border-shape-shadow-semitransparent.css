@@ -1,0 +1,14 @@
+
+body {
+    margin: 0;
+    background: white;
+}
+#target {
+    width: 190px;
+    height: 190px;
+    border-shape: xywh(0% 0% 100% 100%);
+    position: relative;
+    background: green;
+    box-shadow: 10px 20px 0 10px rgba(0, 0, 255, 0.5);
+    border: 10px solid black;
+}

@@ -1,0 +1,13 @@
+
+    .flexContainer {
+      display: flex;
+      flex-direction: column;
+      float: left;
+    }
+    .item {
+      background: green;
+      padding-left: 25px;
+      padding-right: 25px;
+      box-sizing: border-box;
+    }
+  

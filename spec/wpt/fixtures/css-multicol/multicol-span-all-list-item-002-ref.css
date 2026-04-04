@@ -1,0 +1,12 @@
+
+  li {
+    width: 300px;
+    outline: 1px solid black;
+    margin-bottom: 1em;
+    overflow: hidden;
+  }
+  h3 {
+    outline: 1px solid blue;
+    margin: 0;
+  }
+  

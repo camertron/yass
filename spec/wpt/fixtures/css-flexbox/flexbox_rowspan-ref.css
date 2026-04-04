@@ -1,0 +1,14 @@
+
+table {
+	width: 600px;
+	table-layout: fixed;
+	border-spacing: 0;
+}
+td {
+	background: blue;
+	padding: 0;
+}
+div {
+	background: white;
+	height: 8em;
+}

@@ -1,0 +1,7 @@
+
+  div {
+    display: inline;
+  }
+  .revert {
+    all: revert;
+  }

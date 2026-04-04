@@ -1,0 +1,7 @@
+
+      body {
+        background: url(support/transform-triangle-up.svg);
+        overflow: hidden;
+        transform: rotate(90deg);
+      }
+    

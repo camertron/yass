@@ -1,0 +1,77 @@
+
+          .container {
+            width: 260px;
+            font-family: Ahem;
+            font-size: 15px;
+            line-height: 2em;
+            border: 1px solid black;
+            padding-left: 2px;
+          }
+          #test {
+              color: green;
+          }
+          .test-float-left {
+              shape-outside: polygon(0 70px, 50px 120px, 0 120px);
+              float: left;
+              width: 100px;
+              height: 100px;
+              margin-top: 20px;
+          }
+          #test, #failure-container {
+              position: absolute;
+              top: 70px;
+          }
+          #margin-line {
+              position: absolute;
+              top: 100px;
+              width: 263px;
+              border-bottom: 1px solid black;
+          }
+          .fail {
+              position: absolute;
+              height: 15px;
+              background-color: red;
+              z-index: -1;
+          }
+          #bar-1 {
+              top: 8px;
+              left: 3px;
+              width: 255px;
+          }
+          #bar-2 {
+              top: 38px;
+              left: 3px;
+              width: 255px;
+          }
+          #bar-3 {
+              top: 68px;
+              left: 23px;
+              width: 225px;
+          }
+          #bar-4 {
+              top: 98px;
+              left: 123px;
+              width: 135px;
+          }
+          #bar-5 {
+              top: 128px;
+              left: 153px;
+              width: 105px;
+          }
+         .triangle {
+              position: absolute;
+              width: 100px;
+              height: 100px;
+              background-color: lightblue;
+              clip-path: polygon(0% 50%, 50% 100%, 0 100%);;
+
+          }
+          #triangle-1 {
+              top: 90px;
+              margin-left: 2px;
+          }
+          #triangle-2 {
+              top: 120px;
+              margin-left: 102px;
+          }
+      

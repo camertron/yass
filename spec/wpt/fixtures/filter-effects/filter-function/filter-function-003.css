@@ -1,0 +1,6 @@
+
+.test {
+    width: 100px;
+    height: 100px;
+    background: filter(url(resources/green-transparent-100x100.png), drop-shadow(50px 0 0 green)) top left no-repeat, red;
+}

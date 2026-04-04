@@ -1,0 +1,16 @@
+
+  table {
+    view-transition-name: table;
+  }
+
+  :root::view-transition-group(root) {
+    opacity: 0;
+  }
+
+  :root::view-transition-group(*) {
+    animation-play-state: paused;
+  }
+
+  :root::view-transition {
+    background: pink;
+  }

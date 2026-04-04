@@ -1,0 +1,8 @@
+
+  #target::before {
+    color: green;
+    content: " ";
+  }
+  #target::scroll-button(*) {
+    color: red;
+  }

@@ -1,0 +1,30 @@
+
+.wrapper {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 150px;
+}
+
+.test {
+  display: inline-block;
+  margin: 5px;
+  border: 3px solid;
+  padding: 2px;
+  font: 20px/1 Ahem;
+}
+
+/* Set the preferred size to small amount, to test that the min size works */
+.test.min-width  { width:  0px }
+.test.min-height { height: 0px }
+
+/* Set the preferred size to big amount, to test that the max size works */
+.test.max-width  { width:  500px }
+.test.max-height { height: 500px }
+
+/* stretch isn't widely supported, fall back to vendor-prefixed alternatives */
+.width.stretch      {      width: -moz-available;      width: -webkit-fill-available;      width: stretch }
+.min-width.stretch  {  min-width: -moz-available;  min-width: -webkit-fill-available;  min-width: stretch }
+.max-width.stretch  {  max-width: -moz-available;  max-width: -webkit-fill-available;  max-width: stretch }
+.height.stretch     {     height: -moz-available;     height: -webkit-fill-available;     height: stretch }
+.min-height.stretch { min-height: -moz-available; min-height: -webkit-fill-available; min-height: stretch }
+.max-height.stretch { max-height: -moz-available; max-height: -webkit-fill-available; max-height: stretch }

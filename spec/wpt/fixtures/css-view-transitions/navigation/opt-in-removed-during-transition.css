@@ -1,0 +1,7 @@
+
+  @view-transition {
+    navigation: auto;
+  }
+  #target {
+    view-transition-name: target;
+  }

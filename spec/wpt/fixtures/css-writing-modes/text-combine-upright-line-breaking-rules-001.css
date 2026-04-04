@@ -1,0 +1,19 @@
+
+@font-face {
+    font-family: "orientation";
+    src: url("/fonts/adobe-fonts/CSSHWOrientationTest.otf");
+}
+.vrl {
+    border:solid;
+    font-family:orientation;
+    font-size:60px;
+    height:2em;
+    margin:.2em;
+    writing-mode:vertical-rl;
+}
+.tcy {
+    text-combine-upright:all;
+}
+.ref {
+  white-space: nowrap;
+}

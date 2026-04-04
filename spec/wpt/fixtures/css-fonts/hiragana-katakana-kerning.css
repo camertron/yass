@@ -1,0 +1,29 @@
+
+      @font-face {
+        font-family: "Noto Sans JP";
+        src: url(resources/NotoSansJP-kana_test-subset.otf);
+      }
+
+      p {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        font-size: 6em;
+        font-family: "Noto Sans JP";
+        font-feature-settings: "palt" on;
+
+        margin: 1em;
+      }
+
+      .with-kerning {
+        font-kerning: normal;
+        color: red;
+      }
+
+      .no-kerning {
+        font-kerning: none;
+        color: green;
+        mix-blend-mode: multiply;
+      }
+    

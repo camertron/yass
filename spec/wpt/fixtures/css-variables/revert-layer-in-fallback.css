@@ -1,0 +1,20 @@
+
+@layer {
+  #child {
+    --x:PASS;
+    margin: 1px;
+    padding-left: 1px;
+  }
+}
+@layer {
+  #parent {
+    --x:FAIL;
+    margin: -1px;
+    padding-left: -1px;
+  }
+  #child {
+    --x: var(--unknown, revert-layer);
+    margin: var(--unknown, revert-layer);
+    padding-left: var(--unknown, revert-layer);
+  }
+}

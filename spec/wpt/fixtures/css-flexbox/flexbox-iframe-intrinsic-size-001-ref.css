@@ -1,0 +1,10 @@
+
+div {
+    height: 400px;
+    border: 0;
+}
+div > div {
+    width: 50%;
+    float: left;
+}
+

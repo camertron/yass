@@ -1,0 +1,8 @@
+
+.clamp {
+  line-clamp: 2;
+  white-space: pre;
+}
+.relpos {
+  position: relative;
+}

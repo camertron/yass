@@ -1,0 +1,6 @@
+
+@keyframes anim {}
+
+.animate {
+  animation: anim 10s;
+}

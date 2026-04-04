@@ -1,0 +1,7 @@
+
+body:has(input:checked) #fail {
+  display: none;
+}
+body:not(:has(input:checked)) #pass {
+  display: none;
+}

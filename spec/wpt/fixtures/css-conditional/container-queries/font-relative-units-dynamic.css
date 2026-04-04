@@ -1,0 +1,104 @@
+
+  main {
+    color: red;
+  }
+  #container {
+    container-type: inline-size;
+    width: 100px;
+  }
+  #container > div {
+    font-size: 16px;
+  }
+
+
+    main { font-size: 10px; }
+    main.larger { font-size: 20px; }
+    @container (width: 5em) {
+      #test { color: green }
+    }
+  
+
+    :root { font-size: 10px; }
+    :root.larger { font-size: 50px; }
+    @container (width: 2rem) {
+      #test { color: green }
+    }
+  
+
+    main { font-size: 10px; }
+    main.larger { font-size: 20px; }
+    @container (width <= 15ex) {
+      #test { color: green }
+    }
+  
+
+    :root { font-size: 10px; }
+    :root.larger { font-size: 20px; }
+    @container (width <= 12rex) {
+      #test { color: green }
+    }
+  
+
+    main { font-size: 10px; }
+    main.larger { font-size: 20px; }
+    @container (width <= 15ch) {
+      #test { color: green }
+    }
+  
+
+    main { font-family: 'Ahem'; font-size: 10px; }
+    main.larger { font-size: 20px; }
+    @container (width <= 7cap) {
+      #test { color: green }
+    }
+  
+
+    :root { font-size: 10px; }
+    :root.larger { font-size: 20px; }
+    @container (width <= 15rch) {
+      #test { color: green }
+    }
+  
+
+    main {
+      font-size: 10px;
+      line-height: 5;
+    }
+    main.larger { font-size: 20px; }
+    @container (width <= 1lh) {
+      #test { color: green }
+    }
+  
+
+    :root {
+      font-size: 10px;
+      line-height: 5;
+    }
+    :root.larger {
+      font-size: 20px;
+    }
+    @container (width <= 1rlh) {
+      #test { color: green }
+    }
+  
+
+    main { font-size: 10px; }
+    main.larger { font-size: 20px; }
+    @container (width <= 8ic) {
+      #test { color: green }
+    }
+  
+
+    :root { font-size: 10px; }
+    :root.larger { font-size: 20px; }
+    @container (width <= 8ric) {
+      #test { color: green }
+    }
+  
+
+    :root { font-family: 'Ahem'; font-size: 10px; }
+    :root.larger { font-size: 20px; }
+    @container (width <= 7rcap) {
+      #test { color: green }
+    }
+  

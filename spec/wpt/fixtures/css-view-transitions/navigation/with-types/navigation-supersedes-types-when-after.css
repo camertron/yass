@@ -1,0 +1,9 @@
+
+  @view-transition {
+    navigation: auto;
+    types: check;
+  }
+
+  @view-transition {
+    navigation: none;
+  }

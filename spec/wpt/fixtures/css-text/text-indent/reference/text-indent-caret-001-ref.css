@@ -1,0 +1,6 @@
+
+#editor {
+  caret-animation: manual; /* Prevent blinking */
+  padding: 10px;
+  padding-left: 110px;
+}

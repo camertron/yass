@@ -1,0 +1,11 @@
+
+    div {
+      width: 200px;
+      height: 250px;
+      border: 5px dashed black;
+      overflow: hidden;
+      background-image: url(support/60x60-green.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  

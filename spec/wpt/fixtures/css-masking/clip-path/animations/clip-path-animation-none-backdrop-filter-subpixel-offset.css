@@ -1,0 +1,26 @@
+
+  .target {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 255, 0.5);
+    backdrop-filter: invert(1);
+    position: absolute;
+    left: 0.31px;
+    top: 0.31px;
+    animation: clippath 20s linear -9.999s;
+  }
+
+  @keyframes clippath {
+    0% {
+      clip-path: circle(20% at 50% 50%);
+    }
+    50% {
+      clip-path: circle(50% at 50% 50%);
+    }
+    75% {
+      clip-path: circle(50% at 50% 50%);
+    }
+    100% {
+      clip-path: none;
+    }
+  }

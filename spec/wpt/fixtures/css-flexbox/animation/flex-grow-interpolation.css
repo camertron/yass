@@ -1,0 +1,17 @@
+
+.parent {
+  display: flex;
+  flex-grow: 3;
+}
+.target {
+  height: 10px;
+  background: black;
+  flex-grow: 1;
+}
+.filler {
+  height: 10px;
+  flex-grow: 1;
+}
+.expected {
+  background: green;
+}

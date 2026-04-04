@@ -1,0 +1,12 @@
+
+div {
+  background: blue;
+  color: white;
+}
+.myimg {
+  display: inline-block;
+  width: 400px;
+  height: 200px;
+  background: lightblue;
+  border: 1px solid black;
+}

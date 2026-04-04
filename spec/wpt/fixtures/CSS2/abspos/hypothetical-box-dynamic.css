@@ -1,0 +1,14 @@
+
+  div {
+    font: 16px / 1 monospace;
+    text-align: center;
+    margin: 5px;
+    position: relative;
+    min-height: 30px;
+  }
+  span {
+    position: absolute;
+  }
+  .block {
+    display: block;
+  }

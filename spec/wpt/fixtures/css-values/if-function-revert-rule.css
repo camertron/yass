@@ -1,0 +1,19 @@
+
+  #test1 {
+    color: green;
+  }
+  #test1 {
+    color: red;
+    --x: 3;
+    color: if(style(--x:1000):red; else:revert-rule);
+  }
+
+
+  #test2 {
+    color: green;
+  }
+  #test2 {
+    color: red;
+    --x: 1000;
+    color: if(style(--x:1000):revert-rule; else:red);
+  }

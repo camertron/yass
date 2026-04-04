@@ -1,0 +1,18 @@
+
+.wrapper {
+  float: left;
+  width: 100px;
+  border: 5px solid;
+  margin: 75px 10px;
+}
+.float {
+  float: left;
+  width: 50px;
+  height: 50px;
+  background: cyan;
+}
+.bfc {
+  overflow: hidden;
+  height: 50px;
+  background: green;
+}

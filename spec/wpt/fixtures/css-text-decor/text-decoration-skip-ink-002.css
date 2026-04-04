@@ -1,0 +1,12 @@
+
+         /*
+            No underline should be rendered for Ahem text when
+            text-decoration-skip-ink is applied.
+          */
+         div{
+             font: 20px/1 Ahem;
+             text-decoration: green underline;
+             text-decoration-skip-ink: auto;
+             color: transparent;
+         }
+        

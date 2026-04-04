@@ -1,0 +1,5 @@
+
+  .inline::before { content: 'math'; display: math; }
+  .inline::after { content: 'math'; display: math; }
+  .block::before { content: 'math'; display: block math; }
+  .block::after { content: 'math'; display: block math; }

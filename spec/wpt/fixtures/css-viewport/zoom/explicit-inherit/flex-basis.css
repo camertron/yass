@@ -1,0 +1,12 @@
+
+  .container {
+    display: flex;
+    background: skyblue;
+    flex-basis: 50px; /* For explicit inheritance. */
+  }
+  .zoomed {
+    background: coral;
+    zoom: 2;
+    flex-basis: inherit;
+    height: 100px;
+  }

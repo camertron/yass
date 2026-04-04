@@ -1,0 +1,7 @@
+
+
+body {
+  height: calc-size(auto, size);
+  border: medium solid;
+}
+

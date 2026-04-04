@@ -1,0 +1,8 @@
+
+  div {
+    font: 100px/1 Ahem;
+    white-space: pre;
+    width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }

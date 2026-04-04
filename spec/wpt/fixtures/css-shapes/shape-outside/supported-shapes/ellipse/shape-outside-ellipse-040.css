@@ -1,0 +1,25 @@
+
+  .container {
+    width: 200px;
+    line-height: 0;
+  }
+
+  .shape {
+    float: left;
+    shape-outside: ellipse(0% 0%);
+    clip-path: ellipse(0% 0%);
+    box-sizing: content-box;
+    height: 40px;
+    width: 40px;
+    padding: 20px 10px;
+    border: solid lightgreen;
+    border-width: 20px 10px;
+    background-color: orange;
+  }
+
+  .box {
+    display: inline-block;
+    width: 160px;
+    background-color: blue;
+  }
+  

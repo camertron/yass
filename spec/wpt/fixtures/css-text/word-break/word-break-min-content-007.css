@@ -1,0 +1,18 @@
+
+div {
+    font: 20px/1 Ahem;
+}
+.test {
+    color: green;
+    background: red;
+    z-index: -1;
+
+    width: min-content;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+.ref {
+    position: absolute;
+    background: green;
+    color: transparent;
+}

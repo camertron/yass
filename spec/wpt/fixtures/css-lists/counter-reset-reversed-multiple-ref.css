@@ -1,0 +1,2 @@
+
+  .item::before { content: attr(data-marker); }

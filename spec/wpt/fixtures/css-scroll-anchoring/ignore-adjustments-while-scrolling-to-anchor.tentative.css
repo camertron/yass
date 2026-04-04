@@ -1,0 +1,15 @@
+
+html {
+  scroll-behavior: smooth;
+}
+#anchor {
+  height: 100px;
+  background-color: blue;
+}
+a {
+  transition: font-size 0.2s;
+  font-size: 10px;
+}
+a:hover {
+  font-size: 13px;
+}

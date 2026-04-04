@@ -1,0 +1,10 @@
+
+html,body {
+  color:black; background-color:white; font:14px/1 monospace; padding:0; margin:0;
+}
+ol,ul,li { margin:0; padding:0; }
+body { margin-left: 40px; }
+
+li { display: inline flow-root list-item; border: 1px solid; }
+li::marker { content: counters(list-item, ".") " "; }
+.wrap { width: 22ch; }

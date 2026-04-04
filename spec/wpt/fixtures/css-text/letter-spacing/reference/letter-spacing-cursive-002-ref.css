@@ -1,0 +1,14 @@
+
+div {
+  margin: 1em;
+  font: 24px serif;
+}
+
+.ws {
+  white-space: pre;
+}
+.ws::after { /* Fake letter-spacing for the space only */
+  content: ' ';
+  display: inline-block;
+  width: 1em;
+}

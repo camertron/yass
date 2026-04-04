@@ -1,0 +1,32 @@
+
+@page p0{
+  @page a{ size: letter; }
+}
+@page p1{
+  @namespace svg url(http://www.w3.org/2000/svg);
+}
+@page p2{
+  @font-face{}
+}
+@page p3{
+  @font-feature-values font one{}
+}
+@page p4{
+  @font-palette-values --alternate{}
+}
+@page p5{
+  @counter-style x{}
+}
+@page p6{
+  @keyframes y{}
+}
+@page p7{
+  @property z{
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #c0ffee;
+  }
+}
+@page p8{
+  @import url("style.css") screen;
+}

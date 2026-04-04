@@ -1,0 +1,11 @@
+
+        p {
+          color: rgb(0 255 0);
+        }
+        slot:not(:has-slotted(span)) + p {
+          color: rgb(0 0 255);
+        }
+        slot:not(:has-slotted(div)) + p {
+          color: rgb(255 0 255);
+        }
+      

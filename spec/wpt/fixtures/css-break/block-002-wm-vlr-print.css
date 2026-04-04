@@ -1,0 +1,40 @@
+
+@page {
+  size: 5in 3in;
+  margin: 0.5in;
+}
+
+:root {
+  print-color-adjust: exact;
+}
+
+html,body {
+  color:black; background-color:white; font:20px/1 monospace; padding:0; margin:0;
+  writing-mode: vertical-lr;
+}
+html { margin-block-start: 80vw; }
+* { box-sizing: border-box; }
+
+.b {
+  inline-size: 50vh;
+  block-size: 130vw;
+  border: 5px solid black;
+  border-block-start-color: blue;
+  border-inline-start-color: lime;
+  margin-inline-start: 20px;
+}
+
+.b > div {
+  inline-size: 50vh;
+  block-size: 150vw;
+  border: 5px solid grey;
+  margin-inline-start: 20px;
+  margin-block-start: -5px;
+}
+
+.after {
+  inline-size: 60vh;
+  block-size: 30vw;
+  margin-block-start: 5vw;
+  border: 5px solid blue;
+}

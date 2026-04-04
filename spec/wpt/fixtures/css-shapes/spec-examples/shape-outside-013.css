@@ -1,0 +1,25 @@
+
+        #test {
+            position: relative;
+            width: 400px;
+            color: green;
+            font-family: Ahem;
+            font-size: 20px;
+            line-height: 2em;
+        }
+        #test-image {
+            float: left;
+            shape-outside: url("support/circle-no-shadow.png");
+            shape-margin: 15px;
+        }
+        #margin-circle {
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            width: 230px;
+            height: 230px;
+            background-color: blue;
+            border-radius: 150px;
+            z-index: -1;
+        }
+    

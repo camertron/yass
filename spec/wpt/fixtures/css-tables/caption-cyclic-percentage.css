@@ -1,0 +1,14 @@
+
+.test {
+  display: inline-block;
+  border: 10px solid;
+}
+.min-width > .test > div {
+  min-width: calc(100px + 0%);
+}
+.width > .test > div {
+  width: calc(100px + 0%);
+}
+.max-width > .test > div {
+  max-width: calc(100px + 0%);
+}

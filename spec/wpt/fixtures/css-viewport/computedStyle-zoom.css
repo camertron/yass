@@ -1,0 +1,17 @@
+
+  div {
+    width: 64px;
+    height: 64px;
+    font-size: 64px;
+    line-height: 64px;
+    text-indent: 64px;
+    background-color: blue
+  }
+  div.x4_zoom {
+    zoom: 4.0;
+    background-color: blueviolet;
+  }
+  div.x2_zoom {
+    background-color: chartreuse;
+    zoom: 2.0;
+  }

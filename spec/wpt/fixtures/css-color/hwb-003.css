@@ -1,0 +1,4 @@
+
+    .test { background-color: red; width: 12em; height: 6em; margin-top: 0; }
+    .ref { background-color: rgb(50% 50% 50%); width: 12em; height: 6em; margin-bottom: 0; } /* hwb(0 100% 100%) converted to sRGB */
+    .test { background-color: hwb(0 100% 100%); }

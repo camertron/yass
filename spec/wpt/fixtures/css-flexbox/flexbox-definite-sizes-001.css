@@ -1,0 +1,16 @@
+
+div {
+  display: flex;
+}
+
+.item {
+  width: 100px;
+  background: red;
+  align-items: center;
+}
+
+.item span {
+  min-height: 100%;
+  width: 100%;
+  background: green;
+}

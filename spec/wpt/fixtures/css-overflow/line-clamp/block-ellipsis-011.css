@@ -1,0 +1,10 @@
+
+.clamp {
+  line-clamp: 2;
+  width: 31.1ch;
+  border: 1px solid black;
+  font-family: monospace;
+}
+p {
+  margin: 0;
+}

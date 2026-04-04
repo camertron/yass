@@ -1,0 +1,30 @@
+
+       .test {
+            display: flex;
+            align-items: center;
+            width: 200px;
+            height: 50px;
+            position: relative;
+            border: 1px solid black;
+            margin: 10px;
+        }
+
+        .info {
+            position: absolute;
+            right: -10px;
+            transform: translateX(100%);
+        }
+        .hsl {
+            /* Expected */
+            background-image: linear-gradient(to right in hsl, red, hsl(120deg 100% 50% / 0%) );
+        }
+        .rgba {
+            background-image: linear-gradient(to right in hsl, red, rgba(0, 255, 0, 0) );
+        }
+        .hwb {
+            background-image: linear-gradient(to right in hsl, red, hwb(120deg 0% 0% / 0%) );
+        }
+        .color {
+            background-image: linear-gradient(90deg in hsl, red, color(srgb 0 1 0 / 0) );
+        }
+    

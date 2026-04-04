@@ -1,0 +1,14 @@
+
+div {
+    width: 50px;
+    height: 100px;
+    background-color: green;
+}
+.floating {
+    float: left;
+}
+.block-step-size {
+    display: list-item;
+    list-style: none;
+    block-step-size: 1px;
+}

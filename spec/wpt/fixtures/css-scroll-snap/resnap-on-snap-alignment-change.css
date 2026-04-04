@@ -1,0 +1,12 @@
+
+  html {
+    scroll-snap-type: y mandatory;
+  }
+  body {
+    margin:  0;
+  }
+  .snap {
+    scroll-snap-align: center;
+    height: 100vh;
+    margin:  0;
+  }

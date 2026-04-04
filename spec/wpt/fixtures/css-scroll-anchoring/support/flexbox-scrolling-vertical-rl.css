@@ -1,0 +1,9 @@
+
+  html {
+      writing-mode: vertical-rl;
+      overflow: hidden;
+      background: red;
+  }
+  body {
+      margin: 0;
+  }

@@ -1,0 +1,4 @@
+
+    .test1 > div > div { color: var(--x); }
+    .test2 > div > div { background-color: var(--x); }
+    .test3 > div > div { white-space: var(--x); }

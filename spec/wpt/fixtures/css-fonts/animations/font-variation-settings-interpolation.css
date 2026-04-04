@@ -1,0 +1,7 @@
+
+.parent {
+  font-variation-settings: "test" 30;
+}
+.target {
+  font-variation-settings: "test" 10;
+}

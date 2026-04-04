@@ -1,0 +1,8 @@
+
+
+html {
+	padding: 20px;
+	background: url('support/1x1-green.png'), red;
+	background-clip: content-box, border-box;
+}
+

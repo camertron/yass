@@ -1,0 +1,16 @@
+
+  :root {
+    --scroll-marker-group-background: red;
+  }
+
+  div {
+    overflow: auto;
+    scroll-marker-group: before;
+  }
+
+  div::scroll-marker-group {
+    background: var(--scroll-marker-group-background);
+    display: flex;
+    height: 100px;
+    width: 100px;
+  }

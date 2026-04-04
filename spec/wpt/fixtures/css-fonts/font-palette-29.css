@@ -1,0 +1,20 @@
+
+@font-face {
+    font-family: "COLR-test-font";
+    src: url("resources/COLR-palettes-test-font.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "COLR-test-font-no-light-dark";
+    src: url("resources/COLR-palettes-test-font-no-light-dark.ttf") format("truetype");
+}
+
+@font-palette-values --MyPalette {
+    font-family: "COLR-test-font";
+    base-palette: 3;
+}
+
+@font-palette-values --MyPalette {
+    font-family: "COLR-test-font-no-light-dark";
+    base-palette: 1;
+}

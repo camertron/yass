@@ -1,0 +1,38 @@
+
+    @keyframes anim {
+        from {
+            animation-composition: add;
+            filter: blur(10px);
+            width: 100px;
+        }
+        50% {
+            animation-composition: accumulate;
+            filter: blur(15px);
+            width: 228px;
+        }
+        to {
+            animation-composition: replace;
+            filter: blur(50px);
+            width: 1337px;
+        }
+    }
+
+    .anim-target {
+        animation: anim 1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+        filter: blur(5px);
+        width: 50px;
+    }
+
+    .replace {
+        animation-composition: replace;
+    }
+
+    .add {
+        animation-composition: add;
+    }
+
+    .accumulate {
+        animation-composition: accumulate;
+    }

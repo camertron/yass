@@ -1,0 +1,14 @@
+
+.multicol {
+  column-width: 100px;
+  inline-size: 300px;
+  block-size: 0;
+}
+
+.child {
+  font: 100px/1 Ahem;
+  color: green;
+  inline-size: 100px;
+  block-size: 100px; /* The define block-size is required to reproduce the bug.*/
+  outline: 3px solid green;
+}

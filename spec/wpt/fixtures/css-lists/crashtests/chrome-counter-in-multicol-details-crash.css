@@ -1,0 +1,3 @@
+
+  #counter { counter-reset:counter; }
+  #counter::after { content: counter(foo); }

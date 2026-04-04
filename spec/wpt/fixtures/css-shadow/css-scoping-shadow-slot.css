@@ -1,0 +1,12 @@
+
+    my-host {
+        display: block;
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+    }
+    div {
+        width: 100%;
+        height: 50%;
+    }
+    

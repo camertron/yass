@@ -1,0 +1,15 @@
+
+  @page {
+    margin: 10px 20px 30px 40px;
+  }
+  :root {
+    print-color-adjust: exact;
+    writing-mode: vertical-rl;
+  }
+  body {
+    margin: 0;
+  }
+  .fullpager {
+    width: 100vw;
+    height: 100vh;
+  }

@@ -1,0 +1,13 @@
+
+ol {
+  float: left;
+  width: 50px;
+  list-style: none;
+  text-decoration: underline;
+}
+.text-decoration-skip-ink-auto {
+  text-decoration-skip-ink: auto;
+}
+.text-decoration-skip-ink-none {
+  text-decoration-skip-ink: none;
+}

@@ -1,0 +1,10 @@
+
+div {
+  font-size: 2em;
+}
+#test {
+  word-space-transform: space;
+}
+wbr {
+  word-space-transform: none;
+}

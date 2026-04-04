@@ -1,0 +1,11 @@
+
+#container {
+  position: absolute;
+  background: blue;
+  cursor: crosshair;
+}
+#test {
+  border: solid white 50px;
+  border-radius: 50%;
+  cursor: default;
+}

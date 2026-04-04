@@ -1,0 +1,30 @@
+
+  .container {
+    direction: rtl;
+    position: absolute;
+    width: 200px;
+    line-height: 0;
+  }
+
+  .shape {
+    float: right;
+    /* Omit shape-outside */
+    clip-path: ellipse(40px 60px at left bottom);
+    box-sizing: content-box;
+    height: 40px;
+    width: 40px;
+    padding: 20px;
+    border: 20px solid lightgreen;
+    background-color: orange;
+  }
+
+  .box {
+    position: absolute;
+    width: 60px;
+    background-color: blue;
+  }
+
+  .long {
+    width: 200px;
+  }
+  

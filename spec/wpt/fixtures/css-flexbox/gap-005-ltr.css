@@ -1,0 +1,11 @@
+
+  section {
+    background-color: green;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  section > div{
+    background-color: grey;
+    color: white;
+  }

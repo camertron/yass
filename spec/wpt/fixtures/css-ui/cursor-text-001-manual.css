@@ -1,0 +1,9 @@
+
+div {
+  cursor: text;
+  color: blue;
+  writing-mode: vertical-rl;
+}
+p {
+	cursor: text;
+}

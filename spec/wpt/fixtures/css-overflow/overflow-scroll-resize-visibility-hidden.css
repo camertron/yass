@@ -1,0 +1,14 @@
+
+.scroller {
+  overflow: scroll;
+  width: 100px;
+  height: 100px;
+  resize: both;
+  visibility: hidden;
+}
+.content {
+  width: 1000px;
+  height: 1000px;
+  background: green;
+  visibility: visible;
+}

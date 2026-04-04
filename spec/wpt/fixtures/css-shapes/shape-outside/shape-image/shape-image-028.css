@@ -1,0 +1,7 @@
+
+  #shape {
+    float: left;
+    width: 200px;
+    height: 200px;
+    shape-outside: url("support/left-half-rectangle.png?pipe=trickle(d1)");
+  }

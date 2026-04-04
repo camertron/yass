@@ -1,0 +1,7 @@
+
+  .grid {
+    display: grid;
+  }
+  .subgrid {
+    grid-template-columns: subgrid repeat(auto-fill, [x]);
+  }

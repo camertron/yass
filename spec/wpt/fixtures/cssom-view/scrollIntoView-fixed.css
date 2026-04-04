@@ -1,0 +1,56 @@
+
+      body {
+        width: 1000vw;
+        height: 1000vh;
+        /* stripes so we can see scroll offset more easily */
+        background: repeating-linear-gradient(
+          45deg,
+          #A2CFD9,
+          #A2CFD9 100px,
+          #C3F3FF 100px,
+          #C3F3FF 200px
+        );
+      }
+
+      .fixedContainer {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        width:  150px;
+        height: 150px;
+        background-color: coral;
+      }
+
+      .fixedContainer.scrollable {
+        overflow: auto;
+        left: unset;
+        right: 10px;
+      }
+
+      button {
+        position: absolute;
+        margin: 5px;
+      }
+
+      .target {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: blue;
+        left: 50%;
+        top: 50%;
+      }
+
+      .scrollable .target {
+        left: 200%;
+        top: 200%;
+      }
+
+      iframe {
+        width: 96vw;
+        height: 300px;
+        position: absolute;
+        left: 2vw;
+        top: 100px;
+      }
+    

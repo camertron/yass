@@ -1,0 +1,11 @@
+
+p { font-size: 16px; }
+#target {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+@media (min-width: calc(100in)) {
+  /* Should not be selected */
+  #target { background-color: red }
+}

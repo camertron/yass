@@ -1,0 +1,7 @@
+
+      @import 'resources/imported-sheet-with-mixin.css';
+      div {
+        color: red;
+        @apply --m1;
+      }
+    

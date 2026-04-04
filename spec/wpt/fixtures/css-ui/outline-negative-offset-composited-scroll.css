@@ -1,0 +1,15 @@
+
+#container {
+  width: 100px;
+  height: 100px;
+  background: red;
+  will-change: transform;
+  overflow: scroll;
+  outline: solid 50px green;
+  outline-offset: -50px;
+}
+#child {
+  position: relative;
+  will-change: transform;
+  height: 1000px;
+}

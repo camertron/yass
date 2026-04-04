@@ -1,0 +1,16 @@
+
+
+#container {
+  position: relative;
+  background: gray;
+}
+#container::after {
+  content: '';
+  display: table;
+  clear:both;
+}
+#target {
+  position: absolute;
+  right: 0;
+  background: green;
+}

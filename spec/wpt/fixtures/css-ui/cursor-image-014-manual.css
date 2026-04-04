@@ -1,0 +1,6 @@
+
+div.test{
+  background: #D2B48C; border: 2px solid #555;
+  cursor: image(green), help;
+  width: 128px; height: 128px;
+}

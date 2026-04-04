@@ -1,0 +1,9 @@
+
+#target {
+  width: 100px;
+  height: 100px;
+  view-transition-name: target;
+}
+::view-transition-group(*) {
+  animation-duration: 1ms;
+}

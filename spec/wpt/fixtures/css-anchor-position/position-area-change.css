@@ -1,0 +1,23 @@
+
+  body, html {
+    margin: 0;
+    padding: 0;
+  }
+  .spacer {
+    height: 300px;
+  }
+  #anchor {
+    anchor-name: --anchor;
+    background: yellow;
+    width: 100px;
+    height: 50px;
+  }
+  #anchored {
+    position: fixed;
+    position-anchor: --anchor;
+    position-area: top;
+    position-try: flip-block;
+    background: green;
+    width: 100px;
+    height: 50px;
+  }

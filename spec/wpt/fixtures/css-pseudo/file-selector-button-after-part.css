@@ -1,0 +1,4 @@
+
+#host::part(file-input)::file-selector-button {
+  border: 1px solid green;
+}

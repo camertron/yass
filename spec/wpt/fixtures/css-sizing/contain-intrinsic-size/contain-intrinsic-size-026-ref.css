@@ -1,0 +1,23 @@
+
+.grid {
+  display: inline-grid;
+  border: 1px solid black;
+  grid-template-columns: repeat(auto-fit, 100px);
+  height: 40px;
+}
+.one {
+  width: 200px;
+}
+.two {
+  width: 200px;
+}
+.three {
+  width: 200px;
+}
+.four {
+  width: 150px;
+}
+.item {
+  background: green;
+  height: 100%;
+}

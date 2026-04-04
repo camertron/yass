@@ -1,0 +1,14 @@
+
+body > div {
+  width: 100px;
+  white-space: pre;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: red;
+}
+span {
+  display: inline-block;
+  height: 100px;
+  width: 200px;
+  background: green;
+}

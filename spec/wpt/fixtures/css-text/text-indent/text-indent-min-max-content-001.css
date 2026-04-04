@@ -1,0 +1,12 @@
+
+div {
+  border: 1px solid;
+  font: 10px Ahem;
+  text-indent: 5em;
+}
+.min {
+  width: min-content;
+}
+.max {
+  width: max-content;
+}

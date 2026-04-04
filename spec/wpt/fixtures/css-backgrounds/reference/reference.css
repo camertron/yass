@@ -1,0 +1,27 @@
+
+      div{
+          position:absolute;
+         }
+
+       #outside{
+
+        border: blue dotted 5px;
+        height: 120px;
+        left: 10px;
+        top: 10px;
+        width: 120px;
+        background-color:transparent;
+
+       }
+      #inside{
+
+        border: transparent;
+        height: 100px;
+        left: 25px;
+        top: 25px;
+        width: 100px;
+        background-color:red;
+
+       }
+
+    

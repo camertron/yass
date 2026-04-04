@@ -1,0 +1,12 @@
+
+  .multicol {
+    columns: 100px / 100px;
+    column-wrap: nowrap;
+    transition: columns 2s allow-discrete;
+  }
+  #mid {
+    transition-delay: -1s;
+  }
+  #end {
+    transition-delay: -2s;
+  }

@@ -1,0 +1,12 @@
+
+  div
+  {
+  background-image: url("support/nonpercent-width-nonpercent-height.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: black solid 1px;
+  height: 768px;
+  image-rendering: -moz-crisp-edges;
+  width: 256px;
+  }
+  

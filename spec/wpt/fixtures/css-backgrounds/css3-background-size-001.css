@@ -1,0 +1,14 @@
+
+            div {
+                width: 150px;
+                height: 150px;
+                background-image: url(support/green-150-150.png);
+                background-repeat: no-repeat;
+            }
+            #div1 {
+                background-size: 30%;
+            }
+            #div2 {
+                background-size: 60%;
+            }
+    

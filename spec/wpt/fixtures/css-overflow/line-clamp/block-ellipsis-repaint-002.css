@@ -1,0 +1,8 @@
+
+.clamp {
+  line-clamp: 2;
+  border: 1px solid black;
+  padding: 4px;
+  background-color: yellow;
+  height: 3.5lh;
+}

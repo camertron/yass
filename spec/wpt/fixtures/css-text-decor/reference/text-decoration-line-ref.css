@@ -1,0 +1,7 @@
+
+            .none { text-decoration: none; }
+            .underline { text-decoration: underline; }
+            .overline { text-decoration: overline; }
+            .line-through { text-decoration: line-through; }
+            .all-decorations { text-decoration: underline overline line-through; }
+    

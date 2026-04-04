@@ -1,0 +1,19 @@
+
+span {
+    background: green;
+    color: green;
+    position: absolute;
+}
+div {
+    font: 50px Ahem; /* cap-height of Ahem is 0.8em */
+    background: red;
+    position: relative;
+    height: 180px;
+    height: calc(180px - 2cap);  /* reduce to 100px if cap correctly supported */
+    width: 100px;
+}
+
+div span {
+    width: 2.5cap;
+    height: 100px;
+}

@@ -1,0 +1,8 @@
+
+div {
+  display: inline-grid;
+  border: 5px solid green;
+  /* Layout containment creates a stacking context, the following lines simuluate the same in the reference file. */
+  position: relative;
+  z-index: 1;
+}

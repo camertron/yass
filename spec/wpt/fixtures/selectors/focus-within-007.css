@@ -1,0 +1,16 @@
+
+  /* Suppress things that cannot be reproduced in the reference file */
+  :focus {
+    outline: none;
+  }
+  html, body, div {
+      border: solid 5px red;
+  }
+  /* Use blue to indicate that the user needs to pay attention.
+     This element needs to be focused for the test to make sense. */
+  div {
+      border-color: blue;
+  }
+  :focus-within {
+      border-color: green;
+  }

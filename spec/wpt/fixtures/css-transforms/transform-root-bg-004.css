@@ -1,0 +1,6 @@
+
+      body {
+        background: url(support/transform-triangle-left.svg);
+        transform: scale(-1);
+      }
+    

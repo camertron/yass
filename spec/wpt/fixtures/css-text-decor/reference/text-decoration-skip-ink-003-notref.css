@@ -1,0 +1,10 @@
+
+         /*
+            This non-reference case ensures that the test does
+            not frivolously pass if the underline is not rendered at all
+          */
+         div{
+             font: 20px/1 Ahem;
+             color: rgba(255,255,0,0.25);
+         }
+        

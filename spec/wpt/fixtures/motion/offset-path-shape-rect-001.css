@@ -1,0 +1,18 @@
+
+#outer {
+  top: 100px;
+  left: 100px;
+  position: relative;
+  width: 600px;
+  height: 400px;
+}
+#box {
+  background-color: green;
+  position: relative;
+  offset-path: rect(5px 95% 95% 5px);
+  offset-distance: 40%;
+  offset-anchor: 10% 10%;
+  border-radius: 50% 50% 0 0;
+  width: 100px;
+  height: 100px;
+}

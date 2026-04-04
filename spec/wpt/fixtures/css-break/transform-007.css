@@ -1,0 +1,12 @@
+
+  .transformed {
+      will-change: transform;
+      transform: rotate(25deg);
+      transform-origin: bottom right;
+      background: hotpink;
+  }
+  .child {
+      margin-left: auto;
+      width: 50px;
+      background: lime;
+  }

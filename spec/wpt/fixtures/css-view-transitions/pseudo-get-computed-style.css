@@ -1,0 +1,14 @@
+
+#target {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  contain: paint;
+  view-transition-name: target;
+  mix-blend-mode: multiply;
+  text-orientation: upright;
+  color-scheme: dark light;
+}
+::view-transition-image-pair(target) {
+  position: fixed;
+}

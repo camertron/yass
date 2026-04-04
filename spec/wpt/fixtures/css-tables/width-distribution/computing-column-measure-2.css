@@ -1,0 +1,9 @@
+
+td {
+    padding: 0;
+}
+div {
+    /* Bug does not happen when the table's containing block is less
+       than (100+200+300)=600px, so make sure sure that it's larger. */
+    width: 750px;
+}

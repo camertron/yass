@@ -1,0 +1,23 @@
+
+  html, body { margin: 0; padding: 0 }
+  #transformed {
+    transform: translateX(10px) translateY(10px);
+    width: 200px;
+    height: 200px;
+    background: grey;
+    overflow: hidden;
+  }
+
+  #fixed {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 50px;
+    left: 50px;
+    background: green;
+  }
+
+  #spacer {
+    height: 10000px;
+    width: 10000px;
+  }

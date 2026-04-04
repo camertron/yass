@@ -1,0 +1,7 @@
+
+  div#target
+    {
+      background-color: rgb(calc(5% + 15%), calc(40% / 2), calc(5% * 4));
+      height: 100px;
+    }
+  

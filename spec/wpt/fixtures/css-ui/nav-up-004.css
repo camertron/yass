@@ -1,0 +1,12 @@
+
+    #parent {
+        nav-up: #finish;
+    }
+
+    #intermediate {
+        nav-up: #end;
+    }
+
+    input {
+      display: block;
+    }

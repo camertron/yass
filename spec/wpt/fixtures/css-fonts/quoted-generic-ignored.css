@@ -1,0 +1,10 @@
+
+body { font-size: 36px; }
+/* Note that this test assumes that the system does not have an actual
+   font named "Fantasy" or "Cursive" installed! */
+.fantasy-test1 { font-family: "fantasy", serif; }
+.fantasy-test2 { font-family: "fantasy", sans-serif; }
+.fantasy-test3 { font-family: "fantasy", monospace; }
+.cursive-test1 { font-family: "cursive", serif; }
+.cursive-test2 { font-family: "cursive", sans-serif; }
+.cursive-test3 { font-family: "cursive", monospace; }

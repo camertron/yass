@@ -1,0 +1,9 @@
+
+  a {
+    position: relative;
+  }
+  a:before {
+    content: "foo";
+    position: absolute;
+    background: green;
+  }

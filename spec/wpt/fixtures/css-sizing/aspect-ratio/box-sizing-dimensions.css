@@ -1,0 +1,24 @@
+
+img {
+    border: 20px solid blue;
+    width: 100px;
+    height: auto;
+}
+
+.aspect {
+    aspect-ratio: 2 / 1;
+}
+
+.aspect-auto {
+    aspect-ratio: auto 2 / 1;
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+
+.non-replaced {
+    background: green;
+    border: 20px solid blue;
+    width: 100px;
+}

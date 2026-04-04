@@ -1,0 +1,17 @@
+
+    div {
+        display: block;
+        width: 100px;
+        height: 10px;
+        background-color: red;
+    }
+    .container {
+        height: 100px;
+    }
+    .reference {
+        background-color: green;
+    }
+    div:nth-child(3n-1 of [align]) { /* selects 2,5,8 of divs that have an align attribute */
+        background-color: green;
+    }
+  

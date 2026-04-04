@@ -1,0 +1,14 @@
+
+html,body {
+  color:black; background-color:white; font:16px/1 monospace;
+}
+
+.l1 { display: inline list-item; }
+.l2 { display: inline flow-root list-item; }
+
+span {
+  border: 1px solid;
+}
+
+div { background: blue; }
+  

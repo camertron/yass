@@ -1,0 +1,22 @@
+
+  .outer {
+    column-count: 1;
+    column-rule: 6px solid black;
+    column-fill: auto;
+    background-color: rgba(0, 0, 255, 0.3);
+    width: 200px;
+    height: 300px;
+  }
+  .inner {
+    column-count: 1;
+    column-rule: 3px solid gray;
+    column-fill: auto;
+    background-color: rgba(255, 0, 255, 0.3);
+  }
+  .inner-block {
+    background-color: rgba(0, 255, 0, 0.3);
+  }
+  .space {
+    height: 100px;
+  }
+  

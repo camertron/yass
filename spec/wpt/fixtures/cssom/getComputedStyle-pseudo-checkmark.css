@@ -1,0 +1,13 @@
+
+select,
+select::picker(select) {
+  appearance: base-select;
+}
+
+#test-option {
+  width: 321px;
+}
+
+#test-option::checkmark {
+  width: 13px;
+}

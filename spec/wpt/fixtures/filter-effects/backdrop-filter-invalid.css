@@ -1,0 +1,12 @@
+
+div, rect {
+  width: 100px;
+  height: 100px;
+  backdrop-filter: url(#not-found);
+}
+div {
+  background-color: blue;
+}
+rect {
+  fill: purple;
+}

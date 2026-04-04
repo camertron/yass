@@ -1,0 +1,6 @@
+
+#grid-lanes {
+    display: inline grid-lanes;
+    grid-template-columns: minmax(auto, 0);
+    width: 200px;
+}

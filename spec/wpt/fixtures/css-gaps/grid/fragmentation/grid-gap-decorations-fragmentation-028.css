@@ -1,0 +1,35 @@
+
+  body {
+    margin: 0px;
+  }
+  .multi-col {
+    position: relative;
+    columns: 2;
+    column-fill: auto;
+    height: 210px;
+    width: 870px;
+    column-gap: 10px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 430px;
+    height: 430px;
+    column-rule-color: blue;
+    column-rule-style: solid;
+    column-rule-width: 5px;
+    row-rule-color: red;
+    row-rule-style: solid;
+    row-rule-width: 5px;
+    column-rule-break: spanning-item;
+    column-rule-inset: 0px;
+    row-rule-break: spanning-item;
+    row-rule-inset: 0px;
+    column-rule-visibility-items: around;
+    row-rule-visibility-items: around;
+  }
+  .grid-item {
+    background-color: gray;
+    opacity: 0.5;
+  }

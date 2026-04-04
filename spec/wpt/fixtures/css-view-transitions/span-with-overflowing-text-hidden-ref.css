@@ -1,0 +1,12 @@
+
+div {
+  background: grey;
+}
+span {
+  text-shadow: red 2px 5px;
+  visibility: hidden;
+}
+
+body {
+  background: pink;
+}

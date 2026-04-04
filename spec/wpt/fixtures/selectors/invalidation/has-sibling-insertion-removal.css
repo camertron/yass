@@ -1,0 +1,16 @@
+
+div, main { color: grey }
+#subject1:has(+ #sibling1_1 + #sibling1_2) { color: red }
+#subject2:has(+ #sibling2_2) { color: green }
+#subject3:has(+ #sibling3_1 + #sibling3_2 > #siblingchild3_2_1) { color: blue }
+#subject4:has(+ #sibling4_2 > #siblingchild4_2_1) { color: yellow }
+#subject5:has(+ #sibling5_1 + #sibling5_2) { color: red }
+#subject6:has(+ #sibling6_2) { color: green }
+#subject7:has(+ #sibling7_1 + #sibling7_2 > #siblingchild7_2_1) { color: blue }
+#subject8:has(+ #sibling8_2 > #siblingchild8_2_1) { color: yellow }
+#subject9:has(+ #sibling9_1 + #sibling9_2 ~ #sibling9_3) { color: red }
+#subject10:has(+ #sibling10_2 ~ #sibling10_3) { color: green }
+#subject11:has(+ #sibling11_1 + #sibling11_2 ~ #sibling11_3 > #siblingchild11_3_1) { color: blue }
+#subject12:has(+ #sibling12_2 ~ #sibling12_3 > #siblingchild12_3_1) { color: yellow }
+.sibling13:has(~ .sibling13) { color: green }
+#subject14:has(~ #sibling14_1 ~ #sibling14_2 ~ #sibling14_3) { color: green }

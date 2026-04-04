@@ -1,0 +1,19 @@
+
+div {
+	background: black;
+	margin: 1em;
+	height: 6em;
+	width: 400px;
+}
+p {
+	background: #3366cc;
+	margin: 2em;
+	width: 2em;
+	height: 2em;
+	float: left;
+}
+div::after {
+	content: "";
+	clear: both;
+	display: block;
+}

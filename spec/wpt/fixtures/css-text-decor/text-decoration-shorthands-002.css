@@ -1,0 +1,10 @@
+
+         /*
+            This test is designed to make sure the underline is rendered
+            the same, regardless of whether or not the thickness is set
+            in the shorthands or the longhands form
+         */
+         div{
+             text-decoration: green underline 100px;
+         }
+        

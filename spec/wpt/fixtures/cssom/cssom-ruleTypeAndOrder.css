@@ -1,0 +1,35 @@
+
+    @namespace svg "http://www.w3.org/2000/svg";
+  
+
+    @import url('main.css');
+  
+
+    h1 { background: indianred; }
+  
+
+    @namespace svg "http://www.w3.org/2000/svg";
+    svg|a { color: white; }
+  
+
+    @font-face {
+      font-family: 'Megalopolis';
+      src: url('fonts/megalopolisextra-webfont.eot');
+      src: url('fonts/megalopolisextra-webfont.eot?#iefix') format('embedded-opentype'),
+           url('fonts/megalopolisextra-webfont.woff') format('woff'),
+           url('fonts/megalopolisextra-webfont.ttf') format('truetype'),
+           url('fonts/megalopolisextra-webfont.svg#MEgalopolisExtraRegular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+  
+
+    @media (min-width: 200px) {
+        h1 { background: aliceblue; }
+    }
+  
+
+    @page :first {
+        h1 { color: #444; }
+    }
+  

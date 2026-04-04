@@ -1,0 +1,7 @@
+
+.clamp {
+  line-clamp: 3;
+  color: teal;
+  font-weight: bold;
+  font-style: italic;
+}

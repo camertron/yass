@@ -1,0 +1,19 @@
+
+  .container {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation: clippath 10s;
+    animation-fill-mode: none;
+    clip-path: inset(33% 33%);
+  }
+
+  @keyframes clippath {
+    0% {
+      clip-path: circle(50% at 50% 50%);
+    }
+
+    100% {
+      clip-path: circle(35% at 35% 35%);
+    }
+  }

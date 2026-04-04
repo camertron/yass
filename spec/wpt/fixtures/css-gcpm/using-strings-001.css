@@ -1,0 +1,14 @@
+
+  @page {
+   @top-center {
+   content: string(section);
+   }
+  }
+
+ h2 {
+ string-set: section content();
+
+ }
+
+
+

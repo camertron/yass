@@ -1,0 +1,4 @@
+
+.test { text-align: justify; direction: rtl; }
+/* the CSS below is not part of the test */
+.test, .ref { border: 1px solid orange; margin: 20px; width: 450px; color: orange; font: 25px/1 Ahem; }

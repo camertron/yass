@@ -1,0 +1,20 @@
+
+  #target { container-type: inline-size; }
+  #target::before,
+  #target::after,
+  #target::marker,
+  #target::first-line,
+  #target::first-letter,
+  #target::backdrop {
+    font-size: 0px;
+  }
+  @container (width >= 300px) {
+    #target::before,
+    #target::after,
+    #target::marker,
+    #target::first-line,
+    #target::first-letter,
+    #target::backdrop {
+      font-size: 10cqw;
+    }
+  }

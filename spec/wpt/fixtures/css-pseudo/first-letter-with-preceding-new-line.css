@@ -1,0 +1,14 @@
+
+    body { font-size: 30px; }
+    #sample {
+      margin: 20px;
+      white-space: pre;
+    }
+    #sample::first-line {
+      color: red;
+    }
+    #sample::first-letter {
+      color: green;
+      border: solid 1px blue;
+    }
+  

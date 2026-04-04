@@ -1,0 +1,15 @@
+
+  @page {
+    margin: 0;
+  }
+  :root {
+    print-color-adjust: exact;
+  }
+  body {
+    box-sizing: border-box;
+    height: 100vh;
+    margin: 0;
+    border: 10px solid;
+    padding: 10px;
+    background: yellow;
+  }

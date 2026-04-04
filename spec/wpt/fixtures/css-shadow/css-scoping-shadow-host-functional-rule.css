@@ -1,0 +1,11 @@
+
+        host-1, host-2, host-3, host-4, host-5 {
+            display: block;
+            width: 100px;
+            height: 20px;
+            background: red;
+        }
+        host-3, host-4, host-5  {
+            background: green;
+        }
+    

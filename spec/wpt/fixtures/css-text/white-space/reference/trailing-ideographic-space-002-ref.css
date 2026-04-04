@@ -1,0 +1,10 @@
+
+div {
+  line-height: 1;
+  color: transparent;
+  float: left;
+  clear: left;
+}
+span {
+  background: green;
+}

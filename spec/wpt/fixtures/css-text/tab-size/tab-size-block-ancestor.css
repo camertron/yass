@@ -1,0 +1,22 @@
+
+div {
+    font: 16px monospace;
+    white-space: pre;
+    tab-size: 10;
+}
+.test1 span {
+    font-size: 1px;
+}
+.test2 span {
+    font-size: 10px;
+}
+.test3 span {
+    tab-size: 5;
+}
+.test4 span {
+    font-size: 10px;
+    tab-size: 2.5;
+}
+b {
+    font: bold 16px monospace;
+}

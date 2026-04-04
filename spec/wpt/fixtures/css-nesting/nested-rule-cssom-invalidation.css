@@ -1,0 +1,9 @@
+
+  .set_parent_selector_text {
+    div {
+      color: red;
+    }
+    .a1 {
+      color: green;
+    }
+  }

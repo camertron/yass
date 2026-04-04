@@ -1,0 +1,21 @@
+
+#grid {
+  display: inline-grid;
+  align-items: baseline;
+  background: red;
+  grid-auto-flow: column;
+}
+
+canvas {
+  background: green;
+  width: 50px;
+  height: 100px;
+}
+
+#item {
+  contain: layout;
+  color: transparent;
+  background: green;
+  width: 50px;
+  height: 100px;
+}

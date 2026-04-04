@@ -1,0 +1,33 @@
+
+
+html, body, iframe { margin: 0; padding: 0; }
+
+/**
+ * The top left corner of the iframe is translated by 300px left and
+ * 300px towards the user.  This is inside a 60deg rotation around the
+ * left edge of the page, which means that that rotation moves the left
+ * edge of the iframe back into the viewport.  The iframe's width is
+ * squashed in half, so it's visually 150x150 content box with 2px
+ * top/bottom borders and 1px left/right borders.
+ *
+ * This test is using 3D transforms to test correct use of project
+ * versus map for the event handling.
+ */
+
+#outer {
+  transform: rotateY(60deg);
+  transform-origin: top left;
+  transform-style: preserve-3d;
+}
+
+#middle {
+  transform: translateZ(300px);
+  transform-style: preserve-3d;
+}
+
+#inner {
+  transform: translateX(-304px);
+  resize: both;
+  border: 2px solid;
+}
+

@@ -1,0 +1,25 @@
+
+  #inner {
+    view-transition-name: inner
+  }
+
+  ::view-transition {
+    background: lightpink;
+  }
+  ::view-transition-group(root) {
+    visibility: hidden;
+    animation-play-state: paused;
+  }
+
+  ::view-transition-old(inner), ::view-transition-new(inner) {
+    animation: unset;
+  }
+  ::view-transition-old(inner) {
+    opacity: 0;
+  }
+  ::view-transition-new(inner) {
+    opacity: 1;
+  }
+  ::view-transition-group(inner) {
+    animation-duration: 0s;
+  }

@@ -1,0 +1,19 @@
+
+			table
+			{
+				border-collapse:collapse;
+			}
+			table, td, th
+			{
+				border:1px solid black;
+				padding: 13px;
+			}
+			table
+			{
+				width: 100%;
+			}
+			img
+			{
+				width: 400px;
+			}
+		

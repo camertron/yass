@@ -1,0 +1,10 @@
+
+.flexbox {
+  background-color: gray;
+}
+
+.vertical {
+  writing-mode: vertical-lr;
+  width: min-content;
+  background-color: blue;
+}

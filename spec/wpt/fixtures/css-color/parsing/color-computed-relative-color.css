@@ -1,0 +1,8 @@
+
+    html {
+        --bg-color: blue;
+        --color: green;
+        --accent: lightseagreen;
+        --mycolor: orchid;
+        --mygray: lch(from var(--mycolor) l 0 h);
+    }

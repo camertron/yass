@@ -1,0 +1,19 @@
+
+  #bottom {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: red;
+    z-index: 1;
+  }
+  #clip {
+    position: absolute;
+    clip: rect(0px, 100px, 100px, 0px);
+  }
+  #top {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: green;
+    z-index: 3;
+  }

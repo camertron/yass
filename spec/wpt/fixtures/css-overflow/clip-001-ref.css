@@ -1,0 +1,18 @@
+
+  #target {
+    width: 100px;
+    height: 100px;
+    background: red;
+    /* For this simple case, hidden and clip are equivalent */
+    overflow: hidden;
+  }
+
+  #container {
+    overflow: auto;
+    height: 300px;
+  }
+
+  #fill {
+    background: blue;
+    height: 5000px;
+  }

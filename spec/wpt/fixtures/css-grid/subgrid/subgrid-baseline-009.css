@@ -1,0 +1,28 @@
+
+.item {
+  writing-mode: vertical-rl;
+  block-size: 80px;
+  box-sizing: border-box;
+  border: solid 5px hotpink;
+  line-height: 0;
+  margin-block-start: 10px;
+  margin-block-end: 15px;
+}
+.small {
+  width: 20px;
+  height: 20px;
+  border: solid 5px cyan;
+}
+.first {
+  justify-self: baseline;
+}
+.last {
+  justify-self: last baseline;
+}
+span {
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border: solid 5px orange;
+  display: inline-block;
+}

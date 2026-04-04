@@ -1,0 +1,11 @@
+
+.container {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+img {
+  block-size: 55vw;
+  aspect-ratio: 2/1;
+}

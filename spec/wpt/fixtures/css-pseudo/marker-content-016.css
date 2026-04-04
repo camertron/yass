@@ -1,0 +1,11 @@
+
+::marker {
+  content: "[marker]";
+}
+ol {
+  text-decoration: underline;
+  padding-left: 100px;
+}
+.inside {
+  list-style-position: inside;
+}

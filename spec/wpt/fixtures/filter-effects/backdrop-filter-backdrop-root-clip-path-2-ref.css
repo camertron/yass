@@ -1,0 +1,21 @@
+
+  .grandparent {
+    background: yellow;
+    padding: 100px;
+  }
+
+  .clipped-container {
+    position: relative;
+    background-color: rgb(0, 255, 0);
+    padding: 100px;
+    display: inline;
+  }
+
+  .child {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 400px;
+    height: 400px;
+    display: inline;
+  }

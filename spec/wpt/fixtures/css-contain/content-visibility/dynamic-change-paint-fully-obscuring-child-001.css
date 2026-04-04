@@ -1,0 +1,11 @@
+
+
+div { width: 100px; height: 100px; }
+
+.small { height: 50px; }
+
+.hidden { content-visibility: hidden }
+
+.green { background: green; }
+.red { background: red; }
+

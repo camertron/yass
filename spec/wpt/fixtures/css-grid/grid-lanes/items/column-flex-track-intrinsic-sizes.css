@@ -1,0 +1,16 @@
+
+#grid-lanes {
+  display: grid-lanes;
+  width: 60px;
+  height: 60px;
+  border: solid;
+}
+#item {
+  background: blue;
+}
+#item::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+}

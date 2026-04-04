@@ -1,0 +1,16 @@
+
+@font-face {
+  font-family: 'TestFace';
+  src: url('/fonts/Ahem.ttf?pipe=trickle(d0.5)'),
+       url('/fonts/Ahem.ttf?fallback-src');
+  font-display: optional;
+}
+
+@font-face {
+  font-family: 'FallbackFace';
+  src: url('/fonts/Ahem.ttf?fallback-face');
+}
+
+.test {
+  font-family: 'TestFace','FallbackFace';
+}

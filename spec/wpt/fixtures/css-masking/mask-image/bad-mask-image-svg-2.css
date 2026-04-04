@@ -1,0 +1,5 @@
+
+  svg > rect {
+    /* Single invalid mask layer: Mask is ignored. */
+    mask-image: url("invalid://nonexistent");
+  }

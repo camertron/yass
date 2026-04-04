@@ -1,0 +1,52 @@
+
+#cb {
+  width: 400px;
+  height: 399px;
+  margin: 100px;
+  transform: scale(1);
+  outline: 1px solid black;
+}
+
+#scroller {
+  width: 400px;
+  height: 400px;
+  overflow: scroll;
+}
+
+#anchor {
+  width: 100px;
+  height: 100px;
+  margin-left: 150px;
+  margin-right: 275px;
+  margin-top: 300px;
+  margin-bottom: 300px;
+  background: orange;
+  anchor-name: --a;
+}
+
+#anchored {
+  position: absolute;
+  background: green;
+  position-anchor: --a;
+  position-try-fallbacks: --f1, --f2;
+  width: 100px; height: 100px;
+  /* Above the anchor */
+  left: anchor(left);
+  bottom: anchor(top);
+}
+
+@position-try --f1 {
+  /* Left of the anchor */
+  right: anchor(left);
+  top: anchor(top);
+  bottom: auto;
+  left: auto;
+}
+
+@position-try --f2 {
+  /* Right of the anchor */
+  left: anchor(right);
+  top: anchor(top);
+  bottom: auto;
+}
+

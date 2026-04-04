@@ -1,0 +1,4 @@
+
+  span { counter-increment: not-list-item -2; }
+  .reset-reversed { counter-reset: reversed(not-list-item) }
+  .result::before { content: counter(not-list-item) }

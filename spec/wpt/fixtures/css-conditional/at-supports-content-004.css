@@ -1,0 +1,25 @@
+
+		div {
+			background: red;
+			color: green;
+			font: 100px/1 Ahem, sans-serif;
+			width: 100px;
+			height: 100px;
+		}
+		div::before {
+			content: counter(test, x);
+		}
+
+		@media all {
+			@counter-style x {
+				system: cyclic;
+				symbols: 'X';
+			}
+		}
+		@media not all {
+			@counter-style x {
+				system: cyclic;
+				symbols: ' ';
+			}
+		}
+	

@@ -1,0 +1,16 @@
+
+.test {
+  white-space: pre;
+  font: 100px/1 Ahem;
+  color: green;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 500px;
+}
+.red {
+  position: absolute;
+  z-index: -1;
+  background: red;
+  width: 100px;
+  height: 100px;
+}

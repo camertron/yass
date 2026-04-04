@@ -1,0 +1,9 @@
+
+      @import 'abc' layer(\{\});
+      @counter-style abc\{\}oops {}
+      @font-feature-values abc\{\}oops {}
+      @font-palette-values --abc\{\}oops {}
+      @keyframes abc\{\}oops {}
+      @layer abc\;oops\!;
+      @media \( {}
+    

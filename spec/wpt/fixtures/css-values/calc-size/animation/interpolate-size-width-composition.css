@@ -1,0 +1,17 @@
+
+:root {
+  interpolate-size: allow-keywords;
+}
+.parent {
+  width: 200px;
+}
+.target {
+  width: 100px;
+  height: 150px;
+}
+.target::before {
+  display: block;
+  content: "";
+  width: 100px;
+  height: 50px;
+}

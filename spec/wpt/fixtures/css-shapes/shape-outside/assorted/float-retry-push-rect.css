@@ -1,0 +1,22 @@
+
+  body {
+    margin: 0px;
+    line-height: 1;
+  }
+
+  .too-wide {
+    display: inline-block;
+    height: 20px;
+    width: 250px;
+    background: blue;
+  }
+
+  .shape {
+    width: 100px;
+    height: 100px;
+    float: left;
+    /* rect(top right bottom left) defines the shape rectangle edges.
+       rect(0px 60px 60px 0px) is equivalent to inset(0px 40px 40px 0px)
+       on a 100x100 box, with the same border-radius. */
+    shape-outside: rect(0px 60px 60px 0px round 0 0 34.142136px 0);
+  }

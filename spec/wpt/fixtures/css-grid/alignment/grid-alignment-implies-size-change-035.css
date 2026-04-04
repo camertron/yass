@@ -1,0 +1,14 @@
+
+.grid {
+  position: relative;
+  display: inline-grid;
+  grid-template-columns: 80px;
+  grid-template-rows: 100px;
+  font: 20px/1 Ahem;
+  background: grey;
+  justify-items: start;
+}
+#item {
+  background: blue;
+  justify-self: auto;
+}

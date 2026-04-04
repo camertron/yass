@@ -1,0 +1,10 @@
+
+div {
+  color:transparent;
+  font:50px/1 Ahem;
+  width:2em;
+}
+.outline {
+  color:orange;
+  outline:blue solid 2px;
+}

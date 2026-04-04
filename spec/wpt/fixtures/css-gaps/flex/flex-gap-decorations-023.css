@@ -1,0 +1,21 @@
+
+    body {
+        margin: 0px;
+    }
+
+    .flex-container {
+        height: 110px;
+        width: 110px;
+
+        display: flex;
+
+        column-gap: 10px;
+        row-gap: 10px;
+
+        flex-wrap: wrap;
+    }
+
+    .flex-item {
+        background: skyblue;
+        width: 50px;
+    }

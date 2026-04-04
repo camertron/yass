@@ -1,0 +1,11 @@
+
+div {
+    font-size: 40px;
+    font-family: monospace;
+    width: 5ch;
+    caret-color: orange;
+    caret-shape: block;
+    caret-animation: manual;
+    outline: none;
+    white-space: pre;
+}

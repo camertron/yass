@@ -1,0 +1,12 @@
+
+.grid {
+  display: inline-grid;
+  grid-template: 100px / minmax(auto, 100px);
+}
+.subgrid {
+  width: 100%;
+  display: grid;
+  background: green;
+  grid-template-rows: subgrid;
+}
+.w200 { width: 200px }

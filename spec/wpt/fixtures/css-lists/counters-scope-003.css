@@ -1,0 +1,4 @@
+
+body, span#reset:before { counter-reset: c 0; }
+span::before { counter-increment: c 1; content: "B" counters(c,".") "-" }
+span::after  { counter-increment: c 1; content: "A" counters(c,".") "-" }

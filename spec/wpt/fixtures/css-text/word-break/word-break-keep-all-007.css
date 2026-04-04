@@ -1,0 +1,6 @@
+
+div {
+  width: 4em;
+  word-break: keep-all;
+  white-space: pre-wrap;
+}

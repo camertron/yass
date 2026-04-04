@@ -1,0 +1,12 @@
+
+  #flex {
+    display: flex;
+    flex-direction: column;
+    background: green;
+    block-size: 100px;
+  }
+  #flex > div {
+    inline-size: 25px;
+    background: green;
+    flex: none;
+  }

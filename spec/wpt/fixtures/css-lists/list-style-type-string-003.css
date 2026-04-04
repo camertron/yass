@@ -1,0 +1,9 @@
+
+    .list {
+      list-style-type: "";
+      direction: rtl;
+    }
+    .list > :nth-child(2) { list-style-type: "foo" }
+    .list > :nth-child(3) { list-style-type: "foobar"; }
+    .list > :nth-child(4) { list-style-type: "some very long text that is not going to fit and will overflow"; }
+  

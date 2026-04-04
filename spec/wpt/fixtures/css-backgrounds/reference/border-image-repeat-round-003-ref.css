@@ -1,0 +1,33 @@
+
+  div#first-subtest
+    {
+      background-color: black;
+      display: inline-table;
+      margin-right: 1em;
+      table-layout: fixed;
+
+      height: 224px;
+      width: 224px;
+    }
+
+  div#second-subtest
+    {
+      background-color: black;
+      display: inline-table;
+      table-layout: fixed;
+
+      height: 208px;
+      width: 208px;
+    }
+
+  div#third-subtest
+    {
+      background-color: black;
+      display: inline-table;
+      margin-top: 1em;
+      table-layout: fixed;
+
+      height: 272px;
+      width: 296px;
+    }
+  

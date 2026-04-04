@@ -1,0 +1,16 @@
+
+  #scroller {
+    width: 200px;
+    height: 200px;
+    container-type: scroll-state;
+    overflow-y: scroll;
+  }
+  #filler {
+    height: 600px;
+  }
+  #target {
+    --y: no;
+    @container scroll-state(scrolled: y) {
+      --y: yes;
+    }
+  }

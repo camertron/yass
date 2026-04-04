@@ -1,0 +1,9 @@
+
+.columns {
+  columns: 3;
+  column-fill: auto;
+  line-height: 1;
+  height: 5em;
+  orphans: 3;
+  widows: 3;
+}

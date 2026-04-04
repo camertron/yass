@@ -1,0 +1,19 @@
+
+.container {
+  font: 16px monospace;
+  margin: 1em;
+  width: 60ch;
+}
+
+.text1, .text2 {
+  text-wrap: balance;
+  margin-bottom: 1em;
+  outline: 1px dashed gray;
+}
+
+/* :before and :after pseudos with display:block and no content should not affect
+   the layout of the paragraph content */
+.text2:before, .text2:after {
+  content: "";
+  display: block;
+}

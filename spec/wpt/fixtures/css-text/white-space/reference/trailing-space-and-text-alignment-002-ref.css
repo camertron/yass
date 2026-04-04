@@ -1,0 +1,16 @@
+
+    div {
+        display: inline-block;
+        width: 3ch;
+        height: 100px;
+        font: 40px/1 Ahem;
+        border: 1px solid black;
+        box-sizing: content-box;
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+.left { text-align: left; }
+.center { text-align: center; }
+.right { text-align: right; }
+.start { text-align: start; }
+.end { text-align: end; }

@@ -1,0 +1,11 @@
+
+  .bar {
+    width: 200px;
+    height: 40px;
+  }
+  .box {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: conic-gradient(black 0 25%, white 0 50%, black 0 75%, white 0);
+  }

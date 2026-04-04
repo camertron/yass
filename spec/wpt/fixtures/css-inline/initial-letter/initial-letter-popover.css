@@ -1,0 +1,12 @@
+
+  #block {
+    background-color: green;
+    color: green;
+    width: 100px;
+    height: 100px;
+    text-indent: 1em; /* Avoid 'X' sticking out of the square */
+  }
+  #block::first-letter {
+    initial-letter: 1;
+  }
+  #pop, #but { visibility: hidden; }

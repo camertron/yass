@@ -1,0 +1,8 @@
+
+@supports (user-modify: read-only) {
+    #content {
+        width: 10px;
+        height: 10px;
+        background-color: red;
+    }
+}

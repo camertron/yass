@@ -1,0 +1,8 @@
+
+img {
+  background: green;
+  box-sizing: border-box;
+  aspect-ratio: 1/1;
+  padding-left: 50px;
+  height: min-content;
+}

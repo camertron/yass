@@ -1,0 +1,16 @@
+
+.flex {
+  width: 0px;
+  display: flex;
+  font-family: Ahem;
+  font-size: 20px;
+}
+
+.flex_item {
+  background-color: green;
+}
+
+.content {
+  min-width: max-content;
+  color: transparent;
+}

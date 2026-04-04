@@ -1,0 +1,5 @@
+
+    /* The visited background-color magically gets the alpha of the
+     unvisited color, which by default is rgba(0, 0, 0, 0). Set alpha to
+     255 so that visited colors also gets this alpha. */
+  * { background-color: rgba(255, 255, 255, 255); }

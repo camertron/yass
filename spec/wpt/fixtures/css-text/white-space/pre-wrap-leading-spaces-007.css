@@ -1,0 +1,15 @@
+
+div {
+  font: 20px/1 Ahem;
+}
+.ref {
+  position: absolute;
+  color: red;
+  z-index: -1;
+}
+span { color: green; }
+.test {
+  color: green;
+  width: 5ch;
+  white-space: pre-wrap;
+}

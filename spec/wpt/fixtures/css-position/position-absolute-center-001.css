@@ -1,0 +1,23 @@
+
+#containing-block {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: red;
+  display: flex;
+}
+
+#containing-block > div {
+  flex-grow: 1;
+}
+
+#inner-flex {
+  display: flex;
+  justify-content: center;
+}
+
+span {
+  display: inline-block;
+  inline-size: 50px;
+  block-size: 10px;
+}

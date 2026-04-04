@@ -1,0 +1,9 @@
+
+        #target7parent > #target7 {
+            margin: var(--invalid); /* invalid at compute time */
+        }
+
+        #target7 {
+            margin: 77px;
+        }
+    

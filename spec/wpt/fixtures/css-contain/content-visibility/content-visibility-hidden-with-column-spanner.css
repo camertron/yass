@@ -1,0 +1,13 @@
+
+body {
+  width: 600px;
+  overflow: hidden;
+}
+.container {
+  column-count: 2;
+  width: 200px;
+  height: 100px;
+}
+.spanner {
+  column-span: all;
+}

@@ -1,0 +1,15 @@
+
+body {
+  margin: 0;
+}
+
+#anchor1 {
+  width: 100px;
+  height: 100px;
+  background: orange;
+  anchor-name: --a;
+}
+
+#host.after::part(target) {
+  left: anchor(--a left);
+}

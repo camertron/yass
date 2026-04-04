@@ -1,0 +1,43 @@
+
+  section.bugreport {
+    outline: 1px solid grey;
+    margin-bottom: 25px;
+    padding: 3px;
+  }
+
+  #wrapping-broke .flex {
+    display: flex;
+    width: min-content;
+    outline: 2px solid;
+    margin-bottom: 10px;
+  }
+
+  #wrapping-broke span.orange100 {
+    float: left;
+    height: 25px;
+    width: 100px;
+    background: orange;
+  }
+
+  #bug1454306 .fourUpList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    width: 800px;
+    background: yellow;
+  }
+
+  #bug1454306 .thumbnail-list--item {
+    display: flex;
+    width: 100%;
+    outline: 1px solid;
+  }
+
+  #bug1454306 .thumbnail-list--item-photo {
+    height: 50px;
+    width: 50px;
+  }
+
+  #bug1454306 .thumbnail-list--item-header {
+    flex: 1 0 calc(70% - 10.5px)
+  }

@@ -1,0 +1,2 @@
+
+  .d::before { content: attr(data-val); }

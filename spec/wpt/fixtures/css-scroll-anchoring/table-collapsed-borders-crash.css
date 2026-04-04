@@ -1,0 +1,10 @@
+
+body {
+  height:200vh;
+}
+table {
+  height: 200px;
+  width: 200px;
+  background-color: lime;
+  border-collapse: collapse; /* triggers problematic border calculation */
+}

@@ -1,0 +1,12 @@
+
+    .grid {
+      display: grid;
+      grid-template-rows: repeat(4, 100px);
+      gap: 10px;
+      margin-left: 100px;
+      border: solid 2px blue;
+      width: min-content;
+      font-family: Ahem;
+      font-size: 10px;
+    }
+  

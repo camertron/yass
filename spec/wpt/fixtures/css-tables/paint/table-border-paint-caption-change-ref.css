@@ -1,0 +1,7 @@
+
+#caption {
+  caption-side: bottom;
+}
+table, tr, td {
+  border: 1px solid #000000;
+}

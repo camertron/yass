@@ -1,0 +1,11 @@
+
+  #test {
+    height: 100px;
+    outline-style: solid;
+    outline-color: red;
+    outline-width: 4px;
+    transition-duration: 2s;
+    transition-property: outline-color;
+    transition-timing-function: linear;
+    width: 100px;
+  }

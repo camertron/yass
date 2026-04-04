@@ -1,0 +1,11 @@
+
+        .firstTest::marker {
+            --alpha: 0.75;
+            color: rgba(0 128 0 / var(--alpha));
+        }
+
+        .secondTest::marker {
+            --color: rgb(0 128 0);
+            color: var(--color);
+        }
+    

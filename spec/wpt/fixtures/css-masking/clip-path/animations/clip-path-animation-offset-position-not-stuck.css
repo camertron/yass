@@ -1,0 +1,21 @@
+
+.container {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  animation: clippathwithtf 20s steps(2, jump-end) -9.99s;
+}
+/* without an offset-path, this should do absolutely nothing */
+.offset-position {
+    offset-position: left top;
+}
+@keyframes clippathwithtf {
+  0%   {
+    clip-path: circle(50% at 50% 50%);
+    transform: translate(-10%, -10%);
+  }
+  100% {
+    clip-path: circle(20% at 20% 20%);
+    transform: translate(10%, 10%);
+  }
+}

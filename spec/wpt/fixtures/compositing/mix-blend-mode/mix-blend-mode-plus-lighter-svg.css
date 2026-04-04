@@ -1,0 +1,7 @@
+
+  .blend-group {
+    isolation: isolate;
+  }
+  .layer {
+    mix-blend-mode: plus-lighter;
+  }

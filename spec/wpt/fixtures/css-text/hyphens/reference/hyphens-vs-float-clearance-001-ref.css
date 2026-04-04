@@ -1,0 +1,26 @@
+
+.outer {
+  font: 16px/1.4 monospace;
+  width: 6ch;
+  border: 1px solid gray;
+  float: left;
+  margin: 10px;
+  hyphens: none;
+}
+.float {
+  float: right;
+  width: 2ch;
+  background: lightblue;
+}
+.h1 {
+  height: 1em;
+}
+.h2 {
+  height: 2em;
+}
+.h3 {
+  height: 3em;
+}
+.h4 {
+  height: 4em;
+}

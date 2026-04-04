@@ -1,0 +1,9 @@
+
+  @page {
+    border: 20px solid green;
+  }
+  html {
+    display: grid;
+    place-items: center;
+    height: 100%;
+  }

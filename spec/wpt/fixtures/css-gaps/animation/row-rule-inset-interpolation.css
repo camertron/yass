@@ -1,0 +1,22 @@
+
+    .parent {
+      row-rule-style: solid;
+      row-rule-edge-inset-start: 20px;
+      row-rule-edge-inset-end: 20px;
+      row-rule-interior-inset-start: 20px;
+      row-rule-interior-inset-end: 20px;
+    }
+
+    .target {
+      display: flex;
+      row-gap: 10px;
+      row-rule: 10px solid black;
+      column-rule: 10px solid black;
+
+      row-rule-break: intersection;
+      row-rule-edge-inset-start: 5px;
+      row-rule-edge-inset-end: 5px;
+      row-rule-interior-inset-start: 5px;
+      row-rule-interior-inset-end: 5px;
+    }
+  

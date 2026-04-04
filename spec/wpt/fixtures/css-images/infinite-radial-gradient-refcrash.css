@@ -1,0 +1,6 @@
+
+  #crash {
+    background-image: repeating-radial-gradient(closest-corner circle at 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999%, green, green);
+    width: 300px;
+    height: 300px;
+  }

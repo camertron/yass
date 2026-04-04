@@ -1,0 +1,5 @@
+
+  #container { --foo: bar; }
+  @container style(--foo: var(--foo)) {
+    #target { color: green; }
+  }

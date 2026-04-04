@@ -1,0 +1,12 @@
+
+      #p1 { background-color: hsla(120, 75%, 50%, 0.2); }
+      #p2 { background-color: hsla(120deg, 75%, 50%, 0.4); }
+      #p3 { background-color: hsla(133.33333333grad, 75%, 50%, 0.6); }
+      #p4 { background-color: hsla(2.0943951024rad, 75%, 50%, 0.8); }
+      #p5 { background-color: hsla(0.3333333333turn, 75%, 50%, 1.0); }
+      #p6 { background-color: hsl(240, 75%, 50%); }
+      #p7 { background-color: hsl(600deg, 75%, 50%); }
+      #p8 { background-color: hsl(1066.66666666grad, 75%, 50%); }
+      #p9 { background-color: hsl(10.4719755118rad, 75%, 50%); }
+      #p10 { background-color: hsl(2.6666666666turn, 75%, 50%); }
+    

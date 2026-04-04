@@ -1,0 +1,23 @@
+
+  #container {
+    overflow: hidden;
+    columns: 3;
+    column-fill: auto;
+    gap: 0;
+    height: 25px;
+    scroll-marker-group: before;
+  }
+  #container::scroll-marker-group {
+    overflow: auto;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background: red;
+  }
+  #container::column::scroll-marker {
+    width: 100px;
+    height: 100px;
+    flex: none;
+    content: "";
+    background: green;
+  }

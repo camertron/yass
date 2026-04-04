@@ -1,0 +1,8 @@
+
+.grid-lanes {
+    display: grid-lanes;
+    flow-tolerance: 0;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+    grid-lanes-direction: column track-reverse;
+}

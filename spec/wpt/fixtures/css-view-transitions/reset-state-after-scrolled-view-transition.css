@@ -1,0 +1,11 @@
+
+        html {
+            background: lightblue;
+        }
+        body {
+            background-color: lightgreen;
+        }
+        ::view-transition-group(*) {
+            animation-duration: 2s;
+        }
+    

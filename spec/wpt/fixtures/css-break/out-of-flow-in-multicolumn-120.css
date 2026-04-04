@@ -1,0 +1,16 @@
+
+.column {
+  column-count: 2;
+  column-fill: auto;
+  column-gap: 0;
+}
+#abscb {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background: red;
+}
+#abscb > div {
+  width: 100%;
+  background: green;
+}

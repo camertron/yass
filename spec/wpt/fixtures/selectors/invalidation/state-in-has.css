@@ -1,0 +1,10 @@
+
+  #subject {
+    background-color: #f00;
+  }
+  #subject:has(:state(--green)) {
+    background-color: #0f0;
+  }
+  #subject:has(:state(--blue)) {
+    background-color: #00f;
+  }

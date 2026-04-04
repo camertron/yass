@@ -1,0 +1,5 @@
+
+body { color: red; }
+@supports (--a: a) and (not (--a: var(1px))) {
+  p { color: green; }
+}

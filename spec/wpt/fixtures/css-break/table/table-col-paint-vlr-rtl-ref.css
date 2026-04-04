@@ -1,0 +1,18 @@
+
+body {
+  writing-mode: vertical-lr;
+  direction: rtl;
+}
+.multicol {
+  inline-size: 400px;
+  block-size: 100px;
+  columns: 4;
+  column-fill: auto;
+  gap: 0;
+}
+.pattern1 {
+  background: repeating-linear-gradient(to right, lime, lime 20px, blue 20px, blue 40px);
+}
+.pattern2 {
+  background: repeating-linear-gradient(to right, orange, orange 30px, dodgerblue 30px, dodgerblue 60px);
+}

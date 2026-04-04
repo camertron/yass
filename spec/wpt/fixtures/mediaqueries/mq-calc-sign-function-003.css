@@ -1,0 +1,16 @@
+
+  :root {
+    font-size: 16px;
+  }
+
+  div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+
+  @media screen and (aspect-ratio > calc(sign(17px - 1rem) * 59) / calc(79 * sign(17px - 1rem))) {
+    div {
+      background-color: green;
+    }
+  }

@@ -1,0 +1,8 @@
+
+        #test1 {
+            --var1:red;
+        }
+        #test2 {
+            --var2:red!important;
+        }
+    

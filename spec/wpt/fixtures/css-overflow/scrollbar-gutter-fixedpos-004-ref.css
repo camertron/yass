@@ -1,0 +1,13 @@
+
+:root {
+  scrollbar-gutter: stable both-edges;
+  writing-mode: vertical-lr;
+}
+body {
+  margin: 0;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background: green;
+}

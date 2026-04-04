@@ -1,0 +1,11 @@
+
+grid {
+  display: inline-grid;
+  grid-template-columns: 400px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  background-color: cyan;
+}

@@ -1,0 +1,7 @@
+
+#target {
+  width: 100px;
+  height: 10px;
+  border-radius: 10px;
+  outline: 20px solid green;
+  outline-offset: -200px;

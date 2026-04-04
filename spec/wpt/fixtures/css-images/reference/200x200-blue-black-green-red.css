@@ -1,0 +1,15 @@
+
+  #box {
+    width: 200px;
+    height: 200px;
+  }
+  #top {
+    border-left: 100px solid blue;
+    border-right: 100px solid black;
+    height: 100px;
+  }
+  #bottom {
+    border-left: 100px solid green;
+    border-right: 100px solid red;
+    height: 100px;
+  }

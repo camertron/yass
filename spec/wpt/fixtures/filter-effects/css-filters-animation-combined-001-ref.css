@@ -1,0 +1,16 @@
+
+        .square {
+            width: 100px;
+            height: 100px;
+            background: black;
+            filter:
+                blur(10px)
+                brightness(50%)
+                sepia(50%)
+                grayscale(50%)
+                saturate(50%)
+                hue-rotate(45deg)
+                invert(50%)
+                opacity(50%)
+        }
+    

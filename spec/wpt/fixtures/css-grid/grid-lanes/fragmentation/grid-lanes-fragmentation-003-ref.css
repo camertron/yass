@@ -1,0 +1,45 @@
+
+html,body {
+  color:black; background-color:white; font:10px/1 monospace; padding:0; margin:0;
+}
+wrapper {
+  display: block;
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.columns {
+  columns: 3;
+  column-fill: auto;
+  background: lightgrey;
+  margin-bottom: 15px;
+}
+
+.grid {
+  display: grid;
+  grid: 20px auto 30px / auto;
+  border: solid;
+  border-width: 3px 1px 7px 5px;
+  padding: 1px 3px 5px 7px;
+  gap: 1px 5px;
+}
+
+x {
+  background: cyan;
+  min-width: 20px;
+  min-height: 10px;
+}
+y {
+  background: blue;
+  width: 35px;
+}
+z {
+  background: gray;
+  width: 40px;
+}
+grid-lanes-track {
+  display: grid;
+  justify-content: start;
+  column-gap: 5px;
+}

@@ -1,0 +1,16 @@
+
+.outer {
+  width: min-content;
+  background: green;
+}
+.table {
+  display: table;
+  inline-size: 30px; /* Smaller than .content's inline size */
+  block-size: 100px;
+  border-inline: 10px solid green;
+  margin-inline: 10px;
+}
+.content {
+  inline-size: 60px;
+  height: 100px;
+}

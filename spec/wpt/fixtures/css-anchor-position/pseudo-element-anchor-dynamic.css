@@ -1,0 +1,32 @@
+
+  .cb {
+    position: relative;
+    width: 200px;
+    height: 200px;
+  }
+  #anchor1.enabled::before {
+    display: block;
+    width: 100px;
+    height: 100px;
+    content: "";
+    anchor-name: --a1;
+    background: blue;
+  }
+  #anchor2.enabled::after {
+    display: block;
+    width: 100px;
+    height: 100px;
+    content: "";
+    anchor-name: --a2;
+    background: pink;
+  }
+  .anchored {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: anchor(right);
+    top: anchor(bottom);
+    background: orange;
+  }
+  #anchored1 { position-anchor: --a1; }
+  #anchored2 { position-anchor: --a2; }

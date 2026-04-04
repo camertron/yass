@@ -1,0 +1,17 @@
+
+  body
+    {
+      color: transparent;
+      font-family: Ahem;
+      font-size: 50vh;
+      height: 50vh;
+      line-height: 2;
+      margin: 0px;
+    }
+
+  div#test-passed
+    {
+      background-attachment: local;
+      background-image: linear-gradient(to bottom, blue 25%, orange 25% 50%, lime 50% 75%, purple 75% 100%);
+    }
+  

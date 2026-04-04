@@ -1,0 +1,13 @@
+
+.container {
+    position: relative;
+}
+.grid {
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 150px 150px 150px;
+    font-size: 10px;
+}
+.item {
+   width: 50px;
+   height: 20px;
+}

@@ -1,0 +1,7 @@
+
+.container {
+  width: 150px;
+  height: 150px;
+  background-color: green;
+  clip-path: circle(35px at 50% 50%);
+}

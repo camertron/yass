@@ -1,0 +1,14 @@
+
+  #filler {
+    height: 10000px;
+  }
+  #stuck {
+    container-name: initially-stuck;
+    container-type: scroll-state;
+    position: sticky;
+    bottom: 0;
+  }
+
+  @container initially-stuck scroll-state(stuck: bottom) {
+    span { --stuck: yes }
+  }

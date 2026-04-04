@@ -1,0 +1,16 @@
+
+#outer {
+  overflow: hidden;
+  width: 500px;
+  height: 500px;
+  writing-mode: vertical-rl;
+}
+#inner {
+  overflow: auto;
+  position: relative;
+  width: 2000px;
+  height: 500px;
+}
+p {
+  font: 48pt monospace;
+}

@@ -1,0 +1,11 @@
+
+@font-face {
+    font-family: 'ezra_silregular';
+    src: url('/fonts/sileot-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+div {
+  font-family: ezra_silregular, monospace;
+  font-size: 15px;
+}

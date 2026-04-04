@@ -1,0 +1,13 @@
+
+li {
+  margin-left: 100px;
+  text-indent: -100px;
+  font: 20px/1 Ahem;
+  color: red;
+}
+
+x { color: grey; }
+.before::before { content: "XXXXXXXX"; color: grey; }
+.after::after { content: "XXXXXXXX"; color: grey; }
+.both::before,.both::after  {content: "XXXX"; color: grey; }
+  

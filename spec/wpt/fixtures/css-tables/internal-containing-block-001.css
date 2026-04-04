@@ -1,0 +1,26 @@
+
+tr {
+  position: relative;
+}
+
+div.abspos {
+  position: absolute;
+  height: 50px;
+  width: 100px;
+  background: green;
+}
+
+div.static {
+  height: 50px;
+  width: 100px;
+  background:red;
+}
+
+td, tr {
+  margin:0px;
+  padding:0px;
+}
+
+table {
+  border-collapse:collapse;
+}

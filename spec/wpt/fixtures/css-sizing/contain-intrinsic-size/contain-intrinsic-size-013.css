@@ -1,0 +1,9 @@
+
+#border {
+  width: max-content;
+  border: 1px solid black;
+}
+#border > div {
+  contain-intrinsic-size: 55px 66px;
+  contain: size;
+}

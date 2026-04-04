@@ -1,0 +1,4 @@
+
+:nth-last-child(odd of webkit, fast) {
+    background-color: lime;
+}

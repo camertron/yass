@@ -1,0 +1,9 @@
+
+    input[type="file"] { height: auto; }
+    .with-outline {
+      outline: 2px solid teal;
+    }
+    .wrapper {
+      border: 2px solid fuchsia;
+    }
+  

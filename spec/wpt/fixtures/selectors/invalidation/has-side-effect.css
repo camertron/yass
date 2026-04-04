@@ -1,0 +1,4 @@
+
+div, main { color: grey }
+#subject:has(+ #next_sibling) { color: red; }
+#prev_sibling:has(+ #subject + #next_sibling) { color: green; }

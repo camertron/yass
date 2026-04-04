@@ -1,0 +1,55 @@
+
+html,body {
+  color:black; background-color:white; font:16px/1 monospace;
+}
+
+input { margin: 2px; }
+
+input.i {
+  width: 50%;
+  min-width: min-content;
+  background: lime;
+}
+
+input.mi {
+  max-width: 50%;
+  min-width: min-content;
+  background: lime;
+}
+
+input.i.min-auto, input.mi.min-auto {
+  min-width: auto;
+}
+
+.n {
+  -webkit-appearance: none;
+}
+
+div {
+  display: inline-block;
+  border:1px solid;
+}
+
+.grid {
+  display: inline-grid;
+  grid: auto / min-content;
+  place-items: start;
+}
+
+.outerFlex {
+  display: flex;
+  width: 100px;
+  border: 1px solid black;
+}
+.innerFlex {
+  display: flex;
+  border: 1px solid pink;
+}
+.innerFlex > input {
+  width: 50%;
+  flex: 1;
+  background: yellow;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+

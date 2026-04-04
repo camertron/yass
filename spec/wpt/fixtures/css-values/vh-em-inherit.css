@@ -1,0 +1,8 @@
+
+
+			html, body { margin: 0px; padding: 0px; }
+
+			html { background: red; font-size: 100vw; }
+			#target { background: green; width: 1rem; height: 1em; font-size: 100vh; }
+
+	

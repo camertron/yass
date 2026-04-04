@@ -1,0 +1,11 @@
+
+  @keyframes column-gap-to-100 {
+    to { column-gap: 100px; }
+  }
+
+  #multicol {
+    animation-name: column-gap-to-100;
+    animation-duration: 2s;
+    animation-delay: -1s;
+    animation-play-state: paused;
+  }

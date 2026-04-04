@@ -1,0 +1,9 @@
+
+section {
+    width: 50ch;
+    font-family: monospace;
+}
+.test { color: blue; }
+.ref { color: orange; }
+.mis { color: magenta; }
+

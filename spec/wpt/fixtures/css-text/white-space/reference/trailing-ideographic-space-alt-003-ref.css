@@ -1,0 +1,14 @@
+
+div { white-space: pre; }
+span {
+  background: blue;
+
+  /* to make the span go under the right border */
+  z-index:-1;
+  position: relative;
+}
+aside {
+  display: inline-block;
+  width: 0.5em;
+  border-right: 1em white solid;
+}

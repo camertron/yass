@@ -1,0 +1,12 @@
+
+html, body { margin: 0; padding: 0; }
+.container {
+  width: 100px;
+  height: 100px;
+}
+
+#canvas-geometry {
+  border: solid 0;
+  border-image: paint(geometry);
+  border-image-slice: 0 fill;
+}

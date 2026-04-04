@@ -1,0 +1,14 @@
+
+article {
+  columns: 2 1ch;
+  column-gap: 0;
+  float: left;
+  font-family: monospace;
+  margin-right: 3em;
+  line-height: 1;
+  height: 4em;
+  column-fill: auto;
+}
+div:last-of-type {
+  break-before: column;
+}

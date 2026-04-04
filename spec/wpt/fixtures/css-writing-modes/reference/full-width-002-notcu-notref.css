@@ -1,0 +1,16 @@
+
+  div
+    {
+      font-size: 64px;
+      writing-mode: vertical-rl;
+    }
+
+  div > p
+    {
+      border: black solid 1px;
+    }
+
+  span.full-width
+    {
+      text-transform: full-width;
+    }

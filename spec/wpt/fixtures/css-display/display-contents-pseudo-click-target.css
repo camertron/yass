@@ -1,0 +1,16 @@
+
+  div {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: relative;
+  }
+  a {
+    display: contents;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+    }
+  }

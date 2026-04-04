@@ -1,0 +1,16 @@
+
+    .wrapper {
+        border: 1px solid red;
+        width: max-content;
+    }
+    .item {
+        max-width: fit-content(500px);
+        padding: 10px 20px;
+        box-sizing: border-box;
+        background-color: blue;
+    }
+    .content {
+        width: 500px;
+        height: 50px;
+        background-color: green;
+    }

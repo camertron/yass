@@ -1,0 +1,9 @@
+
+  dialog {
+    --bg: green;
+    inset: 100px;
+  }
+  dialog::backdrop {
+    background-color: var(--bg);
+    inset: inherit;
+  }

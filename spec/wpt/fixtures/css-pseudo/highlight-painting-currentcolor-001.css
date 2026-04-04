@@ -1,0 +1,13 @@
+
+  ::highlight(a) {
+    color: yellow;
+    background-color: blue;
+  }
+  ::highlight(b) {
+    color: lime;
+    background-color: blue;
+  }
+  ::selection {
+    color: currentColor;
+    background-color: black;
+  }

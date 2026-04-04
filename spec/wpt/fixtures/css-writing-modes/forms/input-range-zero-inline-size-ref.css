@@ -1,0 +1,13 @@
+
+        div {
+            display: flex;
+        }
+        span {
+            display: inline-block;
+            border-inline-start: 1px solid green;
+        }
+        input[type=range] {
+            visibility: hidden;
+            margin: 0;
+        }
+    

@@ -1,0 +1,22 @@
+
+body {
+  background: white;
+  font: 16px/1.4 sans-serif;
+}
+
+ul {
+  list-style-position: outside;
+  padding-inline-start: 40px;
+}
+
+.LinkContainer {
+  width: 290px;
+}
+
+.faqviewmore {
+    background-color: #efefef;
+    display: block;
+    left: -22px;
+    padding-left: 22px;
+    position: relative;
+}

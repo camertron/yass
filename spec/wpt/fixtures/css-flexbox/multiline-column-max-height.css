@@ -1,0 +1,13 @@
+
+.flex {
+  display: flex;
+  flex-flow: column wrap;
+  max-height: 200px;
+  background: blue;
+  color: blue;
+}
+
+.item {
+  flex: 0 0 auto;
+  line-height: 20px;
+}

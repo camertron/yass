@@ -1,0 +1,13 @@
+
+  #target {
+    width: 100px;
+    height: 100px;
+    background: conic-gradient(rgba(255, 0, 0, 0.5) 0 0), conic-gradient(red 0 0);
+    border-radius: 40px;
+    border-image: conic-gradient(green 0 0) 1 fill / 10px;
+  }
+  #back {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }

@@ -1,0 +1,9 @@
+
+body {
+    margin-left: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+}

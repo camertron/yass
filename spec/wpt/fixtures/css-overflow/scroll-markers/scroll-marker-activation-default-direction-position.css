@@ -1,0 +1,28 @@
+
+  .toc {
+    overflow: auto;
+    overscroll-behavior: contain;
+    height: 50vh;
+    scroll-marker-group: before links;
+    counter-reset: --section;
+    padding-left: 200px;
+
+    &::scroll-marker-group {
+      position: absolute;
+      width: 200px;
+    }
+
+    & h3 {
+      counter-increment: --section;
+
+      &::scroll-marker {
+        font-size: 1rem;
+        display: block;
+        content: counter(--section) ". " attr(data-label);
+      }
+
+      &::scroll-marker:target-current {
+        color: ActiveText;
+      }
+    }
+  }

@@ -1,0 +1,14 @@
+
+div {
+  padding: 3px;
+  border: 1px solid;
+  background: red;
+}
+
+.blue {
+  background: blue;
+}
+
+.green {
+  background: green;
+}

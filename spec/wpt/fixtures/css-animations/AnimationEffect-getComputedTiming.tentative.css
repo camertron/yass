@@ -1,0 +1,5 @@
+
+@keyframes moveAnimation {
+  from { margin-left: 100px }
+  to { margin-left: 200px }
+}

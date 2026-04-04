@@ -1,0 +1,15 @@
+
+  body {
+    margin: 0px;
+  }
+  .multi-col {
+    columns: 3;
+    column-fill: auto;
+    height: 100px;
+  }
+  .grid-container {
+    display: grid;
+    height: 300px;
+    grid-template-rows: repeat(auto-fit, 20px);
+    align-content: space-around;
+  }

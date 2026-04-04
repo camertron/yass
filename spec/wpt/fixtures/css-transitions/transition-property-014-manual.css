@@ -1,0 +1,9 @@
+
+  #test {
+    border: 5px solid blue;
+    height: 90px;
+    transition-duration: 2s;
+    transition-property: border-top-width;
+    transition-timing-function: linear;
+    width: 90px;
+  }

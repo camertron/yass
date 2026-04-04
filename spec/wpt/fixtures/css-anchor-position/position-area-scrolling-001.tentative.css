@@ -1,0 +1,13 @@
+
+  .pos {
+    position: absolute;
+    box-sizing: border-box;
+    border: solid;
+    position-anchor: --anchor;
+    width: 50%;
+    height: 50%;
+    background: cyan;
+  }
+  #container.thicker > .pos {
+    border-width: thick;
+  }

@@ -1,0 +1,20 @@
+
+.container {
+  height: 100px;
+  width: 100px;
+}
+.flexbox {
+  background: red;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.first-item {
+  background: green;
+  display: flex;
+}
+.second-item {
+  /* This should not be considered indefinite */
+  height: 100%;
+  background: green;
+}

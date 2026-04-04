@@ -1,0 +1,19 @@
+
+    .multicol-container {
+      columns: 2;
+      column-fill: auto;
+      column-gap: 20px;
+      width: 160px;
+      height: 50px;
+      background: red;
+      column-rule: 20px solid green;
+    }
+
+    .content {
+      background: green;
+      /* Start at 30px (fits in one column), will change to 100px (overflows
+         into second column). The column rule should repaint at the correct
+         position between the two columns. */
+      height: 30px;
+    }
+  

@@ -1,0 +1,12 @@
+
+.grid {
+  width: 100px;
+  height: 100px;
+  background: red;
+
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 0fr 1fr);
+}
+
+div > div { background: green }

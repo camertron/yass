@@ -1,0 +1,7 @@
+
+div {
+  text-transform: uppercase;
+  border: solid 5px blue;
+}
+textarea { border: solid 5px orange; }
+div, textarea { padding: 1em; }

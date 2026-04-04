@@ -1,0 +1,5 @@
+
+/* At least 4 pair of <p> above, can be overlapping. The other selectors of the list are useless. */
+p:nth-child(4n of html:root>body>p+p:not(empty), :not(*), p:not(p), span, .notthere) {
+    background-color: lime;
+}

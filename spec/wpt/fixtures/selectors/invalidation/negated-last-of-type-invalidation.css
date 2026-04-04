@@ -1,0 +1,9 @@
+
+#dut {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+.foo:not(:last-of-type ~ .bar) > #dut.baz {
+  background-color: green;
+}

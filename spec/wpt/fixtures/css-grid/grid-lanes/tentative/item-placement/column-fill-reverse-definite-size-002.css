@@ -1,0 +1,12 @@
+
+    .grid-lanes {
+      display: grid-lanes;
+      flow-tolerance: 0;
+      grid-template-columns: repeat(3, 50px);
+      gap: 10px;
+      height: 120px;
+      width: min-content;
+      border: solid blue;
+      grid-lanes-direction: column fill-reverse;
+    }
+  

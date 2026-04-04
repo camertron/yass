@@ -1,0 +1,22 @@
+
+:root { view-transition-name: none; }
+.target {
+  width: 100px;
+  height: 100px;
+  contain: paint;
+  background: blue;
+  overflow-clip-margin: 50px;
+}
+.child {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  background: green;
+}
+
+/* None of these should apply, so make everything red if it does */
+html::view-transition-group(*) { animation-duration: 300s; }
+html::view-transition-image-pair(*) { visibility: hidden }
+html::view-transition { background: red; }

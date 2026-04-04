@@ -1,0 +1,6 @@
+
+  #flexbox {
+    background-color: green;
+    display: inline-flex;
+    height: min-content;
+  }

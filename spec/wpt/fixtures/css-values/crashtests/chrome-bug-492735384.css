@@ -1,0 +1,10 @@
+
+    /*
+       Evaluation of [style] will add a new attribute to the element,
+       as lazy style gets synchronized. However, the bucketing will be
+       on [a], so we do not synchronize the attributes _before_ iteration.
+     */
+    [style][a] { color: green !important; }
+  
+
+  

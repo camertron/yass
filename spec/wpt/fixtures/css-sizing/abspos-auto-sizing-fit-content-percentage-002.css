@@ -1,0 +1,18 @@
+
+.container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+.abs {
+  position: absolute;
+  background: green;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  margin-right: -50%;
+}

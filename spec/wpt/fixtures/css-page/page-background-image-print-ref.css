@@ -1,0 +1,11 @@
+
+  :root {
+    print-color-adjust: exact;
+  }
+  html {
+    background-color: lime;
+  }
+
+  @page {
+    margin: 0px;
+  }

@@ -1,0 +1,6 @@
+
+  div {
+    width: min-content;
+    hyphens: auto;
+    border: 1px solid green;
+  }

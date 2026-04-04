@@ -1,0 +1,22 @@
+
+  body {
+    margin: 0;
+  }
+  .table {
+    display: table;
+    width: 100%;
+  }
+  .header {
+    display: table-header-group;
+    break-inside: avoid;
+  }
+  .filler {
+    display: table-row;
+    break-inside: avoid;
+    height: 2600px;
+  }
+  .header > * {
+    /* Don't make stuff too tall. We want everything (in the header) to be
+       within the viewport. */
+    height: 10px;
+  }

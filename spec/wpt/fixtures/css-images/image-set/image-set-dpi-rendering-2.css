@@ -1,0 +1,9 @@
+
+  #test {
+    background-image: image-set(
+      url("/images/green.png") 96dpi,
+      url("/images/red.png") 100dpi
+    );
+    width: 100px;
+    height: 100px;
+  }

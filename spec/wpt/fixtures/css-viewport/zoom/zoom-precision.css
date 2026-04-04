@@ -1,0 +1,15 @@
+
+  .s {
+    display: inline-block;
+    background: green;
+    width: 190px;
+    height: 100px;
+  }
+
+  .t {
+    font-size: 0;
+    width: 570px;
+    /* this is 3x the width of .s */
+    background: red;
+    zoom: 85%;
+  }

@@ -1,0 +1,17 @@
+
+  #flex {
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+    align-content: space-between;
+    background: green;
+  }
+  #flex > div {
+    width: 50px;
+    background: green;
+  }
+  .abs {
+    position: absolute;
+    width: 50px;
+    background: green;
+  }

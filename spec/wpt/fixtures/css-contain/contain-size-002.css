@@ -1,0 +1,9 @@
+
+div {
+  overflow: hidden;
+  position: absolute;
+}
+rb {
+  contain: size;
+  display: ruby-base;
+}

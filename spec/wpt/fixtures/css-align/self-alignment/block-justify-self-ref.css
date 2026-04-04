@@ -1,0 +1,19 @@
+
+.grid-container div {
+  width: 100px;
+  background-color: green;
+}
+
+.stack {
+  display: grid;
+}
+
+.stack > * {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+body {
+  width: 700px;
+}
+

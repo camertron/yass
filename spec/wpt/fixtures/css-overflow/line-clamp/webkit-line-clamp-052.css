@@ -1,0 +1,11 @@
+
+  .clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+
+    width: 10em;
+    border: 2px solid black;
+    text-align: center;
+  }

@@ -1,0 +1,17 @@
+
+.scroller {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+}
+.scroller.rtl {
+  direction: rtl;
+}
+.scroller.end > span {
+  scroll-snap-align: end;
+}
+.scroller.center > span {
+  scroll-snap-align: end;
+}

@@ -1,0 +1,30 @@
+
+body {
+  margin: 0;
+}
+.scene-wrapper {
+  margin-top: 100px;
+  margin-left: 50px;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+  perspective-origin: 0px 0px;
+}
+.scene-root {
+  transform: rotateX(30deg);
+  transform-origin: 0px 0px;
+  transform-style:preserve-3d;
+  /* This is in place of a transition in the original. */
+  will-change: transform;
+}
+.descendent-of-flattener {
+  height: 50px;
+  will-change: transform;
+}
+.scene-3d-element {
+  background: blue;
+  transform: translateZ(100px);
+  width: 100px;
+  height: 100px;
+  transform-style:preserve-3d
+}

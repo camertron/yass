@@ -1,0 +1,17 @@
+
+#scroller {
+  height: 500px;
+  width: 500px;
+  overflow: scroll;
+  scroll-snap-type: y proximity;
+}
+
+#scroller::after {
+  display: block;
+  content: "";
+  scroll-snap-align: end;
+}
+
+li {
+  height: 100px;
+}

@@ -1,0 +1,8 @@
+
+table, td {
+    border: 1px solid;
+    height: 32px;
+    min-width: 32px;
+    white-space: nowrap;
+    padding: 0;
+}

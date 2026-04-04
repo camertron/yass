@@ -1,0 +1,24 @@
+
+    body {
+        margin: 0px;
+    }
+
+    .flex-container {
+        height: 110px;
+        width: 340px;
+        border: solid 2px;
+        display: flex;
+        gap: 10px;
+        row-rule-color: rgba(255, 0, 0, 0.5);
+        rule-style: solid;
+        rule-width: 5px;
+        column-rule-color: rgba(0, 0, 255, 0.5);
+        flex-wrap: wrap;
+        rule-break: intersection;
+        rule-inset: overlap-join;
+    }
+
+    .flex-item {
+        background: skyblue;
+        width: 50px;
+    }

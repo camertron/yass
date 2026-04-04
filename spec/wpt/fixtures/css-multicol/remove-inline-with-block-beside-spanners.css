@@ -1,0 +1,9 @@
+
+  #spanner1 {
+      column-span: all;
+      margin-bottom: 100px;
+  }
+  #spanner2 {
+      column-span: all;
+      margin-top: 100px;
+  }

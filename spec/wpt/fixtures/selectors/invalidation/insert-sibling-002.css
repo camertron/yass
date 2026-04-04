@@ -1,0 +1,5 @@
+
+    .d { background-color: blue; }
+
+    .a + .c > .d { background-color: green; }
+  

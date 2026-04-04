@@ -1,0 +1,9 @@
+
+  body {
+    display: list-item;
+  }
+  div {
+    /* Multicol and table display to trigger legacy layout */
+    display: table-row-group;
+    column-count: 1;
+  }

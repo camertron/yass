@@ -1,0 +1,20 @@
+
+::view-transition {
+  background-color: red;
+}
+
+html:only-child {
+  background-color: blue;
+}
+
+:root:only-child {
+  background-color: blue;
+}
+
+:only-child {
+  background-color: blue;
+}
+
+.foo:only-child {
+  background-color: blue;
+}

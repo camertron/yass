@@ -1,0 +1,16 @@
+
+      body > div {
+        width: 190px;
+        height: 90px;
+        padding: 5px;
+        border: 1px solid black;
+        margin: 5px;
+        transform: rotate(45deg);
+        transform-origin: 50% 50%;
+        position: relative;
+        right: 5px;
+      }
+      body > div > div {
+        margin: -5px;
+      }
+    

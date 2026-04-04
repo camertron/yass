@@ -1,0 +1,12 @@
+
+  div
+    {
+      background-clip: text;
+      background-color: red;
+      background-image: linear-gradient(green, green);
+      color: transparent;
+      font-family: Ahem;
+      font-size: 30px;
+      line-height: 1.5;
+    }
+  

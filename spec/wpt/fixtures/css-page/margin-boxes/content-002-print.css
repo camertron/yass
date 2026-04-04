@@ -1,0 +1,17 @@
+
+  @page {
+    margin: 4em;
+
+    @top-left {
+      text-align: left;
+      vertical-align: top;
+      content: open-quote "Trøndere gråter når " open-quote "Vinsjan på kaia" close-quote " blir deklamert" close-quote;
+    }
+
+    @bottom-left {
+      quotes: "[" "]" "{" "}";
+      text-align: left;
+      vertical-align: top;
+      content: open-quote "Trøndere gråter når " open-quote "Vinsjan på kaia" close-quote " blir deklamert" close-quote;
+    }
+  }

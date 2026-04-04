@@ -1,0 +1,26 @@
+
+div {
+  background: blue;
+  margin: 1em 0;
+  border: 1px solid black;
+  height: 6em;
+  width: 40em;
+
+  direction: rtl;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+span {
+  background: white;
+  margin: 0 1em;
+  width: 8em;
+  height: 2em;
+  display: inline-grid;
+  place-items: center;
+
+  flex: none;
+}
+span:nth-child(1) {background: yellow;}
+span:nth-child(2) {background: pink;}
+span:nth-child(3) {background: lightblue;}

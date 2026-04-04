@@ -1,0 +1,22 @@
+
+  @keyframes outer {
+    from { width: 100px; }
+    to { width: 300px; }
+  }
+  @keyframes inner {
+    from { background-color: blue; }
+    to { background-color: yellow; }
+  }
+  #container {
+    container-type: inline-size;
+    animation: outer 1s linear paused;
+  }
+  #target {
+    background-color: green;
+  }
+
+  @container (min-width: 200px) {
+    #target {
+      animation: inner 1s linear paused;
+    }
+  }

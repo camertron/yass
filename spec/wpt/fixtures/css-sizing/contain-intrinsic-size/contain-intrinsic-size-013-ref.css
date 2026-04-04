@@ -1,0 +1,9 @@
+
+#border {
+  width: max-content;
+  border: 1px solid black;
+}
+#border > div {
+  width: 77px;
+  height: 88px;
+}

@@ -1,0 +1,12 @@
+
+.test {
+  width: 7ch;
+  font: 20px monospace;
+  background: blue;
+
+  white-space: pre-wrap;
+  text-align: justify;
+}
+.test > span {
+  background: green;;
+}

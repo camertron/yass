@@ -1,0 +1,7 @@
+
+  #test {
+    color: red;
+    transition-duration: 2s;
+    transition-property: color;
+    transition-timing-function: linear;
+  }

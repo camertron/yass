@@ -1,0 +1,13 @@
+
+.container {
+  background: cyan;
+  border: solid thick;
+  height: 500px;
+  width: 200px;
+}
+.element {
+  background: magenta;
+  font: 50px/1 Ahem;
+  margin: 10%; /* This should be computed against the container's inline size (200px), so it should be 20px and element's height should be 460px. */
+  writing-mode: vertical-rl;
+}

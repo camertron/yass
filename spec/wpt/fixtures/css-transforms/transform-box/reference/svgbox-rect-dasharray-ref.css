@@ -1,0 +1,7 @@
+
+#target {
+  fill: green;
+  stroke: black;
+  stroke-width: 20;
+  stroke-dasharray: 100 50;
+}

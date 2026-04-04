@@ -1,0 +1,8 @@
+
+div {
+  font: 25px/1 Ahem;
+  white-space: pre-wrap;
+  width: min-content;
+  color: green;
+  background: red;
+}

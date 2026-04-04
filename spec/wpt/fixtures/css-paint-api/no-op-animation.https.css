@@ -1,0 +1,10 @@
+
+#container {
+}
+.animate {
+  background-image: paint(foo);
+  animation: anim 1s;
+}
+@keyframes anim {
+  0% { --foo: rgb(200, 0, 0); }
+}

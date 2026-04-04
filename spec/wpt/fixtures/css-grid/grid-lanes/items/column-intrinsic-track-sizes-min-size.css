@@ -1,0 +1,18 @@
+
+.grid-lanes{
+  display: inline grid-lanes;
+  grid-template-columns: minmax(auto,0) minmax(auto,0);
+  background: red;
+  height: 100px;
+}
+.t{
+  grid-column: 1 / span 2;
+  border-inline: 50px solid green;
+  height: 100px;
+  min-width: 0;
+}
+.inner{
+  display: inline-block;
+  width: 100px;
+  height: 10px;
+}

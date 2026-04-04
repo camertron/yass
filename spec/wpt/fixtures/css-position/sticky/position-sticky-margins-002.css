@@ -1,0 +1,20 @@
+
+#container{
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  background: red;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+.child {
+  width: 100px;
+  height: 100px;
+  background: green;
+  position: sticky;
+  margin-top: auto;
+  bottom: 0;
+}

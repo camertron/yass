@@ -1,0 +1,29 @@
+
+.container {
+  position: relative;
+  width: 100px;
+  height: 50px;
+}
+
+.background {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+.abs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: max-content;
+  width: 100px;
+  background: green;
+}
+
+.child {
+  height: 100%;
+}
+
+.content {
+  height: 100px;
+}

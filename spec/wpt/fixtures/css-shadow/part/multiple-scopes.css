@@ -1,0 +1,6 @@
+
+
+::part(e1)::file-selector-button { border-top-width: 7px; }
+::part(p1)::file-selector-button { border-top-color: red; }
+::file-selector-button { border-top-style: dashed; }
+

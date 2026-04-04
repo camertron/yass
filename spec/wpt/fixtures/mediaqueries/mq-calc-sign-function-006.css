@@ -1,0 +1,15 @@
+
+  :root {
+    font-size: 16px;
+  }
+  div {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+  }
+
+  @media (grid: calc(2 * sign(17px - 1rem))) {
+    div {
+      background-color: red;
+    }
+  }

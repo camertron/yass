@@ -1,0 +1,16 @@
+
+  .columns {
+    column-fill: auto;
+    column-count: 2;
+    column-gap: 0;
+    width: 200px;
+    height: 100px;
+  }
+  .colspan {
+    column-span: all;
+  }
+  .content {
+    height: 100px;
+    background: green;
+  }
+  

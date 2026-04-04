@@ -1,0 +1,17 @@
+
+body {
+  background: white;
+  color: black;
+}
+div {
+  position: relative;
+  width: 10em;
+  height: 20em;
+  writing-mode: sideways-lr;
+}
+h1 {
+  position: absolute;
+}
+u {
+  text-decoration-color: black;
+}

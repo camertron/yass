@@ -1,0 +1,8 @@
+
+  @page { }
+  :root {
+    print-color-adjust: exact;
+  }
+  body {
+    background: green;
+  }

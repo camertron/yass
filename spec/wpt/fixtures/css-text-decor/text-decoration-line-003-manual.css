@@ -1,0 +1,12 @@
+
+#htmlsrc { margin: 2em; }
+#htmlsrc p {
+	font-size: 28px;
+	border-radius: 5px;
+	line-height: 1.5;
+	}
+
+
+div span {
+text-decoration-line:line-through;
+}

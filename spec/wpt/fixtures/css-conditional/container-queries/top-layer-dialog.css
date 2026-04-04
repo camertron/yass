@@ -1,0 +1,13 @@
+
+  #container {
+    container-type: inline-size;
+  }
+  dialog {
+    color: red;
+  }
+  @container (max-width: 200px) {
+    dialog { color: green; }
+  }
+  @container (max-width: 100px) {
+    dialog { color: lime; }
+  }

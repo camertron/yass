@@ -1,0 +1,11 @@
+
+  #target {
+    color: blue;
+    outline-style: auto;
+    outline-color: auto;
+  }
+  #target2 {
+    color: blue;
+    outline-style: solid;
+    outline-color: auto;
+  }

@@ -1,0 +1,5 @@
+
+  body { background: white; }
+  div.test { margin: 1em; line-height: 0; font-family: monospace; }
+  div.test span a { background: rgb(153, 153, 255); color: blue; }
+  div.ref { height: 1em; width: 5em; background: rgb(153, 153, 255); }

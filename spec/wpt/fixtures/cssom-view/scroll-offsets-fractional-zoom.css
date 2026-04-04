@@ -1,0 +1,11 @@
+
+  .scrollable-area {
+    width: 100px;
+    height: 100px;
+    overflow: scroll;
+  }
+  .content {
+    width: 500px;
+    height: 500px;
+    background: lightgrey;
+  }

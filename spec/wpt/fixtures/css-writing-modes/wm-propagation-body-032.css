@@ -1,0 +1,13 @@
+
+  body
+    {
+      writing-mode: vertical-rl;
+    }
+
+  div
+    {
+      background-color: blue;
+      height: 100px;
+      width: 100px;
+    }
+  

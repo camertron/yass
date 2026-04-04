@@ -1,0 +1,50 @@
+
+    #container { width: 500px; }
+    #container > * {
+      background-color: revert;
+      border-top-color: revert;
+      border-top-style: revert;
+      border-top-width: revert;
+      border-right-color: revert;
+      border-right-style: revert;
+      border-right-width: revert;
+      border-bottom-color: revert;
+      border-bottom-style: revert;
+      border-bottom-width: revert;
+      border-left-color: revert;
+      border-left-style: revert;
+      border-left-width: revert;
+      border-block-start-color: revert;
+      border-block-end-color: revert;
+      border-inline-start-color: revert;
+      border-inline-end-color: revert;
+      border-block-start-style: revert;
+      border-block-end-style: revert;
+      border-inline-start-style: revert;
+      border-inline-end-style: revert;
+      border-block-start-width: revert;
+      border-block-end-width: revert;
+      border-inline-start-width: revert;
+      border-inline-end-width: revert;
+      background-image: revert;
+      background-attachment: revert;
+      background-position: revert;
+      background-clip: revert;
+      background-origin: revert;
+      background-size: revert;
+      border-image-source: revert;
+      border-image-slice: revert;
+      border-image-width: revert;
+      border-image-outset: revert;
+      border-image-repeat: revert;
+      border-top-left-radius: revert;
+      border-top-right-radius: revert;
+      border-bottom-right-radius: revert;
+      border-bottom-left-radius: revert;
+      border-start-start-radius: revert;
+      border-start-end-radius: revert;
+      border-end-start-radius: revert;
+      border-end-end-radius: revert;
+    }
+    #container > #search-text-input { appearance: textfield; }
+    #container > #select-menulist-button { appearance: none; appearance: menulist-button; }

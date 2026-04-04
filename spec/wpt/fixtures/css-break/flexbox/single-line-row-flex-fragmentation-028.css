@@ -1,0 +1,12 @@
+
+  #flex {
+    display: flex;
+    height: 200px;
+    position: relative;
+    align-items: flex-end;
+  }
+  #flex > div {
+    width: 100px;
+    height: 100px;
+    flex: none;
+  }

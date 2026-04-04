@@ -1,0 +1,14 @@
+
+div {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 200px;
+  background: red;
+}
+canvas {
+  width: stretch;
+  align-self: start;
+  flex-basis: 0;
+  background: green;
+}

@@ -1,0 +1,14 @@
+
+.parent {
+  max-width: 100px;
+}
+.target {
+  width: 200px;
+  height: 10px;
+  background-color: black;
+  max-width: 10px;
+}
+.expected {
+  background-color: green;
+  margin-bottom: 10px;
+}

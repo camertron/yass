@@ -1,0 +1,17 @@
+
+.parent {
+  clip-path: inset(10px);
+  padding: 10px;
+}
+
+.target {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  clip-path: inset(10px);
+}
+
+.expected {
+  background-color: green;
+}

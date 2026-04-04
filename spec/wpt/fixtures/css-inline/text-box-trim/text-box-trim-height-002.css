@@ -1,0 +1,27 @@
+
+.spacer {
+  background: lightgray;
+  block-size: 20px;
+}
+.max-height > .spacer:first-child {
+  margin-top: 80px; /* avoid overlap */
+}
+
+.target {
+  font: 100px/2 Ahem;
+  text-box-trim: trim-both;
+  text-box-edge: text alphabetic;
+  align-content: unsafe end;
+}
+
+.height > .target {
+  height: 120px;
+}
+
+.min-height > .target {
+  min-height: 120px;
+}
+
+.max-height > .target {
+  max-height: 10px;
+}

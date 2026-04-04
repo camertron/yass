@@ -1,0 +1,14 @@
+
+  div {
+    height: 100px;
+    transition: width 2s;
+    width: 100px;
+  }
+  #test1 {
+    background-color: blue;
+    transition-timing-function: ease-in;
+  }
+  #test2 {
+    background-color: yellow;
+    transition-timing-function: cubic-bezier(0.42, 0, 1.0, 1.0);
+  }

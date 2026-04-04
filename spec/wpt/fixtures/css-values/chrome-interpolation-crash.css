@@ -1,0 +1,9 @@
+
+  @keyframes --anim {
+    from {
+      -webkit-perspective-origin-y: calc(10px * sibling-index());
+    }
+  }
+  #target {
+    animation: --anim 1s;
+  }

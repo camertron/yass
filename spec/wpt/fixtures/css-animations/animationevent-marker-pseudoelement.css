@@ -1,0 +1,14 @@
+
+  #target::marker {
+    content: "";
+    animation: move 1s;
+  }
+
+  @keyframes move {
+    to { transform: translate(100px); }
+  }
+
+  #target {
+    display: list-item;
+    list-style-position: inside;
+  }

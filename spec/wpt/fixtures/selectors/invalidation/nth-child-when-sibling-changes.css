@@ -1,0 +1,4 @@
+
+  .sibling + :nth-child(odd of .c) {
+    color: green;
+  }

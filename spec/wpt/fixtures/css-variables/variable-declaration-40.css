@@ -1,0 +1,10 @@
+
+p {
+  color: red;
+}
+p {
+  color: orange;
+  --a: green;
+  VAR-a: crimson;
+  color: var(--a);
+}

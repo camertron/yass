@@ -1,0 +1,12 @@
+
+@keyframes display-animation {
+  0% { display: none; }
+  100% { display: block; }
+}
+#target {
+  display: none;
+}
+#target.animate {
+  animation: display-animation 1s;
+  display: block;
+}

@@ -1,0 +1,6 @@
+
+  @counter-style a {
+    system: alphabetic;
+    symbols: \26AA  \26AB;
+    suffix: '';
+  }

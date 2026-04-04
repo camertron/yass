@@ -1,0 +1,7 @@
+
+    div {
+        background-image: filter(conic-gradient(red, orange), invert(1));
+        width: 400px;
+        height: 400px;
+        color: purple;
+    }

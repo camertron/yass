@@ -1,0 +1,12 @@
+
+  #test {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+
+  @media (resolution >= calc(2x - 96dpi)){
+    #test {
+      background-color: green;
+    }
+  }

@@ -1,0 +1,22 @@
+
+.c3 {
+  height: 10px;
+  direction: rtl;
+  zoom: 0.1;
+  column-span: all;
+}
+
+.c13 {
+  float: right;
+  border-style: solid;
+  column-count: 3;
+  column-gap: 65536px;
+}
+
+.c17 {
+  position: fixed;
+  zoom: 0.1;
+  column-width: 100%;
+  column-span: all;
+  column-count: 3;
+}

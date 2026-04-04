@@ -1,0 +1,12 @@
+
+  @function --f() {
+    result: 10px;
+  }
+
+
+  #outer {
+    width: 42px;
+  }
+  #target {
+    width: --f();
+  }

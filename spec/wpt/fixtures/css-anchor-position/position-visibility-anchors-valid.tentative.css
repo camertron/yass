@@ -1,0 +1,17 @@
+
+  .anchor {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    display: inline-block;
+  }
+
+  .target {
+    position: absolute;
+    position-visibility: anchors-valid;
+    position-area: block-end;
+    width: 100px;
+    height: 100px;
+    background: red;
+    inset: 0;
+  }

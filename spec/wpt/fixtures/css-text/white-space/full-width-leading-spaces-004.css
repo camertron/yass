@@ -1,0 +1,12 @@
+
+.ref {
+    width: 100px;
+    height: 100px;
+    background: green;
+}
+.test {
+    width: min-content;
+    font-size: 100px;
+    line-height: 1;
+    background: red;
+}

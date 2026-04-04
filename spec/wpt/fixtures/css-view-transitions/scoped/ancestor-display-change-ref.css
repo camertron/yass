@@ -1,0 +1,13 @@
+
+  .block {
+    background-color: blue;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+  }
+  .fade-out {
+    opacity: 0.5;
+  }
+  .flex {
+    display: flex;
+  }

@@ -1,0 +1,41 @@
+
+.container, .has-height {
+  border: 1px solid;
+}
+
+.inline {
+  outline: 1px solid;
+}
+
+input {
+  outline: 1px solid;
+  background: transparent;
+  padding: 0;
+  border: 0;
+  line-height: 10px;
+  vertical-align: top;
+}
+
+.oa {
+  overflow: hidden;
+  height: 100px;
+}
+
+.filler {
+  height: 100px;
+  box-sizing: border-box;
+  border: 1px solid;
+}
+
+.bad {
+  background: red;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  width: 0;
+}
+

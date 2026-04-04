@@ -1,0 +1,13 @@
+
+  .stg {
+    scroll-target-group: auto;
+
+    a:target-current {
+      color: green;
+    }
+  }
+
+  #scroller {
+    height: 100px;
+    overflow: auto;
+  }

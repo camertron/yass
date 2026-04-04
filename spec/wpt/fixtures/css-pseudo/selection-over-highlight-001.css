@@ -1,0 +1,7 @@
+
+    ::selection {
+      background-color: lightblue;
+    }
+    ::highlight(green) {
+      color: green;
+    }

@@ -1,0 +1,17 @@
+
+  #scroller {
+    overflow-y: hidden;
+    width: 100px;
+    height: 100px;
+    scroll-behavior: smooth;
+  }
+  .green {
+    width: 100px;
+    height: 100px;
+    background: green;
+  }
+  .red {
+    width: 100px;
+    height: 100px;
+    background: red;
+  }

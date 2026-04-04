@@ -1,0 +1,4 @@
+
+    .outer {color: red; background-color: currentColor; font-size: 200%; width: 6em; height: 6em; }
+    .middle {background-color: inherit; width: 6em; height: 6em;}
+    .inner {color: green; background-color: inherit; width: 6em; height: 6em; font-weight: bold;}

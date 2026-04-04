@@ -1,0 +1,9 @@
+
+span {
+  background: lightgreen;
+  view-transition-name: span;
+}
+body {
+  background: lightpink;
+  font: 20px/1 Ahem;
+}

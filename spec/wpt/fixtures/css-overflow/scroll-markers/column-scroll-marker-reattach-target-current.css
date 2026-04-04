@@ -1,0 +1,28 @@
+
+  * {
+    font-family: monospace;
+  }
+
+  #scroller {
+    overflow: hidden;
+    scroll-marker-group: before;
+    columns: 1;
+    gap: 0;
+    height: 100px;
+    width: 100px;
+  }
+  #scroller::scroll-marker-group {
+    display: block;
+    height: 100px;
+  }
+  #scroller::column::scroll-marker {
+    display: flex;
+    content: "PASS";
+  }
+  #scroller::column::scroll-marker:target-current {
+    display: block;
+  }
+  #item {
+    height: 100px;
+    width: 100px;
+  }

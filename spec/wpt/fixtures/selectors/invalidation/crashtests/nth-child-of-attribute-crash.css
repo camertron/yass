@@ -1,0 +1,7 @@
+
+#elements [blue] {
+    color: blue;
+}
+#elements :nth-child(1 of :not([blue])) {
+    color: revert;
+}

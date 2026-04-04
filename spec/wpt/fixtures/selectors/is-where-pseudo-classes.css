@@ -1,0 +1,12 @@
+
+  button {
+    color: black;
+  }
+  /* Selects #a, #c */
+  :is(main :where(main #a), #c:nth-child(odd), #d):is(:enabled) {
+    color: green;
+  }
+  /* Selects #b, #d, #f */
+  button:is(:nth-child(even), span #e):is(:enabled, :where(:disabled)) {
+    color: blue;
+  }

@@ -1,0 +1,5 @@
+
+div::after {
+  display: layout(parent);
+  content: "";
+}

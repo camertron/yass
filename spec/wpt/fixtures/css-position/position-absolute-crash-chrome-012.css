@@ -1,0 +1,14 @@
+
+  #container {
+    width: 600px;
+    position: relative;
+  }
+  #target {
+    position: absolute;
+    left: 0px;
+    right: 33554000px;
+    width: 10px;
+    margin-left: 33554432px;
+    margin-right: 33554432px;
+    height: 20px;
+  }

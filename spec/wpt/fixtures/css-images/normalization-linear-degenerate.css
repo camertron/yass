@@ -1,0 +1,6 @@
+
+  #gradient {
+    width: 100px;
+    height: 100px;
+    background-image: repeating-linear-gradient(orange 50%, blue 50%);
+  }

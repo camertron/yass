@@ -1,0 +1,35 @@
+
+  div
+    {
+      color: transparent;
+      /*
+      so that background-color can
+      shine through the A, G, M glyphs
+      */
+      font-family: Ahem;
+      font-size: 50px;
+      line-height: 1;
+      width: 0;
+      /*
+      This will trigger
+      min-content size
+      for div#min-sized-parent
+      */
+    }
+
+  div#reference-overlapped-red
+    {
+      background-color: red;
+      position: absolute;
+      width: auto;
+      z-index: -1;
+    }
+
+  div#test-overlapping-green
+    {
+      background-color: green;
+      float: left;
+      white-space: pre-line;  /* spaces and tabs collapse */
+      width: auto;
+    }
+  

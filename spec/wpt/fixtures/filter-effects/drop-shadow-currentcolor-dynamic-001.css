@@ -1,0 +1,13 @@
+
+#target {
+  background-color: green;
+  width: 50px;
+  height: 100px;
+  filter: drop-shadow(50px 0px 0px currentcolor);
+}
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}

@@ -1,0 +1,26 @@
+
+  html {
+    counter-reset: pages 10;
+  }
+  @page {
+    margin: 4em;
+    counter-increment: pages 2;
+
+    @top-center {
+      text-align: left;
+      vertical-align: top;
+      counter-increment: pages;
+      content: counters(pages, ".");
+    }
+
+    @bottom-center {
+      text-align: left;
+      vertical-align: top;
+      counter-reset: pages 2;
+      counter-increment: pages;
+      content: counters(pages, ".");
+    }
+  }
+  body {
+    margin: 0;
+  }

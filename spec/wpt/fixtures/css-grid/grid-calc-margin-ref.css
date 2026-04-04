@@ -1,0 +1,15 @@
+
+  .cardStack {
+    display: grid;
+    width: 100px;
+  }
+  .card {
+    height: 100px;
+  }
+  #card1 {
+    background-color: lightpink;
+    margin-top: 50%;
+  }
+  #card2 {
+    background-color: lightgreen;
+  }

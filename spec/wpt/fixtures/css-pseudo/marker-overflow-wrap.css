@@ -1,0 +1,29 @@
+
+ol {
+  float: left;
+  width: 50px;
+}
+li {
+  list-style-position: inside;
+  width: 0;
+}
+.overflow-wrap-normal.explicit ::marker,
+.overflow-wrap-normal.inherit {
+  overflow-wrap: strict;
+}
+.overflow-wrap-anywhere.explicit ::marker,
+.overflow-wrap-anywhere.inherit {
+  overflow-wrap: anywhere;
+}
+.marker-disc {
+  list-style-type: disc;
+}
+.marker-decimal {
+  list-style-type: decimal;
+}
+.marker-string {
+  list-style-type: "ab";
+}
+.marker-content::marker {
+  content: "cd";
+}

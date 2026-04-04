@@ -1,0 +1,24 @@
+
+#reference-overlapped-green {
+    position: absolute;
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+}
+
+#constrained-grid {
+    display: grid;
+    width: 10px;
+    height: 10px;
+    grid: minmax(auto, 0px) / minmax(auto, 0px);
+}
+
+#test-grid-item-overlapping-red {
+    background-color: red;
+}
+
+#content-100x100 {
+    width: 100px;
+    height: 100px;
+}

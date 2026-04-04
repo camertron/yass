@@ -1,0 +1,16 @@
+
+div {
+  white-space: nowrap;
+  font-size: 10px;
+  line-height: 1;
+  width: 5ch;
+}
+.inline-block {
+  display: inline-block;
+  width: 3ch;
+  height: 1em;
+}
+img {
+  width: 3ch;
+  height: 1em;
+}

@@ -1,0 +1,5 @@
+
+body { color: red; }
+@supports (--a: a) and (not (--a: var(--b,;))) {
+  p { color: green; }
+}

@@ -1,0 +1,12 @@
+
+li {
+  list-style-position: inside;
+  list-style-type: none;
+}
+li::before {
+  content: "ab";
+}
+li::after {
+  content: "d";
+}
+span { font-size: 32pt; }

@@ -1,0 +1,18 @@
+
+.container {
+  width: 100px;
+  height: 100px;
+}
+
+#canvas-box-green {
+  background-image: paint(box, green);
+}
+
+#canvas-box-red {
+  background-image: paint(box, red);
+}
+
+#background {
+  background-color: yellow;
+  display: inline-block;
+}

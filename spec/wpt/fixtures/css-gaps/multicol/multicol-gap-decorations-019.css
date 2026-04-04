@@ -1,0 +1,23 @@
+
+    body {
+        margin: 0px;
+    }
+
+    #current {
+        color: firebrick;
+        columns: 6;
+        column-gap: 2px;
+        column-rule-style: solid;
+        column-rule-width: 2px;
+        column-fill: auto;
+        height: 20px;
+        column-rule-color: repeat(auto, currentColor);
+
+        width: 72px;
+        height: 20px;
+    }
+
+    .items {
+        background-color: lightgreen;
+        height: 20px
+    }

@@ -1,0 +1,18 @@
+
+  @font-face {
+    font-family: base;
+    src: url(support/fonts/LigatureSymbolsWithSpaces.woff);
+  }
+  @font-face {
+    font-family: swoosh;
+    src: url(support/fonts/Rochester.otf);
+  }
+  .ref {
+    font-family: base;
+  }
+  .ref .amp {
+	  font-family: swoosh, base;
+  }
+  div {
+	  font-size: 5em;
+  }

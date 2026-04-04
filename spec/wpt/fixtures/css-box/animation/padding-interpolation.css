@@ -1,0 +1,15 @@
+
+.parent {
+  padding: 30px;
+}
+.target {
+  width: 1px;
+  height: 1px;
+  background-color: black;
+  display: inline-block;
+  padding: 10px;
+}
+.expected {
+  background-color: green;
+  margin-right: 10px;
+}

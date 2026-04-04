@@ -1,0 +1,5 @@
+
+    div {
+        unicode-bidi:bidi-override;
+        direction: rtl;
+    }

@@ -1,0 +1,19 @@
+
+.parent {
+  transform-origin: 30px 10px;
+}
+.target {
+  display: inline-block;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  width: 50px;
+  height: 50px;
+  background: red;
+  transform: scale(1.5);
+  transform-origin: 10px 30px;
+}
+.expected {
+  background: green;
+  position: relative;
+  left: -50px;
+}

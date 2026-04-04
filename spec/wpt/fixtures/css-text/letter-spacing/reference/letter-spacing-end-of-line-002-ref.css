@@ -1,0 +1,14 @@
+
+div {
+  margin: 1em;
+  font: 24px monospace;
+  white-space: pre;
+  display: inline-block;
+  outline: 1px solid gray;
+}
+.letterspc {
+  letter-spacing: 10px;
+}
+.nospc {
+  letter-spacing: 0px;
+}

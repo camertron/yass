@@ -1,0 +1,9 @@
+
+  p:first-line {
+    background: lightblue;
+  }
+
+  p::first-letter {
+    float: left;
+    font-size: 4rem;
+  }

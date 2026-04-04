@@ -1,0 +1,12 @@
+
+  #reference-overlapped-red {
+    position: absolute;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+  }
+  span {
+    width: 50px;
+    height: 100px;
+  }

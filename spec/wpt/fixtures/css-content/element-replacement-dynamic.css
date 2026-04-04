@@ -1,0 +1,7 @@
+
+#target {
+  content: none;
+}
+#target.replaced {
+  content: url('resources/rect.svg');
+}

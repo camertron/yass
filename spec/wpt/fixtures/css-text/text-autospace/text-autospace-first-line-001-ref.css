@@ -1,0 +1,15 @@
+
+.test {
+  font-family: Ahem;
+  font-size: 40px;
+  text-autospace: no-autospace;
+}
+.first-line::first-line {
+  font-size: 200%;
+}
+.manual-spacing {
+  margin: 0 0.125em;
+}
+.zoom {
+  font-size: 200%;
+}

@@ -1,0 +1,7 @@
+
+.outer-column-flexbox {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  margin-bottom: 10px; /* Just for visually spacing things out */
+}

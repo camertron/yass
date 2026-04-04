@@ -1,0 +1,28 @@
+
+  #scrollable {
+    overflow: auto;
+    width: 100px;
+    height: 100px;
+  }
+  #container {
+    container-type: inline-size;
+  }
+  #target {
+    background-color: black;
+  }
+
+  /* Matches with or without a scrollbar: */
+  @container (max-width: 100px) {
+    #target {
+      background-color: blue;
+    }
+  }
+
+  /* Matches only when there's a scrollbar: */
+  @container (max-width: 99px) {
+    #target {
+      background-color: green;
+      font-size: 10px;
+      transition: 2s steps(2, start) background-color;
+    }
+  }

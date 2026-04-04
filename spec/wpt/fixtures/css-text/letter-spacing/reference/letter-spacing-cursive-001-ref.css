@@ -1,0 +1,8 @@
+
+div {
+  margin: 1em;
+  font: 24px serif;
+  white-space: nowrap;
+  display: inline-block;
+  outline: 1px solid gray;
+}

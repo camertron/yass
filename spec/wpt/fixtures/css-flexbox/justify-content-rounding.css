@@ -1,0 +1,12 @@
+
+#flex {
+  display: flex;
+  width: 40px;
+  justify-content: space-between;
+  outline: solid 1px;
+}
+#flex > div {
+  width: 5px;
+  height: 10px;
+  background: lime;
+}

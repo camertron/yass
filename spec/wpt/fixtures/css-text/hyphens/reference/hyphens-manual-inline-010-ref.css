@@ -1,0 +1,11 @@
+
+  div
+    {
+      border: black solid 2px;
+      font-family: monospace;
+      font-size: 32px;
+      hyphens: none;
+      margin-bottom: 0.25em;
+      width: 10ch;
+    }
+  

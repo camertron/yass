@@ -1,0 +1,10 @@
+
+  #flex {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  #flex > div {
+    width: 100%;
+    background: green;
+  }

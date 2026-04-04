@@ -1,0 +1,10 @@
+
+.placeholder:first-line { }
+.inner {
+  float: inherit;
+}
+.inner::after {
+  position: absolute;
+  float: inherit;
+  content: open-quote;
+}

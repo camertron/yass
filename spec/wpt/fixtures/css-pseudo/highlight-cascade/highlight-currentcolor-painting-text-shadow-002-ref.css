@@ -1,0 +1,13 @@
+
+div {
+  color: lime;
+  background: green;
+  margin: 10px;
+}
+div > span {
+  color: yellow;
+  background: maroon;
+}
+#textshadow-currentcolor > span > span {
+  text-shadow: currentcolor 2px 2px;
+}

@@ -1,0 +1,11 @@
+
+#container {
+  fill: green;
+  stroke: black;
+  stroke-width: 20;
+  transform-box: border-box;
+  transform: scale(0.5) translateY(-100%);
+}
+#inner {
+  vector-effect: non-scaling-stroke;
+}

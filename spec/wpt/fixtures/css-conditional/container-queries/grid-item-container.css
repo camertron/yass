@@ -1,0 +1,15 @@
+
+  #grid {
+    width: 300px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .item {
+    container-type: inline-size;
+  }
+  @container (width > 50px) {
+    .item div { color: lime; }
+  }
+  @container (width > 150px) {
+    .item div { color: green; }
+  }

@@ -1,0 +1,7 @@
+
+  body { margin: 0 }
+  div {
+    /* green.png is 100x50, should be 200x100 instead */
+    content: -webkit-image-set(url('/images/green.png') 0.5x);
+    content: image-set(url('/images/green.png') 0.5x);
+  }

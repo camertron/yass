@@ -1,0 +1,18 @@
+
+  #target {
+    display: inline-block;
+    view-transition-name: target;
+  }
+
+  ::view-transition-group(target),
+  ::view-transition-old(target) {
+    animation: unset;
+  }
+
+  @keyframes colorize {
+    to { opacity: 0.5; }
+  }
+
+  ::view-transition-new(target) {
+   animation: colorize 1s paused steps(1, jump-start);
+  }

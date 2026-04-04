@@ -1,0 +1,12 @@
+
+div { font: 50px/1 Ahem; }
+.test {
+    width: 2em;
+    color: green;
+    background: green;
+}
+.ref {
+    position: absolute;
+    z-index: -1;
+    color: red;
+}

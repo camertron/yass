@@ -1,0 +1,12 @@
+
+body { writing-mode: vertical-lr; }
+.container {
+  background: green;
+  width: 16px;
+  border: solid black 3px;
+  height: 400px;
+  margin: 0 16px;
+  padding: 2px;
+}
+
+.large { width: 32px; }

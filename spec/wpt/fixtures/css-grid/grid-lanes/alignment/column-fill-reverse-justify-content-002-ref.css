@@ -1,0 +1,24 @@
+
+    html, body {
+      font: 16px/1 monospace;
+      background: white;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 80px;
+      gap: 4px;
+      width: 200px;
+      height: 180px;
+      border: 1px solid;
+      align-content: end;
+    }
+
+    item {
+      display: block;
+      width: min-content;
+      height: 28px;
+      color: white;
+      background: #555;
+    }
+  

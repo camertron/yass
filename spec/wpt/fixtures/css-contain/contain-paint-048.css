@@ -1,0 +1,10 @@
+
+  div
+    {
+      color: red;
+      contain: paint;
+      font-size: 100px;
+      width: 0;
+    }
+
+  

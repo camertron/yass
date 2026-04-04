@@ -1,0 +1,11 @@
+
+  @page {
+    size: 200px 320px;
+    margin: 10px;
+  }
+  @page :first {
+    margin-top: 100px;
+  }
+  body {
+    margin: 8px;
+  }

@@ -1,0 +1,13 @@
+
+body {
+  overflow: hidden;
+}
+div {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  width: 2000px;
+  height: 2000px;
+  background: black;
+  clip-path: circle(1000px at center);
+}

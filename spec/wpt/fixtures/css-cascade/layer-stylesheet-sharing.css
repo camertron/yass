@@ -1,0 +1,9 @@
+
+  target {
+    display: block;
+    width: 100px;
+    height: 100px;
+  }
+
+
+@layer A { target { background-color: red } }

@@ -1,0 +1,9 @@
+
+div {
+  font: 16px monospace;
+  float: left;
+  clear: left;
+  border: 1px solid silver;
+  margin: 1em;
+  letter-spacing: .5em;
+}

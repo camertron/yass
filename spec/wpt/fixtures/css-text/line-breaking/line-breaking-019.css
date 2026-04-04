@@ -1,0 +1,27 @@
+
+.outer { float: left; padding: 0 1em; margin: 1em; border: 1px solid silver; }
+
+.outer div { font-family: monospace; line-height: 2; margin: 1em 0; border: 1px dotted silver; }
+
+.test20 div { width: 20ch; }
+.test27 div { width: 27ch; }
+.test30 div { width: 30ch; }
+
+b { color: blue; border-left: 2px solid red; border-right: 2px solid green; }
+
+/* adjust for the width of the target element's border */
+div > .before { margin-left: 2px; }
+div > .after { margin-left: -2px; }
+
+.test::before,
+.test::after,
+.before,
+.after { position: absolute; font-size: 0.5em; }
+
+.test::before { content: "before"; }
+.test::after { content: "after"; }
+
+.before,
+.test::before { color: red; font-weight: normal; }
+.after,
+.test::after { color: green; font-weight: normal; }

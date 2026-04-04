@@ -1,0 +1,13 @@
+
+.flex {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+.item {
+  flex: 1;
+  align-self: normal;
+  background: green;
+}

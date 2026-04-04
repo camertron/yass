@@ -1,0 +1,11 @@
+
+            div {
+                background-color: green;
+                height: 100px;
+                width: 100px;
+            }
+
+            @supports ( ( background-color: red ) or( background-color: green ) ) {
+                div { background-color: red; }
+            }
+        

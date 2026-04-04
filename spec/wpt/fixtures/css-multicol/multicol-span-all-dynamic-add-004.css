@@ -1,0 +1,14 @@
+
+  body {
+    width: 400px;
+  }
+  article {
+    column-count: 2;
+    column-rule: 6px solid;
+    outline: 1px solid black;
+  }
+  h3 {
+    column-span: all;
+    outline: 1px solid blue;
+  }
+  

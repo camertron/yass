@@ -1,0 +1,32 @@
+
+    .flexContainer {
+      display: flex;
+      border: 1px solid black;
+      column-gap: 20px;
+      row-gap: 40px;
+      align-content: space-around;
+      justify-content: space-around;
+    }
+    .rowWrap {
+      flex-flow: row wrap;
+    }
+    .item {
+      border: 1px solid blue;
+      background: lightblue;
+      width: 28px;
+      height: 28px;
+    }
+    .autoLBMargins {
+      margin-left: auto;
+      margin-bottom: auto;
+    }
+    .w200 {
+      width: 200px;
+    }
+    .h100 {
+      height: 100px;
+    }
+    .h90 {
+      height: 90px;
+    }
+  

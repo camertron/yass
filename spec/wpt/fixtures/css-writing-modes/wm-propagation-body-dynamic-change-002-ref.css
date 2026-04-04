@@ -1,0 +1,16 @@
+
+  html {
+    writing-mode: vertical-rl;
+  }
+
+  main {
+    writing-mode: horizontal-tb;
+    inline-size: 100px;
+  }
+
+  div {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+  }
+  

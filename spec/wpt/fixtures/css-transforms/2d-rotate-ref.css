@@ -1,0 +1,14 @@
+
+			svg{
+				position: absolute;
+				top: 220px;
+				left: 60px;
+			}
+		
+
+				rect{
+					stroke-width: 10;
+					stroke: green;
+					fill: none;
+		   	 	}
+			    

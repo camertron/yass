@@ -1,0 +1,18 @@
+
+
+#shadow {
+  width: 100px;
+  height: 100px;
+}
+
+@keyframes animation {
+  from, to { background-color: green }
+}
+
+#shadow::part(target) {
+  height: 100px;
+  width: 100px;
+  animation: animation 1s both;
+  background-color: red;
+}
+

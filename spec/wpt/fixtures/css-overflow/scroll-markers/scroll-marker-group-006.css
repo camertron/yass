@@ -1,0 +1,11 @@
+
+  div {
+    overflow: auto;
+  }
+
+  div::scroll-marker-group {
+    background-color: red;
+    display: flex;
+    height: 100px;
+    width: 100px;
+  }

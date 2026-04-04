@@ -1,0 +1,10 @@
+
+div { font-size: 2em; }
+#ref { color: blue; }
+#test {
+  width: 4em;
+  color: orange;
+}
+#test span {
+  hanging-punctuation: last;
+}

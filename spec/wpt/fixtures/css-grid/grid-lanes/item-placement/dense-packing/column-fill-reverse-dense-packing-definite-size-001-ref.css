@@ -1,0 +1,19 @@
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 100px);
+        grid-template-rows: 1fr;
+        column-gap: 10px;
+        height: 500px;
+        margin-top: 100px;
+        border: solid 2px blue;
+        width: min-content;
+        font-family: Ahem;
+        font-size: 10px;
+    }
+    .column {
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap: 10px;
+    }
+  

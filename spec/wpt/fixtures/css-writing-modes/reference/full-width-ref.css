@@ -1,0 +1,8 @@
+
+.test {
+  writing-mode: vertical-rl;
+}
+
+.tcu-all {
+  text-combine-upright: all;
+}

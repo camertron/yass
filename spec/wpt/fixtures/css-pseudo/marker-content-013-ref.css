@@ -1,0 +1,18 @@
+
+.inside {
+  list-style-position: inside;
+}
+.string {
+  list-style-type: "string";
+}
+.content::marker {
+  content: "content";
+}
+.before, .after {
+  display: contents;
+}
+.before::before, .after::after {
+  content: "item";
+  display: list-item;
+  list-style-type: "nested";
+}

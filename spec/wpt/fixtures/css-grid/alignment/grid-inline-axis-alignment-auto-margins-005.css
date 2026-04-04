@@ -1,0 +1,22 @@
+
+  #grid {
+      display: grid;
+      position: relative;
+      background: grey;
+      grid-template-columns: 40% 60%;
+      grid-template-rows: 100px;
+      height: 200px;
+      width: 500px;
+      align-items: start;
+  }
+  #grid div {
+    margin: 0px auto 0px auto;
+  }
+  #item1 {
+      font: 20px/1 Ahem;
+      color: green;
+  }
+  #item2 {
+      font: 10px/1 Ahem;
+      color: blue;
+  }

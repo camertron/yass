@@ -1,0 +1,20 @@
+
+table {
+  font: 50px/1 Ahem;
+}
+
+td {
+  block-size: 2em;
+  padding: 0;
+  color: green;
+}
+
+.t {
+  vertical-align: top;
+}
+.m {
+  vertical-align: middle;
+}
+.b {
+  vertical-align: bottom;
+}

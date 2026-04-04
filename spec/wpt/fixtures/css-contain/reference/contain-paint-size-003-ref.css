@@ -1,0 +1,24 @@
+
+  div
+    {
+      color: transparent;
+      float: left;
+      font-size: 16px;
+      padding: 8px;
+    }
+
+  div#blue-rectangle
+    {
+      background-color: blue;
+      margin: 8px;
+      width: 6em;
+    }
+
+  div#orange-rectangle
+    {
+      background-color: orange;
+      height: 0px;
+      overflow: hidden;
+      width: 12em;
+    }
+  

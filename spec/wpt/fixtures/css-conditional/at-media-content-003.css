@@ -1,0 +1,29 @@
+
+		div {
+			background: red;
+			width: 100px;
+			height: 100px;
+			animation: green 4s both;
+		}
+
+		@media all {
+			@keyframes green {
+				from {
+					background: green;
+				}
+				to {
+					background: green;
+				}
+			}
+		}
+		@media not all {
+			@keyframes green {
+				from {
+					background: red;
+				}
+				to {
+					background: red;
+				}
+			}
+		}
+	

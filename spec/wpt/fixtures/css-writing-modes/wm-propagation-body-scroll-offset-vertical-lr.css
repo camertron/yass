@@ -1,0 +1,8 @@
+
+  html { writing-mode: vertical-rl; }
+  body { writing-mode: vertical-lr; width: 10000px; }
+
+  .result-wm, .result-wm > body {
+    writing-mode: horizontal-tb;
+    width: auto;
+  }

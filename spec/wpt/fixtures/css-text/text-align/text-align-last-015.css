@@ -1,0 +1,14 @@
+
+:root {
+  font: 25px/1 Ahem;
+}
+.multicol {
+  width: 200px;
+  column-count: 2;
+  column-gap: 0;
+  border: 5px solid orange;
+}
+.multicol > div {
+  text-align: start;
+  text-align-last: end;
+}

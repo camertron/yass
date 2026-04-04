@@ -1,0 +1,10 @@
+
+div {
+  font: 50px/1 Ahem;
+  white-space: break-spaces;
+  word-break: keep-all;
+  width: 100px;
+  height: 100px;
+  background: red;
+  color: green;
+}

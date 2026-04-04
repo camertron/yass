@@ -1,0 +1,8 @@
+
+.d::before { content: attr(data-val); }
+.none {
+  display: none;
+}
+.hidden {
+  visibility: hidden;
+}

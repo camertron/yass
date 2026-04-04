@@ -1,0 +1,16 @@
+
+body {
+  display: grid;
+  grid: auto-flow / 100px;
+}
+
+.test {
+  background: red;
+}
+
+@supports (display: layout(test)) {
+  .test {
+    background: green;
+    display: layout(test);
+  }
+}

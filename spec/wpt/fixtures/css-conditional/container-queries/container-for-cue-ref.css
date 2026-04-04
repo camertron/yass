@@ -1,0 +1,9 @@
+
+    video {
+      contain: size;
+      width: 200px;
+      height: 200px;
+    }
+    video::cue { background-color: green }
+    video::cue(b) { color: lime }
+  

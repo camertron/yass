@@ -1,0 +1,16 @@
+
+#carousel {
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+}
+
+#carousel div {
+  background: green;
+  width: 100px;
+  height: 100px;
+}
+
+.scroll-buttons::scroll-button(right) {
+  content: "r";
+}

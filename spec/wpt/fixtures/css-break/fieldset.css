@@ -1,0 +1,4 @@
+
+  fieldset { margin:0; border:none; padding:0; }
+  .block { break-inside:avoid; height:50px; background:green; }
+  .fail { background:red; }

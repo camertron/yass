@@ -1,0 +1,14 @@
+
+#outer {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+#inner {
+  color: green;
+  background-color: green;
+  display: inline;
+  display: revert;/* since #inner is a <div>, this should compute to 'block' */
+}
+  

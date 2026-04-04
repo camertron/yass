@@ -1,0 +1,42 @@
+
+.grid {
+  display: grid;
+  contain: size;
+  font: 75px/1 Ahem;
+}
+.min-content {
+  height: min-content;
+  width: min-content;
+}
+.max-content {
+  height: max-content;
+  width: max-content;
+}
+.fixed {
+  height: 100px;
+  width: 100px;
+}
+.percent {
+  grid: 50% / 200%;
+}
+.calc {
+  grid: calc(100px + 50%) / calc(100px + 200%);
+}
+.minmax-percent-fixed {
+  grid: minmax(50%, 100px) / minmax(200%, 100px);
+}
+.minmax-fixed-percent {
+  grid: minmax(100px, 50%) / minmax(100px, 200%);
+}
+.minmax-percent-flex {
+  grid: minmax(50%, 1fr) / minmax(200%, 1fr);
+}
+.minmax-percent-intrinsic {
+  grid: minmax(50%, min-content) / minmax(200%, min-content);
+}
+.minmax-intrinsic-percent {
+  grid: minmax(min-content, 50%) / minmax(min-content, 200%);
+}
+.fit-content {
+  grid: fit-content(50%) / fit-content(200%);
+}

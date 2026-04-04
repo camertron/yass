@@ -1,0 +1,11 @@
+
+  #outer {
+    display: list-item;
+    overflow: auto; /* Triggers a crash in Blink see link to issue 977044 */
+  }
+  #outer::first-letter {
+    float: left;
+    color: green;
+  }
+  #fixed { position: fixed; }
+  #inner { float: left; }

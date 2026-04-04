@@ -1,0 +1,6 @@
+
+p {
+  color: red;
+  --\d800: green;
+  color: var(--\d800);
+}

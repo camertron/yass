@@ -1,0 +1,8 @@
+
+div, main { color: grey }
+#subject:has(~ .test) { color: red }
+#subject:has(+ .test) { color: green }
+#subject:has(~ div .test) { color: blue }
+#subject:has(~ div > .test) { color: purple }
+#subject:has(+ div .test) { color: yellow }
+#subject:has(+ div > .test) { color: pink }

@@ -1,0 +1,10 @@
+
+div {
+  font-size: 2em;
+}
+#test {
+  word-space-transform: space;
+}
+span {
+  word-space-transform: none;
+}

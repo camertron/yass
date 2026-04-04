@@ -1,0 +1,9 @@
+
+    .test { background-color: red; width: 14em; height: 2em; margin-top: 0; margin-bottom: 0;}
+    .t1 { background-color: rgb(68.4898% 36.015% 68.3102%); }
+    .t2 { background-color: color-mix(in lch, purple 50%, plum 50%);}
+    .t3 { background-color: color-mix(in lch, purple 50%, plum);}
+    .t4 { background-color: color-mix(in lch, purple, plum 50%); }
+    .t5 { background-color: color-mix(in lch, purple, plum);}
+    .t6 { background-color: color-mix(in lch, plum, purple);}
+    .t7 { background-color: color-mix(in lch, purple 80%, plum 80%);}

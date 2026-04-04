@@ -1,0 +1,8 @@
+
+.target {
+  border: 1px solid;
+  width: 8ch;
+}
+.after {
+  text-indent: 4ch each-line;
+}

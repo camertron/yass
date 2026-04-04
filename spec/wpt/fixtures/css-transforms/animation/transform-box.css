@@ -1,0 +1,15 @@
+
+  .block {
+    position: absolute;
+    border: 20px solid black;
+    width: 100px;
+    height: 100px;
+    left: 100px;
+    top: 100px;
+  }
+
+  #transformBoxTarget {
+    transform: rotateZ(90deg);
+    transform-origin: 0% 100%;
+    transform-box: border-box;
+  }

@@ -1,0 +1,21 @@
+
+iframe {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  height: 50vh;
+}
+
+/* Keep showing the screenshot for the main frame */
+::view-transition-group(root) {
+  animation-duration: 300s;
+}
+::view-transition-old(root) {
+  animation: unset;
+  opacity: 1;
+}
+::view-transition-new(root) {
+  animation: unset;
+  opacity: 0;
+}

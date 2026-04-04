@@ -1,0 +1,15 @@
+
+div {
+    font: 50px / 1 Ahem;
+}
+.fail {
+    background: red;
+    position: absolute;
+    color: green;
+    z-index: -1;
+}
+.test {
+    color: green;
+    width: min-content;
+    word-break: break-all;
+}

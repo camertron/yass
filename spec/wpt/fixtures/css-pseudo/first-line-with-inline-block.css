@@ -1,0 +1,10 @@
+
+.fl:first-line {
+  color: red;
+}
+.fl-atomic {
+  display: inline-block;
+}
+.fl-atomic:first-line {
+  color: lime;
+}

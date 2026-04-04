@@ -1,0 +1,47 @@
+
+html,body {
+    color:black; background-color:white; font:20px/1 Ahem; padding:0; margin:0;
+}
+
+.grid {
+  float: left;
+  display: grid;
+  grid: 100px / repeat(10, auto);
+  border: 2px solid;
+  margin: 1px;
+  place-content: start end;
+}
+.c {
+  grid: repeat(4, auto) / 100px;
+  place-content: end start;
+}
+.t2 { grid: 100px / repeat(3, auto);}
+
+span {
+  background: lime;
+  display: inline-block;
+  border: 1px solid black;
+}
+
+span:nth-child(1) { font-size:30px; }
+span:nth-child(2) { font-size:15px; }
+span:nth-child(3) { font-size:10px; }
+span:nth-child(4) { font-size:20px; }
+
+.pbs { padding-block-start: 15px; margin-block-start: 5px; }
+.pbe { padding-block-end: 7px; margin-block-end: 3px; }
+
+.fb { align-content:baseline; place-self:self-start; }
+.lb { align-content:last baseline; place-self:self-end; }
+.s  { place-self:stretch; }
+
+.sfb { align-self:baseline; }
+.slb { align-self:last baseline; align-content:self-end;}
+
+.hl { writing-mode: horizontal-tb; direction:ltr; }
+.hr { writing-mode: horizontal-tb; direction:rtl; }
+.vl { writing-mode: vertical-lr; text-orientation: sideways; }
+.vr { writing-mode: vertical-rl; text-orientation: sideways; }
+.vlr { writing-mode: vertical-lr; direction:rtl; text-orientation: sideways; }
+.vrl { writing-mode: vertical-rl; direction:ltr; text-orientation: sideways; }
+

@@ -1,0 +1,10 @@
+
+  div {
+    font: 1in serif;
+  }
+  span {
+    font-variant: small-caps;
+    font-size: 1in;
+    font-family: serif;
+    line-height: 1em;
+  }

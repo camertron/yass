@@ -1,0 +1,57 @@
+
+  @font-face {
+    font-family: fwf;
+    src: url(support/fonts/FontWithFancyFeatures.otf);
+  }
+
+  @layer one, two, three;
+
+  @layer three {
+    #test {
+      background-color: orange;
+    }
+    @font-feature-values fwf {
+      @styleset {
+        foo: 1;
+        bar: 1;
+      }
+    }
+  }
+
+  @layer one {
+    #test {
+      background-color: silver;
+    }
+    @font-feature-values fwf {
+      @styleset {
+        foo: 2;
+        bar: 2;
+        baz: 2;
+      }
+    }
+  }
+
+  @layer two {
+    #test {
+      background-color: lightblue;
+    }
+    @font-feature-values fwf {
+      @styleset {
+          baz: 3;
+      }
+    }
+  }
+
+  .test {
+	  font-family: fwf;
+	  font-size: 2em;
+	  line-height: 1.1;
+  }
+
+  .high {
+	 font-variant-alternates: styleset(foo,bar,baz);
+  }
+  .low {
+   font-feature-settings: "hist" off, "salt" 00, "ss01" on, "ss02" off, "ss03" on,
+    "cv01" off, "cv02" off, "cv03" off,  "swsh" 00, "cswh" 00, "ornm" 00, "nalt" 00;
+  }

@@ -1,0 +1,25 @@
+
+  body {
+    margin: 0px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(6, 100px);
+    height: 650px;
+    width: 650px;
+
+    column-rule-color: blue;
+    column-rule-style: solid;
+    column-rule-width: 2px, repeat(auto, 5px, 2px), repeat(2, 10px);
+
+    row-rule-color: red;
+    row-rule-style: solid;
+    row-rule-width: repeat(auto, 10px, 8px), repeat(2, 2px), 5px;
+  }
+
+  .item {
+    background: gray;
+    opacity: 0.5;
+  }

@@ -1,0 +1,4 @@
+
+  #subject { color: red }
+  #subject:has(:empty) { color: green }
+  #subject:has(:not(:empty)) { color: blue }

@@ -1,0 +1,5 @@
+
+    span { background-color: blue; }
+
+    .a ~ .c > span { background-color: green; }
+  

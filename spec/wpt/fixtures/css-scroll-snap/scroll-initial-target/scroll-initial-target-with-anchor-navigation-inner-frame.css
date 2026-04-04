@@ -1,0 +1,27 @@
+
+    :root, body {
+      margin: 0px;
+    }
+
+    #spacer {
+      height: 100vh;
+      width: 100px;
+    }
+
+    #top_box {
+      width: 100px;
+      height: 60vh;
+      background-color: red;
+    }
+    #middle_box {
+      width: 100px;
+      height: 60vh;
+      scroll-initial-target: nearest;
+      background-color: purple;
+    }
+    #bottom_box {
+      width: 100px;
+      height: 60vh;
+      background-color: yellow;
+    }
+  

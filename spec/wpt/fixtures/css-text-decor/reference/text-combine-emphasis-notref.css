@@ -1,0 +1,6 @@
+
+.foo {
+  font-size: 100px;
+  writing-mode: vertical-lr;
+  text-combine-upright: all;
+}

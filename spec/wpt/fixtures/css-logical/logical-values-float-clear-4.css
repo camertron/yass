@@ -1,0 +1,10 @@
+
+html { writing-mode: vertical-rl; }
+body > div { height: 15em; width: 10em; margin: 1em; padding: 2px; border: 1px solid silver; }
+div > div { margin: .5em; padding: .5em; background: yellow; }
+.a { clear: inline-start; }
+.b { clear: inline-end; }
+.is { float: inline-start; width: 4em; }
+.ie { float: inline-end; width: 2em; }
+.ltr { direction: ltr; }
+.rtl { direction: rtl; }

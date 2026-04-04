@@ -1,0 +1,13 @@
+
+div {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 5ch;
+}
+.inline-block {
+  display: inline-block;
+}
+.abs {
+  position: absolute;
+}

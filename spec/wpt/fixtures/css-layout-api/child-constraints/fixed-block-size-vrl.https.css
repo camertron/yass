@@ -1,0 +1,37 @@
+
+.test {
+  writing-mode: vertical-rl;
+  background: red;
+  height: 100px;
+}
+
+.htb {
+  writing-mode: horizontal-tb;
+  visibility: hidden;
+  width: 3px;
+  height: 2px;
+
+  --fixed-block-size: 10;
+
+  --inline-size-expected: 2;
+  --block-size-expected: 10;
+}
+
+.vrl {
+  writing-mode: vertical-rl;
+  visibility: hidden;
+  width: 3px;
+  height: 2px;
+
+  --fixed-block-size: 10;
+
+  --inline-size-expected: 2;
+  --block-size-expected: 10;
+}
+
+@supports (display: layout(test)) {
+  .test {
+    background: green;
+    display: layout(test);
+  }
+}

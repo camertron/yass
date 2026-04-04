@@ -1,0 +1,22 @@
+
+  :root {
+    --scroll-buttons-background: red;
+  }
+
+  div::scroll-button(inline-start) {
+    content: "";
+    background: var(--scroll-buttons-background);
+    display: flex;
+    height: 50px;
+    width: 100px;
+    border: none;
+  }
+
+  div::scroll-button(down) {
+    content: "";
+    background: var(--scroll-buttons-background);
+    display: flex;
+    height: 50px;
+    width: 100px;
+    border: none;
+  }

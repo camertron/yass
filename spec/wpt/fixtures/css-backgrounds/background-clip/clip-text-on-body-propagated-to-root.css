@@ -1,0 +1,9 @@
+
+html {
+  font-size: 80px;
+  color: transparent;
+  background-color: green;
+}
+body {
+  background-clip: text;
+}

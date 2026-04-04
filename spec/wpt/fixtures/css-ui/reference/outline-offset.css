@@ -1,0 +1,12 @@
+
+		div
+			{
+			display:inline-block;
+			margin:10px;
+			width:180px;
+			height:80px;
+			border:2px solid green;
+			outline:2px solid red;
+			outline-offset:10px;
+			}
+    

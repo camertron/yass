@@ -1,0 +1,38 @@
+
+  .b {
+    color: yellow;
+  }
+  /*Simple selector arguments */
+  .a :not(:not(.b, .c)) {
+    color: red;
+  }
+  /*Compound selector arguments */
+  .a :not(:not(.c#d, .e)) {
+    color: green;
+  }
+  /* Complex selector arguments */
+  .a .g>.b {
+    color: black;
+  }
+  .a :not(:not(.e+.f, .g>.b, .h)) {
+    color: blue;
+  }
+  .g>.b {
+    color: black;
+  }
+  .a .h {
+    color: black;
+  }
+  /* Nested */
+  .a+.c>.e {
+    color: black;
+  }
+  .c>.a+.e {
+    color: black;
+  }
+  .a+:not(:not(.b+.f, :is(.c>.e, .g))) {
+    color: red;
+  }
+  .c>.e {
+    color: black;
+  }

@@ -1,0 +1,24 @@
+
+body {
+  margin: 0;
+}
+
+#anchor1 {
+  width: 100px;
+  height: 100px;
+  background: orange;
+  anchor-name: --a;
+}
+
+#anchor2 {
+  width: 100px;
+  height: 100px;
+  margin-top: 200px;
+  margin-left: 300px;
+  background: orange;
+}
+
+#anchor2.after::part(target) {
+  top: anchor(--a top);
+  left: anchor(--a right);
+}

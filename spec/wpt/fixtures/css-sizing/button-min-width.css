@@ -1,0 +1,12 @@
+
+.button-row {
+  background-color: #BBB;
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  margin-top: 8px;
+}
+button {
+  flex: 0 0 auto;
+  margin: 0px;
+}

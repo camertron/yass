@@ -1,0 +1,8 @@
+
+:root {
+  scrollbar-gutter: stable both-edges;
+}
+p {
+  background-color: purple;
+  color: white;
+}

@@ -1,0 +1,12 @@
+
+div {
+  background: blue;
+  color: white;
+}
+svg {
+  border: 1px solid black;
+  background: lightblue;
+}
+.hidden {
+  content-visibility: hidden;
+}

@@ -1,0 +1,12 @@
+
+  body {
+    margin: 0px;
+    line-height: 1;
+  }
+
+  #too-wide {
+    display: inline-block;
+    height: 20px;
+    width: 250px;
+    background: blue;
+  }

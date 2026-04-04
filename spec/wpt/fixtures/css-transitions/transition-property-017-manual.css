@@ -1,0 +1,8 @@
+
+  #test {
+    clip: rect(0px, 60px, 60px, 0px);
+    position: absolute;
+    transition-duration: 2s;
+    transition-property: clip;
+    transition-timing-function: linear;
+  }

@@ -1,0 +1,12 @@
+
+  #container {
+    width: 400px;
+    height: 150px;
+  }
+
+  .anchor {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    display: inline-block;
+  }

@@ -1,0 +1,11 @@
+
+div {
+  font-size: 3em;
+  color: orange;
+}
+.test {
+  width: 4ch;
+  hyphens: auto;
+  color: blue;
+}
+section { max-width: 20em; }

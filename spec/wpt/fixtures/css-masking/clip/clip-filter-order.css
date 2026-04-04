@@ -1,0 +1,12 @@
+
+  body { margin: 0 }
+  #testcase {
+    position: absolute;
+    left: 10px;
+    width: 400px;
+    height: 400px;
+    background: green;
+    will-change: transform;
+    filter: drop-shadow(16px 16px 20px red);
+    clip: rect(0px, 200px, 200px, 0px);
+  }

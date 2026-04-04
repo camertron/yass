@@ -1,0 +1,12 @@
+
+body { overflow: hidden; }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.margin { margin-top: 10px; }
+.center { justify-self: center; }
+.i1 { background: magenta;  }
+.i2 { background: cyan; }
+.i3 { background: yellow; }
+.i4 { background: lime; }

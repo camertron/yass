@@ -1,0 +1,29 @@
+
+  #cb {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+  }
+  #target, #ref {
+    position: absolute;
+    left: 450px; /* force fallback */
+    height: 40px;
+    background-color: skyblue;
+  }
+  #ref {
+    background-color: seagreen;
+  }
+
+  @position-try --margin {
+    left:0px;
+    right:0px;
+    margin: 100px;
+  }
+  @position-try --no-margin {
+    left:0px;
+    right:0px;
+  }
+
+
+

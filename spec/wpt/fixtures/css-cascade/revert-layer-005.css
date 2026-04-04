@@ -1,0 +1,24 @@
+
+#target {
+  width: 100px;
+  height: 100px;
+}
+
+@layer {
+  #target { background-color: green; }
+}
+
+@layer {
+  #target {
+    background-color: red;
+    background-color: red !important;
+    background-color: revert-layer !important;
+  }
+}
+
+@layer {
+  #target {
+    background-color: red;
+    background-color: red !important;
+  }
+}

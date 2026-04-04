@@ -1,0 +1,15 @@
+
+    div {
+        color: green;
+        background-color: currentColor;
+        width: 100px;
+        height: 100px;
+    }
+
+    p {
+        color: initial;
+    }
+
+    :is(*, ::before) * {
+        color: purple;
+    }

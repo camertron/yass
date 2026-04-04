@@ -1,0 +1,17 @@
+
+    .wrapper {
+        border: 1px solid red;
+        width: max-content;
+    }
+    .item {
+        max-width: max-content;
+        box-sizing: border-box;
+
+        padding: 10px 20px;
+        background-color: blue;
+    }
+    .content {
+        width: 50px;
+        height: 50px;
+        background-color: green;
+    }

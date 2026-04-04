@@ -1,0 +1,16 @@
+
+  .float {
+    float: left;
+    width: 25px;
+    height: 25px;
+  }
+  .item {
+    container-type: inline-size;
+    height: 25px;
+  }
+  @container (width >= 50px) {
+    .item div { color: lime; }
+  }
+  @container (width >= 150px) {
+    .item div { color: green; }
+  }

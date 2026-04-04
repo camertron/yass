@@ -1,0 +1,11 @@
+
+@view-transition {
+  navigation: auto;
+}
+
+#target.oldPage {
+  view-transition-name: target;
+}
+#target.newPage {
+  view-transition-name: target;
+}

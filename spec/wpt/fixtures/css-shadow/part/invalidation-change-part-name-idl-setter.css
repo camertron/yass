@@ -1,0 +1,3 @@
+#c-e::part(partp) { color: red; }
+#c-e::part(new-partp) { color: green; }
+span { color: blue; }

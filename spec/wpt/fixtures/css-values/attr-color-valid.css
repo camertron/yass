@@ -1,0 +1,10 @@
+
+
+			html, body { margin: 0px; padding: 0px; }
+
+			html { background: white; overflow: hidden; }
+			#outer { position: relative; background: red; width: 200px; height: 200px; }
+
+			#outer { background: attr(data-test type(<color>)); }
+
+	

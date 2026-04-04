@@ -1,0 +1,14 @@
+
+
+/* WPT Print Reftest default size is 5x3in - this should only change that for the first page */
+@page :first {
+  size: portrait;
+}
+div:first-of-type {
+  break-after: page;
+}
+body {
+  margin: 0;
+}
+
+  

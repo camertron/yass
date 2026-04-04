@@ -1,0 +1,22 @@
+
+@supports (display: layout(registered)) {
+  .test {
+    display: layout(registered);
+  }
+}
+
+.container {
+  margin: 20px 0;
+  border: solid 2px;
+  width: 100px;
+}
+
+.float {
+  float: left;
+  width: 50%;
+  height: 50px;
+}
+
+.pink {
+  background: hotpink;
+}

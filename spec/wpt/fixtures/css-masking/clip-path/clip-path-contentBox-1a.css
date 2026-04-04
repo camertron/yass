@@ -1,0 +1,12 @@
+
+      div {
+        background-color: blue;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: 100px;
+        height: 100px;
+        padding: 40px;
+        clip-path: circle(farthest-side) content-box;
+      }
+    

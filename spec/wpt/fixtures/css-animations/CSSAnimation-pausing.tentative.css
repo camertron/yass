@@ -1,0 +1,5 @@
+
+@keyframes anim {
+  0% { margin-left: 0px }
+  100% { margin-left: 10000px }
+}

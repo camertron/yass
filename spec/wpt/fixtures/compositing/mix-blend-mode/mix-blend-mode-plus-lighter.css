@@ -1,0 +1,12 @@
+
+  .test {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    isolation: isolate;
+  }
+  .layer {
+    position: absolute;
+    inset: 0;
+    mix-blend-mode: plus-lighter;
+  }

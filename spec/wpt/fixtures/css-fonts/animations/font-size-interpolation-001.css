@@ -1,0 +1,12 @@
+
+.parent {
+  font-size: 30px;
+}
+.target {
+  display: inline-block;
+  font: 10px sans-serif;
+}
+.expected {
+  color: green;
+  margin-right: 30px;
+}

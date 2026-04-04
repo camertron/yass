@@ -1,0 +1,15 @@
+
+    #vertical {
+      writing-mode: vertical-lr;
+    }
+
+    .test {
+      display: flex;
+      width: 3em;
+      flex-direction: row;
+    }
+
+    .test > span {
+      width: 1em;
+    }
+  

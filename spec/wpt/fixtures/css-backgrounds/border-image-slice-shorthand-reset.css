@@ -1,0 +1,9 @@
+
+  div {
+    border: 1px solid;
+    border-image-slice: 1;
+  }
+  div {
+    /* Should reset border-image-slice */
+    border-image: linear-gradient(black, black);
+  }

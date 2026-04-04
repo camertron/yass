@@ -1,0 +1,17 @@
+
+  div
+    {
+      font-size: 300%;
+    }
+
+  div::selection
+    {
+      background-color: green;
+      color: yellow;
+    }
+
+  span::selection
+    {
+      color: orange;
+    }
+  

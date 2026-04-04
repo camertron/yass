@@ -1,0 +1,61 @@
+
+
+div {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: black;
+    animation: none 100000s -25000s linear forwards;
+}
+
+div:after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+}
+
+@keyframes explicit-from-and-to {
+    from { rotate: 80deg }
+    to   { rotate: 120deg}
+}
+
+@keyframes unspecified-from {
+    to { rotate: 360deg }
+}
+
+@keyframes base-value-from {
+    to { rotate: 120deg }
+}
+
+@keyframes unspecified-to {
+    from { rotate: 360deg }
+}
+
+@keyframes base-value-to {
+    from { rotate: 80deg }
+}
+
+#explicit-from-and-to {
+    animation-name: explicit-from-and-to;
+}
+
+#unspecifed-from {
+    animation-name: unspecified-from;
+}
+
+#base-value-from {
+    rotate: 80deg;
+    animation-name: base-value-from;
+}
+
+#unspecifed-to {
+    animation-name: unspecified-to;
+}
+
+#base-value-to {
+    rotate: 120deg;
+    animation-name: base-value-to;
+}
+

@@ -1,0 +1,5 @@
+
+
+#test       { --test-var: test-not-focused; }
+#test:focus { --test-var: test-focused; }
+

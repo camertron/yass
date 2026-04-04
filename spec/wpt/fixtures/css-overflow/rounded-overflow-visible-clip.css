@@ -1,0 +1,17 @@
+
+.container {
+  width: 50px;
+  height: 100px;
+  overflow: visible clip;
+  background: red;
+  display: inline-block;
+}
+.border-radius {
+  border-radius: 25px;
+}
+.child {
+  width: 100px;
+  height: 200px;
+  background: green;
+  fill: green;
+}

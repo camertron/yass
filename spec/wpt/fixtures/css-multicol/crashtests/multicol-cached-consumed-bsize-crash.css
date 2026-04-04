@@ -1,0 +1,9 @@
+
+:not(table) {
+  column-width: 0;
+  margin-right: 91%;
+}
+#a {
+  column-span: all;
+  display: -webkit-box;
+}

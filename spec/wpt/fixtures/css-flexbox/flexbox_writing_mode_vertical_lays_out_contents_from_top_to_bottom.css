@@ -1,0 +1,37 @@
+
+        .container {
+            display: flex;
+
+            flex-wrap: wrap;
+            align-content: flex-start;
+
+            writing-mode: vertical-rl;
+
+            width: 200px;
+            height: 200px;
+        }
+        .item {
+            width: 100px;
+            height: 100px;
+        }
+
+        .item.one
+        {
+            background: red;
+        }
+
+        .item.two
+        {
+            background: yellow;
+        }
+
+        .item.three
+        {
+            background: green;
+        }
+
+        .item.four
+        {
+            background: blue;
+        }
+    

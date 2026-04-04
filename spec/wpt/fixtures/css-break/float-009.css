@@ -1,0 +1,7 @@
+
+.multicol {
+  column-count: 2;
+  column-gap: 0;
+  width: 200px;
+  font: 50px/1 Ahem;
+}

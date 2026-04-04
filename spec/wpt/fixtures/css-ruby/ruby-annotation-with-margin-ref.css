@@ -1,0 +1,14 @@
+
+body {
+  display: flow-root;
+  font-family: Ahem;
+  font-size: 10px;
+}
+
+ruby {
+  color: transparent;
+}
+
+rt {
+  color: green;
+}

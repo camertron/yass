@@ -1,0 +1,10 @@
+
+.target {
+  display: inline-block;
+  font-size: 60pt;
+  color: rgb(50, 50, 50);
+}
+
+.expected {
+  margin-right: 15px;
+}

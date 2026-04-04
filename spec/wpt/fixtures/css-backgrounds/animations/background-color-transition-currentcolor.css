@@ -1,0 +1,19 @@
+
+  body {
+    padding:  0;
+    margin:  0;
+  }
+  .block {
+    width:  100px;
+    height:  100px;
+    padding:  0;
+    display:  inline-block;
+    background:  rgb(0, 254, 0);
+    color:  black;
+    margin:  10px;
+    /* Use a long transition that can be stalled at the midpoint. */
+    transition:  background 100000s cubic-bezier(0,1,1,0);
+  }
+  .block.tweak {
+    background:  currentColor;
+  }

@@ -1,0 +1,10 @@
+
+#border {
+  border: 1px solid black;
+  width: min-content;
+}
+fieldset {
+  contain: size;
+  visibility: hidden;
+  height: 1px;
+}

@@ -1,0 +1,15 @@
+
+.grid-lanes {
+    display: grid-lanes;
+    flow-tolerance: 0;
+    grid-template-columns: repeat(4, 50px) repeat(auto-fit, auto) repeat(4, 50px);
+    height: 200px;
+    width: 500px;
+    gap: 10px;
+}
+
+.grid-lanes > div {
+    width: 50px;
+    height: 100px;
+    background-color: orange;
+}

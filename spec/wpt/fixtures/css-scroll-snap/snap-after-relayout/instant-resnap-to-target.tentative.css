@@ -1,0 +1,25 @@
+
+      #scroller {
+        height: 200px;
+        width: 200px;
+        overflow-y: scroll;
+        border: 1px;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+      }
+      .target {
+        scroll-snap-align: start;
+        height: 100px;
+        width: 100px;
+      }
+      .pad {
+        width: 50%;
+        height: 300px;
+      }
+      #child1 {
+        background-color: blue;
+      }
+      #child2 {
+        background-color: green;
+      }
+    

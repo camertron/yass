@@ -1,0 +1,21 @@
+
+        body { margin: 0; }
+        .container {
+            width: 200px;
+            height: 200px;
+            font-family: Ahem;
+            font-size: 10px;
+            line-height: 1;
+        }
+        #test {
+            color: green;
+        }
+        #gradient {
+            float: left;
+            width: 100px;
+            height: 100px;
+            shape-outside: radial-gradient(circle, green 10px, rgba(0, 255, 0, 0.75) 25px, rgba(0, 255, 0, 0.25) 25px, transparent 50px);
+            shape-margin: 25px;
+            shape-image-threshold: 0.5;
+        }
+    

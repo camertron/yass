@@ -1,0 +1,12 @@
+
+div {
+    font-size: 2em;
+    width: 12ch;
+}
+.test {
+    text-align: justify;
+    text-align-last: justify;
+    text-justify: inter-character;
+}
+span { float: right; }
+.ref { color: blue; }

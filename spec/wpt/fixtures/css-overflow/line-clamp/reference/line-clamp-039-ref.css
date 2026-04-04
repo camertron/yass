@@ -1,0 +1,8 @@
+
+#clamp-and-columns {
+  columns: 3;
+  background-color: yellow;
+}
+p {
+  margin: 0;
+}

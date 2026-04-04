@@ -1,0 +1,14 @@
+
+#test {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: -100px;
+  width: 2.5em;
+  height: 1em;
+  white-space: pre;
+  font: 100px/1 Ahem;
+  color: blue;
+}
+#desc {
+  float: left;
+}

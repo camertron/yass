@@ -1,0 +1,19 @@
+
+.multicol {
+  width: 150px;
+  height: 50px;
+  columns: 2;
+  column-gap: 0;
+  column-fill: auto;
+  border: 3px solid black;
+  margin: 10px;
+}
+.outer {
+  margin-right: 25px;
+}
+.inner {
+  background: green;
+  color: green;
+  font: 25px/1 Ahem;
+  word-break: break-all;
+}

@@ -1,0 +1,6 @@
+
+  #test {
+    background-image: image-set(repeating-conic-gradient(red, blue 25%) 1x);
+    width: 100px;
+    height: 100px;
+  }

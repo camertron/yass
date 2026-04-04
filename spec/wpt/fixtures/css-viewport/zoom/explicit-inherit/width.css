@@ -1,0 +1,16 @@
+
+  #parent {
+    width: 100px;
+    background: red;
+  }
+  #child-zoomed {
+    zoom: 2;
+    width: inherit;
+    background: lime;
+    height: 100px;
+  }
+  #child {
+    width: 200px;
+    height: 200px;
+    background: green;
+  }

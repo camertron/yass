@@ -1,0 +1,29 @@
+
+
+div {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: black;
+}
+
+#explicit-from-and-to {
+    scale: 0.3;
+}
+
+#unspecifed-from {
+    scale: 0.8;
+}
+
+#base-value-from {
+    scale: 0.5;
+}
+
+#unspecifed-to {
+    scale: 0.4;
+}
+
+#base-value-to {
+    scale: 0.3;
+}
+

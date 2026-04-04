@@ -1,0 +1,7 @@
+
+legend {
+  transition: display 1s step-end allow-discrete;
+}
+@starting-style {
+  legend { display:inline; }
+}

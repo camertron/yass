@@ -1,0 +1,32 @@
+
+  html {
+    z-index: 0;
+
+    error3234 {**** ::}
+
+    #test1 {
+      @media screen {
+        z-index: 1;
+      }
+    }
+
+    { whatever }
+
+    :doesntexist {z-index: 9;}
+
+    #test2 {
+      z-index: 2;
+    }
+
+    #test3 {
+      z-index: 3;
+      @media screen {
+        error3234;
+        { foo }
+        z-index:4;
+      }
+      { foo }
+      z-index: 5;
+    }
+
+  }

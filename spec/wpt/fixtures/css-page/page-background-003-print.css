@@ -1,0 +1,12 @@
+
+  :root {
+    print-color-adjust: exact;
+  }
+  @page {
+    size: 500px 250px;
+    margin: 0;
+  }
+  body {
+    margin-left: 100px;
+    background: url(support/cat.png) repeat-y;
+  }

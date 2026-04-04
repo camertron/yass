@@ -1,0 +1,13 @@
+
+  .reversed-reset {
+    counter-reset: reversed(foo);
+  }
+  .item {
+    counter-increment: foo -1;
+  }
+  .regular-reset {
+    counter-reset: foo 2;
+  }
+  .output::before {
+    content: counters(foo, ".");
+  }

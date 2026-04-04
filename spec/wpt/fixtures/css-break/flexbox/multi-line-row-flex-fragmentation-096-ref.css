@@ -1,0 +1,38 @@
+
+     .multi-column {
+        columns: 2;
+        height: 60px;
+        column-width: 140px;
+        width: 290px;
+        gap: 10px;
+    }
+
+    body {
+        margin: 0px;
+    }
+
+    #flexbox {
+        border: 2px solid rgb(96 139 168);
+        width: 140px;
+        background-color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        height: 180px;
+        align-content: space-evenly;
+    }
+
+    .item {
+        width: 70px;
+        height: 50px;
+        background-color: #007bff;
+        color: white;
+
+        opacity: 0;
+    }
+
+    .mock-item {
+        width: 140px;
+        height: 50px;
+        background-color: #007bff;
+        position: absolute;
+    }

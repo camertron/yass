@@ -1,0 +1,9 @@
+
+#hidden {
+  content-visibility: hidden;
+}
+
+#absolute {
+  top: 100px;
+  left: 100px;
+}

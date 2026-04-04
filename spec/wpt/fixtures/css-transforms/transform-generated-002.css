@@ -1,0 +1,8 @@
+
+      span::before {
+        transform: rotate(180deg);
+        transform-origin: left;
+        display: block;
+        content: 'abc';
+      }
+    

@@ -1,0 +1,10 @@
+
+.grid {
+    display: grid;
+    grid-template-rows: repeat(4, 50px);
+    grid-auto-flow: dense;
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+}

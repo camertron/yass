@@ -1,0 +1,5 @@
+
+  progress { appearance: none }
+  ::slider-fill {
+    background: blue;
+  }

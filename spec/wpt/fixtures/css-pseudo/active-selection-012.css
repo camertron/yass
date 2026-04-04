@@ -1,0 +1,21 @@
+
+  div
+    {
+      background-color: red;
+      color: fuchsia;
+      display: inline;
+      font-size: 300%;
+    }
+
+  div::selection
+    {
+      background-color: green;
+      color: aqua;
+    }
+
+  /*
+  Chromium 77.0.3855.0 and above create a background-color #334C00 or
+  rgb(51, 76, 0) and not a green (#008000 or rgb(0, 128, 0)) background
+  color.
+  */
+  

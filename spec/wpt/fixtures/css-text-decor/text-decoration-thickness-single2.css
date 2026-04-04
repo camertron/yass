@@ -1,0 +1,8 @@
+
+div {
+    text-decoration: underline;
+    font: 20px/1 Monospace;
+    color: transparent;
+    text-decoration-thickness: 20px;
+    text-decoration-color: green;
+}

@@ -1,0 +1,40 @@
+
+  #non-intervening-scroll-container {
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    position: relative;
+  }
+
+  #position-container {
+    position: relative;
+  }
+
+  #scroll-container {
+    overflow: hidden scroll;
+    width: 400px;
+    height: 100px;
+  }
+
+  #anchor {
+    anchor-name: --a1;
+    width: 100px;
+    height: 100px;
+    background: orange;
+  }
+
+  #spacer {
+    height: 100px;
+  }
+
+  #target {
+    position-anchor: --a1;
+    position-visibility: anchors-visible;
+    position-area: right;
+    width: 100px;
+    height: 100px;
+    background: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }

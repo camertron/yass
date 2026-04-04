@@ -1,0 +1,17 @@
+
+
+.grid {
+    grid-template-columns: 100px 200px;
+    grid-template-rows: 200px 200px;
+    padding: 10px 15px 20px 30px;
+    border-width: 5px 10px 15px 20px;
+    border-style: dotted;
+    border-color: blue;
+    position: relative;
+}
+
+.cell {
+    width: 20px;
+    height: 40px;
+    margin: 4px 8px 12px 16px;
+}

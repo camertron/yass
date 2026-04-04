@@ -1,0 +1,7 @@
+
+.parent {
+  flex-shrink: 3;
+}
+.target {
+  flex-shrink: 1.5;
+}

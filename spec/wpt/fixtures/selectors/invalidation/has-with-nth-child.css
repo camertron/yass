@@ -1,0 +1,6 @@
+
+  #test-container > div { background-color: green; }
+  #target1:has(.item:nth-child(3)) { background-color: red; }
+  #target2:has(.item:nth-last-child(3)) { background-color: red; }
+  #target3:has(.item:nth-child(3) > .child) { background-color: red; }
+  #target4:has(.item:nth-last-child(3) > .child) { background-color: red; }

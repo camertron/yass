@@ -1,0 +1,10 @@
+
+p {
+  font-size: 1.5em;
+  border: 1px solid black;
+  padding: 10px;
+  margin-right: 310px;
+}
+.right {
+  float: right;
+}

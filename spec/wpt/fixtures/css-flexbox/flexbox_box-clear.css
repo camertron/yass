@@ -1,0 +1,17 @@
+
+#float {
+	background: #3366cc;
+	padding: 1em;
+	float: left;
+
+}
+#flex {
+	background: #ffcc00;
+	clear: both;
+	display: flex;
+}
+div div {
+	background: pink;
+	margin: 2em;
+	height: 4em;
+}

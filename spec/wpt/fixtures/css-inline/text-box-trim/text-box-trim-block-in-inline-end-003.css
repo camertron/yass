@@ -1,0 +1,10 @@
+
+.spacer {
+  background: lightgray;
+  block-size: 50px;
+}
+.target {
+  font: 50px/2 Ahem;
+  text-box-trim: trim-end;
+  text-box-edge: text;
+}

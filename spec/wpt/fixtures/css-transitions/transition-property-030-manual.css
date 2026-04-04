@@ -1,0 +1,10 @@
+
+  #test {
+    background-color: blue;
+    height: 100px;
+    min-width: 50px;
+    transition-duration: 4s;
+    transition-property: min-width;
+    transition-timing-function: linear;
+    width: 50px;
+  }

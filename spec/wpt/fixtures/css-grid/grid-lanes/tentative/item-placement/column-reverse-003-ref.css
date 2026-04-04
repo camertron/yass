@@ -1,0 +1,8 @@
+
+.grid-lanes {
+    display: grid-lanes;
+    flow-tolerance: 0;
+    grid-template-columns: repeat(3, min-content);
+    gap: 10px;
+    direction: rtl;
+}

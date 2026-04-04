@@ -1,0 +1,15 @@
+
+.grid {
+    display: grid;
+    background: gray;
+    flow-tolerance: 0;
+    grid-template-rows: repeat(5, auto fit-content(100px));
+    grid-template-columns: 100px 100px;
+    height: 300px;
+    width: 300px;
+    font: 15px/1 Ahem;
+}
+
+.grid > div {
+    width: 100px;
+}

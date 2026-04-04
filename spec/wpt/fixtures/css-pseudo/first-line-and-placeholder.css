@@ -1,0 +1,8 @@
+
+input::first-line {
+    background-color: initial;
+}
+
+input::placeholder {
+    color: red;
+}

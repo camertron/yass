@@ -1,0 +1,14 @@
+
+  #anchored {
+    position: absolute;
+    box-sizing: border-box;
+    border: solid;
+    position-anchor: --anchor;
+    position-try-fallbacks: flip-block;
+    position-visibility: always;
+    width: 50%;
+    height: 50%;
+    min-width: 60px;
+    min-height: 60px;
+    background: cyan;
+  }

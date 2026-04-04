@@ -1,0 +1,5 @@
+
+  ::highlight(example) {
+    text-decoration: wavy underline green 5px;
+    text-underline-offset: 20px;
+  }

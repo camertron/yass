@@ -1,0 +1,7 @@
+
+.child {
+  font: 100px/1 Ahem;
+  color: green;
+  inline-size: 100px;
+  outline: 3px solid green;
+}

@@ -1,0 +1,16 @@
+
+      #c-e::part(before-p)::before { color: green; }
+      #c-e::part(after-p)::after { color: green; }
+      #c-e::part(placeholder-p)::placeholder { color: green; }
+      #c-e::part(selection-p)::selection { color: green; }
+      #c-e::part(first-line-p)::first-line { color: green; }
+      #c-e::part(first-letter-p)::first-letter { color: green; }
+    
+
+        #before-i::before { content: "this text"; color: red; }
+        #after-i::after { content: "this text"; color: red; }
+        #placeholder-i::placeholder { color: red; }
+        #selection-i::selection { color: red; }
+        #first-line-i::first-line { color: red; }
+        #first-letter-i::first-letter { color: red; }
+      

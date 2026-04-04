@@ -1,0 +1,8 @@
+
+.container {
+  display: flex;
+  overflow: hidden;
+  width: 100px;
+  height: 50px;
+  justify-content: space-between;
+}

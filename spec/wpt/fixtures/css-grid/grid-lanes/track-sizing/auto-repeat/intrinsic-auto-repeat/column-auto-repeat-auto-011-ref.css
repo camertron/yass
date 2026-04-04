@@ -1,0 +1,15 @@
+
+.grid {
+  display: grid;
+  border: solid thick;
+  margin: 10px;
+  grid-template-columns: repeat(auto-fill, 100px 100px);
+  grid-column-gap: 100px;
+  width: 300px;
+  background: pink;
+}
+.grid > div {
+  background: lime;
+  width: 50px;
+  height: 50px;
+}

@@ -1,0 +1,11 @@
+
+  fieldset {
+    column-count: 3;
+    column-rule: 6px solid;
+    width: 400px;
+  }
+  h3 {
+    column-span: all;
+    outline: 1px solid blue;
+  }
+  

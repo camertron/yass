@@ -1,0 +1,15 @@
+
+  .target1 {
+    transition: --x 1s step-start;
+    transition-behavior: allow-discrete;
+  }
+  .target2 {
+    transition: --x 1s step-start;
+    transition-behavior: allow-discrete;
+    --x: a;
+  }
+  .target3 {
+    transition: --y 1s step-start;
+    transition-behavior: allow-discrete;
+    --y: a;
+  }

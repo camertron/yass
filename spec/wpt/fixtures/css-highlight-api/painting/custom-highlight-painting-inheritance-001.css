@@ -1,0 +1,8 @@
+
+  div::highlight(div-highlight) {
+    background-color: green;
+    color: red;
+  }
+  span::highlight(span-highlight) {
+    color: blue;
+  }

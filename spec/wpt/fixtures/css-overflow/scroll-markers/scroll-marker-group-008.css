@@ -1,0 +1,24 @@
+
+  div::scroll-marker-group {
+    display: flex;
+    height: 50px;
+    width: 100px;
+  }
+
+  div.scroll-marker-group-before {
+    overflow: auto;
+    scroll-marker-group: before;
+  }
+
+  div.scroll-marker-group-before::scroll-marker-group {
+    background: green;
+  }
+
+  div.scroll-marker-group-after {
+    overflow: auto;
+    scroll-marker-group: after;
+  }
+
+  div.scroll-marker-group-after::scroll-marker-group {
+    background: yellow;
+  }

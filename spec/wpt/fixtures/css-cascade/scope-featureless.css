@@ -1,0 +1,13 @@
+
+:root {
+  background: white;
+  color: white;
+}
+
+:scope {
+  --font-color: black;
+}
+
+#dut {
+  color: var(--font-color);
+}

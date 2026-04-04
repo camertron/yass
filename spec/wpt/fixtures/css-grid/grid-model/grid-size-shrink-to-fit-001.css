@@ -1,0 +1,48 @@
+
+.grid {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+}
+.container {
+    width: 600px;
+    height: 600px;
+}
+
+#absolutePos {
+   position: absolute;
+}
+
+#fixedPos {
+   position: fixed;
+}
+
+#floatPos {
+   float: left;
+}
+
+#one {
+    color: blue;
+    background: red;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#two {
+    color: yellow;
+    background: green;
+    grid-column: 2;
+    grid-row: 1;
+}
+#three {
+    color: gray;
+    background: pink;
+    grid-column: 1;
+    grid-row: 2;
+}
+#four {
+    color: orange;
+    background: brown;
+    grid-column: 2;
+    grid-row: 2;
+}

@@ -1,0 +1,12 @@
+
+  div {
+    font-size: 32px;
+  }
+  div p {
+    margin: 0;
+    color: lightgray;
+  }
+  div p::first-letter {
+    color: green;
+  }
+  

@@ -1,0 +1,10 @@
+
+svg {
+    width: 100px;
+    height: 100px;
+    overflow: visible;
+}
+
+polygon {
+    fill: green;
+}

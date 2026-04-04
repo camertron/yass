@@ -1,0 +1,6 @@
+
+  .grad {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(blue calc(10px * sibling-index()), yellow);
+  }

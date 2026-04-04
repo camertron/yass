@@ -1,0 +1,13 @@
+
+@namespace "http://www.w3.org/1999/xhtml";
+
+*|*.a {
+  display:none;
+}
+
+/* This should not apply, since the '.container' compound is affected by the
+   default namespace (even though the '.a' compound is not). */
+*|*:is(.container .a) {
+  display:initial;
+}
+

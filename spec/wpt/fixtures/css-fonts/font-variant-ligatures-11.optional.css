@@ -1,0 +1,15 @@
+
+	.test {
+		font-family: serif;
+		font-size: 3em;
+		line-height: 1.1;
+	}
+	.high {
+		font-variant-ligatures: none;
+	}
+	.low {
+		font-feature-settings: "rlig" off;
+	}
+	.test :lang(ar) {
+		font-family: serif;
+	}

@@ -1,0 +1,16 @@
+
+.uppercase ::marker {
+  text-transform: uppercase;
+}
+.inside {
+  list-style-position: inside;
+}
+.latin {
+  list-style-type: lower-latin;
+}
+.string {
+  list-style-type: "b. ";
+}
+.content::marker {
+  content: "c. ";
+}

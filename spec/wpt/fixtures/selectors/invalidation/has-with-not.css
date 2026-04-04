@@ -1,0 +1,4 @@
+
+div, main { color: grey }
+#subject:has(:not(.test)) { color: green }
+#subject:has(.test :not(.test)) { color: red }

@@ -1,0 +1,9 @@
+
+div {
+  contain: layout;
+  background: white;
+}
+span {
+  position: relative;
+  z-index: -1;
+}

@@ -1,0 +1,12 @@
+
+  :root {
+    font-size: 20px;
+  }
+  :root.change {
+    transition: font-size steps(2, start) 10s;
+    font-size: 30px;
+  }
+
+  #target1 {
+    width: 1rem;
+  }

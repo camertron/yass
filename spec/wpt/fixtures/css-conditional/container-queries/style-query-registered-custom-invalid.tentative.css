@@ -1,0 +1,11 @@
+
+  :root { container-name: --root; }
+  @property --prop {
+    syntax: "a";
+    initial-value: a;
+    inherits: true;
+  }
+  #target { background-color: green; }
+  @container --root style(--prop: b) {
+    #target { background-color: red; }
+  }

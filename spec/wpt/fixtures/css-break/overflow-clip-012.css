@@ -1,0 +1,20 @@
+
+  #multicol {
+    columns: 2;
+    column-fill: auto;
+    column-gap: 0px;
+    height: 100px;
+    width: 100px;
+  }
+  fieldset {
+     overflow: clip;
+     margin: 0;
+     border: none;
+     padding: 0;
+     max-height: 200px;
+  }
+  fieldset > div {
+    contain: size;
+    width: 50px;
+    background: green;
+  }

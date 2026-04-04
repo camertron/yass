@@ -1,0 +1,30 @@
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    float: left;
+    border: 2px solid purple;
+    padding: 2px;
+    margin-bottom: 2em;
+    height: 500px;
+    width: 150px;
+  }
+
+  span {
+    display: block;
+    background: lightgrey;
+    border: 2px solid black;
+    margin: 11px 13px 17px 7px;
+    inline-size: 6px;
+  }
+
+  .small { font: 12px Ahem; }
+  .big   { font: 20px Ahem; }
+
+  .hl  { writing-mode: horizontal-tb;  direction: ltr; }
+  .hr  { writing-mode: horizontal-tb;  direction: rtl; }
+  .vl  { writing-mode: vertical-lr;    direction: ltr; }
+  .vr  { writing-mode: vertical-rl;    direction: ltr; }
+  .vl_rtl { writing-mode: vertical-lr; direction: rtl; }
+  .vr_rtl { writing-mode: vertical-rl; direction: rtl; }
+  

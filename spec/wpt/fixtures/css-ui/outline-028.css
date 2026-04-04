@@ -1,0 +1,16 @@
+
+.outline-container {
+  width: max-content;
+  margin: 30px 0px;
+  outline: auto;
+  font: 10px/1 Ahem;
+}
+
+.float {
+  float: left;
+  color: lime;
+}
+
+span {
+  color: lime;
+}

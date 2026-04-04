@@ -1,0 +1,18 @@
+
+div {
+  font-size: 2em;
+  border: solid black;
+  margin: 5px;
+  width: min-content;
+}
+#test1 {
+  word-break: auto-phrase;
+  hyphens: manual;
+}
+#test2 {
+  word-break: auto-phrase;
+  hyphens: auto;
+}
+#ref {
+  hyphens: none;
+}

@@ -1,0 +1,7 @@
+
+  .parent {
+    columns: 50px / 100px;
+  }
+  .target {
+    columns: 200px / 100px;
+  }

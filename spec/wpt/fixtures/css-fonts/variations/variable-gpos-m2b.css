@@ -1,0 +1,23 @@
+
+    @font-face {
+    font-family: variabletest_box;
+    src: url(resources/variabletest_box.ttf);
+    }
+
+    body {
+    font-family: variabletest_box, sans-serif;
+    sans-serif;
+    font-size: 100px;
+    }
+
+    .gpos_m2b_left {
+    font-variation-settings: "VM2B" 0;
+    }
+
+    .gpos_m2b_middle {
+    font-variation-settings: "VM2B" 500;
+    }
+
+    .gpos_m2b_right {
+    font-variation-settings: "VM2B" 1000;
+    }

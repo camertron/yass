@@ -1,0 +1,18 @@
+
+.target {
+  position: absolute;
+  font-size: 20px;
+  top: 10px;
+  left: 10px;
+  width: 60px;
+  height: 30px;
+}
+
+.character {
+  display: inline-block;
+  background-color: green;
+  width: 1em;  /* Same as an 'X' in Ahem */
+  height: 1em; /* Same as an 'X' in Ahem */
+  position: absolute;
+}
+

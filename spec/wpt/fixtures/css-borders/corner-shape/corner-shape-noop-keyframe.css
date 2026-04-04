@@ -1,0 +1,13 @@
+
+  @keyframes noop {
+    from {
+      corner-shape: round;
+    }
+  }
+  .target {
+    width: 100px;
+    height: 100px;
+    background: green;
+    border-radius: 50px;
+    animation: noop 1s steps(1, start) paused;
+  }

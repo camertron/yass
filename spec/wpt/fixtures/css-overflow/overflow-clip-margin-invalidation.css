@@ -1,0 +1,27 @@
+
+  .container {
+      display: flex;
+  }
+  .parent {
+      flex: none;
+      width: 100px;
+      height: 100px;
+      flex: none;
+      overflow: clip;
+  }
+  .child {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      top: -50px;
+      left: -50px;
+      background-color: green;
+  }
+  .spacer {
+      flex: none;
+      height: 100px;
+      width: 100px;
+  }
+  .margin {
+    overflow-clip-margin: 10px;
+  }

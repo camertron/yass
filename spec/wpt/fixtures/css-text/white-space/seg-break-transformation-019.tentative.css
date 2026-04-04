@@ -1,0 +1,19 @@
+
+div {
+  font: 20px/1 Ahem;
+  color: green;
+}
+aside {
+  color: transparent;
+}
+#abs { position: absolute; }
+#fixed { position: fixed; }
+#float-r { float: right; }
+#float-l { float: left; margin-left: -3em; }
+#red {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: absolute;
+  z-index: -1;
+}

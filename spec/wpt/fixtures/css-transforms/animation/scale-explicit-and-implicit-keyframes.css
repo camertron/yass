@@ -1,0 +1,45 @@
+
+
+div {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: black;
+    animation: none 100000s -25000s linear forwards;
+}
+
+@keyframes explicit-from-and-to {
+    from { scale: 0.1 }
+    to   { scale: 0.9 }
+}
+
+@keyframes implicit-from {
+    to { scale: 0.2 }
+}
+
+@keyframes implicit-to {
+    from { scale: 0.2 }
+}
+
+#explicit-from-and-to {
+    animation-name: explicit-from-and-to;
+}
+
+#unspecifed-from {
+    animation-name: implicit-from;
+}
+
+#base-value-from {
+    scale: 0.6;
+    animation-name: implicit-from;
+}
+
+#unspecifed-to {
+    animation-name: implicit-to;
+}
+
+#base-value-to {
+    scale: 0.6;
+    animation-name: implicit-to;
+}
+

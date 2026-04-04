@@ -1,0 +1,21 @@
+
+.spacer {
+  background: lightgray;
+  block-size: 100px;
+}
+.multicol {
+  column-count: 3;
+  column-fill: auto;
+  border: 1px solid;
+  height: 290px;
+  width: 20ch;
+  font-family: Ahem;
+  font-size: 40px;
+  line-height: 2;
+  orphans: 1;
+  widows: 1;
+}
+.trim {
+  text-box-trim: trim-both;
+  text-box-edge: text;
+}

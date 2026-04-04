@@ -1,0 +1,21 @@
+
+  .min-width-flexbox {
+    display: flex;
+    outline: 5px solid blue;
+    height: 100px;
+    width: min-content;
+    margin-bottom: 20px;
+  }
+
+  .min-width-flexbox>div:nth-child(1) {
+    background: yellow;
+  }
+
+  .min-width-flexbox>div:nth-child(2) {
+    background: orange;
+  }
+
+  .min-width-flexbox>div>div {
+    width: 100px;
+  }
+

@@ -1,0 +1,11 @@
+
+.masked {
+  width: 500px;
+  height: 300px;
+  clip-path: url(#svgPath);
+  backdrop-filter: invert(100%);
+  background: transparent;
+}
+#svgText {
+  font: 100px/1 Ahem;
+}

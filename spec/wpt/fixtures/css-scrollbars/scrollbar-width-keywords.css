@@ -1,0 +1,13 @@
+
+  .area {
+    width: 100px;
+    height: 100px;
+    overflow: auto;
+    display: inline-block;
+  }
+  .area::before {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 200px;
+  }

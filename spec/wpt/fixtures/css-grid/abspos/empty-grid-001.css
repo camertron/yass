@@ -1,0 +1,16 @@
+
+.gridWithAbsolutePositionedItem {
+  /* Ensures that the grid container is the containing block of the absolutely positioned grid children. */
+  position: relative;
+}
+
+.grid {
+  grid-auto-columns: 200px;
+  grid-auto-rows: 200px;
+}
+
+.item {
+  position: absolute;
+  font: 10px/1 Ahem;
+}
+

@@ -1,0 +1,6 @@
+
+.isolate { isolation: isolate; }
+rect {
+  opacity: 0.6;
+  mix-blend-mode: plus-lighter;
+}

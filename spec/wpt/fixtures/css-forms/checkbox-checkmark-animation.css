@@ -1,0 +1,3 @@
+
+#checkbox { appearance: base; }
+#checkbox::checkmark { all: unset; content: "x"; }

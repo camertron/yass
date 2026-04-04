@@ -1,0 +1,13 @@
+
+html {
+  margin: 0;
+  font-size: 20px;
+}
+body {
+  margin: 1em;
+  border: 1px solid blue;
+}
+body > div {
+  margin-bottom: 2em;
+  border: 1px solid black;
+}

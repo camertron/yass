@@ -1,0 +1,33 @@
+
+    .flexContainer {
+      display: inline-flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 40px;
+      height: 40px;
+      background: lightblue;
+    }
+    .flexContainer > * {
+      height: 20px;
+    }
+
+    /* We'll make the second flex line not paint anything, so that the
+       reference case doesn't need to bother matching it. */
+    .flexContainer > *:nth-child(3),
+    .flexContainer > *:nth-child(4) {
+      visibility: hidden;
+    }
+
+    .smallFont {
+      font-size: 8px;
+      line-height: 8px;
+    }
+    .medFont {
+      font-size: 12px;
+      line-height: 12px;
+    }
+    .bigFont {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  

@@ -1,0 +1,8 @@
+
+  ruby { display: ruby; }
+  rb { display: ruby-base; white-space: nowrap; }
+  rt { display: ruby-text; white-space: nowrap; }
+  p { line-height: 3em; }
+  span {
+    text-decoration: underline;
+  }

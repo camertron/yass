@@ -1,0 +1,12 @@
+
+    .ib {
+      display: inline-block;
+    }
+    .vert {
+      writing-mode: vertical-rl;
+      color: transparent;
+    }
+    .overflow {
+      overflow: hidden;
+    }
+  

@@ -1,0 +1,9 @@
+
+.anchor:has(.foo)::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: green;
+  position: absolute;
+}

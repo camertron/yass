@@ -1,0 +1,16 @@
+
+  #test:after,
+  #test:before{
+  background:blue;
+  bottom:0;
+  content:"";
+  height:100px;
+  position:fixed;
+  right:0;
+  width:50px;
+  }
+  #test:before{
+  bottom:0;
+  right:50px;
+  }
+  

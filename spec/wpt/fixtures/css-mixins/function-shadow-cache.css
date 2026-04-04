@@ -1,0 +1,16 @@
+
+  @function --a() { result: 42px; }
+
+
+      @function --a() {
+        result: 10px;
+      }
+      div {
+        width: --a();
+      }
+    
+
+      div {
+        width: --a();
+      }
+    

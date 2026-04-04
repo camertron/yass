@@ -1,0 +1,22 @@
+
+  ruby.under {
+      ruby-position: under;
+  }
+  ruby div {
+      display: inline-block;
+      vertical-align: top;
+      width: 25px;
+      background: green;
+  }
+  .main {
+      height: 50px;
+  }
+  .annotation {
+      height: 25px;
+  }
+  .filler {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      background: green;
+  }

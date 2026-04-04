@@ -1,0 +1,29 @@
+
+  .contain {
+    contain: size;
+    border: 1em solid green;
+    background: red;
+    column-count: 3;
+  }
+  .innerContents {
+    color: transparent;
+    height: 100px;
+    width: 100px;
+  }
+  .col-width {
+    column-width: 20px;
+  }
+  .col-gap {
+    column-gap: 5px;
+  }
+  .flexBaselineCheck {
+    display: flex;
+    align-items: baseline;
+  }
+  .min {
+    width: min-content;
+  }
+  .max {
+    width: max-content;
+  }
+  

@@ -1,0 +1,7 @@
+
+    ol, ul { list-style: none; }
+    li::before {
+      content: "# ";
+      font-variant-numeric: tabular-nums;
+    }
+  

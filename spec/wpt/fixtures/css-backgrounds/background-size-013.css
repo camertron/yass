@@ -1,0 +1,15 @@
+
+        #ref-overlapped-red {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+        }
+        #test-overlapping-green {
+            background-image: url(support/1x1-green.png);
+            background-repeat: no-repeat;
+            background-size: auto 100px;
+            bottom: 100px;
+            height: 100px;
+            position: relative;
+        }
+    

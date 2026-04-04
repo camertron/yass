@@ -1,0 +1,25 @@
+
+  :root {
+    print-color-adjust: exact;
+  }
+  body {
+    font-family: century;
+    font-weight: bold;
+    color: black;
+    print-color-adjust: exact;
+  }
+  .tile {
+    width: 16px;
+    height: 16px;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH5gcMEDohgdlcwAAAAL1JREFUeNrt29ENgCAMRdFi2Ns6eR1CkxfjuQtAegJfsGZmKtmq7PKT3cBRAgBAAAAIAAABACAAAAQAgAAAEAAAAgBAAAAIAAABACAAAAQAgAAA0OP2+vkAwt8DnABXEAABACAAAAQAgAAAEAAAAgBAAAAIAAABACAAAAQAgAAAEAAAAgBAb7Tryj6Q7+7sBE4nwBUkAAAEAIAAABAAAAIAQAAACAAAAQAgAAAEAIAAABAAAAIAQAAACMDnuwGcQwlEUW+eJgAAAABJRU5ErkJggg==");
+    background-repeat: no-repeat;
+  }
+  .white   { background-position:   -2px   -2px }
+  .magenta { background-position: -34px   -2px }
+  .lime    { background-position: -66px   -2px }
+  .cyan    { background-position:   -2px -34px }
+  .blue    { background-position: -34px -34px }
+  .red     { background-position: -66px -34px }
+  .green   { background-position:   -2px -66px }
+  .gray    { background-position: -34px -66px }
+  .yellow  { background-position: -66px -66px }

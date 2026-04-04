@@ -1,0 +1,14 @@
+
+.target {
+  width: 100px;
+  height: 100px;
+  background: blue;
+}
+.child {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 150px;
+  left: 150px;
+  background: grey;
+}

@@ -1,0 +1,15 @@
+
+.grid-lanes {
+    display: grid-lanes;
+    background: gray;
+    position: relative;
+    flow-tolerance: 0;
+    grid-template-columns: repeat(3, 100px);
+    width: 300px;
+    justify-items: end;
+}
+
+.fifty-width {
+    width: 50px;
+    background-color: lightblue;
+}

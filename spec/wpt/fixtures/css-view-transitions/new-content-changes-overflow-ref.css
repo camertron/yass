@@ -1,0 +1,20 @@
+
+body { background: pink }
+#target {
+  position: relative;
+  background: green;
+  width: 100px;
+  height: 100px;
+  view-transition-name: target;
+}
+#child {
+  background: blue;
+  position: relative;
+  top: 20px;
+  left: 30px;
+  width: 50px;
+  height: 100px;
+}
+#child.large {
+  height: 200px;
+}

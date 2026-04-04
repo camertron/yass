@@ -1,0 +1,24 @@
+
+.inline-flexbox {
+    background-color: #aaa;
+    position: relative;
+}
+
+.writing-mode-vertical {
+  writing-mode: vertical-rl;
+}
+.inline-flexbox > * {
+    flex: none;
+}
+.inline-flexbox :nth-child(1) {
+    background-color: lightblue;
+}
+.inline-flexbox :nth-child(2) {
+    background-color: lightgreen;
+}
+.inline-flexbox :nth-child(3) {
+    background-color: pink;
+}
+.inline-flexbox :nth-child(4) {
+    background-color: yellow;
+}

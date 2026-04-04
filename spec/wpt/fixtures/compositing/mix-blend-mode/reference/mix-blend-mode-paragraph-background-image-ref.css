@@ -1,0 +1,11 @@
+
+            div {
+                width: 100px;
+                height: 100px;
+                background-image: url('../support/yellow_square.svg');
+            }
+
+            #blender {
+                color: #0F0;
+            }
+        

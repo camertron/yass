@@ -1,0 +1,37 @@
+
+:root {
+  scrollbar-width: none;
+}
+#spacer {
+  width: 100px;
+  height: 950px;
+  background: lightgreen;
+}
+#container {
+  width: 500px;
+  columns: 2;
+  height: 500px;
+}
+#target {
+  width: 200px;
+  height: 200px;
+  background: green;
+  view-transition-name: target;
+}
+#unrelated {
+  width: 100px;
+  height: 100px;
+  background: lightblue;
+  view-transition-name: unrelated;
+}
+
+::view-transition {
+  background: pink;
+}
+::view-transition-group(root) {
+  animation-duration: 500s;
+  visibility: hidden;
+}
+::view-transition-group(target) {
+  border: 1px solid black;
+}

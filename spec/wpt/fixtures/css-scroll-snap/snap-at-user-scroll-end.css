@@ -1,0 +1,21 @@
+
+html {
+  margin: 0px;
+  scroll-snap-type: both mandatory;
+}
+#content {
+  width: 1000vw;
+  height: 1000vh;
+  padding: 0px;
+  margin: 0px;
+}
+#target {
+  position: relative;
+  left: 400px;
+  top: 400px;
+  width: 400px;
+  height: 400px;
+  background-color: lightblue;
+  overflow: hidden;
+  scroll-snap-align: start;
+}

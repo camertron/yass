@@ -1,0 +1,13 @@
+
+body {
+  background: #ffa500; /* orange in hex for cross-browser consistency */
+}
+div {
+  margin-bottom: 120px;
+}
+.inline-backdrop-filter {
+  padding: 50px;
+  border: 1px solid blue;
+  display: inline;
+  background: #005aff; /* invert(100%) applied to orange #ffa500*/
+}

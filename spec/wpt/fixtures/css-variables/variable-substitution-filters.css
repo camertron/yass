@@ -1,0 +1,9 @@
+
+        .testArea {
+            width: 250px;
+            height: 167px;
+            display: inline-block;
+            background-image: url("../../../../images/a.jpg");
+            background-size: contain;
+        }
+    

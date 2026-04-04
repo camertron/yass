@@ -1,0 +1,10 @@
+
+  body > div {
+    border: solid silver;
+    float: left;
+    margin: 1em;
+    text-align: right;
+    font: 20px/1 sans-serif;
+  }
+  span { text-orientation: upright; }
+  hr { clear: both; }

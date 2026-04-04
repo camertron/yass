@@ -1,0 +1,20 @@
+
+body {
+  background: green;
+}
+
+#first {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  height: 50vh;
+}
+
+#second {
+  position: fixed;
+  top: 50vh;
+  left: 0;
+  width: 50vw;
+  height: 50vh;
+}

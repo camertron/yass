@@ -1,0 +1,11 @@
+
+.flex {
+  display: flex;
+}
+.inline {
+  display: inline;
+}
+.contents {
+  display: contents;
+  border: 1px solid red;
+}

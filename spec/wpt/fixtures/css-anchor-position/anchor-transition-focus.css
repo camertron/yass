@@ -1,0 +1,13 @@
+
+  body:has(:focus) {
+    --unused: foo;
+  }
+  #anchored {
+    position: absolute;
+    position-anchor: --foo;
+    top: 0px;
+    transition: top 0.1s steps(2, start);
+  }
+  :focus ~ #anchored {
+    top: 40px;
+  }

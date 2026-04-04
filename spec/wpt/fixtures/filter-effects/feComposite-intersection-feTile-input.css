@@ -1,0 +1,18 @@
+
+body {
+  margin: 0;
+}
+div {
+  position: absolute;
+  top: 0;
+  border: solid 20px;
+  width: 100px; height: 100px;
+  filter: url(#test);
+}
+div::after {
+  opacity: 0.5;
+  position: absolute;
+  inset: 0;
+  background: #0f0;
+  content: '';
+}

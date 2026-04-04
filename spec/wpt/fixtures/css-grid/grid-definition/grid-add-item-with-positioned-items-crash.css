@@ -1,0 +1,9 @@
+
+#grid {
+  display: grid;
+  grid-auto-flow: dense;
+}
+
+.absolute {
+  position: absolute;
+}

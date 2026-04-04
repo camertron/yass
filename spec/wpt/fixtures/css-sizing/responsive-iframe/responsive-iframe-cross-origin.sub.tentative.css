@@ -1,0 +1,5 @@
+
+iframe {
+  border: 1px solid black;
+  frame-sizing: content-height;
+}

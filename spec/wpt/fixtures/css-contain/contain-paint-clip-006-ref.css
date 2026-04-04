@@ -1,0 +1,10 @@
+
+  .root {
+    width: 100px;
+    height: 100px;
+    background: green;
+    margin: 25px;
+    padding: 25px;
+    overflow: hidden;
+  }
+  

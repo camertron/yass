@@ -1,0 +1,3 @@
+
+@import url("resources/scope-imported.css") scope((.scope1));
+@import url("resources/scope-imported.css") scope((.scope2));

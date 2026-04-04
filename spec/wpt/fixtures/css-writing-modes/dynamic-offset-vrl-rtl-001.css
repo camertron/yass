@@ -1,0 +1,26 @@
+
+
+html {
+  writing-mode: vertical-rl;
+  direction: rtl;
+  overflow: hidden;
+}
+
+#container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 200px;
+  background: yellow;
+}
+
+#abspos {
+  position: absolute;
+  bottom: 80px;
+  left: 70px;
+  width: 10px;
+  height: 10px;
+  background: fuchsia;
+}
+

@@ -1,0 +1,13 @@
+
+.container {
+  font: 20px/1.5 monospace;
+  width: 23.5ch;
+  border: solid 1px;
+  text-wrap: balance;
+}
+.float {
+  background: yellow;
+  padding: 0.2em 1ch;
+  line-height: 1.2;
+  float: right;
+}

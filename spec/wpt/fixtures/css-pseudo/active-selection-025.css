@@ -1,0 +1,17 @@
+
+  div
+    {
+      color: green;
+      font-size: 300%;
+    }
+
+  div::first-letter
+    {
+      color: purple;
+    }
+
+  div::selection
+    {
+      background-color: yellow;
+    }
+  

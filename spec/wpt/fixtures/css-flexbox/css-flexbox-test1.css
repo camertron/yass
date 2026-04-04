@@ -1,0 +1,23 @@
+
+        .container {
+            display: flex;
+            flex-flow: row;
+            writing-mode: vertical-rl;
+            color: white;
+        }
+        .item {
+            background: green;
+            height: 3em;
+            width: 3em;
+
+            /* make sure UA that doesn't support writing mode and flexbox fails. */
+            float: right;
+        }
+        .error {
+            position: absolute;
+            background: red;
+            height: 9em;
+            width: 3em;
+            z-index: -1;
+        }
+    

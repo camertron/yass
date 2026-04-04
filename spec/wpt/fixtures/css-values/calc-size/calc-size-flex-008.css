@@ -1,0 +1,16 @@
+
+#flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  width: 100px;
+  height: calc-size(auto, min(size, 100px));
+  background: red;
+}
+
+#flex > div {
+  width: 100px;
+  height: 60px;
+  background: green;
+}

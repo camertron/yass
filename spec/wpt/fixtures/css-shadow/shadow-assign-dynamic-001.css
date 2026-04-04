@@ -1,0 +1,12 @@
+
+  #host {
+    width: 100px;
+    height: 100px;
+    background: red;
+  }
+
+  #host > div {
+    width: 100px;
+    height: 50px;
+    background: green;
+  }

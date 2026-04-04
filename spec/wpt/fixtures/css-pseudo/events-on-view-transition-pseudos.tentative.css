@@ -1,0 +1,32 @@
+
+  html {
+    view-transition-name: none;
+  }
+
+  #target {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    contain: paint;
+    view-transition-name: target;
+  }
+
+  #underneath {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+  }
+
+  ::view-transition {
+    pointer-events: auto;
+    padding: 20px;
+    background: rgba(255, 0, 0, 0.5);
+    /* red */
+  }
+
+  ::view-transition-group(*) {
+    animation-duration: 300s;
+  }

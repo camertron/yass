@@ -1,0 +1,16 @@
+
+  #target {
+    font: 100px/1 Ahem;
+    color: green;
+    caret-color: green;
+    caret-shape: block;
+    caret-animation: manual;
+    width: 2ch;
+    background: red;
+  }
+  #target:focus {
+    outline: none;
+  }
+  svg {
+    vertical-align: top;
+  }

@@ -1,0 +1,15 @@
+
+    .container-2 {
+        width: 100px;
+        height: 100px;
+        overflow: auto;
+        background: silver;
+        border: solid thick;
+        scrollbar-width: none;
+    }
+
+    .element {
+        width: 1000px;
+        height: 5000px;
+        background: lime;
+    }

@@ -1,0 +1,21 @@
+
+.grid {
+  font: 10px/1 Ahem;
+  grid-template-columns: 100px;
+  height: 500px;
+  justify-items: start;
+  position: relative;
+  writing-mode: vertical-rl;
+}
+
+.grid > div:nth-child(1) { background: cyan; }
+.grid > div:nth-child(2) {
+  background: magenta;
+  width: 10px;
+  height: 100%;
+}
+
+.paddingLeft50Percent { padding-left: 50%; }
+.paddingRight50Percent { padding-right: 50%; }
+.paddingTop50Percent { padding-top: 50%; }
+.paddingBottom50Percent { padding-bottom: 50%; }

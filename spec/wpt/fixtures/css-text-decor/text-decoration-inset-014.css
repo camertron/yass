@@ -1,0 +1,18 @@
+
+body {
+  background: white;
+  color: black;
+}
+div {
+  position: relative;
+}
+h1 {
+  position: absolute;
+  font-family: monospace;
+  width: 16ch;
+}
+u {
+  text-decoration-color: black;
+  text-decoration-inset: -0.5ch;
+  box-decoration-break: clone;
+}

@@ -1,0 +1,6 @@
+
+@import url("data:text/css,");
+@namespace x "y";
+@page { @top-left {} }
+@media all {}
+#test { color: green; }

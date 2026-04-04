@@ -1,0 +1,15 @@
+
+html {
+  direction: rtl;
+}
+body {
+  height: 0;
+}
+html::before {
+  content: "This text must be on the right";
+}
+html::after {
+  content: "This text must be on the left";
+  display: block;
+  direction: ltr;
+}

@@ -1,0 +1,29 @@
+
+
+div {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: black;
+}
+
+#explicit-from-and-to {
+    translate: 125px;
+}
+
+#unspecifed-from {
+    translate: 50px;
+}
+
+#base-value-from {
+    translate: 125px;
+}
+
+#unspecifed-to {
+    translate: 150px;
+}
+
+#base-value-to {
+    translate: 175px;
+}
+

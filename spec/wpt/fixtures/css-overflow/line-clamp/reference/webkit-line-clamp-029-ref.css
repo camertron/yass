@@ -1,0 +1,10 @@
+
+.clamp {
+  display: block;
+  font: 16px / 32px monospace;
+  white-space: pre;
+  background-color: yellow;
+}
+.child {
+  overflow: hidden;
+}

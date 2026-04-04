@@ -1,0 +1,10 @@
+
+body { overflow: hidden; margin: 0; }
+.scaled {
+  transform: scale(2);
+  transform-origin: top left;
+}
+.text {
+  font-size: 50px;
+  color: blue;
+}

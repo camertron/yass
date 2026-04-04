@@ -1,0 +1,10 @@
+
+body {
+  font-family: serif;
+}
+p {
+  font-family: monospace;
+  --a: var(--b), sans-serif;
+  --b: Ahem;
+  font-family: var(--a);
+}

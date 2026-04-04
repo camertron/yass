@@ -1,0 +1,14 @@
+
+  a {
+    color: red;
+    width: 100px;
+    height: 100px;
+    display: block;
+    background: linear-gradient(white, currentColor);
+  }
+  a:visited {
+    color: blue;
+  }
+  a.green:visited {
+    color: green;
+  }

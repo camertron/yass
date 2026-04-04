@@ -1,0 +1,10 @@
+
+  .multicol {
+    columns: 3;
+    text-box-trim: trim-both;
+    font: 5px/10px Ahem;
+    margin: 10px;
+    orphans: 1;
+    widows: 1;
+    background: #ddd;
+  }

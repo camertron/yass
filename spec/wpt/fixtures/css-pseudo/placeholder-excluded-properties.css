@@ -1,0 +1,12 @@
+
+.horizontal::placeholder {
+  writing-mode: vertical-rl;
+  direction: rtl;
+}
+
+.vertical {
+  writing-mode: vertical-rl;
+}
+.vertical::placeholder {
+  text-orientation: upright;
+}

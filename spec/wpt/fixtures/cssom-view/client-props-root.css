@@ -1,0 +1,8 @@
+
+  :root {
+    /* Ensure the width of the root element's box is smaller than the viewport. */
+    margin: 5px;
+    /* Remove the scrollbars so that we can test {Width, Height}. */
+    scrollbar-width: none;
+    /* Would love to add a border but https://github.com/w3c/csswg-drafts/issues/5363 */
+  }

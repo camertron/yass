@@ -1,0 +1,34 @@
+
+            .box {
+                width: 200px;
+                height: 200px;
+                position: relative;
+            }
+            .box div {
+                position: absolute;
+            }
+            #div1 {
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: red;
+            }
+            #div2 {
+                top: 15px;
+                left: 15px;
+                right: 15px;
+                bottom: 15px;
+                background-color: yellow;
+            }
+            #div3 {
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border: solid 15px transparent;
+                padding: 15px;
+                background-color: green;
+                background-clip: border-box;
+            }
+    

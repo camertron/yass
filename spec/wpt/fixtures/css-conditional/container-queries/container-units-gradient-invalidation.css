@@ -1,0 +1,17 @@
+
+  .container {
+    container-type: size;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .smaller {
+    width: 400px;
+    height: 300px;
+  }
+  .box {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+  }

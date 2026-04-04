@@ -1,0 +1,15 @@
+
+  div {
+    font-size: 3em;
+    zoom: 2;
+  }
+
+  #target {
+    caret-color: lime;
+    caret-shape: block;
+    caret-animation: manual;
+  }
+
+  #target:focus {
+    outline: none;
+  }

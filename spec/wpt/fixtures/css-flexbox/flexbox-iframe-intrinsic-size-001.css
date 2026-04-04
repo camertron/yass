@@ -1,0 +1,10 @@
+
+div {
+    display: flex;
+    height: 400px;
+}
+
+iframe {
+    flex: 1 1 auto;
+    border: 0;
+}

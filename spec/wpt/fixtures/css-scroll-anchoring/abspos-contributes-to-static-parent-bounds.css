@@ -1,0 +1,17 @@
+
+
+body, html, #static { height: 0; }
+#abs {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  height: 1200px;
+  padding: 50px;
+  border: 5px solid gray;
+}
+#anchor {
+  background-color: #afa;
+  width: 100px;
+  height: 100px;
+}
+

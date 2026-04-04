@@ -1,0 +1,12 @@
+
+.flex {
+  display:flex;
+  flex-direction:column;
+}
+.percent-height {
+  height: 100%;
+}
+.max-sizes {
+  max-height: 100%;
+  max-width: 100%;
+}

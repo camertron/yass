@@ -1,0 +1,17 @@
+
+  .rowGapPx { grid-row-gap: 12px; }
+  #rowGapEm { grid-row-gap: 2em; font: 10px/1 Monospace; }
+  #rowGapVw { grid-row-gap: 2vw; }
+  #rowGapPercent { grid-row-gap: 15%; }
+  #rowGapCalc { grid-row-gap: calc(10px + 4px); }
+  #rowGapCalcFixedPercent { grid-row-gap: calc(5px + 10%); }
+  .rowGapInitial { grid-row-gap: initial; }
+  .rowGapInherit { grid-row-gap: inherit; }
+
+  #invalidRowGapNegative { grid-row-gap: -10px; }
+  #invalidRowGapMaxContent { grid-row-gap: max-content; }
+  #invalidRowGapNone { grid-row-gap: none; }
+  #invalidRowGapMultiple { grid-row-gap: 10px 1px; }
+  #invalidRowGapAngle { grid-row-gap: 3rad; }
+  #invalidRowGapResolution { grid-row-gap: 2dpi; }
+  #invalidRowGapTime { grid-row-gap: 200ms; }

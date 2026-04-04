@@ -1,0 +1,13 @@
+
+  .horizontal {
+    width: 100px;
+    height: 200px;
+    container-type: size;
+  }
+
+  .vertical {
+    width: 100px;
+    height: 200px;
+    container-type: size;
+    writing-mode: vertical-rl;
+  }

@@ -1,0 +1,14 @@
+
+@view-transition { navigation: auto; }
+
+
+html {
+  background: blue;
+}
+.hidden {
+  width: 10px;
+  height: 10px;
+  view-transition-name: hidden;
+  background: green;
+  contain: layout;
+}

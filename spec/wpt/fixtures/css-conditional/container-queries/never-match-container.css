@@ -1,0 +1,13 @@
+
+  #outer-container {
+    width: 100px;
+    container-type: inline-size;
+  }
+  #container-inline, #svg-container {
+    width: 100px;
+    container-type: inline-size;
+  }
+  @container (width >= 0px) {
+    #inner { color: red; }
+    #svg-inner { fill: red; }
+  }

@@ -1,0 +1,10 @@
+
+@view-transition {
+  navigation: auto;
+}
+#target {
+  view-transition-name: none;
+}
+#target.transition {
+  view-transition-name: target;
+}

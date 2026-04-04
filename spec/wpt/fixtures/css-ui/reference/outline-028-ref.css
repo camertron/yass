@@ -1,0 +1,17 @@
+
+.outline-container {
+  width: max-content;
+  margin: 30px 0px;
+  outline: auto;
+  font: 10px/1 Ahem;
+  height: 10px;
+}
+
+.inline {
+  display: inline-block;
+  color: lime;
+}
+
+span {
+  color: lime;
+}

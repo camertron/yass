@@ -1,0 +1,11 @@
+
+#container {
+  width: 150px;
+  height: 150px;
+  background: lightblue;
+}
+.positioned {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

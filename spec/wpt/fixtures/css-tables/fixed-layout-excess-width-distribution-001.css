@@ -1,0 +1,17 @@
+
+table {
+  width: 300px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  height: 20px;
+}
+
+td {
+  padding: 0px;
+  background: lime;
+  outline: 1px solid blue;
+}
+
+td:nth-child(1) { width: 20px; }
+td:nth-child(2) { width: 10px; }
+td:nth-child(3) { width: 10%; }

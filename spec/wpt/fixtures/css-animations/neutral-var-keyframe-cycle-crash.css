@@ -1,0 +1,10 @@
+
+    #test {
+        animation: anim 1s;
+    }
+
+    @keyframes anim {
+        to {
+            --x: var(--x);
+        }
+    }

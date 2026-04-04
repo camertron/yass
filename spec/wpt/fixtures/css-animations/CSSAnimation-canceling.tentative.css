@@ -1,0 +1,11 @@
+
+@keyframes translateAnim {
+  to { transform: translate(100px) }
+}
+@keyframes marginLeftAnim {
+  to { margin-left: 100px }
+}
+@keyframes marginLeftAnim100To200 {
+  from { margin-left: 100px }
+  to { margin-left: 200px }
+}

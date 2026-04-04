@@ -1,0 +1,25 @@
+
+  #test1 {
+    color: revert-rule !important;
+  }
+  #test1 {
+    color: green;
+  }
+
+
+  @layer {
+    #test2 {
+      color: revert-rule !important;
+    }
+  }
+  #test2 {
+    color: green;
+  }
+
+
+  #test3 {
+    color: green;
+  }
+  #test3 {
+    color: revert-rule !important;
+  }

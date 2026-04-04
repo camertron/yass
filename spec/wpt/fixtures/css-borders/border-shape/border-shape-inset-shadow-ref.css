@@ -1,0 +1,10 @@
+
+body {
+    margin: 0;
+}
+svg {
+    display: block;
+    width: 210px;
+    height: 210px;
+    overflow: visible;
+}

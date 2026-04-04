@@ -1,0 +1,9 @@
+
+p {
+  color: red;
+}
+p {
+  color: orange;
+  --\fffd: green;
+  color: var(--\fffd);
+}

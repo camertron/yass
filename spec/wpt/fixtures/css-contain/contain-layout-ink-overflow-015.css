@@ -1,0 +1,19 @@
+
+  div#outer
+    {
+      font-family: monospace;
+      font-size: 100px;
+      height: 2.8ch;
+      line-height: 1.5; /* computes to 150px */
+      width: 4ch;
+
+      overflow: auto;
+    }
+
+  div#inner
+    {
+      color: red;
+      contain: layout;
+      width: 0;
+    }
+  

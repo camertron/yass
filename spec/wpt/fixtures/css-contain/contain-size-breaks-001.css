@@ -1,0 +1,16 @@
+
+article {
+  height: 2.5em;
+  column-gap: 0;
+  columns: 3 1em;
+  width: 3em;
+
+  font-size: 40px;
+  font-family: ahem;
+  line-height: 1;
+}
+div {
+  contain: size;
+  height: 5em;
+  color: orange;
+}

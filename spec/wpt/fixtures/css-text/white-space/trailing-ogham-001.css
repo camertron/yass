@@ -1,0 +1,8 @@
+
+div {
+    border: solid;
+    width: min-content;
+}
+.soft-wrap { border-color: blue; }
+.hard-break { border-color: orange; }
+

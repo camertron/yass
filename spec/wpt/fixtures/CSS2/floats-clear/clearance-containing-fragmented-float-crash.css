@@ -1,0 +1,5 @@
+
+:not(em) {
+  border-left: 4px dashed green;
+  column-width: 0;
+}

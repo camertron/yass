@@ -1,0 +1,7 @@
+
+div {
+  font-family: monospace;
+  width: 2em;
+}
+[lang=ja] { border: solid blue; }
+[lang=ja-Hang] { border: solid orange; }

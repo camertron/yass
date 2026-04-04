@@ -1,0 +1,8 @@
+
+
+@keyframes multiple-from-to-keyframes {
+    from, to { animation-timing-function: cubic-bezier(0, 0, 1, 1) }
+    from { left: 50px }
+    to { left: 150px }
+}
+

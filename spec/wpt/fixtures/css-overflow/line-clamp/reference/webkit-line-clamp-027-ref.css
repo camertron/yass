@@ -1,0 +1,8 @@
+
+.clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  font: 16px / 32px monospace;
+  white-space: pre;
+  background-color: yellow;
+}

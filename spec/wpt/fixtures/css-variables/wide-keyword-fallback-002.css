@@ -1,0 +1,10 @@
+
+  .outer1 {
+    --color: green;
+  }
+  .outer2 {
+    --color: var(--foo, unset);
+  }
+  .inner {
+    color: var(--color);
+  }

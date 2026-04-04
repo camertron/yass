@@ -1,0 +1,12 @@
+
+  /*  See crbug.com/1483736.
+      Values above 255 were being stored for legacy colors which was causing
+      them to be rendered a if their alphas were greater.
+  */
+  body {
+    background-color: black;
+  }
+  div {
+    height: 100px;
+    background-color: rgba(500, 500, 500, 0.5);
+  }

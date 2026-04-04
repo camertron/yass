@@ -1,0 +1,9 @@
+
+div {
+  font-family: monospace;
+  width: 16ch;
+  white-space: pre;
+  overflow: scroll;
+  text-overflow: ellipsis;
+  border: solid blue;
+}

@@ -1,0 +1,9 @@
+
+body  {
+  writing-mode: vertical-lr;
+}
+#target {
+  overflow-y: scroll;
+  max-height: 5px;
+  background: gray;
+}

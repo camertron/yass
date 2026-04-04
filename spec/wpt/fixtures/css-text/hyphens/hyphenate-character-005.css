@@ -1,0 +1,7 @@
+
+div {
+  font: 32px sans-serif;
+  margin-left: 10ch;
+  width: 3ch;
+  hyphenate-character: "\00a0\0640";
+}

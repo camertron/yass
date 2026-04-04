@@ -1,0 +1,13 @@
+
+#outer {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+#inner {
+  color: green;
+  background-color: green;
+  display: inline;
+  display: revert-layer; /* This should behave as 'revert', setting 'display' to 'block' */
+}

@@ -1,0 +1,8 @@
+
+
+    html { background: red; }
+    @media (min-width: calc(-100px)) { /* should clamp to 0px */
+      html { background: green; }
+    }
+
+  

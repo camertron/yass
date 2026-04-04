@@ -1,0 +1,11 @@
+
+.container {
+  font-family: monospace;
+  font-size: 20px;
+  width: 20ch;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-wrap: balance;
+}

@@ -1,0 +1,20 @@
+
+    body {
+        background: green;
+    }
+    main {
+        view-transition-name: main;
+    }
+
+    section {
+        view-transition-name: section;
+        view-transition-group: main;
+    }
+
+    ::view-transition-group(*)
+    ::view-transition-image-pair(*),
+    ::view-transition-old(*),
+    ::view-transition-new(*)
+     {
+        display: none;
+    }

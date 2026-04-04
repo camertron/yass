@@ -1,0 +1,15 @@
+
+.test {
+  height: 100px;
+  background-color: green;
+}
+
+#target1 {
+  width: 100px;
+}
+
+@layer {
+  #target3 {
+    width: 100px;
+  }
+}

@@ -1,0 +1,12 @@
+
+  #column {
+    column-count: 3;
+    column-rule: 6px solid;
+    width: 500px;
+    outline: 1px solid black;
+  }
+  h3 {
+    column-span: none;
+    outline: 1px solid blue;
+  }
+  

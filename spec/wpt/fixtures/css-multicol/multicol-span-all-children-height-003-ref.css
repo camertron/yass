@@ -1,0 +1,23 @@
+
+  article {
+    width: 400px;
+    height: 200px;
+    background-color: lightgreen;
+    border: 5px solid purple;
+  }
+  div.columns {
+    column-count: 2;
+  }
+  div.block1 {
+    background-color: yellow;
+    height: 600px;
+  }
+  div.spanner {
+    height: 50px;
+    background-color: lightblue;
+  }
+  div.block2 {
+    background-color: yellow;
+    height: 200px;
+  }
+  

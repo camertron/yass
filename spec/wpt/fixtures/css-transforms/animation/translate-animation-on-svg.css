@@ -1,0 +1,19 @@
+
+
+@keyframes translate-animation {
+    from { translate: 0 0; }
+    to   { translate: 100px 100px; }
+}
+
+svg {
+    width: 400px;
+    height: 400px;
+}
+
+rect {
+    width: 100px;
+    height: 100px;
+    transform-origin: top left;
+    animation: translate-animation 1ms linear forwards;
+}
+

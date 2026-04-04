@@ -1,0 +1,12 @@
+
+.grid {
+  grid-template-columns: 500px;
+  grid-template-rows: 500px;
+}
+.fixedSizes {
+   width: 150px;
+   height: 150px;
+}
+.autoMargins {
+   margin: auto;
+}

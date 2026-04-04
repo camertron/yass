@@ -1,0 +1,21 @@
+
+  #scroller {
+    overflow: hidden;
+    height: 100px;
+    padding: 0;
+    scroll-marker-group: before;
+  }
+
+  #scroller::scroll-marker-group {
+    display: flex;
+    height: 200px;
+    background: gray;
+  }
+
+  #scroller>div::scroll-marker {
+    display: block;
+    width: 25px;
+    height: 50%;
+    content: "";
+    background: yellow;
+  }

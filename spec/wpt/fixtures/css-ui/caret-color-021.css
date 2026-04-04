@@ -1,0 +1,9 @@
+
+  @keyframes caret-color-to-lime {
+    to { caret-color: lime; }
+  }
+
+  #textarea {
+    color: magenta;
+    animation: caret-color-to-lime 2s -1s paused;
+  }

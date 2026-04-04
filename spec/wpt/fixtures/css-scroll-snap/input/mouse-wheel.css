@@ -1,0 +1,18 @@
+
+  #scroller {
+    scroll-snap-type: block mandatory;
+    overflow: scroll;
+    height:  400px;
+    width: 400px
+  }
+  #space {
+    width: 200px;
+    height: 4000px;
+  }
+  .box {
+    scroll-snap-align: start;
+    background: blue;
+    margin-bottom:  10px;
+    width: 100px;
+    height: 100px;
+  }

@@ -1,0 +1,13 @@
+
+
+#square {
+  width: 100px;
+  background: green;
+}
+
+@media (width = 100vw) {
+  #square {
+    height: 100px;
+  }
+}
+

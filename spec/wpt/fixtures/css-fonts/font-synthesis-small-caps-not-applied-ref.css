@@ -1,0 +1,10 @@
+
+    @font-face {
+        font-family: "exo";
+        src: url(support/fonts/Exo-DemiBold.otf);
+    }
+    .test {
+        font-family: "exo";
+        font-size: 3em;
+        font-variant: small-caps;
+    }

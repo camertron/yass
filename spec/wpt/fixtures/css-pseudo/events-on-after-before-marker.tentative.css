@@ -1,0 +1,47 @@
+
+  div {
+    margin: 20px;
+  }
+
+  div::after {
+    content: "A";
+    padding: 10px;
+    background: red;
+  }
+
+  div::before {
+    content: "B";
+    padding: 10px;
+    background: blue;
+  }
+
+  li::marker {
+    content: "M";
+    background: green;
+    padding: 5px;
+  }
+
+  #target-nested::after {
+    content: "L";
+    display: list-item;
+    list-style-position: inside;
+    list-style-type: disc;
+    background: orange;
+    padding: 10px;
+  }
+
+  #lca-container {
+    margin: 20px;
+    background: lightyellow;
+    padding: 5px;
+  }
+  #lca-after-host::after {
+    content: "PSEUDO";
+    display: block;
+    background: pink;
+    padding: 15px;
+  }
+  #lca-other {
+    background: lightblue;
+    padding: 15px;
+  }

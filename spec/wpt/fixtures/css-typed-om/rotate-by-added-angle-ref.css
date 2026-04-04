@@ -1,0 +1,10 @@
+
+.ref {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  transform: rotate(90deg);
+  background-color: green;
+}

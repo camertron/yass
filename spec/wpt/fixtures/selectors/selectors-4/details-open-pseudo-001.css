@@ -1,0 +1,8 @@
+
+details {
+  color: red;
+}
+:open {
+  color: green;
+  margin-left: 5em;
+}

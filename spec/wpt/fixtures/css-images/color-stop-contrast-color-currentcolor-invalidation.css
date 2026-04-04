@@ -1,0 +1,12 @@
+
+  .test {
+    color: black;
+    width: 96px;
+    height: 48px;
+  }
+  #t1 {
+    background-image: linear-gradient(contrast-color(currentColor) 0 0);
+  }
+  #t2 {
+    background-image: conic-gradient(contrast-color(currentColor) 0 0);
+  }

@@ -1,0 +1,24 @@
+
+  body {
+    line-height: 0;
+  }
+
+  div {
+    display: inline-grid;
+    height: 250px;
+    width: 350px;
+    background: purple;
+    margin: 10px;
+    vertical-align: top;
+  }
+
+  svg {
+    background: green;
+  }
+
+  .justify {
+    justify-self: stretch;
+  }
+  .align {
+    align-self: stretch;
+  }

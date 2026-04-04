@@ -1,0 +1,16 @@
+
+flexbox {
+    display: flex;
+    width: min-content;
+    height: 100px;
+    flex-direction: column;
+    margin-trim: block;
+}
+item {
+    display: block;
+    width: 100px;
+    height: 50px;
+    margin-block: 25px;
+    flex: 1 0 auto;
+    background-color: green;
+}

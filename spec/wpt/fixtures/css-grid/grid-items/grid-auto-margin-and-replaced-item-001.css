@@ -1,0 +1,21 @@
+
+  #reference-overlapped-red {
+    position: absolute;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    left:0;
+    right:0;
+    margin: auto;
+    z-index: -1;
+  }
+  .grid {
+    display: grid;
+  }
+  .nested-grid {
+    display: grid;
+    margin: auto;
+  }
+  img {
+    max-height: 100%;
+  }

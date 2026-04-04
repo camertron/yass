@@ -1,0 +1,15 @@
+
+#flex-container {
+  display: flex;
+  flex-direction: column;
+}
+#flex-item {
+  width: max-content;
+  height: 200px;
+  background: red;
+}
+#target {
+  display: block;
+  height: 100%;
+  background: green;
+}

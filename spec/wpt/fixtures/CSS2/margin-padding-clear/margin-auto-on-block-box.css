@@ -1,0 +1,14 @@
+
+.wrapper {
+  width: 100px;
+  margin-left: 250px;
+}
+.test {
+  width: 50px;
+  height: 5px;
+  background: black;
+  margin: auto;
+}
+.test.big {
+  width: 200px;
+}

@@ -1,0 +1,3 @@
+
+  #mc > div { display:inline-block; width:100%; height:20px; }
+  #mc > div.green { height:100px; background:green; }

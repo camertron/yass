@@ -1,0 +1,5 @@
+
+  div:nth-child(odd of :not(.c)) {
+    background-color: silver;
+  }
+  .c * {}

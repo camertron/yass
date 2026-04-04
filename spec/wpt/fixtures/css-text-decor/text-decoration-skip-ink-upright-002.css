@@ -1,0 +1,11 @@
+
+           div{
+                font: 20px/1 Ahem;
+                text-decoration: green underline;
+                text-decoration-skip-ink: auto;
+                color: transparent;
+                text-underline-offset: -0.5em;
+                writing-mode: vertical-rl;
+                text-orientation: upright;
+           }
+        

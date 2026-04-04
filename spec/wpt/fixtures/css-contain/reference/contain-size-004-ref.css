@@ -1,0 +1,8 @@
+
+rtc {
+  display: ruby-text-container;
+  font-size: 1rem;
+}
+div {
+  overflow: hidden;
+}

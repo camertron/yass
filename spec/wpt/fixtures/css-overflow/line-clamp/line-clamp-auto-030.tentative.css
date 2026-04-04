@@ -1,0 +1,12 @@
+
+.clamp {
+  line-clamp: auto;
+  max-height: calc(4lh + 2 * 4px);
+  font: 16px / 32px serif;
+  white-space: pre;
+  background-color: yellow;
+  margin: 4px;
+}
+.clamp div {
+  margin: 4px;
+}

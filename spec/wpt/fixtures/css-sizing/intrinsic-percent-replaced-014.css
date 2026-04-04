@@ -1,0 +1,15 @@
+
+.outer {
+  width: 25px;
+  height: 50px;
+}
+.inner {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 100%;
+  padding-top: 100%; /* 25px */
+  background: green;
+}
+canvas {
+  height: 100%;
+}

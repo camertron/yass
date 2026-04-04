@@ -1,0 +1,41 @@
+
+.abspos-cb {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 1px solid;
+}
+
+.positioned {
+  width: 15px;
+  height: 15px;
+  background: purple;
+
+  position: absolute;
+  position-anchor: --a;
+  left: anchor(right);
+  top: anchor(top);
+}
+
+.scroller {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.filler {
+  width: 1px;
+  height: 500px;
+}
+
+.anchor {
+  width: 15px;
+  height: 15px;
+  background: magenta;
+  anchor-name: --a;
+}
+
+.contain {
+  contain: layout size;
+  width: 200px;
+  height: 200px;
+}

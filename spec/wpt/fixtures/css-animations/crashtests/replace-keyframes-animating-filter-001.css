@@ -1,0 +1,10 @@
+
+#el1 {
+  height: 100px;
+  width: 100px;
+  animation: kf1 2s linear;
+}
+@keyframes kf1 {
+  from { filter: grayscale(0.9) }
+  to { filter: grayscale(0.8) }
+}

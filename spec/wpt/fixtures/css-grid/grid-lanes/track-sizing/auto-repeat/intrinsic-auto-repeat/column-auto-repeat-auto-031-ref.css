@@ -1,0 +1,15 @@
+
+.grid {
+    display: grid;
+    background: gray;
+    grid-template-columns: repeat(1, auto auto 100px);
+    grid-template-rows: repeat(4, 100px);
+    width: 900px;
+    height: 300px;
+}
+
+.grid > div {
+    width: 300px;
+    height: 100px;
+    grid-column: span 2;
+}

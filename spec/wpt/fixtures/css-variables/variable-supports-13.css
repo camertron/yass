@@ -1,0 +1,5 @@
+
+body { color: red; }
+@supports (color: something 3px url(whereever) calc(var(--a) + 1px)) {
+  p { color: green; }
+}

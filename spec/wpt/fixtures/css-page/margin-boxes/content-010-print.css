@@ -1,0 +1,17 @@
+
+  html {
+    counter-reset: foo 10;
+  }
+  @page {
+    margin: 4em;
+    counter-increment: foo;
+
+    @bottom-center {
+      text-align: left;
+      vertical-align: top;
+      content: counter(foo);
+    }
+  }
+  body {
+    margin: 0;
+  }

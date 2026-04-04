@@ -1,0 +1,6 @@
+
+.auto {
+  content-visibility: auto;
+  width: fit-content;
+}
+.hidden { height: 0; }

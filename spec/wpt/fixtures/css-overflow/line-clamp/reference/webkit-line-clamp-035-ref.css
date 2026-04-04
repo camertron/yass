@@ -1,0 +1,10 @@
+
+#parent {
+  display: inline-block;
+  background: green;
+}
+#clamp {
+  font-family: Ahem;
+  display: block;
+  overflow: hidden; /* can be removed once implementations update their old -webkit-line-clamp implementations */
+}

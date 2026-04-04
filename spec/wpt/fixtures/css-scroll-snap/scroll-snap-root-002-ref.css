@@ -1,0 +1,10 @@
+
+html, body { margin: 0; padding: 0; }
+
+#target {
+  border-bottom: solid orange thick;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20px; /* Avoid subpixel sizes depending on fonts */
+}

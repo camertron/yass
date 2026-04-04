@@ -1,0 +1,14 @@
+
+  table
+    {
+      border-spacing: 32px;
+      margin: -32px 0px 0px -32px;
+    }
+
+  td
+    {
+      height: 100px;
+      padding: 0px;
+      width: 100px;
+    }
+  

@@ -1,0 +1,11 @@
+
+    .test {
+        margin: 20px;
+        width: 300px;
+        height: 200px;
+        box-sizing: border-box;
+        border: 50px solid rgba(0, 128, 0, 0.75);
+        background-clip: border-area, border-box;
+        background-color: orange;
+        background-image: url(../resources/green-100.png), none;
+    }

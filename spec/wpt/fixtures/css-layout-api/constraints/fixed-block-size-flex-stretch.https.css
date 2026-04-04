@@ -1,0 +1,22 @@
+
+body {
+  display: flex;
+  height: 50px;
+}
+
+.test {
+  background: red;
+  --expected-block-size: 40; /* flex-item should stretch to (50 - 10)px */
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.child {
+  background: green;
+}
+
+@supports (display: layout(test)) {
+  .test {
+    display: layout(test);
+  }
+}

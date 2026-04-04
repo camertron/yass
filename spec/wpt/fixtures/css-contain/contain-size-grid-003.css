@@ -1,0 +1,11 @@
+
+.grid {
+  display: inline-grid;
+  contain: size;
+  position: relative;
+  font: 10px/1 Ahem;
+}
+.wrapper {
+  width: 300px;
+  height: 150px;
+}

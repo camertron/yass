@@ -1,0 +1,13 @@
+
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+}
+html {
+  background-color: white;
+}
+body {
+  border: 20px solid green;
+  padding: 10px;
+}

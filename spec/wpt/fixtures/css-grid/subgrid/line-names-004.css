@@ -1,0 +1,21 @@
+
+html,body {
+  color:black; background-color:white; font:24px/1 monospace; padding:0; margin:0;
+}
+
+.grid {
+  display: grid;
+  grid: auto / [a] 50px 50px 50px 50px [b] 50px 50px [a b];
+  padding: 20px 10px;
+}
+
+.subgrid {
+  display: grid;
+  grid-template-columns:  subgrid [x] [b] [] [] [b];
+  grid-auto-rows: 10px;
+  grid-column: 2 / span 4;
+}
+
+x { background: grey; }
+
+  

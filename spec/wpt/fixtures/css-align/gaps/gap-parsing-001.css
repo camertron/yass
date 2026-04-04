@@ -1,0 +1,25 @@
+
+  .gapPx { gap: 12px; }
+  #gapPxTwo { gap: 12px 8px; }
+  #gapPxPercent { gap: 12px 10%; }
+  #gapEm { gap: 2em; font: 10px/1 Monospace; }
+  #gapEmTwo { gap: 2em 4em; font: 10px/1 Monospace; }
+  #gapVw { gap: 2vw; }
+  #gapVwTwo { gap: 2vw 1vh; }
+  #gapPercent { gap: 15%; }
+  #gapPercentTwo { gap: 15% 10%; }
+  #gapCalc { gap: calc(10px + 4px); }
+  #gapCalcFixedPercent { gap: calc(5px + 10%); }
+  #gapCalcTwo { gap: calc(10px + 4px) calc(20px - 8px); }
+  .gapInitial { gap: initial; }
+  .gapInherit { gap: inherit; }
+
+  #invalidGapNegative { gap: -10px; }
+  #invalidGapMaxContent { gap: max-content; }
+  #invalidGapNone { gap: none; }
+  #invalidGapAngle { gap: 3rad; }
+  #invalidGapResolution { gap: 2dpi; }
+  #invalidGapTime { gap: 200ms; }
+  #invalidGapThree { gap: 10px 1px 5px; }
+  #invalidGapSlash { gap: 10px / 5px; }
+  #invalidGapOneWrong { gap: 10px -5px; }

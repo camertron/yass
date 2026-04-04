@@ -1,0 +1,32 @@
+
+    html, body {
+      font: 16px/1 monospace;
+      background: white;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      width: 260px;
+      height: 170px;
+      border: 1px solid;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row-reverse;
+      height: 70px;
+      flex-shrink: 0;
+      gap: 4px;
+      align-items: start;
+    }
+
+    item {
+      display: block;
+      width: min-content;
+      height: min-content;
+      color: white;
+      background: #555;
+    }
+  

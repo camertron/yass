@@ -1,0 +1,12 @@
+
+    body {
+        margin: 0;
+    }
+    #target {
+        box-sizing: border-box;
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        corner-shape: bevel;
+        background: green;
+    }

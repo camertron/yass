@@ -1,0 +1,21 @@
+
+body {
+  height: 200px;
+}
+
+.test {
+  background: red;
+  --expected-block-size: 100;
+  width: 100px;
+  height: 50%;
+}
+
+.child {
+  background: green;
+}
+
+@supports (display: layout(test)) {
+  .test {
+    display: layout(test);
+  }
+}
