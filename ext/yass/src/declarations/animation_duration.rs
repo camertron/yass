@@ -1,6 +1,6 @@
 use std::cell::RefCell;
 
-use magnus::{DataTypeFunctions, Error, IntoValue, RArray, Ruby, TypedData, Value, gc, typed_data, value::{Id, Opaque, ReprValue}};
+use magnus::{DataTypeFunctions, Error, IntoValue, RArray, Ruby, TypedData, Value, gc, typed_data, value::{Opaque, ReprValue}};
 use style::{properties::longhands::animation_duration::SpecifiedValue, values::{generics::animation::AnimationDuration, specified::Time}};
 
 use crate::{declarations::time::YTime, cached_value_list::CachedValueList};
