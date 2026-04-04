@@ -293,6 +293,53 @@ RSpec.describe(Yass) do
     end
   end
 
+  describe "empty cells declarations" do
+    def empty_cells_declaration(value)
+      sheet = Yass::Parser.parse(".x { empty-cells: #{value}; }")
+      sheet.rules.first.declarations.first
+    end
+
+    it "exposes empty cells values as declaration wrappers" do
+      {
+        "show" => :show,
+        "hide" => :hide,
+      }.each do |css_value, expected_value|
+        declaration = empty_cells_declaration(css_value)
+
+        expect(declaration).to be_a(Yass::Declarations::EmptyCells)
+        expect(declaration.value).to eq(expected_value)
+      end
+    end
+  end
+
+  describe "flex basis declarations" do
+    def flex_basis_declaration(value)
+      sheet = Yass::Parser.parse(".x { flex-basis: #{value}; }")
+      sheet.rules.first.declarations.first
+    end
+
+    it "exposes content and size flex-basis variants" do
+      content_declaration = flex_basis_declaration("content")
+
+      expect(content_declaration).to be_a(Yass::Declarations::FlexBasis)
+      expect(content_declaration.value).to be_a(Yass::Declarations::FlexBasis::Content)
+
+      size_declaration = flex_basis_declaration("25%")
+
+      expect(size_declaration).to be_a(Yass::Declarations::FlexBasis)
+
+      size_value = size_declaration.value
+      expect(size_value).to be_a(Yass::Declarations::FlexBasis::Size)
+
+      length_percentage = size_value.value
+      expect(length_percentage).to be_a(Yass::Declarations::Size::LengthPercentage)
+
+      percentage = length_percentage.value
+      expect(percentage).to be_a(Yass::Declarations::Percentage)
+      expect(percentage.value).to eq(0.25)
+    end
+  end
+
   describe "display declarations" do
     def display_declaration(value)
       sheet = Yass::Parser.parse(".x { display: #{value}; }")

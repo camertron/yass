@@ -25,7 +25,7 @@ impl YAnchorSizeFunction {
             fallback: CachedValue::new(anchor_size.fallback, |fallback, ruby| {
                 match fallback {
                     Optional::Some(fb) => {
-                        make_size(fb.clone(), ruby).into_value_with(ruby)
+                        make_size(fb, ruby).into_value_with(ruby)
                     },
 
                     Optional::None => ruby.qnil().into_value_with(ruby)

@@ -13,7 +13,7 @@ impl YWidth {
     pub fn new(size: Size) -> Self {
         Self {
             size: CachedValue::new(size, |s, ruby| {
-                make_size(s.clone(), ruby)
+                make_size(s, ruby)
             })
         }
     }

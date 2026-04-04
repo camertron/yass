@@ -6,10 +6,10 @@ use crate::{cached_value::CachedValue, declarations::{calc::YCalc, length::no_ca
 pub mod anchor_size_function;
 pub mod init;
 
-pub fn make_size(size: Size<NonNegative<LengthPercentage>>, ruby: &Ruby) -> Value {
+pub fn make_size(size: &Size<NonNegative<LengthPercentage>>, ruby: &Ruby) -> Value {
     match size {
         Size::LengthPercentage(percentage) => {
-            YLengthPercentage::new(percentage.0).into_value_with(ruby)
+            YLengthPercentage::new(percentage.0.clone()).into_value_with(ruby)
         },
 
         Size::Auto => YAuto::new().into_value_with(ruby),
@@ -20,15 +20,15 @@ pub fn make_size(size: Size<NonNegative<LengthPercentage>>, ruby: &Ruby) -> Valu
         Size::Stretch => YStretch::new().into_value_with(ruby),
 
         Size::FitContentFunction(fit_content_function) => {
-            YFitContentFunction::new(fit_content_function).into_value_with(ruby)
+            YFitContentFunction::new(fit_content_function.clone()).into_value_with(ruby)
         },
 
         Size::AnchorSizeFunction(generic_anchor_size_function) => {
-            YAnchorSizeFunction::new((*generic_anchor_size_function).clone()).into_value_with(ruby)
+            YAnchorSizeFunction::new((**generic_anchor_size_function).clone()).into_value_with(ruby)
         },
 
         Size::AnchorContainingCalcFunction(anchor_with_calc) => {
-            YAnchorContainingCalcFunction::new(anchor_with_calc).into_value_with(ruby)
+            YAnchorContainingCalcFunction::new(anchor_with_calc.clone()).into_value_with(ruby)
         },
     }
 }
