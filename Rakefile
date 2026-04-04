@@ -25,6 +25,15 @@ end
 
 task default: %i[compile spec]
 
+namespace :spec do
+  desc 'Run full specs suit'
+  task full: [:full_spec_env, :compile, :spec]
+
+  task :full_spec_env do
+    ENV['FULL_SPEC'] = 'true'
+  end
+end
+
 # For whatever reason, the :native task that comes with rb-sys doesn't work, so
 # we define our own
 task :native, [:platform] do |task, args|

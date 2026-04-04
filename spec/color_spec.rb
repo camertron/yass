@@ -75,17 +75,19 @@ RSpec.describe(Yass) do
       color = color_for("rgb(from red r g b / alpha)")
       expect(color).to be_a(Yass::Declarations::Color::ColorFunction)
 
-      expect(color.kind).to eq(:rgb)
+      expect(color.kind).to eq(:color_function)
       expect(color).to be_has_origin_color
       expect(color.origin_color).to be_a(Yass::Declarations::Color::Absolute)
 
       components = color.components
       expect(components.size).to eq(3)
-      expect(components.map(&:kind)).to eq([:channel_keyword, :channel_keyword, :channel_keyword])
+      expect(components.map(&:kind)).to eq(
+        [:color_function_component, :color_function_component, :color_function_component]
+      )
       expect(components.map { |component| component.channel_keyword.value }).to eq([:r, :g, :b])
 
       alpha = color.alpha
-      expect(alpha.kind).to eq(:channel_keyword)
+      expect(alpha.kind).to eq(:color_function_component)
       expect(alpha.channel_keyword.value).to eq(:alpha)
     end
 

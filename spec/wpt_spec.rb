@@ -3,7 +3,7 @@
 require "spec_helper"
 require "json"
 
-RSpec.describe(Yass) do
+RSpec.describe Yass, slow: true do
   dirname = File.join(__dir__, "wpt", "fixtures")
 
   Dir.chdir(dirname) do

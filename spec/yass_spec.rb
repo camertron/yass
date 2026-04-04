@@ -21,7 +21,7 @@ RSpec.describe(Yass) do
 
     second_selector_children = selectors.last.children
     expect(second_selector_children.size).to eq(1)
-    expect(second_selector_children[0].kind).to eq(:class)
+    expect(second_selector_children[0].kind).to eq(:klass)
   end
 
   it "exposes backface visibility declarations" do
