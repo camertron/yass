@@ -293,6 +293,48 @@ RSpec.describe(Yass) do
     end
   end
 
+  describe "display declarations" do
+    def display_declaration(value)
+      sheet = Yass::Parser.parse(".x { display: #{value}; }")
+      sheet.rules.first.declarations.first
+    end
+
+    it "exposes inside and outside display types" do
+      declaration = display_declaration("inline flex")
+
+      expect(declaration).to be_a(Yass::Declarations::Display)
+      expect(declaration.inside).to eq(:flex)
+      expect(declaration.outside).to eq(:inline)
+      expect(declaration.list_item?).to eq(false)
+      expect(declaration.inline_flow?).to eq(false)
+      expect(declaration.item_container?).to eq(true)
+      expect(declaration.line_participant?).to eq(false)
+      expect(declaration.none?).to eq(false)
+      expect(declaration.contents?).to eq(false)
+    end
+
+    it "exposes list-item display flags" do
+      declaration = display_declaration("inline list-item")
+
+      expect(declaration.inside).to eq(:flow)
+      expect(declaration.outside).to eq(:inline)
+      expect(declaration.list_item?).to eq(true)
+      expect(declaration.inline_flow?).to eq(true)
+      expect(declaration.line_participant?).to eq(true)
+    end
+
+    it "exposes the none keyword" do
+      declaration = display_declaration("none")
+
+      expect(declaration.inside).to eq(:none)
+      expect(declaration.outside).to eq(:none)
+      expect(declaration.none?).to eq(true)
+      expect(declaration.contents?).to eq(false)
+      expect(declaration.item_container?).to eq(false)
+      expect(declaration.line_participant?).to eq(false)
+    end
+  end
+
   describe "cursor declarations" do
     def cursor_declaration(value)
       sheet = Yass::Parser.parse(".x { cursor: #{value}; }")
