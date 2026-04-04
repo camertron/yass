@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "spec_helper"
+
 RSpec.describe(Yass) do
   it "parses a basic stylesheet" do
     sheet = Yass::Parser.parse(<<~CSS)

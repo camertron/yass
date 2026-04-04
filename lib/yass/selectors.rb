@@ -29,7 +29,7 @@ module Yass
     end
 
     class AttributeInNoNamespace
-      RUBY_METHODS = %i(kind operator value case_sensitivity).freeze
+      RUBY_METHODS = %i(operator case_sensitivity value kind).freeze
 
       include ::Yass::Node
 
@@ -85,7 +85,7 @@ module Yass
     end
 
     class Combinator
-      RUBY_METHODS = %i(kind ancestor? pseudo_element? sibling?).freeze
+      RUBY_METHODS = %i(ancestor? pseudo_element? sibling? kind).freeze
 
       include ::Yass::Node
 
@@ -183,7 +183,7 @@ module Yass
     end
 
     class Namespace
-      RUBY_METHODS = %i(kind url prefix).freeze
+      RUBY_METHODS = %i(url prefix kind).freeze
 
       include ::Yass::Node
 
@@ -211,7 +211,7 @@ module Yass
     end
 
     class NonTsPseudoClass
-      RUBY_METHODS = %i(kind type value).freeze
+      RUBY_METHODS = %i(type value kind).freeze
 
       include ::Yass::Node
 
@@ -225,7 +225,7 @@ module Yass
     end
 
     class Nth
-      RUBY_METHODS = %i(kind function? type an_plus_b).freeze
+      RUBY_METHODS = %i(function? an_plus_b type kind).freeze
 
       include ::Yass::Node
 
@@ -239,7 +239,7 @@ module Yass
     end
 
     class NthOf
-      RUBY_METHODS = %i(nth selectors kind).freeze
+      RUBY_METHODS = %i(kind nth selectors).freeze
 
       include ::Yass::Node
 
@@ -310,7 +310,7 @@ module Yass
   end
 
   class RelativeSelector
-    RUBY_METHODS = %i(match_hint kind selector).freeze
+    RUBY_METHODS = %i(selector match_hint kind).freeze
 
     include ::Yass::Node
 

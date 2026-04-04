@@ -16,7 +16,24 @@ require "yass/selectors"
 require "yass/declarations"
 
 module Yass
-  class UnimplementedRule
+  autoload :Visitor, "yass/visitor"
+
+  class Stylesheet
+    def accept(visitor)
+      visitor.visit_stylesheet(self)
+    end
+  end
+
+  class StyleRule
+    def accept(visitor)
+      visitor.visit_style_rule(self)
+    end
+  end
+
+  class MediaRule
+    def accept(visitor)
+    end
+
     def selectors
       []
     end
@@ -26,7 +43,10 @@ module Yass
     end
   end
 
-  class MediaRule
+  class UnimplementedRule
+    def accept(visitor)
+    end
+
     def selectors
       []
     end

@@ -162,36 +162,51 @@ File.write("lib/yass/declarations.rb", <<~RUBY)
   #{declaration_classes}
 RUBY
 
+DEBUG = !!ENV["DEBUG"]
+
 def module_to_visitor_methods(mod, nesting, indent)
-  [].tap do |lines|
-    if mod.rust_struct
-      method_name = "visit_#{nesting_to_s(nesting[1..-1])}"
+  line_groups = []
 
-      lines.concat([
-        "#{indent}def #{method_name}(node)",
-        *mod.rust_struct.rust_methods.map do |rust_method|
-          if rust_method.visit_kind == :single
-            [
-              "#{indent}  visit(node.#{rust_method.name})"
-            ]
-          else
-            [
-              "#{indent}  visit_list(node.#{rust_method.name})"
-            ]
-          end
-        end,
-        "#{indent}end",
-      ])
-    end
+  if mod.rust_struct
+    method_name = "visit_#{nesting_to_s(nesting[1..-1])}"
 
-    visitor_methods = mod.children.map do |mod_name, child|
-      module_to_visitor_methods(child, [*nesting, mod_name], indent)
-    end
-
-    lines.concat(join_line_groups(visitor_methods))
+    line_groups << [
+      "#{indent}def #{method_name}(node)",
+      *(DEBUG ? ["#{indent}  puts \"Visiting #{method_name}\""] : []),
+      *mod.rust_struct.rust_methods.map do |rust_method|
+        if rust_method.visit_kind == :single
+          [
+            "#{indent}  visit(node.#{rust_method.name})"
+          ]
+        else
+          [
+            "#{indent}  visit_list(node.#{rust_method.name})"
+          ]
+        end
+      end,
+      "#{indent}end",
+    ]
   end
+
+  mod.children.each do |mod_name, child|
+    line_groups << module_to_visitor_methods(child, [*nesting, mod_name], indent)
+  end
+
+  join_line_groups(*line_groups)
 end
 
+selector_files = Dir.glob("ext/yass/src/selectors/**/*.rs")
+selector_rust_structs = extract_rust_structs_from(selector_files)
+root = module_tree_from_structs(selector_rust_structs)
+selector_classes = module_to_code(root.children["Yass"], ["Yass"])
+
+File.write("lib/yass/selectors.rb", <<~RUBY)
+  # frozen_string_literal: true
+
+  #{selector_classes}
+RUBY
+
+root = module_tree_from_structs([*selector_rust_structs, *declaration_rust_structs])
 visitor_methods = module_to_visitor_methods(root.children["Yass"], ["Yass"], "    ")
 
 visitor_class = <<~RUBY
@@ -207,20 +222,18 @@ visitor_class = <<~RUBY
         nodes.each { |node| visit(node) }
       end
 
+      def visit_stylesheet(node)
+        visit_list(node.rules)
+      end
+
+      def visit_style_rule(node)
+        visit_list(node.selectors)
+        visit_list(node.declarations)
+      end
+
   #{visitor_methods.join("\n")}
     end
   end
 RUBY
 
 File.write("lib/yass/visitor.rb", visitor_class)
-
-selector_files = Dir.glob("ext/yass/src/selectors/**/*.rs")
-selector_rust_structs = extract_rust_structs_from(selector_files)
-root = module_tree_from_structs(selector_rust_structs)
-selector_classes = module_to_code(root.children["Yass"], ["Yass"])
-
-File.write("lib/yass/selectors.rb", <<~RUBY)
-  # frozen_string_literal: true
-
-  #{selector_classes}
-RUBY
