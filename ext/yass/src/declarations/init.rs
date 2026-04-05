@@ -1,6 +1,6 @@
 use magnus::{Error, Module, RModule, Ruby, method};
 
-use crate::declarations::{align_content::YAlignContent, align_items::YAlignItems, align_self::YAlignSelf, alignment_baseline::YAlignmentBaseline, angle::YAngle, animation, animation_composition::YAnimationComposition, animation_delay::YAnimationDelay, animation_direction::YAnimationDirection, animation_duration::{YAnimationDuration, YAnimationDurationValue}, animation_fill_mode::YAnimationFillMode, animation_iteration_count::YAnimationIterationCount, animation_name::YAnimationName, animation_play_state::YAnimationPlayState, animation_range_end::YAnimationRangeEnd, animation_range_start::YAnimationRangeStart, animation_timeline::YAnimationTimeline, animation_timing_function::YAnimationTimingFunction, aspect_ratio::YAspectRatio, backdrop_filter::YBackdropFilter, backface_visibility::YBackfaceVisibility, background_attachment::YBackgroundAttachment, background_blend_mode::YBackgroundBlendMode, background_clip::YBackgroundClip, background_color::YBackgroundColor, background_image::YBackgroundImage, background_origin::YBackgroundOrigin, background_position_x::YBackgroundPositionX, background_position_y::YBackgroundPositionY, background_repeat::{YBackgroundRepeat, YBackgroundRepeatValue}, background_size::{YBackgroundSize, YBackgroundSizeExplicitSize}, baseline_shift::{YBaselineShiftKeyword, YBaselineShiftLength}, baseline_source::YBaselineSource, block_size::YBlockSize, border_block_end_color::YBorderBlockEndColor, border_block_end_style::YBorderBlockEndStyle, border_block_end_width::YBorderBlockEndWidth, border_block_start_color::YBorderBlockStartColor, border_block_start_style::YBorderBlockStartStyle, border_block_start_width::YBorderBlockStartWidth, border_bottom_color::YBorderBottomColor, border_bottom_left_radius::YBorderBottomLeftRadius, border_bottom_right_radius::YBorderBottomRightRadius, border_bottom_style::YBorderBottomStyle, border_bottom_width::YBorderBottomWidth, border_collapse::YBorderCollapse, border_end_end_radius::YBorderEndEndRadius, border_end_start_radius::YBorderEndStartRadius, border_image_outset::YBorderImageOutset, border_image_repeat::YBorderImageRepeat, border_image_slice::YBorderImageSlice, border_image_source::YBorderImageSource, border_image_width::YBorderImageWidth, border_inline_end_color::YBorderInlineEndColor, border_inline_end_style::YBorderInlineEndStyle, border_inline_end_width::YBorderInlineEndWidth, border_inline_start_color::YBorderInlineStartColor, border_inline_start_style::YBorderInlineStartStyle, border_inline_start_width::YBorderInlineStartWidth, border_left_color::YBorderLeftColor, border_left_style::YBorderLeftStyle, border_left_width::YBorderLeftWidth, border_right_color::YBorderRightColor, border_right_style::YBorderRightStyle, border_right_width::YBorderRightWidth, border_spacing::YBorderSpacing, border_start_end_radius::YBorderStartEndRadius, border_start_start_radius::YBorderStartStartRadius, border_top_color::YBorderTopColor, border_top_left_radius::YBorderTopLeftRadius, border_top_right_radius::YBorderTopRightRadius, border_top_style::YBorderTopStyle, border_top_width::YBorderTopWidth, bottom::YBottom, box_shadow::{YBoxShadow, YBoxShadowShadow}, box_sizing::YBoxSizing, calc, caption_side::YCaptionSide, caret_color::{self, YCaretColor}, channel_keyword::YChannelKeyword, clear::YClear, clip::{YClip, YClipLength, YClipRect}, clip_path, color::{self, YColor}, color_scheme::YColorScheme, column_count::YColumnCountInteger, column_gap::{YColumnGap, YColumnGapLengthPercentage}, column_span::YColumnSpan, column_width::{YColumnWidth, YColumnWidthLength}, contain::YContain, container_name::YContainerName, container_type::YContainerType, content::{YContent, YContentCounterStyleSymbols, YContentItemAttr, YContentItemCounter, YContentItemCounters, YContentItemImage, YContentItemString, YContentItems, YContentNone, YContentNormal}, counter_increment::{YCounterIncrement, YCounterIncrementCounter}, counter_reset::{YCounterReset, YCounterResetCounter}, csswide_keyword::YCSSWideKeyword, cursor::{YCursor, YCursorImage}, custom::{YCustom, YCustomValueCSSWideKeyword, YCustomValueParsed, YCustomValueUnparsed}, direction::YDirection, display::YDisplay, empty_cells::YEmptyCells, filter, flex_basis::{YFlexBasis, YFlexBasisSize}, flex_direction::YFlexDirection, flex_grow::YFlexGrow, flex_shrink::YFlexShrink, flex_wrap::YFlexWrap, float::YFloat, images, inset::{YInsetAnchorContainingCalcFunction, YInsetAnchorFunction, YInsetAnchorSizeFunction, YInsetLengthPercentage}, left::YLeft, length::{YAbsoluteLength, YCharacterWidthLength, YContainerRelativeLength, YFontRelativeLength, YViewportPercentageLength}, list_style_image::YListStyleImage, mask_image::YMaskImage, number::YNumber, outline_color::YOutlineColor, percentage::YPercentage, resolution::YResolution, right::YRight, size, text_decoration_color::YTextDecorationColor, time::YTime, top::YTop, width::YWidth};
+use crate::declarations::{align_content::YAlignContent, align_items::YAlignItems, align_self::YAlignSelf, alignment_baseline::YAlignmentBaseline, angle::YAngle, animation, animation_composition::YAnimationComposition, animation_delay::YAnimationDelay, animation_direction::YAnimationDirection, animation_duration::{YAnimationDuration, YAnimationDurationValue}, animation_fill_mode::YAnimationFillMode, animation_iteration_count::YAnimationIterationCount, animation_name::YAnimationName, animation_play_state::YAnimationPlayState, animation_range_end::YAnimationRangeEnd, animation_range_start::YAnimationRangeStart, animation_timeline::YAnimationTimeline, animation_timing_function::YAnimationTimingFunction, aspect_ratio::YAspectRatio, backdrop_filter::YBackdropFilter, backface_visibility::YBackfaceVisibility, background_attachment::YBackgroundAttachment, background_blend_mode::YBackgroundBlendMode, background_clip::YBackgroundClip, background_color::YBackgroundColor, background_image::YBackgroundImage, background_origin::YBackgroundOrigin, background_position_x::YBackgroundPositionX, background_position_y::YBackgroundPositionY, background_repeat::{YBackgroundRepeat, YBackgroundRepeatValue}, background_size::{YBackgroundSize, YBackgroundSizeExplicitSize}, baseline_shift::{YBaselineShiftKeyword, YBaselineShiftLength}, baseline_source::YBaselineSource, block_size::YBlockSize, border_block_end_color::YBorderBlockEndColor, border_block_end_style::YBorderBlockEndStyle, border_block_end_width::YBorderBlockEndWidth, border_block_start_color::YBorderBlockStartColor, border_block_start_style::YBorderBlockStartStyle, border_block_start_width::YBorderBlockStartWidth, border_bottom_color::YBorderBottomColor, border_bottom_left_radius::YBorderBottomLeftRadius, border_bottom_right_radius::YBorderBottomRightRadius, border_bottom_style::YBorderBottomStyle, border_bottom_width::YBorderBottomWidth, border_collapse::YBorderCollapse, border_end_end_radius::YBorderEndEndRadius, border_end_start_radius::YBorderEndStartRadius, border_image_outset::YBorderImageOutset, border_image_repeat::YBorderImageRepeat, border_image_slice::YBorderImageSlice, border_image_source::YBorderImageSource, border_image_width::YBorderImageWidth, border_inline_end_color::YBorderInlineEndColor, border_inline_end_style::YBorderInlineEndStyle, border_inline_end_width::YBorderInlineEndWidth, border_inline_start_color::YBorderInlineStartColor, border_inline_start_style::YBorderInlineStartStyle, border_inline_start_width::YBorderInlineStartWidth, border_left_color::YBorderLeftColor, border_left_style::YBorderLeftStyle, border_left_width::YBorderLeftWidth, border_right_color::YBorderRightColor, border_right_style::YBorderRightStyle, border_right_width::YBorderRightWidth, border_spacing::YBorderSpacing, border_start_end_radius::YBorderStartEndRadius, border_start_start_radius::YBorderStartStartRadius, border_top_color::YBorderTopColor, border_top_left_radius::YBorderTopLeftRadius, border_top_right_radius::YBorderTopRightRadius, border_top_style::YBorderTopStyle, border_top_width::YBorderTopWidth, bottom::YBottom, box_shadow::{YBoxShadow, YBoxShadowShadow}, box_sizing::YBoxSizing, calc, caption_side::YCaptionSide, caret_color::{self, YCaretColor}, channel_keyword::YChannelKeyword, clear::YClear, clip::{YClip, YClipLength, YClipRect}, clip_path, color::{self, YColor}, color_scheme::YColorScheme, column_count::YColumnCountInteger, column_gap::{YColumnGap, YColumnGapLengthPercentage}, column_span::YColumnSpan, column_width::{YColumnWidth, YColumnWidthLength}, contain::YContain, container_name::YContainerName, container_type::YContainerType, content::{YContent, YContentCounterStyleSymbols, YContentItemAttr, YContentItemCounter, YContentItemCounters, YContentItemImage, YContentItemString, YContentItems, YContentNone, YContentNormal}, counter_increment::{YCounterIncrement, YCounterIncrementCounter}, counter_reset::{YCounterReset, YCounterResetCounter}, csswide_keyword::YCSSWideKeyword, cursor::{YCursor, YCursorImage}, custom::{YCustom, YCustomValueCSSWideKeyword, YCustomValueParsed, YCustomValueUnparsed}, direction::YDirection, display::YDisplay, empty_cells::YEmptyCells, filter, flex_basis::{YFlexBasis, YFlexBasisSize}, flex_direction::YFlexDirection, flex_grow::YFlexGrow, flex_shrink::YFlexShrink, flex_wrap::YFlexWrap, float::YFloat, font_language_override::YFontLanguageOverride, font_optical_sizing::YFontOpticalSizing, font_stretch::{YFontStretch, YFontStretchKeyword, YFontStretchValue}, font_style::{YFontStyle, YFontStyleOblique}, font_synthesis_weight::YFontSynthesisWeight, font_variant_caps::YFontVariantCaps, font_weight::{YFontWeight, YFontWeightAbsolute}, images, inset::{YInsetAnchorContainingCalcFunction, YInsetAnchorFunction, YInsetAnchorSizeFunction, YInsetLengthPercentage}, left::YLeft, length::{YAbsoluteLength, YCharacterWidthLength, YContainerRelativeLength, YFontRelativeLength, YViewportPercentageLength}, list_style_image::YListStyleImage, mask_image::YMaskImage, number::YNumber, outline_color::YOutlineColor, percentage::YPercentage, resolution::YResolution, right::YRight, size, text_decoration_color::YTextDecorationColor, time::YTime, top::YTop, width::YWidth};
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let declarations_module = yass_module.define_module("Declarations")?;
@@ -129,18 +129,43 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     float_class.define_method("value", method!(YFloat::value, 0))?;
 
     let font_language_override_class = declarations_module.define_class("FontLanguageOverride", ruby.class_object())?;
+    font_language_override_class.define_method("normal?", method!(YFontLanguageOverride::is_normal, 0))?;
+    font_language_override_class.define_method("value", method!(YFontLanguageOverride::value, 0))?;
 
     let font_optical_sizing_class = declarations_module.define_class("FontOpticalSizing", ruby.class_object())?;
+    font_optical_sizing_class.define_method("value", method!(YFontOpticalSizing::value, 0))?;
 
     let font_stretch_class = declarations_module.define_class("FontStretch", ruby.class_object())?;
+    font_stretch_class.define_method("value", method!(YFontStretch::value, 0))?;
+    let font_stretch_stretch_class = font_stretch_class.define_class("Stretch", ruby.class_object())?;
+    font_stretch_stretch_class.define_method("value", method!(YFontStretchValue::value, 0))?;
+    let font_stretch_keyword_class = font_stretch_class.define_class("Keyword", ruby.class_object())?;
+    font_stretch_keyword_class.define_method("value", method!(YFontStretchKeyword::value, 0))?;
+    let _font_stretch_system_class = font_stretch_class.define_class("System", ruby.class_object())?;
 
     let font_style_class = declarations_module.define_class("FontStyle", ruby.class_object())?;
+    font_style_class.define_method("value", method!(YFontStyle::value, 0))?;
+
+    let _font_style_normal_class = font_style_class.define_class("Normal", ruby.class_object())?;
+    let _font_style_italic_class = font_style_class.define_class("Italic", ruby.class_object())?;
+    let font_style_oblique_class = font_style_class.define_class("Oblique", ruby.class_object())?;
+    font_style_oblique_class.define_method("angle", method!(YFontStyleOblique::angle, 0))?;
+
+    let _font_style_system_class = font_style_class.define_class("System", ruby.class_object())?;
 
     let font_synthesis_weight_class = declarations_module.define_class("FontSynthesisWeight", ruby.class_object())?;
+    font_synthesis_weight_class.define_method("value", method!(YFontSynthesisWeight::value, 0))?;
 
     let font_variant_caps_class = declarations_module.define_class("FontVariantCaps", ruby.class_object())?;
+    font_variant_caps_class.define_method("value", method!(YFontVariantCaps::value, 0))?;
 
     let font_weight_class = declarations_module.define_class("FontWeight", ruby.class_object())?;
+    font_weight_class.define_method("value", method!(YFontWeight::value, 0))?;
+    let font_weight_absolute_class = font_weight_class.define_class("Absolute", ruby.class_object())?;
+    font_weight_absolute_class.define_method("value", method!(YFontWeightAbsolute::value, 0))?;
+    let _font_weight_bolder_class = font_weight_class.define_class("Bolder", ruby.class_object())?;
+    let _font_weight_lighter_class = font_weight_class.define_class("Lighter", ruby.class_object())?;
+    let _font_weight_system_class = font_weight_class.define_class("System", ruby.class_object())?;
 
     let grid_auto_flow_class = declarations_module.define_class("GridAutoFlow", ruby.class_object())?;
 
@@ -498,10 +523,33 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     cursor_image_class.define_method("hotspot_y", method!(YCursorImage::hotspot_y, 0))?;
 
     let font_family_class = declarations_module.define_class("FontFamily", ruby.class_object())?;
+    font_family_class.define_method("value", method!(crate::declarations::font_family::YFontFamily::value, 0))?;
+    let font_family_values_class = font_family_class.define_class("Values", ruby.class_object())?;
+    font_family_values_class.define_method("values", method!(crate::declarations::font_family::YFontFamilyValues::values, 0))?;
+    let _font_family_system_class = font_family_class.define_class("System", ruby.class_object())?;
+    let font_family_name_class = font_family_class.define_class("Name", ruby.class_object())?;
+    font_family_name_class.define_method("value", method!(crate::declarations::font_family::YFontFamilyName::value, 0))?;
+    font_family_name_class.define_method("syntax", method!(crate::declarations::font_family::YFontFamilyName::syntax, 0))?;
+    let font_family_generic_class = font_family_class.define_class("Generic", ruby.class_object())?;
+    font_family_generic_class.define_method("value", method!(crate::declarations::font_family::YFontFamilyGeneric::value, 0))?;
 
     let font_size_class = declarations_module.define_class("FontSize", ruby.class_object())?;
+    font_size_class.define_method("value", method!(crate::declarations::font_size::YFontSize::value, 0))?;
+    let font_size_length_class = font_size_class.define_class("Length", ruby.class_object())?;
+    font_size_length_class.define_method("value", method!(crate::declarations::font_size::YFontSizeLength::value, 0))?;
+    let font_size_keyword_class = font_size_class.define_class("Keyword", ruby.class_object())?;
+    font_size_keyword_class.define_method("keyword", method!(crate::declarations::font_size::YFontSizeKeyword::keyword, 0))?;
+    font_size_keyword_class.define_method("factor", method!(crate::declarations::font_size::YFontSizeKeyword::factor, 0))?;
+    let _font_size_smaller_class = font_size_class.define_class("Smaller", ruby.class_object())?;
+    let _font_size_larger_class = font_size_class.define_class("Larger", ruby.class_object())?;
+    let _font_size_system_class = font_size_class.define_class("System", ruby.class_object())?;
 
     let font_variation_settings_class = declarations_module.define_class("FontVariationSettings", ruby.class_object())?;
+    font_variation_settings_class.define_method("values", method!(crate::declarations::font_variation_settings::YFontVariationSettings::values, 0))?;
+    font_variation_settings_class.define_method("normal?", method!(crate::declarations::font_variation_settings::YFontVariationSettings::is_normal, 0))?;
+    let font_variation_setting_class = font_variation_settings_class.define_class("Setting", ruby.class_object())?;
+    font_variation_setting_class.define_method("tag", method!(crate::declarations::font_variation_settings::YFontVariationSetting::tag, 0))?;
+    font_variation_setting_class.define_method("value", method!(crate::declarations::font_variation_settings::YFontVariationSetting::value, 0))?;
 
     let grid_template_areas_class = declarations_module.define_class("GridTemplateAreas", ruby.class_object())?;
 

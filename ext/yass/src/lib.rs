@@ -48,6 +48,8 @@ fn init(ruby: &Ruby) -> Result<(), Error> {
         "layout.css.backdrop-filter.enabled",
         true,
     );
+    <bool as stylo_static_prefs::Preference>::set("layout.variable_fonts.enabled", true);
+    <bool as stylo_static_prefs::Preference>::set("layout.css.font-variations.enabled", true);
     <bool as stylo_static_prefs::Preference>::set("layout.container-queries.enabled", true);
     <bool as stylo_static_prefs::Preference>::set("layout.columns.enabled", true);
 
