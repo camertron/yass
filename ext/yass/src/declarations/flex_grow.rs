@@ -1,19 +1,30 @@
-use magnus::{IntoValue, Ruby, Value, typed_data};
+use magnus::{DataTypeFunctions, IntoValue, Ruby, TypedData, Value, gc, typed_data};
 use style::values::specified::NonNegativeNumber;
 
-use crate::declarations::number::YNumber;
+use crate::{cached_value::CachedValue, declarations::number::YNumber};
 
-#[magnus::wrap(class = "Yass::Declarations::FlexGrow")]
+#[derive(TypedData)]
+#[magnus(class = "Yass::Declarations::FlexGrow", mark)]
 pub struct YFlexGrow {
-    non_negative_number: NonNegativeNumber
+    non_negative_number: CachedValue<NonNegativeNumber>
 }
 
 impl YFlexGrow {
     pub fn new(non_negative_number: NonNegativeNumber) -> Self {
-        Self { non_negative_number }
+        Self {
+            non_negative_number: CachedValue::new(non_negative_number, |num, ruby| {
+                YNumber::new(num.get()).into_value_with(ruby)
+            })
+        }
     }
 
     pub fn value(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Value {
-        YNumber::new(rb_self.non_negative_number.get()).into_value_with(ruby)
+        rb_self.non_negative_number.get(ruby)
+    }
+}
+
+impl DataTypeFunctions for YFlexGrow {
+    fn mark(&self, marker: &gc::Marker) {
+        self.non_negative_number.mark(marker);
     }
 }

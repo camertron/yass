@@ -361,6 +361,26 @@ RSpec.describe(Yass) do
     end
   end
 
+  describe "flex wrap declarations" do
+    def flex_wrap_declaration(value)
+      sheet = Yass::Parser.parse(".x { flex-wrap: #{value}; }")
+      sheet.rules.first.declarations.first
+    end
+
+    it "exposes flex wrap values as declaration wrappers" do
+      {
+        "nowrap" => :nowrap,
+        "wrap" => :wrap,
+        "wrap-reverse" => :wrap_reverse,
+      }.each do |css_value, expected_value|
+        declaration = flex_wrap_declaration(css_value)
+
+        expect(declaration).to be_a(Yass::Declarations::FlexWrap)
+        expect(declaration.value).to eq(expected_value)
+      end
+    end
+  end
+
   describe "display declarations" do
     def display_declaration(value)
       sheet = Yass::Parser.parse(".x { display: #{value}; }")
