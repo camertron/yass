@@ -1,12 +1,30 @@
+use magnus::{DataTypeFunctions, IntoValue, Ruby, TypedData, Value, gc, typed_data};
 use style::values::specified::NonNegativeLengthPercentage;
 
-#[magnus::wrap(class = "Yass::Declarations::PaddingInlineEnd")]
+use crate::{cached_value::CachedValue, declarations::size::YLengthPercentage};
+
+#[derive(TypedData)]
+#[magnus(class = "Yass::Declarations::PaddingInlineEnd", mark)]
 pub struct YPaddingInlineEnd {
-  non_negative_length_percentage: NonNegativeLengthPercentage
+  value: CachedValue<NonNegativeLengthPercentage>,
 }
 
 impl YPaddingInlineEnd {
-  pub fn new(non_negative_length_percentage: NonNegativeLengthPercentage) -> Self {
-    Self { non_negative_length_percentage }
+  pub fn new(value: NonNegativeLengthPercentage) -> Self {
+    Self {
+      value: CachedValue::new(value, |non_negative, ruby| {
+        YLengthPercentage::new(non_negative.0.clone()).into_value_with(ruby)
+      }),
+    }
+  }
+
+  pub fn value(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Value {
+    rb_self.value.get(ruby)
+  }
+}
+
+impl DataTypeFunctions for YPaddingInlineEnd {
+  fn mark(&self, marker: &gc::Marker) {
+    self.value.mark(marker);
   }
 }

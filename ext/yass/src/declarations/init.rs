@@ -13,6 +13,14 @@ use crate::declarations::margin_inline_start::YMarginInlineStart;
 use crate::declarations::margin_left::YMarginLeft;
 use crate::declarations::margin_right::YMarginRight;
 use crate::declarations::margin_top::YMarginTop;
+use crate::declarations::padding_block_end::YPaddingBlockEnd;
+use crate::declarations::padding_block_start::YPaddingBlockStart;
+use crate::declarations::padding_bottom::YPaddingBottom;
+use crate::declarations::padding_inline_end::YPaddingInlineEnd;
+use crate::declarations::padding_inline_start::YPaddingInlineStart;
+use crate::declarations::padding_left::YPaddingLeft;
+use crate::declarations::padding_right::YPaddingRight;
+use crate::declarations::padding_top::YPaddingTop;
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let declarations_module = yass_module.define_module("Declarations")?;
@@ -869,20 +877,28 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     margin_top_class.define_method("value", method!(YMarginTop::value, 0))?;
 
     let padding_block_end_class = declarations_module.define_class("PaddingBlockEnd", ruby.class_object())?;
+    padding_block_end_class.define_method("value", method!(YPaddingBlockEnd::value, 0))?;
 
     let padding_block_start_class = declarations_module.define_class("PaddingBlockStart", ruby.class_object())?;
+    padding_block_start_class.define_method("value", method!(YPaddingBlockStart::value, 0))?;
 
     let padding_bottom_class = declarations_module.define_class("PaddingBottom", ruby.class_object())?;
+    padding_bottom_class.define_method("value", method!(YPaddingBottom::value, 0))?;
 
     let padding_inline_end_class = declarations_module.define_class("PaddingInlineEnd", ruby.class_object())?;
+    padding_inline_end_class.define_method("value", method!(YPaddingInlineEnd::value, 0))?;
 
     let padding_inline_start_class = declarations_module.define_class("PaddingInlineStart", ruby.class_object())?;
+    padding_inline_start_class.define_method("value", method!(YPaddingInlineStart::value, 0))?;
 
     let padding_left_class = declarations_module.define_class("PaddingLeft", ruby.class_object())?;
+    padding_left_class.define_method("value", method!(YPaddingLeft::value, 0))?;
 
     let padding_right_class = declarations_module.define_class("PaddingRight", ruby.class_object())?;
+    padding_right_class.define_method("value", method!(YPaddingRight::value, 0))?;
 
     let padding_top_class = declarations_module.define_class("PaddingTop", ruby.class_object())?;
+    padding_top_class.define_method("value", method!(YPaddingTop::value, 0))?;
 
     let perspective_origin_class = declarations_module.define_class("PerspectiveOrigin", ruby.class_object())?;
 
