@@ -131,6 +131,19 @@ RSpec.describe(Yass) do
     end
   end
 
+  it "exposes isolation declarations" do
+    {
+      "auto" => :auto,
+      "isolate" => :isolate,
+    }.each do |css_value, expected_value|
+      sheet = Yass::Parser.parse(".x { isolation: #{css_value}; }")
+      declaration = sheet.rules.first.declarations.first
+
+      expect(declaration).to be_a(Yass::Declarations::Isolation)
+      expect(declaration.value).to eq(expected_value)
+    end
+  end
+
   it "exposes background size declarations" do
     sheet = Yass::Parser.parse(<<~CSS)
       .hero {
