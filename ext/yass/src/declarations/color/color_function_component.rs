@@ -1,4 +1,4 @@
-use magnus::{DataTypeFunctions, IntoValue, Ruby, TypedData, Value, gc, typed_data, value::Id};
+use magnus::{DataTypeFunctions, IntoValue, Ruby, TypedData, Value, gc, typed_data};
 use style::{
     color::{parsing::{ChannelKeyword}},
     values::specified::{calc::CalcNode},
@@ -12,7 +12,6 @@ use crate::{
 #[derive(TypedData)]
 #[magnus(class = "Yass::Declarations::Color::ColorFunctionComponent", mark)]
 pub struct YColorFunctionComponent {
-    component: StoredColorFunctionComponent,
     value: CachedValue<Option<StoredColorComponentValue>>,
     channel_keyword: CachedValue<Option<ChannelKeyword>>,
     calc: CachedValue<Option<CalcNode>>,
@@ -36,9 +35,7 @@ impl YColorFunctionComponent {
             calc: CachedValue::new(component.calc_node(), |calc_node, ruby| match calc_node {
                 Some(calc_node) => YCalc::make_node(calc_node, ruby),
                 None => ruby.qnil().into_value_with(ruby),
-            }),
-
-            component,
+            })
         }
     }
 

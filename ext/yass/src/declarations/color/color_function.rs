@@ -1,4 +1,4 @@
-use magnus::{DataTypeFunctions, Error, IntoValue, RArray, Ruby, TypedData, Value, gc, typed_data, value::Id};
+use magnus::{DataTypeFunctions, Error, IntoValue, RArray, Ruby, TypedData, Value, gc, typed_data};
 use style::{
     color::ColorFunction,
     values::specified::Color as SpecifiedColor,
@@ -37,19 +37,6 @@ impl YColorFunction {
             }),
 
             color_function,
-        }
-    }
-
-    pub fn system(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Id {
-        match rb_self.color_function {
-            ColorFunction::Rgb(..) => ruby.intern("rgb"),
-            ColorFunction::Hsl(..) => ruby.intern("hsl"),
-            ColorFunction::Hwb(..) => ruby.intern("hwb"),
-            ColorFunction::Lab(..) => ruby.intern("lab"),
-            ColorFunction::Lch(..) => ruby.intern("lch"),
-            ColorFunction::Oklab(..) => ruby.intern("oklab"),
-            ColorFunction::Oklch(..) => ruby.intern("oklch"),
-            ColorFunction::Color(..) => ruby.intern("color"),
         }
     }
 

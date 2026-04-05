@@ -27,18 +27,6 @@ impl YDisplay {
             DisplayInside::TableFooterGroup => ruby.intern("table_footer_group"),
             DisplayInside::TableRow => ruby.intern("table_row"),
             DisplayInside::TableCell => ruby.intern("table_cell"),
-            #[cfg(feature = "gecko")]
-            DisplayInside::Ruby => ruby.intern("ruby"),
-            #[cfg(feature = "gecko")]
-            DisplayInside::RubyBase => ruby.intern("ruby_base"),
-            #[cfg(feature = "gecko")]
-            DisplayInside::RubyBaseContainer => ruby.intern("ruby_base_container"),
-            #[cfg(feature = "gecko")]
-            DisplayInside::RubyText => ruby.intern("ruby_text"),
-            #[cfg(feature = "gecko")]
-            DisplayInside::RubyTextContainer => ruby.intern("ruby_text_container"),
-            #[cfg(feature = "gecko")]
-            DisplayInside::WebkitBox => ruby.intern("webkit_box"),
         }
     }
 
@@ -49,8 +37,6 @@ impl YDisplay {
             DisplayOutside::Block => ruby.intern("block"),
             DisplayOutside::TableCaption => ruby.intern("table_caption"),
             DisplayOutside::InternalTable => ruby.intern("internal_table"),
-            #[cfg(feature = "gecko")]
-            DisplayOutside::InternalRuby => ruby.intern("internal_ruby"),
         }
     }
 

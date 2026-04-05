@@ -1,4 +1,4 @@
-use magnus::{DataTypeFunctions, Error, IntoValue, RArray, Ruby, Value, gc::Marker, typed_data, value::Id};
+use magnus::{DataTypeFunctions, Error, IntoValue, RArray, Ruby, Value, gc::Marker, typed_data};
 use style::{color::mix::ColorInterpolationMethod, values::{generics::image::{GradientFlags, GradientItem}, specified::{Angle, AngleOrPercentage, Color, image::Gradient, position::Position}}};
 
 use crate::{cached_value::CachedValue, cached_value_list::CachedValueList, declarations::{angle::YAngle, color::color_interpolation_method::YColorInterpolationMethod, images::{gradient_angle_or_percentage_item, position::YImagePosition}}};
