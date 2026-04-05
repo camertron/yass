@@ -923,6 +923,50 @@ RSpec.describe(Yass) do
     end
   end
 
+  describe "logical inset declarations" do
+    def inset_declaration(property, value)
+      sheet = Yass::Parser.parse(".x { #{property}: #{value}; }")
+      sheet.rules.first.declarations.first
+    end
+
+    it "exposes logical inset declarations with nested length values" do
+      expectations = [
+        ["inset-block-start", Yass::Declarations::InsetBlockStart],
+        ["inset-block-end", Yass::Declarations::InsetBlockEnd],
+        ["inset-inline-start", Yass::Declarations::InsetInlineStart],
+        ["inset-inline-end", Yass::Declarations::InsetInlineEnd],
+      ]
+
+      expectations.each do |property, klass|
+        declaration = inset_declaration(property, "12px")
+
+        expect(declaration).to be_a(klass)
+        expect(declaration.value).to be_a(Yass::Declarations::Inset::LengthPercentage)
+
+        length = declaration.value.value
+        expect(length).to be_a(Yass::Declarations::Length::Absolute)
+        expect(length.value).to eq(12.0)
+        expect(length.unit).to eq(:px)
+      end
+    end
+
+    it "exposes logical inset declarations with auto values" do
+      expectations = [
+        ["inset-block-start", Yass::Declarations::InsetBlockStart],
+        ["inset-block-end", Yass::Declarations::InsetBlockEnd],
+        ["inset-inline-start", Yass::Declarations::InsetInlineStart],
+        ["inset-inline-end", Yass::Declarations::InsetInlineEnd],
+      ]
+
+      expectations.each do |property, klass|
+        declaration = inset_declaration(property, "auto")
+
+        expect(declaration).to be_a(klass)
+        expect(declaration.value).to be_a(Yass::Declarations::Inset::Auto)
+      end
+    end
+  end
+
   describe "custom declarations" do
     def custom_declaration(value)
       sheet = Yass::Parser.parse(".x { --theme: #{value}; }")
