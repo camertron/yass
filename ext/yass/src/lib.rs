@@ -52,6 +52,7 @@ fn init(ruby: &Ruby) -> Result<(), Error> {
     <bool as stylo_static_prefs::Preference>::set("layout.css.font-variations.enabled", true);
     <bool as stylo_static_prefs::Preference>::set("layout.container-queries.enabled", true);
     <bool as stylo_static_prefs::Preference>::set("layout.columns.enabled", true);
+    <bool as stylo_static_prefs::Preference>::set("layout.grid.enabled", true);
 
     let yass_module = ruby.define_module("Yass")?;
 
