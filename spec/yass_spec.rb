@@ -340,6 +340,27 @@ RSpec.describe(Yass) do
     end
   end
 
+  describe "flex direction declarations" do
+    def flex_direction_declaration(value)
+      sheet = Yass::Parser.parse(".x { flex-direction: #{value}; }")
+      sheet.rules.first.declarations.first
+    end
+
+    it "exposes flex direction values as declaration wrappers" do
+      {
+        "row" => :row,
+        "row-reverse" => :row_reverse,
+        "column" => :column,
+        "column-reverse" => :column_reverse,
+      }.each do |css_value, expected_value|
+        declaration = flex_direction_declaration(css_value)
+
+        expect(declaration).to be_a(Yass::Declarations::FlexDirection)
+        expect(declaration.value).to eq(expected_value)
+      end
+    end
+  end
+
   describe "display declarations" do
     def display_declaration(value)
       sheet = Yass::Parser.parse(".x { display: #{value}; }")
