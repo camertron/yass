@@ -117,6 +117,20 @@ RSpec.describe(Yass) do
     expect(values[2].vertical).to eq(:no_repeat)
   end
 
+  it "exposes image rendering declarations" do
+    {
+      "auto" => :auto,
+      "crisp-edges" => :crisp_edges,
+      "pixelated" => :pixelated,
+    }.each do |css_value, expected_value|
+      sheet = Yass::Parser.parse(".x { image-rendering: #{css_value}; }")
+      declaration = sheet.rules.first.declarations.first
+
+      expect(declaration).to be_a(Yass::Declarations::ImageRendering)
+      expect(declaration.value).to eq(expected_value)
+    end
+  end
+
   it "exposes background size declarations" do
     sheet = Yass::Parser.parse(<<~CSS)
       .hero {
