@@ -381,6 +381,28 @@ RSpec.describe(Yass) do
     end
   end
 
+  describe "float declarations" do
+    def float_declaration(value)
+      sheet = Yass::Parser.parse(".x { float: #{value}; }")
+      sheet.rules.first.declarations.first
+    end
+
+    it "exposes float values as declaration wrappers" do
+      {
+        "left" => :left,
+        "right" => :right,
+        "none" => :none,
+        "inline-start" => :inline_start,
+        "inline-end" => :inline_end,
+      }.each do |css_value, expected_value|
+        declaration = float_declaration(css_value)
+
+        expect(declaration).to be_a(Yass::Declarations::Float)
+        expect(declaration.value).to eq(expected_value)
+      end
+    end
+  end
+
   describe "display declarations" do
     def display_declaration(value)
       sheet = Yass::Parser.parse(".x { display: #{value}; }")
