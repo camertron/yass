@@ -4,6 +4,15 @@ use crate::declarations::{align_content::YAlignContent, align_items::YAlignItems
 use crate::declarations::justify_content::YJustifyContent;
 use crate::declarations::justify_items::YJustifyItems;
 use crate::declarations::justify_self::YJustifySelf;
+use crate::declarations::margin::{YMarginAnchorContainingCalcFunction, YMarginAnchorSizeFunction, YMarginLengthPercentage};
+use crate::declarations::margin_block_end::YMarginBlockEnd;
+use crate::declarations::margin_block_start::YMarginBlockStart;
+use crate::declarations::margin_bottom::YMarginBottom;
+use crate::declarations::margin_inline_end::YMarginInlineEnd;
+use crate::declarations::margin_inline_start::YMarginInlineStart;
+use crate::declarations::margin_left::YMarginLeft;
+use crate::declarations::margin_right::YMarginRight;
+use crate::declarations::margin_top::YMarginTop;
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let declarations_module = yass_module.define_module("Declarations")?;
@@ -826,21 +835,38 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
 
     let transform_origin_class = declarations_module.define_class("TransformOrigin", ruby.class_object())?;
 
+    let margin_class = declarations_module.define_class("Margin", ruby.class_object())?;
+    let _margin_auto_class = margin_class.define_class("Auto", ruby.class_object())?;
+    let margin_length_percentage_class = margin_class.define_class("LengthPercentage", ruby.class_object())?;
+    margin_length_percentage_class.define_method("value", method!(YMarginLengthPercentage::value, 0))?;
+    let margin_anchor_size_function_class = margin_class.define_class("AnchorSizeFunction", ruby.class_object())?;
+    margin_anchor_size_function_class.define_method("value", method!(YMarginAnchorSizeFunction::value, 0))?;
+    let margin_anchor_containing_calc_function_class = margin_class.define_class("AnchorContainingCalcFunction", ruby.class_object())?;
+    margin_anchor_containing_calc_function_class.define_method("value", method!(YMarginAnchorContainingCalcFunction::value, 0))?;
+
     let margin_block_end_class = declarations_module.define_class("MarginBlockEnd", ruby.class_object())?;
+    margin_block_end_class.define_method("value", method!(YMarginBlockEnd::value, 0))?;
 
     let margin_block_start_class = declarations_module.define_class("MarginBlockStart", ruby.class_object())?;
+    margin_block_start_class.define_method("value", method!(YMarginBlockStart::value, 0))?;
 
     let margin_bottom_class = declarations_module.define_class("MarginBottom", ruby.class_object())?;
+    margin_bottom_class.define_method("value", method!(YMarginBottom::value, 0))?;
 
     let margin_inline_end_class = declarations_module.define_class("MarginInlineEnd", ruby.class_object())?;
+    margin_inline_end_class.define_method("value", method!(YMarginInlineEnd::value, 0))?;
 
     let margin_inline_start_class = declarations_module.define_class("MarginInlineStart", ruby.class_object())?;
+    margin_inline_start_class.define_method("value", method!(YMarginInlineStart::value, 0))?;
 
     let margin_left_class = declarations_module.define_class("MarginLeft", ruby.class_object())?;
+    margin_left_class.define_method("value", method!(YMarginLeft::value, 0))?;
 
     let margin_right_class = declarations_module.define_class("MarginRight", ruby.class_object())?;
+    margin_right_class.define_method("value", method!(YMarginRight::value, 0))?;
 
     let margin_top_class = declarations_module.define_class("MarginTop", ruby.class_object())?;
+    margin_top_class.define_method("value", method!(YMarginTop::value, 0))?;
 
     let padding_block_end_class = declarations_module.define_class("PaddingBlockEnd", ruby.class_object())?;
 

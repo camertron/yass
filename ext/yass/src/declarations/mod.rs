@@ -153,6 +153,7 @@ pub mod line_height;
 pub mod list_style_image;
 pub mod list_style_position;
 pub mod list_style_type;
+pub mod margin;
 pub mod margin_block_end;
 pub mod margin_block_start;
 pub mod margin_bottom;
