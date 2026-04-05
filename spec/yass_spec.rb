@@ -886,6 +886,43 @@ RSpec.describe(Yass) do
     end
   end
 
+  describe "inline size declarations" do
+    def inline_size_declaration(value)
+      sheet = Yass::Parser.parse(".x { inline-size: #{value}; }")
+      sheet.rules.first.declarations.first
+    end
+
+    it "exposes inline-size with a nested size wrapper" do
+      declaration = inline_size_declaration("42px")
+
+      expect(declaration).to be_a(Yass::Declarations::InlineSize)
+      expect(declaration.size).to be_a(Yass::Declarations::Size::LengthPercentage)
+
+      length = declaration.size.value
+      expect(length).to be_a(Yass::Declarations::Length::Absolute)
+      expect(length.value).to eq(42.0)
+      expect(length.unit).to eq(:px)
+    end
+
+    it "exposes inline-size auto" do
+      declaration = inline_size_declaration("auto")
+
+      expect(declaration).to be_a(Yass::Declarations::InlineSize)
+      expect(declaration.size).to be_a(Yass::Declarations::Size::Auto)
+    end
+
+    it "exposes inline-size percentages" do
+      declaration = inline_size_declaration("25%")
+
+      expect(declaration).to be_a(Yass::Declarations::InlineSize)
+      expect(declaration.size).to be_a(Yass::Declarations::Size::LengthPercentage)
+
+      percentage = declaration.size.value
+      expect(percentage).to be_a(Yass::Declarations::Percentage)
+      expect(percentage.value).to be_within(0.00001).of(0.25)
+    end
+  end
+
   describe "custom declarations" do
     def custom_declaration(value)
       sheet = Yass::Parser.parse(".x { --theme: #{value}; }")
