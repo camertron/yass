@@ -13,6 +13,12 @@ use crate::declarations::margin_inline_start::YMarginInlineStart;
 use crate::declarations::margin_left::YMarginLeft;
 use crate::declarations::margin_right::YMarginRight;
 use crate::declarations::margin_top::YMarginTop;
+use crate::declarations::overflow_block::YOverflowBlock;
+use crate::declarations::overflow_clip_margin::YOverflowClipMargin;
+use crate::declarations::overflow_inline::YOverflowInline;
+use crate::declarations::overflow_wrap::YOverflowWrap;
+use crate::declarations::overflow_x::YOverflowX;
+use crate::declarations::overflow_y::YOverflowY;
 use crate::declarations::padding_block_end::YPaddingBlockEnd;
 use crate::declarations::padding_block_start::YPaddingBlockStart;
 use crate::declarations::padding_bottom::YPaddingBottom;
@@ -218,6 +224,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let outline_style_class = declarations_module.define_class("OutlineStyle", ruby.class_object())?;
 
     let overflow_wrap_class = declarations_module.define_class("OverflowWrap", ruby.class_object())?;
+    overflow_wrap_class.define_method("value", method!(YOverflowWrap::value, 0))?;
 
     let pointer_events_class = declarations_module.define_class("PointerEvents", ruby.class_object())?;
 
@@ -286,12 +293,16 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     justify_self_class.define_method("value", method!(YJustifySelf::value, 0))?;
 
     let overflow_block_class = declarations_module.define_class("OverflowBlock", ruby.class_object())?;
+    overflow_block_class.define_method("value", method!(YOverflowBlock::value, 0))?;
 
     let overflow_inline_class = declarations_module.define_class("OverflowInline", ruby.class_object())?;
+    overflow_inline_class.define_method("value", method!(YOverflowInline::value, 0))?;
 
     let overflow_x_class = declarations_module.define_class("OverflowX", ruby.class_object())?;
+    overflow_x_class.define_method("value", method!(YOverflowX::value, 0))?;
 
     let overflow_y_class = declarations_module.define_class("OverflowY", ruby.class_object())?;
+    overflow_y_class.define_method("value", method!(YOverflowY::value, 0))?;
 
     let border_block_end_style_class = declarations_module.define_class("BorderBlockEndStyle", ruby.class_object())?;
     border_block_end_style_class.define_method("value", method!(YBorderBlockEndStyle::value, 0))?;
@@ -620,6 +631,8 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let outline_offset_class = declarations_module.define_class("OutlineOffset", ruby.class_object())?;
 
     let overflow_clip_margin_class = declarations_module.define_class("OverflowClipMargin", ruby.class_object())?;
+    overflow_clip_margin_class.define_method("offset", method!(YOverflowClipMargin::offset, 0))?;
+    overflow_clip_margin_class.define_method("visual_box", method!(YOverflowClipMargin::visual_box, 0))?;
 
     let perspective_class = declarations_module.define_class("Perspective", ruby.class_object())?;
 

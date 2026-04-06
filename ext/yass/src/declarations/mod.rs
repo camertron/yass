@@ -188,6 +188,7 @@ pub mod overflow_inline;
 pub mod overflow_wrap;
 pub mod overflow_x;
 pub mod overflow_y;
+pub mod overflow;
 pub mod padding_block_end;
 pub mod padding_block_start;
 pub mod padding_bottom;
