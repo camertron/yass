@@ -1,12 +1,14 @@
 use magnus::{Error, Module, RModule, Ruby, method};
 
-use crate::declarations::size::{YAnchorContainingCalcFunction, YFitContentFunction, YLengthPercentage, anchor_size_function::{YAnchorSizeFunction, YAnchorSizeKeyword}};
+use crate::declarations::size::{YAnchorContainingCalcFunction, YFitContentFunction, YLengthPercentage, anchor_max_size_function::YAnchorMaxSizeFunction, anchor_size_function::YAnchorSizeFunction, anchor_size_keyword::YAnchorSizeKeyword};
 
 pub fn init(ruby: &Ruby, _yass_module: &RModule, declarations_module: &RModule) -> Result<(), Error> {
     let size_module = declarations_module.define_module("Size")?;
 
     let length_percentage_class = size_module.define_class("LengthPercentage", ruby.class_object())?;
     length_percentage_class.define_method("value", method!(YLengthPercentage::value, 0))?;
+
+    let _none_class = size_module.define_class("None", ruby.class_object())?;
 
     let _auto_class = size_module.define_class("Auto", ruby.class_object())?;
 
@@ -30,6 +32,11 @@ pub fn init(ruby: &Ruby, _yass_module: &RModule, declarations_module: &RModule) 
     anchor_size_function_class.define_method("target_element", method!(YAnchorSizeFunction::target_element, 0))?;
     anchor_size_function_class.define_method("size", method!(YAnchorSizeFunction::size, 0))?;
     anchor_size_function_class.define_method("fallback", method!(YAnchorSizeFunction::fallback, 0))?;
+
+    let anchor_max_size_function_class = size_module.define_class("AnchorMaxSizeFunction", ruby.class_object())?;
+    anchor_max_size_function_class.define_method("target_element", method!(YAnchorMaxSizeFunction::target_element, 0))?;
+    anchor_max_size_function_class.define_method("size", method!(YAnchorMaxSizeFunction::size, 0))?;
+    anchor_max_size_function_class.define_method("fallback", method!(YAnchorMaxSizeFunction::fallback, 0))?;
 
     let anchor_size_keyword_class = size_module.define_class("AnchorSizeKeyword", ruby.class_object())?;
     anchor_size_keyword_class.define_method("value", method!(YAnchorSizeKeyword::value, 0))?;

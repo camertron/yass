@@ -8,19 +8,21 @@ RSpec.describe "padding declarations" do
     sheet.rules.first.declarations.first
   end
 
-  LONGHANDS = [
-    ["padding-top",          Yass::Declarations::PaddingTop],
-    ["padding-right",        Yass::Declarations::PaddingRight],
-    ["padding-bottom",       Yass::Declarations::PaddingBottom],
-    ["padding-left",         Yass::Declarations::PaddingLeft],
-    ["padding-block-start",  Yass::Declarations::PaddingBlockStart],
-    ["padding-block-end",    Yass::Declarations::PaddingBlockEnd],
-    ["padding-inline-start", Yass::Declarations::PaddingInlineStart],
-    ["padding-inline-end",   Yass::Declarations::PaddingInlineEnd],
-  ].freeze
+  let(:longhands) do
+    [
+      ["padding-top",          Yass::Declarations::PaddingTop],
+      ["padding-right",        Yass::Declarations::PaddingRight],
+      ["padding-bottom",       Yass::Declarations::PaddingBottom],
+      ["padding-left",         Yass::Declarations::PaddingLeft],
+      ["padding-block-start",  Yass::Declarations::PaddingBlockStart],
+      ["padding-block-end",    Yass::Declarations::PaddingBlockEnd],
+      ["padding-inline-start", Yass::Declarations::PaddingInlineStart],
+      ["padding-inline-end",   Yass::Declarations::PaddingInlineEnd],
+    ]
+  end
 
   it "exposes length values" do
-    LONGHANDS.each do |property, klass|
+    longhands.each do |property, klass|
       declaration = declaration_for(property, "10px")
 
       expect(declaration).to be_a(klass), "expected #{property}: 10px to parse as #{klass}"
@@ -34,7 +36,7 @@ RSpec.describe "padding declarations" do
   end
 
   it "exposes percentage values" do
-    LONGHANDS.each do |property, klass|
+    longhands.each do |property, klass|
       declaration = declaration_for(property, "25%")
 
       expect(declaration).to be_a(klass), "expected #{property}: 25% to parse as #{klass}"
@@ -47,7 +49,7 @@ RSpec.describe "padding declarations" do
   end
 
   it "exposes zero length values" do
-    LONGHANDS.each do |property, klass|
+    longhands.each do |property, klass|
       declaration = declaration_for(property, "0")
 
       expect(declaration).to be_a(klass), "expected #{property}: 0 to parse as #{klass}"
@@ -60,7 +62,7 @@ RSpec.describe "padding declarations" do
   end
 
   it "exposes calc length values" do
-    LONGHANDS.each do |property, klass|
+    longhands.each do |property, klass|
       declaration = declaration_for(property, "calc(100% - 20px)")
 
       expect(declaration).to be_a(klass), "expected #{property}: calc(100% - 20px) to parse as #{klass}"

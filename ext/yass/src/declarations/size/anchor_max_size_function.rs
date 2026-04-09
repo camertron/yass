@@ -1,18 +1,18 @@
 use magnus::{DataTypeFunctions, IntoValue, Ruby, TypedData, Value, gc, typed_data};
-use style::values::{generics::{NonNegative, Optional, length::{AnchorSizeKeyword, GenericAnchorSizeFunction, Size}}, specified::LengthPercentage};
+use style::values::{generics::{NonNegative, Optional, length::{AnchorSizeKeyword, GenericAnchorSizeFunction, MaxSize}}, specified::LengthPercentage};
 
-use crate::{cached_value::CachedValue, declarations::size::{anchor_size_keyword::YAnchorSizeKeyword, make_size}};
+use crate::{cached_value::CachedValue, declarations::size::{anchor_size_keyword::YAnchorSizeKeyword, make_max_size}};
 
 #[derive(TypedData)]
-#[magnus(class = "Yass::Declarations::Size::AnchorSizeFunction", mark)]
-pub struct YAnchorSizeFunction {
+#[magnus(class = "Yass::Declarations::Size::AnchorMaxSizeFunction", mark)]
+pub struct YAnchorMaxSizeFunction {
     target_element: CachedValue<String>,
     size: CachedValue<AnchorSizeKeyword>,
-    fallback: CachedValue<Optional<Size<NonNegative<LengthPercentage>>>>
+    fallback: CachedValue<Optional<MaxSize<NonNegative<LengthPercentage>>>>
 }
 
-impl YAnchorSizeFunction {
-    pub fn new(anchor_size: GenericAnchorSizeFunction<Size<NonNegative<LengthPercentage>>>) -> Self {
+impl YAnchorMaxSizeFunction {
+    pub fn new(anchor_size: GenericAnchorSizeFunction<MaxSize<NonNegative<LengthPercentage>>>) -> Self {
         Self {
             target_element: CachedValue::new(anchor_size.target_element.value.0.to_string(), |el, ruby| {
                 ruby.str_new(el).into_value_with(ruby)
@@ -24,10 +24,7 @@ impl YAnchorSizeFunction {
 
             fallback: CachedValue::new(anchor_size.fallback, |fallback, ruby| {
                 match fallback {
-                    Optional::Some(fb) => {
-                        make_size(fb, ruby).into_value_with(ruby)
-                    },
-
+                    Optional::Some(fb) => make_max_size(fb, ruby).into_value_with(ruby),
                     Optional::None => ruby.qnil().into_value_with(ruby)
                 }
             })
@@ -47,7 +44,7 @@ impl YAnchorSizeFunction {
     }
 }
 
-impl DataTypeFunctions for YAnchorSizeFunction {
+impl DataTypeFunctions for YAnchorMaxSizeFunction {
     fn mark(&self, marker: &gc::Marker) {
         self.target_element.mark(marker);
         self.size.mark(marker);

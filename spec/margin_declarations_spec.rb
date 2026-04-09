@@ -8,23 +8,25 @@ RSpec.describe "margin declarations" do
     sheet.rules.first.declarations.first
   end
 
-  LONGHANDS = [
-    ["margin-top",          Yass::Declarations::MarginTop],
-    ["margin-right",        Yass::Declarations::MarginRight],
-    ["margin-bottom",       Yass::Declarations::MarginBottom],
-    ["margin-left",         Yass::Declarations::MarginLeft],
-    ["margin-block-start",  Yass::Declarations::MarginBlockStart],
-    ["margin-block-end",    Yass::Declarations::MarginBlockEnd],
-    ["margin-inline-start", Yass::Declarations::MarginInlineStart],
-    ["margin-inline-end",   Yass::Declarations::MarginInlineEnd],
-  ].freeze
+  let(:longhands) do
+    [
+      ["margin-top",          Yass::Declarations::MarginTop],
+      ["margin-right",        Yass::Declarations::MarginRight],
+      ["margin-bottom",       Yass::Declarations::MarginBottom],
+      ["margin-left",         Yass::Declarations::MarginLeft],
+      ["margin-block-start",  Yass::Declarations::MarginBlockStart],
+      ["margin-block-end",    Yass::Declarations::MarginBlockEnd],
+      ["margin-inline-start", Yass::Declarations::MarginInlineStart],
+      ["margin-inline-end",   Yass::Declarations::MarginInlineEnd],
+    ].freeze
+  end
 
   it "exposes length values" do
-    LONGHANDS.each do |property, klass|
+    longhands.each do |property, klass|
       declaration = declaration_for(property, "10px")
 
       expect(declaration).to be_a(klass), "expected #{property}: 10px to parse as #{klass}"
-      expect(declaration.value).to be_a(Yass::Declarations::Margin::LengthPercentage)
+      expect(declaration.value).to be_a(Yass::Declarations::Size::LengthPercentage)
 
       length = declaration.value.value
       expect(length).to be_a(Yass::Declarations::Length::Absolute)
@@ -34,11 +36,11 @@ RSpec.describe "margin declarations" do
   end
 
   it "exposes percentage values" do
-    LONGHANDS.each do |property, klass|
+    longhands.each do |property, klass|
       declaration = declaration_for(property, "25%")
 
       expect(declaration).to be_a(klass), "expected #{property}: 25% to parse as #{klass}"
-      expect(declaration.value).to be_a(Yass::Declarations::Margin::LengthPercentage)
+      expect(declaration.value).to be_a(Yass::Declarations::Size::LengthPercentage)
 
       percentage = declaration.value.value
       expect(percentage).to be_a(Yass::Declarations::Percentage)
@@ -47,7 +49,7 @@ RSpec.describe "margin declarations" do
   end
 
   it "exposes auto values" do
-    LONGHANDS.each do |property, klass|
+    longhands.each do |property, klass|
       declaration = declaration_for(property, "auto")
 
       expect(declaration).to be_a(klass), "expected #{property}: auto to parse as #{klass}"
@@ -56,11 +58,11 @@ RSpec.describe "margin declarations" do
   end
 
   it "exposes zero length values" do
-    LONGHANDS.each do |property, klass|
+    longhands.each do |property, klass|
       declaration = declaration_for(property, "0")
 
       expect(declaration).to be_a(klass), "expected #{property}: 0 to parse as #{klass}"
-      expect(declaration.value).to be_a(Yass::Declarations::Margin::LengthPercentage)
+      expect(declaration.value).to be_a(Yass::Declarations::Size::LengthPercentage)
 
       length = declaration.value.value
       expect(length).to be_a(Yass::Declarations::Length::Absolute)
@@ -69,11 +71,11 @@ RSpec.describe "margin declarations" do
   end
 
   it "exposes calc length values" do
-    LONGHANDS.each do |property, klass|
+    longhands.each do |property, klass|
       declaration = declaration_for(property, "calc(100% - 20px)")
 
       expect(declaration).to be_a(klass), "expected #{property}: calc(100% - 20px) to parse as #{klass}"
-      expect(declaration.value).to be_a(Yass::Declarations::Margin::LengthPercentage)
+      expect(declaration.value).to be_a(Yass::Declarations::Size::LengthPercentage)
     end
   end
 end

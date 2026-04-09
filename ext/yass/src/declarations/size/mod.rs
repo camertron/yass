@@ -1,9 +1,11 @@
 use magnus::{DataTypeFunctions, IntoValue, Ruby, TypedData, Value, gc, typed_data};
-use style::values::{generics::{NonNegative, length::Size}, specified::LengthPercentage};
+use style::values::{generics::{NonNegative, length::Size}, specified::{LengthPercentage, MaxSize}};
 
-use crate::{cached_value::CachedValue, declarations::{calc::YCalc, length::no_calc_length_to_value, percentage::YPercentage, size::anchor_size_function::YAnchorSizeFunction}};
+use crate::{cached_value::CachedValue, declarations::{calc::YCalc, length::no_calc_length_to_value, percentage::YPercentage, size::{anchor_max_size_function::YAnchorMaxSizeFunction, anchor_size_function::YAnchorSizeFunction}}};
 
 pub mod anchor_size_function;
+pub mod anchor_max_size_function;
+pub mod anchor_size_keyword;
 pub mod init;
 
 pub fn make_size(size: &Size<NonNegative<LengthPercentage>>, ruby: &Ruby) -> Value {
@@ -30,6 +32,33 @@ pub fn make_size(size: &Size<NonNegative<LengthPercentage>>, ruby: &Ruby) -> Val
         Size::AnchorContainingCalcFunction(anchor_with_calc) => {
             YAnchorContainingCalcFunction::new(anchor_with_calc.clone()).into_value_with(ruby)
         },
+    }
+}
+
+pub fn make_max_size(max_size: &MaxSize, ruby: &Ruby) -> Value {
+    match max_size {
+        MaxSize::LengthPercentage(length_percentage) => {
+            YLengthPercentage::new(length_percentage.0.clone()).into_value_with(ruby)
+        }
+
+        MaxSize::None => YNone::new().into_value_with(ruby),
+        MaxSize::MaxContent => YMaxContent::new().into_value_with(ruby),
+        MaxSize::MinContent => YMinContent::new().into_value_with(ruby),
+        MaxSize::FitContent => YFitContent::new().into_value_with(ruby),
+        MaxSize::WebkitFillAvailable => YWebkitFillAvailable::new().into_value_with(ruby),
+        MaxSize::Stretch => YStretch::new().into_value_with(ruby),
+
+        MaxSize::FitContentFunction(fit_content_function) => {
+            YFitContentFunction::new(fit_content_function.clone()).into_value_with(ruby)
+        }
+
+        MaxSize::AnchorSizeFunction(anchor_size_function) => {
+            YAnchorMaxSizeFunction::new((**anchor_size_function).clone()).into_value_with(ruby)
+        }
+
+        MaxSize::AnchorContainingCalcFunction(anchor_containing_calc_function) => {
+            YAnchorContainingCalcFunction::new(anchor_containing_calc_function.clone()).into_value_with(ruby)
+        }
     }
 }
 
@@ -72,6 +101,16 @@ impl YLengthPercentage {
 impl DataTypeFunctions for YLengthPercentage {
     fn mark(&self, marker: &gc::Marker) {
         self.length_percentage.mark(marker);
+    }
+}
+
+#[magnus::wrap(class = "Yass::Declarations::Size::None")]
+pub struct YNone {
+}
+
+impl YNone {
+    pub fn new() -> Self {
+        Self {}
     }
 }
 

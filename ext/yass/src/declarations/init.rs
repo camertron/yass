@@ -4,7 +4,7 @@ use crate::declarations::{align_content::YAlignContent, align_items::YAlignItems
 use crate::declarations::justify_content::YJustifyContent;
 use crate::declarations::justify_items::YJustifyItems;
 use crate::declarations::justify_self::YJustifySelf;
-use crate::declarations::margin::{YMarginAnchorContainingCalcFunction, YMarginAnchorSizeFunction, YMarginLengthPercentage};
+use crate::declarations::margin::{YMarginAnchorContainingCalcFunction, YMarginAnchorSizeFunction};
 use crate::declarations::margin_block_end::YMarginBlockEnd;
 use crate::declarations::margin_block_start::YMarginBlockStart;
 use crate::declarations::margin_bottom::YMarginBottom;
@@ -27,6 +27,10 @@ use crate::declarations::padding_inline_start::YPaddingInlineStart;
 use crate::declarations::padding_left::YPaddingLeft;
 use crate::declarations::padding_right::YPaddingRight;
 use crate::declarations::padding_top::YPaddingTop;
+use crate::declarations::max_height::YMaxHeight;
+use crate::declarations::max_width::YMaxWidth;
+use crate::declarations::min_height::YMinHeight;
+use crate::declarations::min_width::YMinWidth;
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let declarations_module = yass_module.define_module("Declarations")?;
@@ -463,8 +467,6 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let channel_keyword_class = declarations_module.define_class("ChannelKeyword", ruby.class_object())?;
     channel_keyword_class.define_method("value", method!(YChannelKeyword::value, 0))?;
 
-    clip_path::init::init(ruby, &declarations_module)?;
-
     let clip_class = declarations_module.define_class("Clip", ruby.class_object())?;
     clip_class.define_method("value", method!(YClip::value, 0))?;
 
@@ -791,10 +793,12 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let max_block_size_class = declarations_module.define_class("MaxBlockSize", ruby.class_object())?;
 
     let max_height_class = declarations_module.define_class("MaxHeight", ruby.class_object())?;
+    max_height_class.define_method("size", method!(YMaxHeight::size, 0))?;
 
     let max_inline_size_class = declarations_module.define_class("MaxInlineSize", ruby.class_object())?;
 
     let max_width_class = declarations_module.define_class("MaxWidth", ruby.class_object())?;
+    max_width_class.define_method("size", method!(YMaxWidth::size, 0))?;
 
     let bottom_class = declarations_module.define_class("Bottom", ruby.class_object())?;
     bottom_class.define_method("value", method!(YBottom::value, 0))?;
@@ -856,13 +860,16 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
 
     let transform_origin_class = declarations_module.define_class("TransformOrigin", ruby.class_object())?;
 
-    let margin_class = declarations_module.define_class("Margin", ruby.class_object())?;
-    let _margin_auto_class = margin_class.define_class("Auto", ruby.class_object())?;
-    let margin_length_percentage_class = margin_class.define_class("LengthPercentage", ruby.class_object())?;
-    margin_length_percentage_class.define_method("value", method!(YMarginLengthPercentage::value, 0))?;
-    let margin_anchor_size_function_class = margin_class.define_class("AnchorSizeFunction", ruby.class_object())?;
-    margin_anchor_size_function_class.define_method("value", method!(YMarginAnchorSizeFunction::value, 0))?;
-    let margin_anchor_containing_calc_function_class = margin_class.define_class("AnchorContainingCalcFunction", ruby.class_object())?;
+    let margin_module = declarations_module.define_module("Margin")?;
+
+    let _margin_auto_class = margin_module.define_class("Auto", ruby.class_object())?;
+
+    let margin_anchor_size_function_class = margin_module.define_class("AnchorSizeFunction", ruby.class_object())?;
+    margin_anchor_size_function_class.define_method("target_element", method!(YMarginAnchorSizeFunction::target_element, 0))?;
+    margin_anchor_size_function_class.define_method("size", method!(YMarginAnchorSizeFunction::size, 0))?;
+    margin_anchor_size_function_class.define_method("fallback", method!(YMarginAnchorSizeFunction::fallback, 0))?;
+
+    let margin_anchor_containing_calc_function_class = margin_module.define_class("AnchorContainingCalcFunction", ruby.class_object())?;
     margin_anchor_containing_calc_function_class.define_method("value", method!(YMarginAnchorContainingCalcFunction::value, 0))?;
 
     let margin_block_end_class = declarations_module.define_class("MarginBlockEnd", ruby.class_object())?;
@@ -927,10 +934,12 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let min_block_size_class = declarations_module.define_class("MinBlockSize", ruby.class_object())?;
 
     let min_height_class = declarations_module.define_class("MinHeight", ruby.class_object())?;
+    min_height_class.define_method("size", method!(YMinHeight::size, 0))?;
 
     let min_inline_size_class = declarations_module.define_class("MinInlineSize", ruby.class_object())?;
 
     let min_width_class = declarations_module.define_class("MinWidth", ruby.class_object())?;
+    min_width_class.define_method("size", method!(YMinWidth::size, 0))?;
 
     let width_class = declarations_module.define_class("Width", ruby.class_object())?;
     width_class.define_method("size", method!(YWidth::size, 0))?;
@@ -1028,6 +1037,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
 
     animation::init::init(ruby, yass_module, &declarations_module)?;
     calc::init::init(ruby, yass_module, &declarations_module)?;
+    clip_path::init::init(ruby, &declarations_module)?;
     color::init::init(ruby, &color_class)?;
     filter::init::init(ruby, yass_module, &declarations_module)?;
     images::init::init(ruby, &declarations_module)?;
