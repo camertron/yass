@@ -29,8 +29,10 @@ use crate::declarations::padding_inline_start::YPaddingInlineStart;
 use crate::declarations::padding_left::YPaddingLeft;
 use crate::declarations::padding_right::YPaddingRight;
 use crate::declarations::padding_top::YPaddingTop;
+use crate::declarations::max_block_size::YMaxBlockSize;
 use crate::declarations::max_height::YMaxHeight;
 use crate::declarations::max_width::YMaxWidth;
+use crate::declarations::min_block_size::YMinBlockSize;
 use crate::declarations::min_height::YMinHeight;
 use crate::declarations::min_width::YMinWidth;
 
@@ -815,6 +817,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     grid_row_start_class.define_method("ident_only?", method!(YGridRowStart::ident_only, 0))?;
 
     let max_block_size_class = declarations_module.define_class("MaxBlockSize", ruby.class_object())?;
+    max_block_size_class.define_method("size", method!(YMaxBlockSize::size, 0))?;
 
     let max_height_class = declarations_module.define_class("MaxHeight", ruby.class_object())?;
     max_height_class.define_method("size", method!(YMaxHeight::size, 0))?;
@@ -956,6 +959,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     inline_size_class.define_method("size", method!(YInlineSize::size, 0))?;
 
     let min_block_size_class = declarations_module.define_class("MinBlockSize", ruby.class_object())?;
+    min_block_size_class.define_method("size", method!(YMinBlockSize::size, 0))?;
 
     let min_height_class = declarations_module.define_class("MinHeight", ruby.class_object())?;
     min_height_class.define_method("size", method!(YMinHeight::size, 0))?;
