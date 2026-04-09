@@ -3,8 +3,6 @@ use style::values::specified::{AbsoluteLength, CharacterWidth, FontRelativeLengt
 
 use crate::declarations::calc::YCalc;
 
-pub struct YLength { }
-
 pub fn length_to_value(length: &Length, ruby: &Ruby) -> Value {
     match length {
         Length::NoCalc(no_calc_length) => no_calc_length_to_value(no_calc_length, ruby),
