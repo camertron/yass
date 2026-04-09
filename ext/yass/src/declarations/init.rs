@@ -4,6 +4,7 @@ use crate::declarations::{align_content::YAlignContent, align_items::YAlignItems
 use crate::declarations::justify_content::YJustifyContent;
 use crate::declarations::justify_items::YJustifyItems;
 use crate::declarations::justify_self::YJustifySelf;
+use crate::declarations::line_break::YLineBreak;
 use crate::declarations::margin::{YMarginAnchorContainingCalcFunction, YMarginAnchorSizeFunction};
 use crate::declarations::margin_block_end::YMarginBlockEnd;
 use crate::declarations::margin_block_start::YMarginBlockStart;
@@ -212,6 +213,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     justify_items_class.define_method("value", method!(YJustifyItems::value, 0))?;
 
     let line_break_class = declarations_module.define_class("LineBreak", ruby.class_object())?;
+    line_break_class.define_method("value", method!(YLineBreak::value, 0))?;
 
     let list_style_position_class = declarations_module.define_class("ListStylePosition", ruby.class_object())?;
 
