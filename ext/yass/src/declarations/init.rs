@@ -5,6 +5,7 @@ use crate::declarations::justify_content::YJustifyContent;
 use crate::declarations::justify_items::YJustifyItems;
 use crate::declarations::justify_self::YJustifySelf;
 use crate::declarations::line_break::YLineBreak;
+use crate::declarations::list_style_position::YListStylePosition;
 use crate::declarations::margin::{YMarginAnchorContainingCalcFunction, YMarginAnchorSizeFunction};
 use crate::declarations::margin_block_end::YMarginBlockEnd;
 use crate::declarations::margin_block_start::YMarginBlockStart;
@@ -216,6 +217,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     line_break_class.define_method("value", method!(YLineBreak::value, 0))?;
 
     let list_style_position_class = declarations_module.define_class("ListStylePosition", ruby.class_object())?;
+    list_style_position_class.define_method("value", method!(YListStylePosition::value, 0))?;
 
     let mix_blend_mode_class = declarations_module.define_class("MixBlendMode", ruby.class_object())?;
 
