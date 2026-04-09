@@ -43,11 +43,11 @@ impl YClipPathPolygonCoord {
     pub fn new(coord: PolygonCoord<LengthPercentage>) -> Self {
         Self {
             x: CachedValue::new(coord.0, |value, ruby| {
-                length_percentage_to_value(value.clone(), ruby)
+                length_percentage_to_value(value, ruby)
             }),
 
             y: CachedValue::new(coord.1, |value, ruby| {
-                length_percentage_to_value(value.clone(), ruby)
+                length_percentage_to_value(value, ruby)
             }),
         }
     }

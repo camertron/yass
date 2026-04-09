@@ -476,8 +476,8 @@ pub struct YClipPathCoordinatePair {
 impl YClipPathCoordinatePair {
     pub fn new(coord: CoordinatePair<LengthPercentage>) -> Self {
         Self {
-            x: CachedValue::new(coord.x, |x, ruby| length_percentage_to_value(x.clone(), ruby)),
-            y: CachedValue::new(coord.y, |y, ruby| length_percentage_to_value(y.clone(), ruby)),
+            x: CachedValue::new(coord.x, |x, ruby| length_percentage_to_value(x, ruby)),
+            y: CachedValue::new(coord.y, |y, ruby| length_percentage_to_value(y, ruby)),
         }
     }
 
@@ -510,7 +510,7 @@ impl YClipPathAxisEndPointToPosition {
     pub fn value(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Value {
         match &rb_self.position {
             AxisPosition::LengthPercent(length) => {
-                length_percentage_to_value(length.clone(), ruby)
+                length_percentage_to_value(length, ruby)
             }
 
             AxisPosition::Keyword(keyword) => {
@@ -530,7 +530,7 @@ impl YClipPathAxisEndPointByCoordinate {
     pub fn new(coord: LengthPercentage) -> Self {
         Self {
             coord: CachedValue::new(coord, |coord, ruby| {
-                length_percentage_to_value(coord.clone(), ruby)
+                length_percentage_to_value(coord, ruby)
             }),
         }
     }
@@ -642,11 +642,11 @@ pub struct YClipPathArcRadii {
 impl YClipPathArcRadii {
     pub fn new(radii: ArcRadii<LengthPercentage>) -> Self {
         Self {
-            rx: CachedValue::new(radii.rx, |rx, ruby| length_percentage_to_value(rx.clone(), ruby)),
+            rx: CachedValue::new(radii.rx, |rx, ruby| length_percentage_to_value(rx, ruby)),
             ry: CachedValue::new(radii.ry, |ry, ruby| {
                 match ry {
                     Optional::Some(value) => {
-                        length_percentage_to_value(value.clone(), ruby)
+                        length_percentage_to_value(value, ruby)
                     }
 
                     Optional::None => ruby.qnil().into_value_with(ruby),

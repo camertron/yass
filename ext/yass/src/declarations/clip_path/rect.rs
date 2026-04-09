@@ -40,19 +40,19 @@ impl YClipPathInsetRect {
     pub fn new(inset_rect: InsetRect<LengthPercentage>) -> Self {
         Self {
             top: CachedValue::new(inset_rect.rect.0, |value, ruby| {
-                length_percentage_to_value(value.clone(), ruby)
+                length_percentage_to_value(value, ruby)
             }),
 
             right: CachedValue::new(inset_rect.rect.1, |value, ruby| {
-                length_percentage_to_value(value.clone(), ruby)
+                length_percentage_to_value(value, ruby)
             }),
 
             bottom: CachedValue::new(inset_rect.rect.2, |value, ruby| {
-                length_percentage_to_value(value.clone(), ruby)
+                length_percentage_to_value(value, ruby)
             }),
 
             left: CachedValue::new(inset_rect.rect.3, |value, ruby| {
-                length_percentage_to_value(value.clone(), ruby)
+                length_percentage_to_value(value, ruby)
             }),
 
             round: CachedValue::new(inset_rect.round, make_border_radius),
@@ -104,19 +104,19 @@ impl YClipPathXywhRect {
     pub fn new(xywh: Xywh) -> Self {
         Self {
             x: CachedValue::new(xywh.x, |value, ruby| {
-                length_percentage_to_value(value.clone(), ruby)
+                length_percentage_to_value(value, ruby)
             }),
 
             y: CachedValue::new(xywh.y, |value, ruby| {
-                length_percentage_to_value(value.clone(), ruby)
+                length_percentage_to_value(value, ruby)
             }),
 
             width: CachedValue::new(xywh.width, |value, ruby| {
-                length_percentage_to_value(value.0.clone(), ruby)
+                length_percentage_to_value(&value.0, ruby)
             }),
 
             height: CachedValue::new(xywh.height, |value, ruby| {
-                length_percentage_to_value(value.0.clone(), ruby)
+                length_percentage_to_value(&value.0, ruby)
             }),
 
             round: CachedValue::new(xywh.round, make_border_radius),

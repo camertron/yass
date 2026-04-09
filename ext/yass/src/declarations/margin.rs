@@ -37,7 +37,7 @@ impl YMarginAnchorContainingCalcFunction {
     pub fn new(length_percentage: LengthPercentage) -> Self {
         Self {
             length_percentage: CachedValue::new(length_percentage, |value, ruby| {
-                length_percentage_to_value(value.clone(), ruby)
+                length_percentage_to_value(value, ruby)
             }),
         }
     }

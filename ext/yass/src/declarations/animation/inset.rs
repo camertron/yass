@@ -17,7 +17,7 @@ impl YInset {
                 match start {
                     LengthPercentageOrAuto::Auto => YLengthAuto::new().into_value_with(ruby),
                     LengthPercentageOrAuto::LengthPercentage(length) => {
-                        length_percentage_to_value(length.clone(), ruby)
+                        length_percentage_to_value(length, ruby)
                     }
                 }
             }),
@@ -26,7 +26,7 @@ impl YInset {
                 match end {
                     LengthPercentageOrAuto::Auto => YLengthAuto::new().into_value_with(ruby),
                     LengthPercentageOrAuto::LengthPercentage(length) => {
-                        length_percentage_to_value(length.clone(), ruby)
+                        length_percentage_to_value(length, ruby)
                     }
                 }
             })

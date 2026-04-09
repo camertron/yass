@@ -89,11 +89,11 @@ impl YClipPathPosition {
     pub fn new(position: ClipPathShapePosition) -> Self {
         Self {
             x: CachedValue::new(position.horizontal, |value, ruby| {
-                length_percentage_to_value(value.clone(), ruby)
+                length_percentage_to_value(value, ruby)
             }),
 
             y: CachedValue::new(position.vertical, |value, ruby| {
-                length_percentage_to_value(value.clone(), ruby)
+                length_percentage_to_value(value, ruby)
             }),
         }
     }
@@ -133,7 +133,7 @@ impl YClipPathShapeRadiusLength {
     pub fn new(value: NonNegative<LengthPercentage>) -> Self {
         Self {
             value: CachedValue::new(value, |value, ruby| {
-                length_percentage_to_value(value.0.clone(), ruby)
+                length_percentage_to_value(&value.0, ruby)
             }),
         }
     }

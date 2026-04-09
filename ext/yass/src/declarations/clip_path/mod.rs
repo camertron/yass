@@ -129,7 +129,7 @@ fn make_length_percentage_or_auto(value: &LengthPercentageOrAuto, ruby: &Ruby) -
     match value {
         LengthPercentageOrAuto::Auto => YClipPathAuto::new().into_value_with(ruby),
         LengthPercentageOrAuto::LengthPercentage(length_percentage) => {
-            length_percentage_to_value(length_percentage.clone(), ruby)
+            length_percentage_to_value(length_percentage, ruby)
         }
     }
 }

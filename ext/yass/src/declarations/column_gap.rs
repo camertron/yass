@@ -57,7 +57,7 @@ impl YColumnGapLengthPercentage {
     pub fn new(length_percentage: NonNegative<LengthPercentage>) -> Self {
         Self {
             length_percentage: CachedValue::new(length_percentage, |value, ruby| {
-                length_percentage_to_value(value.0.clone(), ruby)
+                length_percentage_to_value(&value.0, ruby)
             }),
         }
     }

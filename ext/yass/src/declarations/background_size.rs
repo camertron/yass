@@ -114,7 +114,7 @@ fn length_percentage_or_auto_to_value(
     match value {
         NonNegativeLengthPercentageOrAuto::Auto => YBackgroundSizeAuto::new().into_value_with(ruby),
         NonNegativeLengthPercentageOrAuto::LengthPercentage(length_percentage) => {
-            length_percentage_to_value(length_percentage.0.clone(), ruby)
+            length_percentage_to_value(&length_percentage.0, ruby)
         }
     }
 }

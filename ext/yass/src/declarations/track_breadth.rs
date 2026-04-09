@@ -29,7 +29,7 @@ impl YTrackBreadthLengthPercentage {
     pub fn new(length_percentage: LengthPercentage) -> Self {
         Self {
             value: CachedValue::new(length_percentage, |value, ruby| {
-                length_percentage_to_value(value.clone(), ruby)
+                length_percentage_to_value(value, ruby)
             }),
         }
     }

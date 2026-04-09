@@ -62,7 +62,7 @@ pub fn make_max_size(max_size: &MaxSize, ruby: &Ruby) -> Value {
     }
 }
 
-pub fn length_percentage_to_value(length_percentage: LengthPercentage, ruby: &Ruby) -> Value {
+pub fn length_percentage_to_value(length_percentage: &LengthPercentage, ruby: &Ruby) -> Value {
     match length_percentage {
         LengthPercentage::Length(no_calc_length) => {
             no_calc_length_to_value(&no_calc_length, ruby)
@@ -88,7 +88,7 @@ impl YLengthPercentage {
     pub fn new(length_percentage: LengthPercentage) -> Self {
         Self {
             length_percentage: CachedValue::new(length_percentage, |lp, ruby| {
-                length_percentage_to_value(lp.clone(), ruby)
+                length_percentage_to_value(lp, ruby)
             })
         }
     }
@@ -184,7 +184,7 @@ impl YFitContentFunction {
     pub fn new(fit_content_function: NonNegative<LengthPercentage>) -> Self {
         Self {
             fit_content_function: CachedValue::new(fit_content_function, |fcf, ruby| {
-                length_percentage_to_value(fcf.0.clone(), ruby)
+                length_percentage_to_value(&fcf.0, ruby)
             })
         }
     }
@@ -210,7 +210,7 @@ impl YAnchorContainingCalcFunction {
     pub fn new(anchor_containing_calc_function: NonNegative<LengthPercentage>) -> Self {
         Self {
             anchor_containing_calc_function: CachedValue::new(anchor_containing_calc_function, |accf, ruby| {
-                length_percentage_to_value(accf.0.clone(), ruby)
+                length_percentage_to_value(&accf.0, ruby)
             })
         }
     }

@@ -15,7 +15,7 @@ impl YRangeValue {
         Self {
             length_percentage: CachedValue::new(value.lp, |lp, ruby| {
                 match lp {
-                    Optional::Some(lp) => length_percentage_to_value(lp.clone(), ruby),
+                    Optional::Some(lp) => length_percentage_to_value(lp, ruby),
                     Optional::None => ruby.qnil().into_value_with(ruby)
                 }
             }),

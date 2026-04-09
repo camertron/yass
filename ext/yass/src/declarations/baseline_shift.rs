@@ -46,7 +46,7 @@ impl YBaselineShiftLength {
     pub fn new(length_percentage: LengthPercentage) -> Self {
         Self {
             value: CachedValue::new(length_percentage, |length_percentage, ruby| {
-                length_percentage_to_value(length_percentage.clone(), ruby)
+                length_percentage_to_value(length_percentage, ruby)
             }),
         }
     }
