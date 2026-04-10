@@ -203,6 +203,7 @@ use crate::declarations::position_try_fallbacks::{YPositionTryFallbacks, YPositi
 use crate::declarations::quotes::{YQuotes, YQuotesQuoteList, YQuotesQuotePair};
 use crate::declarations::resolution::YResolution;
 use crate::declarations::right::YRight;
+use crate::declarations::rotate::{YRotate, YRotate3D};
 use crate::declarations::size;
 use crate::declarations::text_decoration_color::YTextDecorationColor;
 use crate::declarations::time::YTime;
@@ -1125,6 +1126,15 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     right_class.define_method("value", method!(YRight::value, 0))?;
 
     let rotate_class = declarations_module.define_class("Rotate", ruby.class_object())?;
+    rotate_class.define_method("value", method!(YRotate::value, 0))?;
+
+    let _rotate_none_class = rotate_class.define_class("None", ruby.class_object())?;
+
+    let rotate_rotate3d_class = rotate_class.define_class("Rotate3D", ruby.class_object())?;
+    rotate_rotate3d_class.define_method("x", method!(YRotate3D::x, 0))?;
+    rotate_rotate3d_class.define_method("y", method!(YRotate3D::y, 0))?;
+    rotate_rotate3d_class.define_method("z", method!(YRotate3D::z, 0))?;
+    rotate_rotate3d_class.define_method("angle", method!(YRotate3D::angle, 0))?;
 
     let top_class = declarations_module.define_class("Top", ruby.class_object())?;
     top_class.define_method("value", method!(YTop::value, 0))?;
