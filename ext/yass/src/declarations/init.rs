@@ -217,6 +217,7 @@ use crate::declarations::text_decoration_line::YTextDecorationLine;
 use crate::declarations::text_decoration_style::YTextDecorationStyle;
 use crate::declarations::text_indent::YTextIndent;
 use crate::declarations::text_justify::YTextJustify;
+use crate::declarations::text_overflow::{YTextOverflow, YTextOverflowString};
 use crate::declarations::time::YTime;
 use crate::declarations::top::YTop;
 use crate::declarations::track_breadth::{YTrackBreadthFr, YTrackBreadthLengthPercentage};
@@ -497,6 +498,16 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     text_decoration_style_class.define_method("value", method!(YTextDecorationStyle::value, 0))?;
 
     let text_overflow_class = declarations_module.define_class("TextOverflow", ruby.class_object())?;
+    text_overflow_class.define_method("first", method!(YTextOverflow::first, 0))?;
+    text_overflow_class.define_method("second", method!(YTextOverflow::second, 0))?;
+    text_overflow_class.define_method("sides_are_logical?", method!(YTextOverflow::sides_are_logical, 0))?;
+
+    let _text_overflow_clip_class = text_overflow_class.define_class("Clip", ruby.class_object())?;
+
+    let _text_overflow_ellipsis_class = text_overflow_class.define_class("Ellipsis", ruby.class_object())?;
+
+    let text_overflow_string_class = text_overflow_class.define_class("String", ruby.class_object())?;
+    text_overflow_string_class.define_method("value", method!(YTextOverflowString::value, 0))?;
 
     let text_justify_class = declarations_module.define_class("TextJustify", ruby.class_object())?;
     text_justify_class.define_method("value", method!(YTextJustify::value, 0))?;
