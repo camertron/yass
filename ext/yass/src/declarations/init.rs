@@ -176,6 +176,7 @@ use crate::declarations::object_position::YObjectPosition;
 use crate::declarations::opacity::YOpacity;
 use crate::declarations::order::YOrder;
 use crate::declarations::outline_color::YOutlineColor;
+use crate::declarations::outline_offset::YOutlineOffset;
 use crate::declarations::overflow_block::YOverflowBlock;
 use crate::declarations::overflow_clip_margin::YOverflowClipMargin;
 use crate::declarations::overflow_inline::YOverflowInline;
@@ -853,6 +854,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     mask_image_class.define_method("values", method!(YMaskImage::values, 0))?;
 
     let outline_offset_class = declarations_module.define_class("OutlineOffset", ruby.class_object())?;
+    outline_offset_class.define_method("value", method!(YOutlineOffset::value, 0))?;
 
     let overflow_clip_margin_class = declarations_module.define_class("OverflowClipMargin", ruby.class_object())?;
     overflow_clip_margin_class.define_method("offset", method!(YOverflowClipMargin::offset, 0))?;
