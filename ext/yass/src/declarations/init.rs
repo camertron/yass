@@ -173,6 +173,7 @@ use crate::declarations::mix_blend_mode::YMixBlendMode;
 use crate::declarations::number::YNumber;
 use crate::declarations::object_fit::YObjectFit;
 use crate::declarations::object_position::YObjectPosition;
+use crate::declarations::opacity::YOpacity;
 use crate::declarations::outline_color::YOutlineColor;
 use crate::declarations::overflow_block::YOverflowBlock;
 use crate::declarations::overflow_clip_margin::YOverflowClipMargin;
@@ -422,6 +423,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     object_position_class.define_method("vertical", method!(YObjectPosition::vertical, 0))?;
 
     let opacity_class = declarations_module.define_class("Opacity", ruby.class_object())?;
+    opacity_class.define_method("value", method!(YOpacity::value, 0))?;
 
     let order_class = declarations_module.define_class("Order", ruby.class_object())?;
 
