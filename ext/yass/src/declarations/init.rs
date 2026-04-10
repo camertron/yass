@@ -197,6 +197,7 @@ use crate::declarations::perspective::{YPerspective, YPerspectiveLength};
 use crate::declarations::perspective_origin::YPerspectiveOrigin;
 use crate::declarations::percentage::YPercentage;
 use crate::declarations::pointer_events::YPointerEvents;
+use crate::declarations::position_area::YPositionArea;
 use crate::declarations::resolution::YResolution;
 use crate::declarations::right::YRight;
 use crate::declarations::size;
@@ -447,6 +448,9 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let position_class = declarations_module.define_class("Position", ruby.class_object())?;
 
     let position_area_class = declarations_module.define_class("PositionArea", ruby.class_object())?;
+    position_area_class.define_method("first", method!(YPositionArea::first, 0))?;
+    position_area_class.define_method("second", method!(YPositionArea::second, 0))?;
+    position_area_class.define_method("is_none", method!(YPositionArea::is_none, 0))?;
 
     let servo_overflow_clip_box_class = declarations_module.define_class("ServoOverflowClipBox", ruby.class_object())?;
 
