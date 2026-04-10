@@ -82,7 +82,7 @@ type ClipPathPosition = Position<
     PositionComponent<VerticalPositionKeyword>,
 >;
 
-type ClipPathBasicShape =
+pub type ClipPathBasicShape =
     StyloBasicShape<Angle, ClipPathPosition, LengthPercentage, BasicShapeRect>;
 
 type ClipPath = StyloClipPath<ClipPathBasicShape, CssUrl>;
@@ -286,7 +286,7 @@ fn make_basic_shape_path_or_shape(path_or_shape: &ClipPathPathOrShape, ruby: &Ru
     }
 }
 
-fn make_basic_shape(basic_shape: &ClipPathBasicShape, ruby: &Ruby) -> Value {
+pub fn make_basic_shape(basic_shape: &ClipPathBasicShape, ruby: &Ruby) -> Value {
     match basic_shape {
         ClipPathBasicShape::Rect(rect) => YClipPathRect::new(rect.clone()).into_value_with(ruby),
         ClipPathBasicShape::Circle(circle) => {

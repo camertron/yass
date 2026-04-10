@@ -85,6 +85,7 @@ use crate::declarations::clip_path;
 use crate::declarations::clip::{YClip, YClipLength, YClipRect};
 use crate::declarations::color_scheme::YColorScheme;
 use crate::declarations::color::{self, YColor};
+use crate::declarations::offset_path::{YOffsetPath, YOffsetPathNone, YOffsetPathCoordBox, YOffsetPathFunction, YOffsetPathRay, YOffsetPathUrl, YOffsetPathPositionAuto, YOffsetPathPosition};
 use crate::declarations::column_count::YColumnCountInteger;
 use crate::declarations::column_gap::{YColumnGap, YColumnGapLengthPercentage};
 use crate::declarations::column_span::YColumnSpan;
@@ -388,6 +389,33 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
 
     let object_fit_class = declarations_module.define_class("ObjectFit", ruby.class_object())?;
     object_fit_class.define_method("value", method!(YObjectFit::value, 0))?;
+
+    let offset_path_class = declarations_module.define_class("OffsetPath", ruby.class_object())?;
+    offset_path_class.define_method("value", method!(YOffsetPath::value, 0))?;
+
+    let _offset_path_none_class = offset_path_class.define_class("None", ruby.class_object())?;
+
+    let offset_path_coord_box_class = offset_path_class.define_class("CoordBox", ruby.class_object())?;
+    offset_path_coord_box_class.define_method("value", method!(YOffsetPathCoordBox::value, 0))?;
+
+    let offset_path_offset_path_class = offset_path_class.define_class("Function", ruby.class_object())?;
+    offset_path_offset_path_class.define_method("path", method!(YOffsetPathFunction::path, 0))?;
+    offset_path_offset_path_class.define_method("coord_box", method!(YOffsetPathFunction::coord_box, 0))?;
+
+    let offset_path_ray_class = offset_path_class.define_class("Ray", ruby.class_object())?;
+    offset_path_ray_class.define_method("angle", method!(YOffsetPathRay::angle, 0))?;
+    offset_path_ray_class.define_method("size", method!(YOffsetPathRay::size, 0))?;
+    offset_path_ray_class.define_method("contain?", method!(YOffsetPathRay::contain, 0))?;
+    offset_path_ray_class.define_method("position", method!(YOffsetPathRay::position, 0))?;
+
+    let offset_path_url_class = offset_path_class.define_class("Url", ruby.class_object())?;
+    offset_path_url_class.define_method("value", method!(YOffsetPathUrl::value, 0))?;
+
+    let _offset_path_position_auto_class = offset_path_class.define_class("PositionAuto", ruby.class_object())?;
+
+    let offset_path_position_class = offset_path_class.define_class("Position", ruby.class_object())?;
+    offset_path_position_class.define_method("horizontal", method!(YOffsetPathPosition::horizontal, 0))?;
+    offset_path_position_class.define_method("vertical", method!(YOffsetPathPosition::vertical, 0))?;
 
     let object_position_class = declarations_module.define_class("ObjectPosition", ruby.class_object())?;
     object_position_class.define_method("horizontal", method!(YObjectPosition::horizontal, 0))?;
@@ -819,8 +847,6 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
 
     let mask_image_class = declarations_module.define_class("MaskImage", ruby.class_object())?;
     mask_image_class.define_method("values", method!(YMaskImage::values, 0))?;
-
-    let offset_path_class = declarations_module.define_class("OffsetPath", ruby.class_object())?;
 
     let outline_offset_class = declarations_module.define_class("OutlineOffset", ruby.class_object())?;
 
