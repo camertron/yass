@@ -577,6 +577,37 @@ RSpec.describe(Yass) do
     end
   end
 
+  describe "row gap declarations" do
+    def row_gap_declaration(value)
+      sheet = Yass::Parser.parse(".x { row-gap: #{value}; }")
+      sheet.rules.first.declarations.first
+    end
+
+    it "exposes normal and length-percentage variants" do
+      normal_declaration = row_gap_declaration("normal")
+
+      expect(normal_declaration).to be_a(Yass::Declarations::RowGap)
+      expect(normal_declaration.value).to be_a(Yass::Declarations::RowGap::Normal)
+
+      length_declaration = row_gap_declaration("12px")
+
+      expect(length_declaration).to be_a(Yass::Declarations::RowGap)
+
+      length = length_declaration.value
+      expect(length).to be_a(Yass::Declarations::RowGap::LengthPercentage)
+      expect(length.value).to be_a(Yass::Declarations::Length::Absolute)
+      expect(length.value.value).to eq(12.0)
+      expect(length.value.unit).to eq(:px)
+
+      percentage_declaration = row_gap_declaration("7%")
+
+      percentage = percentage_declaration.value
+      expect(percentage).to be_a(Yass::Declarations::RowGap::LengthPercentage)
+      expect(percentage.value).to be_a(Yass::Declarations::Percentage)
+      expect(percentage.value.value).to be_within(0.00001).of(0.07)
+    end
+  end
+
   describe "column span declarations" do
     def column_span_declaration(value)
       sheet = Yass::Parser.parse(".x { column-span: #{value}; }")

@@ -204,6 +204,7 @@ use crate::declarations::quotes::{YQuotes, YQuotesQuoteList, YQuotesQuotePair};
 use crate::declarations::resolution::YResolution;
 use crate::declarations::right::YRight;
 use crate::declarations::rotate::{YRotate, YRotate3D};
+use crate::declarations::row_gap::{YRowGap, YRowGapLengthPercentage};
 use crate::declarations::size;
 use crate::declarations::text_decoration_color::YTextDecorationColor;
 use crate::declarations::time::YTime;
@@ -1029,6 +1030,12 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     column_gap_length_percentage_class.define_method("value", method!(YColumnGapLengthPercentage::value, 0))?;
 
     let row_gap_class = declarations_module.define_class("RowGap", ruby.class_object())?;
+    row_gap_class.define_method("value", method!(YRowGap::value, 0))?;
+
+    let _row_gap_normal_class = row_gap_class.define_class("Normal", ruby.class_object())?;
+
+    let row_gap_length_percentage_class = row_gap_class.define_class("LengthPercentage", ruby.class_object())?;
+    row_gap_length_percentage_class.define_method("value", method!(YRowGapLengthPercentage::value, 0))?;
 
     let scale_class = declarations_module.define_class("Scale", ruby.class_object())?;
 
