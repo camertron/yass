@@ -193,6 +193,7 @@ use crate::declarations::padding_inline_start::YPaddingInlineStart;
 use crate::declarations::padding_left::YPaddingLeft;
 use crate::declarations::padding_right::YPaddingRight;
 use crate::declarations::padding_top::YPaddingTop;
+use crate::declarations::perspective::{YPerspective, YPerspectiveLength};
 use crate::declarations::perspective_origin::YPerspectiveOrigin;
 use crate::declarations::percentage::YPercentage;
 use crate::declarations::resolution::YResolution;
@@ -865,6 +866,12 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     overflow_clip_margin_class.define_method("visual_box", method!(YOverflowClipMargin::visual_box, 0))?;
 
     let perspective_class = declarations_module.define_class("Perspective", ruby.class_object())?;
+    perspective_class.define_method("value", method!(YPerspective::value, 0))?;
+
+    let _perspective_none_class = perspective_class.define_class("None", ruby.class_object())?;
+
+    let perspective_length_class = perspective_class.define_class("Length", ruby.class_object())?;
+    perspective_length_class.define_method("value", method!(YPerspectiveLength::value, 0))?;
 
     let position_try_fallbacks_class = declarations_module.define_class("PositionTryFallbacks", ruby.class_object())?;
 
