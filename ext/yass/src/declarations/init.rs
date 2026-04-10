@@ -15,6 +15,7 @@ use crate::declarations::margin_inline_start::YMarginInlineStart;
 use crate::declarations::margin_left::YMarginLeft;
 use crate::declarations::margin_right::YMarginRight;
 use crate::declarations::margin_top::YMarginTop;
+use crate::declarations::mix_blend_mode::YMixBlendMode;
 use crate::declarations::overflow_block::YOverflowBlock;
 use crate::declarations::overflow_clip_margin::YOverflowClipMargin;
 use crate::declarations::overflow_inline::YOverflowInline;
@@ -224,6 +225,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     list_style_position_class.define_method("value", method!(YListStylePosition::value, 0))?;
 
     let mix_blend_mode_class = declarations_module.define_class("MixBlendMode", ruby.class_object())?;
+    mix_blend_mode_class.define_method("value", method!(YMixBlendMode::value, 0))?;
 
     let object_fit_class = declarations_module.define_class("ObjectFit", ruby.class_object())?;
 
