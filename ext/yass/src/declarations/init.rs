@@ -178,6 +178,7 @@ use crate::declarations::order::YOrder;
 use crate::declarations::outline_color::YOutlineColor;
 use crate::declarations::outline_offset::YOutlineOffset;
 use crate::declarations::outline_style::YOutlineStyle;
+use crate::declarations::outline_width::YOutlineWidth;
 use crate::declarations::overflow_block::YOverflowBlock;
 use crate::declarations::overflow_clip_margin::YOverflowClipMargin;
 use crate::declarations::overflow_inline::YOverflowInline;
@@ -1199,6 +1200,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     border_top_width_class.define_method("value", method!(YBorderTopWidth::value, 0))?;
 
     let outline_width_class = declarations_module.define_class("OutlineWidth", ruby.class_object())?;
+    outline_width_class.define_method("value", method!(YOutlineWidth::value, 0))?;
 
     let background_color_class = declarations_module.define_class("BackgroundColor", ruby.class_object())?;
     background_color_class.define_method("color", method!(YBackgroundColor::color, 0))?;
