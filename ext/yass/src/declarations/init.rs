@@ -216,6 +216,7 @@ use crate::declarations::text_decoration_color::YTextDecorationColor;
 use crate::declarations::text_decoration_line::YTextDecorationLine;
 use crate::declarations::text_decoration_style::YTextDecorationStyle;
 use crate::declarations::text_indent::YTextIndent;
+use crate::declarations::text_justify::YTextJustify;
 use crate::declarations::time::YTime;
 use crate::declarations::top::YTop;
 use crate::declarations::track_breadth::{YTrackBreadthFr, YTrackBreadthLengthPercentage};
@@ -498,6 +499,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let text_overflow_class = declarations_module.define_class("TextOverflow", ruby.class_object())?;
 
     let text_justify_class = declarations_module.define_class("TextJustify", ruby.class_object())?;
+    text_justify_class.define_method("value", method!(YTextJustify::value, 0))?;
 
     let text_rendering_class = declarations_module.define_class("TextRendering", ruby.class_object())?;
 
