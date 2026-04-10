@@ -205,6 +205,7 @@ use crate::declarations::resolution::YResolution;
 use crate::declarations::right::YRight;
 use crate::declarations::rotate::{YRotate, YRotate3D};
 use crate::declarations::row_gap::{YRowGap, YRowGapLengthPercentage};
+use crate::declarations::scale::{YScale, YScaleCoords};
 use crate::declarations::size;
 use crate::declarations::text_decoration_color::YTextDecorationColor;
 use crate::declarations::time::YTime;
@@ -1038,6 +1039,14 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     row_gap_length_percentage_class.define_method("value", method!(YRowGapLengthPercentage::value, 0))?;
 
     let scale_class = declarations_module.define_class("Scale", ruby.class_object())?;
+    scale_class.define_method("value", method!(YScale::value, 0))?;
+
+    let _scale_none_class = scale_class.define_class("None", ruby.class_object())?;
+
+    let scale_scale_class = scale_class.define_class("Coords", ruby.class_object())?;
+    scale_scale_class.define_method("x", method!(YScaleCoords::x, 0))?;
+    scale_scale_class.define_method("y", method!(YScaleCoords::y, 0))?;
+    scale_scale_class.define_method("z", method!(YScaleCoords::z, 0))?;
 
     let grid_column_end_class = declarations_module.define_class("GridColumnEnd", ruby.class_object())?;
     grid_column_end_class.define_method("ident", method!(YGridColumnEnd::ident, 0))?;
