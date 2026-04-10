@@ -209,6 +209,7 @@ use crate::declarations::scale::{YScale, YScaleCoords};
 use crate::declarations::servo_overflow_clip_box::YServoOverflowClipBox;
 use crate::declarations::servo_top_layer::YServoTopLayer;
 use crate::declarations::size;
+use crate::declarations::table_layout::YTableLayout;
 use crate::declarations::text_decoration_color::YTextDecorationColor;
 use crate::declarations::time::YTime;
 use crate::declarations::top::YTop;
@@ -468,6 +469,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     servo_top_layer_class.define_method("value", method!(YServoTopLayer::value, 0))?;
 
     let table_layout_class = declarations_module.define_class("TableLayout", ruby.class_object())?;
+    table_layout_class.define_method("value", method!(YTableLayout::value, 0))?;
 
     let text_align_class = declarations_module.define_class("TextAlign", ruby.class_object())?;
 
