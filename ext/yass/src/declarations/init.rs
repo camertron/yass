@@ -193,6 +193,7 @@ use crate::declarations::padding_inline_start::YPaddingInlineStart;
 use crate::declarations::padding_left::YPaddingLeft;
 use crate::declarations::padding_right::YPaddingRight;
 use crate::declarations::padding_top::YPaddingTop;
+use crate::declarations::perspective_origin::YPerspectiveOrigin;
 use crate::declarations::percentage::YPercentage;
 use crate::declarations::resolution::YResolution;
 use crate::declarations::right::YRight;
@@ -1150,6 +1151,8 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     padding_top_class.define_method("value", method!(YPaddingTop::value, 0))?;
 
     let perspective_origin_class = declarations_module.define_class("PerspectiveOrigin", ruby.class_object())?;
+    perspective_origin_class.define_method("horizontal", method!(YPerspectiveOrigin::horizontal, 0))?;
+    perspective_origin_class.define_method("vertical", method!(YPerspectiveOrigin::vertical, 0))?;
 
     let block_size_class = declarations_module.define_class("BlockSize", ruby.class_object())?;
     block_size_class.define_method("size", method!(YBlockSize::size, 0))?;
