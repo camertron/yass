@@ -210,6 +210,8 @@ use crate::declarations::servo_overflow_clip_box::YServoOverflowClipBox;
 use crate::declarations::servo_top_layer::YServoTopLayer;
 use crate::declarations::size;
 use crate::declarations::table_layout::YTableLayout;
+use crate::declarations::text_align::YTextAlign;
+use crate::declarations::text_align_last::YTextAlignLast;
 use crate::declarations::text_decoration_color::YTextDecorationColor;
 use crate::declarations::time::YTime;
 use crate::declarations::top::YTop;
@@ -472,8 +474,10 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     table_layout_class.define_method("value", method!(YTableLayout::value, 0))?;
 
     let text_align_class = declarations_module.define_class("TextAlign", ruby.class_object())?;
+    text_align_class.define_method("value", method!(YTextAlign::value, 0))?;
 
     let text_align_last_class = declarations_module.define_class("TextAlignLast", ruby.class_object())?;
+    text_align_last_class.define_method("value", method!(YTextAlignLast::value, 0))?;
 
     let text_decoration_line_class = declarations_module.define_class("TextDecorationLine", ruby.class_object())?;
 
