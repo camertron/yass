@@ -198,6 +198,7 @@ use crate::declarations::perspective_origin::YPerspectiveOrigin;
 use crate::declarations::percentage::YPercentage;
 use crate::declarations::pointer_events::YPointerEvents;
 use crate::declarations::position_area::YPositionArea;
+use crate::declarations::position_try_fallbacks::{YPositionTryFallbacks, YPositionTryFallbacksIdentAndOrTactic, YPositionTryFallbacksPositionArea};
 use crate::declarations::resolution::YResolution;
 use crate::declarations::right::YRight;
 use crate::declarations::size;
@@ -880,6 +881,18 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     perspective_length_class.define_method("value", method!(YPerspectiveLength::value, 0))?;
 
     let position_try_fallbacks_class = declarations_module.define_class("PositionTryFallbacks", ruby.class_object())?;
+    position_try_fallbacks_class.define_method("values", method!(YPositionTryFallbacks::values, 0))?;
+    position_try_fallbacks_class.define_method("is_none", method!(YPositionTryFallbacks::is_none, 0))?;
+
+    let position_try_fallbacks_ident_and_or_tactic_class = position_try_fallbacks_class.define_class("IdentAndOrTactic", ruby.class_object())?;
+    position_try_fallbacks_ident_and_or_tactic_class.define_method("ident", method!(YPositionTryFallbacksIdentAndOrTactic::ident, 0))?;
+    position_try_fallbacks_ident_and_or_tactic_class.define_method("has_ident?", method!(YPositionTryFallbacksIdentAndOrTactic::has_ident, 0))?;
+    position_try_fallbacks_ident_and_or_tactic_class.define_method("try_tactics", method!(YPositionTryFallbacksIdentAndOrTactic::try_tactics, 0))?;
+    position_try_fallbacks_ident_and_or_tactic_class.define_method("has_try_tactics?", method!(YPositionTryFallbacksIdentAndOrTactic::has_try_tactics, 0))?;
+
+    let position_try_fallbacks_position_area_class = position_try_fallbacks_class.define_class("PositionArea", ruby.class_object())?;
+    position_try_fallbacks_position_area_class.define_method("first", method!(YPositionTryFallbacksPositionArea::first, 0))?;
+    position_try_fallbacks_position_area_class.define_method("second", method!(YPositionTryFallbacksPositionArea::second, 0))?;
 
     let quotes_class = declarations_module.define_class("Quotes", ruby.class_object())?;
 
