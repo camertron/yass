@@ -206,6 +206,7 @@ use crate::declarations::right::YRight;
 use crate::declarations::rotate::{YRotate, YRotate3D};
 use crate::declarations::row_gap::{YRowGap, YRowGapLengthPercentage};
 use crate::declarations::scale::{YScale, YScaleCoords};
+use crate::declarations::servo_overflow_clip_box::YServoOverflowClipBox;
 use crate::declarations::size;
 use crate::declarations::text_decoration_color::YTextDecorationColor;
 use crate::declarations::time::YTime;
@@ -460,6 +461,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     position_area_class.define_method("is_none", method!(YPositionArea::is_none, 0))?;
 
     let servo_overflow_clip_box_class = declarations_module.define_class("ServoOverflowClipBox", ruby.class_object())?;
+    servo_overflow_clip_box_class.define_method("value", method!(YServoOverflowClipBox::value, 0))?;
 
     let servo_top_layer_class = declarations_module.define_class("ServoTopLayer", ruby.class_object())?;
 
