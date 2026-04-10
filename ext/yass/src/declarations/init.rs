@@ -215,6 +215,7 @@ use crate::declarations::text_align_last::YTextAlignLast;
 use crate::declarations::text_decoration_color::YTextDecorationColor;
 use crate::declarations::text_decoration_line::YTextDecorationLine;
 use crate::declarations::text_decoration_style::YTextDecorationStyle;
+use crate::declarations::text_indent::YTextIndent;
 use crate::declarations::time::YTime;
 use crate::declarations::top::YTop;
 use crate::declarations::track_breadth::{YTrackBreadthFr, YTrackBreadthLengthPercentage};
@@ -939,6 +940,9 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     resolution_class.define_method("dpi", method!(YResolution::dpi, 0))?;
 
     let text_indent_class = declarations_module.define_class("TextIndent", ruby.class_object())?;
+    text_indent_class.define_method("length", method!(YTextIndent::length, 0))?;
+    text_indent_class.define_method("hanging?", method!(YTextIndent::hanging, 0))?;
+    text_indent_class.define_method("each_line?", method!(YTextIndent::each_line, 0))?;
 
     let text_shadow_class = declarations_module.define_class("TextShadow", ruby.class_object())?;
 
