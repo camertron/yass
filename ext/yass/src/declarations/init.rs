@@ -213,6 +213,8 @@ use crate::declarations::table_layout::YTableLayout;
 use crate::declarations::text_align::YTextAlign;
 use crate::declarations::text_align_last::YTextAlignLast;
 use crate::declarations::text_decoration_color::YTextDecorationColor;
+use crate::declarations::text_decoration_line::YTextDecorationLine;
+use crate::declarations::text_decoration_style::YTextDecorationStyle;
 use crate::declarations::time::YTime;
 use crate::declarations::top::YTop;
 use crate::declarations::track_breadth::{YTrackBreadthFr, YTrackBreadthLengthPercentage};
@@ -480,8 +482,17 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     text_align_last_class.define_method("value", method!(YTextAlignLast::value, 0))?;
 
     let text_decoration_line_class = declarations_module.define_class("TextDecorationLine", ruby.class_object())?;
+    text_decoration_line_class.define_method("values", method!(YTextDecorationLine::values, 0))?;
+    text_decoration_line_class.define_method("none?", method!(YTextDecorationLine::is_none, 0))?;
+    text_decoration_line_class.define_method("underline?", method!(YTextDecorationLine::is_underline, 0))?;
+    text_decoration_line_class.define_method("overline?", method!(YTextDecorationLine::is_overline, 0))?;
+    text_decoration_line_class.define_method("line_through?", method!(YTextDecorationLine::is_line_through, 0))?;
+    text_decoration_line_class.define_method("blink?", method!(YTextDecorationLine::is_blink, 0))?;
+    text_decoration_line_class.define_method("spelling_error?", method!(YTextDecorationLine::is_spelling_error, 0))?;
+    text_decoration_line_class.define_method("grammar_error?", method!(YTextDecorationLine::is_grammar_error, 0))?;
 
     let text_decoration_style_class = declarations_module.define_class("TextDecorationStyle", ruby.class_object())?;
+    text_decoration_style_class.define_method("value", method!(YTextDecorationStyle::value, 0))?;
 
     let text_overflow_class = declarations_module.define_class("TextOverflow", ruby.class_object())?;
 
