@@ -219,6 +219,7 @@ use crate::declarations::text_indent::YTextIndent;
 use crate::declarations::text_justify::YTextJustify;
 use crate::declarations::text_overflow::{YTextOverflow, YTextOverflowString};
 use crate::declarations::text_rendering::YTextRendering;
+use crate::declarations::text_shadow::{YTextShadow, YTextShadowShadow};
 use crate::declarations::time::YTime;
 use crate::declarations::top::YTop;
 use crate::declarations::track_breadth::{YTrackBreadthFr, YTrackBreadthLengthPercentage};
@@ -960,6 +961,13 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     text_indent_class.define_method("each_line?", method!(YTextIndent::each_line, 0))?;
 
     let text_shadow_class = declarations_module.define_class("TextShadow", ruby.class_object())?;
+    text_shadow_class.define_method("values", method!(YTextShadow::values, 0))?;
+
+    let text_shadow_shadow_class = text_shadow_class.define_class("Shadow", ruby.class_object())?;
+    text_shadow_shadow_class.define_method("color", method!(YTextShadowShadow::color, 0))?;
+    text_shadow_shadow_class.define_method("horizontal", method!(YTextShadowShadow::horizontal, 0))?;
+    text_shadow_shadow_class.define_method("vertical", method!(YTextShadowShadow::vertical, 0))?;
+    text_shadow_shadow_class.define_method("blur", method!(YTextShadowShadow::blur, 0))?;
 
     let transform_class = declarations_module.define_class("Transform", ruby.class_object())?;
 
