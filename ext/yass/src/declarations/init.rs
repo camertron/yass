@@ -196,6 +196,7 @@ use crate::declarations::padding_top::YPaddingTop;
 use crate::declarations::perspective::{YPerspective, YPerspectiveLength};
 use crate::declarations::perspective_origin::YPerspectiveOrigin;
 use crate::declarations::percentage::YPercentage;
+use crate::declarations::pointer_events::YPointerEvents;
 use crate::declarations::resolution::YResolution;
 use crate::declarations::right::YRight;
 use crate::declarations::size;
@@ -441,6 +442,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     overflow_wrap_class.define_method("value", method!(YOverflowWrap::value, 0))?;
 
     let pointer_events_class = declarations_module.define_class("PointerEvents", ruby.class_object())?;
+    pointer_events_class.define_method("value", method!(YPointerEvents::value, 0))?;
 
     let position_class = declarations_module.define_class("Position", ruby.class_object())?;
 
