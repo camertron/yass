@@ -200,6 +200,7 @@ use crate::declarations::pointer_events::YPointerEvents;
 use crate::declarations::position::YPosition;
 use crate::declarations::position_area::YPositionArea;
 use crate::declarations::position_try_fallbacks::{YPositionTryFallbacks, YPositionTryFallbacksIdentAndOrTactic, YPositionTryFallbacksPositionArea};
+use crate::declarations::quotes::{YQuotes, YQuotesQuoteList, YQuotesQuotePair};
 use crate::declarations::resolution::YResolution;
 use crate::declarations::right::YRight;
 use crate::declarations::size;
@@ -897,6 +898,18 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     position_try_fallbacks_position_area_class.define_method("second", method!(YPositionTryFallbacksPositionArea::second, 0))?;
 
     let quotes_class = declarations_module.define_class("Quotes", ruby.class_object())?;
+    quotes_class.define_method("value", method!(YQuotes::value, 0))?;
+
+    let _quotes_auto_class = quotes_class.define_class("Auto", ruby.class_object())?;
+
+    let _quotes_none_class = quotes_class.define_class("None", ruby.class_object())?;
+
+    let quotes_quote_list_class = quotes_class.define_class("QuoteList", ruby.class_object())?;
+    quotes_quote_list_class.define_method("values", method!(YQuotesQuoteList::values, 0))?;
+
+    let quotes_quote_pair_class = quotes_class.define_class("QuotePair", ruby.class_object())?;
+    quotes_quote_pair_class.define_method("opening", method!(YQuotesQuotePair::opening, 0))?;
+    quotes_quote_pair_class.define_method("closing", method!(YQuotesQuotePair::closing, 0))?;
 
     let resolution_class = declarations_module.define_class("Resolution", ruby.class_object())?;
     resolution_class.define_method("dpi", method!(YResolution::dpi, 0))?;
