@@ -7,12 +7,12 @@ RSpec.describe(Yass) do
       decl = stylesheet.rules[0].declarations[0]
 
       expect(decl).to be_a(Yass::Declarations::Transform)
-      expect(decl.values).to eq([])
+      expect(decl.operations).to eq([])
     end
 
     it "exposes matrix components" do
       stylesheet = Yass::Parser.parse("div { transform: matrix(1, 2, 3, 4, 5, 6); }")
-      value = stylesheet.rules[0].declarations[0].values[0]
+      value = stylesheet.rules[0].declarations[0].operations[0]
 
       expect(value).to be_a(Yass::Declarations::Transform::Matrix)
       expect(value.a.value).to eq(1.0)
@@ -21,7 +21,7 @@ RSpec.describe(Yass) do
 
     it "exposes translate3d components" do
       stylesheet = Yass::Parser.parse("div { transform: translate3d(10px, 20%, 30px); }")
-      value = stylesheet.rules[0].declarations[0].values[0]
+      value = stylesheet.rules[0].declarations[0].operations[0]
 
       expect(value).to be_a(Yass::Declarations::Transform::Translate3D)
       expect(value.x.value).to be_a(Yass::Declarations::Length::Absolute)
@@ -31,7 +31,7 @@ RSpec.describe(Yass) do
 
     it "exposes perspective length" do
       stylesheet = Yass::Parser.parse("div { transform: perspective(400px); }")
-      value = stylesheet.rules[0].declarations[0].values[0]
+      value = stylesheet.rules[0].declarations[0].operations[0]
 
       expect(value).to be_a(Yass::Declarations::Transform::Perspective)
       expect(value.value).to be_a(Yass::Declarations::Transform::Perspective::Length)

@@ -29,7 +29,7 @@ RSpec.describe(Yass) do
       expect(value.x).to be_a(Yass::Declarations::Length::Absolute)
       expect(value.x.value).to eq(10.0)
       expect(value.y).to be_a(Yass::Declarations::Percentage)
-      expect(value.y.value).to eq(20.0)
+      expect(value.y.value).to be_within(0.0001).of(0.2)
     end
 
     it "exposes x/y/z components" do
@@ -41,7 +41,7 @@ RSpec.describe(Yass) do
       expect(value.x).to be_a(Yass::Declarations::Length::Absolute)
       expect(value.x.value).to eq(10.0)
       expect(value.y).to be_a(Yass::Declarations::Percentage)
-      expect(value.y.value).to eq(20.0)
+      expect(value.y.value).to be_within(0.0001).of(0.2)
       expect(value.z).to be_a(Yass::Declarations::Length::Absolute)
       expect(value.z.value).to eq(30.0)
     end
