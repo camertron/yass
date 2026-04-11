@@ -263,6 +263,7 @@ use crate::declarations::transition_timing_function::YTransitionTimingFunction;
 use crate::declarations::translate::{YTranslate, YTranslateCoords};
 use crate::declarations::unicode_bidi::YUnicodeBidi;
 use crate::declarations::view_transition_class::YViewTransitionClass;
+use crate::declarations::view_transition_name::YViewTransitionName;
 use crate::declarations::width::YWidth;
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
@@ -1164,6 +1165,9 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     view_transition_class_class.define_method("values", method!(YViewTransitionClass::values, 0))?;
 
     let view_transition_name_class = declarations_module.define_class("ViewTransitionName", ruby.class_object())?;
+    view_transition_name_class.define_method("none?", method!(YViewTransitionName::is_none, 0))?;
+    view_transition_name_class.define_method("match_element?", method!(YViewTransitionName::is_match_element, 0))?;
+    view_transition_name_class.define_method("name", method!(YViewTransitionName::name, 0))?;
 
     let will_change_class = declarations_module.define_class("WillChange", ruby.class_object())?;
 
