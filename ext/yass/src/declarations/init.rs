@@ -262,6 +262,7 @@ use crate::declarations::transition_property::{YTransitionProperty, YTransitionP
 use crate::declarations::transition_timing_function::YTransitionTimingFunction;
 use crate::declarations::translate::{YTranslate, YTranslateCoords};
 use crate::declarations::unicode_bidi::YUnicodeBidi;
+use crate::declarations::view_transition_class::YViewTransitionClass;
 use crate::declarations::width::YWidth;
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
@@ -1159,6 +1160,8 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     translate_coords_class.define_method("z", method!(YTranslateCoords::z, 0))?;
 
     let view_transition_class_class = declarations_module.define_class("ViewTransitionClass", ruby.class_object())?;
+    view_transition_class_class.define_method("none?", method!(YViewTransitionClass::is_none, 0))?;
+    view_transition_class_class.define_method("values", method!(YViewTransitionClass::values, 0))?;
 
     let view_transition_name_class = declarations_module.define_class("ViewTransitionName", ruby.class_object())?;
 
