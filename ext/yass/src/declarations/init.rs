@@ -270,6 +270,7 @@ use crate::declarations::will_change::YWillChange;
 use crate::declarations::with_variables::YWithVariables;
 use crate::declarations::width::YWidth;
 use crate::declarations::white_space_collapse::YWhiteSpaceCollapse;
+use crate::declarations::word_break::YWordBreak;
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let declarations_module = yass_module.define_module("Declarations")?;
@@ -584,6 +585,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     white_space_collapse_class.define_method("value", method!(YWhiteSpaceCollapse::value, 0))?;
 
     let word_break_class = declarations_module.define_class("WordBreak", ruby.class_object())?;
+    word_break_class.define_method("value", method!(YWordBreak::value, 0))?;
 
     let writing_mode_class = declarations_module.define_class("WritingMode", ruby.class_object())?;
 
