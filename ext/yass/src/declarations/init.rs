@@ -267,6 +267,7 @@ use crate::declarations::view_transition_name::YViewTransitionName;
 use crate::declarations::visibility::YVisibility;
 use crate::declarations::webkit_text_security::YWebkitTextSecurity;
 use crate::declarations::will_change::YWillChange;
+use crate::declarations::with_variables::YWithVariables;
 use crate::declarations::width::YWidth;
 use crate::declarations::white_space_collapse::YWhiteSpaceCollapse;
 
@@ -1570,6 +1571,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     csswide_keyword_class.define_method("value", method!(YCSSWideKeyword::value, 0))?;
 
     let with_variables_class = declarations_module.define_class("WithVariables", ruby.class_object())?;
+    with_variables_class.define_method("value", method!(YWithVariables::value, 0))?;
 
     let custom_class = declarations_module.define_class("Custom", ruby.class_object())?;
     custom_class.define_method("name", method!(YCustom::name, 0))?;
