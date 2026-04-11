@@ -257,6 +257,7 @@ use crate::declarations::transform_origin::{YTransformOrigin, YSideHorizontalOri
 use crate::declarations::transform_style::YTransformStyle;
 use crate::declarations::transition_behavior::YTransitionBehavior;
 use crate::declarations::transition_delay::YTransitionDelay;
+use crate::declarations::transition_duration::YTransitionDuration;
 use crate::declarations::width::YWidth;
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
@@ -1123,6 +1124,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     transition_delay_class.define_method("values", method!(YTransitionDelay::values, 0))?;
 
     let transition_duration_class = declarations_module.define_class("TransitionDuration", ruby.class_object())?;
+    transition_duration_class.define_method("values", method!(YTransitionDuration::values, 0))?;
 
     let transition_property_class = declarations_module.define_class("TransitionProperty", ruby.class_object())?;
 
