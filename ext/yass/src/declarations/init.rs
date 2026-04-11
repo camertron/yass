@@ -226,6 +226,33 @@ use crate::declarations::time::YTime;
 use crate::declarations::top::YTop;
 use crate::declarations::track_breadth::{YTrackBreadthFr, YTrackBreadthLengthPercentage};
 use crate::declarations::track_size::{YTrackSizeFitContent, YTrackSizeMinmax};
+use crate::declarations::transform::{
+    YTransform,
+    YTransformAccumulateMatrix,
+    YTransformInterpolateMatrix,
+    YTransformMatrix,
+    YTransformMatrix3D,
+    YTransformPerspective,
+    YTransformPerspectiveLength,
+    YTransformRotate,
+    YTransformRotate3D,
+    YTransformRotateX,
+    YTransformRotateY,
+    YTransformRotateZ,
+    YTransformScale,
+    YTransformScale3D,
+    YTransformScaleX,
+    YTransformScaleY,
+    YTransformScaleZ,
+    YTransformSkew,
+    YTransformSkewX,
+    YTransformSkewY,
+    YTransformTranslate,
+    YTransformTranslate3D,
+    YTransformTranslateX,
+    YTransformTranslateY,
+    YTransformTranslateZ,
+};
 use crate::declarations::transform_origin::{YTransformOrigin, YSideHorizontalOriginComponent, YSideVerticalOriginComponent};
 use crate::declarations::transform_style::YTransformStyle;
 use crate::declarations::width::YWidth;
@@ -977,6 +1004,115 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     text_shadow_shadow_class.define_method("blur", method!(YTextShadowShadow::blur, 0))?;
 
     let transform_class = declarations_module.define_class("Transform", ruby.class_object())?;
+    transform_class.define_method("operations", method!(YTransform::operations, 0))?;
+
+    let transform_matrix_class = transform_class.define_class("Matrix", ruby.class_object())?;
+    transform_matrix_class.define_method("a", method!(YTransformMatrix::a, 0))?;
+    transform_matrix_class.define_method("b", method!(YTransformMatrix::b, 0))?;
+    transform_matrix_class.define_method("c", method!(YTransformMatrix::c, 0))?;
+    transform_matrix_class.define_method("d", method!(YTransformMatrix::d, 0))?;
+    transform_matrix_class.define_method("e", method!(YTransformMatrix::e, 0))?;
+    transform_matrix_class.define_method("f", method!(YTransformMatrix::f, 0))?;
+
+    let transform_matrix3d_class = transform_class.define_class("Matrix3D", ruby.class_object())?;
+    transform_matrix3d_class.define_method("m11", method!(YTransformMatrix3D::m11, 0))?;
+    transform_matrix3d_class.define_method("m12", method!(YTransformMatrix3D::m12, 0))?;
+    transform_matrix3d_class.define_method("m13", method!(YTransformMatrix3D::m13, 0))?;
+    transform_matrix3d_class.define_method("m14", method!(YTransformMatrix3D::m14, 0))?;
+    transform_matrix3d_class.define_method("m21", method!(YTransformMatrix3D::m21, 0))?;
+    transform_matrix3d_class.define_method("m22", method!(YTransformMatrix3D::m22, 0))?;
+    transform_matrix3d_class.define_method("m23", method!(YTransformMatrix3D::m23, 0))?;
+    transform_matrix3d_class.define_method("m24", method!(YTransformMatrix3D::m24, 0))?;
+    transform_matrix3d_class.define_method("m31", method!(YTransformMatrix3D::m31, 0))?;
+    transform_matrix3d_class.define_method("m32", method!(YTransformMatrix3D::m32, 0))?;
+    transform_matrix3d_class.define_method("m33", method!(YTransformMatrix3D::m33, 0))?;
+    transform_matrix3d_class.define_method("m34", method!(YTransformMatrix3D::m34, 0))?;
+    transform_matrix3d_class.define_method("m41", method!(YTransformMatrix3D::m41, 0))?;
+    transform_matrix3d_class.define_method("m42", method!(YTransformMatrix3D::m42, 0))?;
+    transform_matrix3d_class.define_method("m43", method!(YTransformMatrix3D::m43, 0))?;
+    transform_matrix3d_class.define_method("m44", method!(YTransformMatrix3D::m44, 0))?;
+
+    let transform_skew_class = transform_class.define_class("Skew", ruby.class_object())?;
+    transform_skew_class.define_method("x", method!(YTransformSkew::x, 0))?;
+    transform_skew_class.define_method("y", method!(YTransformSkew::y, 0))?;
+
+    let transform_skew_x_class = transform_class.define_class("SkewX", ruby.class_object())?;
+    transform_skew_x_class.define_method("angle", method!(YTransformSkewX::angle, 0))?;
+
+    let transform_skew_y_class = transform_class.define_class("SkewY", ruby.class_object())?;
+    transform_skew_y_class.define_method("angle", method!(YTransformSkewY::angle, 0))?;
+
+    let transform_translate_class = transform_class.define_class("Translate", ruby.class_object())?;
+    transform_translate_class.define_method("x", method!(YTransformTranslate::x, 0))?;
+    transform_translate_class.define_method("y", method!(YTransformTranslate::y, 0))?;
+
+    let transform_translate_x_class = transform_class.define_class("TranslateX", ruby.class_object())?;
+    transform_translate_x_class.define_method("value", method!(YTransformTranslateX::value, 0))?;
+
+    let transform_translate_y_class = transform_class.define_class("TranslateY", ruby.class_object())?;
+    transform_translate_y_class.define_method("value", method!(YTransformTranslateY::value, 0))?;
+
+    let transform_translate_z_class = transform_class.define_class("TranslateZ", ruby.class_object())?;
+    transform_translate_z_class.define_method("value", method!(YTransformTranslateZ::value, 0))?;
+
+    let transform_translate3d_class = transform_class.define_class("Translate3D", ruby.class_object())?;
+    transform_translate3d_class.define_method("x", method!(YTransformTranslate3D::x, 0))?;
+    transform_translate3d_class.define_method("y", method!(YTransformTranslate3D::y, 0))?;
+    transform_translate3d_class.define_method("z", method!(YTransformTranslate3D::z, 0))?;
+
+    let transform_scale_class = transform_class.define_class("Scale", ruby.class_object())?;
+    transform_scale_class.define_method("x", method!(YTransformScale::x, 0))?;
+    transform_scale_class.define_method("y", method!(YTransformScale::y, 0))?;
+
+    let transform_scale_x_class = transform_class.define_class("ScaleX", ruby.class_object())?;
+    transform_scale_x_class.define_method("value", method!(YTransformScaleX::value, 0))?;
+
+    let transform_scale_y_class = transform_class.define_class("ScaleY", ruby.class_object())?;
+    transform_scale_y_class.define_method("value", method!(YTransformScaleY::value, 0))?;
+
+    let transform_scale_z_class = transform_class.define_class("ScaleZ", ruby.class_object())?;
+    transform_scale_z_class.define_method("value", method!(YTransformScaleZ::value, 0))?;
+
+    let transform_scale3d_class = transform_class.define_class("Scale3D", ruby.class_object())?;
+    transform_scale3d_class.define_method("x", method!(YTransformScale3D::x, 0))?;
+    transform_scale3d_class.define_method("y", method!(YTransformScale3D::y, 0))?;
+    transform_scale3d_class.define_method("z", method!(YTransformScale3D::z, 0))?;
+
+    let transform_rotate_class = transform_class.define_class("Rotate", ruby.class_object())?;
+    transform_rotate_class.define_method("angle", method!(YTransformRotate::angle, 0))?;
+
+    let transform_rotate_x_class = transform_class.define_class("RotateX", ruby.class_object())?;
+    transform_rotate_x_class.define_method("angle", method!(YTransformRotateX::angle, 0))?;
+
+    let transform_rotate_y_class = transform_class.define_class("RotateY", ruby.class_object())?;
+    transform_rotate_y_class.define_method("angle", method!(YTransformRotateY::angle, 0))?;
+
+    let transform_rotate_z_class = transform_class.define_class("RotateZ", ruby.class_object())?;
+    transform_rotate_z_class.define_method("angle", method!(YTransformRotateZ::angle, 0))?;
+
+    let transform_rotate3d_class = transform_class.define_class("Rotate3D", ruby.class_object())?;
+    transform_rotate3d_class.define_method("x", method!(YTransformRotate3D::x, 0))?;
+    transform_rotate3d_class.define_method("y", method!(YTransformRotate3D::y, 0))?;
+    transform_rotate3d_class.define_method("z", method!(YTransformRotate3D::z, 0))?;
+    transform_rotate3d_class.define_method("angle", method!(YTransformRotate3D::angle, 0))?;
+
+    let transform_perspective_class = transform_class.define_class("Perspective", ruby.class_object())?;
+    transform_perspective_class.define_method("value", method!(YTransformPerspective::value, 0))?;
+
+    let _transform_perspective_none_class = transform_perspective_class.define_class("None", ruby.class_object())?;
+
+    let transform_perspective_length_class = transform_perspective_class.define_class("Length", ruby.class_object())?;
+    transform_perspective_length_class.define_method("value", method!(YTransformPerspectiveLength::value, 0))?;
+
+    let transform_interpolate_matrix_class = transform_class.define_class("InterpolateMatrix", ruby.class_object())?;
+    transform_interpolate_matrix_class.define_method("from_list", method!(YTransformInterpolateMatrix::from_list, 0))?;
+    transform_interpolate_matrix_class.define_method("to_list", method!(YTransformInterpolateMatrix::to_list, 0))?;
+    transform_interpolate_matrix_class.define_method("progress", method!(YTransformInterpolateMatrix::progress, 0))?;
+
+    let transform_accumulate_matrix_class = transform_class.define_class("AccumulateMatrix", ruby.class_object())?;
+    transform_accumulate_matrix_class.define_method("from_list", method!(YTransformAccumulateMatrix::from_list, 0))?;
+    transform_accumulate_matrix_class.define_method("to_list", method!(YTransformAccumulateMatrix::to_list, 0))?;
+    transform_accumulate_matrix_class.define_method("count", method!(YTransformAccumulateMatrix::count, 0))?;
 
     let transition_behavior_class = declarations_module.define_class("TransitionBehavior", ruby.class_object())?;
 
