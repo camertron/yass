@@ -271,6 +271,7 @@ use crate::declarations::with_variables::YWithVariables;
 use crate::declarations::width::YWidth;
 use crate::declarations::white_space_collapse::YWhiteSpaceCollapse;
 use crate::declarations::word_break::YWordBreak;
+use crate::declarations::word_spacing::YWordSpacing;
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let declarations_module = yass_module.define_module("Declarations")?;
@@ -1195,6 +1196,9 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     will_change_class.define_method("backdrop_root?", method!(YWillChange::is_backdrop_root, 0))?;
 
     let word_spacing_class = declarations_module.define_class("WordSpacing", ruby.class_object())?;
+    word_spacing_class.define_method("value", method!(YWordSpacing::value, 0))?;
+
+    let _word_spacing_normal_class = word_spacing_class.define_class("Normal", ruby.class_object())?;
 
     let xlang_class = declarations_module.define_class("XLang", ruby.class_object())?;
 
