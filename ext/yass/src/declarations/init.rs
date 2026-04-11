@@ -273,6 +273,7 @@ use crate::declarations::white_space_collapse::YWhiteSpaceCollapse;
 use crate::declarations::word_break::YWordBreak;
 use crate::declarations::word_spacing::YWordSpacing;
 use crate::declarations::writing_mode::YWritingMode;
+use crate::declarations::xlang::YXLang;
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let declarations_module = yass_module.define_module("Declarations")?;
@@ -1203,6 +1204,8 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let _word_spacing_normal_class = word_spacing_class.define_class("Normal", ruby.class_object())?;
 
     let xlang_class = declarations_module.define_class("XLang", ruby.class_object())?;
+    xlang_class.define_method("value", method!(YXLang::value, 0))?;
+    xlang_class.define_method("empty?", method!(YXLang::is_empty, 0))?;
 
     let track_size_class = declarations_module.define_class("TrackSize", ruby.class_object())?;
 
