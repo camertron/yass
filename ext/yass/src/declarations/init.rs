@@ -258,6 +258,7 @@ use crate::declarations::transform_style::YTransformStyle;
 use crate::declarations::transition_behavior::YTransitionBehavior;
 use crate::declarations::transition_delay::YTransitionDelay;
 use crate::declarations::transition_duration::YTransitionDuration;
+use crate::declarations::transition_property::{YTransitionProperty, YTransitionPropertyCustom, YTransitionPropertyNonCustom, YTransitionPropertyUnsupported};
 use crate::declarations::width::YWidth;
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
@@ -1127,6 +1128,18 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     transition_duration_class.define_method("values", method!(YTransitionDuration::values, 0))?;
 
     let transition_property_class = declarations_module.define_class("TransitionProperty", ruby.class_object())?;
+    transition_property_class.define_method("values", method!(YTransitionProperty::values, 0))?;
+
+    let transition_property_non_custom_class = transition_property_class.define_class("NonCustom", ruby.class_object())?;
+    transition_property_non_custom_class.define_method("name", method!(YTransitionPropertyNonCustom::name, 0))?;
+    transition_property_non_custom_class.define_method("all?", method!(YTransitionPropertyNonCustom::is_all, 0))?;
+
+    let transition_property_custom_class = transition_property_class.define_class("Custom", ruby.class_object())?;
+    transition_property_custom_class.define_method("name", method!(YTransitionPropertyCustom::name, 0))?;
+
+    let transition_property_unsupported_class = transition_property_class.define_class("Unsupported", ruby.class_object())?;
+    transition_property_unsupported_class.define_method("name", method!(YTransitionPropertyUnsupported::name, 0))?;
+    transition_property_unsupported_class.define_method("none?", method!(YTransitionPropertyUnsupported::is_none, 0))?;
 
     let transition_timing_function_class = declarations_module.define_class("TransitionTimingFunction", ruby.class_object())?;
 
