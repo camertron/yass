@@ -255,6 +255,7 @@ use crate::declarations::transform::{
 };
 use crate::declarations::transform_origin::{YTransformOrigin, YSideHorizontalOriginComponent, YSideVerticalOriginComponent};
 use crate::declarations::transform_style::YTransformStyle;
+use crate::declarations::transition_behavior::YTransitionBehavior;
 use crate::declarations::width::YWidth;
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
@@ -1115,6 +1116,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     transform_accumulate_matrix_class.define_method("count", method!(YTransformAccumulateMatrix::count, 0))?;
 
     let transition_behavior_class = declarations_module.define_class("TransitionBehavior", ruby.class_object())?;
+    transition_behavior_class.define_method("values", method!(YTransitionBehavior::values, 0))?;
 
     let transition_delay_class = declarations_module.define_class("TransitionDelay", ruby.class_object())?;
 
