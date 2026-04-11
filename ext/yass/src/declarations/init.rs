@@ -260,6 +260,7 @@ use crate::declarations::transition_delay::YTransitionDelay;
 use crate::declarations::transition_duration::YTransitionDuration;
 use crate::declarations::transition_property::{YTransitionProperty, YTransitionPropertyCustom, YTransitionPropertyNonCustom, YTransitionPropertyUnsupported};
 use crate::declarations::transition_timing_function::YTransitionTimingFunction;
+use crate::declarations::translate::{YTranslate, YTranslateCoords};
 use crate::declarations::width::YWidth;
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
@@ -1146,6 +1147,14 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     transition_timing_function_class.define_method("values", method!(YTransitionTimingFunction::values, 0))?;
 
     let translate_class = declarations_module.define_class("Translate", ruby.class_object())?;
+    translate_class.define_method("value", method!(YTranslate::value, 0))?;
+
+    let _translate_none_class = translate_class.define_class("None", ruby.class_object())?;
+
+    let translate_coords_class = translate_class.define_class("Coords", ruby.class_object())?;
+    translate_coords_class.define_method("x", method!(YTranslateCoords::x, 0))?;
+    translate_coords_class.define_method("y", method!(YTranslateCoords::y, 0))?;
+    translate_coords_class.define_method("z", method!(YTranslateCoords::z, 0))?;
 
     let view_transition_class_class = declarations_module.define_class("ViewTransitionClass", ruby.class_object())?;
 
