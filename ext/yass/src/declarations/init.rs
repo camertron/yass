@@ -85,7 +85,7 @@ use crate::declarations::clip_path;
 use crate::declarations::clip::{YClip, YClipLength, YClipRect};
 use crate::declarations::color_scheme::YColorScheme;
 use crate::declarations::color::{self, YColor};
-use crate::declarations::offset_path::{YOffsetPath, YOffsetPathCoordBox, YOffsetPathFunction, YOffsetPathRay, YOffsetPathUrl, YOffsetPathPositionAuto, YOffsetPathPosition};
+use crate::declarations::offset_path::{YOffsetPath, YOffsetPathCoordBox, YOffsetPathFunction, YOffsetPathRay, YOffsetPathUrl, YOffsetPathPosition};
 use crate::declarations::column_count::YColumnCountInteger;
 use crate::declarations::column_gap::{YColumnGap, YColumnGapLengthPercentage};
 use crate::declarations::column_span::YColumnSpan;
@@ -274,7 +274,7 @@ use crate::declarations::word_break::YWordBreak;
 use crate::declarations::word_spacing::YWordSpacing;
 use crate::declarations::writing_mode::YWritingMode;
 use crate::declarations::xlang::YXLang;
-use crate::declarations::zindex::{YZIndex, YZIndexAuto, YZIndexInteger};
+use crate::declarations::zindex::{YZIndex, YZIndexInteger};
 use crate::declarations::zoom::{YZoom, YZoomValue};
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
