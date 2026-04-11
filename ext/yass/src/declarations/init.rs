@@ -226,6 +226,7 @@ use crate::declarations::time::YTime;
 use crate::declarations::top::YTop;
 use crate::declarations::track_breadth::{YTrackBreadthFr, YTrackBreadthLengthPercentage};
 use crate::declarations::track_size::{YTrackSizeFitContent, YTrackSizeMinmax};
+use crate::declarations::transform_origin::{YTransformOrigin, YSideHorizontalOriginComponent, YSideVerticalOriginComponent};
 use crate::declarations::width::YWidth;
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
@@ -1208,6 +1209,17 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     top_class.define_method("value", method!(YTop::value, 0))?;
 
     let transform_origin_class = declarations_module.define_class("TransformOrigin", ruby.class_object())?;
+    transform_origin_class.define_method("horizontal", method!(YTransformOrigin::horizontal, 0))?;
+    transform_origin_class.define_method("vertical", method!(YTransformOrigin::vertical, 0))?;
+    transform_origin_class.define_method("depth", method!(YTransformOrigin::depth, 0))?;
+
+    let _transform_origin_center_class = transform_origin_class.define_class("Center", ruby.class_object())?;
+
+    let transform_origin_side_horizontal_class = transform_origin_class.define_class("SideHorizontalComponent", ruby.class_object())?;
+    transform_origin_side_horizontal_class.define_method("side", method!(YSideHorizontalOriginComponent::side, 0))?;
+
+    let transform_origin_side_vertical_class = transform_origin_class.define_class("SideVerticalComponent", ruby.class_object())?;
+    transform_origin_side_vertical_class.define_method("side", method!(YSideVerticalOriginComponent::side, 0))?;
 
     let margin_module = declarations_module.define_module("Margin")?;
 
