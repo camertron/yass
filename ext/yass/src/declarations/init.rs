@@ -264,6 +264,7 @@ use crate::declarations::translate::{YTranslate, YTranslateCoords};
 use crate::declarations::unicode_bidi::YUnicodeBidi;
 use crate::declarations::view_transition_class::YViewTransitionClass;
 use crate::declarations::view_transition_name::YViewTransitionName;
+use crate::declarations::visibility::YVisibility;
 use crate::declarations::width::YWidth;
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
@@ -570,6 +571,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     unicode_bidi_class.define_method("value", method!(YUnicodeBidi::value, 0))?;
 
     let visibility_class = declarations_module.define_class("Visibility", ruby.class_object())?;
+    visibility_class.define_method("value", method!(YVisibility::value, 0))?;
 
     let webkit_text_security_class = declarations_module.define_class("WebkitTextSecurity", ruby.class_object())?;
 
