@@ -259,6 +259,7 @@ use crate::declarations::transition_behavior::YTransitionBehavior;
 use crate::declarations::transition_delay::YTransitionDelay;
 use crate::declarations::transition_duration::YTransitionDuration;
 use crate::declarations::transition_property::{YTransitionProperty, YTransitionPropertyCustom, YTransitionPropertyNonCustom, YTransitionPropertyUnsupported};
+use crate::declarations::transition_timing_function::YTransitionTimingFunction;
 use crate::declarations::width::YWidth;
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
@@ -1142,6 +1143,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     transition_property_unsupported_class.define_method("none?", method!(YTransitionPropertyUnsupported::is_none, 0))?;
 
     let transition_timing_function_class = declarations_module.define_class("TransitionTimingFunction", ruby.class_object())?;
+    transition_timing_function_class.define_method("values", method!(YTransitionTimingFunction::values, 0))?;
 
     let translate_class = declarations_module.define_class("Translate", ruby.class_object())?;
 
