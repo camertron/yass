@@ -266,6 +266,7 @@ use crate::declarations::view_transition_class::YViewTransitionClass;
 use crate::declarations::view_transition_name::YViewTransitionName;
 use crate::declarations::visibility::YVisibility;
 use crate::declarations::webkit_text_security::YWebkitTextSecurity;
+use crate::declarations::will_change::YWillChange;
 use crate::declarations::width::YWidth;
 use crate::declarations::white_space_collapse::YWhiteSpaceCollapse;
 
@@ -1176,6 +1177,19 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     view_transition_name_class.define_method("name", method!(YViewTransitionName::name, 0))?;
 
     let will_change_class = declarations_module.define_class("WillChange", ruby.class_object())?;
+    will_change_class.define_method("auto?", method!(YWillChange::is_auto, 0))?;
+    will_change_class.define_method("values", method!(YWillChange::values, 0))?;
+    will_change_class.define_method("stacking_context_unconditional?", method!(YWillChange::is_stacking_context_unconditional, 0))?;
+    will_change_class.define_method("transform?", method!(YWillChange::is_transform, 0))?;
+    will_change_class.define_method("scroll?", method!(YWillChange::is_scroll, 0))?;
+    will_change_class.define_method("contain?", method!(YWillChange::is_contain, 0))?;
+    will_change_class.define_method("opacity?", method!(YWillChange::is_opacity, 0))?;
+    will_change_class.define_method("perspective?", method!(YWillChange::is_perspective, 0))?;
+    will_change_class.define_method("z_index?", method!(YWillChange::is_z_index, 0))?;
+    will_change_class.define_method("fixpos_cb_non_svg?", method!(YWillChange::is_fixpos_cb_non_svg, 0))?;
+    will_change_class.define_method("position?", method!(YWillChange::is_position, 0))?;
+    will_change_class.define_method("view_transition_name?", method!(YWillChange::is_view_transition_name, 0))?;
+    will_change_class.define_method("backdrop_root?", method!(YWillChange::is_backdrop_root, 0))?;
 
     let word_spacing_class = declarations_module.define_class("WordSpacing", ruby.class_object())?;
 
