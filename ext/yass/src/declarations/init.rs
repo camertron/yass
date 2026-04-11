@@ -261,6 +261,7 @@ use crate::declarations::transition_duration::YTransitionDuration;
 use crate::declarations::transition_property::{YTransitionProperty, YTransitionPropertyCustom, YTransitionPropertyNonCustom, YTransitionPropertyUnsupported};
 use crate::declarations::transition_timing_function::YTransitionTimingFunction;
 use crate::declarations::translate::{YTranslate, YTranslateCoords};
+use crate::declarations::unicode_bidi::YUnicodeBidi;
 use crate::declarations::width::YWidth;
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
@@ -564,6 +565,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     transform_style_class.define_method("value", method!(YTransformStyle::value, 0))?;
 
     let unicode_bidi_class = declarations_module.define_class("UnicodeBidi", ruby.class_object())?;
+    unicode_bidi_class.define_method("value", method!(YUnicodeBidi::value, 0))?;
 
     let visibility_class = declarations_module.define_class("Visibility", ruby.class_object())?;
 
