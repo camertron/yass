@@ -274,6 +274,7 @@ use crate::declarations::word_break::YWordBreak;
 use crate::declarations::word_spacing::YWordSpacing;
 use crate::declarations::writing_mode::YWritingMode;
 use crate::declarations::xlang::YXLang;
+use crate::declarations::zindex::{YZIndex, YZIndexAuto, YZIndexInteger};
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let declarations_module = yass_module.define_module("Declarations")?;
@@ -594,6 +595,10 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     writing_mode_class.define_method("value", method!(YWritingMode::value, 0))?;
 
     let zindex_class = declarations_module.define_class("ZIndex", ruby.class_object())?;
+    zindex_class.define_method("value", method!(YZIndex::value, 0))?;
+    let _zindex_auto_class = zindex_class.define_class("Auto", ruby.class_object())?;
+    let zindex_integer_class = zindex_class.define_class("Integer", ruby.class_object())?;
+    zindex_integer_class.define_method("value", method!(YZIndexInteger::value, 0))?;
 
     let zoom_class = declarations_module.define_class("Zoom", ruby.class_object())?;
 
