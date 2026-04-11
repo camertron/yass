@@ -275,6 +275,7 @@ use crate::declarations::word_spacing::YWordSpacing;
 use crate::declarations::writing_mode::YWritingMode;
 use crate::declarations::xlang::YXLang;
 use crate::declarations::zindex::{YZIndex, YZIndexAuto, YZIndexInteger};
+use crate::declarations::zoom::{YZoom, YZoomValue};
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let declarations_module = yass_module.define_module("Declarations")?;
@@ -601,6 +602,11 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     zindex_integer_class.define_method("value", method!(YZIndexInteger::value, 0))?;
 
     let zoom_class = declarations_module.define_class("Zoom", ruby.class_object())?;
+    zoom_class.define_method("value", method!(YZoom::value, 0))?;
+    let _zoom_normal_class = zoom_class.define_class("Normal", ruby.class_object())?;
+    let _zoom_document_class = zoom_class.define_class("Document", ruby.class_object())?;
+    let zoom_value_class = zoom_class.define_class("Value", ruby.class_object())?;
+    zoom_value_class.define_method("value", method!(YZoomValue::value, 0))?;
 
     let align_content_class = declarations_module.define_class("AlignContent", ruby.class_object())?;
     align_content_class.define_method("value", method!(YAlignContent::value, 0))?;
