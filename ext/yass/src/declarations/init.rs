@@ -227,6 +227,7 @@ use crate::declarations::top::YTop;
 use crate::declarations::track_breadth::{YTrackBreadthFr, YTrackBreadthLengthPercentage};
 use crate::declarations::track_size::{YTrackSizeFitContent, YTrackSizeMinmax};
 use crate::declarations::transform_origin::{YTransformOrigin, YSideHorizontalOriginComponent, YSideVerticalOriginComponent};
+use crate::declarations::transform_style::YTransformStyle;
 use crate::declarations::width::YWidth;
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
@@ -527,6 +528,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     text_wrap_mode_class.define_method("value", method!(YTextWrapMode::value, 0))?;
 
     let transform_style_class = declarations_module.define_class("TransformStyle", ruby.class_object())?;
+    transform_style_class.define_method("value", method!(YTransformStyle::value, 0))?;
 
     let unicode_bidi_class = declarations_module.define_class("UnicodeBidi", ruby.class_object())?;
 
