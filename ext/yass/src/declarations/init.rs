@@ -85,7 +85,7 @@ use crate::declarations::clip_path;
 use crate::declarations::clip::{YClip, YClipLength, YClipRect};
 use crate::declarations::color_scheme::YColorScheme;
 use crate::declarations::color::{self, YColor};
-use crate::declarations::offset_path::{YOffsetPath, YOffsetPathNone, YOffsetPathCoordBox, YOffsetPathFunction, YOffsetPathRay, YOffsetPathUrl, YOffsetPathPositionAuto, YOffsetPathPosition};
+use crate::declarations::offset_path::{YOffsetPath, YOffsetPathCoordBox, YOffsetPathFunction, YOffsetPathRay, YOffsetPathUrl, YOffsetPathPositionAuto, YOffsetPathPosition};
 use crate::declarations::column_count::YColumnCountInteger;
 use crate::declarations::column_gap::{YColumnGap, YColumnGapLengthPercentage};
 use crate::declarations::column_span::YColumnSpan;
@@ -267,6 +267,7 @@ use crate::declarations::view_transition_name::YViewTransitionName;
 use crate::declarations::visibility::YVisibility;
 use crate::declarations::webkit_text_security::YWebkitTextSecurity;
 use crate::declarations::width::YWidth;
+use crate::declarations::white_space_collapse::YWhiteSpaceCollapse;
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let declarations_module = yass_module.define_module("Declarations")?;
@@ -578,6 +579,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     webkit_text_security_class.define_method("value", method!(YWebkitTextSecurity::value, 0))?;
 
     let white_space_collapse_class = declarations_module.define_class("WhiteSpaceCollapse", ruby.class_object())?;
+    white_space_collapse_class.define_method("value", method!(YWhiteSpaceCollapse::value, 0))?;
 
     let word_break_class = declarations_module.define_class("WordBreak", ruby.class_object())?;
 
