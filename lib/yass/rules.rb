@@ -2,7 +2,7 @@
 
 module Yass
   class StyleRule
-    RUBY_METHODS = %i(declarations selectors).freeze
+    RUBY_METHODS = %i(declarations kind selectors).freeze
 
     include ::Yass::Node
 
@@ -17,7 +17,7 @@ module Yass
 
   class StyleQuery
     class Not
-      RUBY_METHODS = %i(style_query).freeze
+      RUBY_METHODS = %i(kind style_query).freeze
 
       include ::Yass::Node
 
@@ -31,7 +31,7 @@ module Yass
     end
 
     class Operation
-      RUBY_METHODS = %i(operator style_query).freeze
+      RUBY_METHODS = %i(kind operator style_query).freeze
 
       include ::Yass::Node
 
@@ -45,7 +45,7 @@ module Yass
     end
 
     class InParens
-      RUBY_METHODS = %i(style_query).freeze
+      RUBY_METHODS = %i(kind style_query).freeze
 
       include ::Yass::Node
 
@@ -59,7 +59,7 @@ module Yass
     end
 
     class StyleFeature
-      RUBY_METHODS = %i(value).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -73,7 +73,7 @@ module Yass
     end
 
     class GenerallyEnclosed
-      RUBY_METHODS = %i(value).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -88,7 +88,7 @@ module Yass
   end
 
   class MediaRule
-    RUBY_METHODS = %i(media_queries rules).freeze
+    RUBY_METHODS = %i(kind media_queries rules).freeze
 
     include ::Yass::Node
 
@@ -102,7 +102,7 @@ module Yass
   end
 
   class MediaQuery
-    RUBY_METHODS = %i(media_type qualifier query_condition).freeze
+    RUBY_METHODS = %i(kind media_type qualifier query_condition).freeze
 
     include ::Yass::Node
 
@@ -116,7 +116,7 @@ module Yass
 
     module QueryCondition
       class FeatureExpression
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -130,7 +130,7 @@ module Yass
       end
 
       class Custom
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -144,7 +144,7 @@ module Yass
       end
 
       class Operation
-        RUBY_METHODS = %i(operator query_conditions).freeze
+        RUBY_METHODS = %i(kind operator query_conditions).freeze
 
         include ::Yass::Node
 
@@ -158,7 +158,7 @@ module Yass
       end
 
       class InParens
-        RUBY_METHODS = %i(query_condition).freeze
+        RUBY_METHODS = %i(kind query_condition).freeze
 
         include ::Yass::Node
 
@@ -172,7 +172,7 @@ module Yass
       end
 
       class Style
-        RUBY_METHODS = %i(style_query).freeze
+        RUBY_METHODS = %i(kind style_query).freeze
 
         include ::Yass::Node
 
@@ -186,7 +186,7 @@ module Yass
       end
 
       class GenerallyEnclosed
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -203,6 +203,8 @@ module Yass
 
   module MediaType
     class All
+      RUBY_METHODS = %i(kind).freeze
+
       include ::Yass::Node
 
       def accept(visitor)
@@ -215,7 +217,7 @@ module Yass
     end
 
     class Concrete
-      RUBY_METHODS = %i(value).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 

@@ -12,8 +12,10 @@ end
 
 require "yass/node"
 require "yass/stylesheet"
-require "yass/selectors"
+
 require "yass/declarations"
+require "yass/rules"
+require "yass/selectors"
 
 module Yass
   autoload :Visitor, "yass/visitor"
