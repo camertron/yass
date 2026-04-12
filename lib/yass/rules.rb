@@ -1,6 +1,20 @@
 # frozen_string_literal: true
 
 module Yass
+  class UnimplementedRule
+    RUBY_METHODS = %i(kind).freeze
+
+    include ::Yass::Node
+
+    def accept(visitor)
+      visitor.visit_unimplemented_rule(self)
+    end
+
+    def kind
+      :unimplemented_rule
+    end
+  end
+
   class StyleRule
     RUBY_METHODS = %i(declarations kind selectors).freeze
 

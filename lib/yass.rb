@@ -26,25 +26,6 @@ module Yass
     end
   end
 
-  class StyleRule
-    def accept(visitor)
-      visitor.visit_style_rule(self)
-    end
-  end
-
-  class UnimplementedRule
-    def accept(visitor)
-    end
-
-    def selectors
-      []
-    end
-
-    def declarations
-      []
-    end
-  end
-
   def self.serialize(obj)
     case obj
     when Integer, String, Symbol

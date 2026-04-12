@@ -206,7 +206,7 @@ File.write("lib/yass/selectors.rb", <<~RUBY)
   #{selector_classes}
 RUBY
 
-rule_files = ["ext/yass/src/rules/style_rule.rs", "ext/yass/src/rules/media_rule.rs"]
+rule_files = ["ext/yass/src/rules/rule.rs", "ext/yass/src/rules/style_rule.rs", "ext/yass/src/rules/media_rule.rs"]
 rule_rust_structs = extract_rust_structs_from(rule_files)
 root = module_tree_from_structs(rule_rust_structs)
 rule_classes = module_to_code(root.children["Yass"], ["Yass"])

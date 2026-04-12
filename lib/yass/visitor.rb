@@ -2330,6 +2330,9 @@ module Yass
       visit(node.value)
     end
 
+    def visit_unimplemented_rule(node)
+    end
+
     def visit_style_rule(node)
       visit_list(node.selectors)
       visit_list(node.declarations)
