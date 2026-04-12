@@ -3,7 +3,7 @@
 module Yass
   module Declarations
     class AlignContent
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -17,7 +17,7 @@ module Yass
     end
 
     class AlignItems
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -31,7 +31,7 @@ module Yass
     end
 
     class AlignSelf
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -45,7 +45,7 @@ module Yass
     end
 
     class AlignmentBaseline
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -59,7 +59,7 @@ module Yass
     end
 
     class Angle
-      RUBY_METHODS = %i(kind unit calc? degrees).freeze
+      RUBY_METHODS = %i(calc? degrees kind unit).freeze
 
       include ::Yass::Node
 
@@ -88,7 +88,7 @@ module Yass
       end
 
       class Inset
-        RUBY_METHODS = %i(end start kind).freeze
+        RUBY_METHODS = %i(end kind start).freeze
 
         include ::Yass::Node
 
@@ -116,7 +116,7 @@ module Yass
       end
 
       class RangeValue
-        RUBY_METHODS = %i(length_percentage kind).freeze
+        RUBY_METHODS = %i(kind length_percentage).freeze
 
         include ::Yass::Node
 
@@ -130,7 +130,7 @@ module Yass
       end
 
       class ScrollAxis
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -144,7 +144,7 @@ module Yass
       end
 
       class ScrollFunction
-        RUBY_METHODS = %i(scroller scroll_axis kind).freeze
+        RUBY_METHODS = %i(kind scroll_axis scroller).freeze
 
         include ::Yass::Node
 
@@ -158,7 +158,7 @@ module Yass
       end
 
       class Scroller
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -172,7 +172,7 @@ module Yass
       end
 
       class TimelineName
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -187,7 +187,7 @@ module Yass
 
       module TimingFunction
         class CubicBezier
-          RUBY_METHODS = %i(x1 y1 x2 y2 kind).freeze
+          RUBY_METHODS = %i(kind x1 x2 y1 y2).freeze
 
           include ::Yass::Node
 
@@ -201,7 +201,7 @@ module Yass
         end
 
         class Keyword
-          RUBY_METHODS = %i(value kind).freeze
+          RUBY_METHODS = %i(kind value).freeze
 
           include ::Yass::Node
 
@@ -215,7 +215,7 @@ module Yass
         end
 
         class PiecewiseLinearFunction
-          RUBY_METHODS = %i(values kind).freeze
+          RUBY_METHODS = %i(kind values).freeze
 
           include ::Yass::Node
 
@@ -229,7 +229,7 @@ module Yass
         end
 
         class PiecewiseLinearFunctionEntry
-          RUBY_METHODS = %i(x y kind).freeze
+          RUBY_METHODS = %i(kind x y).freeze
 
           include ::Yass::Node
 
@@ -243,7 +243,7 @@ module Yass
         end
 
         class Steps
-          RUBY_METHODS = %i(position count kind).freeze
+          RUBY_METHODS = %i(count kind position).freeze
 
           include ::Yass::Node
 
@@ -258,7 +258,7 @@ module Yass
       end
 
       class ViewFunction
-        RUBY_METHODS = %i(scroll_axis inset kind).freeze
+        RUBY_METHODS = %i(inset kind scroll_axis).freeze
 
         include ::Yass::Node
 
@@ -273,7 +273,7 @@ module Yass
     end
 
     class AnimationComposition
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -287,7 +287,7 @@ module Yass
     end
 
     class AnimationDelay
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -301,7 +301,7 @@ module Yass
     end
 
     class AnimationDirection
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -315,7 +315,7 @@ module Yass
     end
 
     class AnimationDuration
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -343,7 +343,7 @@ module Yass
     end
 
     class AnimationFillMode
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -357,7 +357,7 @@ module Yass
     end
 
     class AnimationIterationCount
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -371,7 +371,7 @@ module Yass
     end
 
     class AnimationName
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -385,7 +385,7 @@ module Yass
     end
 
     class AnimationPlayState
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -399,7 +399,7 @@ module Yass
     end
 
     class AnimationRangeEnd
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -413,7 +413,7 @@ module Yass
     end
 
     class AnimationRangeStart
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -427,7 +427,7 @@ module Yass
     end
 
     class AnimationTimeline
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -441,7 +441,7 @@ module Yass
     end
 
     class AnimationTimingFunction
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -455,7 +455,7 @@ module Yass
     end
 
     class AspectRatio
-      RUBY_METHODS = %i(auto? ratio? kind numerator denominator).freeze
+      RUBY_METHODS = %i(auto? denominator kind numerator ratio?).freeze
 
       include ::Yass::Node
 
@@ -469,7 +469,7 @@ module Yass
     end
 
     class BackdropFilter
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -483,7 +483,7 @@ module Yass
     end
 
     class BackfaceVisibility
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -497,7 +497,7 @@ module Yass
     end
 
     class BackgroundAttachment
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -511,7 +511,7 @@ module Yass
     end
 
     class BackgroundBlendMode
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -525,7 +525,7 @@ module Yass
     end
 
     class BackgroundClip
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -553,7 +553,7 @@ module Yass
     end
 
     class BackgroundImage
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -567,7 +567,7 @@ module Yass
     end
 
     class BackgroundOrigin
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -581,7 +581,7 @@ module Yass
     end
 
     class BackgroundPositionX
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -595,7 +595,7 @@ module Yass
     end
 
     class BackgroundPositionY
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -609,7 +609,7 @@ module Yass
     end
 
     class BackgroundRepeat
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -623,7 +623,7 @@ module Yass
     end
 
     class BackgroundRepeatValue
-      RUBY_METHODS = %i(kind horizontal vertical).freeze
+      RUBY_METHODS = %i(horizontal kind vertical).freeze
 
       include ::Yass::Node
 
@@ -637,7 +637,7 @@ module Yass
     end
 
     class BackgroundSize
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -650,7 +650,7 @@ module Yass
       end
 
       class ExplicitSize
-        RUBY_METHODS = %i(height width kind).freeze
+        RUBY_METHODS = %i(height kind width).freeze
 
         include ::Yass::Node
 
@@ -708,7 +708,7 @@ module Yass
 
     class BaselineShift
       class Keyword
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -722,7 +722,7 @@ module Yass
       end
 
       class Length
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -737,7 +737,7 @@ module Yass
     end
 
     class BaselineSource
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -751,7 +751,7 @@ module Yass
     end
 
     class BlockSize
-      RUBY_METHODS = %i(size kind).freeze
+      RUBY_METHODS = %i(kind size).freeze
 
       include ::Yass::Node
 
@@ -779,7 +779,7 @@ module Yass
     end
 
     class BorderBlockEndStyle
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -793,7 +793,7 @@ module Yass
     end
 
     class BorderBlockEndWidth
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -821,7 +821,7 @@ module Yass
     end
 
     class BorderBlockStartStyle
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -835,7 +835,7 @@ module Yass
     end
 
     class BorderBlockStartWidth
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -863,7 +863,7 @@ module Yass
     end
 
     class BorderBottomLeftRadius
-      RUBY_METHODS = %i(height width kind).freeze
+      RUBY_METHODS = %i(height kind width).freeze
 
       include ::Yass::Node
 
@@ -877,7 +877,7 @@ module Yass
     end
 
     class BorderBottomRightRadius
-      RUBY_METHODS = %i(height width kind).freeze
+      RUBY_METHODS = %i(height kind width).freeze
 
       include ::Yass::Node
 
@@ -891,7 +891,7 @@ module Yass
     end
 
     class BorderBottomStyle
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -905,7 +905,7 @@ module Yass
     end
 
     class BorderBottomWidth
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -919,7 +919,7 @@ module Yass
     end
 
     class BorderCollapse
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -933,7 +933,7 @@ module Yass
     end
 
     class BorderEndEndRadius
-      RUBY_METHODS = %i(height width kind).freeze
+      RUBY_METHODS = %i(height kind width).freeze
 
       include ::Yass::Node
 
@@ -947,7 +947,7 @@ module Yass
     end
 
     class BorderEndStartRadius
-      RUBY_METHODS = %i(height width kind).freeze
+      RUBY_METHODS = %i(height kind width).freeze
 
       include ::Yass::Node
 
@@ -961,7 +961,7 @@ module Yass
     end
 
     class BorderImageOutset
-      RUBY_METHODS = %i(right left top bottom kind).freeze
+      RUBY_METHODS = %i(bottom kind left right top).freeze
 
       include ::Yass::Node
 
@@ -975,7 +975,7 @@ module Yass
     end
 
     class BorderImageRepeat
-      RUBY_METHODS = %i(kind horizontal vertical).freeze
+      RUBY_METHODS = %i(horizontal kind vertical).freeze
 
       include ::Yass::Node
 
@@ -989,7 +989,7 @@ module Yass
     end
 
     class BorderImageSlice
-      RUBY_METHODS = %i(right fill? kind left top bottom).freeze
+      RUBY_METHODS = %i(bottom fill? kind left right top).freeze
 
       include ::Yass::Node
 
@@ -1017,7 +1017,7 @@ module Yass
     end
 
     class BorderImageWidth
-      RUBY_METHODS = %i(right left top bottom kind).freeze
+      RUBY_METHODS = %i(bottom kind left right top).freeze
 
       include ::Yass::Node
 
@@ -1059,7 +1059,7 @@ module Yass
     end
 
     class BorderInlineEndStyle
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -1073,7 +1073,7 @@ module Yass
     end
 
     class BorderInlineEndWidth
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -1101,7 +1101,7 @@ module Yass
     end
 
     class BorderInlineStartStyle
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -1115,7 +1115,7 @@ module Yass
     end
 
     class BorderInlineStartWidth
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -1143,7 +1143,7 @@ module Yass
     end
 
     class BorderLeftStyle
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -1157,7 +1157,7 @@ module Yass
     end
 
     class BorderLeftWidth
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -1185,7 +1185,7 @@ module Yass
     end
 
     class BorderRightStyle
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -1199,7 +1199,7 @@ module Yass
     end
 
     class BorderRightWidth
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -1213,7 +1213,7 @@ module Yass
     end
 
     class BorderSpacing
-      RUBY_METHODS = %i(kind horizontal vertical).freeze
+      RUBY_METHODS = %i(horizontal kind vertical).freeze
 
       include ::Yass::Node
 
@@ -1227,7 +1227,7 @@ module Yass
     end
 
     class BorderStartEndRadius
-      RUBY_METHODS = %i(height width kind).freeze
+      RUBY_METHODS = %i(height kind width).freeze
 
       include ::Yass::Node
 
@@ -1241,7 +1241,7 @@ module Yass
     end
 
     class BorderStartStartRadius
-      RUBY_METHODS = %i(height width kind).freeze
+      RUBY_METHODS = %i(height kind width).freeze
 
       include ::Yass::Node
 
@@ -1269,7 +1269,7 @@ module Yass
     end
 
     class BorderTopLeftRadius
-      RUBY_METHODS = %i(height width kind).freeze
+      RUBY_METHODS = %i(height kind width).freeze
 
       include ::Yass::Node
 
@@ -1283,7 +1283,7 @@ module Yass
     end
 
     class BorderTopRightRadius
-      RUBY_METHODS = %i(height width kind).freeze
+      RUBY_METHODS = %i(height kind width).freeze
 
       include ::Yass::Node
 
@@ -1297,7 +1297,7 @@ module Yass
     end
 
     class BorderTopStyle
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -1311,7 +1311,7 @@ module Yass
     end
 
     class BorderTopWidth
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -1325,7 +1325,7 @@ module Yass
     end
 
     class Bottom
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -1339,7 +1339,7 @@ module Yass
     end
 
     class BoxShadow
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -1352,7 +1352,7 @@ module Yass
       end
 
       class Shadow
-        RUBY_METHODS = %i(vertical color kind blur spread inset? horizontal).freeze
+        RUBY_METHODS = %i(blur color horizontal inset? kind spread vertical).freeze
 
         include ::Yass::Node
 
@@ -1367,7 +1367,7 @@ module Yass
     end
 
     class BoxSizing
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -1381,7 +1381,7 @@ module Yass
     end
 
     class Calc
-      RUBY_METHODS = %i(clamping_mode root kind).freeze
+      RUBY_METHODS = %i(clamping_mode kind root).freeze
 
       include ::Yass::Node
 
@@ -1408,7 +1408,7 @@ module Yass
       end
 
       class AnchorFunction
-        RUBY_METHODS = %i(children kind fallback side target_element).freeze
+        RUBY_METHODS = %i(children fallback kind side target_element).freeze
 
         include ::Yass::Node
 
@@ -1422,7 +1422,7 @@ module Yass
       end
 
       class AnchorSideKeyword
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -1436,7 +1436,7 @@ module Yass
       end
 
       class AnchorSizeFunction
-        RUBY_METHODS = %i(children kind fallback size target_element).freeze
+        RUBY_METHODS = %i(children fallback kind size target_element).freeze
 
         include ::Yass::Node
 
@@ -1450,7 +1450,7 @@ module Yass
       end
 
       class AnchorSizeKeyword
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -1464,7 +1464,7 @@ module Yass
       end
 
       class Clamp
-        RUBY_METHODS = %i(children center min max kind).freeze
+        RUBY_METHODS = %i(center children kind max min).freeze
 
         include ::Yass::Node
 
@@ -1506,7 +1506,7 @@ module Yass
       end
 
       class MinMax
-        RUBY_METHODS = %i(children op kind).freeze
+        RUBY_METHODS = %i(children kind op).freeze
 
         include ::Yass::Node
 
@@ -1520,7 +1520,7 @@ module Yass
       end
 
       class ModRem
-        RUBY_METHODS = %i(children dividend divisor op kind).freeze
+        RUBY_METHODS = %i(children dividend divisor kind op).freeze
 
         include ::Yass::Node
 
@@ -1562,7 +1562,7 @@ module Yass
       end
 
       class Round
-        RUBY_METHODS = %i(children kind step value rounding_strategy).freeze
+        RUBY_METHODS = %i(children kind rounding_strategy step value).freeze
 
         include ::Yass::Node
 
@@ -1605,7 +1605,7 @@ module Yass
     end
 
     class CaptionSide
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -1633,7 +1633,7 @@ module Yass
     end
 
     class ChannelKeyword
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -1647,7 +1647,7 @@ module Yass
     end
 
     class Clear
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -1661,7 +1661,7 @@ module Yass
     end
 
     class Clip
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -1688,7 +1688,7 @@ module Yass
       end
 
       class Rect
-        RUBY_METHODS = %i(right left top bottom kind).freeze
+        RUBY_METHODS = %i(bottom kind left right top).freeze
 
         include ::Yass::Node
 
@@ -1702,7 +1702,7 @@ module Yass
       end
 
       class Length
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -1731,7 +1731,7 @@ module Yass
     end
 
     class ClipPath
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -1772,7 +1772,7 @@ module Yass
       end
 
       class Ellipse
-        RUBY_METHODS = %i(position x_radius y_radius kind).freeze
+        RUBY_METHODS = %i(kind position x_radius y_radius).freeze
 
         include ::Yass::Node
 
@@ -1786,7 +1786,7 @@ module Yass
       end
 
       class Position
-        RUBY_METHODS = %i(x y kind).freeze
+        RUBY_METHODS = %i(kind x y).freeze
 
         include ::Yass::Node
 
@@ -1814,7 +1814,7 @@ module Yass
       end
 
       class ShapeRadiusLength
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -1870,7 +1870,7 @@ module Yass
       end
 
       class Url
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -1884,7 +1884,7 @@ module Yass
       end
 
       class Shape
-        RUBY_METHODS = %i(shape reference_box kind).freeze
+        RUBY_METHODS = %i(kind reference_box shape).freeze
 
         include ::Yass::Node
 
@@ -1912,7 +1912,7 @@ module Yass
       end
 
       class Polygon
-        RUBY_METHODS = %i(kind fill coordinates).freeze
+        RUBY_METHODS = %i(coordinates fill kind).freeze
 
         include ::Yass::Node
 
@@ -1926,7 +1926,7 @@ module Yass
       end
 
       class PolygonCoord
-        RUBY_METHODS = %i(x y kind).freeze
+        RUBY_METHODS = %i(kind x y).freeze
 
         include ::Yass::Node
 
@@ -1940,7 +1940,7 @@ module Yass
       end
 
       class PathOrShape
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -1954,7 +1954,7 @@ module Yass
       end
 
       class PathFunction
-        RUBY_METHODS = %i(kind fill commands).freeze
+        RUBY_METHODS = %i(commands fill kind).freeze
 
         include ::Yass::Node
 
@@ -1968,7 +1968,7 @@ module Yass
       end
 
       class PathCommand
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -1982,7 +1982,7 @@ module Yass
       end
 
       class PathCommandMove
-        RUBY_METHODS = %i(point kind).freeze
+        RUBY_METHODS = %i(kind point).freeze
 
         include ::Yass::Node
 
@@ -1996,7 +1996,7 @@ module Yass
       end
 
       class PathCommandLine
-        RUBY_METHODS = %i(point kind).freeze
+        RUBY_METHODS = %i(kind point).freeze
 
         include ::Yass::Node
 
@@ -2010,7 +2010,7 @@ module Yass
       end
 
       class PathCommandHLine
-        RUBY_METHODS = %i(x kind).freeze
+        RUBY_METHODS = %i(kind x).freeze
 
         include ::Yass::Node
 
@@ -2024,7 +2024,7 @@ module Yass
       end
 
       class PathCommandVLine
-        RUBY_METHODS = %i(y kind).freeze
+        RUBY_METHODS = %i(kind y).freeze
 
         include ::Yass::Node
 
@@ -2038,7 +2038,7 @@ module Yass
       end
 
       class PathCommandCubicCurve
-        RUBY_METHODS = %i(control1 control2 point kind).freeze
+        RUBY_METHODS = %i(control1 control2 kind point).freeze
 
         include ::Yass::Node
 
@@ -2052,7 +2052,7 @@ module Yass
       end
 
       class PathCommandQuadCurve
-        RUBY_METHODS = %i(control1 point kind).freeze
+        RUBY_METHODS = %i(control1 kind point).freeze
 
         include ::Yass::Node
 
@@ -2066,7 +2066,7 @@ module Yass
       end
 
       class PathCommandSmoothCubic
-        RUBY_METHODS = %i(control2 point kind).freeze
+        RUBY_METHODS = %i(control2 kind point).freeze
 
         include ::Yass::Node
 
@@ -2080,7 +2080,7 @@ module Yass
       end
 
       class PathCommandSmoothQuad
-        RUBY_METHODS = %i(point kind).freeze
+        RUBY_METHODS = %i(kind point).freeze
 
         include ::Yass::Node
 
@@ -2094,7 +2094,7 @@ module Yass
       end
 
       class PathCommandArc
-        RUBY_METHODS = %i(radii arc_sweep arc_size point kind rotate).freeze
+        RUBY_METHODS = %i(arc_size arc_sweep kind point radii rotate).freeze
 
         include ::Yass::Node
 
@@ -2122,7 +2122,7 @@ module Yass
       end
 
       class PathCommandEndPointToPosition
-        RUBY_METHODS = %i(x y kind).freeze
+        RUBY_METHODS = %i(kind x y).freeze
 
         include ::Yass::Node
 
@@ -2150,7 +2150,7 @@ module Yass
       end
 
       class PathCoordinatePair
-        RUBY_METHODS = %i(x y kind).freeze
+        RUBY_METHODS = %i(kind x y).freeze
 
         include ::Yass::Node
 
@@ -2164,7 +2164,7 @@ module Yass
       end
 
       class PathAxisEndPointToPosition
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -2178,7 +2178,7 @@ module Yass
       end
 
       class PathAxisEndPointByCoordinate
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -2192,7 +2192,7 @@ module Yass
       end
 
       class PathControlPointAbsolute
-        RUBY_METHODS = %i(x y kind).freeze
+        RUBY_METHODS = %i(kind x y).freeze
 
         include ::Yass::Node
 
@@ -2206,7 +2206,7 @@ module Yass
       end
 
       class PathControlPointRelative
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -2220,7 +2220,7 @@ module Yass
       end
 
       class PathRelativeControlPoint
-        RUBY_METHODS = %i(reference coord kind).freeze
+        RUBY_METHODS = %i(coord kind reference).freeze
 
         include ::Yass::Node
 
@@ -2248,7 +2248,7 @@ module Yass
       end
 
       class Rect
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -2262,7 +2262,7 @@ module Yass
       end
 
       class InsetRect
-        RUBY_METHODS = %i(right round kind left top bottom).freeze
+        RUBY_METHODS = %i(bottom kind left right round top).freeze
 
         include ::Yass::Node
 
@@ -2276,7 +2276,7 @@ module Yass
       end
 
       class XywhRect
-        RUBY_METHODS = %i(x height round kind width y).freeze
+        RUBY_METHODS = %i(height kind round width x y).freeze
 
         include ::Yass::Node
 
@@ -2290,7 +2290,7 @@ module Yass
       end
 
       class RectFunction
-        RUBY_METHODS = %i(right round kind left top bottom).freeze
+        RUBY_METHODS = %i(bottom kind left right round top).freeze
 
         include ::Yass::Node
 
@@ -2304,7 +2304,7 @@ module Yass
       end
 
       class BorderRadius
-        RUBY_METHODS = %i(top_right bottom_right bottom_left kind top_left).freeze
+        RUBY_METHODS = %i(bottom_left bottom_right kind top_left top_right).freeze
 
         include ::Yass::Node
 
@@ -2318,7 +2318,7 @@ module Yass
       end
 
       class BorderCornerRadius
-        RUBY_METHODS = %i(height width kind).freeze
+        RUBY_METHODS = %i(height kind width).freeze
 
         include ::Yass::Node
 
@@ -2332,7 +2332,7 @@ module Yass
       end
 
       class ShapeFunction
-        RUBY_METHODS = %i(kind fill commands).freeze
+        RUBY_METHODS = %i(commands fill kind).freeze
 
         include ::Yass::Node
 
@@ -2346,7 +2346,7 @@ module Yass
       end
 
       class ShapeCommand
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -2360,7 +2360,7 @@ module Yass
       end
 
       class ShapeCommandMove
-        RUBY_METHODS = %i(point kind).freeze
+        RUBY_METHODS = %i(kind point).freeze
 
         include ::Yass::Node
 
@@ -2374,7 +2374,7 @@ module Yass
       end
 
       class ShapeCommandLine
-        RUBY_METHODS = %i(point kind).freeze
+        RUBY_METHODS = %i(kind point).freeze
 
         include ::Yass::Node
 
@@ -2388,7 +2388,7 @@ module Yass
       end
 
       class ShapeCommandHLine
-        RUBY_METHODS = %i(x kind).freeze
+        RUBY_METHODS = %i(kind x).freeze
 
         include ::Yass::Node
 
@@ -2402,7 +2402,7 @@ module Yass
       end
 
       class ShapeCommandVLine
-        RUBY_METHODS = %i(y kind).freeze
+        RUBY_METHODS = %i(kind y).freeze
 
         include ::Yass::Node
 
@@ -2416,7 +2416,7 @@ module Yass
       end
 
       class ShapeCommandCubicCurve
-        RUBY_METHODS = %i(control1 control2 point kind).freeze
+        RUBY_METHODS = %i(control1 control2 kind point).freeze
 
         include ::Yass::Node
 
@@ -2430,7 +2430,7 @@ module Yass
       end
 
       class ShapeCommandQuadCurve
-        RUBY_METHODS = %i(control1 point kind).freeze
+        RUBY_METHODS = %i(control1 kind point).freeze
 
         include ::Yass::Node
 
@@ -2444,7 +2444,7 @@ module Yass
       end
 
       class ShapeCommandSmoothCubic
-        RUBY_METHODS = %i(control2 point kind).freeze
+        RUBY_METHODS = %i(control2 kind point).freeze
 
         include ::Yass::Node
 
@@ -2458,7 +2458,7 @@ module Yass
       end
 
       class ShapeCommandSmoothQuad
-        RUBY_METHODS = %i(point kind).freeze
+        RUBY_METHODS = %i(kind point).freeze
 
         include ::Yass::Node
 
@@ -2472,7 +2472,7 @@ module Yass
       end
 
       class ShapeCommandArc
-        RUBY_METHODS = %i(radii arc_sweep arc_size point kind rotate).freeze
+        RUBY_METHODS = %i(arc_size arc_sweep kind point radii rotate).freeze
 
         include ::Yass::Node
 
@@ -2500,7 +2500,7 @@ module Yass
       end
 
       class CommandEndPointToPosition
-        RUBY_METHODS = %i(kind horizontal vertical).freeze
+        RUBY_METHODS = %i(horizontal kind vertical).freeze
 
         include ::Yass::Node
 
@@ -2528,7 +2528,7 @@ module Yass
       end
 
       class CoordinatePair
-        RUBY_METHODS = %i(x y kind).freeze
+        RUBY_METHODS = %i(kind x y).freeze
 
         include ::Yass::Node
 
@@ -2542,7 +2542,7 @@ module Yass
       end
 
       class AxisEndPointToPosition
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -2556,7 +2556,7 @@ module Yass
       end
 
       class AxisEndPointByCoordinate
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -2570,7 +2570,7 @@ module Yass
       end
 
       class ControlPointAbsolute
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -2584,7 +2584,7 @@ module Yass
       end
 
       class ControlPointRelative
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -2598,7 +2598,7 @@ module Yass
       end
 
       class RelativeControlPoint
-        RUBY_METHODS = %i(reference coord kind).freeze
+        RUBY_METHODS = %i(coord kind reference).freeze
 
         include ::Yass::Node
 
@@ -2766,7 +2766,7 @@ module Yass
       end
 
       class AbsoluteColor
-        RUBY_METHODS = %i(color_space legacy_syntax? transparent? alpha kind components).freeze
+        RUBY_METHODS = %i(alpha color_space components kind legacy_syntax? transparent?).freeze
 
         include ::Yass::Node
 
@@ -2794,7 +2794,7 @@ module Yass
       end
 
       class ColorComponents
-        RUBY_METHODS = %i(kind c0 c1 c2).freeze
+        RUBY_METHODS = %i(c0 c1 c2 kind).freeze
 
         include ::Yass::Node
 
@@ -2808,7 +2808,7 @@ module Yass
       end
 
       class ColorFunction
-        RUBY_METHODS = %i(color_space components kind has_origin_color? origin_color alpha).freeze
+        RUBY_METHODS = %i(alpha color_space components has_origin_color? kind origin_color).freeze
 
         include ::Yass::Node
 
@@ -2822,7 +2822,7 @@ module Yass
       end
 
       class ColorFunctionComponent
-        RUBY_METHODS = %i(channel_keyword calc value kind).freeze
+        RUBY_METHODS = %i(calc channel_keyword kind value).freeze
 
         include ::Yass::Node
 
@@ -2836,7 +2836,7 @@ module Yass
       end
 
       class ColorInterpolationMethod
-        RUBY_METHODS = %i(space hue kind).freeze
+        RUBY_METHODS = %i(hue kind space).freeze
 
         include ::Yass::Node
 
@@ -2850,7 +2850,7 @@ module Yass
       end
 
       class ColorMix
-        RUBY_METHODS = %i(result_in_modern_syntax? items kind interpolation normalize_weights?).freeze
+        RUBY_METHODS = %i(interpolation items kind normalize_weights? result_in_modern_syntax?).freeze
 
         include ::Yass::Node
 
@@ -2864,7 +2864,7 @@ module Yass
       end
 
       class ColorMixItem
-        RUBY_METHODS = %i(percentage color kind).freeze
+        RUBY_METHODS = %i(color kind percentage).freeze
 
         include ::Yass::Node
 
@@ -2892,7 +2892,7 @@ module Yass
       end
 
       class LightDark
-        RUBY_METHODS = %i(light dark kind).freeze
+        RUBY_METHODS = %i(dark kind light).freeze
 
         include ::Yass::Node
 
@@ -2906,7 +2906,7 @@ module Yass
       end
 
       class SystemColor
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -2921,7 +2921,7 @@ module Yass
     end
 
     class ColorScheme
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -2950,7 +2950,7 @@ module Yass
       end
 
       class Integer
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -2965,7 +2965,7 @@ module Yass
     end
 
     class ColumnGap
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -2992,7 +2992,7 @@ module Yass
       end
 
       class LengthPercentage
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -3007,7 +3007,7 @@ module Yass
     end
 
     class ColumnSpan
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -3021,7 +3021,7 @@ module Yass
     end
 
     class ColumnWidth
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -3048,7 +3048,7 @@ module Yass
       end
 
       class Length
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -3063,7 +3063,7 @@ module Yass
     end
 
     class Contain
-      RUBY_METHODS = %i(size? inline_size? block_size? layout? style? none? paint? content? strict? kind values).freeze
+      RUBY_METHODS = %i(block_size? content? inline_size? kind layout? none? paint? size? strict? style? values).freeze
 
       include ::Yass::Node
 
@@ -3077,7 +3077,7 @@ module Yass
     end
 
     class ContainerName
-      RUBY_METHODS = %i(values none? kind).freeze
+      RUBY_METHODS = %i(kind none? values).freeze
 
       include ::Yass::Node
 
@@ -3091,7 +3091,7 @@ module Yass
     end
 
     class ContainerType
-      RUBY_METHODS = %i(normal? scroll_state? size? kind values inline_size?).freeze
+      RUBY_METHODS = %i(inline_size? kind normal? scroll_state? size? values).freeze
 
       include ::Yass::Node
 
@@ -3105,7 +3105,7 @@ module Yass
     end
 
     class Content
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -3146,7 +3146,7 @@ module Yass
       end
 
       class Items
-        RUBY_METHODS = %i(kind items alt_start).freeze
+        RUBY_METHODS = %i(alt_start items kind).freeze
 
         include ::Yass::Node
 
@@ -3161,7 +3161,7 @@ module Yass
 
       module Item
         class String
-          RUBY_METHODS = %i(value kind).freeze
+          RUBY_METHODS = %i(kind value).freeze
 
           include ::Yass::Node
 
@@ -3175,7 +3175,7 @@ module Yass
         end
 
         class Counter
-          RUBY_METHODS = %i(style kind).freeze
+          RUBY_METHODS = %i(kind style).freeze
 
           include ::Yass::Node
 
@@ -3189,7 +3189,7 @@ module Yass
         end
 
         class Counters
-          RUBY_METHODS = %i(style separator kind).freeze
+          RUBY_METHODS = %i(kind separator style).freeze
 
           include ::Yass::Node
 
@@ -3203,7 +3203,7 @@ module Yass
         end
 
         class Attr
-          RUBY_METHODS = %i(kind fallback namespace_prefix namespace_url attribute).freeze
+          RUBY_METHODS = %i(attribute fallback kind namespace_prefix namespace_url).freeze
 
           include ::Yass::Node
 
@@ -3233,7 +3233,7 @@ module Yass
 
       module CounterStyle
         class Symbols
-          RUBY_METHODS = %i(symbols kind).freeze
+          RUBY_METHODS = %i(kind symbols).freeze
 
           include ::Yass::Node
 
@@ -3249,7 +3249,7 @@ module Yass
     end
 
     class CounterIncrement
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -3262,7 +3262,7 @@ module Yass
       end
 
       class Counter
-        RUBY_METHODS = %i(reversed? value).freeze
+        RUBY_METHODS = %i(kind reversed? value).freeze
 
         include ::Yass::Node
 
@@ -3277,7 +3277,7 @@ module Yass
     end
 
     class CounterReset
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -3290,7 +3290,7 @@ module Yass
       end
 
       class Counter
-        RUBY_METHODS = %i(reversed? value).freeze
+        RUBY_METHODS = %i(kind reversed? value).freeze
 
         include ::Yass::Node
 
@@ -3305,7 +3305,7 @@ module Yass
     end
 
     class CSSWideKeyword
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -3332,7 +3332,7 @@ module Yass
       end
 
       class Image
-        RUBY_METHODS = %i(image hotspot? hotspot_x hotspot_y).freeze
+        RUBY_METHODS = %i(hotspot? hotspot_x hotspot_y image kind).freeze
 
         include ::Yass::Node
 
@@ -3347,7 +3347,7 @@ module Yass
     end
 
     class Custom
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -3360,7 +3360,7 @@ module Yass
       end
 
       class Unparsed
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -3374,7 +3374,7 @@ module Yass
       end
 
       class Parsed
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -3388,7 +3388,7 @@ module Yass
       end
 
       class CSSWideKeyword
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -3403,7 +3403,7 @@ module Yass
     end
 
     class Direction
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -3417,7 +3417,7 @@ module Yass
     end
 
     class Display
-      RUBY_METHODS = %i(ruby_level_container? ruby_type? line_participant? none? kind inside outside list_item? contents? inline_flow? item_container?).freeze
+      RUBY_METHODS = %i(contents? inline_flow? inside item_container? kind line_participant? list_item? none? outside ruby_level_container? ruby_type?).freeze
 
       include ::Yass::Node
 
@@ -3431,7 +3431,7 @@ module Yass
     end
 
     class EmptyCells
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -3445,7 +3445,7 @@ module Yass
     end
 
     class Filter
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -3458,7 +3458,7 @@ module Yass
       end
 
       class Blur
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -3472,7 +3472,7 @@ module Yass
       end
 
       class Brightness
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -3486,7 +3486,7 @@ module Yass
       end
 
       class Contrast
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -3500,7 +3500,7 @@ module Yass
       end
 
       class DropShadow
-        RUBY_METHODS = %i(kind horizontal blur color vertical).freeze
+        RUBY_METHODS = %i(blur color horizontal kind vertical).freeze
 
         include ::Yass::Node
 
@@ -3514,7 +3514,7 @@ module Yass
       end
 
       class Grayscale
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -3528,7 +3528,7 @@ module Yass
       end
 
       class HueRotate
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -3542,7 +3542,7 @@ module Yass
       end
 
       class Invert
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -3556,7 +3556,7 @@ module Yass
       end
 
       class Opacity
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -3570,7 +3570,7 @@ module Yass
       end
 
       class Saturate
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -3584,7 +3584,7 @@ module Yass
       end
 
       class Sepia
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -3599,7 +3599,7 @@ module Yass
     end
 
     class FlexBasis
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -3612,6 +3612,8 @@ module Yass
       end
 
       class Content
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -3624,7 +3626,7 @@ module Yass
       end
 
       class Size
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -3639,7 +3641,7 @@ module Yass
     end
 
     class FlexDirection
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -3653,7 +3655,7 @@ module Yass
     end
 
     class FlexGrow
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -3666,8 +3668,22 @@ module Yass
       end
     end
 
+    class FlexShrink
+      RUBY_METHODS = %i(kind value).freeze
+
+      include ::Yass::Node
+
+      def accept(visitor)
+        visitor.visit_declaration_flex_shrink(self)
+      end
+
+      def kind
+        :flex_shrink
+      end
+    end
+
     class FlexWrap
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -3681,7 +3697,7 @@ module Yass
     end
 
     class Float
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -3695,7 +3711,7 @@ module Yass
     end
 
     class FontFamily
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -3708,7 +3724,7 @@ module Yass
       end
 
       class Values
-        RUBY_METHODS = %i(values).freeze
+        RUBY_METHODS = %i(kind values).freeze
 
         include ::Yass::Node
 
@@ -3722,6 +3738,8 @@ module Yass
       end
 
       class System
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -3734,7 +3752,7 @@ module Yass
       end
 
       class Name
-        RUBY_METHODS = %i(value syntax).freeze
+        RUBY_METHODS = %i(kind syntax value).freeze
 
         include ::Yass::Node
 
@@ -3748,7 +3766,7 @@ module Yass
       end
 
       class Generic
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -3763,7 +3781,7 @@ module Yass
     end
 
     class FontLanguageOverride
-      RUBY_METHODS = %i(normal? value kind).freeze
+      RUBY_METHODS = %i(kind normal? value).freeze
 
       include ::Yass::Node
 
@@ -3777,7 +3795,7 @@ module Yass
     end
 
     class FontOpticalSizing
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -3791,7 +3809,7 @@ module Yass
     end
 
     class FontSize
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -3804,7 +3822,7 @@ module Yass
       end
 
       class Length
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -3818,7 +3836,7 @@ module Yass
       end
 
       class Keyword
-        RUBY_METHODS = %i(keyword factor).freeze
+        RUBY_METHODS = %i(factor keyword kind).freeze
 
         include ::Yass::Node
 
@@ -3832,6 +3850,8 @@ module Yass
       end
 
       class Smaller
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -3844,6 +3864,8 @@ module Yass
       end
 
       class Larger
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -3856,6 +3878,8 @@ module Yass
       end
 
       class System
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -3869,7 +3893,7 @@ module Yass
     end
 
     class FontStretch
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -3882,7 +3906,7 @@ module Yass
       end
 
       class Stretch
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -3896,7 +3920,7 @@ module Yass
       end
 
       class Keyword
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -3910,6 +3934,8 @@ module Yass
       end
 
       class System
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -3923,7 +3949,7 @@ module Yass
     end
 
     class FontStyle
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -3936,6 +3962,8 @@ module Yass
       end
 
       class Normal
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -3948,6 +3976,8 @@ module Yass
       end
 
       class Italic
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -3960,7 +3990,7 @@ module Yass
       end
 
       class Oblique
-        RUBY_METHODS = %i(angle).freeze
+        RUBY_METHODS = %i(angle kind).freeze
 
         include ::Yass::Node
 
@@ -3974,6 +4004,8 @@ module Yass
       end
 
       class System
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -3987,7 +4019,7 @@ module Yass
     end
 
     class FontSynthesisWeight
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -4001,7 +4033,7 @@ module Yass
     end
 
     class FontVariantCaps
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -4015,7 +4047,7 @@ module Yass
     end
 
     class FontVariationSettings
-      RUBY_METHODS = %i(values normal? kind).freeze
+      RUBY_METHODS = %i(kind normal? values).freeze
 
       include ::Yass::Node
 
@@ -4028,7 +4060,7 @@ module Yass
       end
 
       class Setting
-        RUBY_METHODS = %i(tag value).freeze
+        RUBY_METHODS = %i(kind tag value).freeze
 
         include ::Yass::Node
 
@@ -4043,7 +4075,7 @@ module Yass
     end
 
     class FontWeight
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -4056,7 +4088,7 @@ module Yass
       end
 
       class Absolute
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -4070,6 +4102,8 @@ module Yass
       end
 
       class Bolder
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -4082,6 +4116,8 @@ module Yass
       end
 
       class Lighter
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -4094,6 +4130,8 @@ module Yass
       end
 
       class System
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -4107,7 +4145,7 @@ module Yass
     end
 
     class GridAutoColumns
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -4121,7 +4159,7 @@ module Yass
     end
 
     class GridAutoFlow
-      RUBY_METHODS = %i(axis dense? value kind).freeze
+      RUBY_METHODS = %i(axis dense? kind value).freeze
 
       include ::Yass::Node
 
@@ -4135,7 +4173,7 @@ module Yass
     end
 
     class GridAutoRows
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -4149,7 +4187,7 @@ module Yass
     end
 
     class GridColumnEnd
-      RUBY_METHODS = %i(span? ident_only? kind auto? ident line_num).freeze
+      RUBY_METHODS = %i(auto? ident ident_only? kind line_num span?).freeze
 
       include ::Yass::Node
 
@@ -4163,7 +4201,7 @@ module Yass
     end
 
     class GridColumnStart
-      RUBY_METHODS = %i(span? ident_only? kind auto? ident line_num).freeze
+      RUBY_METHODS = %i(auto? ident ident_only? kind line_num span?).freeze
 
       include ::Yass::Node
 
@@ -4177,7 +4215,7 @@ module Yass
     end
 
     class GridRowEnd
-      RUBY_METHODS = %i(span? ident_only? kind auto? ident line_num).freeze
+      RUBY_METHODS = %i(auto? ident ident_only? kind line_num span?).freeze
 
       include ::Yass::Node
 
@@ -4191,7 +4229,7 @@ module Yass
     end
 
     class GridRowStart
-      RUBY_METHODS = %i(span? ident_only? kind auto? ident line_num).freeze
+      RUBY_METHODS = %i(auto? ident ident_only? kind line_num span?).freeze
 
       include ::Yass::Node
 
@@ -4206,6 +4244,8 @@ module Yass
 
     module GridTemplate
       class None
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -4218,6 +4258,8 @@ module Yass
       end
 
       class Masonry
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -4230,7 +4272,7 @@ module Yass
       end
 
       class TrackList
-        RUBY_METHODS = %i(auto_repeat_index explicit? auto_repeat? line_names values).freeze
+        RUBY_METHODS = %i(auto_repeat? auto_repeat_index explicit? kind line_names values).freeze
 
         include ::Yass::Node
 
@@ -4244,7 +4286,7 @@ module Yass
       end
 
       class TrackListValue
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -4257,7 +4299,7 @@ module Yass
         end
 
         class TrackRepeat
-          RUBY_METHODS = %i(count track_sizes line_names).freeze
+          RUBY_METHODS = %i(count kind line_names track_sizes).freeze
 
           include ::Yass::Node
 
@@ -4273,7 +4315,7 @@ module Yass
 
       module RepeatCount
         class Number
-          RUBY_METHODS = %i(value).freeze
+          RUBY_METHODS = %i(kind value).freeze
 
           include ::Yass::Node
 
@@ -4287,6 +4329,8 @@ module Yass
         end
 
         class AutoFill
+          RUBY_METHODS = %i(kind).freeze
+
           include ::Yass::Node
 
           def accept(visitor)
@@ -4299,6 +4343,8 @@ module Yass
         end
 
         class AutoFit
+          RUBY_METHODS = %i(kind).freeze
+
           include ::Yass::Node
 
           def accept(visitor)
@@ -4312,7 +4358,7 @@ module Yass
       end
 
       class Subgrid
-        RUBY_METHODS = %i(line_names expanded_line_names_length).freeze
+        RUBY_METHODS = %i(expanded_line_names_length kind line_names).freeze
 
         include ::Yass::Node
 
@@ -4326,7 +4372,7 @@ module Yass
       end
 
       class LineNameListValue
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -4340,7 +4386,7 @@ module Yass
       end
 
       class LineNames
-        RUBY_METHODS = %i(names).freeze
+        RUBY_METHODS = %i(kind names).freeze
 
         include ::Yass::Node
 
@@ -4354,7 +4400,7 @@ module Yass
       end
 
       class LineNameRepeat
-        RUBY_METHODS = %i(count line_names).freeze
+        RUBY_METHODS = %i(count kind line_names).freeze
 
         include ::Yass::Node
 
@@ -4369,7 +4415,7 @@ module Yass
     end
 
     class GridTemplateAreas
-      RUBY_METHODS = %i(kind areas).freeze
+      RUBY_METHODS = %i(areas kind).freeze
 
       include ::Yass::Node
 
@@ -4382,6 +4428,8 @@ module Yass
       end
 
       class None
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -4394,7 +4442,7 @@ module Yass
       end
 
       class AreaList
-        RUBY_METHODS = %i(areas strings width).freeze
+        RUBY_METHODS = %i(areas kind strings width).freeze
 
         include ::Yass::Node
 
@@ -4408,7 +4456,7 @@ module Yass
       end
 
       class Area
-        RUBY_METHODS = %i(row_start row_end column_start column_end).freeze
+        RUBY_METHODS = %i(column_end column_start kind row_end row_start).freeze
 
         include ::Yass::Node
 
@@ -4423,7 +4471,7 @@ module Yass
     end
 
     class GridTemplateColumns
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -4437,7 +4485,7 @@ module Yass
     end
 
     class GridTemplateRows
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -4451,7 +4499,7 @@ module Yass
     end
 
     class Height
-      RUBY_METHODS = %i(size kind).freeze
+      RUBY_METHODS = %i(kind size).freeze
 
       include ::Yass::Node
 
@@ -4480,7 +4528,7 @@ module Yass
       end
 
       class LengthHorizontalPositionComponent
-        RUBY_METHODS = %i(length kind).freeze
+        RUBY_METHODS = %i(kind length).freeze
 
         include ::Yass::Node
 
@@ -4494,7 +4542,7 @@ module Yass
       end
 
       class SideHorizontalPositionComponent
-        RUBY_METHODS = %i(kind side offset).freeze
+        RUBY_METHODS = %i(kind offset side).freeze
 
         include ::Yass::Node
 
@@ -4508,7 +4556,7 @@ module Yass
       end
 
       class AngleOrPercentage
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -4522,7 +4570,7 @@ module Yass
       end
 
       class RadiusCircle
-        RUBY_METHODS = %i(length kind).freeze
+        RUBY_METHODS = %i(kind length).freeze
 
         include ::Yass::Node
 
@@ -4550,7 +4598,7 @@ module Yass
       end
 
       class ConicGradient
-        RUBY_METHODS = %i(angle kind position items repeating? color_interpolation_method).freeze
+        RUBY_METHODS = %i(angle color_interpolation_method items kind position repeating?).freeze
 
         include ::Yass::Node
 
@@ -4578,7 +4626,7 @@ module Yass
       end
 
       class CrossFadeElement
-        RUBY_METHODS = %i(image percent kind).freeze
+        RUBY_METHODS = %i(image kind percent).freeze
 
         include ::Yass::Node
 
@@ -4620,7 +4668,7 @@ module Yass
       end
 
       class RadiiEllipse
-        RUBY_METHODS = %i(x y kind).freeze
+        RUBY_METHODS = %i(kind x y).freeze
 
         include ::Yass::Node
 
@@ -4648,7 +4696,7 @@ module Yass
       end
 
       class EndingShape
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -4663,7 +4711,7 @@ module Yass
 
       module Gradient
         class SimpleColorStopAngle
-          RUBY_METHODS = %i(position color kind).freeze
+          RUBY_METHODS = %i(color kind position).freeze
 
           include ::Yass::Node
 
@@ -4677,7 +4725,7 @@ module Yass
         end
 
         class ComplexColorStopAngle
-          RUBY_METHODS = %i(position color kind).freeze
+          RUBY_METHODS = %i(color kind position).freeze
 
           include ::Yass::Node
 
@@ -4691,7 +4739,7 @@ module Yass
         end
 
         class InterpolationHintAngle
-          RUBY_METHODS = %i(position color kind).freeze
+          RUBY_METHODS = %i(color kind position).freeze
 
           include ::Yass::Node
 
@@ -4719,7 +4767,7 @@ module Yass
         end
 
         class ComplexColorStopLength
-          RUBY_METHODS = %i(position color kind).freeze
+          RUBY_METHODS = %i(color kind position).freeze
 
           include ::Yass::Node
 
@@ -4733,7 +4781,7 @@ module Yass
         end
 
         class InterpolationHintLength
-          RUBY_METHODS = %i(position kind).freeze
+          RUBY_METHODS = %i(kind position).freeze
 
           include ::Yass::Node
 
@@ -4762,7 +4810,7 @@ module Yass
       end
 
       class ImageSetItem
-        RUBY_METHODS = %i(image has_mime_type? mime_type kind resolution).freeze
+        RUBY_METHODS = %i(has_mime_type? image kind mime_type resolution).freeze
 
         include ::Yass::Node
 
@@ -4776,7 +4824,7 @@ module Yass
       end
 
       class LightDark
-        RUBY_METHODS = %i(light dark kind).freeze
+        RUBY_METHODS = %i(dark kind light).freeze
 
         include ::Yass::Node
 
@@ -4832,7 +4880,7 @@ module Yass
       end
 
       class CornerLineDirection
-        RUBY_METHODS = %i(vertical_direction kind horizontal_direction).freeze
+        RUBY_METHODS = %i(horizontal_direction kind vertical_direction).freeze
 
         include ::Yass::Node
 
@@ -4846,7 +4894,7 @@ module Yass
       end
 
       class LinearGradient
-        RUBY_METHODS = %i(direction kind items repeating? compat_mode color_interpolation_method).freeze
+        RUBY_METHODS = %i(color_interpolation_method compat_mode direction items kind repeating?).freeze
 
         include ::Yass::Node
 
@@ -4874,7 +4922,7 @@ module Yass
       end
 
       class Position
-        RUBY_METHODS = %i(horizontal_position vertical_position kind).freeze
+        RUBY_METHODS = %i(horizontal_position kind vertical_position).freeze
 
         include ::Yass::Node
 
@@ -4888,7 +4936,7 @@ module Yass
       end
 
       class RadialGradient
-        RUBY_METHODS = %i(shape kind position items repeating? compat_mode color_interpolation_method).freeze
+        RUBY_METHODS = %i(color_interpolation_method compat_mode items kind position repeating? shape).freeze
 
         include ::Yass::Node
 
@@ -4902,7 +4950,7 @@ module Yass
       end
 
       class Url
-        RUBY_METHODS = %i(kind resolved invalid? original).freeze
+        RUBY_METHODS = %i(invalid? kind original resolved).freeze
 
         include ::Yass::Node
 
@@ -4930,7 +4978,7 @@ module Yass
       end
 
       class LengthVerticalPositionComponent
-        RUBY_METHODS = %i(length kind).freeze
+        RUBY_METHODS = %i(kind length).freeze
 
         include ::Yass::Node
 
@@ -4944,7 +4992,7 @@ module Yass
       end
 
       class SideVerticalPositionComponent
-        RUBY_METHODS = %i(position offset kind).freeze
+        RUBY_METHODS = %i(kind offset position).freeze
 
         include ::Yass::Node
 
@@ -4959,7 +5007,7 @@ module Yass
     end
 
     class ImageRendering
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -4973,7 +5021,7 @@ module Yass
     end
 
     class InlineSize
-      RUBY_METHODS = %i(size kind).freeze
+      RUBY_METHODS = %i(kind size).freeze
 
       include ::Yass::Node
 
@@ -5002,7 +5050,7 @@ module Yass
       end
 
       class LengthPercentage
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -5016,7 +5064,7 @@ module Yass
       end
 
       class AnchorContainingCalcFunction
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -5030,7 +5078,7 @@ module Yass
       end
 
       class AnchorFunction
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -5044,7 +5092,7 @@ module Yass
       end
 
       class AnchorSizeFunction
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -5059,7 +5107,7 @@ module Yass
     end
 
     class InsetBlockEnd
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5073,7 +5121,7 @@ module Yass
     end
 
     class InsetBlockStart
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5087,7 +5135,7 @@ module Yass
     end
 
     class InsetInlineEnd
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5101,7 +5149,7 @@ module Yass
     end
 
     class InsetInlineStart
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5115,7 +5163,7 @@ module Yass
     end
 
     class Isolation
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5129,7 +5177,7 @@ module Yass
     end
 
     class JustifyContent
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5143,7 +5191,7 @@ module Yass
     end
 
     class JustifyItems
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5157,7 +5205,7 @@ module Yass
     end
 
     class JustifySelf
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5171,7 +5219,7 @@ module Yass
     end
 
     class Left
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5186,7 +5234,7 @@ module Yass
 
     module Length
       class Absolute
-        RUBY_METHODS = %i(unit value kind).freeze
+        RUBY_METHODS = %i(kind unit value).freeze
 
         include ::Yass::Node
 
@@ -5200,7 +5248,7 @@ module Yass
       end
 
       class FontRelative
-        RUBY_METHODS = %i(unit value kind).freeze
+        RUBY_METHODS = %i(kind unit value).freeze
 
         include ::Yass::Node
 
@@ -5214,7 +5262,7 @@ module Yass
       end
 
       class ViewportPercentage
-        RUBY_METHODS = %i(unit value kind).freeze
+        RUBY_METHODS = %i(kind unit value).freeze
 
         include ::Yass::Node
 
@@ -5228,7 +5276,7 @@ module Yass
       end
 
       class ContainerRelative
-        RUBY_METHODS = %i(unit value kind).freeze
+        RUBY_METHODS = %i(kind unit value).freeze
 
         include ::Yass::Node
 
@@ -5242,7 +5290,7 @@ module Yass
       end
 
       class CharacterWidth
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -5257,7 +5305,7 @@ module Yass
     end
 
     class LetterSpacing
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5270,6 +5318,8 @@ module Yass
       end
 
       class Normal
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -5283,7 +5333,7 @@ module Yass
     end
 
     class LineBreak
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5297,7 +5347,7 @@ module Yass
     end
 
     class LineHeight
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5310,6 +5360,8 @@ module Yass
       end
 
       class Normal
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -5337,7 +5389,7 @@ module Yass
     end
 
     class ListStylePosition
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5351,7 +5403,7 @@ module Yass
     end
 
     class ListStyleType
-      RUBY_METHODS = %i(bullet? value kind).freeze
+      RUBY_METHODS = %i(bullet? kind value).freeze
 
       include ::Yass::Node
 
@@ -5364,6 +5416,8 @@ module Yass
       end
 
       class None
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -5376,7 +5430,7 @@ module Yass
       end
 
       class Name
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -5390,7 +5444,7 @@ module Yass
       end
 
       class String
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -5404,7 +5458,7 @@ module Yass
       end
 
       class Symbols
-        RUBY_METHODS = %i(type symbols).freeze
+        RUBY_METHODS = %i(kind symbols type).freeze
 
         include ::Yass::Node
 
@@ -5420,6 +5474,8 @@ module Yass
 
     module Margin
       class Auto
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -5432,7 +5488,7 @@ module Yass
       end
 
       class AnchorContainingCalcFunction
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -5446,7 +5502,7 @@ module Yass
       end
 
       class AnchorSizeFunction
-        RUBY_METHODS = %i(fallback size target_element).freeze
+        RUBY_METHODS = %i(fallback kind size target_element).freeze
 
         include ::Yass::Node
 
@@ -5461,7 +5517,7 @@ module Yass
     end
 
     class MarginBlockEnd
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5475,7 +5531,7 @@ module Yass
     end
 
     class MarginBlockStart
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5489,7 +5545,7 @@ module Yass
     end
 
     class MarginBottom
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5503,7 +5559,7 @@ module Yass
     end
 
     class MarginInlineEnd
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5517,7 +5573,7 @@ module Yass
     end
 
     class MarginInlineStart
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5531,7 +5587,7 @@ module Yass
     end
 
     class MarginLeft
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5545,7 +5601,7 @@ module Yass
     end
 
     class MarginRight
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5559,7 +5615,7 @@ module Yass
     end
 
     class MarginTop
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5573,7 +5629,7 @@ module Yass
     end
 
     class MaskImage
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -5587,7 +5643,7 @@ module Yass
     end
 
     class MaxBlockSize
-      RUBY_METHODS = %i(size kind).freeze
+      RUBY_METHODS = %i(kind size).freeze
 
       include ::Yass::Node
 
@@ -5601,7 +5657,7 @@ module Yass
     end
 
     class MaxHeight
-      RUBY_METHODS = %i(size kind).freeze
+      RUBY_METHODS = %i(kind size).freeze
 
       include ::Yass::Node
 
@@ -5615,7 +5671,7 @@ module Yass
     end
 
     class MaxInlineSize
-      RUBY_METHODS = %i(size kind).freeze
+      RUBY_METHODS = %i(kind size).freeze
 
       include ::Yass::Node
 
@@ -5629,7 +5685,7 @@ module Yass
     end
 
     class MaxWidth
-      RUBY_METHODS = %i(size kind).freeze
+      RUBY_METHODS = %i(kind size).freeze
 
       include ::Yass::Node
 
@@ -5643,7 +5699,7 @@ module Yass
     end
 
     class MinBlockSize
-      RUBY_METHODS = %i(size kind).freeze
+      RUBY_METHODS = %i(kind size).freeze
 
       include ::Yass::Node
 
@@ -5657,7 +5713,7 @@ module Yass
     end
 
     class MinHeight
-      RUBY_METHODS = %i(size kind).freeze
+      RUBY_METHODS = %i(kind size).freeze
 
       include ::Yass::Node
 
@@ -5671,7 +5727,7 @@ module Yass
     end
 
     class MinInlineSize
-      RUBY_METHODS = %i(size kind).freeze
+      RUBY_METHODS = %i(kind size).freeze
 
       include ::Yass::Node
 
@@ -5685,7 +5741,7 @@ module Yass
     end
 
     class MinWidth
-      RUBY_METHODS = %i(size kind).freeze
+      RUBY_METHODS = %i(kind size).freeze
 
       include ::Yass::Node
 
@@ -5699,7 +5755,7 @@ module Yass
     end
 
     class MixBlendMode
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5713,7 +5769,7 @@ module Yass
     end
 
     class Number
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5727,7 +5783,7 @@ module Yass
     end
 
     class ObjectFit
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5741,7 +5797,7 @@ module Yass
     end
 
     class ObjectPosition
-      RUBY_METHODS = %i(kind horizontal vertical).freeze
+      RUBY_METHODS = %i(horizontal kind vertical).freeze
 
       include ::Yass::Node
 
@@ -5755,7 +5811,7 @@ module Yass
     end
 
     class OffsetPath
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5768,6 +5824,8 @@ module Yass
       end
 
       class None
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -5780,7 +5838,7 @@ module Yass
       end
 
       class CoordBox
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -5794,7 +5852,7 @@ module Yass
       end
 
       class Function
-        RUBY_METHODS = %i(path coord_box).freeze
+        RUBY_METHODS = %i(coord_box kind path).freeze
 
         include ::Yass::Node
 
@@ -5808,7 +5866,7 @@ module Yass
       end
 
       class Ray
-        RUBY_METHODS = %i(contain? angle position size).freeze
+        RUBY_METHODS = %i(angle contain? kind position size).freeze
 
         include ::Yass::Node
 
@@ -5822,7 +5880,7 @@ module Yass
       end
 
       class Url
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -5836,6 +5894,8 @@ module Yass
       end
 
       class PositionAuto
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -5848,7 +5908,7 @@ module Yass
       end
 
       class Position
-        RUBY_METHODS = %i(horizontal vertical).freeze
+        RUBY_METHODS = %i(horizontal kind vertical).freeze
 
         include ::Yass::Node
 
@@ -5863,7 +5923,7 @@ module Yass
     end
 
     class Opacity
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5877,7 +5937,7 @@ module Yass
     end
 
     class Order
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5905,7 +5965,7 @@ module Yass
     end
 
     class OutlineOffset
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5919,7 +5979,7 @@ module Yass
     end
 
     class OutlineStyle
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5933,7 +5993,7 @@ module Yass
     end
 
     class OutlineWidth
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5947,7 +6007,7 @@ module Yass
     end
 
     class OverflowBlock
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5961,7 +6021,7 @@ module Yass
     end
 
     class OverflowClipMargin
-      RUBY_METHODS = %i(offset visual_box kind).freeze
+      RUBY_METHODS = %i(kind offset visual_box).freeze
 
       include ::Yass::Node
 
@@ -5975,7 +6035,7 @@ module Yass
     end
 
     class OverflowInline
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -5989,7 +6049,7 @@ module Yass
     end
 
     class OverflowWrap
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6003,7 +6063,7 @@ module Yass
     end
 
     class OverflowX
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6017,7 +6077,7 @@ module Yass
     end
 
     class OverflowY
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6031,7 +6091,7 @@ module Yass
     end
 
     class PaddingBlockEnd
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6045,7 +6105,7 @@ module Yass
     end
 
     class PaddingBlockStart
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6059,7 +6119,7 @@ module Yass
     end
 
     class PaddingBottom
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6073,7 +6133,7 @@ module Yass
     end
 
     class PaddingInlineEnd
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6087,7 +6147,7 @@ module Yass
     end
 
     class PaddingInlineStart
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6101,7 +6161,7 @@ module Yass
     end
 
     class PaddingLeft
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6115,7 +6175,7 @@ module Yass
     end
 
     class PaddingRight
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6129,7 +6189,7 @@ module Yass
     end
 
     class PaddingTop
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6143,7 +6203,7 @@ module Yass
     end
 
     class Percentage
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6157,7 +6217,7 @@ module Yass
     end
 
     class Perspective
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6170,6 +6230,8 @@ module Yass
       end
 
       class None
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -6182,7 +6244,7 @@ module Yass
       end
 
       class Length
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -6197,7 +6259,7 @@ module Yass
     end
 
     class PerspectiveOrigin
-      RUBY_METHODS = %i(kind horizontal vertical).freeze
+      RUBY_METHODS = %i(horizontal kind vertical).freeze
 
       include ::Yass::Node
 
@@ -6211,7 +6273,7 @@ module Yass
     end
 
     class PointerEvents
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6225,7 +6287,7 @@ module Yass
     end
 
     class Position
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6239,7 +6301,7 @@ module Yass
     end
 
     class PositionArea
-      RUBY_METHODS = %i(second is_none first kind).freeze
+      RUBY_METHODS = %i(first is_none kind second).freeze
 
       include ::Yass::Node
 
@@ -6253,7 +6315,7 @@ module Yass
     end
 
     class PositionTryFallbacks
-      RUBY_METHODS = %i(values is_none kind).freeze
+      RUBY_METHODS = %i(is_none kind values).freeze
 
       include ::Yass::Node
 
@@ -6266,7 +6328,7 @@ module Yass
       end
 
       class IdentAndOrTactic
-        RUBY_METHODS = %i(ident has_ident? try_tactics has_try_tactics?).freeze
+        RUBY_METHODS = %i(has_ident? has_try_tactics? ident kind try_tactics).freeze
 
         include ::Yass::Node
 
@@ -6280,7 +6342,7 @@ module Yass
       end
 
       class PositionArea
-        RUBY_METHODS = %i(first second).freeze
+        RUBY_METHODS = %i(first kind second).freeze
 
         include ::Yass::Node
 
@@ -6295,7 +6357,7 @@ module Yass
     end
 
     class Quotes
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6308,6 +6370,8 @@ module Yass
       end
 
       class Auto
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -6320,6 +6384,8 @@ module Yass
       end
 
       class None
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -6332,7 +6398,7 @@ module Yass
       end
 
       class QuoteList
-        RUBY_METHODS = %i(values).freeze
+        RUBY_METHODS = %i(kind values).freeze
 
         include ::Yass::Node
 
@@ -6346,7 +6412,7 @@ module Yass
       end
 
       class QuotePair
-        RUBY_METHODS = %i(closing opening).freeze
+        RUBY_METHODS = %i(closing kind opening).freeze
 
         include ::Yass::Node
 
@@ -6361,7 +6427,7 @@ module Yass
     end
 
     class Resolution
-      RUBY_METHODS = %i(kind dpi).freeze
+      RUBY_METHODS = %i(dpi kind).freeze
 
       include ::Yass::Node
 
@@ -6375,7 +6441,7 @@ module Yass
     end
 
     class Right
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6389,7 +6455,7 @@ module Yass
     end
 
     class Rotate
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6402,6 +6468,8 @@ module Yass
       end
 
       class None
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -6414,7 +6482,7 @@ module Yass
       end
 
       class Rotate3D
-        RUBY_METHODS = %i(x angle y z).freeze
+        RUBY_METHODS = %i(angle kind x y z).freeze
 
         include ::Yass::Node
 
@@ -6429,7 +6497,7 @@ module Yass
     end
 
     class RowGap
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6442,6 +6510,8 @@ module Yass
       end
 
       class Normal
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -6454,7 +6524,7 @@ module Yass
       end
 
       class LengthPercentage
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -6469,7 +6539,7 @@ module Yass
     end
 
     class Scale
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6482,6 +6552,8 @@ module Yass
       end
 
       class None
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -6494,7 +6566,7 @@ module Yass
       end
 
       class Coords
-        RUBY_METHODS = %i(x y z).freeze
+        RUBY_METHODS = %i(kind x y z).freeze
 
         include ::Yass::Node
 
@@ -6509,7 +6581,7 @@ module Yass
     end
 
     class ServoOverflowClipBox
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6523,7 +6595,7 @@ module Yass
     end
 
     class ServoTopLayer
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6538,7 +6610,7 @@ module Yass
 
     module Size
       class AnchorMaxSizeFunction
-        RUBY_METHODS = %i(fallback size target_element).freeze
+        RUBY_METHODS = %i(fallback kind size target_element).freeze
 
         include ::Yass::Node
 
@@ -6552,7 +6624,7 @@ module Yass
       end
 
       class AnchorSizeFunction
-        RUBY_METHODS = %i(kind fallback size target_element).freeze
+        RUBY_METHODS = %i(fallback kind size target_element).freeze
 
         include ::Yass::Node
 
@@ -6566,7 +6638,7 @@ module Yass
       end
 
       class LengthPercentage
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -6580,6 +6652,8 @@ module Yass
       end
 
       class None
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -6676,7 +6750,7 @@ module Yass
       end
 
       class FitContentFunction
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -6690,7 +6764,7 @@ module Yass
       end
 
       class AnchorContainingCalcFunction
-        RUBY_METHODS = %i(value kind).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -6705,7 +6779,7 @@ module Yass
     end
 
     class TableLayout
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6719,7 +6793,7 @@ module Yass
     end
 
     class TextAlign
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6733,7 +6807,7 @@ module Yass
     end
 
     class TextAlignLast
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6761,7 +6835,7 @@ module Yass
     end
 
     class TextDecorationLine
-      RUBY_METHODS = %i(none? kind values underline? overline? line_through? blink? spelling_error? grammar_error?).freeze
+      RUBY_METHODS = %i(blink? grammar_error? kind line_through? none? overline? spelling_error? underline? values).freeze
 
       include ::Yass::Node
 
@@ -6775,7 +6849,7 @@ module Yass
     end
 
     class TextDecorationStyle
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6789,7 +6863,7 @@ module Yass
     end
 
     class TextIndent
-      RUBY_METHODS = %i(kind length hanging? each_line?).freeze
+      RUBY_METHODS = %i(each_line? hanging? kind length).freeze
 
       include ::Yass::Node
 
@@ -6803,7 +6877,7 @@ module Yass
     end
 
     class TextJustify
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6817,7 +6891,7 @@ module Yass
     end
 
     class TextOverflow
-      RUBY_METHODS = %i(second sides_are_logical? first kind).freeze
+      RUBY_METHODS = %i(first kind second sides_are_logical?).freeze
 
       include ::Yass::Node
 
@@ -6830,6 +6904,8 @@ module Yass
       end
 
       class Clip
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -6842,6 +6918,8 @@ module Yass
       end
 
       class Ellipsis
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -6854,7 +6932,7 @@ module Yass
       end
 
       class String
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -6869,7 +6947,7 @@ module Yass
     end
 
     class TextRendering
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6883,7 +6961,7 @@ module Yass
     end
 
     class TextShadow
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -6896,7 +6974,7 @@ module Yass
       end
 
       class Shadow
-        RUBY_METHODS = %i(horizontal blur color vertical).freeze
+        RUBY_METHODS = %i(blur color horizontal kind vertical).freeze
 
         include ::Yass::Node
 
@@ -6911,7 +6989,7 @@ module Yass
     end
 
     class TextTransform
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -6925,7 +7003,7 @@ module Yass
     end
 
     class TextWrapMode
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6939,7 +7017,7 @@ module Yass
     end
 
     class Time
-      RUBY_METHODS = %i(seconds unit kind).freeze
+      RUBY_METHODS = %i(kind seconds unit).freeze
 
       include ::Yass::Node
 
@@ -6953,7 +7031,7 @@ module Yass
     end
 
     class Top
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -6968,7 +7046,7 @@ module Yass
 
     class TrackBreadth
       class LengthPercentage
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -6982,7 +7060,7 @@ module Yass
       end
 
       class Fr
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -6996,6 +7074,8 @@ module Yass
       end
 
       class Auto
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -7008,6 +7088,8 @@ module Yass
       end
 
       class MinContent
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -7020,6 +7102,8 @@ module Yass
       end
 
       class MaxContent
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -7034,7 +7118,7 @@ module Yass
 
     class TrackSize
       class Minmax
-        RUBY_METHODS = %i(min max).freeze
+        RUBY_METHODS = %i(kind max min).freeze
 
         include ::Yass::Node
 
@@ -7048,7 +7132,7 @@ module Yass
       end
 
       class FitContent
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -7063,7 +7147,7 @@ module Yass
     end
 
     class Transform
-      RUBY_METHODS = %i(operations kind).freeze
+      RUBY_METHODS = %i(kind operations).freeze
 
       include ::Yass::Node
 
@@ -7076,7 +7160,7 @@ module Yass
       end
 
       class Matrix
-        RUBY_METHODS = %i(b a d c f e).freeze
+        RUBY_METHODS = %i(a b c d e f kind).freeze
 
         include ::Yass::Node
 
@@ -7090,7 +7174,7 @@ module Yass
       end
 
       class Matrix3D
-        RUBY_METHODS = %i(m21 m22 m23 m24 m31 m32 m33 m34 m41 m42 m43 m44 m11 m12 m13 m14).freeze
+        RUBY_METHODS = %i(kind m11 m12 m13 m14 m21 m22 m23 m24 m31 m32 m33 m34 m41 m42 m43 m44).freeze
 
         include ::Yass::Node
 
@@ -7104,7 +7188,7 @@ module Yass
       end
 
       class Skew
-        RUBY_METHODS = %i(x y).freeze
+        RUBY_METHODS = %i(kind x y).freeze
 
         include ::Yass::Node
 
@@ -7118,7 +7202,7 @@ module Yass
       end
 
       class SkewX
-        RUBY_METHODS = %i(angle).freeze
+        RUBY_METHODS = %i(angle kind).freeze
 
         include ::Yass::Node
 
@@ -7132,7 +7216,7 @@ module Yass
       end
 
       class SkewY
-        RUBY_METHODS = %i(angle).freeze
+        RUBY_METHODS = %i(angle kind).freeze
 
         include ::Yass::Node
 
@@ -7146,7 +7230,7 @@ module Yass
       end
 
       class Translate
-        RUBY_METHODS = %i(x y).freeze
+        RUBY_METHODS = %i(kind x y).freeze
 
         include ::Yass::Node
 
@@ -7160,7 +7244,7 @@ module Yass
       end
 
       class TranslateX
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -7174,7 +7258,7 @@ module Yass
       end
 
       class TranslateY
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -7188,7 +7272,7 @@ module Yass
       end
 
       class TranslateZ
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -7202,7 +7286,7 @@ module Yass
       end
 
       class Translate3D
-        RUBY_METHODS = %i(x y z).freeze
+        RUBY_METHODS = %i(kind x y z).freeze
 
         include ::Yass::Node
 
@@ -7216,7 +7300,7 @@ module Yass
       end
 
       class Scale
-        RUBY_METHODS = %i(x y).freeze
+        RUBY_METHODS = %i(kind x y).freeze
 
         include ::Yass::Node
 
@@ -7230,7 +7314,7 @@ module Yass
       end
 
       class ScaleX
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -7244,7 +7328,7 @@ module Yass
       end
 
       class ScaleY
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -7258,7 +7342,7 @@ module Yass
       end
 
       class ScaleZ
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -7272,7 +7356,7 @@ module Yass
       end
 
       class Scale3D
-        RUBY_METHODS = %i(x y z).freeze
+        RUBY_METHODS = %i(kind x y z).freeze
 
         include ::Yass::Node
 
@@ -7286,7 +7370,7 @@ module Yass
       end
 
       class Rotate
-        RUBY_METHODS = %i(angle).freeze
+        RUBY_METHODS = %i(angle kind).freeze
 
         include ::Yass::Node
 
@@ -7300,7 +7384,7 @@ module Yass
       end
 
       class RotateX
-        RUBY_METHODS = %i(angle).freeze
+        RUBY_METHODS = %i(angle kind).freeze
 
         include ::Yass::Node
 
@@ -7314,7 +7398,7 @@ module Yass
       end
 
       class RotateY
-        RUBY_METHODS = %i(angle).freeze
+        RUBY_METHODS = %i(angle kind).freeze
 
         include ::Yass::Node
 
@@ -7328,7 +7412,7 @@ module Yass
       end
 
       class RotateZ
-        RUBY_METHODS = %i(angle).freeze
+        RUBY_METHODS = %i(angle kind).freeze
 
         include ::Yass::Node
 
@@ -7342,7 +7426,7 @@ module Yass
       end
 
       class Rotate3D
-        RUBY_METHODS = %i(x angle y z).freeze
+        RUBY_METHODS = %i(angle kind x y z).freeze
 
         include ::Yass::Node
 
@@ -7356,7 +7440,7 @@ module Yass
       end
 
       class Perspective
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -7369,6 +7453,8 @@ module Yass
         end
 
         class None
+          RUBY_METHODS = %i(kind).freeze
+
           include ::Yass::Node
 
           def accept(visitor)
@@ -7381,7 +7467,7 @@ module Yass
         end
 
         class Length
-          RUBY_METHODS = %i(value).freeze
+          RUBY_METHODS = %i(kind value).freeze
 
           include ::Yass::Node
 
@@ -7396,7 +7482,7 @@ module Yass
       end
 
       class InterpolateMatrix
-        RUBY_METHODS = %i(progress to_list from_list).freeze
+        RUBY_METHODS = %i(from_list kind progress to_list).freeze
 
         include ::Yass::Node
 
@@ -7410,7 +7496,7 @@ module Yass
       end
 
       class AccumulateMatrix
-        RUBY_METHODS = %i(count to_list from_list).freeze
+        RUBY_METHODS = %i(count from_list kind to_list).freeze
 
         include ::Yass::Node
 
@@ -7425,7 +7511,7 @@ module Yass
     end
 
     class TransformOrigin
-      RUBY_METHODS = %i(vertical kind horizontal depth).freeze
+      RUBY_METHODS = %i(depth horizontal kind vertical).freeze
 
       include ::Yass::Node
 
@@ -7438,6 +7524,8 @@ module Yass
       end
 
       class Center
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -7450,7 +7538,7 @@ module Yass
       end
 
       class SideHorizontalComponent
-        RUBY_METHODS = %i(side).freeze
+        RUBY_METHODS = %i(kind side).freeze
 
         include ::Yass::Node
 
@@ -7464,7 +7552,7 @@ module Yass
       end
 
       class SideVerticalComponent
-        RUBY_METHODS = %i(side).freeze
+        RUBY_METHODS = %i(kind side).freeze
 
         include ::Yass::Node
 
@@ -7479,7 +7567,7 @@ module Yass
     end
 
     class TransformStyle
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -7493,7 +7581,7 @@ module Yass
     end
 
     class TransitionBehavior
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -7507,7 +7595,7 @@ module Yass
     end
 
     class TransitionDelay
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -7521,7 +7609,7 @@ module Yass
     end
 
     class TransitionDuration
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -7535,7 +7623,7 @@ module Yass
     end
 
     class TransitionProperty
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -7548,7 +7636,7 @@ module Yass
       end
 
       class NonCustom
-        RUBY_METHODS = %i(all?).freeze
+        RUBY_METHODS = %i(all? kind).freeze
 
         include ::Yass::Node
 
@@ -7562,6 +7650,8 @@ module Yass
       end
 
       class Custom
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -7574,7 +7664,7 @@ module Yass
       end
 
       class Unsupported
-        RUBY_METHODS = %i(none?).freeze
+        RUBY_METHODS = %i(kind none?).freeze
 
         include ::Yass::Node
 
@@ -7589,7 +7679,7 @@ module Yass
     end
 
     class TransitionTimingFunction
-      RUBY_METHODS = %i(values kind).freeze
+      RUBY_METHODS = %i(kind values).freeze
 
       include ::Yass::Node
 
@@ -7603,7 +7693,7 @@ module Yass
     end
 
     class Translate
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -7616,6 +7706,8 @@ module Yass
       end
 
       class None
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -7628,7 +7720,7 @@ module Yass
       end
 
       class Coords
-        RUBY_METHODS = %i(x y z).freeze
+        RUBY_METHODS = %i(kind x y z).freeze
 
         include ::Yass::Node
 
@@ -7643,7 +7735,7 @@ module Yass
     end
 
     class UnicodeBidi
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -7657,7 +7749,7 @@ module Yass
     end
 
     class ViewTransitionClass
-      RUBY_METHODS = %i(none? values kind).freeze
+      RUBY_METHODS = %i(kind none? values).freeze
 
       include ::Yass::Node
 
@@ -7671,7 +7763,7 @@ module Yass
     end
 
     class ViewTransitionName
-      RUBY_METHODS = %i(none? match_element? kind).freeze
+      RUBY_METHODS = %i(kind match_element? none?).freeze
 
       include ::Yass::Node
 
@@ -7685,7 +7777,7 @@ module Yass
     end
 
     class Visibility
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -7699,7 +7791,7 @@ module Yass
     end
 
     class WebkitTextSecurity
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -7713,7 +7805,7 @@ module Yass
     end
 
     class WhiteSpaceCollapse
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -7727,7 +7819,7 @@ module Yass
     end
 
     class Width
-      RUBY_METHODS = %i(size kind).freeze
+      RUBY_METHODS = %i(kind size).freeze
 
       include ::Yass::Node
 
@@ -7741,7 +7833,7 @@ module Yass
     end
 
     class WillChange
-      RUBY_METHODS = %i(contain? stacking_context_unconditional? transform? scroll? opacity? perspective? z_index? fixpos_cb_non_svg? position? auto? values backdrop_root? view_transition_name? kind).freeze
+      RUBY_METHODS = %i(auto? backdrop_root? contain? fixpos_cb_non_svg? kind opacity? perspective? position? scroll? stacking_context_unconditional? transform? values view_transition_name? z_index?).freeze
 
       include ::Yass::Node
 
@@ -7755,7 +7847,7 @@ module Yass
     end
 
     class WithVariables
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -7769,7 +7861,7 @@ module Yass
     end
 
     class WordBreak
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -7783,7 +7875,7 @@ module Yass
     end
 
     class WordSpacing
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -7796,6 +7888,8 @@ module Yass
       end
 
       class Normal
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -7809,7 +7903,7 @@ module Yass
     end
 
     class WritingMode
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -7823,7 +7917,7 @@ module Yass
     end
 
     class XLang
-      RUBY_METHODS = %i(empty? value kind).freeze
+      RUBY_METHODS = %i(empty? kind value).freeze
 
       include ::Yass::Node
 
@@ -7837,7 +7931,7 @@ module Yass
     end
 
     class ZIndex
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -7850,6 +7944,8 @@ module Yass
       end
 
       class Auto
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -7862,7 +7958,7 @@ module Yass
       end
 
       class Integer
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -7877,7 +7973,7 @@ module Yass
     end
 
     class Zoom
-      RUBY_METHODS = %i(value kind).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -7890,6 +7986,8 @@ module Yass
       end
 
       class Normal
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -7902,6 +8000,8 @@ module Yass
       end
 
       class Document
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -7914,7 +8014,7 @@ module Yass
       end
 
       class Value
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 

@@ -130,7 +130,7 @@ def module_to_code(mod, nesting, indent = "")
 
     if method_names.size > 0
       [
-        "#{indent}  RUBY_METHODS = %i(#{method_names.map(&:to_s).join(" ")}).freeze"
+        "#{indent}  RUBY_METHODS = %i(#{method_names.map(&:to_s).sort.join(" ")}).freeze"
       ]
     end
   end
@@ -206,7 +206,19 @@ File.write("lib/yass/selectors.rb", <<~RUBY)
   #{selector_classes}
 RUBY
 
-root = module_tree_from_structs([*selector_rust_structs, *declaration_rust_structs])
+rule_files = ["ext/yass/src/rules/style_rule.rs", "ext/yass/src/rules/media_rule.rs"]
+rule_rust_structs = extract_rust_structs_from(rule_files)
+root = module_tree_from_structs(rule_rust_structs)
+rule_classes = module_to_code(root.children["Yass"], ["Yass"])
+
+File.write("lib/yass/rules.rb", <<~RUBY)
+  # frozen_string_literal: true
+
+  #{rule_classes}
+RUBY
+
+
+root = module_tree_from_structs([*selector_rust_structs, *declaration_rust_structs, *rule_rust_structs])
 visitor_methods = module_to_visitor_methods(root.children["Yass"], ["Yass"], "    ")
 
 visitor_class = <<~RUBY
@@ -224,11 +236,6 @@ visitor_class = <<~RUBY
 
       def visit_stylesheet(node)
         visit_list(node.rules)
-      end
-
-      def visit_style_rule(node)
-        visit_list(node.selectors)
-        visit_list(node.declarations)
       end
 
   #{visitor_methods.join("\n")}

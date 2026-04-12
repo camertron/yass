@@ -14,11 +14,6 @@ module Yass
       visit_list(node.rules)
     end
 
-    def visit_style_rule(node)
-      visit_list(node.selectors)
-      visit_list(node.declarations)
-    end
-
     def visit_selector(node)
       visit_list(node.children)
     end
@@ -1144,6 +1139,10 @@ module Yass
     end
 
     def visit_declaration_flex_grow(node)
+      visit(node.value)
+    end
+
+    def visit_declaration_flex_shrink(node)
       visit(node.value)
     end
 
@@ -2329,6 +2328,66 @@ module Yass
 
     def visit_declaration_zoom_value(node)
       visit(node.value)
+    end
+
+    def visit_style_rule(node)
+      visit_list(node.selectors)
+      visit_list(node.declarations)
+    end
+
+    def visit_style_query_not(node)
+      visit(node.style_query)
+    end
+
+    def visit_style_query_operation(node)
+      visit_list(node.style_query)
+    end
+
+    def visit_style_query_in_parens(node)
+      visit(node.style_query)
+    end
+
+    def visit_style_query_style_feature(node)
+    end
+
+    def visit_style_query_generally_enclosed(node)
+    end
+
+    def visit_media_rule(node)
+      visit_list(node.media_queries)
+      visit_list(node.rules)
+    end
+
+    def visit_media_query(node)
+      visit(node.media_type)
+      visit(node.query_condition)
+    end
+
+    def visit_media_query_query_condition_feature_expression(node)
+    end
+
+    def visit_media_query_query_condition_custom(node)
+    end
+
+    def visit_media_query_query_condition_operation(node)
+      visit_list(node.query_conditions)
+    end
+
+    def visit_media_query_query_condition_in_parens(node)
+      visit(node.query_condition)
+    end
+
+    def visit_media_query_query_condition_style(node)
+      visit(node.style_query)
+    end
+
+    def visit_media_query_query_condition_generally_enclosed(node)
+    end
+
+    def visit_media_type_all(node)
+    end
+
+    def visit_media_type_concrete(node)
     end
   end
 end

@@ -30,19 +30,6 @@ module Yass
     end
   end
 
-  class MediaRule
-    def accept(visitor)
-    end
-
-    def selectors
-      []
-    end
-
-    def declarations
-      []
-    end
-  end
-
   class UnimplementedRule
     def accept(visitor)
     end
