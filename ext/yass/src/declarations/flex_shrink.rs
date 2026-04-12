@@ -4,7 +4,7 @@ use style::values::specified::NonNegativeNumber;
 use crate::{cached_value::CachedValue, declarations::number::YNumber};
 
 #[derive(TypedData)]
-#[magnus(class = "Yass::Declarations::FlexGrow", mark)]
+#[magnus(class = "Yass::Declarations::FlexShrink", mark)]
 pub struct YFlexShrink {
     non_negative_number: CachedValue<NonNegativeNumber>
 }
