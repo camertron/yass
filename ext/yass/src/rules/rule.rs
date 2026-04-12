@@ -41,6 +41,7 @@ impl DataTypeFunctions for YRule {
     fn mark(&self, marker: &gc::Marker) {
         match self {
             YRule::StyleRule(style_rule) => style_rule.mark(marker),
+            YRule::MediaRule(media_rule) => media_rule.mark(marker),
             _ => ()
         }
     }
@@ -57,6 +58,20 @@ impl YRule {
     pub fn declarations(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Result<RArray, Error> {
         match &*rb_self {
             YRule::StyleRule(rule) => rule.declarations(ruby),
+            _ => Err(Error::new(ruby.exception_no_method_error(), "unreachable"))
+        }
+    }
+
+    pub fn media_queries(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Result<RArray, Error> {
+        match &*rb_self {
+            YRule::MediaRule(rule) => rule.media_queries(ruby),
+            _ => Err(Error::new(ruby.exception_no_method_error(), "unreachable"))
+        }
+    }
+
+    pub fn rules(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Result<RArray, Error> {
+        match &*rb_self {
+            YRule::MediaRule(rule) => rule.rules(ruby),
             _ => Err(Error::new(ruby.exception_no_method_error(), "unreachable"))
         }
     }

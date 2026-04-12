@@ -84,8 +84,8 @@ impl YStyleQueryNot {
         }
     }
 
-    pub fn style_query(&self, ruby: &Ruby) -> Value {
-        self.style_query.get(ruby)
+    pub fn style_query(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Value {
+        rb_self.style_query.get(ruby)
     }
 }
 
@@ -113,12 +113,12 @@ impl YStyleQueryOperation {
         }
     }
 
-    pub fn style_query(&self, ruby: &Ruby) -> Result<RArray, Error> {
-        self.style_queries.to_a(ruby)
+    pub fn style_query(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Result<RArray, Error> {
+        rb_self.style_queries.to_a(ruby)
     }
 
-    pub fn operator(&self, ruby: &Ruby) -> Id {
-        operator_to_id(&self.operator, ruby)
+    pub fn operator(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Id {
+        operator_to_id(&rb_self.operator, ruby)
     }
 }
 
@@ -143,8 +143,8 @@ impl YStyleQueryInParens {
         }
     }
 
-    pub fn style_query(&self, ruby: &Ruby) -> Value {
-        self.style_query.get(ruby)
+    pub fn style_query(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Value {
+        rb_self.style_query.get(ruby)
     }
 }
 
@@ -164,8 +164,8 @@ impl YStyleQueryStyleFeature {
         Self { style_feature }
     }
 
-    pub fn value(&self, ruby: &Ruby) -> RString {
-        ruby.str_new(&self.style_feature.to_css_string())
+    pub fn value(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> RString {
+        ruby.str_new(&rb_self.style_feature.to_css_string())
     }
 }
 
@@ -179,8 +179,8 @@ impl YStyleQueryGenerallyEnclosed {
         Self { str }
     }
 
-    pub fn value(&self, ruby: &Ruby) -> RString {
-        ruby.str_new(&self.str)
+    pub fn value(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> RString {
+        ruby.str_new(&rb_self.str)
     }
 }
 
@@ -239,6 +239,7 @@ impl YMediaRule {
 impl DataTypeFunctions for YMediaRule {
     fn mark(&self, marker: &gc::Marker) {
         self.media_queries.mark(marker);
+        self.rules.mark(marker);
     }
 }
 
@@ -294,6 +295,7 @@ impl YMediaQuery {
 impl DataTypeFunctions for YMediaQuery {
     fn mark(&self, marker: &gc::Marker) {
         self.media_query_type.mark(marker);
+        self.query_condition.mark(marker);
     }
 }
 

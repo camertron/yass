@@ -14,8 +14,6 @@ use style::servo_arc::Arc;
 use style::stylesheets::{AllowImportRules, Origin, Stylesheet, UrlExtraData};
 use url::Url;
 
-use crate::rules::YRule;
-use crate::selectors::{YAnPlusB, YRelativeSelector, YSelector, YSelectorChild, YSpecificNamespaceConstraint};
 use crate::sheet::YSheet;
 
 fn parse(css: String) -> YSheet {
