@@ -15,7 +15,7 @@ impl YSheet {
         YSheet {
             stylesheet: stylesheet.clone(),
             cached_rules: CachedValueList::empty(Some(stylesheet.shared_lock), |rule, shared_lock, ruby| {
-                make_rule(rule, &shared_lock.as_ref().unwrap()).into_value_with(ruby)
+                make_rule(rule, &shared_lock.as_ref().unwrap(), ruby).into_value_with(ruby)
             })
         }
     }

@@ -1,17 +1,17 @@
 use magnus::{Error, Module, RModule, Ruby, method};
 
-use crate::rules::{YRule, media_rule::{YMediaQuery, YMediaTypeConcrete, YQueryConditionCustom, YQueryConditionFeatureExpression, YQueryConditionGenerallyEnclosed, YQueryConditionInParens, YQueryConditionOperation, YQueryConditionStyle, YStyleQueryGenerallyEnclosed, YStyleQueryInParens, YStyleQueryNot, YStyleQueryOperation, YStyleQueryStyleFeature}};
+use crate::rules::{media_rule::{YMediaQuery, YMediaRule, YMediaTypeConcrete, YQueryConditionCustom, YQueryConditionFeatureExpression, YQueryConditionGenerallyEnclosed, YQueryConditionInParens, YQueryConditionOperation, YQueryConditionStyle, YStyleQueryGenerallyEnclosed, YStyleQueryInParens, YStyleQueryNot, YStyleQueryOperation, YStyleQueryStyleFeature}, style_rule::YStyleRule};
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let rule_class = yass_module.define_class("Rule", ruby.class_object())?;
 
     let style_rule_class = yass_module.define_class("StyleRule", rule_class)?;
-    style_rule_class.define_method("selectors", method!(YRule::selectors, 0))?;
-    style_rule_class.define_method("declarations", method!(YRule::declarations, 0))?;
+    style_rule_class.define_method("selectors", method!(YStyleRule::selectors, 0))?;
+    style_rule_class.define_method("declarations", method!(YStyleRule::declarations, 0))?;
 
     let media_rule_class = yass_module.define_class("MediaRule", rule_class)?;
-    media_rule_class.define_method("media_queries", method!(YRule::media_queries, 0))?;
-    media_rule_class.define_method("rules", method!(YRule::rules, 0))?;
+    media_rule_class.define_method("media_queries", method!(YMediaRule::media_queries, 0))?;
+    media_rule_class.define_method("rules", method!(YMediaRule::rules, 0))?;
 
     let media_query_class = yass_module.define_class("MediaQuery", ruby.class_object())?;
     media_query_class.define_method("qualifier", method!(YMediaQuery::qualifier, 0))?;

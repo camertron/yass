@@ -204,35 +204,35 @@ impl YMediaRule {
             }),
 
             rules: CachedValueList::empty(Some(lock.clone()), |rule, lock, ruby| {
-                make_rule(rule, &lock.as_ref().unwrap()).into_value_with(ruby)
+                make_rule(rule, &lock.as_ref().unwrap(), ruby).into_value_with(ruby)
             })
         }
     }
 
-    pub fn media_queries(&self, ruby: &Ruby) -> Result<RArray, Error> {
-        if self.media_queries.is_empty() {
-            let guard = self.lock.read();
-            let media_list = self.rule.media_queries.read_with(&guard);
+    pub fn media_queries(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Result<RArray, Error> {
+        if rb_self.media_queries.is_empty() {
+            let guard = rb_self.lock.read();
+            let media_list = rb_self.rule.media_queries.read_with(&guard);
 
             for query in &media_list.media_queries {
-                self.media_queries.add(query.clone(), ruby)?;
+                rb_self.media_queries.add(query.clone(), ruby)?;
             }
         }
 
-        self.media_queries.to_a(ruby)
+        rb_self.media_queries.to_a(ruby)
     }
 
-    pub fn rules(&self, ruby: &Ruby) -> Result<RArray, Error> {
-        if self.rules.is_empty() {
-            let guard = self.lock.read();
-            let css_rules = self.rule.rules.read_with(&guard);
+    pub fn rules(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Result<RArray, Error> {
+        if rb_self.rules.is_empty() {
+            let guard = rb_self.lock.read();
+            let css_rules = rb_self.rule.rules.read_with(&guard);
 
             for css_rule in &css_rules.0 {
-                self.rules.add(css_rule.clone(), ruby)?;
+                rb_self.rules.add(css_rule.clone(), ruby)?;
             }
         }
 
-        self.rules.to_a(ruby)
+        rb_self.rules.to_a(ruby)
     }
 }
 
