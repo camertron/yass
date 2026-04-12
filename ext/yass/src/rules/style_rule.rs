@@ -1,16 +1,14 @@
 use magnus::{DataTypeFunctions, Error, IntoValue, RArray, Ruby, TypedData, gc};
 use selectors::parser::Selector;
-use style::{properties::PropertyDeclaration, selector_parser::SelectorImpl, shared_lock::{Locked, SharedRwLock}, stylesheets::StyleRule};
+use style::{properties::PropertyDeclaration, selector_parser::SelectorImpl, servo_arc::Arc, shared_lock::{Locked, SharedRwLock}, stylesheets::StyleRule};
 
 use crate::{cached_value_list::CachedValueList, declarations::declaration::YDeclaration, selectors::YSelector};
 
 #[derive(TypedData)]
 #[magnus(class = "Yass::StyleRule", mark)]
 pub struct YStyleRule {
-    pub rule: style::servo_arc::Arc<Locked<StyleRule>>,
+    pub rule: Arc<Locked<StyleRule>>,
     pub lock: SharedRwLock,
-    // pub cached_selectors: RefCell<Option<Vec<Opaque<typed_data::Obj<YSelector>>>>>,
-    // pub cached_declarations: RefCell<Option<Vec<Opaque<Value>>>>
     pub cached_selectors: CachedValueList<Selector<SelectorImpl>>,
     pub cached_declarations: CachedValueList<PropertyDeclaration>
 }
@@ -23,7 +21,7 @@ impl DataTypeFunctions for YStyleRule {
 }
 
 impl YStyleRule {
-    pub fn new(rule: style::servo_arc::Arc<Locked<StyleRule>>, lock: SharedRwLock) -> Self {
+    pub fn new(rule: Arc<Locked<StyleRule>>, lock: SharedRwLock) -> Self {
         YStyleRule {
             rule,
             lock,

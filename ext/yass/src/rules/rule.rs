@@ -1,6 +1,28 @@
 use magnus::{DataTypeFunctions, Error, RArray, Ruby, TypedData, gc, typed_data};
+use style::{shared_lock::SharedRwLock, stylesheets::CssRule};
 
 use crate::rules::{YMediaRule, YStyleRule};
+
+pub fn make_rule(rule: &CssRule, lock: &SharedRwLock) -> YRule {
+    match rule {
+        CssRule::Style(locked_rule) => {
+            YRule::StyleRule(
+                YStyleRule::new(
+                    locked_rule.clone(),
+                    lock.clone()
+                )
+            )
+        }
+
+        CssRule::Media(media_rule) => {
+            YRule::MediaRule(YMediaRule::new(media_rule.clone(), lock.clone()))
+        }
+
+        _ => {
+            YRule::UnimplementedRule(YUnimplementedRule {})
+        }
+    }
+}
 
 #[derive(TypedData)]
 #[magnus(class = "Yass::Rule", mark)]

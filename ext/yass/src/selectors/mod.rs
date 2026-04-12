@@ -3,6 +3,7 @@ pub mod selector;
 pub mod relative_selector;
 pub mod local_name;
 pub mod id;
+pub mod init;
 pub mod class;
 pub mod selector_list;
 pub mod negation;
