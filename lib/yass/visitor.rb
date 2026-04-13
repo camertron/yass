@@ -14,77 +14,6 @@ module Yass
       visit_list(node.rules)
     end
 
-    def visit_selector(node)
-      visit_list(node.children)
-    end
-
-    def visit_selector_an_plus_b(node)
-    end
-
-    def visit_selector_attribute_in_no_namespace(node)
-    end
-
-    def visit_selector_attribute_in_no_namespace_exists(node)
-    end
-
-    def visit_selector_attribute_other(node)
-    end
-
-    def visit_selector_klass(node)
-    end
-
-    def visit_selector_combinator(node)
-    end
-
-    def visit_selector_default_namespace(node)
-    end
-
-    def visit_selector_has(node)
-    end
-
-    def visit_selector_host(node)
-    end
-
-    def visit_selector_id(node)
-    end
-
-    def visit_selector_is(node)
-    end
-
-    def visit_selector_local_name(node)
-    end
-
-    def visit_selector_namespace(node)
-    end
-
-    def visit_selector_negation(node)
-    end
-
-    def visit_selector_non_ts_pseudo_class(node)
-    end
-
-    def visit_selector_nth(node)
-    end
-
-    def visit_selector_nth_of(node)
-    end
-
-    def visit_selector_part(node)
-    end
-
-    def visit_selector_slotted(node)
-    end
-
-    def visit_selector_specific_namespace_constraint(node)
-    end
-
-    def visit_selector_where(node)
-    end
-
-    def visit_relative_selector(node)
-      visit(node.selector)
-    end
-
     def visit_declaration_align_content(node)
     end
 
@@ -2328,6 +2257,77 @@ module Yass
 
     def visit_declaration_zoom_value(node)
       visit(node.value)
+    end
+
+    def visit_selector(node)
+      visit_list(node.children)
+    end
+
+    def visit_selector_an_plus_b(node)
+    end
+
+    def visit_selector_attribute_in_no_namespace(node)
+    end
+
+    def visit_selector_attribute_in_no_namespace_exists(node)
+    end
+
+    def visit_selector_attribute_other(node)
+    end
+
+    def visit_selector_klass(node)
+    end
+
+    def visit_selector_combinator(node)
+    end
+
+    def visit_selector_default_namespace(node)
+    end
+
+    def visit_selector_has(node)
+    end
+
+    def visit_selector_host(node)
+    end
+
+    def visit_selector_id(node)
+    end
+
+    def visit_selector_is(node)
+    end
+
+    def visit_selector_local_name(node)
+    end
+
+    def visit_selector_namespace(node)
+    end
+
+    def visit_selector_negation(node)
+    end
+
+    def visit_selector_non_ts_pseudo_class(node)
+    end
+
+    def visit_selector_nth(node)
+    end
+
+    def visit_selector_nth_of(node)
+    end
+
+    def visit_selector_part(node)
+    end
+
+    def visit_selector_slotted(node)
+    end
+
+    def visit_selector_specific_namespace_constraint(node)
+    end
+
+    def visit_selector_where(node)
+    end
+
+    def visit_relative_selector(node)
+      visit(node.selector)
     end
 
     def visit_unimplemented_rule(node)

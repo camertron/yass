@@ -54,3 +54,66 @@ task :native, [:platform] do |task, args|
 
   sh(env, "bundle", "exec", "rb-sys-dock", "--platform", args[:platform], "--build")
 end
+
+task :codegen do
+  require "yass"
+  require_relative "codegen/rust_file_set"
+
+  binding.irb
+
+  declaration_files = Yass::Codegen::RustFileSet.new(Dir.glob("ext/yass/src/declarations/**/*.rs"))
+
+  File.write("lib/yass/declarations.rb", <<~RUBY)
+    # frozen_string_literal: true
+
+    #{declaration_files.module_tree.to_ruby_classes}
+  RUBY
+
+  selector_files = Yass::Codegen::RustFileSet.new(Dir.glob("ext/yass/src/selectors/**/*.rs"))
+
+  File.write("lib/yass/selectors.rb", <<~RUBY)
+    # frozen_string_literal: true
+
+    #{selector_files.module_tree.to_ruby_classes}
+  RUBY
+
+  rule_files = Yass::Codegen::RustFileSet.new([
+    "ext/yass/src/rules/rule.rs",
+    "ext/yass/src/rules/style_rule.rs",
+    "ext/yass/src/rules/media_rule.rs"
+  ])
+
+  File.write("lib/yass/rules.rb", <<~RUBY)
+    # frozen_string_literal: true
+
+    #{rule_files.module_tree.to_ruby_classes}
+  RUBY
+
+  all_modules = declaration_files.module_tree
+    .merge(selector_files.module_tree)
+    .merge(rule_files.module_tree)
+
+  visitor_class = <<~RUBY
+    # frozen_string_literal: true
+
+    module Yass
+      class Visitor
+        def visit(node)
+          node.accept(self)
+        end
+
+        def visit_list(nodes)
+          nodes.each { |node| visit(node) }
+        end
+
+        def visit_stylesheet(node)
+          visit_list(node.rules)
+        end
+
+    #{all_modules.to_visitor_methods(indent: "    ").join("\n")}
+      end
+    end
+  RUBY
+
+  File.write("lib/yass/visitor.rb", visitor_class)
+end
