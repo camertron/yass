@@ -1,7 +1,7 @@
 use magnus::{IntoValue, Ruby, Value};
 use style::{shared_lock::SharedRwLock, stylesheets::CssRule};
 
-use crate::rules::{media_rule::YMediaRule, style_rule::YStyleRule};
+use crate::rules::{font_face_rule::YFontFaceRule, media_rule::YMediaRule, style_rule::YStyleRule};
 
 pub fn make_rule(rule: &CssRule, lock: &SharedRwLock, ruby: &Ruby) -> Value {
     match rule {
@@ -11,6 +11,10 @@ pub fn make_rule(rule: &CssRule, lock: &SharedRwLock, ruby: &Ruby) -> Value {
 
         CssRule::Media(media_rule) => {
             YMediaRule::new(media_rule.clone(), lock.clone()).into_value_with(ruby)
+        }
+
+        CssRule::FontFace(font_face_rule) => {
+            YFontFaceRule::new(font_face_rule.clone(), lock.clone()).into_value_with(ruby)
         }
 
         _ => {
