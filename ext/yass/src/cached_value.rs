@@ -1,6 +1,6 @@
 use std::cell::RefCell;
 
-use magnus::{IntoValue, Ruby, Value, gc, value::Opaque};
+use magnus::{Ruby, Value, gc, value::Opaque};
 
 pub struct CachedValue<T, F = fn(&T, &Ruby) -> Value> {
     pub value: T,
