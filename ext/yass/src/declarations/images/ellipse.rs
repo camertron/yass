@@ -3,7 +3,7 @@ use style::values::{generics::{NonNegative, image::{Ellipse, ShapeExtent}}, spec
 
 use crate::{cached_value::CachedValue, declarations::{images::shape_extent_to_id, size::YLengthPercentage}};
 
-pub fn make_ellipse(ellipse: Ellipse<NonNegativeLengthPercentage>, ruby: &Ruby) -> Value {
+pub fn make_ellipse(ellipse: &Ellipse<NonNegativeLengthPercentage>, ruby: &Ruby) -> Value {
     match ellipse {
         Ellipse::Radii(x, y) => {
             YRadiiEllipse::new(x.clone(), y.clone()).into_value_with(ruby)

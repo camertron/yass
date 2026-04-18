@@ -19,7 +19,7 @@ impl YEndingShape {
                     },
 
                     EndingShape::Ellipse(ellipse) => {
-                        make_ellipse(ellipse.clone(), ruby).into_value_with(ruby)
+                        make_ellipse(ellipse, ruby).into_value_with(ruby)
                     },
                 }
             })

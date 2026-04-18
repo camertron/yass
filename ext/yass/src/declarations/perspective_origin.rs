@@ -12,12 +12,13 @@ pub struct YPerspectiveOrigin {
 
 impl YPerspectiveOrigin {
     pub fn new(position: Box<Position<PositionComponent<HorizontalPositionKeyword>, PositionComponent<VerticalPositionKeyword>>>) -> Self {
+        let position = *position;
         Self {
-            horizontal: CachedValue::new(position.horizontal.clone(), |component, ruby| {
+            horizontal: CachedValue::new(position.horizontal, |component, ruby| {
                 make_horizontal_position_component(component.clone(), ruby)
             }),
 
-            vertical: CachedValue::new(position.vertical.clone(), |component, ruby| {
+            vertical: CachedValue::new(position.vertical, |component, ruby| {
                 make_vertical_position_component(component.clone(), ruby)
             }),
         }

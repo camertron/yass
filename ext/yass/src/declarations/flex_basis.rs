@@ -22,7 +22,7 @@ pub struct YFlexBasis {
 impl YFlexBasis {
     pub fn new(specified_value: Box<FlexBasis<Size<NonNegative<LengthPercentage>>>>) -> Self {
         Self {
-            value: CachedValue::new((*specified_value).clone(), make_flex_basis_value),
+            value: CachedValue::new(*specified_value, make_flex_basis_value),
         }
     }
 
