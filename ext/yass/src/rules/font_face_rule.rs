@@ -2,7 +2,7 @@ use cssparser::UnicodeRange;
 use magnus::{DataTypeFunctions, Error, IntoValue, RArray, Ruby, TypedData, Value, gc, typed_data, value::Id};
 use style::{font_face::{FontDisplay, FontStretchRange, FontStyle, FontWeightRange, Source, SourceList}, servo_arc::Arc, shared_lock::{Locked, SharedRwLock}, stylesheets::FontFaceRule, values::{computed::font::FamilyName, generics::NonNegative, specified::{Percentage, font::MetricsOverride}}};
 
-use crate::{cached_value::CachedValue, cached_value_list::CachedValueList, declarations::percentage::YPercentage, optional_cached_value::OptionalCachedValue, rules::fonts::{YFontFamilyName, YUnicodeRange, metrics::{YFontMetricsOverride, YFontMetricsOverrideNormal}, source::font_source_to_value, stretch::YFontStretchRange, style::font_style_to_value, weight::YFontWeightRange}};
+use crate::{cached_value::CachedValue, cached_value_list::CachedValueList, declarations::percentage::YPercentage, general::YUnicodeRange, optional_cached_value::OptionalCachedValue, rules::fonts::{family::YFontFamilyName, metrics::{YFontMetricsOverride, YFontMetricsOverrideNormal}, source::font_source_to_value, stretch::YFontStretchRange, style::font_style_to_value, weight::YFontWeightRange}};
 
 fn metrics_override_to_value(metrics_override: &MetricsOverride, ruby: &Ruby) -> Value {
     match *metrics_override {

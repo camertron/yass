@@ -13,18 +13,13 @@ end
 require "yass/node"
 require "yass/stylesheet"
 
+require "yass/general"
 require "yass/declarations"
 require "yass/rules"
 require "yass/selectors"
 
 module Yass
   autoload :Visitor, "yass/visitor"
-
-  class Stylesheet
-    def accept(visitor)
-      visitor.visit_stylesheet(self)
-    end
-  end
 
   def self.serialize(obj)
     case obj

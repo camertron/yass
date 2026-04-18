@@ -3722,62 +3722,6 @@ module Yass
       def kind
         :font_family
       end
-
-      class Values
-        RUBY_METHODS = %i(kind values).freeze
-
-        include ::Yass::Node
-
-        def accept(visitor)
-          visitor.visit_declaration_font_family_values(self)
-        end
-
-        def kind
-          :values
-        end
-      end
-
-      class System
-        RUBY_METHODS = %i(kind).freeze
-
-        include ::Yass::Node
-
-        def accept(visitor)
-          visitor.visit_declaration_font_family_system(self)
-        end
-
-        def kind
-          :system
-        end
-      end
-
-      class Name
-        RUBY_METHODS = %i(kind syntax value).freeze
-
-        include ::Yass::Node
-
-        def accept(visitor)
-          visitor.visit_declaration_font_family_name(self)
-        end
-
-        def kind
-          :name
-        end
-      end
-
-      class Generic
-        RUBY_METHODS = %i(kind value).freeze
-
-        include ::Yass::Node
-
-        def accept(visitor)
-          visitor.visit_declaration_font_family_generic(self)
-        end
-
-        def kind
-          :generic
-        end
-      end
     end
 
     class FontLanguageOverride

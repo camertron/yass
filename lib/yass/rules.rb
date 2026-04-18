@@ -274,6 +274,64 @@ module Yass
   end
 
   module Font
+    module Family
+      class Values
+        RUBY_METHODS = %i(kind values).freeze
+
+        include ::Yass::Node
+
+        def accept(visitor)
+          visitor.visit_font_family_values(self)
+        end
+
+        def kind
+          :values
+        end
+      end
+
+      class System
+        RUBY_METHODS = %i(kind).freeze
+
+        include ::Yass::Node
+
+        def accept(visitor)
+          visitor.visit_font_family_system(self)
+        end
+
+        def kind
+          :system
+        end
+      end
+
+      class Name
+        RUBY_METHODS = %i(kind syntax).freeze
+
+        include ::Yass::Node
+
+        def accept(visitor)
+          visitor.visit_font_family_name(self)
+        end
+
+        def kind
+          :name
+        end
+      end
+
+      class Generic
+        RUBY_METHODS = %i(kind value).freeze
+
+        include ::Yass::Node
+
+        def accept(visitor)
+          visitor.visit_font_family_generic(self)
+        end
+
+        def kind
+          :generic
+        end
+      end
+    end
+
     module Metrics
       class Override
         RUBY_METHODS = %i(kind value).freeze
@@ -301,20 +359,6 @@ module Yass
         def kind
           :override_normal
         end
-      end
-    end
-
-    class FamilyName
-      RUBY_METHODS = %i(kind syntax).freeze
-
-      include ::Yass::Node
-
-      def accept(visitor)
-        visitor.visit_font_family_name(self)
-      end
-
-      def kind
-        :family_name
       end
     end
 
@@ -376,34 +420,6 @@ module Yass
           :local
         end
       end
-    end
-  end
-
-  class UnicodeRange
-    RUBY_METHODS = %i(end kind start).freeze
-
-    include ::Yass::Node
-
-    def accept(visitor)
-      visitor.visit_unicode_range(self)
-    end
-
-    def kind
-      :unicode_range
-    end
-  end
-
-  class SystemFont
-    RUBY_METHODS = %i(kind).freeze
-
-    include ::Yass::Node
-
-    def accept(visitor)
-      visitor.visit_system_font(self)
-    end
-
-    def kind
-      :system_font
     end
   end
 

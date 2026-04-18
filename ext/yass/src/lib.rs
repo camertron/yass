@@ -1,5 +1,6 @@
 mod cached_value;
 mod declarations;
+mod general;
 mod rules;
 mod selectors;
 mod sheet;
@@ -62,6 +63,7 @@ fn init(ruby: &Ruby) -> Result<(), Error> {
     let stylesheet_class = yass_module.define_class("Stylesheet", ruby.class_object())?;
     stylesheet_class.define_method("rules", method!(YSheet::rules, 0))?;
 
+    general::init::init(ruby, &yass_module)?;
     declarations::init::init(ruby, &yass_module)?;
     rules::init::init(ruby, &yass_module)?;
     selectors::init::init(ruby, &yass_module)?;

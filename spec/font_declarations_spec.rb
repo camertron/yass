@@ -15,16 +15,16 @@ RSpec.describe(Yass) do
       expect(declaration).to be_a(Yass::Declarations::FontFamily)
 
       values = declaration.value
-      expect(values).to be_a(Yass::Declarations::FontFamily::Values)
+      expect(values).to be_a(Yass::Font::Family::Values)
 
       family_items = values.values
       expect(family_items.size).to eq(2)
 
-      expect(family_items[0]).to be_a(Yass::Declarations::FontFamily::Name)
-      expect(family_items[0].value).to eq("Open Sans")
+      expect(family_items[0]).to be_a(Yass::Font::Family::Name)
+      expect(family_items[0].name).to eq("Open Sans")
       expect(family_items[0].syntax).to eq(:quoted)
 
-      expect(family_items[1]).to be_a(Yass::Declarations::FontFamily::Generic)
+      expect(family_items[1]).to be_a(Yass::Font::Family::Generic)
       expect(family_items[1].value).to eq(:serif)
     end
 

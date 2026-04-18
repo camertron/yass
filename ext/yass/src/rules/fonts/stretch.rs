@@ -1,7 +1,7 @@
 use magnus::{DataTypeFunctions, IntoValue, Ruby, TypedData, Value, gc, typed_data, value::Id};
 use style::{font_face::FontStretchRange, values::specified::{FontStretch, Percentage, font::FontStretchKeyword}};
 
-use crate::{cached_value::CachedValue, rules::fonts::YSystemFont};
+use crate::{cached_value::CachedValue, rules::fonts::family::YFontFamilySystem};
 
 pub fn font_stretch_to_value(stretch: &FontStretch, ruby: &Ruby) -> Value {
     match stretch {
@@ -14,7 +14,7 @@ pub fn font_stretch_to_value(stretch: &FontStretch, ruby: &Ruby) -> Value {
         },
 
         FontStretch::System(_) => {
-            YSystemFont::new().into_value_with(ruby)
+            YFontFamilySystem::new().into_value_with(ruby)
         },
     }
 }

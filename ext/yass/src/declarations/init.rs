@@ -109,7 +109,7 @@ use crate::declarations::flex_grow::YFlexGrow;
 use crate::declarations::flex_shrink::YFlexShrink;
 use crate::declarations::flex_wrap::YFlexWrap;
 use crate::declarations::float::YFloat;
-use crate::declarations::font_family::{YFontFamily, YFontFamilyGeneric, YFontFamilyName, YFontFamilyValues};
+use crate::declarations::font_family::YFontFamily;
 use crate::declarations::font_language_override::YFontLanguageOverride;
 use crate::declarations::font_optical_sizing::YFontOpticalSizing;
 use crate::declarations::font_size::{YFontSize, YFontSizeKeyword, YFontSizeLength};
@@ -895,18 +895,6 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
 
     let font_family_class = declarations_module.define_class("FontFamily", ruby.class_object())?;
     font_family_class.define_method("value", method!(YFontFamily::value, 0))?;
-
-    let font_family_values_class = font_family_class.define_class("Values", ruby.class_object())?;
-    font_family_values_class.define_method("values", method!(YFontFamilyValues::values, 0))?;
-
-    let _font_family_system_class = font_family_class.define_class("System", ruby.class_object())?;
-
-    let font_family_name_class = font_family_class.define_class("Name", ruby.class_object())?;
-    font_family_name_class.define_method("value", method!(YFontFamilyName::value, 0))?;
-    font_family_name_class.define_method("syntax", method!(YFontFamilyName::syntax, 0))?;
-
-    let font_family_generic_class = font_family_class.define_class("Generic", ruby.class_object())?;
-    font_family_generic_class.define_method("value", method!(YFontFamilyGeneric::value, 0))?;
 
     let font_size_class = declarations_module.define_class("FontSize", ruby.class_object())?;
     font_size_class.define_method("value", method!(YFontSize::value, 0))?;

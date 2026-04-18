@@ -59,6 +59,16 @@ task :codegen do
   require "yass"
   require_relative "codegen/rust_file_set"
 
+  general_files = Yass::Codegen::RustFileSet::new(
+    Dir.glob("ext/yass/src/general/**/*.rs")
+  )
+
+  File.write("lib/yass/general.rb", <<~RUBY)
+    # frozen_string_literal: true
+
+    #{general_files.module_tree.to_ruby_classes}
+  RUBY
+
   declaration_files = Yass::Codegen::RustFileSet.new(Dir.glob("ext/yass/src/declarations/**/*.rs"))
 
   File.write("lib/yass/declarations.rb", <<~RUBY)
@@ -89,7 +99,8 @@ task :codegen do
     #{rule_files.module_tree.to_ruby_classes}
   RUBY
 
-  all_modules = declaration_files.module_tree
+  all_modules = general_files.module_tree
+    .merge(declaration_files.module_tree)
     .merge(selector_files.module_tree)
     .merge(rule_files.module_tree)
 

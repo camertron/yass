@@ -14,6 +14,9 @@ module Yass
       visit_list(node.rules)
     end
 
+    def visit_unicode_range(node)
+    end
+
     def visit_declaration_align_content(node)
     end
 
@@ -1083,19 +1086,6 @@ module Yass
 
     def visit_declaration_font_family(node)
       visit(node.value)
-    end
-
-    def visit_declaration_font_family_values(node)
-      visit_list(node.values)
-    end
-
-    def visit_declaration_font_family_system(node)
-    end
-
-    def visit_declaration_font_family_name(node)
-    end
-
-    def visit_declaration_font_family_generic(node)
     end
 
     def visit_declaration_font_language_override(node)
@@ -2411,13 +2401,23 @@ module Yass
       visit_list(node.sources)
     end
 
+    def visit_font_family_values(node)
+      visit_list(node.values)
+    end
+
+    def visit_font_family_system(node)
+    end
+
+    def visit_font_family_name(node)
+    end
+
+    def visit_font_family_generic(node)
+    end
+
     def visit_font_metrics_override(node)
     end
 
     def visit_font_metrics_override_normal(node)
-    end
-
-    def visit_font_family_name(node)
     end
 
     def visit_font_source_format_keyword(node)
@@ -2432,12 +2432,6 @@ module Yass
 
     def visit_font_source_local(node)
       visit(node.family_name)
-    end
-
-    def visit_unicode_range(node)
-    end
-
-    def visit_system_font(node)
     end
 
     def visit_font_stretch_range(node)

@@ -1,7 +1,7 @@
 use magnus::{DataTypeFunctions, IntoValue, RString, Ruby, TypedData, Value, gc, typed_data, value::Id};
 use style::{font_face::{FontFaceSourceFormat, FontFaceSourceFormatKeyword, Source, UrlSource}, values::{computed::font::FamilyName}};
 
-use crate::{cached_value::CachedValue, optional_cached_value::OptionalCachedValue, rules::fonts::YFontFamilyName};
+use crate::{cached_value::CachedValue, optional_cached_value::OptionalCachedValue, rules::fonts::family::YFontFamilyName};
 
 pub fn font_source_to_value(source: &Source, ruby: &Ruby) -> Value {
     match source {

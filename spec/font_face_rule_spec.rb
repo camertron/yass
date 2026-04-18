@@ -28,7 +28,7 @@ RSpec.describe(Yass) do
         }
       CSS
 
-      expect(rule.family).to be_a(Yass::Font::FamilyName)
+      expect(rule.family).to be_a(Yass::Font::Family::Name)
       expect(rule.family.name).to eq("Test")
       expect(rule.family.syntax).to eq(:identifiers)
 
