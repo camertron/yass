@@ -12,7 +12,7 @@ pub struct YMarginRight {
 impl YMarginRight {
     pub fn new(margin: Margin) -> Self {
         Self {
-            margin: CachedValue::new(margin, |value, ruby| make_margin(value.clone(), ruby)),
+            margin: CachedValue::new(margin, |value, ruby| make_margin(value, ruby)),
         }
     }
 

@@ -3,16 +3,16 @@ use style::values::{generics::image::GradientItem, specified::{Color, LengthPerc
 
 use crate::{cached_value::CachedValue, declarations::{color::color::make_color, size::YLengthPercentage}};
 
-pub fn make_gradient_length_percentage_item(item: GradientItem<Color, LengthPercentage>, ruby: &Ruby) -> Value {
+pub fn make_gradient_length_percentage_item(item: &GradientItem<Color, LengthPercentage>, ruby: &Ruby) -> Value {
     match item {
         GradientItem::SimpleColorStop(color) => {
-            YSimpleColorStopLength::new(color).into_value_with(ruby)
+            YSimpleColorStopLength::new(color.clone()).into_value_with(ruby)
         },
         GradientItem::ComplexColorStop { color, position } => {
-            YComplexColorStopLength::new(color, position).into_value_with(ruby)
+            YComplexColorStopLength::new(color.clone(), position.clone()).into_value_with(ruby)
         },
         GradientItem::InterpolationHint(position) => {
-            YInterpolationHintLength::new(position).into_value_with(ruby)
+            YInterpolationHintLength::new(position.clone()).into_value_with(ruby)
         },
     }
 }

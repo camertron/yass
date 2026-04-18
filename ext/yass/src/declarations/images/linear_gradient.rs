@@ -24,7 +24,7 @@ impl YLinearGradient {
                 compat_mode,
             } => Self {
                 direction: CachedValue::new(direction, |direction, ruby| {
-                    make_line_direction(direction.clone(), ruby)
+                    make_line_direction(direction, ruby)
                 }),
 
                 color_interpolation_method: CachedValue::new(
@@ -35,7 +35,7 @@ impl YLinearGradient {
                 ),
 
                 items: CachedValueList::new(items.to_vec(), |item, _ctx, ruby| {
-                    make_gradient_length_percentage_item(item.clone(), ruby)
+                    make_gradient_length_percentage_item(item, ruby)
                 }),
 
                 repeating: flags.contains(GradientFlags::REPEATING),

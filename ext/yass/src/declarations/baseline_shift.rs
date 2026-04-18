@@ -3,14 +3,14 @@ use style::values::{generics::box_::BaselineShiftKeyword, specified::{BaselineSh
 
 use crate::{cached_value::CachedValue, declarations::size::length_percentage_to_value};
 
-pub fn make_baseline_shift(baseline_shift: BaselineShift, ruby: &Ruby) -> Value {
+pub fn make_baseline_shift(baseline_shift: &BaselineShift, ruby: &Ruby) -> Value {
     match baseline_shift {
         BaselineShift::Keyword(keyword) => {
-            YBaselineShiftKeyword::new(keyword).into_value_with(ruby)
+            YBaselineShiftKeyword::new(keyword.clone()).into_value_with(ruby)
         },
 
         BaselineShift::Length(length_percentage) => {
-            YBaselineShiftLength::new(length_percentage).into_value_with(ruby)
+            YBaselineShiftLength::new(length_percentage.clone()).into_value_with(ruby)
         }
     }
 }

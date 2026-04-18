@@ -40,7 +40,7 @@ impl YCalc {
     pub fn make_node(calc_node: &CalcNode, ruby: &Ruby) -> Value {
         match calc_node {
             CalcNode::Leaf(leaf) => {
-                make_leaf(leaf.clone(), ruby)
+                make_leaf(leaf, ruby)
             },
 
             CalcNode::Negate(generic_calc_node) => {

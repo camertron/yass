@@ -250,10 +250,10 @@ impl YOffsetPathPosition {
     ) -> Self {
         Self {
             horizontal: CachedValue::new(position.horizontal, |component, ruby| {
-                make_horizontal_position_component(component.clone(), ruby)
+                make_horizontal_position_component(component, ruby)
             }),
             vertical: CachedValue::new(position.vertical, |component, ruby| {
-                make_vertical_position_component(component.clone(), ruby)
+                make_vertical_position_component(component, ruby)
             }),
         }
     }

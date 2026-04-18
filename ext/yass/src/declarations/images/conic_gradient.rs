@@ -39,7 +39,7 @@ impl YConicGradient {
                 ),
 
                 items: CachedValueList::new(items.to_vec(), |item, _ctx, ruby| {
-                    gradient_angle_or_percentage_item::make_gradient_angle_or_percentage_item(item.clone(), ruby)
+                    gradient_angle_or_percentage_item::make_gradient_angle_or_percentage_item(item, ruby)
                 }),
 
                 repeating: flags.contains(GradientFlags::REPEATING),

@@ -40,7 +40,7 @@ impl YDeclaration {
                 Ok(ruby.obj_wrap(YClear::new(clear.clone())).as_value())
             }
             PropertyDeclaration::ColumnCount(generic_column_count) => {
-                Ok(make_column_count(generic_column_count.clone(), ruby))
+                Ok(make_column_count(generic_column_count, ruby))
             }
             PropertyDeclaration::ColumnSpan(t) => {
                 Ok(ruby.obj_wrap(YColumnSpan::new(t.clone())).as_value())
@@ -313,7 +313,7 @@ impl YDeclaration {
                 Ok(ruby.obj_wrap(YBackgroundSize::new(specified_value.clone())).as_value())
             },
             PropertyDeclaration::BaselineShift(generic_baseline_shift) => {
-                Ok(make_baseline_shift(generic_baseline_shift.clone(), ruby))
+                Ok(make_baseline_shift(generic_baseline_shift, ruby))
             }
             PropertyDeclaration::BorderImageOutset(rect) => {
                 Ok(ruby.obj_wrap(YBorderImageOutset::new(rect.clone())).as_value())

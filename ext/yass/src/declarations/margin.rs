@@ -3,17 +3,17 @@ use style::values::{generics::{Optional, length::{AnchorSizeKeyword, GenericAnch
 
 use crate::{cached_value::CachedValue, declarations::size::{YLengthPercentage, anchor_size_keyword::YAnchorSizeKeyword, length_percentage_to_value}};
 
-pub fn make_margin(margin: Margin, ruby: &Ruby) -> Value {
+pub fn make_margin(margin: &Margin, ruby: &Ruby) -> Value {
     match margin {
         Margin::Auto => YMarginAuto::new().into_value_with(ruby),
         Margin::LengthPercentage(length_percentage) => {
-            YLengthPercentage::new(length_percentage).into_value_with(ruby)
+            YLengthPercentage::new(length_percentage.clone()).into_value_with(ruby)
         }
         Margin::AnchorSizeFunction(anchor_size_function) => {
-            YMarginAnchorSizeFunction::new(*anchor_size_function).into_value_with(ruby)
+            YMarginAnchorSizeFunction::new(*anchor_size_function.clone()).into_value_with(ruby)
         }
         Margin::AnchorContainingCalcFunction(length_percentage) => {
-            YMarginAnchorContainingCalcFunction::new(length_percentage).into_value_with(ruby)
+            YMarginAnchorContainingCalcFunction::new(length_percentage.clone()).into_value_with(ruby)
         }
     }
 }
@@ -74,7 +74,7 @@ impl YMarginAnchorSizeFunction {
 
             fallback: CachedValue::new(anchor_size.fallback, |fallback, ruby| {
                 match fallback {
-                    Optional::Some(fb) => make_margin(fb.clone(), ruby),
+                    Optional::Some(fb) => make_margin(fb, ruby),
                     Optional::None => ruby.qnil().into_value_with(ruby)
                 }
             })

@@ -13,7 +13,7 @@ impl YBackgroundPositionX {
     pub fn new(specified_value: SpecifiedValue) -> Self {
         Self {
             values: CachedValueList::new(specified_value.0.to_vec(), |component, _ctx, ruby| {
-                make_horizontal_position_component(component.clone(), ruby)
+                make_horizontal_position_component(component, ruby)
             }),
         }
     }

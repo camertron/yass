@@ -3,22 +3,22 @@ use style::values::specified::{Angle, image::LineDirection, position::{Horizonta
 
 use crate::{cached_value::CachedValue, declarations::{angle::YAngle, images::{horizontal_keyword_to_id, vertical_keyword_to_id}}};
 
-pub fn make_line_direction(direction: LineDirection, ruby: &Ruby) -> Value {
+pub fn make_line_direction(direction: &LineDirection, ruby: &Ruby) -> Value {
     match direction {
         LineDirection::Angle(angle) => {
-            YAngleLineDirection::new(angle).into_value_with(ruby)
+            YAngleLineDirection::new(angle.clone()).into_value_with(ruby)
         },
 
         LineDirection::Horizontal(keyword) => {
-            YHorizontalLineDirection::new(keyword).into_value_with(ruby)
+            YHorizontalLineDirection::new(keyword.clone()).into_value_with(ruby)
         },
 
         LineDirection::Vertical(keyword) => {
-            YVerticalLineDirection::new(keyword).into_value_with(ruby)
+            YVerticalLineDirection::new(keyword.clone()).into_value_with(ruby)
         },
 
         LineDirection::Corner(h_keyword, v_keyword) => {
-            YCornerLineDirection::new(h_keyword, v_keyword).into_value_with(ruby)
+            YCornerLineDirection::new(h_keyword.clone(), v_keyword.clone()).into_value_with(ruby)
         },
     }
 }

@@ -20,7 +20,7 @@ impl YContent {
     pub fn new(content: Content) -> Self {
         Self {
             value: CachedValue::new(content, |content, ruby| {
-                make_content(content.clone(), ruby)
+                make_content(content, ruby)
             }),
         }
     }
@@ -54,11 +54,13 @@ impl YContentNone {
     }
 }
 
-fn make_content(content: Content, ruby: &Ruby) -> Value {
+fn make_content(content: &Content, ruby: &Ruby) -> Value {
     match content {
         Content::Normal => YContentNormal::new().into_value_with(ruby),
         Content::None => YContentNone::new().into_value_with(ruby),
-        Content::Items(items) => YContentItems::new(items).into_value_with(ruby),
+        Content::Items(items) => {
+            YContentItems::new(items.clone()).into_value_with(ruby)
+        },
     }
 }
 

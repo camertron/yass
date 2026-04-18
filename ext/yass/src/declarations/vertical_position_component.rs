@@ -3,18 +3,18 @@ use style::values::specified::{LengthPercentage, position::{PositionComponent, V
 
 use crate::{cached_value::CachedValue, declarations::{images::vertical_keyword_to_id, size::YLengthPercentage}};
 
-pub fn make_vertical_position_component(component: PositionComponent<VerticalPositionKeyword>, ruby: &Ruby) -> Value {
+pub fn make_vertical_position_component(component: &PositionComponent<VerticalPositionKeyword>, ruby: &Ruby) -> Value {
     match component {
         PositionComponent::Center => {
             YCenterVerticalPositionComponent::new().into_value_with(ruby)
         },
 
         PositionComponent::Length(length) => {
-            YLengthVerticalPositionComponent::new(length).into_value_with(ruby)
+            YLengthVerticalPositionComponent::new(length.clone()).into_value_with(ruby)
         },
 
         PositionComponent::Side(keyword, offset) => {
-            YSideVerticalPositionComponent::new(keyword, offset).into_value_with(ruby)
+            YSideVerticalPositionComponent::new(keyword.clone(), offset.clone()).into_value_with(ruby)
         },
     }
 }

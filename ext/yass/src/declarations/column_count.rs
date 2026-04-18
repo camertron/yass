@@ -1,11 +1,11 @@
 use magnus::{IntoValue, Ruby, Value, typed_data};
 use style::values::{generics::{GreaterThanOrEqualToOne, column::ColumnCount}, specified::Integer};
 
-pub fn make_column_count(column_count: ColumnCount<GreaterThanOrEqualToOne<Integer>>, ruby: &Ruby) -> Value {
+pub fn make_column_count(column_count: &ColumnCount<GreaterThanOrEqualToOne<Integer>>, ruby: &Ruby) -> Value {
     match column_count {
         ColumnCount::Auto => YColumnCountAuto::new().into_value_with(ruby),
         ColumnCount::Integer(greater_than_or_equal_to_one) => {
-            YColumnCountInteger::new(greater_than_or_equal_to_one).into_value_with(ruby)
+            YColumnCountInteger::new(greater_than_or_equal_to_one.clone()).into_value_with(ruby)
         }
     }
 }

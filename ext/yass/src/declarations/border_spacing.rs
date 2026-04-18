@@ -12,8 +12,9 @@ pub struct YBorderSpacing {
 
 impl YBorderSpacing {
     pub fn new(specified_value: Box<BorderSpacing<NonNegative<Length>>>) -> Self {
-        let horizontal = specified_value.0.width.clone();
-        let vertical = specified_value.0.height.clone();
+        let specified_value = *specified_value;
+        let horizontal = specified_value.0.width;
+        let vertical = specified_value.0.height;
 
         Self {
             horizontal: CachedValue::new(horizontal, |h, ruby| {

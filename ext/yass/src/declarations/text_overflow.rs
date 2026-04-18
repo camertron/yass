@@ -23,10 +23,12 @@ pub struct YTextOverflow {
 
 impl YTextOverflow {
     pub fn new(specified_value: Box<TextOverflow>) -> Self {
+        let specified_value_unboxed = *specified_value;
+
         Self {
-            first: CachedValue::new(specified_value.first.clone(), make_text_overflow_side),
-            second: CachedValue::new(specified_value.second.clone(), make_text_overflow_side),
-            sides_are_logical: specified_value.sides_are_logical,
+            first: CachedValue::new(specified_value_unboxed.first, make_text_overflow_side),
+            second: CachedValue::new(specified_value_unboxed.second, make_text_overflow_side),
+            sides_are_logical: specified_value_unboxed.sides_are_logical,
         }
     }
 

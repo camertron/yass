@@ -3,16 +3,16 @@ use style::values::{generics::image::GradientItem, specified::{AngleOrPercentage
 
 use crate::{cached_value::CachedValue, declarations::{color::color::make_color, images::angle_or_percentage::YAngleOrPercentage}};
 
-pub fn make_gradient_angle_or_percentage_item(item: GradientItem<Color, AngleOrPercentage>, ruby: &Ruby) -> Value {
+pub fn make_gradient_angle_or_percentage_item(item: &GradientItem<Color, AngleOrPercentage>, ruby: &Ruby) -> Value {
     match item {
         GradientItem::SimpleColorStop(color) => {
-            YSimpleColorStopAngle::new(color).into_value_with(ruby)
+            YSimpleColorStopAngle::new(color.clone()).into_value_with(ruby)
         },
         GradientItem::ComplexColorStop { color, position } => {
-            YComplexColorStopAngle::new(color, position).into_value_with(ruby)
+            YComplexColorStopAngle::new(color.clone(), position.clone()).into_value_with(ruby)
         },
         GradientItem::InterpolationHint(position) => {
-            YInterpolationHintAngle::new(position).into_value_with(ruby)
+            YInterpolationHintAngle::new(position.clone()).into_value_with(ruby)
         },
     }
 }

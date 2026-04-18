@@ -12,7 +12,7 @@ pub struct YTop {
 impl YTop {
     pub fn new(inset: Inset) -> Self {
         Self {
-            inset: CachedValue::new(inset, |value, ruby| make_inset(value.clone(), ruby)),
+            inset: CachedValue::new(inset, |value, ruby| make_inset(value, ruby)),
         }
     }
 

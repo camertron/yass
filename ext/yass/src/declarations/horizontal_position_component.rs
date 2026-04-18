@@ -3,18 +3,18 @@ use style::values::specified::{LengthPercentage, position::{HorizontalPositionKe
 
 use crate::{cached_value::CachedValue, declarations::{images::horizontal_keyword_to_id, size::YLengthPercentage}};
 
-pub fn make_horizontal_position_component(component: PositionComponent<HorizontalPositionKeyword>, ruby: &Ruby) -> Value {
+pub fn make_horizontal_position_component(component: &PositionComponent<HorizontalPositionKeyword>, ruby: &Ruby) -> Value {
     match component {
         PositionComponent::Center => {
             YCenterHorizontalPositionComponent::new().into_value_with(ruby)
         },
 
         PositionComponent::Length(length) => {
-            YLengthHorizontalPositionComponent::new(length).into_value_with(ruby)
+            YLengthHorizontalPositionComponent::new(length.clone()).into_value_with(ruby)
         },
 
         PositionComponent::Side(keyword, offset) => {
-            YSideHorizontalPositionComponent::new(keyword, offset).into_value_with(ruby)
+            YSideHorizontalPositionComponent::new(keyword.clone(), offset.clone()).into_value_with(ruby)
         },
     }
 }

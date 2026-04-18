@@ -4,14 +4,14 @@ use style_traits::ToCss;
 
 use crate::{cached_value::CachedValue, declarations::size::length_percentage_to_value};
 
-pub fn make_inset(inset: Inset, ruby: &Ruby) -> Value {
+pub fn make_inset(inset: &Inset, ruby: &Ruby) -> Value {
     match inset {
         Inset::Auto => YInsetAuto::new().into_value_with(ruby),
         Inset::LengthPercentage(length_percentage) => {
-            YInsetLengthPercentage::new(length_percentage).into_value_with(ruby)
+            YInsetLengthPercentage::new(length_percentage.clone()).into_value_with(ruby)
         }
         Inset::AnchorContainingCalcFunction(length_percentage) => {
-            YInsetAnchorContainingCalcFunction::new(length_percentage).into_value_with(ruby)
+            YInsetAnchorContainingCalcFunction::new(length_percentage.clone()).into_value_with(ruby)
         }
         Inset::AnchorFunction(anchor_function) => {
             YInsetAnchorFunction::new(anchor_function.to_css_string()).into_value_with(ruby)

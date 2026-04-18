@@ -41,7 +41,7 @@ impl YImageRadialGradient {
                 ),
 
                 items: CachedValueList::new(items.to_vec(), |item, _ctx, ruby| {
-                    make_gradient_length_percentage_item(item.clone(), ruby)
+                    make_gradient_length_percentage_item(item, ruby)
                 }),
 
                 repeating: flags.contains(GradientFlags::REPEATING),
