@@ -99,7 +99,7 @@ task :codegen do
     module Yass
       class Visitor
         def visit(node)
-          node.accept(self)
+          node.accept(self) if node
         end
 
         def visit_list(nodes)

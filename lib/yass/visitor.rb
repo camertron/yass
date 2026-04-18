@@ -3,7 +3,7 @@
 module Yass
   class Visitor
     def visit(node)
-      node.accept(self)
+      node.accept(self) if node
     end
 
     def visit_list(nodes)
@@ -2427,7 +2427,6 @@ module Yass
     end
 
     def visit_font_source_url(node)
-      visit(node.specified_url)
       visit(node.format_hint)
     end
 

@@ -246,7 +246,7 @@ module Yass
   end
 
   class FontFaceRule
-    RUBY_METHODS = %i(ascent_override descent_override family font_face font_stretch_range language_override line_gap_override size_adjust sources style unicode_range weight).freeze
+    RUBY_METHODS = %i(ascent_override descent_override family font_face font_stretch_range kind language_override line_gap_override size_adjust sources style unicode_range weight).freeze
 
     include ::Yass::Node
 
@@ -260,7 +260,7 @@ module Yass
   end
 
   class FontFace
-    RUBY_METHODS = %i(family sources).freeze
+    RUBY_METHODS = %i(family kind sources).freeze
 
     include ::Yass::Node
 
@@ -276,7 +276,7 @@ module Yass
   module Font
     module Metrics
       class Override
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -290,6 +290,8 @@ module Yass
       end
 
       class OverrideNormal
+        RUBY_METHODS = %i(kind).freeze
+
         include ::Yass::Node
 
         def accept(visitor)
@@ -303,7 +305,7 @@ module Yass
     end
 
     class FamilyName
-      RUBY_METHODS = %i(syntax).freeze
+      RUBY_METHODS = %i(kind syntax).freeze
 
       include ::Yass::Node
 
@@ -318,7 +320,7 @@ module Yass
 
     module SourceFormat
       class Keyword
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -332,7 +334,7 @@ module Yass
       end
 
       class String
-        RUBY_METHODS = %i(value).freeze
+        RUBY_METHODS = %i(kind value).freeze
 
         include ::Yass::Node
 
@@ -348,7 +350,7 @@ module Yass
 
     module Source
       class Url
-        RUBY_METHODS = %i(format_hint specified_url).freeze
+        RUBY_METHODS = %i(format_hint kind specified_url).freeze
 
         include ::Yass::Node
 
@@ -362,7 +364,7 @@ module Yass
       end
 
       class Local
-        RUBY_METHODS = %i(family_name).freeze
+        RUBY_METHODS = %i(family_name kind).freeze
 
         include ::Yass::Node
 
@@ -378,7 +380,7 @@ module Yass
   end
 
   class UnicodeRange
-    RUBY_METHODS = %i(end start).freeze
+    RUBY_METHODS = %i(end kind start).freeze
 
     include ::Yass::Node
 
@@ -392,6 +394,8 @@ module Yass
   end
 
   class SystemFont
+    RUBY_METHODS = %i(kind).freeze
+
     include ::Yass::Node
 
     def accept(visitor)
@@ -405,7 +409,7 @@ module Yass
 
   module FontStretch
     class Range
-      RUBY_METHODS = %i(begin end).freeze
+      RUBY_METHODS = %i(begin end kind).freeze
 
       include ::Yass::Node
 
@@ -419,7 +423,7 @@ module Yass
     end
 
     class Stretch
-      RUBY_METHODS = %i(value).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -433,7 +437,7 @@ module Yass
     end
 
     class Keyword
-      RUBY_METHODS = %i(value).freeze
+      RUBY_METHODS = %i(kind value).freeze
 
       include ::Yass::Node
 
@@ -449,6 +453,8 @@ module Yass
 
   module FontStyle
     class Italic
+      RUBY_METHODS = %i(kind).freeze
+
       include ::Yass::Node
 
       def accept(visitor)
@@ -461,7 +467,7 @@ module Yass
     end
 
     class Oblique
-      RUBY_METHODS = %i(angle1 angle2).freeze
+      RUBY_METHODS = %i(angle1 angle2 kind).freeze
 
       include ::Yass::Node
 
@@ -477,6 +483,8 @@ module Yass
 
   module FontWeight
     class Normal
+      RUBY_METHODS = %i(kind).freeze
+
       include ::Yass::Node
 
       def accept(visitor)
@@ -489,7 +497,7 @@ module Yass
     end
 
     class Range
-      RUBY_METHODS = %i(begin end).freeze
+      RUBY_METHODS = %i(begin end kind).freeze
 
       include ::Yass::Node
 

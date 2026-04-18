@@ -1,5 +1,5 @@
 use magnus::{DataTypeFunctions, IntoValue, RString, Ruby, TypedData, Value, gc, typed_data, value::Id};
-use style::{font_face::{FontFaceSourceFormat, FontFaceSourceFormatKeyword, Source, UrlSource}, values::{CssUrl, computed::font::FamilyName}};
+use style::{font_face::{FontFaceSourceFormat, FontFaceSourceFormatKeyword, Source, UrlSource}, values::{computed::font::FamilyName}};
 
 use crate::{cached_value::CachedValue, optional_cached_value::OptionalCachedValue, rules::fonts::YFontFamilyName};
 
@@ -70,25 +70,22 @@ impl YFontFaceSourceFormatString {
 #[derive(TypedData)]
 #[magnus(class = "Yass::Font::Source::Url", mark)]
 pub struct YFontSourceUrl {
-    specified_url: CachedValue<CssUrl>,
+    specified_url: String,
     format_hint: OptionalCachedValue<FontFaceSourceFormat>,
 }
 
 impl YFontSourceUrl {
     pub fn new(url_source: UrlSource) -> Self {
         Self {
-            specified_url: CachedValue::new(url_source.url, |url, ruby| {
-                ruby.str_new(url.as_str()).into_value_with(ruby)
-            }),
-
+            specified_url: url_source.url.as_str().to_string(),
             format_hint: OptionalCachedValue::new(url_source.format_hint, |format_hint, ruby| {
                 font_source_format_to_value(format_hint, ruby).into_value_with(ruby)
             })
         }
     }
 
-    pub fn specified_url(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Value {
-        rb_self.specified_url.get(ruby)
+    pub fn specified_url(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> RString {
+        ruby.str_new(&rb_self.specified_url)
     }
 
     pub fn format_hint(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Value {
@@ -98,7 +95,6 @@ impl YFontSourceUrl {
 
 impl DataTypeFunctions for YFontSourceUrl {
     fn mark(&self, marker: &gc::Marker) {
-        self.specified_url.mark(marker);
         self.format_hint.mark(marker);
     }
 }
