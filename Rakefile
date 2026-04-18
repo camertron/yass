@@ -59,8 +59,6 @@ task :codegen do
   require "yass"
   require_relative "codegen/rust_file_set"
 
-  binding.irb
-
   declaration_files = Yass::Codegen::RustFileSet.new(Dir.glob("ext/yass/src/declarations/**/*.rs"))
 
   File.write("lib/yass/declarations.rb", <<~RUBY)
@@ -80,7 +78,9 @@ task :codegen do
   rule_files = Yass::Codegen::RustFileSet.new([
     "ext/yass/src/rules/rule.rs",
     "ext/yass/src/rules/style_rule.rs",
-    "ext/yass/src/rules/media_rule.rs"
+    "ext/yass/src/rules/media_rule.rs",
+    "ext/yass/src/rules/font_face_rule.rs",
+    *Dir.glob("ext/yass/src/rules/fonts/**/*.rs"),
   ])
 
   File.write("lib/yass/rules.rb", <<~RUBY)

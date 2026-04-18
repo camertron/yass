@@ -244,4 +244,262 @@ module Yass
       end
     end
   end
+
+  class FontFaceRule
+    RUBY_METHODS = %i(ascent_override descent_override family font_face font_stretch_range language_override line_gap_override size_adjust sources style unicode_range weight).freeze
+
+    include ::Yass::Node
+
+    def accept(visitor)
+      visitor.visit_font_face_rule(self)
+    end
+
+    def kind
+      :font_face_rule
+    end
+  end
+
+  class FontFace
+    RUBY_METHODS = %i(family sources).freeze
+
+    include ::Yass::Node
+
+    def accept(visitor)
+      visitor.visit_font_face(self)
+    end
+
+    def kind
+      :font_face
+    end
+  end
+
+  module Font
+    module Metrics
+      class Override
+        RUBY_METHODS = %i(value).freeze
+
+        include ::Yass::Node
+
+        def accept(visitor)
+          visitor.visit_font_metrics_override(self)
+        end
+
+        def kind
+          :override
+        end
+      end
+
+      class OverrideNormal
+        include ::Yass::Node
+
+        def accept(visitor)
+          visitor.visit_font_metrics_override_normal(self)
+        end
+
+        def kind
+          :override_normal
+        end
+      end
+    end
+
+    class FamilyName
+      RUBY_METHODS = %i(syntax).freeze
+
+      include ::Yass::Node
+
+      def accept(visitor)
+        visitor.visit_font_family_name(self)
+      end
+
+      def kind
+        :family_name
+      end
+    end
+
+    module SourceFormat
+      class Keyword
+        RUBY_METHODS = %i(value).freeze
+
+        include ::Yass::Node
+
+        def accept(visitor)
+          visitor.visit_font_source_format_keyword(self)
+        end
+
+        def kind
+          :keyword
+        end
+      end
+
+      class String
+        RUBY_METHODS = %i(value).freeze
+
+        include ::Yass::Node
+
+        def accept(visitor)
+          visitor.visit_font_source_format_string(self)
+        end
+
+        def kind
+          :string
+        end
+      end
+    end
+
+    module Source
+      class Url
+        RUBY_METHODS = %i(format_hint specified_url).freeze
+
+        include ::Yass::Node
+
+        def accept(visitor)
+          visitor.visit_font_source_url(self)
+        end
+
+        def kind
+          :url
+        end
+      end
+
+      class Local
+        RUBY_METHODS = %i(family_name).freeze
+
+        include ::Yass::Node
+
+        def accept(visitor)
+          visitor.visit_font_source_local(self)
+        end
+
+        def kind
+          :local
+        end
+      end
+    end
+  end
+
+  class UnicodeRange
+    RUBY_METHODS = %i(end start).freeze
+
+    include ::Yass::Node
+
+    def accept(visitor)
+      visitor.visit_unicode_range(self)
+    end
+
+    def kind
+      :unicode_range
+    end
+  end
+
+  class SystemFont
+    include ::Yass::Node
+
+    def accept(visitor)
+      visitor.visit_system_font(self)
+    end
+
+    def kind
+      :system_font
+    end
+  end
+
+  module FontStretch
+    class Range
+      RUBY_METHODS = %i(begin end).freeze
+
+      include ::Yass::Node
+
+      def accept(visitor)
+        visitor.visit_font_stretch_range(self)
+      end
+
+      def kind
+        :range
+      end
+    end
+
+    class Stretch
+      RUBY_METHODS = %i(value).freeze
+
+      include ::Yass::Node
+
+      def accept(visitor)
+        visitor.visit_font_stretch_stretch(self)
+      end
+
+      def kind
+        :stretch
+      end
+    end
+
+    class Keyword
+      RUBY_METHODS = %i(value).freeze
+
+      include ::Yass::Node
+
+      def accept(visitor)
+        visitor.visit_font_stretch_keyword(self)
+      end
+
+      def kind
+        :keyword
+      end
+    end
+  end
+
+  module FontStyle
+    class Italic
+      include ::Yass::Node
+
+      def accept(visitor)
+        visitor.visit_font_style_italic(self)
+      end
+
+      def kind
+        :italic
+      end
+    end
+
+    class Oblique
+      RUBY_METHODS = %i(angle1 angle2).freeze
+
+      include ::Yass::Node
+
+      def accept(visitor)
+        visitor.visit_font_style_oblique(self)
+      end
+
+      def kind
+        :oblique
+      end
+    end
+  end
+
+  module FontWeight
+    class Normal
+      include ::Yass::Node
+
+      def accept(visitor)
+        visitor.visit_font_weight_normal(self)
+      end
+
+      def kind
+        :normal
+      end
+    end
+
+    class Range
+      RUBY_METHODS = %i(begin end).freeze
+
+      include ::Yass::Node
+
+      def accept(visitor)
+        visitor.visit_font_weight_range(self)
+      end
+
+      def kind
+        :range
+      end
+    end
+  end
 end

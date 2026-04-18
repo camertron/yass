@@ -78,5 +78,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     font_weight_range_class.define_method("begin", method!(YFontWeightRange::begin, 0))?;
     font_weight_range_class.define_method("end", method!(YFontWeightRange::end, 0))?;
 
+    let _system_font_class = yass_module.define_class("SystemFont", ruby.class_object())?;
+
     Ok(())
 }

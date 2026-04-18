@@ -2392,5 +2392,80 @@ module Yass
 
     def visit_media_type_concrete(node)
     end
+
+    def visit_font_face_rule(node)
+      visit(node.ascent_override)
+      visit(node.descent_override)
+      visit(node.display)
+      visit(node.family)
+      visit(node.font_face)
+      visit(node.line_gap_override)
+      visit(node.size_adjust)
+      visit(node.font_stretch_range)
+      visit(node.style)
+      visit(node.weight)
+    end
+
+    def visit_font_face(node)
+      visit(node.family)
+      visit_list(node.sources)
+    end
+
+    def visit_font_metrics_override(node)
+    end
+
+    def visit_font_metrics_override_normal(node)
+    end
+
+    def visit_font_family_name(node)
+    end
+
+    def visit_font_source_format_keyword(node)
+    end
+
+    def visit_font_source_format_string(node)
+    end
+
+    def visit_font_source_url(node)
+      visit(node.specified_url)
+      visit(node.format_hint)
+    end
+
+    def visit_font_source_local(node)
+      visit(node.family_name)
+    end
+
+    def visit_unicode_range(node)
+    end
+
+    def visit_system_font(node)
+    end
+
+    def visit_font_stretch_range(node)
+      visit(node.begin)
+      visit(node.end)
+    end
+
+    def visit_font_stretch_stretch(node)
+    end
+
+    def visit_font_stretch_keyword(node)
+    end
+
+    def visit_font_style_italic(node)
+    end
+
+    def visit_font_style_oblique(node)
+      visit(node.angle1)
+      visit(node.angle2)
+    end
+
+    def visit_font_weight_normal(node)
+    end
+
+    def visit_font_weight_range(node)
+      visit(node.begin)
+      visit(node.end)
+    end
   end
 end
