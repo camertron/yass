@@ -3,14 +3,7 @@
 module Yass
   class Stylesheet
     def to_h
-      {
-        rules: rules.map do |rule|
-          {
-            selectors: rule.selectors.map(&:to_h),
-            declarations: rule.declarations.map(&:to_h)
-          }
-        end
-      }
+      { rules: rules.map(&:to_h) }
     end
   end
 end
