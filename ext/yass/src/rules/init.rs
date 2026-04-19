@@ -8,10 +8,12 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let style_rule_class = yass_module.define_class("StyleRule", rule_class)?;
     style_rule_class.define_method("selectors", method!(YStyleRule::selectors, 0))?;
     style_rule_class.define_method("declarations", method!(YStyleRule::declarations, 0))?;
+    style_rule_class.define_method("source_location", method!(YStyleRule::source_location, 0))?;
 
     let media_rule_class = yass_module.define_class("MediaRule", rule_class)?;
     media_rule_class.define_method("media_queries", method!(YMediaRule::media_queries, 0))?;
     media_rule_class.define_method("rules", method!(YMediaRule::rules, 0))?;
+    media_rule_class.define_method("source_location", method!(YMediaRule::source_location, 0))?;
 
     let media_query_class = yass_module.define_class("MediaQuery", ruby.class_object())?;
     media_query_class.define_method("qualifier", method!(YMediaQuery::qualifier, 0))?;
@@ -79,6 +81,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     font_face_rule_class.define_method("style", method!(YFontFaceRule::style, 0))?;
     font_face_rule_class.define_method("unicode_range", method!(YFontFaceRule::unicode_range, 0))?;
     font_face_rule_class.define_method("weight", method!(YFontFaceRule::weight, 0))?;
+    font_face_rule_class.define_method("source_location", method!(YFontFaceRule::source_location, 0))?;
 
     let font_face_class = yass_module.define_class("FontFace", ruby.class_object())?;
     font_face_class.define_method("family", method!(YFontFace::family, 0))?;

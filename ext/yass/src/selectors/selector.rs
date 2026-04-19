@@ -40,12 +40,12 @@ use crate::{selectors::{
 #[magnus(class = "Yass::Selector", mark)]
 pub struct YSelector {
     selector: Selector<SelectorImpl>,
-    cached_children: CachedValueList<Component<SelectorImpl>>
+    children: CachedValueList<Component<SelectorImpl>>
 }
 
 impl DataTypeFunctions for YSelector {
     fn mark(&self, marker: &gc::Marker) {
-        self.cached_children.mark(marker);
+        self.children.mark(marker);
     }
 }
 
@@ -53,7 +53,7 @@ impl YSelector {
     pub fn new(selector: Selector<SelectorImpl>) -> Self {
         Self {
             selector,
-            cached_children: CachedValueList::new(vec![], |component, _ctx, ruby| {
+            children: CachedValueList::new(vec![], |component, _ctx, ruby| {
                 YSelector::wrap_child(component, ruby).into_value_with(ruby)
             })
         }
@@ -183,23 +183,23 @@ impl YSelector {
     }
 
     pub fn children(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Result<RArray, Error> {
-        if rb_self.cached_children.is_empty() {
+        if rb_self.children.is_empty() {
             let mut iter = rb_self.selector.iter();
 
             loop {
                 for raw_component in iter.by_ref() {
-                    rb_self.cached_children.add(raw_component.clone(), ruby)?;
+                    rb_self.children.add(raw_component.clone(), ruby)?;
                 }
 
                 if let Some(combinator) = iter.next_sequence() {
-                    rb_self.cached_children.add(Component::Combinator(combinator), ruby)?;
+                    rb_self.children.add(Component::Combinator(combinator), ruby)?;
                 } else {
                     break;
                 }
             }
         }
 
-        rb_self.cached_children.to_a(ruby)
+        rb_self.children.to_a(ruby)
     }
 
     pub fn intern_operator(operator: &AttrSelectorOperator, ruby: &Ruby) -> Id {

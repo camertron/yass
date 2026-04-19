@@ -17,6 +17,9 @@ module Yass
     def visit_unicode_range(node)
     end
 
+    def visit_source_location(node)
+    end
+
     def visit_declaration_align_content(node)
     end
 
@@ -2326,6 +2329,7 @@ module Yass
     def visit_style_rule(node)
       visit_list(node.selectors)
       visit_list(node.declarations)
+      visit(node.source_location)
     end
 
     def visit_style_query_not(node)
@@ -2349,6 +2353,7 @@ module Yass
     def visit_media_rule(node)
       visit_list(node.media_queries)
       visit_list(node.rules)
+      visit(node.source_location)
     end
 
     def visit_media_query(node)
@@ -2394,6 +2399,7 @@ module Yass
       visit(node.font_stretch_range)
       visit(node.style)
       visit(node.weight)
+      visit(node.source_location)
     end
 
     def visit_font_face(node)

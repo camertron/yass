@@ -1,8 +1,9 @@
+use cssparser::SourceLocation;
 use magnus::{DataTypeFunctions, Error, IntoValue, RArray, RString, Ruby, TypedData, Value, gc, typed_data, value::Id};
 use style::{media_queries::{MediaQuery, MediaQueryType, MediaType, Qualifier}, queries::{QueryCondition, QueryFeatureExpression, condition::{Operator, StyleFeature, StyleQuery}}, servo_arc::Arc, shared_lock::SharedRwLock, stylesheets::{CssRule, MediaRule}, values::DashedIdent};
 use style_traits::ToCss;
 
-use crate::{cached_value::CachedValue, cached_value_list::CachedValueList, rules::rule::make_rule};
+use crate::{cached_value::CachedValue, cached_value_list::CachedValueList, general::YSourceLocation, rules::rule::make_rule};
 
 fn query_condition_to_value(condition: &QueryCondition, ruby: &Ruby) -> Value {
     match condition {
@@ -191,6 +192,7 @@ pub struct YMediaRule {
     lock: SharedRwLock,
     media_queries: CachedValueList<MediaQuery>,
     rules: CachedValueList<CssRule, SharedRwLock>,
+    source_location: CachedValue<SourceLocation>,
 }
 
 impl YMediaRule {
@@ -205,6 +207,10 @@ impl YMediaRule {
 
             rules: CachedValueList::empty(Some(lock.clone()), |rule, lock, ruby| {
                 make_rule(rule, &lock.as_ref().unwrap(), ruby).into_value_with(ruby)
+            }),
+
+            source_location: CachedValue::empty(|source_location, ruby| {
+                YSourceLocation::new(source_location.line, source_location.column).into_value_with(ruby)
             })
         }
     }
@@ -234,12 +240,21 @@ impl YMediaRule {
 
         rb_self.rules.to_a(ruby)
     }
+
+    pub fn source_location(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Value {
+        if rb_self.source_location.is_empty() {
+            rb_self.source_location.set(rb_self.rule.source_location, ruby);
+        }
+
+        rb_self.source_location.get(ruby)
+    }
 }
 
 impl DataTypeFunctions for YMediaRule {
     fn mark(&self, marker: &gc::Marker) {
         self.media_queries.mark(marker);
         self.rules.mark(marker);
+        self.source_location.mark(marker);
     }
 }
 

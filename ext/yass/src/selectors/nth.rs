@@ -7,14 +7,14 @@ use crate::{cached_value::CachedValue, selectors::YAnPlusB};
 #[magnus(class = "Yass::Selector::Nth", mark)]
 pub struct YNth {
     nth_selector_data: NthSelectorData,
-    cached_an_plus_b: CachedValue<(i32, i32)>
+    an_plus_b: CachedValue<(i32, i32)>
 }
 
 impl YNth {
     pub fn new(nth_selector_data: NthSelectorData) -> Self {
         Self {
             nth_selector_data,
-            cached_an_plus_b: CachedValue::new((nth_selector_data.an_plus_b.0, nth_selector_data.an_plus_b.1), |values, ruby| {
+            an_plus_b: CachedValue::new((nth_selector_data.an_plus_b.0, nth_selector_data.an_plus_b.1), |values, ruby| {
                 YAnPlusB::new(values.0, values.1).into_value_with(ruby)
             })
         }
@@ -40,12 +40,12 @@ impl YNth {
     }
 
     pub fn an_plus_b(&self, ruby: &Ruby) -> Value {
-        self.cached_an_plus_b.get(ruby)
+        self.an_plus_b.get(ruby)
     }
 }
 
 impl DataTypeFunctions for YNth {
     fn mark(&self, marker: &gc::Marker) {
-        self.cached_an_plus_b.mark(marker);
+        self.an_plus_b.mark(marker);
     }
 }

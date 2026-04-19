@@ -1,8 +1,8 @@
-use cssparser::UnicodeRange;
+use cssparser::{SourceLocation, UnicodeRange};
 use magnus::{DataTypeFunctions, Error, IntoValue, RArray, Ruby, TypedData, Value, gc, typed_data, value::Id};
 use style::{font_face::{FontDisplay, FontStretchRange, FontStyle, FontWeightRange, Source, SourceList}, servo_arc::Arc, shared_lock::{Locked, SharedRwLock}, stylesheets::FontFaceRule, values::{computed::font::FamilyName, generics::NonNegative, specified::{Percentage, font::MetricsOverride}}};
 
-use crate::{cached_value::CachedValue, cached_value_list::CachedValueList, declarations::percentage::YPercentage, general::YUnicodeRange, optional_cached_value::OptionalCachedValue, rules::fonts::{family::YFontFamilyName, metrics::{YFontMetricsOverride, YFontMetricsOverrideNormal}, source::font_source_to_value, stretch::YFontStretchRange, style::font_style_to_value, weight::YFontWeightRange}};
+use crate::{cached_value::CachedValue, cached_value_list::CachedValueList, declarations::percentage::YPercentage, general::{YSourceLocation, YUnicodeRange}, optional_cached_value::OptionalCachedValue, rules::fonts::{family::YFontFamilyName, metrics::{YFontMetricsOverride, YFontMetricsOverrideNormal}, source::font_source_to_value, stretch::YFontStretchRange, style::font_style_to_value, weight::YFontWeightRange}};
 
 fn metrics_override_to_value(metrics_override: &MetricsOverride, ruby: &Ruby) -> Value {
     match *metrics_override {
@@ -41,7 +41,8 @@ pub struct YFontFaceRule {
     font_stretch_range: OptionalCachedValue<FontStretchRange>,
     style: OptionalCachedValue<FontStyle>,
     unicode_range: Option<CachedValueList<UnicodeRange>>,
-    weight: OptionalCachedValue<FontWeightRange>
+    weight: OptionalCachedValue<FontWeightRange>,
+    source_location: CachedValue<SourceLocation>,
 }
 
 impl YFontFaceRule {
@@ -117,6 +118,10 @@ impl YFontFaceRule {
 
             weight: OptionalCachedValue::new(font_face_rule.weight.clone(), |weight, ruby| {
                 YFontWeightRange::new(weight.clone()).into_value_with(ruby)
+            }),
+
+            source_location: CachedValue::new(font_face_rule.source_location, |source_location, ruby| {
+                YSourceLocation::new(source_location.line, source_location.column).into_value_with(ruby)
             })
         }
     }
@@ -183,6 +188,10 @@ impl YFontFaceRule {
 
     pub fn weight(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Value {
         rb_self.weight.get(ruby)
+    }
+
+    pub fn source_location(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Value {
+        rb_self.source_location.get(ruby)
     }
 }
 

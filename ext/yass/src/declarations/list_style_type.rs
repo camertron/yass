@@ -41,8 +41,12 @@ impl YListStyleType {
         rb_self.list_style_type.get(ruby)
     }
 
-    pub fn bullet(rb_self: typed_data::Obj<Self>) -> bool {
-        rb_self.list_style_type.value.is_bullet()
+    pub fn bullet(_ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> bool {
+        if let Some(value) = &rb_self.list_style_type.value {
+            value.is_bullet()
+        } else {
+            false
+        }
     }
 }
 

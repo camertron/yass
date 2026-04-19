@@ -21,3 +21,23 @@ impl YUnicodeRange {
         rb_self.end
     }
 }
+
+#[magnus::wrap(class = "Yass::SourceLocation")]
+pub struct YSourceLocation {
+    line: u32,
+    column: u32,
+}
+
+impl YSourceLocation {
+    pub fn new(line: u32, column: u32) -> Self {
+        Self { line, column }
+    }
+
+    pub fn line(_ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> u32 {
+        rb_self.line
+    }
+
+    pub fn column(_ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> u32 {
+        rb_self.column
+    }
+}

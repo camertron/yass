@@ -16,7 +16,7 @@ module Yass
   end
 
   class StyleRule
-    RUBY_METHODS = %i(declarations kind selectors).freeze
+    RUBY_METHODS = %i(declarations kind selectors source_location).freeze
 
     include ::Yass::Node
 
@@ -102,7 +102,7 @@ module Yass
   end
 
   class MediaRule
-    RUBY_METHODS = %i(kind media_queries rules).freeze
+    RUBY_METHODS = %i(kind media_queries rules source_location).freeze
 
     include ::Yass::Node
 
@@ -246,7 +246,7 @@ module Yass
   end
 
   class FontFaceRule
-    RUBY_METHODS = %i(ascent_override descent_override family font_face font_stretch_range kind language_override line_gap_override size_adjust sources style unicode_range weight).freeze
+    RUBY_METHODS = %i(ascent_override descent_override family font_face font_stretch_range kind language_override line_gap_override size_adjust source_location sources style unicode_range weight).freeze
 
     include ::Yass::Node
 
