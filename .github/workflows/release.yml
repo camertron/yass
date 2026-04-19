@@ -42,7 +42,8 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: "4.0"
-      - run: |
+      - name: Build Docker image
+        run: |
           docker build \
             --platform linux/amd64 \
             -f dockerfiles/windows.dockerfile \
@@ -101,6 +102,13 @@ jobs:
     needs: [cross-compile, cross-compile-windows]
     runs-on: ubuntu-latest
     steps:
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "4.0"
+          bundler-cache: true
+      - name: Build uncompiled gem
+        run: bundle exec rake build
       - uses: actions/download-artifact@v7
         with:
           path: artifacts

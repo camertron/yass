@@ -7,8 +7,6 @@ RSpec::Core::RakeTask.new(:spec)
 
 require "rb_sys/extensiontask"
 
-task build: :compile
-
 GEMSPEC = Gem::Specification.load("yass.gemspec")
 
 RbSys::ExtensionTask.new("yass", GEMSPEC) do |ext|
