@@ -1,6 +1,6 @@
 # Yass
 
-Yass is a Ruby wrapper around the Stylo CSS engine, the parser behind the Firefox and Servo browsers developed by Mozilla.
+Yass is a Ruby wrapper around the [Stylo](https://github.com/servo/stylo) CSS engine, the parser behind the Firefox and Servo browsers developed by Mozilla.
 
 ## Rationale
 
