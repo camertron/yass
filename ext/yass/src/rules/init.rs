@@ -1,6 +1,6 @@
 use magnus::{Error, Module, RModule, Ruby, method};
 
-use crate::rules::{font_face_rule::{YFontFace, YFontFaceRule}, fonts::init as fonts_init, media_rule::{YMediaQuery, YMediaRule, YMediaTypeConcrete, YQueryConditionCustom, YQueryConditionFeatureExpression, YQueryConditionGenerallyEnclosed, YQueryConditionInParens, YQueryConditionOperation, YQueryConditionStyle, YStyleQueryGenerallyEnclosed, YStyleQueryInParens, YStyleQueryNot, YStyleQueryOperation, YStyleQueryStyleFeature}, style_rule::YStyleRule};
+use crate::rules::{font_face_rule::YFontFaceRule, fonts::init as fonts_init, media_rule::{YMediaQuery, YMediaRule, YMediaTypeConcrete, YQueryConditionCustom, YQueryConditionFeatureExpression, YQueryConditionGenerallyEnclosed, YQueryConditionInParens, YQueryConditionOperation, YQueryConditionStyle, YStyleQueryGenerallyEnclosed, YStyleQueryInParens, YStyleQueryNot, YStyleQueryOperation, YStyleQueryStyleFeature}, style_rule::YStyleRule};
 
 pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let rule_class = yass_module.define_class("Rule", ruby.class_object())?;
@@ -46,6 +46,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
 
     let media_query_condition_generally_enclosed_class = media_query_condition_module.define_class("GenerallyEnclosed", ruby.class_object())?;
     media_query_condition_generally_enclosed_class.define_method("value", method!(YQueryConditionGenerallyEnclosed::value, 0))?;
+    media_query_condition_generally_enclosed_class.define_method("url", method!(YQueryConditionGenerallyEnclosed::url, 0))?;
 
     let style_query_module = yass_module.define_class("StyleQuery", ruby.class_object())?;
 
@@ -72,7 +73,6 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     font_face_rule_class.define_method("descent_override", method!(YFontFaceRule::descent_override, 0))?;
     font_face_rule_class.define_method("display", method!(YFontFaceRule::display, 0))?;
     font_face_rule_class.define_method("family", method!(YFontFaceRule::family, 0))?;
-    font_face_rule_class.define_method("font_face", method!(YFontFaceRule::font_face, 0))?;
     font_face_rule_class.define_method("language_override", method!(YFontFaceRule::language_override, 0))?;
     font_face_rule_class.define_method("line_gap_override", method!(YFontFaceRule::line_gap_override, 0))?;
     font_face_rule_class.define_method("size_adjust", method!(YFontFaceRule::size_adjust, 0))?;
@@ -82,10 +82,6 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     font_face_rule_class.define_method("unicode_range", method!(YFontFaceRule::unicode_range, 0))?;
     font_face_rule_class.define_method("weight", method!(YFontFaceRule::weight, 0))?;
     font_face_rule_class.define_method("source_location", method!(YFontFaceRule::source_location, 0))?;
-
-    let font_face_class = yass_module.define_class("FontFace", ruby.class_object())?;
-    font_face_class.define_method("family", method!(YFontFace::family, 0))?;
-    font_face_class.define_method("sources", method!(YFontFace::sources, 0))?;
 
     fonts_init::init(ruby, yass_module)?;
 

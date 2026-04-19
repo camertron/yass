@@ -1,5 +1,6 @@
-use magnus::{IntoValue, Ruby, Value, typed_data};
+use magnus::{RString, Ruby, typed_data};
 use style::values::computed::ViewTransitionName;
+use style_traits::ToCss;
 
 #[magnus::wrap(class = "Yass::Declarations::ViewTransitionName")]
 pub struct YViewTransitionName {
@@ -11,18 +12,7 @@ impl YViewTransitionName {
         Self { view_transition_name }
     }
 
-    pub fn is_none(_ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> bool {
-        matches!(rb_self.view_transition_name, ViewTransitionName::None)
-    }
-
-    pub fn is_match_element(_ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> bool {
-        matches!(rb_self.view_transition_name, ViewTransitionName::MatchElement)
-    }
-
-    pub fn name(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Value {
-        match &rb_self.view_transition_name {
-            ViewTransitionName::Ident(atom) => ruby.str_from_slice(atom.as_bytes()).into_value_with(ruby),
-            _ => ruby.qnil().into_value_with(ruby),
-        }
+    pub fn name(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> RString {
+        ruby.str_new(&rb_self.view_transition_name.value.to_css_string())
     }
 }

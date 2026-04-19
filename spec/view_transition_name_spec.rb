@@ -12,26 +12,20 @@ RSpec.describe "view-transition-name declaration" do
     declaration = declaration_for("none")
 
     expect(declaration).to be_a(Yass::Declarations::ViewTransitionName)
-    expect(declaration).to be_none
-    expect(declaration).not_to be_match_element
-    expect(declaration.name).to be_nil
+    expect(declaration.name).to eq("none")
   end
 
   it "exposes the match-element value" do
     declaration = declaration_for("match-element")
 
     expect(declaration).to be_a(Yass::Declarations::ViewTransitionName)
-    expect(declaration).not_to be_none
-    expect(declaration).to be_match_element
-    expect(declaration.name).to be_nil
+    expect(declaration.name).to eq("match-element")
   end
 
   it "exposes a custom identifier" do
     declaration = declaration_for("my-element")
 
     expect(declaration).to be_a(Yass::Declarations::ViewTransitionName)
-    expect(declaration).not_to be_none
-    expect(declaration).not_to be_match_element
     expect(declaration.name).to eq("my-element")
   end
 end

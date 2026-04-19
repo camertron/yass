@@ -46,7 +46,7 @@ RSpec.describe(Yass) do
       expect(url_source.format_hint.value).to eq("woff2")
     end
 
-    it "exposes nested font face and style descriptors" do
+    it "exposes hint and style descriptors" do
       rule = parse_first_rule(<<~CSS)
         @font-face {
           font-family: Test;
@@ -55,11 +55,7 @@ RSpec.describe(Yass) do
         }
       CSS
 
-      expect(rule.font_face).to be_a(Yass::FontFace)
-      expect(rule.font_face.family.name).to eq("Test")
-      expect(rule.font_face.sources.size).to eq(1)
-
-      format_hint = rule.font_face.sources.first.format_hint
+      format_hint = rule.sources.first.format_hint
       expect(format_hint).to be_a(Yass::Font::SourceFormat::Keyword)
       expect(format_hint.value).to eq(:woff2)
 

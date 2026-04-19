@@ -200,7 +200,7 @@ module Yass
       end
 
       class GenerallyEnclosed
-        RUBY_METHODS = %i(kind value).freeze
+        RUBY_METHODS = %i(kind url value).freeze
 
         include ::Yass::Node
 
@@ -246,7 +246,7 @@ module Yass
   end
 
   class FontFaceRule
-    RUBY_METHODS = %i(ascent_override descent_override family font_face font_stretch_range kind language_override line_gap_override size_adjust source_location sources style unicode_range weight).freeze
+    RUBY_METHODS = %i(ascent_override descent_override family font_stretch_range kind language_override line_gap_override size_adjust source_location sources style unicode_range weight).freeze
 
     include ::Yass::Node
 
@@ -256,20 +256,6 @@ module Yass
 
     def kind
       :font_face_rule
-    end
-  end
-
-  class FontFace
-    RUBY_METHODS = %i(family kind sources).freeze
-
-    include ::Yass::Node
-
-    def accept(visitor)
-      visitor.visit_font_face(self)
-    end
-
-    def kind
-      :font_face
     end
   end
 

@@ -7707,7 +7707,7 @@ module Yass
     end
 
     class ViewTransitionName
-      RUBY_METHODS = %i(kind match_element? none?).freeze
+      RUBY_METHODS = %i(kind).freeze
 
       include ::Yass::Node
 

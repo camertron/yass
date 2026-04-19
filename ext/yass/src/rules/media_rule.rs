@@ -33,8 +33,8 @@ fn query_condition_to_value(condition: &QueryCondition, ruby: &Ruby) -> Value {
 
         QueryCondition::MozPref(_moz_pref_feature) => unimplemented!(),
 
-        QueryCondition::GeneralEnclosed(str) => {
-            YQueryConditionGenerallyEnclosed::new(str.clone()).into_value_with(ruby)
+        QueryCondition::GeneralEnclosed(str, url) => {
+            YQueryConditionGenerallyEnclosed::new(str.clone(), url.0.to_string()).into_value_with(ruby)
         },
     }
 }
@@ -455,15 +455,20 @@ impl DataTypeFunctions for YQueryConditionStyle {
 
 #[magnus::wrap(class = "Yass::MediaQuery::QueryCondition::GenerallyEnclosed")]
 pub struct YQueryConditionGenerallyEnclosed {
-    str: String
+    str: String,
+    url: String,
 }
 
 impl YQueryConditionGenerallyEnclosed {
-    pub fn new(str: String) -> Self {
-        Self { str }
+    pub fn new(str: String, url: String) -> Self {
+        Self { str, url: url }
     }
 
     pub fn value(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> RString {
         ruby.str_new(&rb_self.str)
+    }
+
+    pub fn url(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> RString {
+        ruby.str_new(&rb_self.url)
     }
 }

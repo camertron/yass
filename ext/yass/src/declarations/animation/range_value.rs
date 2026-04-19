@@ -1,12 +1,12 @@
-use magnus::{DataTypeFunctions, IntoValue, Ruby, TypedData, Value, gc, typed_data, value::Id};
-use style::values::{generics::{Optional, animation::AnimationRangeValue}, specified::{LengthPercentage, animation::TimelineRangeName}};
+use magnus::{DataTypeFunctions, Ruby, TypedData, Value, gc, typed_data, value::Id};
+use style::values::{generics::{animation::AnimationRangeValue}, specified::{LengthPercentage, animation::TimelineRangeName}};
 
 use crate::{cached_value::CachedValue, declarations::size::length_percentage_to_value};
 
 #[derive(TypedData)]
 #[magnus(class = "Yass::Declarations::Animation::RangeValue", mark)]
 pub struct YRangeValue {
-    length_percentage: CachedValue<Optional<LengthPercentage>>,
+    length_percentage: CachedValue<LengthPercentage>,
     name: TimelineRangeName
 }
 
@@ -14,10 +14,7 @@ impl YRangeValue {
     pub fn new(value: AnimationRangeValue<LengthPercentage>) -> Self {
         Self {
             length_percentage: CachedValue::new(value.lp, |lp, ruby| {
-                match lp {
-                    Optional::Some(lp) => length_percentage_to_value(lp, ruby),
-                    Optional::None => ruby.qnil().into_value_with(ruby)
-                }
+                length_percentage_to_value(lp, ruby)
             }),
 
             name: value.name
@@ -38,6 +35,7 @@ impl YRangeValue {
             TimelineRangeName::EntryCrossing => ruby.intern("entry_crossing"),
             TimelineRangeName::ExitCrossing => ruby.intern("exit_crossing"),
             TimelineRangeName::Scroll => ruby.intern("scroll"),
+            TimelineRangeName::Normal => ruby.intern("normal"),
         }
     }
 }

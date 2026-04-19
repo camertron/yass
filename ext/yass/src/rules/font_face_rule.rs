@@ -1,6 +1,6 @@
 use cssparser::{SourceLocation, UnicodeRange};
 use magnus::{DataTypeFunctions, Error, IntoValue, RArray, Ruby, TypedData, Value, gc, typed_data, value::Id};
-use style::{font_face::{FontDisplay, FontStretchRange, FontStyle, FontWeightRange, Source, SourceList}, servo_arc::Arc, shared_lock::{Locked, SharedRwLock}, stylesheets::FontFaceRule, values::{computed::font::FamilyName, generics::NonNegative, specified::{Percentage, font::MetricsOverride}}};
+use style::{font_face::{FontDisplay, FontStretchRange, FontStyle, FontWeightRange, Source}, servo_arc::Arc, shared_lock::{Locked, SharedRwLock}, stylesheets::FontFaceRule, values::{computed::font::FamilyName, generics::NonNegative, specified::{Percentage, font::MetricsOverride}}};
 
 use crate::{cached_value::CachedValue, cached_value_list::CachedValueList, declarations::percentage::YPercentage, general::{YSourceLocation, YUnicodeRange}, optional_cached_value::OptionalCachedValue, rules::fonts::{family::YFontFamilyName, metrics::{YFontMetricsOverride, YFontMetricsOverrideNormal}, source::font_source_to_value, stretch::YFontStretchRange, style::font_style_to_value, weight::YFontWeightRange}};
 
@@ -33,7 +33,6 @@ pub struct YFontFaceRule {
     descent_override: OptionalCachedValue<MetricsOverride>,
     display: OptionalCachedValue<FontDisplay>,
     family: OptionalCachedValue<FamilyName>,
-    font_face: Option<CachedValue<(FamilyName, SourceList)>>,
     language_override: Option<u32>,
     line_gap_override: OptionalCachedValue<MetricsOverride>,
     size_adjust: OptionalCachedValue<NonNegative<Percentage>>,
@@ -51,46 +50,36 @@ impl YFontFaceRule {
         let font_face_rule = rule.read_with(&guard);
 
         Self {
-            ascent_override: OptionalCachedValue::new(font_face_rule.ascent_override, |ascent_override, ruby| {
+            ascent_override: OptionalCachedValue::new(font_face_rule.descriptors.ascent_override, |ascent_override, ruby| {
                 metrics_override_to_value(ascent_override, ruby)
             }),
 
-            descent_override: OptionalCachedValue::new(font_face_rule.descent_override, |descent_override, ruby| {
+            descent_override: OptionalCachedValue::new(font_face_rule.descriptors.descent_override, |descent_override, ruby| {
                 metrics_override_to_value(descent_override, ruby)
             }),
 
-            display: OptionalCachedValue::new(font_face_rule.display, |display, ruby| {
+            display: OptionalCachedValue::new(font_face_rule.descriptors.font_display, |display, ruby| {
                 font_display_to_id(display, ruby).into_value_with(ruby)
             }),
 
             // @TODO: Why do we have to clone twice here??
-            family: OptionalCachedValue::new(font_face_rule.family.clone(), |family, ruby| {
+            family: OptionalCachedValue::new(font_face_rule.descriptors.font_family.clone(), |family, ruby| {
                 YFontFamilyName::new(family.clone()).into_value_with(ruby)
             }),
 
-            font_face: if font_face_rule.font_face().is_some() {
-                Some(
-                    CachedValue::new((font_face_rule.font_face().as_ref().unwrap().family().clone(), font_face_rule.font_face().as_ref().unwrap().sources().clone()), |(family, sources), ruby| {
-                        YFontFace::new(family.clone(), sources.clone()).into_value_with(ruby)
-                    })
-                )
-            } else {
-                None
-            },
+            language_override: font_face_rule.descriptors.font_language_override.map(|lo| lo.0),
 
-            language_override: font_face_rule.language_override.map(|lo| lo.0),
-
-            line_gap_override: OptionalCachedValue::new(font_face_rule.line_gap_override, |line_gap_override, ruby| {
+            line_gap_override: OptionalCachedValue::new(font_face_rule.descriptors.line_gap_override, |line_gap_override, ruby| {
                 metrics_override_to_value(line_gap_override, ruby)
             }),
 
-            size_adjust: OptionalCachedValue::new(font_face_rule.size_adjust, |size_adjust, ruby| {
+            size_adjust: OptionalCachedValue::new(font_face_rule.descriptors.size_adjust, |size_adjust, ruby| {
                 YPercentage::new(size_adjust.0.get()).into_value_with(ruby)
             }),
 
-            sources: if font_face_rule.sources.is_some() {
+            sources: if font_face_rule.descriptors.src.is_some() {
                 Some(
-                    CachedValueList::new(font_face_rule.sources.as_ref().unwrap().0.clone(), |source, _ctx, ruby| {
+                    CachedValueList::new(font_face_rule.descriptors.src.as_ref().unwrap().0.clone(), |source, _ctx, ruby| {
                         font_source_to_value(source, ruby)
                     })
                 )
@@ -98,17 +87,17 @@ impl YFontFaceRule {
                 None
             },
 
-            font_stretch_range: OptionalCachedValue::new(font_face_rule.stretch.clone(), |stretch, ruby| {
+            font_stretch_range: OptionalCachedValue::new(font_face_rule.descriptors.font_stretch.clone(), |stretch, ruby| {
                 YFontStretchRange::new(stretch.clone()).into_value_with(ruby)
             }),
 
-            style: OptionalCachedValue::new(font_face_rule.style.clone(), |style, ruby| {
+            style: OptionalCachedValue::new(font_face_rule.descriptors.font_style.clone(), |style, ruby| {
                 font_style_to_value(style, ruby)
             }),
 
-            unicode_range: if font_face_rule.unicode_range.is_some() {
+            unicode_range: if font_face_rule.descriptors.unicode_range.is_some() {
                 Some(
-                    CachedValueList::new(font_face_rule.unicode_range.as_ref().unwrap().clone(), |range, _ctx, ruby| {
+                    CachedValueList::new(font_face_rule.descriptors.unicode_range.as_ref().unwrap().clone(), |range, _ctx, ruby| {
                         YUnicodeRange::new(range.start, range.end).into_value_with(ruby)
                     })
                 )
@@ -116,7 +105,7 @@ impl YFontFaceRule {
                 None
             },
 
-            weight: OptionalCachedValue::new(font_face_rule.weight.clone(), |weight, ruby| {
+            weight: OptionalCachedValue::new(font_face_rule.descriptors.font_weight.clone(), |weight, ruby| {
                 YFontWeightRange::new(weight.clone()).into_value_with(ruby)
             }),
 
@@ -140,10 +129,6 @@ impl YFontFaceRule {
 
     pub fn family(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Value {
         rb_self.family.get(ruby)
-    }
-
-    pub fn font_face(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Option<Value> {
-        rb_self.font_face.as_ref().map(|font_face| font_face.get(ruby))
     }
 
     pub fn language_override(_ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Option<u32> {
@@ -202,10 +187,6 @@ impl DataTypeFunctions for YFontFaceRule {
         self.display.mark(marker);
         self.family.mark(marker);
 
-        if let Some(font_face) = &self.font_face {
-            font_face.mark(marker);
-        }
-
         self.line_gap_override.mark(marker);
         self.size_adjust.mark(marker);
 
@@ -221,41 +202,5 @@ impl DataTypeFunctions for YFontFaceRule {
         }
 
         self.weight.mark(marker);
-    }
-}
-
-#[derive(TypedData)]
-#[magnus(class = "Yass::FontFace", mark)]
-pub struct YFontFace {
-    family: CachedValue<FamilyName>,
-    sources: CachedValueList<Source>,
-}
-
-impl YFontFace {
-    pub fn new(family: FamilyName, sources: SourceList) -> Self {
-        Self {
-            family: CachedValue::new(family, |family, ruby| {
-                YFontFamilyName::new(family.clone()).into_value_with(ruby)
-            }),
-
-            sources: CachedValueList::new(sources.0.to_vec(), |source, _ctx, ruby| {
-                font_source_to_value(source, ruby)
-            })
-        }
-    }
-
-    pub fn family(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Value {
-        rb_self.family.get(ruby)
-    }
-
-    pub fn sources(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Result<RArray, Error> {
-        rb_self.sources.to_a(ruby)
-    }
-}
-
-impl DataTypeFunctions for YFontFace {
-    fn mark(&self, marker: &gc::Marker) {
-        self.family.mark(marker);
-        self.sources.mark(marker);
     }
 }

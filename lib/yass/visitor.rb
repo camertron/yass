@@ -2187,7 +2187,6 @@ module Yass
     end
 
     def visit_declaration_view_transition_name(node)
-      visit(node.name)
     end
 
     def visit_declaration_visibility(node)
@@ -2393,18 +2392,12 @@ module Yass
       visit(node.descent_override)
       visit(node.display)
       visit(node.family)
-      visit(node.font_face)
       visit(node.line_gap_override)
       visit(node.size_adjust)
       visit(node.font_stretch_range)
       visit(node.style)
       visit(node.weight)
       visit(node.source_location)
-    end
-
-    def visit_font_face(node)
-      visit(node.family)
-      visit_list(node.sources)
     end
 
     def visit_font_family_values(node)

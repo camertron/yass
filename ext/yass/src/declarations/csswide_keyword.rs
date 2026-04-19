@@ -8,6 +8,7 @@ pub fn css_wide_keyword_to_id(ruby: &Ruby, keyword: CSSWideKeyword) -> Id {
         CSSWideKeyword::Unset => ruby.intern("unset"),
         CSSWideKeyword::Revert => ruby.intern("revert"),
         CSSWideKeyword::RevertLayer => ruby.intern("revert_layer"),
+        CSSWideKeyword::RevertRule => ruby.intern("revert_rule"),
     }
 }
 
