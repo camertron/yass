@@ -15,6 +15,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v6
+      - name: Run sccache-cache
+        uses: mozilla-actions/sccache-action@v0.0.9
       - uses: oxidize-rb/actions/setup-ruby-and-rust@v1
         with:
           ruby-version: ${{ matrix.ruby-version }}
@@ -42,7 +44,10 @@ jobs:
             -f dockerfiles/windows.dockerfile \
             -t camertron/rbsys-x64-mingw-ucrt:latest \
             dockerfiles/
-      - uses: oxidize-rb/actions/cross-gem@v1
+      - name: Run sccache-cache
+        uses: mozilla-actions/sccache-action@v0.0.9
+      - name: Compile
+        uses: oxidize-rb/actions/cross-gem@v1
         with:
           platform: ${{ matrix.platform }}
           ruby-versions: ~> 3.2,~> 3.3,~> 3.4,~> 4.0
@@ -65,7 +70,10 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: "4.0"
-      - uses: oxidize-rb/actions/cross-gem@v1
+      - name: Run sccache-cache
+        uses: mozilla-actions/sccache-action@v0.0.9
+      - name: Compile
+        uses: oxidize-rb/actions/cross-gem@v1
         with:
           platform: ${{ matrix.platform }}
           ruby-versions: ~> 3.2,~> 3.3,~> 3.4,~> 4.0
@@ -78,7 +86,7 @@ jobs:
     permissions:
       contents: write
       id-token: write
-    needs: [cross-compile]
+    needs: [cross-compile, cross-compile-windows]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v7
