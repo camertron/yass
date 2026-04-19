@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+## [0.2.0] - 2026-04-19
+
 - Fully support all style declarations.
 - Add support for `@media` rules.
 - Add support for `@font-face` rules.

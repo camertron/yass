@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    yass-css (0.1.0)
+    yass-css (0.2.0)
       rb_sys (~> 0.9.124)
 
 GEM
