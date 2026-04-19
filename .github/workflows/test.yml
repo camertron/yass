@@ -25,6 +25,10 @@ jobs:
           persist-credentials: false
       - name: Run sccache-cache
         uses: mozilla-actions/sccache-action@v0.0.9
+      - name: Set Rust caching env vars
+        run: |
+          echo "SCCACHE_GHA_ENABLED=true" >> $GITHUB_ENV
+          echo "RUSTC_WRAPPER=sccache" >> $GITHUB_ENV
       - name: Set up Ruby & Rust
         uses: oxidize-rb/actions/setup-ruby-and-rust@v1
         with:
