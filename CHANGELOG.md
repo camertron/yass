@@ -1,6 +1,8 @@
 ## [Unreleased]
 
-## [0.3.0]
+- Support nested rules.
+
+## [0.3.0] - 2026-04-19
 
 - Upgrade to rb_sys v0.9.126.
 

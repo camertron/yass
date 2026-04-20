@@ -8,6 +8,7 @@ pub fn init(ruby: &Ruby, yass_module: &RModule) -> Result<(), Error> {
     let style_rule_class = yass_module.define_class("StyleRule", rule_class)?;
     style_rule_class.define_method("selectors", method!(YStyleRule::selectors, 0))?;
     style_rule_class.define_method("declarations", method!(YStyleRule::declarations, 0))?;
+    style_rule_class.define_method("rules", method!(YStyleRule::rules, 0))?;
     style_rule_class.define_method("source_location", method!(YStyleRule::source_location, 0))?;
 
     let media_rule_class = yass_module.define_class("MediaRule", rule_class)?;

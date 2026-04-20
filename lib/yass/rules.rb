@@ -16,7 +16,7 @@ module Yass
   end
 
   class StyleRule
-    RUBY_METHODS = %i(declarations kind selectors source_location).freeze
+    RUBY_METHODS = %i(declarations kind rules selectors source_location).freeze
 
     include ::Yass::Node
 

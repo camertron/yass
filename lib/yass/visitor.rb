@@ -2328,6 +2328,7 @@ module Yass
     def visit_style_rule(node)
       visit_list(node.selectors)
       visit_list(node.declarations)
+      visit_list(node.rules)
       visit(node.source_location)
     end
 

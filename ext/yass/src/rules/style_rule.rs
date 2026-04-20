@@ -1,9 +1,9 @@
 use cssparser::SourceLocation;
 use magnus::{DataTypeFunctions, Error, IntoValue, RArray, Ruby, TypedData, Value, gc, typed_data};
 use selectors::parser::Selector;
-use style::{properties::PropertyDeclaration, selector_parser::SelectorImpl, servo_arc::Arc, shared_lock::{Locked, SharedRwLock}, stylesheets::StyleRule};
+use style::{properties::PropertyDeclaration, selector_parser::SelectorImpl, servo_arc::Arc, shared_lock::{Locked, SharedRwLock}, stylesheets::{CssRule, StyleRule}};
 
-use crate::{cached_value::CachedValue, cached_value_list::CachedValueList, declarations::declaration::YDeclaration, general::YSourceLocation, selectors::YSelector};
+use crate::{cached_value::CachedValue, cached_value_list::CachedValueList, declarations::declaration::YDeclaration, general::YSourceLocation, rules::rule::make_rule, selectors::YSelector};
 
 #[derive(TypedData)]
 #[magnus(class = "Yass::StyleRule", mark)]
@@ -12,14 +12,15 @@ pub struct YStyleRule {
     lock: SharedRwLock,
     selectors: CachedValueList<Selector<SelectorImpl>>,
     declarations: CachedValueList<PropertyDeclaration>,
-    source_location: CachedValue<SourceLocation>
+    source_location: CachedValue<SourceLocation>,
+    rules: CachedValueList<CssRule, SharedRwLock>,
 }
 
 impl YStyleRule {
     pub fn new(rule: Arc<Locked<StyleRule>>, lock: SharedRwLock) -> Self {
         YStyleRule {
             rule,
-            lock,
+            lock: lock.clone(),
 
             selectors: CachedValueList::empty(None, |selector, _ctx, ruby| {
                 YSelector::new(selector.clone()).into_value_with(ruby)
@@ -31,7 +32,11 @@ impl YStyleRule {
 
             source_location: CachedValue::empty(|source_location, ruby| {
                 YSourceLocation::new(source_location.line, source_location.column).into_value_with(ruby)
-            })
+            }),
+
+            rules: CachedValueList::empty(Some(lock.clone()), |rule, ctx, ruby| {
+                make_rule(rule, ctx.as_ref().unwrap(), ruby)
+            }),
         }
     }
 
@@ -62,6 +67,23 @@ impl YStyleRule {
         rb_self.declarations.to_a(ruby)
     }
 
+    pub fn rules(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Result<RArray, Error> {
+        if rb_self.rules.is_empty() {
+            let guard = rb_self.lock.read();
+            let style_rule = rb_self.rule.read_with(&guard);
+
+            if let Some(locked_rules) = &style_rule.rules {
+                let rules = locked_rules.read_with(&guard);
+
+                for rule in &rules.0 {
+                    rb_self.rules.add(rule.clone(), ruby)?;
+                }
+            }
+        }
+
+        rb_self.rules.to_a(ruby)
+    }
+
     pub fn source_location(ruby: &Ruby, rb_self: typed_data::Obj<Self>) -> Value {
         if rb_self.source_location.is_empty() {
             let guard = rb_self.lock.read();
@@ -77,6 +99,7 @@ impl DataTypeFunctions for YStyleRule {
     fn mark(&self, marker: &gc::Marker) {
         self.selectors.mark(marker);
         self.declarations.mark(marker);
+        self.rules.mark(marker);
         self.source_location.mark(marker);
     }
 }
